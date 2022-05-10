@@ -1,10 +1,10 @@
-<map id="/__w/libhsqs/libhsqs/src/mapper/static_mapper.h" name="/__w/libhsqs/libhsqs/src/mapper/static_mapper.h">
-<area shape="rect" id="node1" title=" " alt="" coords="121,5,413,47"/>
-<area shape="rect" id="node2" href="$mapper_8h.html" title=" " alt="" coords="155,95,378,136"/>
-<area shape="rect" id="node3" href="$metablock__context_8h.html" title=" " alt="" coords="287,184,529,240"/>
-<area shape="rect" id="node5" href="$hsqs_8h.html" title=" " alt="" coords="331,392,554,433"/>
-<area shape="rect" id="node6" href="$superblock__context_8h.html" title=" " alt="" coords="35,288,287,344"/>
-<area shape="rect" id="node7" href="$table_8h.html" title=" " alt="" coords="606,191,829,233"/>
-<area shape="rect" id="node4" href="$xattr__table_8h.html" title=" " alt="" coords="311,295,574,337"/>
-<area shape="rect" id="node8" href="$fragment__table_8h.html" title=" " alt="" coords="598,295,890,337"/>
+<map id="static_mapper.h" name="static_mapper.h">
+<area shape="rect" id="node1" title=" " alt="" coords="138,5,310,32"/>
+<area shape="rect" id="node2" href="$mapper_8h.html" title=" " alt="" coords="173,80,275,107"/>
+<area shape="rect" id="node3" href="$hsqs_8h.html" title=" " alt="" coords="312,304,395,331"/>
+<area shape="rect" id="node4" href="$metablock__context_8h.html" title=" " alt="" coords="225,155,437,181"/>
+<area shape="rect" id="node6" href="$superblock__context_8h.html" title=" " alt="" coords="30,229,253,256"/>
+<area shape="rect" id="node7" href="$table_8h.html" title=" " alt="" coords="486,155,578,181"/>
+<area shape="rect" id="node5" href="$xattr__table_8h.html" title=" " alt="" coords="277,229,429,256"/>
+<area shape="rect" id="node8" href="$fragment__table_8h.html" title=" " alt="" coords="454,229,637,256"/>
 </map>

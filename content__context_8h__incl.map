@@ -1,9 +1,9 @@
-<map id="/__w/libhsqs/libhsqs/src/context/content_context.h" name="/__w/libhsqs/libhsqs/src/context/content_context.h">
-<area shape="rect" id="node1" title=" " alt="" coords="311,5,534,61"/>
-<area shape="rect" id="node2" href="$buffer_8h.html" title=" " alt="" coords="222,109,425,136"/>
-<area shape="rect" id="node5" title=" " alt="" coords="444,259,547,285"/>
-<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="164,184,286,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="174,259,276,285"/>
-<area shape="rect" id="node6" href="$superblock_8h.html" title=" " alt="" coords="311,184,534,211"/>
-<area shape="rect" id="node7" title=" " alt="" coords="28,184,140,211"/>
+<map id="content_context.h" name="content_context.h">
+<area shape="rect" id="node1" title=" " alt="" coords="326,5,518,32"/>
+<area shape="rect" id="node2" href="$buffer_8h.html" title=" " alt="" coords="222,80,425,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="444,229,547,256"/>
+<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="164,155,286,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="174,229,276,256"/>
+<area shape="rect" id="node6" href="$superblock_8h.html" title=" " alt="" coords="311,155,534,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="28,155,140,181"/>
 </map>

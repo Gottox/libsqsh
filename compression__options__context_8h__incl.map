@@ -1,9 +1,9 @@
-<map id="/__w/libhsqs/libhsqs/src/context/compression_options_context.h" name="/__w/libhsqs/libhsqs/src/context/compression_options_context.h">
-<area shape="rect" id="node1" title=" " alt="" coords="267,5,530,61"/>
-<area shape="rect" id="node2" href="$buffer_8h.html" title=" " alt="" coords="201,109,404,136"/>
-<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="461,184,584,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="225,259,327,285"/>
-<area shape="rect" id="node5" title=" " alt="" coords="373,259,475,285"/>
-<area shape="rect" id="node6" href="$superblock_8h.html" title=" " alt="" coords="165,184,387,211"/>
-<area shape="rect" id="node7" title=" " alt="" coords="29,184,141,211"/>
+<map id="compression_options_context.h" name="compression_options_context.h">
+<area shape="rect" id="node1" title=" " alt="" coords="293,5,505,47"/>
+<area shape="rect" id="node2" href="$buffer_8h.html" title=" " alt="" coords="201,95,404,121"/>
+<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="461,169,584,196"/>
+<area shape="rect" id="node4" title=" " alt="" coords="225,244,327,271"/>
+<area shape="rect" id="node5" title=" " alt="" coords="373,244,475,271"/>
+<area shape="rect" id="node6" href="$superblock_8h.html" title=" " alt="" coords="165,169,387,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="29,169,141,196"/>
 </map>
