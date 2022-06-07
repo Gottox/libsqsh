@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libhsqs<span id="projectnumber">&#160;ec0620e</span>
+   <div id="projectname">libhsqs<span id="projectnumber">&#160;ea13a72</span>
    </div>
   </td>
  </tr>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3a0534501ca4be4079425efd3c8ffab8.html">__w</a></li><li class="navelem"><a class="el" href="dir_59cf639e60a00e737c8a7b5f377f3f3f.html">libhsqs</a></li><li class="navelem"><a class="el" href="dir_37940ec95c8f6aadf475035c5c6af1d9.html">libhsqs</a></li><li class="navelem"><a class="el" href="dir_2fb9c6c25182fa91851a94c48bb8ff5e.html">src</a></li><li class="navelem"><a class="el" href="dir_aa597bc0bffed48880faf4c1527de4f4.html">buffer</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3a0534501ca4be4079425efd3c8ffab8.html">__w</a></li><li class="navelem"><a class="el" href="dir_59cf639e60a00e737c8a7b5f377f3f3f.html">libhsqs</a></li><li class="navelem"><a class="el" href="dir_37940ec95c8f6aadf475035c5c6af1d9.html">libhsqs</a></li><li class="navelem"><a class="el" href="dir_2fb9c6c25182fa91851a94c48bb8ff5e.html">src</a></li><li class="navelem"><a class="el" href="dir_8859ceb9eda51e9f31ce71b7d3c17fea.html">primitive</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -97,12 +97,12 @@ $(function() {
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *                                                                            *</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;../cache/ref_count.h&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;../primitive/ref_count.h&quot;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="buffer_8h.html">buffer.h</a>&quot;</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#ifndef HSQS_COW_H</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="cow_8h.html#af962ae92cb4d28227cf642165efc4402">   39</a></span><span class="preprocessor">#define HSQS_COW_H</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define HSQS_COW_H</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="cow_8h.html#a80c563fcc9b525a930e709bb302f7f22">   41</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="cow_8h.html#a80c563fcc9b525a930e709bb302f7f22">HsqsCowState</a> {</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="cow_8h.html#a80c563fcc9b525a930e709bb302f7f22a4c8c5a3ce1ac86d71e0091a642706d09">   42</a></span>    <a class="code hl_enumvalue" href="cow_8h.html#a80c563fcc9b525a930e709bb302f7f22a4c8c5a3ce1ac86d71e0091a642706d09">HSQS_COW_EMPTY</a>,</div>
@@ -124,7 +124,7 @@ $(function() {
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">union </span>{</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structHsqsCow.html#ad8e769a61cb36c8121545288598f5ccb">   59</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="structHsqsBuffer.html">HsqsBuffer</a> <a class="code hl_variable" href="structHsqsCow.html#ad8e769a61cb36c8121545288598f5ccb">buffer</a>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structHsqsCow.html#a21dcb18999baaea8f4b0b7c8def974e1">   60</a></span>        <span class="keyword">struct </span><a class="code hl_struct" href="structHsqsCowMapping.html">HsqsCowMapping</a> <a class="code hl_variable" href="structHsqsCow.html#a21dcb18999baaea8f4b0b7c8def974e1">mapping</a>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structHsqsCow.html#a140e0c5b1984d1d6ec9182c34d5b05e0">   61</a></span>    } <a class="code hl_variable" href="structHsqsCow.html#a140e0c5b1984d1d6ec9182c34d5b05e0">content</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structHsqsCow.html#aa2364238ea9dce434549ab385663ff46">   61</a></span>    } <a class="code hl_variable" href="structHsqsCow.html#aa2364238ea9dce434549ab385663ff46">content</a>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><a class="code hl_define" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> <span class="keywordtype">int</span></div>
@@ -158,9 +158,9 @@ $(function() {
 <div class="ttc" id="astructHsqsCowMapping_html_ad5649ba7513ade2ecd0563d05ccdee7a"><div class="ttname"><a href="structHsqsCowMapping.html#ad5649ba7513ade2ecd0563d05ccdee7a">HsqsCowMapping::rc</a></div><div class="ttdeci">struct HsqsRefCount * rc</div><div class="ttdef"><b>Definition:</b> <a href="cow_8h_source.html#l00048">cow.h:48</a></div></div>
 <div class="ttc" id="astructHsqsCowMapping_html_afa9cbee64294a25f630216fd53458edd"><div class="ttname"><a href="structHsqsCowMapping.html#afa9cbee64294a25f630216fd53458edd">HsqsCowMapping::size</a></div><div class="ttdeci">size_t size</div><div class="ttdef"><b>Definition:</b> <a href="cow_8h_source.html#l00051">cow.h:51</a></div></div>
 <div class="ttc" id="astructHsqsCow_html"><div class="ttname"><a href="structHsqsCow.html">HsqsCow</a></div><div class="ttdef"><b>Definition:</b> <a href="cow_8h_source.html#l00054">cow.h:54</a></div></div>
-<div class="ttc" id="astructHsqsCow_html_a140e0c5b1984d1d6ec9182c34d5b05e0"><div class="ttname"><a href="structHsqsCow.html#a140e0c5b1984d1d6ec9182c34d5b05e0">HsqsCow::content</a></div><div class="ttdeci">union HsqsCow::@0 content</div></div>
 <div class="ttc" id="astructHsqsCow_html_a21dcb18999baaea8f4b0b7c8def974e1"><div class="ttname"><a href="structHsqsCow.html#a21dcb18999baaea8f4b0b7c8def974e1">HsqsCow::mapping</a></div><div class="ttdeci">struct HsqsCowMapping mapping</div><div class="ttdef"><b>Definition:</b> <a href="cow_8h_source.html#l00060">cow.h:60</a></div></div>
 <div class="ttc" id="astructHsqsCow_html_a2a9042b7c9d36cba3a08f7d29eab0185"><div class="ttname"><a href="structHsqsCow.html#a2a9042b7c9d36cba3a08f7d29eab0185">HsqsCow::block_size</a></div><div class="ttdeci">int block_size</div><div class="ttdef"><b>Definition:</b> <a href="cow_8h_source.html#l00056">cow.h:56</a></div></div>
+<div class="ttc" id="astructHsqsCow_html_aa2364238ea9dce434549ab385663ff46"><div class="ttname"><a href="structHsqsCow.html#aa2364238ea9dce434549ab385663ff46">HsqsCow::content</a></div><div class="ttdeci">union HsqsCow::@2 content</div></div>
 <div class="ttc" id="astructHsqsCow_html_ab346865c652abb60fcec9828081e882f"><div class="ttname"><a href="structHsqsCow.html#ab346865c652abb60fcec9828081e882f">HsqsCow::state</a></div><div class="ttdeci">enum HsqsCowState state</div><div class="ttdef"><b>Definition:</b> <a href="cow_8h_source.html#l00055">cow.h:55</a></div></div>
 <div class="ttc" id="astructHsqsCow_html_ad8e769a61cb36c8121545288598f5ccb"><div class="ttname"><a href="structHsqsCow.html#ad8e769a61cb36c8121545288598f5ccb">HsqsCow::buffer</a></div><div class="ttdeci">struct HsqsBuffer buffer</div><div class="ttdef"><b>Definition:</b> <a href="cow_8h_source.html#l00059">cow.h:59</a></div></div>
 <div class="ttc" id="astructHsqsCow_html_aef46a6130830004137384f0b3121e1f8"><div class="ttname"><a href="structHsqsCow.html#aef46a6130830004137384f0b3121e1f8">HsqsCow::compression_id</a></div><div class="ttdeci">int compression_id</div><div class="ttdef"><b>Definition:</b> <a href="cow_8h_source.html#l00057">cow.h:57</a></div></div>

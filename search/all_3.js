@@ -2,7 +2,7 @@ var searchData=
 [
   ['cache_0',['cache',['../structHsqsCurlMapper.html#a83bc79a75ed6d7008ac1affae6e3e3eb',1,'HsqsCurlMapper']]],
   ['canary_5fmapper_2eh_1',['canary_mapper.h',['../canary__mapper_8h.html',1,'']]],
-  ['cl_2',['cl',['../structHsqsMapper.html#ac1d926e005fe8dd275c3c42bb17f9ee6',1,'HsqsMapper::cl()'],['../structHsqsMapping.html#aee5db100f5f5caa310e420b840b55e52',1,'HsqsMapping::cl()']]],
+  ['cl_2',['cl',['../structHsqsMapping.html#aee5db100f5f5caa310e420b840b55e52',1,'HsqsMapping::cl()'],['../structHsqsMapper.html#ac1d926e005fe8dd275c3c42bb17f9ee6',1,'HsqsMapper::cl()']]],
   ['cleanup_3',['cleanup',['../structHsqsMemoryMapperImpl.html#af509453b7a2300307a96005730714d38',1,'HsqsMemoryMapperImpl']]],
   ['cn_4',['cn',['../structHsqsMapper.html#ab2ae377dba451acdd980c443f93f9db5',1,'HsqsMapper::cn()'],['../structHsqsMapping.html#a5ab66176b8dc6827fd4d1f159bccd905',1,'HsqsMapping::cn()']]],
   ['common_2eh_5',['common.h',['../common_8h.html',1,'']]],
@@ -11,13 +11,14 @@ var searchData=
   ['compression_5foptions_8',['compression_options',['../structHsqs.html#a823d3a0c85b8f9ffae669c5923cc4f1c',1,'Hsqs']]],
   ['compression_5foptions_2eh_9',['compression_options.h',['../compression__options_8h.html',1,'']]],
   ['compression_5foptions_5fcontext_2eh_10',['compression_options_context.h',['../compression__options__context_8h.html',1,'']]],
-  ['compressor_2eh_11',['compressor.h',['../compressor_8h.html',1,'']]],
-  ['content_12',['content',['../structHsqsCow.html#a140e0c5b1984d1d6ec9182c34d5b05e0',1,'HsqsCow']]],
-  ['content_5fcontext_2eh_13',['content_context.h',['../content__context_8h.html',1,'']]],
-  ['context_14',['context',['../structHsqsXattrIterator.html#a7022127d0cfc928f2dbdb5f7c95549f5',1,'HsqsXattrIterator']]],
-  ['cow_2eh_15',['cow.h',['../cow_8h.html',1,'']]],
-  ['curl_5fmapper_2eh_16',['curl_mapper.h',['../curl__mapper_8h.html',1,'']]],
-  ['current_5faddress_17',['current_address',['../structHsqsMetablockStreamContext.html#a2b38508331404f99cfb72e4f2fb57789',1,'HsqsMetablockStreamContext']]],
-  ['current_5ffragment_5foffset_18',['current_fragment_offset',['../structHsqsDirectoryIterator.html#a78363918649308d4d75fd729562b6c05',1,'HsqsDirectoryIterator']]],
-  ['current_5foffset_19',['current_offset',['../structHsqsInodeDirectoryIndexIterator.html#ac1934dd0323a5001ba45f448bf7c649f',1,'HsqsInodeDirectoryIndexIterator::current_offset()'],['../structHsqsDirectoryIterator.html#ac618f8a6dcee191af0346dcea490c356',1,'HsqsDirectoryIterator::current_offset()']]]
+  ['compression_5foptions_5fcontext_5fh_11',['COMPRESSION_OPTIONS_CONTEXT_H',['../compression__options__context_8h.html#a1e387ce52021b0da78d17af8a8d866c4',1,'compression_options_context.h']]],
+  ['compressor_2eh_12',['compressor.h',['../compressor_8h.html',1,'']]],
+  ['content_13',['content',['../structHsqsCow.html#aa2364238ea9dce434549ab385663ff46',1,'HsqsCow']]],
+  ['content_5fcontext_2eh_14',['content_context.h',['../content__context_8h.html',1,'']]],
+  ['context_15',['context',['../structHsqsXattrIterator.html#a7022127d0cfc928f2dbdb5f7c95549f5',1,'HsqsXattrIterator']]],
+  ['cow_2eh_16',['cow.h',['../cow_8h.html',1,'']]],
+  ['curl_5fmapper_2eh_17',['curl_mapper.h',['../curl__mapper_8h.html',1,'']]],
+  ['current_5faddress_18',['current_address',['../structHsqsMetablockStreamContext.html#a2b38508331404f99cfb72e4f2fb57789',1,'HsqsMetablockStreamContext']]],
+  ['current_5ffragment_5foffset_19',['current_fragment_offset',['../structHsqsDirectoryIterator.html#a78363918649308d4d75fd729562b6c05',1,'HsqsDirectoryIterator']]],
+  ['current_5foffset_20',['current_offset',['../structHsqsInodeDirectoryIndexIterator.html#ac1934dd0323a5001ba45f448bf7c649f',1,'HsqsInodeDirectoryIndexIterator::current_offset()'],['../structHsqsDirectoryIterator.html#ac618f8a6dcee191af0346dcea490c356',1,'HsqsDirectoryIterator::current_offset()']]]
 ];

@@ -77,6 +77,7 @@ var menudata={children:[
 {text:"_",url:"globals.html#index__5F"},
 {text:"a",url:"globals_a.html#index_a"},
 {text:"buffer",url:"globals_b.html#index_b"},
+{text:"c",url:"globals_c.html#index_c"},
 {text:"cleanu",url:"globals_c.html#index_c"},
 {text:"compre",url:"globals_c.html#index_c"},
 {text:"conten",url:"globals_c.html#index_c"},
@@ -166,6 +167,7 @@ var menudata={children:[
 {text:"Macros",url:"globals_defs.html",children:[
 {text:"_",url:"globals_defs.html#index__5F"},
 {text:"a",url:"globals_defs.html#index_a"},
+{text:"c",url:"globals_defs.html#index_c"},
 {text:"d",url:"globals_defs.html#index_d"},
 {text:"f",url:"globals_defs.html#index_f"},
 {text:"h",url:"globals_defs.html#index_h"},

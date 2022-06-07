@@ -22,8 +22,8 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="buffer_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="162.75,-112.5 162.75,-131.5 314.75,-131.5 314.75,-112.5 162.75,-112.5"/>
-<text text-anchor="middle" x="238.75" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">../buffer/buffer.h</text>
+<polygon fill="white" stroke="black" points="151.75,-112.5 151.75,-131.5 325.75,-131.5 325.75,-112.5 151.75,-112.5"/>
+<text text-anchor="middle" x="238.75" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">../primitive/buffer.h</text>
 </a>
 </g>
 </g>
@@ -75,7 +75,7 @@
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge9" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M162.46,-116.38C102.94,-111 27.21,-99.61 7.75,-76 -24.72,-36.59 58.51,-20.76 115.81,-14.64"/>
+<path fill="none" stroke="midnightblue" d="M151.57,-115.34C94.04,-109.58 26.04,-98.19 7.75,-76 -24.72,-36.59 58.51,-20.76 115.81,-14.64"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="116.22,-18.11 125.82,-13.63 115.53,-11.15 116.22,-18.11"/>
 </g>
 <!-- Node2&#45;&gt;Node5 -->

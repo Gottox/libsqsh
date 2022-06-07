@@ -1,10 +1,10 @@
 <map id="cow.h" name="cow.h">
-<area shape="rect" id="node1" title=" " alt="" coords="174,5,246,32"/>
-<area shape="rect" id="node2" href="$ref__count_8h.html" title=" " alt="" coords="5,80,228,107"/>
-<area shape="rect" id="node6" href="$buffer_8h.html" title=" " alt="" coords="255,80,357,107"/>
-<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="55,155,178,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="115,229,217,256"/>
-<area shape="rect" id="node5" title=" " alt="" coords="448,229,551,256"/>
-<area shape="rect" id="node7" href="$superblock_8h.html" title=" " alt="" coords="388,155,611,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="253,155,365,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="203,5,275,32"/>
+<area shape="rect" id="node2" href="$ref__count_8h.html" title=" " alt="" coords="5,80,268,107"/>
+<area shape="rect" id="node6" href="$buffer_8h.html" title=" " alt="" coords="292,80,395,107"/>
+<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="90,155,213,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="149,229,252,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="483,229,585,256"/>
+<area shape="rect" id="node7" href="$superblock_8h.html" title=" " alt="" coords="423,155,645,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="287,155,399,181"/>
 </map>
