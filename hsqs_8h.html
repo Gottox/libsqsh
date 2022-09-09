@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libhsqs<span id="projectnumber">&#160;ea13a72</span>
+   <div id="projectname">libhsqs<span id="projectnumber">&#160;3c75b10</span>
    </div>
   </td>
  </tr>
@@ -68,7 +68,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">hsqs.h File Reference</div></div>
 </div><!--header-->
@@ -89,6 +88,12 @@ Include dependency graph for hsqs.h:</div>
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="hsqs_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="hsqs_8h__dep__incl.svg" width="114" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 </div>
 <p><a href="hsqs_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -96,11 +101,6 @@ Include dependency graph for hsqs.h:</div>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHsqs.html">Hsqs</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a774b3700cbbc9eb75bc24c0608f3eda6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hsqs_8h.html#a774b3700cbbc9eb75bc24c0608f3eda6">HSQS_H</a></td></tr>
-<tr class="separator:a774b3700cbbc9eb75bc24c0608f3eda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -122,12 +122,10 @@ Functions</h2></td></tr>
 <tr class="separator:a6de636be8bfbc659cd7abf05671c1c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77ea5330fa56da876f7cd8539f1bc6ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hsqs_8h.html#a77ea5330fa56da876f7cd8539f1bc6ac">hsqs_compression_options</a> (struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs, struct <a class="el" href="structHsqsCompressionOptionsContext.html">HsqsCompressionOptionsContext</a> **compression_options)</td></tr>
 <tr class="separator:a77ea5330fa56da876f7cd8539f1bc6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a061b37b710cd3171502676d21581bf1f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structHsqsLruHashmap.html">HsqsLruHashmap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hsqs_8h.html#a061b37b710cd3171502676d21581bf1f">hsqs_metablock_cache</a> (struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs)</td></tr>
+<tr class="memitem:a061b37b710cd3171502676d21581bf1f"><td class="memItemLeft" align="right" valign="top">struct HsqsLruHashmap *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hsqs_8h.html#a061b37b710cd3171502676d21581bf1f">hsqs_metablock_cache</a> (struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs)</td></tr>
 <tr class="separator:a061b37b710cd3171502676d21581bf1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af64781c59e720127173cec5ab51c7777"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hsqs_8h.html#af64781c59e720127173cec5ab51c7777">hsqs_trailing_bytes</a> (struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs)</td></tr>
-<tr class="separator:af64781c59e720127173cec5ab51c7777"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57cae7352801b2e699ec5fa336340f3b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hsqs_8h.html#a57cae7352801b2e699ec5fa336340f3b">hsqs_trailing_bytes_size</a> (struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs)</td></tr>
-<tr class="separator:a57cae7352801b2e699ec5fa336340f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e84ec0db5e1b0645417c54a9ff13cd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hsqs_8h.html#a3e84ec0db5e1b0645417c54a9ff13cd4">hsqs_trailing_bytes</a> (struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs, struct <a class="el" href="structHsqsTrailingContext.html">HsqsTrailingContext</a> *trailing_bytes)</td></tr>
+<tr class="separator:a3e84ec0db5e1b0645417c54a9ff13cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7cf23d2f07a4bc2f3e73bdd5dc6a975"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hsqs_8h.html#ad7cf23d2f07a4bc2f3e73bdd5dc6a975">hsqs_cleanup</a> (struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs)</td></tr>
 <tr class="separator:ad7cf23d2f07a4bc2f3e73bdd5dc6a975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -135,24 +133,7 @@ Functions</h2></td></tr>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Enno Boland (<a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'ebo'+'la'+'nd.'+'de'; return false;">mail@<span style="display: none;">.nosp@m.</span>ebol<span style="display: none;">.nosp@m.</span>and.d<span style="display: none;">.nosp@m.</span>e</a>) </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="hsqs_8h_source.html">hsqs.h</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a774b3700cbbc9eb75bc24c0608f3eda6" name="a774b3700cbbc9eb75bc24c0608f3eda6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a774b3700cbbc9eb75bc24c0608f3eda6">&#9670;&nbsp;</a></span>HSQS_H</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HSQS_H</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="hsqs_8h_source.html#l00048">48</a> of file <a class="el" href="hsqs_8h_source.html">hsqs.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="ad7cf23d2f07a4bc2f3e73bdd5dc6a975" name="ad7cf23d2f07a4bc2f3e73bdd5dc6a975"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7cf23d2f07a4bc2f3e73bdd5dc6a975">&#9670;&nbsp;</a></span>hsqs_cleanup()</h2>
 
@@ -324,7 +305,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structHsqsLruHashmap.html">HsqsLruHashmap</a> * hsqs_metablock_cache </td>
+          <td class="memname">struct HsqsLruHashmap * hsqs_metablock_cache </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structHsqs.html">Hsqs</a> *&#160;</td>
           <td class="paramname"><em>hsqs</em></td><td>)</td>
@@ -421,36 +402,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af64781c59e720127173cec5ab51c7777" name="af64781c59e720127173cec5ab51c7777"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af64781c59e720127173cec5ab51c7777">&#9670;&nbsp;</a></span>hsqs_trailing_bytes()</h2>
+<a id="a3e84ec0db5e1b0645417c54a9ff13cd4" name="a3e84ec0db5e1b0645417c54a9ff13cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e84ec0db5e1b0645417c54a9ff13cd4">&#9670;&nbsp;</a></span>hsqs_trailing_bytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t * hsqs_trailing_bytes </td>
+          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int hsqs_trailing_bytes </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structHsqs.html">Hsqs</a> *&#160;</td>
-          <td class="paramname"><em>hsqs</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>hsqs</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a57cae7352801b2e699ec5fa336340f3b" name="a57cae7352801b2e699ec5fa336340f3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57cae7352801b2e699ec5fa336340f3b">&#9670;&nbsp;</a></span>hsqs_trailing_bytes_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">size_t hsqs_trailing_bytes_size </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structHsqs.html">Hsqs</a> *&#160;</td>
-          <td class="paramname"><em>hsqs</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">struct <a class="el" href="structHsqsTrailingContext.html">HsqsTrailingContext</a> *&#160;</td>
+          <td class="paramname"><em>trailing_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

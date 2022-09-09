@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libhsqs<span id="projectnumber">&#160;ea13a72</span>
+   <div id="projectname">libhsqs<span id="projectnumber">&#160;3c75b10</span>
    </div>
   </td>
  </tr>
@@ -68,28 +68,30 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">mapper.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="utils_8h_source.html">../utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="canary__mapper_8h_source.html">canary_mapper.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="curl__mapper_8h_source.html">curl_mapper.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mmap__full__mapper_8h_source.html">mmap_full_mapper.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mmap__mapper_8h_source.html">mmap_mapper.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="static__mapper_8h_source.html">static_mapper.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mapper.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="mapper_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="mapper_8h__incl.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="mapper_8h__dep__incl.svg" width="662" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="mapper_8h__dep__incl.svg" width="662" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -104,12 +106,15 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHsqsMapper.html">HsqsMapper</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ad2b4a825897fd4c8fc0c0bc188604c22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mapper_8h.html#ad2b4a825897fd4c8fc0c0bc188604c22">MEMORY_MAPPER_H</a></td></tr>
+<tr class="separator:ad2b4a825897fd4c8fc0c0bc188604c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7bc18685c5c8db1350d80ba9393cc5a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mapper_8h.html#a7bc18685c5c8db1350d80ba9393cc5a0">hsqs_mapper_init_mmap</a> (struct <a class="el" href="structHsqsMapper.html">HsqsMapper</a> *mapper, const char *path)</td></tr>
-<tr class="separator:a7bc18685c5c8db1350d80ba9393cc5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ddecebadc01778305022d349738760c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mapper_8h.html#a1ddecebadc01778305022d349738760c">hsqs_mapper_init_static</a> (struct <a class="el" href="structHsqsMapper.html">HsqsMapper</a> *mapper, const uint8_t *input, size_t size)</td></tr>
-<tr class="separator:a1ddecebadc01778305022d349738760c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20ab5a6a0ae1076e1f953363a9c1d2d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mapper_8h.html#af20ab5a6a0ae1076e1f953363a9c1d2d">hsqs_mapper_init</a> (struct <a class="el" href="structHsqsMapper.html">HsqsMapper</a> *mapper, struct <a class="el" href="structHsqsMemoryMapperImpl.html">HsqsMemoryMapperImpl</a> *impl, const void *input, size_t size)</td></tr>
+<tr class="separator:af20ab5a6a0ae1076e1f953363a9c1d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa72b287ce8c025faf0b052f0850eac09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mapper_8h.html#aa72b287ce8c025faf0b052f0850eac09">hsqs_mapper_map</a> (struct <a class="el" href="structHsqsMapping.html">HsqsMapping</a> *mapping, struct <a class="el" href="structHsqsMapper.html">HsqsMapper</a> *mapper, <a class="el" href="utils_8h.html#ac9d3cd1bf9d3d83961e4ce6fdf929d33">hsqs_index_t</a> offset, size_t size)</td></tr>
 <tr class="separator:aa72b287ce8c025faf0b052f0850eac09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b117dd18fbcd67c5ae8d13d855eb6a0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mapper_8h.html#a3b117dd18fbcd67c5ae8d13d855eb6a0">hsqs_mapper_size</a> (const struct <a class="el" href="structHsqsMapper.html">HsqsMapper</a> *mapper)</td></tr>
@@ -124,12 +129,40 @@ Functions</h2></td></tr>
 <tr class="separator:a2b806e572a226f4b944ba3457e9515cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4eccc08804405cf74ce32ecfa7b06e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mapper_8h.html#ab4eccc08804405cf74ce32ecfa7b06e7">hsqs_mapping_unmap</a> (struct <a class="el" href="structHsqsMapping.html">HsqsMapping</a> *mapping)</td></tr>
 <tr class="separator:ab4eccc08804405cf74ce32ecfa7b06e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac598796409cb64a23d539f2cf8a72ea4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structHsqsMemoryMapperImpl.html">HsqsMemoryMapperImpl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mapper_8h.html#ac598796409cb64a23d539f2cf8a72ea4">hsqs_mapper_impl_static</a></td></tr>
+<tr class="separator:ac598796409cb64a23d539f2cf8a72ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0aa82bc3cc370df3c2dbb2368be0d7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structHsqsMemoryMapperImpl.html">HsqsMemoryMapperImpl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mapper_8h.html#a0d0aa82bc3cc370df3c2dbb2368be0d7">hsqs_mapper_impl_mmap_full</a></td></tr>
+<tr class="separator:a0d0aa82bc3cc370df3c2dbb2368be0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58339c7467455afcf23b6b3a850ce1d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structHsqsMemoryMapperImpl.html">HsqsMemoryMapperImpl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mapper_8h.html#ad58339c7467455afcf23b6b3a850ce1d">hsqs_mapper_impl_mmap</a></td></tr>
+<tr class="separator:ad58339c7467455afcf23b6b3a850ce1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ffb17587c7bd7e640404c89879398fc"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structHsqsMemoryMapperImpl.html">HsqsMemoryMapperImpl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mapper_8h.html#a9ffb17587c7bd7e640404c89879398fc">hsqs_mapper_impl_canary</a></td></tr>
+<tr class="separator:a9ffb17587c7bd7e640404c89879398fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Enno Boland (<a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'ebo'+'la'+'nd.'+'de'; return false;">mail@<span style="display: none;">.nosp@m.</span>ebol<span style="display: none;">.nosp@m.</span>and.d<span style="display: none;">.nosp@m.</span>e</a>) </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="mapper_8h_source.html">mapper.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ad2b4a825897fd4c8fc0c0bc188604c22" name="ad2b4a825897fd4c8fc0c0bc188604c22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2b4a825897fd4c8fc0c0bc188604c22">&#9670;&nbsp;</a></span>MEMORY_MAPPER_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEMORY_MAPPER_H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mapper_8h_source.html#l00049">49</a> of file <a class="el" href="mapper_8h_source.html">mapper.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="aecea8c20e3843e7bb5529e96e64a1a6d" name="aecea8c20e3843e7bb5529e96e64a1a6d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aecea8c20e3843e7bb5529e96e64a1a6d">&#9670;&nbsp;</a></span>hsqs_mapper_cleanup()</h2>
 
@@ -148,14 +181,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7bc18685c5c8db1350d80ba9393cc5a0" name="a7bc18685c5c8db1350d80ba9393cc5a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bc18685c5c8db1350d80ba9393cc5a0">&#9670;&nbsp;</a></span>hsqs_mapper_init_mmap()</h2>
+<a id="af20ab5a6a0ae1076e1f953363a9c1d2d" name="af20ab5a6a0ae1076e1f953363a9c1d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af20ab5a6a0ae1076e1f953363a9c1d2d">&#9670;&nbsp;</a></span>hsqs_mapper_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int hsqs_mapper_init_mmap </td>
+          <td class="memname">int hsqs_mapper_init </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structHsqsMapper.html">HsqsMapper</a> *&#160;</td>
           <td class="paramname"><em>mapper</em>, </td>
@@ -163,35 +196,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>path</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1ddecebadc01778305022d349738760c" name="a1ddecebadc01778305022d349738760c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ddecebadc01778305022d349738760c">&#9670;&nbsp;</a></span>hsqs_mapper_init_static()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int hsqs_mapper_init_static </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structHsqsMapper.html">HsqsMapper</a> *&#160;</td>
-          <td class="paramname"><em>mapper</em>, </td>
+          <td class="paramtype">struct <a class="el" href="structHsqsMemoryMapperImpl.html">HsqsMemoryMapperImpl</a> *&#160;</td>
+          <td class="paramname"><em>impl</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -346,6 +357,95 @@ Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a9ffb17587c7bd7e640404c89879398fc" name="a9ffb17587c7bd7e640404c89879398fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ffb17587c7bd7e640404c89879398fc">&#9670;&nbsp;</a></span>hsqs_mapper_impl_canary</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structHsqsMemoryMapperImpl.html">HsqsMemoryMapperImpl</a> hsqs_mapper_impl_canary</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad58339c7467455afcf23b6b3a850ce1d" name="ad58339c7467455afcf23b6b3a850ce1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad58339c7467455afcf23b6b3a850ce1d">&#9670;&nbsp;</a></span>hsqs_mapper_impl_mmap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structHsqsMemoryMapperImpl.html">HsqsMemoryMapperImpl</a> hsqs_mapper_impl_mmap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d0aa82bc3cc370df3c2dbb2368be0d7" name="a0d0aa82bc3cc370df3c2dbb2368be0d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d0aa82bc3cc370df3c2dbb2368be0d7">&#9670;&nbsp;</a></span>hsqs_mapper_impl_mmap_full</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structHsqsMemoryMapperImpl.html">HsqsMemoryMapperImpl</a> hsqs_mapper_impl_mmap_full</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac598796409cb64a23d539f2cf8a72ea4" name="ac598796409cb64a23d539f2cf8a72ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac598796409cb64a23d539f2cf8a72ea4">&#9670;&nbsp;</a></span>hsqs_mapper_impl_static</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structHsqsMemoryMapperImpl.html">HsqsMemoryMapperImpl</a> hsqs_mapper_impl_static</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

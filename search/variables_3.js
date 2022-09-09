@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['data_0',['data',['../structHsqsCanaryMapper.html#a19ddf1cb2aac7367c423b1be5150de9f',1,'HsqsCanaryMapper::data()'],['../structHsqsCanaryMap.html#a547e0f0790b2e4b848eec0240e927db0',1,'HsqsCanaryMap::data()'],['../structHsqsMapping.html#a1bf5eff45031ff57d0e4cbbb8108eb78',1,'HsqsMapping::data()'],['../structHsqsMapper.html#ac17ce63c8abc807da3d0c76901152136',1,'HsqsMapper::data()'],['../structHsqsMmapFullMapper.html#a62f60cb2ccfcc18682577166309fbb87',1,'HsqsMmapFullMapper::data()'],['../structHsqsMmapFullMap.html#a59cb3df450868acb6ed392ebb26cba87',1,'HsqsMmapFullMap::data()'],['../structHsqsMmapMap.html#a0a94287936921f21bc5b4df7c3f347ec',1,'HsqsMmapMap::data()'],['../structHsqsStaticMapper.html#a4b5a94b9428e0107013c01d49386e024',1,'HsqsStaticMapper::data()'],['../structHsqsStaticMap.html#a4b21d75ba12686bbaf3efa4780fa1868',1,'HsqsStaticMap::data()'],['../structHsqsBuffer.html#ae7a48769079cf8a463e54492935c158c',1,'HsqsBuffer::data()']]],
-  ['directory_1',['directory',['../structHsqsDirectoryIterator.html#a1547817dd16db6ac86ada5d82f02ebe1',1,'HsqsDirectoryIterator']]],
-  ['dtor_2',['dtor',['../structHsqsRefCount.html#a143eb9572886ddae36da05d68d0b6287',1,'HsqsRefCount']]]
+  ['element_5fcount_0',['element_count',['../structHsqsTable.html#a793238e093229ec69145574c3009ab80',1,'HsqsTable']]],
+  ['element_5fsize_1',['element_size',['../structHsqsTable.html#a07b04220b7cda731bd0266ea7b6bdacf',1,'HsqsTable']]],
+  ['error_2',['error',['../structHsqs.html#a49917f08eddd9152415179a755dd18ba',1,'Hsqs']]],
+  ['expected_5fsize_3',['expected_size',['../structHsqsCurlMapper.html#a5c871a51eec1f7b0db26b5c8fdfb6436',1,'HsqsCurlMapper']]],
+  ['expected_5ftime_4',['expected_time',['../structHsqsCurlMapper.html#a1adb0e3961cd9b426a87bb53b22548de',1,'HsqsCurlMapper']]],
+  ['export_5ftable_5',['export_table',['../structHsqs.html#aa9e8b29f9f2d53bf53f1aea041ef63eb',1,'Hsqs']]],
+  ['extract_6',['extract',['../structHsqsCompressionImplementation.html#ac48fefb77a58973f555a8ef422b4b4bd',1,'HsqsCompressionImplementation']]]
 ];

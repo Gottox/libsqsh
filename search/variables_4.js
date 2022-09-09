@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['element_5fcount_0',['element_count',['../structHsqsTable.html#a793238e093229ec69145574c3009ab80',1,'HsqsTable']]],
-  ['element_5fsize_1',['element_size',['../structHsqsTable.html#a07b04220b7cda731bd0266ea7b6bdacf',1,'HsqsTable']]],
-  ['entries_2',['entries',['../structHsqsLruHashmap.html#a8d2ea2f13df193df1c2f40b81524d46c',1,'HsqsLruHashmap']]],
-  ['error_3',['error',['../structHsqs.html#a49917f08eddd9152415179a755dd18ba',1,'Hsqs']]],
-  ['expected_5fsize_4',['expected_size',['../structHsqsCurlMapper.html#a5c871a51eec1f7b0db26b5c8fdfb6436',1,'HsqsCurlMapper']]],
-  ['expected_5ftime_5',['expected_time',['../structHsqsCurlMapper.html#a1adb0e3961cd9b426a87bb53b22548de',1,'HsqsCurlMapper']]],
-  ['export_5ftable_6',['export_table',['../structHsqs.html#aa9e8b29f9f2d53bf53f1aea041ef63eb',1,'Hsqs']]],
-  ['extract_7',['extract',['../structHsqsCompressionImplementation.html#ac48fefb77a58973f555a8ef422b4b4bd',1,'HsqsCompressionImplementation']]]
+  ['fd_0',['fd',['../structHsqsMmapMapper.html#a3570dd745e9e989fab16d37e3102c94b',1,'HsqsMmapMapper']]],
+  ['file_5ftime_1',['file_time',['../structHsqsCurlMap.html#ae333f196e88501cf65c960181a0b336f',1,'HsqsCurlMap']]],
+  ['fragment_5ftable_2',['fragment_table',['../structHsqsFileContext.html#aeecef03a6664925fe7c1b1f1e6a8b41a',1,'HsqsFileContext::fragment_table()'],['../structHsqs.html#a868ab28de4fec254cd42764c96375bb8',1,'Hsqs::fragment_table()']]],
+  ['fragments_3',['fragments',['../structHsqsDirectoryIterator.html#ad642bc2d70d9ce50355a8392c0a6d8c3',1,'HsqsDirectoryIterator']]]
 ];

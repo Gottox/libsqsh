@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['page_5foffset_0',['page_offset',['../structHsqsMmapMap.html#ae248b1142b7d8f78cdc307eefdf42af7',1,'HsqsMmapMap']]],
-  ['page_5fsize_1',['page_size',['../structHsqsMmapMapper.html#a8269a91e672f91dafc7e52929ca40af1',1,'HsqsMmapMapper']]],
-  ['pointer_2',['pointer',['../structHsqsLruEntry.html#a3b975cf77fa2baf3dd2b802f562d2878',1,'HsqsLruEntry']]]
+  ['remaining_5fentries_0',['remaining_entries',['../structHsqsInodeDirectoryIndexIterator.html#a70f18437985c239a2bc3dff4b5a845da',1,'HsqsInodeDirectoryIndexIterator::remaining_entries()'],['../structHsqsDirectoryIterator.html#a5f7b765c6dc04898ceabf81a6e274b6e',1,'HsqsDirectoryIterator::remaining_entries()'],['../structHsqsXattrIterator.html#ac1a8ca46a3521c0987e1c092a67d3004',1,'HsqsXattrIterator::remaining_entries()']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_5foffset_0',['value_offset',['../structHsqsXattrIterator.html#ad89e2452973d08bf831dcf12fe5e6232',1,'HsqsXattrIterator']]]
+  ['xattr_5ftable_0',['xattr_table',['../structHsqs.html#abecc0c5aaa13bcfdac5b7ad61d057ce2',1,'Hsqs']]]
 ];

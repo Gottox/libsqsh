@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['newer_0',['newer',['../structHsqsLruEntry.html#a03265aa8ac7690dbf5c6a0cbb50e9eee',1,'HsqsLruEntry']]],
-  ['newest_1',['newest',['../structHsqsLruHashmap.html#ac801a067aff15fa029d5f1122e1f7ee6',1,'HsqsLruHashmap']]],
-  ['next_5foffset_2',['next_offset',['../structHsqsInodeDirectoryIndexIterator.html#a6a6c25ce36f45105f747ca029ccb6883',1,'HsqsInodeDirectoryIndexIterator::next_offset()'],['../structHsqsDirectoryIterator.html#ac43a0d42bd6d3a6f5a53bac0539be9f9',1,'HsqsDirectoryIterator::next_offset()'],['../structHsqsXattrIterator.html#a2bfb0b05b24b8841b2e6f56de5bdf730',1,'HsqsXattrIterator::next_offset()']]]
+  ['offset_0',['offset',['../structHsqsCanaryMap.html#a3f90d80b2e43a44810db8d9b0dd18d11',1,'HsqsCanaryMap::offset()'],['../structHsqsCurlMap.html#a243065e07fb0e188325f166c904b3970',1,'HsqsCurlMap::offset()'],['../structHsqsMmapMap.html#aaab0fa04645e513678723dacee7bf8ed',1,'HsqsMmapMap::offset()']]],
+  ['out_5fof_5fline_5fvalue_1',['out_of_line_value',['../structHsqsXattrIterator.html#a09a2f979d73b456915bc9693e3ab39b6',1,'HsqsXattrIterator']]]
 ];

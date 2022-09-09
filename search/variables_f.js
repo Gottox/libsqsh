@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['seek_5fpos_0',['seek_pos',['../structHsqsFileContext.html#af41b9e9ca6ceb0b2dc11b9b098883b83',1,'HsqsFileContext']]],
-  ['size_1',['size',['../structHsqsDirectoryIterator.html#a5a550c274334c7cfa0fbc58ff8aad323',1,'HsqsDirectoryIterator::size()'],['../structHsqsLruHashmap.html#a75c82103c15b27fb08436dc3c3b6f80e',1,'HsqsLruHashmap::size()'],['../structHsqsCowMapping.html#afa9cbee64294a25f630216fd53458edd',1,'HsqsCowMapping::size()'],['../structHsqsBuffer.html#ae3eed52005ed2fa7140b14c491240034',1,'HsqsBuffer::size()'],['../structHsqsStaticMap.html#afd02f90c2f5a13a24fb43f4e59e88251',1,'HsqsStaticMap::size()'],['../structHsqsStaticMapper.html#a32898d54ffee202d2faa4e0399fccf15',1,'HsqsStaticMapper::size()'],['../structHsqsMmapMap.html#ac269c13c6a07f50b025cda9fca60e2ee',1,'HsqsMmapMap::size()'],['../structHsqsMmapMapper.html#a35cae6ebcb1e942e177f7d55b440e114',1,'HsqsMmapMapper::size()'],['../structHsqsMmapFullMap.html#a6cbcdd1e2c8e56876f5556bf27013aed',1,'HsqsMmapFullMap::size()'],['../structHsqsMmapFullMapper.html#aeb9de50644cd69b905fe46b2335e541c',1,'HsqsMmapFullMapper::size()'],['../structHsqsMemoryMapperImpl.html#adf3b1a0b9b0c209f37e984b8699936eb',1,'HsqsMemoryMapperImpl::size()'],['../structHsqsCanaryMap.html#aeb49a9e055c91cf5ce40e86c1d29d6c6',1,'HsqsCanaryMap::size()'],['../structHsqsCanaryMapper.html#abe50e4644600ab7df2bea1a5567e4612',1,'HsqsCanaryMapper::size()']]],
-  ['sm_2',['sm',['../structHsqsMapping.html#a5ec7c23d52a627ff41b267f7ec5bd093',1,'HsqsMapping::sm()'],['../structHsqsMapper.html#afedd674d3e8fb34a34f2db20fcea9f05',1,'HsqsMapper::sm()']]],
-  ['start_5fblock_3',['start_block',['../structHsqsTable.html#aac176e1870c56b273c9c7f196a1aa01e',1,'HsqsTable']]],
-  ['state_4',['state',['../structHsqsCow.html#ab346865c652abb60fcec9828081e882f',1,'HsqsCow']]],
-  ['superblock_5',['superblock',['../structHsqsSuperblockContext.html#adaf7b77b3a4db0bde2da534fa5a73bb7',1,'HsqsSuperblockContext::superblock()'],['../structHsqs.html#a481f091c2664aa17b908eedb6c1a56c3',1,'Hsqs::superblock()'],['../structHsqsFragmentTable.html#a419c88df0fb73c3497da57fad0c9a63a',1,'HsqsFragmentTable::superblock()']]]
+  ['table_0',['table',['../structHsqsFragmentTable.html#a35717253f20fd9b65ce1a3f8be5ac41e',1,'HsqsFragmentTable::table()'],['../structHsqsXattrTable.html#af22bda641abb168d991c0ef88aa459f4',1,'HsqsXattrTable::table()']]],
+  ['table_5fmap_1',['table_map',['../structHsqs.html#afc023ffdeb7ec9188a1e1edb2f747739',1,'Hsqs']]],
+  ['table_5fmapper_2',['table_mapper',['../structHsqs.html#a823dc81fdff5c216ad9d015b995359d5',1,'Hsqs']]],
+  ['total_5fsize_3',['total_size',['../structHsqsCurlMap.html#a0cebcbeacf16f0bd9ff69ae9c1d2e3ea',1,'HsqsCurlMap']]]
 ];
