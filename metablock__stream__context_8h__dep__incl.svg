@@ -87,9 +87,9 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="hsqs_8h.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="sqsh_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="393.5,-56.5 393.5,-75.5 455.5,-75.5 455.5,-56.5 393.5,-56.5"/>
-<text text-anchor="middle" x="424.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">hsqs.h</text>
+<text text-anchor="middle" x="424.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh.h</text>
 </a>
 </g>
 </g>

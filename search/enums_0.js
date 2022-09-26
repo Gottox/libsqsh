@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['hsqserror_0',['HsqsError',['../error_8h.html#a92ce17e1bdfdb3fcbe971a85f9e382e5',1,'error.h']]],
-  ['hsqsinodecontexttype_1',['HsqsInodeContextType',['../inode__context_8h.html#a8ae48b04748a7d46e121218dbd1e4de4',1,'inode_context.h']]],
-  ['hsqsinodetype_2',['HsqsInodeType',['../inode_8h.html#aea0f3ab32d1a71ce47f1af5e624e1f3f',1,'inode.h']]],
-  ['hsqssuperblockcompressionid_3',['HsqsSuperblockCompressionId',['../superblock_8h.html#acdb1de2f706478b9a6853208e18e474c',1,'superblock.h']]],
-  ['hsqssuperblockflags_4',['HsqsSuperblockFlags',['../superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713',1,'superblock.h']]],
-  ['hsqsxattrtype_5',['HsqsXattrType',['../xattr_8h.html#ae1c932aeb93990fb0f5442180937d26c',1,'xattr.h']]]
+  ['sqsherror_0',['SqshError',['../error_8h.html#ac92b5f178c51aef07c08a63847b6d3cc',1,'error.h']]],
+  ['sqshinodecontexttype_1',['SqshInodeContextType',['../inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8',1,'inode_context.h']]],
+  ['sqshinodetype_2',['SqshInodeType',['../inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57',1,'inode.h']]],
+  ['sqshsuperblockcompressionid_3',['SqshSuperblockCompressionId',['../superblock_8h.html#ae0979c00d3e768637a9a10f31b95594a',1,'superblock.h']]],
+  ['sqshsuperblockflags_4',['SqshSuperblockFlags',['../superblock_8h.html#af646f88052c2cec402c25f13e9497c91',1,'superblock.h']]],
+  ['sqshxattrtype_5',['SqshXattrType',['../xattr_8h.html#af6aa1115a96a68fa5f4417984e12b923',1,'xattr.h']]]
 ];

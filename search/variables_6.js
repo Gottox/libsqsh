@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['id_5ftable_0',['id_table',['../structHsqs.html#a2621f27d63317f86a3fdcbc77c539ea9',1,'Hsqs']]],
-  ['impl_1',['impl',['../structHsqsCompression.html#a082cf2f7738b83cf715e5bc2387d29ff',1,'HsqsCompression::impl()'],['../structHsqsMapper.html#a45b8b1939b4a251a9fcfe551c5577002',1,'HsqsMapper::impl()']]],
-  ['init_2',['init',['../structHsqsMemoryMapperImpl.html#ac387032a8dadb359f96d3a9c4e2ba1e4',1,'HsqsMemoryMapperImpl']]],
-  ['initialized_3',['initialized',['../structHsqs.html#a815d666f9aa55251f6ef2e7b8f919d1f',1,'Hsqs']]],
-  ['inode_4',['inode',['../structHsqsFileContext.html#a00d08712a86798f9e629bfb18ac03cf5',1,'HsqsFileContext::inode()'],['../structHsqsInodeDirectoryIndexIterator.html#a18f370b140cb1845b36b108bb8b13908',1,'HsqsInodeDirectoryIndexIterator::inode()'],['../structHsqsDirectoryIterator.html#aea31a4cc051f6a8fdfafd97b50b53630',1,'HsqsDirectoryIterator::inode()']]]
+  ['id_5ftable_0',['id_table',['../structSqsh.html#a81ce967514937685b2aec2dfd622651d',1,'Sqsh']]],
+  ['impl_1',['impl',['../structSqshCompression.html#af02d7a6d9ee6fa2edd6a8a2059e49a7a',1,'SqshCompression::impl()'],['../structSqshMapper.html#a9fcefb521d85cc596e240f99599392ca',1,'SqshMapper::impl()']]],
+  ['init_2',['init',['../structSqshMemoryMapperImpl.html#a299a6cd6962e52bfc0972f3ffe3b00e6',1,'SqshMemoryMapperImpl']]],
+  ['initialized_3',['initialized',['../structSqsh.html#af59fbe1713512d659d11c35630c73dac',1,'Sqsh']]],
+  ['inode_4',['inode',['../structSqshFileContext.html#a31e65206b07522cfa72eb65821939952',1,'SqshFileContext::inode()'],['../structSqshInodeDirectoryIndexIterator.html#abe220a211b2197e91bce51d6df32d945',1,'SqshInodeDirectoryIndexIterator::inode()'],['../structSqshDirectoryIterator.html#a261017bb959c247f6ce6fa8533c785e5',1,'SqshDirectoryIterator::inode()']]]
 ];

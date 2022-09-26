@@ -1,8 +1,0 @@
-<map id="HsqsMapper" name="HsqsMapper">
-<area shape="rect" id="node1" title=" " alt="" coords="327,107,449,133"/>
-<area shape="rect" id="node2" href="$structHsqsMemoryMapperImpl.html" title=" " alt="" coords="5,5,228,32"/>
-<area shape="rect" id="node3" href="$structHsqsMmapFullMapper.html" title=" " alt="" coords="15,56,218,83"/>
-<area shape="rect" id="node4" href="$structHsqsMmapMapper.html" title=" " alt="" coords="35,107,198,133"/>
-<area shape="rect" id="node5" href="$structHsqsStaticMapper.html" title=" " alt="" coords="25,157,208,184"/>
-<area shape="rect" id="node6" href="$structHsqsCanaryMapper.html" title=" " alt="" coords="25,208,208,235"/>
-</map>

@@ -21,9 +21,9 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="hsqs_8h.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="sqsh_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="593,-291.5 593,-310.5 707,-310.5 707,-291.5 593,-291.5"/>
-<text text-anchor="middle" x="650" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">../src/hsqs.h</text>
+<text text-anchor="middle" x="650" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">../src/sqsh.h</text>
 </a>
 </g>
 </g>

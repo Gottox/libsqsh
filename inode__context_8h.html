@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libhsqs: inode_context.h File Reference</title>
+<title>libsqsh: inode_context.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libhsqs<span id="projectnumber">&#160;e6d9b87</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;6134df8</span>
    </div>
   </td>
  </tr>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3a0534501ca4be4079425efd3c8ffab8.html">__w</a></li><li class="navelem"><a class="el" href="dir_59cf639e60a00e737c8a7b5f377f3f3f.html">libhsqs</a></li><li class="navelem"><a class="el" href="dir_37940ec95c8f6aadf475035c5c6af1d9.html">libhsqs</a></li><li class="navelem"><a class="el" href="dir_2fb9c6c25182fa91851a94c48bb8ff5e.html">src</a></li><li class="navelem"><a class="el" href="dir_215e0a207a1ce4f86ca69a810771b68c.html">context</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3a0534501ca4be4079425efd3c8ffab8.html">__w</a></li><li class="navelem"><a class="el" href="dir_bf5a6642e4a2ec8691d45172aa2efe79.html">libsqsh</a></li><li class="navelem"><a class="el" href="dir_7bea8aa7adab50784d6c0b22b0dd2031.html">libsqsh</a></li><li class="navelem"><a class="el" href="dir_4444a2805dd47f54c48baa085de65586.html">src</a></li><li class="navelem"><a class="el" href="dir_96dbfe7dd99a9efcae498b2c6b3f22c1.html">context</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -95,7 +95,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html">SqshInodeContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -107,84 +107,84 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a8ae48b04748a7d46e121218dbd1e4de4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a8ae48b04748a7d46e121218dbd1e4de4">HsqsInodeContextType</a> { <br />
-&#160;&#160;<a class="el" href="inode__context_8h.html#a8ae48b04748a7d46e121218dbd1e4de4aa9df66923395564cb8f2ccd29b44d79d">HSQS_INODE_TYPE_UNKNOWN</a> = -1
-, <a class="el" href="inode__context_8h.html#a8ae48b04748a7d46e121218dbd1e4de4a091b220599caa8403bab94bf5b6e55e2">HSQS_INODE_TYPE_DIRECTORY</a> = 1 + (1 &lt;&lt; 8)
-, <a class="el" href="inode__context_8h.html#a8ae48b04748a7d46e121218dbd1e4de4a514a5eec1607766cde7d654520a54b22">HSQS_INODE_TYPE_FILE</a>
-, <a class="el" href="inode__context_8h.html#a8ae48b04748a7d46e121218dbd1e4de4a18d0b1acdae81bb305d6926c082660b1">HSQS_INODE_TYPE_SYMLINK</a>
+<tr class="memitem:af7711c22c1031b0b2f4ceaabb5b4e5e8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8">SqshInodeContextType</a> { <br />
+&#160;&#160;<a class="el" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8aa9df66923395564cb8f2ccd29b44d79d">HSQS_INODE_TYPE_UNKNOWN</a> = -1
+, <a class="el" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8a091b220599caa8403bab94bf5b6e55e2">HSQS_INODE_TYPE_DIRECTORY</a> = 1 + (1 &lt;&lt; 8)
+, <a class="el" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8a514a5eec1607766cde7d654520a54b22">HSQS_INODE_TYPE_FILE</a>
+, <a class="el" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8a18d0b1acdae81bb305d6926c082660b1">HSQS_INODE_TYPE_SYMLINK</a>
 , <br />
-&#160;&#160;<a class="el" href="inode__context_8h.html#a8ae48b04748a7d46e121218dbd1e4de4a5a3c952b5b11c6a70685328e34ab6f56">HSQS_INODE_TYPE_BLOCK</a>
-, <a class="el" href="inode__context_8h.html#a8ae48b04748a7d46e121218dbd1e4de4aea2beb72d0c7df306ed61387abdb5561">HSQS_INODE_TYPE_CHAR</a>
-, <a class="el" href="inode__context_8h.html#a8ae48b04748a7d46e121218dbd1e4de4a6f9b5a7e76e9c806d7a23c5c3cab1f56">HSQS_INODE_TYPE_FIFO</a>
-, <a class="el" href="inode__context_8h.html#a8ae48b04748a7d46e121218dbd1e4de4adeb45f219ead6f118a476c8ea10dd244">HSQS_INODE_TYPE_SOCKET</a>
+&#160;&#160;<a class="el" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8a5a3c952b5b11c6a70685328e34ab6f56">HSQS_INODE_TYPE_BLOCK</a>
+, <a class="el" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8aea2beb72d0c7df306ed61387abdb5561">HSQS_INODE_TYPE_CHAR</a>
+, <a class="el" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8a6f9b5a7e76e9c806d7a23c5c3cab1f56">HSQS_INODE_TYPE_FIFO</a>
+, <a class="el" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8adeb45f219ead6f118a476c8ea10dd244">HSQS_INODE_TYPE_SOCKET</a>
 <br />
  }</td></tr>
-<tr class="separator:a8ae48b04748a7d46e121218dbd1e4de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af7711c22c1031b0b2f4ceaabb5b4e5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1fb34c4572a467b7b8ec829cac281b45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a1fb34c4572a467b7b8ec829cac281b45">hsqs_inode_load_by_ref</a> (struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context, struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs, uint64_t inode_ref)</td></tr>
-<tr class="separator:a1fb34c4572a467b7b8ec829cac281b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada2d714e63b6df9b10a1a5a0ea09ec18"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#ada2d714e63b6df9b10a1a5a0ea09ec18">hsqs_inode_load_root</a> (struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context, struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs)</td></tr>
-<tr class="separator:ada2d714e63b6df9b10a1a5a0ea09ec18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ed996aa438c512f1aec61113f93746c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a5ed996aa438c512f1aec61113f93746c">hsqs_inode_load_by_inode_number</a> (struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context, struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs, uint64_t inode_number)</td></tr>
-<tr class="separator:a5ed996aa438c512f1aec61113f93746c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb8a894998a67eb1787bf641e5c0634f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#afb8a894998a67eb1787bf641e5c0634f">hsqs_inode_load_by_path</a> (struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context, struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs, const char *path)</td></tr>
-<tr class="separator:afb8a894998a67eb1787bf641e5c0634f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38b9adb7e5c0b572339437a40972f7bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a38b9adb7e5c0b572339437a40972f7bb">hsqs_inode_is_extended</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a38b9adb7e5c0b572339437a40972f7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01e096d85361ede2c69a39f5d81843c8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a01e096d85361ede2c69a39f5d81843c8">hsqs_inode_hard_link_count</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a01e096d85361ede2c69a39f5d81843c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f5d60a9777b7bd1e709dd82118ed41"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#ae6f5d60a9777b7bd1e709dd82118ed41">hsqs_inode_file_size</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:ae6f5d60a9777b7bd1e709dd82118ed41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c983188b914769e92f123bf07f07bfc"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a5c983188b914769e92f123bf07f07bfc">hsqs_inode_permission</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a5c983188b914769e92f123bf07f07bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a358b05f3dbc1a1917afc2a7d8610186c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a358b05f3dbc1a1917afc2a7d8610186c">hsqs_inode_number</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a358b05f3dbc1a1917afc2a7d8610186c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65885baaf5efd1b26f4879a5a3532b6f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a65885baaf5efd1b26f4879a5a3532b6f">hsqs_inode_modified_time</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a65885baaf5efd1b26f4879a5a3532b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17c4110f5a325ea8cd8bacbf8ff03ea8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a17c4110f5a325ea8cd8bacbf8ff03ea8">hsqs_inode_file_blocks_start</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a17c4110f5a325ea8cd8bacbf8ff03ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef803cbec84ebb009a9d8a4177ad1d25"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#aef803cbec84ebb009a9d8a4177ad1d25">hsqs_inode_file_block_count</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:aef803cbec84ebb009a9d8a4177ad1d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a981f3ca6c0e9b3974c28a5a11ddd6a39"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a981f3ca6c0e9b3974c28a5a11ddd6a39">hsqs_inode_file_block_size</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context, uint32_t index)</td></tr>
-<tr class="separator:a981f3ca6c0e9b3974c28a5a11ddd6a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a807f4d1f254163adf5b57571e26c2364"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a807f4d1f254163adf5b57571e26c2364">hsqs_inode_file_block_is_compressed</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context, int index)</td></tr>
-<tr class="separator:a807f4d1f254163adf5b57571e26c2364"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a414f14493e135b372d2b46e1f0836592"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a414f14493e135b372d2b46e1f0836592">hsqs_inode_file_fragment_block_index</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a414f14493e135b372d2b46e1f0836592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e8fb4bcb0213ff3e5065690f78c95d1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a5e8fb4bcb0213ff3e5065690f78c95d1">hsqs_inode_file_fragment_block_offset</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a5e8fb4bcb0213ff3e5065690f78c95d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8f0cf6f91db9f96a80b75eaa3700252"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#aa8f0cf6f91db9f96a80b75eaa3700252">hsqs_inode_directory_block_start</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:aa8f0cf6f91db9f96a80b75eaa3700252"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a689f7ef610eb82385245110c850ceb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a9a689f7ef610eb82385245110c850ceb">hsqs_inode_directory_block_offset</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a9a689f7ef610eb82385245110c850ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a311b8299fe31fd4b35ab98599de3427f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a311b8299fe31fd4b35ab98599de3427f">hsqs_inode_file_has_fragment</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a311b8299fe31fd4b35ab98599de3427f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a959a8c0ce179962a7b9b7374e8c6d275"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="inode__context_8h.html#a8ae48b04748a7d46e121218dbd1e4de4">HsqsInodeContextType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a959a8c0ce179962a7b9b7374e8c6d275">hsqs_inode_type</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a959a8c0ce179962a7b9b7374e8c6d275"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fcb9e1bf515dffda812221b3606eaf2"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a8fcb9e1bf515dffda812221b3606eaf2">hsqs_inode_symlink</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a8fcb9e1bf515dffda812221b3606eaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac62efbb44c04dced0787e1a22c6c1d77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#ac62efbb44c04dced0787e1a22c6c1d77">hsqs_inode_symlink_dup</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context, char **namebuffer)</td></tr>
-<tr class="separator:ac62efbb44c04dced0787e1a22c6c1d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3853d63e5ab70e0c80b4114bb7104c59"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a3853d63e5ab70e0c80b4114bb7104c59">hsqs_inode_symlink_size</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a3853d63e5ab70e0c80b4114bb7104c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55486b8186297e9a609d22595e2d3659"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a55486b8186297e9a609d22595e2d3659">hsqs_inode_device_id</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a55486b8186297e9a609d22595e2d3659"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3050a848f7f47b1bde9e4ef73fa7dde"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#ae3050a848f7f47b1bde9e4ef73fa7dde">hsqs_inode_uid</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:ae3050a848f7f47b1bde9e4ef73fa7dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac93b5419aa4395d246ffd716b726c55b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#ac93b5419aa4395d246ffd716b726c55b">hsqs_inode_gid</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:ac93b5419aa4395d246ffd716b726c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8de7cb3e14bf5c4b71c841e2196b391d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a8de7cb3e14bf5c4b71c841e2196b391d">hsqs_inode_xattr_index</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a8de7cb3e14bf5c4b71c841e2196b391d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8c443bd9462b8a270dd1298d6bbdbe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#ae8c443bd9462b8a270dd1298d6bbdbe1">hsqs_inode_xattr_iterator</a> (const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context, struct <a class="el" href="structHsqsXattrIterator.html">HsqsXattrIterator</a> *iterator)</td></tr>
-<tr class="separator:ae8c443bd9462b8a270dd1298d6bbdbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e5607e5f75426c1fb81f55021908ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a47e5607e5f75426c1fb81f55021908ad">hsqs_inode_cleanup</a> (struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *context)</td></tr>
-<tr class="separator:a47e5607e5f75426c1fb81f55021908ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dc6344bbce77a3cc0f345ca4604d6d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a2dc6344bbce77a3cc0f345ca4604d6d5">hsqs_inode_ref_to_block</a> (uint64_t ref, uint32_t *block_index, uint16_t *offset)</td></tr>
-<tr class="separator:a2dc6344bbce77a3cc0f345ca4604d6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62a0ce18a4ed83b77b6fe7605a4b2eed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a62a0ce18a4ed83b77b6fe7605a4b2eed">hsqs_inode_ref_from_block</a> (uint32_t block_index, uint16_t offset)</td></tr>
-<tr class="separator:a62a0ce18a4ed83b77b6fe7605a4b2eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d2ab637700788f0757c7c724e130a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a53d2ab637700788f0757c7c724e130a1">sqsh_inode_load_by_ref</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, uint64_t inode_ref)</td></tr>
+<tr class="separator:a53d2ab637700788f0757c7c724e130a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f7a583ba392185460f0856a52abbe9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#af5f7a583ba392185460f0856a52abbe9">sqsh_inode_load_root</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
+<tr class="separator:af5f7a583ba392185460f0856a52abbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9293009a4fa98df26f9c1bf7acf3f118"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a9293009a4fa98df26f9c1bf7acf3f118">sqsh_inode_load_by_inode_number</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, uint64_t inode_number)</td></tr>
+<tr class="separator:a9293009a4fa98df26f9c1bf7acf3f118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6949bc82cfd67cce327d803e9421c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a5f6949bc82cfd67cce327d803e9421c4">sqsh_inode_load_by_path</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, const char *path)</td></tr>
+<tr class="separator:a5f6949bc82cfd67cce327d803e9421c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500d7c81ba63211aa7cfeedaf84cf9e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a500d7c81ba63211aa7cfeedaf84cf9e5">sqsh_inode_is_extended</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a500d7c81ba63211aa7cfeedaf84cf9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3ba76172886a29e05647a81738cf68"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a4d3ba76172886a29e05647a81738cf68">sqsh_inode_hard_link_count</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a4d3ba76172886a29e05647a81738cf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a02fa321fe0ef692244fac11ce0619"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a65a02fa321fe0ef692244fac11ce0619">sqsh_inode_file_size</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a65a02fa321fe0ef692244fac11ce0619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92c03cf2daeb9f2ff105c76111d6d7d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#aa92c03cf2daeb9f2ff105c76111d6d7d">sqsh_inode_permission</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:aa92c03cf2daeb9f2ff105c76111d6d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a274b746c4bf0eecd53a3763634caf913"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a274b746c4bf0eecd53a3763634caf913">sqsh_inode_number</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a274b746c4bf0eecd53a3763634caf913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb1cdc2355a9025f565fe3a7eecf9cf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#accb1cdc2355a9025f565fe3a7eecf9cf">sqsh_inode_modified_time</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:accb1cdc2355a9025f565fe3a7eecf9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d38b7e83e18df45ef3e82974c303bf8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a7d38b7e83e18df45ef3e82974c303bf8">sqsh_inode_file_blocks_start</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a7d38b7e83e18df45ef3e82974c303bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ffe778ba463b3762e2a9b8ea0a79a76"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a4ffe778ba463b3762e2a9b8ea0a79a76">sqsh_inode_file_block_count</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a4ffe778ba463b3762e2a9b8ea0a79a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9057c87a2211679eaba98e3d5181553a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a9057c87a2211679eaba98e3d5181553a">sqsh_inode_file_block_size</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, uint32_t index)</td></tr>
+<tr class="separator:a9057c87a2211679eaba98e3d5181553a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22269b2253f21b9b1abe8ac0533afc35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a22269b2253f21b9b1abe8ac0533afc35">sqsh_inode_file_block_is_compressed</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, int index)</td></tr>
+<tr class="separator:a22269b2253f21b9b1abe8ac0533afc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a822992cd698fbfa15eb0f90d198d4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a18a822992cd698fbfa15eb0f90d198d4">sqsh_inode_file_fragment_block_index</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a18a822992cd698fbfa15eb0f90d198d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b31ee738cf0460a8e62b78e320205f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a59b31ee738cf0460a8e62b78e320205f">sqsh_inode_file_fragment_block_offset</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a59b31ee738cf0460a8e62b78e320205f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11cebd31657937a9ec33bb3c257876eb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a11cebd31657937a9ec33bb3c257876eb">sqsh_inode_directory_block_start</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a11cebd31657937a9ec33bb3c257876eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998c42107b605d76a6de5a677fba22e9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a998c42107b605d76a6de5a677fba22e9">sqsh_inode_directory_block_offset</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a998c42107b605d76a6de5a677fba22e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a87085481a46481fa7d0abac831050"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#af9a87085481a46481fa7d0abac831050">sqsh_inode_file_has_fragment</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:af9a87085481a46481fa7d0abac831050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71eb3071def41c76320b575f8da5df1d"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8">SqshInodeContextType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a71eb3071def41c76320b575f8da5df1d">sqsh_inode_type</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a71eb3071def41c76320b575f8da5df1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a232a93cdc03ad5ed3c8c45627fb560a9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a232a93cdc03ad5ed3c8c45627fb560a9">sqsh_inode_symlink</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a232a93cdc03ad5ed3c8c45627fb560a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a15e527ea357f22d62f5104d05336cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a6a15e527ea357f22d62f5104d05336cd">sqsh_inode_symlink_dup</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, char **namebuffer)</td></tr>
+<tr class="separator:a6a15e527ea357f22d62f5104d05336cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca7bbebf5ab8692debe198968b052b0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a9ca7bbebf5ab8692debe198968b052b0">sqsh_inode_symlink_size</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a9ca7bbebf5ab8692debe198968b052b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1259f15abd5dbc075212abe28bd52c17"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a1259f15abd5dbc075212abe28bd52c17">sqsh_inode_device_id</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a1259f15abd5dbc075212abe28bd52c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f24b62db649b987d29fd75e5866ce48"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a7f24b62db649b987d29fd75e5866ce48">sqsh_inode_uid</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a7f24b62db649b987d29fd75e5866ce48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926abd3c598c371e281411ff0b020300"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a926abd3c598c371e281411ff0b020300">sqsh_inode_gid</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a926abd3c598c371e281411ff0b020300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a346c1e1a617dea3664d1f458bb8ed3cd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a346c1e1a617dea3664d1f458bb8ed3cd">sqsh_inode_xattr_index</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a346c1e1a617dea3664d1f458bb8ed3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb1eac4b118aae50790507db1a34a2f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#afb1eac4b118aae50790507db1a34a2f9">sqsh_inode_xattr_iterator</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator)</td></tr>
+<tr class="separator:afb1eac4b118aae50790507db1a34a2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d0e6ef1e8acb1f8b964440db0a4594"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a74d0e6ef1e8acb1f8b964440db0a4594">sqsh_inode_cleanup</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a74d0e6ef1e8acb1f8b964440db0a4594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b5573fcd05d29f3012df42a9ae6db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a92b5573fcd05d29f3012df42a9ae6db1">sqsh_inode_ref_to_block</a> (uint64_t ref, uint32_t *block_index, uint16_t *offset)</td></tr>
+<tr class="separator:a92b5573fcd05d29f3012df42a9ae6db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e1ace6f102fa8ccb8aeb1a6ace7b04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a57e1ace6f102fa8ccb8aeb1a6ace7b04">sqsh_inode_ref_from_block</a> (uint32_t block_index, uint16_t offset)</td></tr>
+<tr class="separator:a57e1ace6f102fa8ccb8aeb1a6ace7b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ac7309283286602633396603622c20942" name="ac7309283286602633396603622c20942"></a>
@@ -220,26 +220,26 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a8ae48b04748a7d46e121218dbd1e4de4" name="a8ae48b04748a7d46e121218dbd1e4de4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ae48b04748a7d46e121218dbd1e4de4">&#9670;&nbsp;</a></span>HsqsInodeContextType</h2>
+<a id="af7711c22c1031b0b2f4ceaabb5b4e5e8" name="af7711c22c1031b0b2f4ceaabb5b4e5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7711c22c1031b0b2f4ceaabb5b4e5e8">&#9670;&nbsp;</a></span>SqshInodeContextType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="inode__context_8h.html#a8ae48b04748a7d46e121218dbd1e4de4">HsqsInodeContextType</a></td>
+          <td class="memname">enum <a class="el" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8">SqshInodeContextType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8ae48b04748a7d46e121218dbd1e4de4aa9df66923395564cb8f2ccd29b44d79d" name="a8ae48b04748a7d46e121218dbd1e4de4aa9df66923395564cb8f2ccd29b44d79d"></a>HSQS_INODE_TYPE_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8ae48b04748a7d46e121218dbd1e4de4a091b220599caa8403bab94bf5b6e55e2" name="a8ae48b04748a7d46e121218dbd1e4de4a091b220599caa8403bab94bf5b6e55e2"></a>HSQS_INODE_TYPE_DIRECTORY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8ae48b04748a7d46e121218dbd1e4de4a514a5eec1607766cde7d654520a54b22" name="a8ae48b04748a7d46e121218dbd1e4de4a514a5eec1607766cde7d654520a54b22"></a>HSQS_INODE_TYPE_FILE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8ae48b04748a7d46e121218dbd1e4de4a18d0b1acdae81bb305d6926c082660b1" name="a8ae48b04748a7d46e121218dbd1e4de4a18d0b1acdae81bb305d6926c082660b1"></a>HSQS_INODE_TYPE_SYMLINK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8ae48b04748a7d46e121218dbd1e4de4a5a3c952b5b11c6a70685328e34ab6f56" name="a8ae48b04748a7d46e121218dbd1e4de4a5a3c952b5b11c6a70685328e34ab6f56"></a>HSQS_INODE_TYPE_BLOCK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8ae48b04748a7d46e121218dbd1e4de4aea2beb72d0c7df306ed61387abdb5561" name="a8ae48b04748a7d46e121218dbd1e4de4aea2beb72d0c7df306ed61387abdb5561"></a>HSQS_INODE_TYPE_CHAR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8ae48b04748a7d46e121218dbd1e4de4a6f9b5a7e76e9c806d7a23c5c3cab1f56" name="a8ae48b04748a7d46e121218dbd1e4de4a6f9b5a7e76e9c806d7a23c5c3cab1f56"></a>HSQS_INODE_TYPE_FIFO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8ae48b04748a7d46e121218dbd1e4de4adeb45f219ead6f118a476c8ea10dd244" name="a8ae48b04748a7d46e121218dbd1e4de4adeb45f219ead6f118a476c8ea10dd244"></a>HSQS_INODE_TYPE_SOCKET&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af7711c22c1031b0b2f4ceaabb5b4e5e8aa9df66923395564cb8f2ccd29b44d79d" name="af7711c22c1031b0b2f4ceaabb5b4e5e8aa9df66923395564cb8f2ccd29b44d79d"></a>HSQS_INODE_TYPE_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af7711c22c1031b0b2f4ceaabb5b4e5e8a091b220599caa8403bab94bf5b6e55e2" name="af7711c22c1031b0b2f4ceaabb5b4e5e8a091b220599caa8403bab94bf5b6e55e2"></a>HSQS_INODE_TYPE_DIRECTORY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af7711c22c1031b0b2f4ceaabb5b4e5e8a514a5eec1607766cde7d654520a54b22" name="af7711c22c1031b0b2f4ceaabb5b4e5e8a514a5eec1607766cde7d654520a54b22"></a>HSQS_INODE_TYPE_FILE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af7711c22c1031b0b2f4ceaabb5b4e5e8a18d0b1acdae81bb305d6926c082660b1" name="af7711c22c1031b0b2f4ceaabb5b4e5e8a18d0b1acdae81bb305d6926c082660b1"></a>HSQS_INODE_TYPE_SYMLINK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af7711c22c1031b0b2f4ceaabb5b4e5e8a5a3c952b5b11c6a70685328e34ab6f56" name="af7711c22c1031b0b2f4ceaabb5b4e5e8a5a3c952b5b11c6a70685328e34ab6f56"></a>HSQS_INODE_TYPE_BLOCK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af7711c22c1031b0b2f4ceaabb5b4e5e8aea2beb72d0c7df306ed61387abdb5561" name="af7711c22c1031b0b2f4ceaabb5b4e5e8aea2beb72d0c7df306ed61387abdb5561"></a>HSQS_INODE_TYPE_CHAR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af7711c22c1031b0b2f4ceaabb5b4e5e8a6f9b5a7e76e9c806d7a23c5c3cab1f56" name="af7711c22c1031b0b2f4ceaabb5b4e5e8a6f9b5a7e76e9c806d7a23c5c3cab1f56"></a>HSQS_INODE_TYPE_FIFO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af7711c22c1031b0b2f4ceaabb5b4e5e8adeb45f219ead6f118a476c8ea10dd244" name="af7711c22c1031b0b2f4ceaabb5b4e5e8adeb45f219ead6f118a476c8ea10dd244"></a>HSQS_INODE_TYPE_SOCKET&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="inode__context_8h_source.html#l00054">54</a> of file <a class="el" href="inode__context_8h_source.html">inode_context.h</a>.</p>
@@ -247,16 +247,16 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a47e5607e5f75426c1fb81f55021908ad" name="a47e5607e5f75426c1fb81f55021908ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47e5607e5f75426c1fb81f55021908ad">&#9670;&nbsp;</a></span>hsqs_inode_cleanup()</h2>
+<a id="a74d0e6ef1e8acb1f8b964440db0a4594" name="a74d0e6ef1e8acb1f8b964440db0a4594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74d0e6ef1e8acb1f8b964440db0a4594">&#9670;&nbsp;</a></span>sqsh_inode_cleanup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int hsqs_inode_cleanup </td>
+          <td class="memname">int sqsh_inode_cleanup </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -265,16 +265,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a55486b8186297e9a609d22595e2d3659" name="a55486b8186297e9a609d22595e2d3659"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55486b8186297e9a609d22595e2d3659">&#9670;&nbsp;</a></span>hsqs_inode_device_id()</h2>
+<a id="a1259f15abd5dbc075212abe28bd52c17" name="a1259f15abd5dbc075212abe28bd52c17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1259f15abd5dbc075212abe28bd52c17">&#9670;&nbsp;</a></span>sqsh_inode_device_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_device_id </td>
+          <td class="memname">uint32_t sqsh_inode_device_id </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -283,16 +283,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9a689f7ef610eb82385245110c850ceb" name="a9a689f7ef610eb82385245110c850ceb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a689f7ef610eb82385245110c850ceb">&#9670;&nbsp;</a></span>hsqs_inode_directory_block_offset()</h2>
+<a id="a998c42107b605d76a6de5a677fba22e9" name="a998c42107b605d76a6de5a677fba22e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a998c42107b605d76a6de5a677fba22e9">&#9670;&nbsp;</a></span>sqsh_inode_directory_block_offset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_directory_block_offset </td>
+          <td class="memname">uint32_t sqsh_inode_directory_block_offset </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -301,16 +301,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa8f0cf6f91db9f96a80b75eaa3700252" name="aa8f0cf6f91db9f96a80b75eaa3700252"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8f0cf6f91db9f96a80b75eaa3700252">&#9670;&nbsp;</a></span>hsqs_inode_directory_block_start()</h2>
+<a id="a11cebd31657937a9ec33bb3c257876eb" name="a11cebd31657937a9ec33bb3c257876eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11cebd31657937a9ec33bb3c257876eb">&#9670;&nbsp;</a></span>sqsh_inode_directory_block_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_directory_block_start </td>
+          <td class="memname">uint32_t sqsh_inode_directory_block_start </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -319,16 +319,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aef803cbec84ebb009a9d8a4177ad1d25" name="aef803cbec84ebb009a9d8a4177ad1d25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef803cbec84ebb009a9d8a4177ad1d25">&#9670;&nbsp;</a></span>hsqs_inode_file_block_count()</h2>
+<a id="a4ffe778ba463b3762e2a9b8ea0a79a76" name="a4ffe778ba463b3762e2a9b8ea0a79a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ffe778ba463b3762e2a9b8ea0a79a76">&#9670;&nbsp;</a></span>sqsh_inode_file_block_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_file_block_count </td>
+          <td class="memname">uint32_t sqsh_inode_file_block_count </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -337,16 +337,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a807f4d1f254163adf5b57571e26c2364" name="a807f4d1f254163adf5b57571e26c2364"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a807f4d1f254163adf5b57571e26c2364">&#9670;&nbsp;</a></span>hsqs_inode_file_block_is_compressed()</h2>
+<a id="a22269b2253f21b9b1abe8ac0533afc35" name="a22269b2253f21b9b1abe8ac0533afc35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22269b2253f21b9b1abe8ac0533afc35">&#9670;&nbsp;</a></span>sqsh_inode_file_block_is_compressed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool hsqs_inode_file_block_is_compressed </td>
+          <td class="memname">bool sqsh_inode_file_block_is_compressed </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
@@ -365,16 +365,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a981f3ca6c0e9b3974c28a5a11ddd6a39" name="a981f3ca6c0e9b3974c28a5a11ddd6a39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a981f3ca6c0e9b3974c28a5a11ddd6a39">&#9670;&nbsp;</a></span>hsqs_inode_file_block_size()</h2>
+<a id="a9057c87a2211679eaba98e3d5181553a" name="a9057c87a2211679eaba98e3d5181553a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9057c87a2211679eaba98e3d5181553a">&#9670;&nbsp;</a></span>sqsh_inode_file_block_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_file_block_size </td>
+          <td class="memname">uint32_t sqsh_inode_file_block_size </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
@@ -393,16 +393,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a17c4110f5a325ea8cd8bacbf8ff03ea8" name="a17c4110f5a325ea8cd8bacbf8ff03ea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17c4110f5a325ea8cd8bacbf8ff03ea8">&#9670;&nbsp;</a></span>hsqs_inode_file_blocks_start()</h2>
+<a id="a7d38b7e83e18df45ef3e82974c303bf8" name="a7d38b7e83e18df45ef3e82974c303bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d38b7e83e18df45ef3e82974c303bf8">&#9670;&nbsp;</a></span>sqsh_inode_file_blocks_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t hsqs_inode_file_blocks_start </td>
+          <td class="memname">uint64_t sqsh_inode_file_blocks_start </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -411,16 +411,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a414f14493e135b372d2b46e1f0836592" name="a414f14493e135b372d2b46e1f0836592"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a414f14493e135b372d2b46e1f0836592">&#9670;&nbsp;</a></span>hsqs_inode_file_fragment_block_index()</h2>
+<a id="a18a822992cd698fbfa15eb0f90d198d4" name="a18a822992cd698fbfa15eb0f90d198d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a822992cd698fbfa15eb0f90d198d4">&#9670;&nbsp;</a></span>sqsh_inode_file_fragment_block_index()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_file_fragment_block_index </td>
+          <td class="memname">uint32_t sqsh_inode_file_fragment_block_index </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -429,16 +429,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5e8fb4bcb0213ff3e5065690f78c95d1" name="a5e8fb4bcb0213ff3e5065690f78c95d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e8fb4bcb0213ff3e5065690f78c95d1">&#9670;&nbsp;</a></span>hsqs_inode_file_fragment_block_offset()</h2>
+<a id="a59b31ee738cf0460a8e62b78e320205f" name="a59b31ee738cf0460a8e62b78e320205f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59b31ee738cf0460a8e62b78e320205f">&#9670;&nbsp;</a></span>sqsh_inode_file_fragment_block_offset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_file_fragment_block_offset </td>
+          <td class="memname">uint32_t sqsh_inode_file_fragment_block_offset </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -447,16 +447,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a311b8299fe31fd4b35ab98599de3427f" name="a311b8299fe31fd4b35ab98599de3427f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a311b8299fe31fd4b35ab98599de3427f">&#9670;&nbsp;</a></span>hsqs_inode_file_has_fragment()</h2>
+<a id="af9a87085481a46481fa7d0abac831050" name="af9a87085481a46481fa7d0abac831050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a87085481a46481fa7d0abac831050">&#9670;&nbsp;</a></span>sqsh_inode_file_has_fragment()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool hsqs_inode_file_has_fragment </td>
+          <td class="memname">bool sqsh_inode_file_has_fragment </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -465,16 +465,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae6f5d60a9777b7bd1e709dd82118ed41" name="ae6f5d60a9777b7bd1e709dd82118ed41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6f5d60a9777b7bd1e709dd82118ed41">&#9670;&nbsp;</a></span>hsqs_inode_file_size()</h2>
+<a id="a65a02fa321fe0ef692244fac11ce0619" name="a65a02fa321fe0ef692244fac11ce0619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65a02fa321fe0ef692244fac11ce0619">&#9670;&nbsp;</a></span>sqsh_inode_file_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t hsqs_inode_file_size </td>
+          <td class="memname">uint64_t sqsh_inode_file_size </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -483,16 +483,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac93b5419aa4395d246ffd716b726c55b" name="ac93b5419aa4395d246ffd716b726c55b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac93b5419aa4395d246ffd716b726c55b">&#9670;&nbsp;</a></span>hsqs_inode_gid()</h2>
+<a id="a926abd3c598c371e281411ff0b020300" name="a926abd3c598c371e281411ff0b020300"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a926abd3c598c371e281411ff0b020300">&#9670;&nbsp;</a></span>sqsh_inode_gid()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_gid </td>
+          <td class="memname">uint32_t sqsh_inode_gid </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -501,16 +501,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a01e096d85361ede2c69a39f5d81843c8" name="a01e096d85361ede2c69a39f5d81843c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01e096d85361ede2c69a39f5d81843c8">&#9670;&nbsp;</a></span>hsqs_inode_hard_link_count()</h2>
+<a id="a4d3ba76172886a29e05647a81738cf68" name="a4d3ba76172886a29e05647a81738cf68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d3ba76172886a29e05647a81738cf68">&#9670;&nbsp;</a></span>sqsh_inode_hard_link_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_hard_link_count </td>
+          <td class="memname">uint32_t sqsh_inode_hard_link_count </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -519,16 +519,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a38b9adb7e5c0b572339437a40972f7bb" name="a38b9adb7e5c0b572339437a40972f7bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38b9adb7e5c0b572339437a40972f7bb">&#9670;&nbsp;</a></span>hsqs_inode_is_extended()</h2>
+<a id="a500d7c81ba63211aa7cfeedaf84cf9e5" name="a500d7c81ba63211aa7cfeedaf84cf9e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a500d7c81ba63211aa7cfeedaf84cf9e5">&#9670;&nbsp;</a></span>sqsh_inode_is_extended()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool hsqs_inode_is_extended </td>
+          <td class="memname">bool sqsh_inode_is_extended </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -537,23 +537,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5ed996aa438c512f1aec61113f93746c" name="a5ed996aa438c512f1aec61113f93746c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ed996aa438c512f1aec61113f93746c">&#9670;&nbsp;</a></span>hsqs_inode_load_by_inode_number()</h2>
+<a id="a9293009a4fa98df26f9c1bf7acf3f118" name="a9293009a4fa98df26f9c1bf7acf3f118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9293009a4fa98df26f9c1bf7acf3f118">&#9670;&nbsp;</a></span>sqsh_inode_load_by_inode_number()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int hsqs_inode_load_by_inode_number </td>
+          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int sqsh_inode_load_by_inode_number </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structHsqs.html">Hsqs</a> *&#160;</td>
-          <td class="paramname"><em>hsqs</em>, </td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -571,23 +571,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afb8a894998a67eb1787bf641e5c0634f" name="afb8a894998a67eb1787bf641e5c0634f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb8a894998a67eb1787bf641e5c0634f">&#9670;&nbsp;</a></span>hsqs_inode_load_by_path()</h2>
+<a id="a5f6949bc82cfd67cce327d803e9421c4" name="a5f6949bc82cfd67cce327d803e9421c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f6949bc82cfd67cce327d803e9421c4">&#9670;&nbsp;</a></span>sqsh_inode_load_by_path()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int hsqs_inode_load_by_path </td>
+          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int sqsh_inode_load_by_path </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structHsqs.html">Hsqs</a> *&#160;</td>
-          <td class="paramname"><em>hsqs</em>, </td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -605,23 +605,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1fb34c4572a467b7b8ec829cac281b45" name="a1fb34c4572a467b7b8ec829cac281b45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fb34c4572a467b7b8ec829cac281b45">&#9670;&nbsp;</a></span>hsqs_inode_load_by_ref()</h2>
+<a id="a53d2ab637700788f0757c7c724e130a1" name="a53d2ab637700788f0757c7c724e130a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53d2ab637700788f0757c7c724e130a1">&#9670;&nbsp;</a></span>sqsh_inode_load_by_ref()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int hsqs_inode_load_by_ref </td>
+          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int sqsh_inode_load_by_ref </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structHsqs.html">Hsqs</a> *&#160;</td>
-          <td class="paramname"><em>hsqs</em>, </td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -639,23 +639,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ada2d714e63b6df9b10a1a5a0ea09ec18" name="ada2d714e63b6df9b10a1a5a0ea09ec18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada2d714e63b6df9b10a1a5a0ea09ec18">&#9670;&nbsp;</a></span>hsqs_inode_load_root()</h2>
+<a id="af5f7a583ba392185460f0856a52abbe9" name="af5f7a583ba392185460f0856a52abbe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f7a583ba392185460f0856a52abbe9">&#9670;&nbsp;</a></span>sqsh_inode_load_root()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int hsqs_inode_load_root </td>
+          <td class="memname">int sqsh_inode_load_root </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structHsqs.html">Hsqs</a> *&#160;</td>
-          <td class="paramname"><em>hsqs</em>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -667,16 +667,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a65885baaf5efd1b26f4879a5a3532b6f" name="a65885baaf5efd1b26f4879a5a3532b6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65885baaf5efd1b26f4879a5a3532b6f">&#9670;&nbsp;</a></span>hsqs_inode_modified_time()</h2>
+<a id="accb1cdc2355a9025f565fe3a7eecf9cf" name="accb1cdc2355a9025f565fe3a7eecf9cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb1cdc2355a9025f565fe3a7eecf9cf">&#9670;&nbsp;</a></span>sqsh_inode_modified_time()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_modified_time </td>
+          <td class="memname">uint32_t sqsh_inode_modified_time </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -685,16 +685,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a358b05f3dbc1a1917afc2a7d8610186c" name="a358b05f3dbc1a1917afc2a7d8610186c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a358b05f3dbc1a1917afc2a7d8610186c">&#9670;&nbsp;</a></span>hsqs_inode_number()</h2>
+<a id="a274b746c4bf0eecd53a3763634caf913" name="a274b746c4bf0eecd53a3763634caf913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a274b746c4bf0eecd53a3763634caf913">&#9670;&nbsp;</a></span>sqsh_inode_number()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_number </td>
+          <td class="memname">uint32_t sqsh_inode_number </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -703,16 +703,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5c983188b914769e92f123bf07f07bfc" name="a5c983188b914769e92f123bf07f07bfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c983188b914769e92f123bf07f07bfc">&#9670;&nbsp;</a></span>hsqs_inode_permission()</h2>
+<a id="aa92c03cf2daeb9f2ff105c76111d6d7d" name="aa92c03cf2daeb9f2ff105c76111d6d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa92c03cf2daeb9f2ff105c76111d6d7d">&#9670;&nbsp;</a></span>sqsh_inode_permission()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t hsqs_inode_permission </td>
+          <td class="memname">uint16_t sqsh_inode_permission </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -721,14 +721,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a62a0ce18a4ed83b77b6fe7605a4b2eed" name="a62a0ce18a4ed83b77b6fe7605a4b2eed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62a0ce18a4ed83b77b6fe7605a4b2eed">&#9670;&nbsp;</a></span>hsqs_inode_ref_from_block()</h2>
+<a id="a57e1ace6f102fa8ccb8aeb1a6ace7b04" name="a57e1ace6f102fa8ccb8aeb1a6ace7b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e1ace6f102fa8ccb8aeb1a6ace7b04">&#9670;&nbsp;</a></span>sqsh_inode_ref_from_block()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> uint64_t hsqs_inode_ref_from_block </td>
+          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> uint64_t sqsh_inode_ref_from_block </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>block_index</em>, </td>
@@ -749,14 +749,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2dc6344bbce77a3cc0f345ca4604d6d5" name="a2dc6344bbce77a3cc0f345ca4604d6d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dc6344bbce77a3cc0f345ca4604d6d5">&#9670;&nbsp;</a></span>hsqs_inode_ref_to_block()</h2>
+<a id="a92b5573fcd05d29f3012df42a9ae6db1" name="a92b5573fcd05d29f3012df42a9ae6db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92b5573fcd05d29f3012df42a9ae6db1">&#9670;&nbsp;</a></span>sqsh_inode_ref_to_block()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void hsqs_inode_ref_to_block </td>
+          <td class="memname">void sqsh_inode_ref_to_block </td>
           <td>(</td>
           <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>ref</em>, </td>
@@ -783,16 +783,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8fcb9e1bf515dffda812221b3606eaf2" name="a8fcb9e1bf515dffda812221b3606eaf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fcb9e1bf515dffda812221b3606eaf2">&#9670;&nbsp;</a></span>hsqs_inode_symlink()</h2>
+<a id="a232a93cdc03ad5ed3c8c45627fb560a9" name="a232a93cdc03ad5ed3c8c45627fb560a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a232a93cdc03ad5ed3c8c45627fb560a9">&#9670;&nbsp;</a></span>sqsh_inode_symlink()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * hsqs_inode_symlink </td>
+          <td class="memname">const char * sqsh_inode_symlink </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -801,16 +801,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac62efbb44c04dced0787e1a22c6c1d77" name="ac62efbb44c04dced0787e1a22c6c1d77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac62efbb44c04dced0787e1a22c6c1d77">&#9670;&nbsp;</a></span>hsqs_inode_symlink_dup()</h2>
+<a id="a6a15e527ea357f22d62f5104d05336cd" name="a6a15e527ea357f22d62f5104d05336cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a15e527ea357f22d62f5104d05336cd">&#9670;&nbsp;</a></span>sqsh_inode_symlink_dup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int hsqs_inode_symlink_dup </td>
+          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int sqsh_inode_symlink_dup </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
@@ -829,16 +829,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3853d63e5ab70e0c80b4114bb7104c59" name="a3853d63e5ab70e0c80b4114bb7104c59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3853d63e5ab70e0c80b4114bb7104c59">&#9670;&nbsp;</a></span>hsqs_inode_symlink_size()</h2>
+<a id="a9ca7bbebf5ab8692debe198968b052b0" name="a9ca7bbebf5ab8692debe198968b052b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca7bbebf5ab8692debe198968b052b0">&#9670;&nbsp;</a></span>sqsh_inode_symlink_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_symlink_size </td>
+          <td class="memname">uint32_t sqsh_inode_symlink_size </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -847,16 +847,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a959a8c0ce179962a7b9b7374e8c6d275" name="a959a8c0ce179962a7b9b7374e8c6d275"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a959a8c0ce179962a7b9b7374e8c6d275">&#9670;&nbsp;</a></span>hsqs_inode_type()</h2>
+<a id="a71eb3071def41c76320b575f8da5df1d" name="a71eb3071def41c76320b575f8da5df1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71eb3071def41c76320b575f8da5df1d">&#9670;&nbsp;</a></span>sqsh_inode_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="inode__context_8h.html#a8ae48b04748a7d46e121218dbd1e4de4">HsqsInodeContextType</a> hsqs_inode_type </td>
+          <td class="memname">enum <a class="el" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8">SqshInodeContextType</a> sqsh_inode_type </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -865,16 +865,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3050a848f7f47b1bde9e4ef73fa7dde" name="ae3050a848f7f47b1bde9e4ef73fa7dde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3050a848f7f47b1bde9e4ef73fa7dde">&#9670;&nbsp;</a></span>hsqs_inode_uid()</h2>
+<a id="a7f24b62db649b987d29fd75e5866ce48" name="a7f24b62db649b987d29fd75e5866ce48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f24b62db649b987d29fd75e5866ce48">&#9670;&nbsp;</a></span>sqsh_inode_uid()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_uid </td>
+          <td class="memname">uint32_t sqsh_inode_uid </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -883,16 +883,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8de7cb3e14bf5c4b71c841e2196b391d" name="a8de7cb3e14bf5c4b71c841e2196b391d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8de7cb3e14bf5c4b71c841e2196b391d">&#9670;&nbsp;</a></span>hsqs_inode_xattr_index()</h2>
+<a id="a346c1e1a617dea3664d1f458bb8ed3cd" name="a346c1e1a617dea3664d1f458bb8ed3cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346c1e1a617dea3664d1f458bb8ed3cd">&#9670;&nbsp;</a></span>sqsh_inode_xattr_index()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_inode_xattr_index </td>
+          <td class="memname">uint32_t sqsh_inode_xattr_index </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -901,22 +901,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae8c443bd9462b8a270dd1298d6bbdbe1" name="ae8c443bd9462b8a270dd1298d6bbdbe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8c443bd9462b8a270dd1298d6bbdbe1">&#9670;&nbsp;</a></span>hsqs_inode_xattr_iterator()</h2>
+<a id="afb1eac4b118aae50790507db1a34a2f9" name="afb1eac4b118aae50790507db1a34a2f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb1eac4b118aae50790507db1a34a2f9">&#9670;&nbsp;</a></span>sqsh_inode_xattr_iterator()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int hsqs_inode_xattr_iterator </td>
+          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int sqsh_inode_xattr_iterator </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structHsqsInodeContext.html">HsqsInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structHsqsXattrIterator.html">HsqsXattrIterator</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *&#160;</td>
           <td class="paramname"><em>iterator</em>&#160;</td>
         </tr>
         <tr>

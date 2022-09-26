@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['libhsqs_0',['libhsqs',['../index.html',1,'']]]
+  ['libsqsh_0',['libsqsh',['../index.html',1,'']]]
 ];

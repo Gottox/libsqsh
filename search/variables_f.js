@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['table_0',['table',['../structHsqsFragmentTable.html#a35717253f20fd9b65ce1a3f8be5ac41e',1,'HsqsFragmentTable::table()'],['../structHsqsXattrTable.html#af22bda641abb168d991c0ef88aa459f4',1,'HsqsXattrTable::table()']]],
-  ['table_5fmap_1',['table_map',['../structHsqs.html#afc023ffdeb7ec9188a1e1edb2f747739',1,'Hsqs']]],
-  ['table_5fmapper_2',['table_mapper',['../structHsqs.html#a823dc81fdff5c216ad9d015b995359d5',1,'Hsqs']]],
-  ['total_5fsize_3',['total_size',['../structHsqsCurlMap.html#a0cebcbeacf16f0bd9ff69ae9c1d2e3ea',1,'HsqsCurlMap']]]
+  ['table_0',['table',['../structSqshFragmentTable.html#a5cc9bb6bf94981ddffcd352138f0f467',1,'SqshFragmentTable::table()'],['../structSqshXattrTable.html#aa641e2b051360cc0c687d911dc4e51ff',1,'SqshXattrTable::table()']]],
+  ['table_5fmap_1',['table_map',['../structSqsh.html#aac841f65021da3646d46b9041a96fcaf',1,'Sqsh']]],
+  ['table_5fmapper_2',['table_mapper',['../structSqsh.html#aac70beb393635f17c87c5a4c012f6c01',1,'Sqsh']]],
+  ['total_5fsize_3',['total_size',['../structSqshCurlMap.html#a27847d4a6123e26887fb9be3635cee2f',1,'SqshCurlMap']]]
 ];

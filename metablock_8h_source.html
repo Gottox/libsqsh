@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libhsqs: metablock.h Source File</title>
+<title>libsqsh: metablock.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libhsqs<span id="projectnumber">&#160;e6d9b87</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;6134df8</span>
    </div>
   </td>
  </tr>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3a0534501ca4be4079425efd3c8ffab8.html">__w</a></li><li class="navelem"><a class="el" href="dir_59cf639e60a00e737c8a7b5f377f3f3f.html">libhsqs</a></li><li class="navelem"><a class="el" href="dir_37940ec95c8f6aadf475035c5c6af1d9.html">libhsqs</a></li><li class="navelem"><a class="el" href="dir_2fb9c6c25182fa91851a94c48bb8ff5e.html">src</a></li><li class="navelem"><a class="el" href="dir_2237b31565572db71ea2452d612019b5.html">data</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3a0534501ca4be4079425efd3c8ffab8.html">__w</a></li><li class="navelem"><a class="el" href="dir_bf5a6642e4a2ec8691d45172aa2efe79.html">libsqsh</a></li><li class="navelem"><a class="el" href="dir_7bea8aa7adab50784d6c0b22b0dd2031.html">libsqsh</a></li><li class="navelem"><a class="el" href="dir_4444a2805dd47f54c48baa085de65586.html">src</a></li><li class="navelem"><a class="el" href="dir_efa0ca88bf165e461d58222aed34655b.html">data</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -106,18 +106,18 @@ $(function() {
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="metablock_8h.html#a5bbffbba04762db757874917e91c3d17">   41</a></span><span class="preprocessor">#define HSQS_SIZEOF_METABLOCK 2</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">struct </span>HsqsMetablock;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">struct </span>SqshMetablock;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="metablock_8h.html#a286bf581efec1c090ce675df2ae8294a">   45</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="metablock_8h.html#a286bf581efec1c090ce675df2ae8294a">hsqs_data_metablock_is_compressed</a>(<span class="keyword">const</span> <span class="keyword">struct</span> HsqsMetablock *metablock);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="metablock_8h.html#ac86e0763cbcc6a0a8d6ebe17151b2346">   45</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="metablock_8h.html#ac86e0763cbcc6a0a8d6ebe17151b2346">sqsh_data_metablock_is_compressed</a>(<span class="keyword">const</span> <span class="keyword">struct</span> SqshMetablock *metablock);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="metablock_8h.html#a4121eec52976164baf8a2361f2f4f553">   47</a></span><span class="keyword">const</span> uint8_t *<a class="code hl_function" href="metablock_8h.html#a4121eec52976164baf8a2361f2f4f553">hsqs_data_metablock_data</a>(<span class="keyword">const</span> <span class="keyword">struct</span> HsqsMetablock *metablock);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="metablock_8h.html#ab06ed3d8c0e8cd66eca540880ef32a22">   47</a></span><span class="keyword">const</span> uint8_t *<a class="code hl_function" href="metablock_8h.html#ab06ed3d8c0e8cd66eca540880ef32a22">sqsh_data_metablock_data</a>(<span class="keyword">const</span> <span class="keyword">struct</span> SqshMetablock *metablock);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="metablock_8h.html#a4cf8f97f3060be242b21257823c356b3">   49</a></span><span class="keywordtype">size_t</span> <a class="code hl_function" href="metablock_8h.html#a4cf8f97f3060be242b21257823c356b3">hsqs_data_metablock_size</a>(<span class="keyword">const</span> <span class="keyword">struct</span> HsqsMetablock *metablock);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="metablock_8h.html#a26978b4a12fb9657e44866e702eda298">   49</a></span><span class="keywordtype">size_t</span> <a class="code hl_function" href="metablock_8h.html#a26978b4a12fb9657e44866e702eda298">sqsh_data_metablock_size</a>(<span class="keyword">const</span> <span class="keyword">struct</span> SqshMetablock *metablock);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard METABLOCK_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="ametablock_8h_html_a286bf581efec1c090ce675df2ae8294a"><div class="ttname"><a href="metablock_8h.html#a286bf581efec1c090ce675df2ae8294a">hsqs_data_metablock_is_compressed</a></div><div class="ttdeci">int hsqs_data_metablock_is_compressed(const struct HsqsMetablock *metablock)</div></div>
-<div class="ttc" id="ametablock_8h_html_a4121eec52976164baf8a2361f2f4f553"><div class="ttname"><a href="metablock_8h.html#a4121eec52976164baf8a2361f2f4f553">hsqs_data_metablock_data</a></div><div class="ttdeci">const uint8_t * hsqs_data_metablock_data(const struct HsqsMetablock *metablock)</div></div>
-<div class="ttc" id="ametablock_8h_html_a4cf8f97f3060be242b21257823c356b3"><div class="ttname"><a href="metablock_8h.html#a4cf8f97f3060be242b21257823c356b3">hsqs_data_metablock_size</a></div><div class="ttdeci">size_t hsqs_data_metablock_size(const struct HsqsMetablock *metablock)</div></div>
+<div class="ttc" id="ametablock_8h_html_a26978b4a12fb9657e44866e702eda298"><div class="ttname"><a href="metablock_8h.html#a26978b4a12fb9657e44866e702eda298">sqsh_data_metablock_size</a></div><div class="ttdeci">size_t sqsh_data_metablock_size(const struct SqshMetablock *metablock)</div></div>
+<div class="ttc" id="ametablock_8h_html_ab06ed3d8c0e8cd66eca540880ef32a22"><div class="ttname"><a href="metablock_8h.html#ab06ed3d8c0e8cd66eca540880ef32a22">sqsh_data_metablock_data</a></div><div class="ttdeci">const uint8_t * sqsh_data_metablock_data(const struct SqshMetablock *metablock)</div></div>
+<div class="ttc" id="ametablock_8h_html_ac86e0763cbcc6a0a8d6ebe17151b2346"><div class="ttname"><a href="metablock_8h.html#ac86e0763cbcc6a0a8d6ebe17151b2346">sqsh_data_metablock_is_compressed</a></div><div class="ttdeci">int sqsh_data_metablock_is_compressed(const struct SqshMetablock *metablock)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

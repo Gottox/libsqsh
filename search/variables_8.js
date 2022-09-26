@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lookup_5ftable_0',['lookup_table',['../structHsqsTable.html#a546e390bd2b6250eed3ff0b1bb8fe9b1',1,'HsqsTable']]]
+  ['lookup_5ftable_0',['lookup_table',['../structSqshTable.html#ae175356de22f028e934149b778bcc071',1,'SqshTable']]]
 ];

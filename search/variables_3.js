@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['element_5fcount_0',['element_count',['../structHsqsTable.html#a793238e093229ec69145574c3009ab80',1,'HsqsTable']]],
-  ['element_5fsize_1',['element_size',['../structHsqsTable.html#a07b04220b7cda731bd0266ea7b6bdacf',1,'HsqsTable']]],
-  ['error_2',['error',['../structHsqs.html#a49917f08eddd9152415179a755dd18ba',1,'Hsqs']]],
-  ['expected_5fsize_3',['expected_size',['../structHsqsCurlMapper.html#a5c871a51eec1f7b0db26b5c8fdfb6436',1,'HsqsCurlMapper']]],
-  ['expected_5ftime_4',['expected_time',['../structHsqsCurlMapper.html#a1adb0e3961cd9b426a87bb53b22548de',1,'HsqsCurlMapper']]],
-  ['export_5ftable_5',['export_table',['../structHsqs.html#aa9e8b29f9f2d53bf53f1aea041ef63eb',1,'Hsqs']]],
-  ['extract_6',['extract',['../structHsqsCompressionImplementation.html#ac48fefb77a58973f555a8ef422b4b4bd',1,'HsqsCompressionImplementation']]]
+  ['element_5fcount_0',['element_count',['../structSqshTable.html#a58164114c607fc7313898b9bb9dd59ab',1,'SqshTable']]],
+  ['element_5fsize_1',['element_size',['../structSqshTable.html#aa2a59aa1e4d81d67a7487a5a234420bf',1,'SqshTable']]],
+  ['error_2',['error',['../structSqsh.html#ab1e7440f9ff58431e1ca4cca2cc6536c',1,'Sqsh']]],
+  ['expected_5fsize_3',['expected_size',['../structSqshCurlMapper.html#aae9ef0f86ac174f0d50ab1f2b4e195c3',1,'SqshCurlMapper']]],
+  ['expected_5ftime_4',['expected_time',['../structSqshCurlMapper.html#a5a4772d9f284fa9156221fafcdf321f9',1,'SqshCurlMapper']]],
+  ['export_5ftable_5',['export_table',['../structSqsh.html#ac842982c816a46a3481475d103ec3ef7',1,'Sqsh']]],
+  ['extract_6',['extract',['../structSqshCompressionImplementation.html#a1b935ddeffda3d4fd9f8d798ba04e077',1,'SqshCompressionImplementation']]]
 ];

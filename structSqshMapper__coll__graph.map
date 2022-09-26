@@ -1,0 +1,8 @@
+<map id="SqshMapper" name="SqshMapper">
+<area shape="rect" id="node1" title=" " alt="" coords="327,107,449,133"/>
+<area shape="rect" id="node2" href="$structSqshMemoryMapperImpl.html" title=" " alt="" coords="5,5,228,32"/>
+<area shape="rect" id="node3" href="$structSqshMmapFullMapper.html" title=" " alt="" coords="15,56,218,83"/>
+<area shape="rect" id="node4" href="$structSqshMmapMapper.html" title=" " alt="" coords="35,107,198,133"/>
+<area shape="rect" id="node5" href="$structSqshStaticMapper.html" title=" " alt="" coords="25,157,208,184"/>
+<area shape="rect" id="node6" href="$structSqshCanaryMapper.html" title=" " alt="" coords="25,208,208,235"/>
+</map>

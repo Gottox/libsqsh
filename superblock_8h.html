@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libhsqs: superblock.h File Reference</title>
+<title>libsqsh: superblock.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libhsqs<span id="projectnumber">&#160;e6d9b87</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;6134df8</span>
    </div>
   </td>
  </tr>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3a0534501ca4be4079425efd3c8ffab8.html">__w</a></li><li class="navelem"><a class="el" href="dir_59cf639e60a00e737c8a7b5f377f3f3f.html">libhsqs</a></li><li class="navelem"><a class="el" href="dir_37940ec95c8f6aadf475035c5c6af1d9.html">libhsqs</a></li><li class="navelem"><a class="el" href="dir_2fb9c6c25182fa91851a94c48bb8ff5e.html">src</a></li><li class="navelem"><a class="el" href="dir_2237b31565572db71ea2452d612019b5.html">data</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3a0534501ca4be4079425efd3c8ffab8.html">__w</a></li><li class="navelem"><a class="el" href="dir_bf5a6642e4a2ec8691d45172aa2efe79.html">libsqsh</a></li><li class="navelem"><a class="el" href="dir_7bea8aa7adab50784d6c0b22b0dd2031.html">libsqsh</a></li><li class="navelem"><a class="el" href="dir_4444a2805dd47f54c48baa085de65586.html">src</a></li><li class="navelem"><a class="el" href="dir_efa0ca88bf165e461d58222aed34655b.html">data</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -97,79 +97,79 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:acdb1de2f706478b9a6853208e18e474c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#acdb1de2f706478b9a6853208e18e474c">HsqsSuperblockCompressionId</a> { <br />
-&#160;&#160;<a class="el" href="superblock_8h.html#acdb1de2f706478b9a6853208e18e474ca587f274149ad1ee48251effe901d2281">HSQS_COMPRESSION_NONE</a> = 0
-, <a class="el" href="superblock_8h.html#acdb1de2f706478b9a6853208e18e474caa8b2657a98910cb41ae170197288c35c">HSQS_COMPRESSION_GZIP</a> = 1
-, <a class="el" href="superblock_8h.html#acdb1de2f706478b9a6853208e18e474ca391e549be092ba89f192fa0e0d932275">HSQS_COMPRESSION_LZMA</a> = 2
-, <a class="el" href="superblock_8h.html#acdb1de2f706478b9a6853208e18e474ca82e07d134f51f41c09d33a4e7a836ac5">HSQS_COMPRESSION_LZO</a> = 3
+<tr class="memitem:ae0979c00d3e768637a9a10f31b95594a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594a">SqshSuperblockCompressionId</a> { <br />
+&#160;&#160;<a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aa587f274149ad1ee48251effe901d2281">HSQS_COMPRESSION_NONE</a> = 0
+, <a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aaa8b2657a98910cb41ae170197288c35c">HSQS_COMPRESSION_GZIP</a> = 1
+, <a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aa391e549be092ba89f192fa0e0d932275">HSQS_COMPRESSION_LZMA</a> = 2
+, <a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aa82e07d134f51f41c09d33a4e7a836ac5">HSQS_COMPRESSION_LZO</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="superblock_8h.html#acdb1de2f706478b9a6853208e18e474cafb6c6338b74b691b3fdd5edb4af2fe65">HSQS_COMPRESSION_XZ</a> = 4
-, <a class="el" href="superblock_8h.html#acdb1de2f706478b9a6853208e18e474caf32db83fcf9b8bc065552a09092970a3">HSQS_COMPRESSION_LZ4</a> = 5
-, <a class="el" href="superblock_8h.html#acdb1de2f706478b9a6853208e18e474ca067c26fa554195d7ef0cbdaabcb74a9f">HSQS_COMPRESSION_ZSTD</a> = 6
+&#160;&#160;<a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aafb6c6338b74b691b3fdd5edb4af2fe65">HSQS_COMPRESSION_XZ</a> = 4
+, <a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aaf32db83fcf9b8bc065552a09092970a3">HSQS_COMPRESSION_LZ4</a> = 5
+, <a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aa067c26fa554195d7ef0cbdaabcb74a9f">HSQS_COMPRESSION_ZSTD</a> = 6
 <br />
  }</td></tr>
-<tr class="separator:acdb1de2f706478b9a6853208e18e474c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95bdef456724ad2b3a56e20a70a11713"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713">HsqsSuperblockFlags</a> { <br />
-&#160;&#160;<a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713aaf6bf598ab2bc46749dfbf2a36490cc2">HSQS_SUPERBLOCK_UNCOMPRESSED_INODES</a> = 0x0001
-, <a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713aa0df24fb4f8a80b196d0eeb3f0947371">HSQS_SUPERBLOCK_UNCOMPRESSED_DATA</a> = 0x0002
-, <a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713a1165fb45dedd171a6ad825d16aa437d0">HSQS_SUPERBLOCK_CHECK</a> = 0x0004
-, <a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713a80fcb576478f6734e1923be8426d023e">HSQS_SUPERBLOCK_UNCOMPRESSED_FRAGMENTS</a> = 0x0008
+<tr class="separator:ae0979c00d3e768637a9a10f31b95594a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af646f88052c2cec402c25f13e9497c91"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91">SqshSuperblockFlags</a> { <br />
+&#160;&#160;<a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91aaf6bf598ab2bc46749dfbf2a36490cc2">HSQS_SUPERBLOCK_UNCOMPRESSED_INODES</a> = 0x0001
+, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91aa0df24fb4f8a80b196d0eeb3f0947371">HSQS_SUPERBLOCK_UNCOMPRESSED_DATA</a> = 0x0002
+, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a1165fb45dedd171a6ad825d16aa437d0">HSQS_SUPERBLOCK_CHECK</a> = 0x0004
+, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a80fcb576478f6734e1923be8426d023e">HSQS_SUPERBLOCK_UNCOMPRESSED_FRAGMENTS</a> = 0x0008
 , <br />
-&#160;&#160;<a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713af0c4e3238e58dd22ec507e4649b24f13">HSQS_SUPERBLOCK_NO_FRAGMENTS</a> = 0x0010
-, <a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713a273909a96818da97b1433c10d6b450d2">HSQS_SUPERBLOCK_ALWAYS_FRAGMENTS</a> = 0x0020
-, <a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713ad35edcce21f862d59079dbe3e5adb008">HSQS_SUPERBLOCK_DUPLICATES</a> = 0x0040
-, <a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713a298ca1a71537137e5dfc6ff905b0e0b2">HSQS_SUPERBLOCK_EXPORTABLE</a> = 0x0080
+&#160;&#160;<a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91af0c4e3238e58dd22ec507e4649b24f13">HSQS_SUPERBLOCK_NO_FRAGMENTS</a> = 0x0010
+, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a273909a96818da97b1433c10d6b450d2">HSQS_SUPERBLOCK_ALWAYS_FRAGMENTS</a> = 0x0020
+, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91ad35edcce21f862d59079dbe3e5adb008">HSQS_SUPERBLOCK_DUPLICATES</a> = 0x0040
+, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a298ca1a71537137e5dfc6ff905b0e0b2">HSQS_SUPERBLOCK_EXPORTABLE</a> = 0x0080
 , <br />
-&#160;&#160;<a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713a45994bcf4c84cfeea8a8b1b51ee31988">HSQS_SUPERBLOCK_UNCOMPRESSED_XATTRS</a> = 0x0100
-, <a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713a4d97ff3bc59e9c2ccc61baacf3d89448">HSQS_SUPERBLOCK_NO_XATTRS</a> = 0x0200
-, <a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713aeccbac3c7e94e07e6a327127220aaf5d">HSQS_SUPERBLOCK_COMPRESSOR_OPTIONS</a> = 0x0400
-, <a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713a71d5a72c511fb8dc2cb0acf72182b8bd">HSQS_SUPERBLOCK_UNCOMPRESSED_IDS</a> = 0x0800
+&#160;&#160;<a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a45994bcf4c84cfeea8a8b1b51ee31988">HSQS_SUPERBLOCK_UNCOMPRESSED_XATTRS</a> = 0x0100
+, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a4d97ff3bc59e9c2ccc61baacf3d89448">HSQS_SUPERBLOCK_NO_XATTRS</a> = 0x0200
+, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91aeccbac3c7e94e07e6a327127220aaf5d">HSQS_SUPERBLOCK_COMPRESSOR_OPTIONS</a> = 0x0400
+, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a71d5a72c511fb8dc2cb0acf72182b8bd">HSQS_SUPERBLOCK_UNCOMPRESSED_IDS</a> = 0x0800
 <br />
  }</td></tr>
-<tr class="separator:a95bdef456724ad2b3a56e20a70a11713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af646f88052c2cec402c25f13e9497c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0a39e5d272071b3c48abe97fac819f76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a0a39e5d272071b3c48abe97fac819f76">hsqs_data_superblock_init</a> (const struct HsqsSuperblock *superblock, size_t size)</td></tr>
-<tr class="separator:a0a39e5d272071b3c48abe97fac819f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d4b723688a4ef53b5be48a5a57920b0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a0d4b723688a4ef53b5be48a5a57920b0">hsqs_data_superblock_magic</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:a0d4b723688a4ef53b5be48a5a57920b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93dae42209033e7b20afe77be5ee1fcf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a93dae42209033e7b20afe77be5ee1fcf">hsqs_data_superblock_inode_count</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:a93dae42209033e7b20afe77be5ee1fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84764b99314762cb578246520cd18edf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a84764b99314762cb578246520cd18edf">hsqs_data_superblock_modification_time</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:a84764b99314762cb578246520cd18edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa13569682b4399d7476f2c0dfdd483ea"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#aa13569682b4399d7476f2c0dfdd483ea">hsqs_data_superblock_block_size</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:aa13569682b4399d7476f2c0dfdd483ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7a40b440abf33f1767dee267251bdc6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#ac7a40b440abf33f1767dee267251bdc6">hsqs_data_superblock_fragment_entry_count</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:ac7a40b440abf33f1767dee267251bdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad84bb361b82a824f9715a258a39477ac"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#ad84bb361b82a824f9715a258a39477ac">hsqs_data_superblock_compression_id</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:ad84bb361b82a824f9715a258a39477ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae29ac5b42662263454264acb03cc0453"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#ae29ac5b42662263454264acb03cc0453">hsqs_data_superblock_block_log</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:ae29ac5b42662263454264acb03cc0453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af665d1dd42f2dc37a7fa391c3016d14e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#af665d1dd42f2dc37a7fa391c3016d14e">hsqs_data_superblock_flags</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:af665d1dd42f2dc37a7fa391c3016d14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43a9e69cac0c18cc07337a91fadeb719"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a43a9e69cac0c18cc07337a91fadeb719">hsqs_data_superblock_id_count</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:a43a9e69cac0c18cc07337a91fadeb719"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f8811db48cede49e9d5bfa80d7f5e84"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a3f8811db48cede49e9d5bfa80d7f5e84">hsqs_data_superblock_version_major</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:a3f8811db48cede49e9d5bfa80d7f5e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5784a72667e0f106716cff2b4abe514"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#aa5784a72667e0f106716cff2b4abe514">hsqs_data_superblock_version_minor</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:aa5784a72667e0f106716cff2b4abe514"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfd4a36b648c7a323daf6b0f2da9862b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#acfd4a36b648c7a323daf6b0f2da9862b">hsqs_data_superblock_root_inode_ref</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:acfd4a36b648c7a323daf6b0f2da9862b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac57f4a88275c4b341ebb53b317787661"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#ac57f4a88275c4b341ebb53b317787661">hsqs_data_superblock_bytes_used</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:ac57f4a88275c4b341ebb53b317787661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade26e6e8096371ac521537348e639217"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#ade26e6e8096371ac521537348e639217">hsqs_data_superblock_id_table_start</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:ade26e6e8096371ac521537348e639217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59c58dd28566aeb314d531106b308b14"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a59c58dd28566aeb314d531106b308b14">hsqs_data_superblock_xattr_id_table_start</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:a59c58dd28566aeb314d531106b308b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f05cb2c863922d83acf80d296d4b8e0"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a2f05cb2c863922d83acf80d296d4b8e0">hsqs_data_superblock_inode_table_start</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:a2f05cb2c863922d83acf80d296d4b8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbe5a0f73480a98fec7ee80d9eb3fca0"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#adbe5a0f73480a98fec7ee80d9eb3fca0">hsqs_data_superblock_directory_table_start</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:adbe5a0f73480a98fec7ee80d9eb3fca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae505ab7fff01a18658a032a00ec77756"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#ae505ab7fff01a18658a032a00ec77756">hsqs_data_superblock_fragment_table_start</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:ae505ab7fff01a18658a032a00ec77756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a363a1a3aa0f94e33a4d4a7afafc5c012"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a363a1a3aa0f94e33a4d4a7afafc5c012">hsqs_data_superblock_export_table_start</a> (const struct HsqsSuperblock *superblock)</td></tr>
-<tr class="separator:a363a1a3aa0f94e33a4d4a7afafc5c012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81bdf49a3bec910c1de42c44be575fa0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a81bdf49a3bec910c1de42c44be575fa0">sqsh_data_superblock_init</a> (const struct SqshSuperblock *superblock, size_t size)</td></tr>
+<tr class="separator:a81bdf49a3bec910c1de42c44be575fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b1d729cf8555259ea7793644ed4cd1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a43b1d729cf8555259ea7793644ed4cd1">sqsh_data_superblock_magic</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:a43b1d729cf8555259ea7793644ed4cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851a0cae680c0d0f49fdacdc8dcf776d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a851a0cae680c0d0f49fdacdc8dcf776d">sqsh_data_superblock_inode_count</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:a851a0cae680c0d0f49fdacdc8dcf776d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a1d985f3fd3af97a4adca6f7b489db"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a11a1d985f3fd3af97a4adca6f7b489db">sqsh_data_superblock_modification_time</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:a11a1d985f3fd3af97a4adca6f7b489db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02e5592f937240ef41b6fb26c1198ab"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#aa02e5592f937240ef41b6fb26c1198ab">sqsh_data_superblock_block_size</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:aa02e5592f937240ef41b6fb26c1198ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0c83999474876de1127c4537133ded5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#aa0c83999474876de1127c4537133ded5">sqsh_data_superblock_fragment_entry_count</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:aa0c83999474876de1127c4537133ded5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aab264803b4183f8b5509d3e3a8c4c8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a2aab264803b4183f8b5509d3e3a8c4c8">sqsh_data_superblock_compression_id</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:a2aab264803b4183f8b5509d3e3a8c4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0d87b38992dfaa88cbd81c3a94a23d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a8a0d87b38992dfaa88cbd81c3a94a23d">sqsh_data_superblock_block_log</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:a8a0d87b38992dfaa88cbd81c3a94a23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d470139d15b9a566353a535920c6d8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a87d470139d15b9a566353a535920c6d8">sqsh_data_superblock_flags</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:a87d470139d15b9a566353a535920c6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec37665ef6780c2021ba4ccc267b2ed4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#aec37665ef6780c2021ba4ccc267b2ed4">sqsh_data_superblock_id_count</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:aec37665ef6780c2021ba4ccc267b2ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1aab220882fc2462683f44f0c09239"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a3c1aab220882fc2462683f44f0c09239">sqsh_data_superblock_version_major</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:a3c1aab220882fc2462683f44f0c09239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28fae4a003c3c049e185d47486314acd"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a28fae4a003c3c049e185d47486314acd">sqsh_data_superblock_version_minor</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:a28fae4a003c3c049e185d47486314acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a044ad8ffa36d65e47e874a308f70d5d8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a044ad8ffa36d65e47e874a308f70d5d8">sqsh_data_superblock_root_inode_ref</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:a044ad8ffa36d65e47e874a308f70d5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c2d427233800d1b046dcb31abf8b86"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a83c2d427233800d1b046dcb31abf8b86">sqsh_data_superblock_bytes_used</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:a83c2d427233800d1b046dcb31abf8b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4cc6d92b9033580e57eb98daa10631e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#af4cc6d92b9033580e57eb98daa10631e">sqsh_data_superblock_id_table_start</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:af4cc6d92b9033580e57eb98daa10631e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba45b432751eed12367066438c0e8a9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#adba45b432751eed12367066438c0e8a9">sqsh_data_superblock_xattr_id_table_start</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:adba45b432751eed12367066438c0e8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88074473659ad121b37108e61a6aeb75"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a88074473659ad121b37108e61a6aeb75">sqsh_data_superblock_inode_table_start</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:a88074473659ad121b37108e61a6aeb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53597a68a617a31dfe20496bca7ea4e5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a53597a68a617a31dfe20496bca7ea4e5">sqsh_data_superblock_directory_table_start</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:a53597a68a617a31dfe20496bca7ea4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb6f3a4f7147473497486ad23bab61d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#abeb6f3a4f7147473497486ad23bab61d">sqsh_data_superblock_fragment_table_start</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:abeb6f3a4f7147473497486ad23bab61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d9aba14d09bb6f98ce3636b2b50b43"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a35d9aba14d09bb6f98ce3636b2b50b43">sqsh_data_superblock_export_table_start</a> (const struct SqshSuperblock *superblock)</td></tr>
+<tr class="separator:a35d9aba14d09bb6f98ce3636b2b50b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Enno Boland (<a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'ebo'+'la'+'nd.'+'de'; return false;">mail@<span class="obfuscator">.nosp@m.</span>ebol<span class="obfuscator">.nosp@m.</span>and.d<span class="obfuscator">.nosp@m.</span>e</a>) </dd></dl>
@@ -193,55 +193,55 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="acdb1de2f706478b9a6853208e18e474c" name="acdb1de2f706478b9a6853208e18e474c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdb1de2f706478b9a6853208e18e474c">&#9670;&nbsp;</a></span>HsqsSuperblockCompressionId</h2>
+<a id="ae0979c00d3e768637a9a10f31b95594a" name="ae0979c00d3e768637a9a10f31b95594a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0979c00d3e768637a9a10f31b95594a">&#9670;&nbsp;</a></span>SqshSuperblockCompressionId</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="superblock_8h.html#acdb1de2f706478b9a6853208e18e474c">HsqsSuperblockCompressionId</a></td>
+          <td class="memname">enum <a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594a">SqshSuperblockCompressionId</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acdb1de2f706478b9a6853208e18e474ca587f274149ad1ee48251effe901d2281" name="acdb1de2f706478b9a6853208e18e474ca587f274149ad1ee48251effe901d2281"></a>HSQS_COMPRESSION_NONE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acdb1de2f706478b9a6853208e18e474caa8b2657a98910cb41ae170197288c35c" name="acdb1de2f706478b9a6853208e18e474caa8b2657a98910cb41ae170197288c35c"></a>HSQS_COMPRESSION_GZIP&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acdb1de2f706478b9a6853208e18e474ca391e549be092ba89f192fa0e0d932275" name="acdb1de2f706478b9a6853208e18e474ca391e549be092ba89f192fa0e0d932275"></a>HSQS_COMPRESSION_LZMA&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acdb1de2f706478b9a6853208e18e474ca82e07d134f51f41c09d33a4e7a836ac5" name="acdb1de2f706478b9a6853208e18e474ca82e07d134f51f41c09d33a4e7a836ac5"></a>HSQS_COMPRESSION_LZO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acdb1de2f706478b9a6853208e18e474cafb6c6338b74b691b3fdd5edb4af2fe65" name="acdb1de2f706478b9a6853208e18e474cafb6c6338b74b691b3fdd5edb4af2fe65"></a>HSQS_COMPRESSION_XZ&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acdb1de2f706478b9a6853208e18e474caf32db83fcf9b8bc065552a09092970a3" name="acdb1de2f706478b9a6853208e18e474caf32db83fcf9b8bc065552a09092970a3"></a>HSQS_COMPRESSION_LZ4&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acdb1de2f706478b9a6853208e18e474ca067c26fa554195d7ef0cbdaabcb74a9f" name="acdb1de2f706478b9a6853208e18e474ca067c26fa554195d7ef0cbdaabcb74a9f"></a>HSQS_COMPRESSION_ZSTD&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aa587f274149ad1ee48251effe901d2281" name="ae0979c00d3e768637a9a10f31b95594aa587f274149ad1ee48251effe901d2281"></a>HSQS_COMPRESSION_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aaa8b2657a98910cb41ae170197288c35c" name="ae0979c00d3e768637a9a10f31b95594aaa8b2657a98910cb41ae170197288c35c"></a>HSQS_COMPRESSION_GZIP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aa391e549be092ba89f192fa0e0d932275" name="ae0979c00d3e768637a9a10f31b95594aa391e549be092ba89f192fa0e0d932275"></a>HSQS_COMPRESSION_LZMA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aa82e07d134f51f41c09d33a4e7a836ac5" name="ae0979c00d3e768637a9a10f31b95594aa82e07d134f51f41c09d33a4e7a836ac5"></a>HSQS_COMPRESSION_LZO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aafb6c6338b74b691b3fdd5edb4af2fe65" name="ae0979c00d3e768637a9a10f31b95594aafb6c6338b74b691b3fdd5edb4af2fe65"></a>HSQS_COMPRESSION_XZ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aaf32db83fcf9b8bc065552a09092970a3" name="ae0979c00d3e768637a9a10f31b95594aaf32db83fcf9b8bc065552a09092970a3"></a>HSQS_COMPRESSION_LZ4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aa067c26fa554195d7ef0cbdaabcb74a9f" name="ae0979c00d3e768637a9a10f31b95594aa067c26fa554195d7ef0cbdaabcb74a9f"></a>HSQS_COMPRESSION_ZSTD&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="superblock_8h_source.html#l00043">43</a> of file <a class="el" href="superblock_8h_source.html">superblock.h</a>.</p>
 
 </div>
 </div>
-<a id="a95bdef456724ad2b3a56e20a70a11713" name="a95bdef456724ad2b3a56e20a70a11713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95bdef456724ad2b3a56e20a70a11713">&#9670;&nbsp;</a></span>HsqsSuperblockFlags</h2>
+<a id="af646f88052c2cec402c25f13e9497c91" name="af646f88052c2cec402c25f13e9497c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af646f88052c2cec402c25f13e9497c91">&#9670;&nbsp;</a></span>SqshSuperblockFlags</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="superblock_8h.html#a95bdef456724ad2b3a56e20a70a11713">HsqsSuperblockFlags</a></td>
+          <td class="memname">enum <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91">SqshSuperblockFlags</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a95bdef456724ad2b3a56e20a70a11713aaf6bf598ab2bc46749dfbf2a36490cc2" name="a95bdef456724ad2b3a56e20a70a11713aaf6bf598ab2bc46749dfbf2a36490cc2"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_INODES&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a95bdef456724ad2b3a56e20a70a11713aa0df24fb4f8a80b196d0eeb3f0947371" name="a95bdef456724ad2b3a56e20a70a11713aa0df24fb4f8a80b196d0eeb3f0947371"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_DATA&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a95bdef456724ad2b3a56e20a70a11713a1165fb45dedd171a6ad825d16aa437d0" name="a95bdef456724ad2b3a56e20a70a11713a1165fb45dedd171a6ad825d16aa437d0"></a>HSQS_SUPERBLOCK_CHECK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a95bdef456724ad2b3a56e20a70a11713a80fcb576478f6734e1923be8426d023e" name="a95bdef456724ad2b3a56e20a70a11713a80fcb576478f6734e1923be8426d023e"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_FRAGMENTS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a95bdef456724ad2b3a56e20a70a11713af0c4e3238e58dd22ec507e4649b24f13" name="a95bdef456724ad2b3a56e20a70a11713af0c4e3238e58dd22ec507e4649b24f13"></a>HSQS_SUPERBLOCK_NO_FRAGMENTS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a95bdef456724ad2b3a56e20a70a11713a273909a96818da97b1433c10d6b450d2" name="a95bdef456724ad2b3a56e20a70a11713a273909a96818da97b1433c10d6b450d2"></a>HSQS_SUPERBLOCK_ALWAYS_FRAGMENTS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a95bdef456724ad2b3a56e20a70a11713ad35edcce21f862d59079dbe3e5adb008" name="a95bdef456724ad2b3a56e20a70a11713ad35edcce21f862d59079dbe3e5adb008"></a>HSQS_SUPERBLOCK_DUPLICATES&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a95bdef456724ad2b3a56e20a70a11713a298ca1a71537137e5dfc6ff905b0e0b2" name="a95bdef456724ad2b3a56e20a70a11713a298ca1a71537137e5dfc6ff905b0e0b2"></a>HSQS_SUPERBLOCK_EXPORTABLE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a95bdef456724ad2b3a56e20a70a11713a45994bcf4c84cfeea8a8b1b51ee31988" name="a95bdef456724ad2b3a56e20a70a11713a45994bcf4c84cfeea8a8b1b51ee31988"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_XATTRS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a95bdef456724ad2b3a56e20a70a11713a4d97ff3bc59e9c2ccc61baacf3d89448" name="a95bdef456724ad2b3a56e20a70a11713a4d97ff3bc59e9c2ccc61baacf3d89448"></a>HSQS_SUPERBLOCK_NO_XATTRS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a95bdef456724ad2b3a56e20a70a11713aeccbac3c7e94e07e6a327127220aaf5d" name="a95bdef456724ad2b3a56e20a70a11713aeccbac3c7e94e07e6a327127220aaf5d"></a>HSQS_SUPERBLOCK_COMPRESSOR_OPTIONS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a95bdef456724ad2b3a56e20a70a11713a71d5a72c511fb8dc2cb0acf72182b8bd" name="a95bdef456724ad2b3a56e20a70a11713a71d5a72c511fb8dc2cb0acf72182b8bd"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_IDS&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91aaf6bf598ab2bc46749dfbf2a36490cc2" name="af646f88052c2cec402c25f13e9497c91aaf6bf598ab2bc46749dfbf2a36490cc2"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_INODES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91aa0df24fb4f8a80b196d0eeb3f0947371" name="af646f88052c2cec402c25f13e9497c91aa0df24fb4f8a80b196d0eeb3f0947371"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_DATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a1165fb45dedd171a6ad825d16aa437d0" name="af646f88052c2cec402c25f13e9497c91a1165fb45dedd171a6ad825d16aa437d0"></a>HSQS_SUPERBLOCK_CHECK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a80fcb576478f6734e1923be8426d023e" name="af646f88052c2cec402c25f13e9497c91a80fcb576478f6734e1923be8426d023e"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_FRAGMENTS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91af0c4e3238e58dd22ec507e4649b24f13" name="af646f88052c2cec402c25f13e9497c91af0c4e3238e58dd22ec507e4649b24f13"></a>HSQS_SUPERBLOCK_NO_FRAGMENTS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a273909a96818da97b1433c10d6b450d2" name="af646f88052c2cec402c25f13e9497c91a273909a96818da97b1433c10d6b450d2"></a>HSQS_SUPERBLOCK_ALWAYS_FRAGMENTS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91ad35edcce21f862d59079dbe3e5adb008" name="af646f88052c2cec402c25f13e9497c91ad35edcce21f862d59079dbe3e5adb008"></a>HSQS_SUPERBLOCK_DUPLICATES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a298ca1a71537137e5dfc6ff905b0e0b2" name="af646f88052c2cec402c25f13e9497c91a298ca1a71537137e5dfc6ff905b0e0b2"></a>HSQS_SUPERBLOCK_EXPORTABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a45994bcf4c84cfeea8a8b1b51ee31988" name="af646f88052c2cec402c25f13e9497c91a45994bcf4c84cfeea8a8b1b51ee31988"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_XATTRS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a4d97ff3bc59e9c2ccc61baacf3d89448" name="af646f88052c2cec402c25f13e9497c91a4d97ff3bc59e9c2ccc61baacf3d89448"></a>HSQS_SUPERBLOCK_NO_XATTRS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91aeccbac3c7e94e07e6a327127220aaf5d" name="af646f88052c2cec402c25f13e9497c91aeccbac3c7e94e07e6a327127220aaf5d"></a>HSQS_SUPERBLOCK_COMPRESSOR_OPTIONS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a71d5a72c511fb8dc2cb0acf72182b8bd" name="af646f88052c2cec402c25f13e9497c91a71d5a72c511fb8dc2cb0acf72182b8bd"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_IDS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="superblock_8h_source.html#l00053">53</a> of file <a class="el" href="superblock_8h_source.html">superblock.h</a>.</p>
@@ -249,16 +249,16 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae29ac5b42662263454264acb03cc0453" name="ae29ac5b42662263454264acb03cc0453"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae29ac5b42662263454264acb03cc0453">&#9670;&nbsp;</a></span>hsqs_data_superblock_block_log()</h2>
+<a id="a8a0d87b38992dfaa88cbd81c3a94a23d" name="a8a0d87b38992dfaa88cbd81c3a94a23d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0d87b38992dfaa88cbd81c3a94a23d">&#9670;&nbsp;</a></span>sqsh_data_superblock_block_log()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t hsqs_data_superblock_block_log </td>
+          <td class="memname">uint16_t sqsh_data_superblock_block_log </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -267,16 +267,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa13569682b4399d7476f2c0dfdd483ea" name="aa13569682b4399d7476f2c0dfdd483ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa13569682b4399d7476f2c0dfdd483ea">&#9670;&nbsp;</a></span>hsqs_data_superblock_block_size()</h2>
+<a id="aa02e5592f937240ef41b6fb26c1198ab" name="aa02e5592f937240ef41b6fb26c1198ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa02e5592f937240ef41b6fb26c1198ab">&#9670;&nbsp;</a></span>sqsh_data_superblock_block_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_data_superblock_block_size </td>
+          <td class="memname">uint32_t sqsh_data_superblock_block_size </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -285,16 +285,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac57f4a88275c4b341ebb53b317787661" name="ac57f4a88275c4b341ebb53b317787661"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac57f4a88275c4b341ebb53b317787661">&#9670;&nbsp;</a></span>hsqs_data_superblock_bytes_used()</h2>
+<a id="a83c2d427233800d1b046dcb31abf8b86" name="a83c2d427233800d1b046dcb31abf8b86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83c2d427233800d1b046dcb31abf8b86">&#9670;&nbsp;</a></span>sqsh_data_superblock_bytes_used()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t hsqs_data_superblock_bytes_used </td>
+          <td class="memname">uint64_t sqsh_data_superblock_bytes_used </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -303,16 +303,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad84bb361b82a824f9715a258a39477ac" name="ad84bb361b82a824f9715a258a39477ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad84bb361b82a824f9715a258a39477ac">&#9670;&nbsp;</a></span>hsqs_data_superblock_compression_id()</h2>
+<a id="a2aab264803b4183f8b5509d3e3a8c4c8" name="a2aab264803b4183f8b5509d3e3a8c4c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aab264803b4183f8b5509d3e3a8c4c8">&#9670;&nbsp;</a></span>sqsh_data_superblock_compression_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t hsqs_data_superblock_compression_id </td>
+          <td class="memname">uint16_t sqsh_data_superblock_compression_id </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -321,16 +321,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adbe5a0f73480a98fec7ee80d9eb3fca0" name="adbe5a0f73480a98fec7ee80d9eb3fca0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbe5a0f73480a98fec7ee80d9eb3fca0">&#9670;&nbsp;</a></span>hsqs_data_superblock_directory_table_start()</h2>
+<a id="a53597a68a617a31dfe20496bca7ea4e5" name="a53597a68a617a31dfe20496bca7ea4e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53597a68a617a31dfe20496bca7ea4e5">&#9670;&nbsp;</a></span>sqsh_data_superblock_directory_table_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t hsqs_data_superblock_directory_table_start </td>
+          <td class="memname">uint64_t sqsh_data_superblock_directory_table_start </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -339,16 +339,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a363a1a3aa0f94e33a4d4a7afafc5c012" name="a363a1a3aa0f94e33a4d4a7afafc5c012"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a363a1a3aa0f94e33a4d4a7afafc5c012">&#9670;&nbsp;</a></span>hsqs_data_superblock_export_table_start()</h2>
+<a id="a35d9aba14d09bb6f98ce3636b2b50b43" name="a35d9aba14d09bb6f98ce3636b2b50b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35d9aba14d09bb6f98ce3636b2b50b43">&#9670;&nbsp;</a></span>sqsh_data_superblock_export_table_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t hsqs_data_superblock_export_table_start </td>
+          <td class="memname">uint64_t sqsh_data_superblock_export_table_start </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -357,16 +357,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af665d1dd42f2dc37a7fa391c3016d14e" name="af665d1dd42f2dc37a7fa391c3016d14e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af665d1dd42f2dc37a7fa391c3016d14e">&#9670;&nbsp;</a></span>hsqs_data_superblock_flags()</h2>
+<a id="a87d470139d15b9a566353a535920c6d8" name="a87d470139d15b9a566353a535920c6d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d470139d15b9a566353a535920c6d8">&#9670;&nbsp;</a></span>sqsh_data_superblock_flags()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t hsqs_data_superblock_flags </td>
+          <td class="memname">uint16_t sqsh_data_superblock_flags </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -375,16 +375,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac7a40b440abf33f1767dee267251bdc6" name="ac7a40b440abf33f1767dee267251bdc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7a40b440abf33f1767dee267251bdc6">&#9670;&nbsp;</a></span>hsqs_data_superblock_fragment_entry_count()</h2>
+<a id="aa0c83999474876de1127c4537133ded5" name="aa0c83999474876de1127c4537133ded5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0c83999474876de1127c4537133ded5">&#9670;&nbsp;</a></span>sqsh_data_superblock_fragment_entry_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_data_superblock_fragment_entry_count </td>
+          <td class="memname">uint32_t sqsh_data_superblock_fragment_entry_count </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -393,16 +393,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae505ab7fff01a18658a032a00ec77756" name="ae505ab7fff01a18658a032a00ec77756"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae505ab7fff01a18658a032a00ec77756">&#9670;&nbsp;</a></span>hsqs_data_superblock_fragment_table_start()</h2>
+<a id="abeb6f3a4f7147473497486ad23bab61d" name="abeb6f3a4f7147473497486ad23bab61d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeb6f3a4f7147473497486ad23bab61d">&#9670;&nbsp;</a></span>sqsh_data_superblock_fragment_table_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t hsqs_data_superblock_fragment_table_start </td>
+          <td class="memname">uint64_t sqsh_data_superblock_fragment_table_start </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -411,16 +411,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a43a9e69cac0c18cc07337a91fadeb719" name="a43a9e69cac0c18cc07337a91fadeb719"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43a9e69cac0c18cc07337a91fadeb719">&#9670;&nbsp;</a></span>hsqs_data_superblock_id_count()</h2>
+<a id="aec37665ef6780c2021ba4ccc267b2ed4" name="aec37665ef6780c2021ba4ccc267b2ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec37665ef6780c2021ba4ccc267b2ed4">&#9670;&nbsp;</a></span>sqsh_data_superblock_id_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t hsqs_data_superblock_id_count </td>
+          <td class="memname">uint16_t sqsh_data_superblock_id_count </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -429,16 +429,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ade26e6e8096371ac521537348e639217" name="ade26e6e8096371ac521537348e639217"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade26e6e8096371ac521537348e639217">&#9670;&nbsp;</a></span>hsqs_data_superblock_id_table_start()</h2>
+<a id="af4cc6d92b9033580e57eb98daa10631e" name="af4cc6d92b9033580e57eb98daa10631e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4cc6d92b9033580e57eb98daa10631e">&#9670;&nbsp;</a></span>sqsh_data_superblock_id_table_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t hsqs_data_superblock_id_table_start </td>
+          <td class="memname">uint64_t sqsh_data_superblock_id_table_start </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -447,16 +447,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0a39e5d272071b3c48abe97fac819f76" name="a0a39e5d272071b3c48abe97fac819f76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a39e5d272071b3c48abe97fac819f76">&#9670;&nbsp;</a></span>hsqs_data_superblock_init()</h2>
+<a id="a81bdf49a3bec910c1de42c44be575fa0" name="a81bdf49a3bec910c1de42c44be575fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81bdf49a3bec910c1de42c44be575fa0">&#9670;&nbsp;</a></span>sqsh_data_superblock_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int hsqs_data_superblock_init </td>
+          <td class="memname">int sqsh_data_superblock_init </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em>, </td>
         </tr>
         <tr>
@@ -475,16 +475,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a93dae42209033e7b20afe77be5ee1fcf" name="a93dae42209033e7b20afe77be5ee1fcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93dae42209033e7b20afe77be5ee1fcf">&#9670;&nbsp;</a></span>hsqs_data_superblock_inode_count()</h2>
+<a id="a851a0cae680c0d0f49fdacdc8dcf776d" name="a851a0cae680c0d0f49fdacdc8dcf776d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851a0cae680c0d0f49fdacdc8dcf776d">&#9670;&nbsp;</a></span>sqsh_data_superblock_inode_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_data_superblock_inode_count </td>
+          <td class="memname">uint32_t sqsh_data_superblock_inode_count </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -493,16 +493,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2f05cb2c863922d83acf80d296d4b8e0" name="a2f05cb2c863922d83acf80d296d4b8e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f05cb2c863922d83acf80d296d4b8e0">&#9670;&nbsp;</a></span>hsqs_data_superblock_inode_table_start()</h2>
+<a id="a88074473659ad121b37108e61a6aeb75" name="a88074473659ad121b37108e61a6aeb75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88074473659ad121b37108e61a6aeb75">&#9670;&nbsp;</a></span>sqsh_data_superblock_inode_table_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t hsqs_data_superblock_inode_table_start </td>
+          <td class="memname">uint64_t sqsh_data_superblock_inode_table_start </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -511,16 +511,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0d4b723688a4ef53b5be48a5a57920b0" name="a0d4b723688a4ef53b5be48a5a57920b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d4b723688a4ef53b5be48a5a57920b0">&#9670;&nbsp;</a></span>hsqs_data_superblock_magic()</h2>
+<a id="a43b1d729cf8555259ea7793644ed4cd1" name="a43b1d729cf8555259ea7793644ed4cd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b1d729cf8555259ea7793644ed4cd1">&#9670;&nbsp;</a></span>sqsh_data_superblock_magic()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_data_superblock_magic </td>
+          <td class="memname">uint32_t sqsh_data_superblock_magic </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -529,16 +529,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a84764b99314762cb578246520cd18edf" name="a84764b99314762cb578246520cd18edf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84764b99314762cb578246520cd18edf">&#9670;&nbsp;</a></span>hsqs_data_superblock_modification_time()</h2>
+<a id="a11a1d985f3fd3af97a4adca6f7b489db" name="a11a1d985f3fd3af97a4adca6f7b489db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a1d985f3fd3af97a4adca6f7b489db">&#9670;&nbsp;</a></span>sqsh_data_superblock_modification_time()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t hsqs_data_superblock_modification_time </td>
+          <td class="memname">uint32_t sqsh_data_superblock_modification_time </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -547,16 +547,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acfd4a36b648c7a323daf6b0f2da9862b" name="acfd4a36b648c7a323daf6b0f2da9862b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfd4a36b648c7a323daf6b0f2da9862b">&#9670;&nbsp;</a></span>hsqs_data_superblock_root_inode_ref()</h2>
+<a id="a044ad8ffa36d65e47e874a308f70d5d8" name="a044ad8ffa36d65e47e874a308f70d5d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a044ad8ffa36d65e47e874a308f70d5d8">&#9670;&nbsp;</a></span>sqsh_data_superblock_root_inode_ref()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t hsqs_data_superblock_root_inode_ref </td>
+          <td class="memname">uint64_t sqsh_data_superblock_root_inode_ref </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -565,16 +565,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f8811db48cede49e9d5bfa80d7f5e84" name="a3f8811db48cede49e9d5bfa80d7f5e84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f8811db48cede49e9d5bfa80d7f5e84">&#9670;&nbsp;</a></span>hsqs_data_superblock_version_major()</h2>
+<a id="a3c1aab220882fc2462683f44f0c09239" name="a3c1aab220882fc2462683f44f0c09239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c1aab220882fc2462683f44f0c09239">&#9670;&nbsp;</a></span>sqsh_data_superblock_version_major()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t hsqs_data_superblock_version_major </td>
+          <td class="memname">uint16_t sqsh_data_superblock_version_major </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -583,16 +583,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa5784a72667e0f106716cff2b4abe514" name="aa5784a72667e0f106716cff2b4abe514"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5784a72667e0f106716cff2b4abe514">&#9670;&nbsp;</a></span>hsqs_data_superblock_version_minor()</h2>
+<a id="a28fae4a003c3c049e185d47486314acd" name="a28fae4a003c3c049e185d47486314acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28fae4a003c3c049e185d47486314acd">&#9670;&nbsp;</a></span>sqsh_data_superblock_version_minor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t hsqs_data_superblock_version_minor </td>
+          <td class="memname">uint16_t sqsh_data_superblock_version_minor </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -601,16 +601,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a59c58dd28566aeb314d531106b308b14" name="a59c58dd28566aeb314d531106b308b14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59c58dd28566aeb314d531106b308b14">&#9670;&nbsp;</a></span>hsqs_data_superblock_xattr_id_table_start()</h2>
+<a id="adba45b432751eed12367066438c0e8a9" name="adba45b432751eed12367066438c0e8a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adba45b432751eed12367066438c0e8a9">&#9670;&nbsp;</a></span>sqsh_data_superblock_xattr_id_table_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t hsqs_data_superblock_xattr_id_table_start </td>
+          <td class="memname">uint64_t sqsh_data_superblock_xattr_id_table_start </td>
           <td>(</td>
-          <td class="paramtype">const struct HsqsSuperblock *&#160;</td>
+          <td class="paramtype">const struct SqshSuperblock *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
         </tr>
