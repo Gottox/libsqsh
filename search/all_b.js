@@ -12,11 +12,12 @@ var searchData=
   ['memory_5fmapper_5fh_9',['MEMORY_MAPPER_H',['../mapper_8h.html#ad2b4a825897fd4c8fc0c0bc188604c22',1,'mapper.h']]],
   ['metablock_10',['metablock',['../structHsqsInodeContext.html#a2d29ab6497fd21a2461ab8de26c1688d',1,'HsqsInodeContext::metablock()'],['../structHsqsDirectoryIterator.html#a5815036ed63d0b7c5b396691dd499335',1,'HsqsDirectoryIterator::metablock()'],['../structHsqsXattrIterator.html#a3879d5ec2eefe24d2194587d211c191b',1,'HsqsXattrIterator::metablock()']]],
   ['metablock_2eh_11',['metablock.h',['../metablock_8h.html',1,'']]],
-  ['metablock_5fcontext_2eh_12',['metablock_context.h',['../metablock__context_8h.html',1,'']]],
-  ['metablock_5fstream_5fcontext_2eh_13',['metablock_stream_context.h',['../metablock__stream__context_8h.html',1,'']]],
-  ['min_14',['MIN',['../utils_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f',1,'utils.h']]],
-  ['mm_15',['mm',['../structHsqsMapper.html#a211d92007be34badf9470580a3c16072',1,'HsqsMapper::mm()'],['../structHsqsMapping.html#a229d586909673c8d14fed18f35eb11a4',1,'HsqsMapping::mm()']]],
-  ['mmap_5ffull_5fmapper_2eh_16',['mmap_full_mapper.h',['../mmap__full__mapper_8h.html',1,'']]],
-  ['mmap_5fmapper_2eh_17',['mmap_mapper.h',['../mmap__mapper_8h.html',1,'']]],
-  ['mult_5foverflow_18',['MULT_OVERFLOW',['../utils_8h.html#a9555e06842350d0685e8c87822f442a2',1,'utils.h']]]
+  ['metablock_5fcompression_12',['metablock_compression',['../structHsqs.html#a35b920291addbf97927edaca2e8180c3',1,'Hsqs']]],
+  ['metablock_5fcontext_2eh_13',['metablock_context.h',['../metablock__context_8h.html',1,'']]],
+  ['metablock_5fstream_5fcontext_2eh_14',['metablock_stream_context.h',['../metablock__stream__context_8h.html',1,'']]],
+  ['min_15',['MIN',['../utils_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f',1,'utils.h']]],
+  ['mm_16',['mm',['../structHsqsMapper.html#a211d92007be34badf9470580a3c16072',1,'HsqsMapper::mm()'],['../structHsqsMapping.html#a229d586909673c8d14fed18f35eb11a4',1,'HsqsMapping::mm()']]],
+  ['mmap_5ffull_5fmapper_2eh_17',['mmap_full_mapper.h',['../mmap__full__mapper_8h.html',1,'']]],
+  ['mmap_5fmapper_2eh_18',['mmap_mapper.h',['../mmap__mapper_8h.html',1,'']]],
+  ['mult_5foverflow_19',['MULT_OVERFLOW',['../utils_8h.html#a9555e06842350d0685e8c87822f442a2',1,'utils.h']]]
 ];

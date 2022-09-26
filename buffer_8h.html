@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libhsqs<span id="projectnumber">&#160;29989f7</span>
+   <div id="projectname">libhsqs<span id="projectnumber">&#160;6edfbd3</span>
    </div>
   </td>
  </tr>
@@ -99,10 +99,12 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae776895c58dae1438682082ab550916a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer_8h.html#ae776895c58dae1438682082ab550916a">hsqs_buffer_init</a> (struct <a class="el" href="structHsqsBuffer.html">HsqsBuffer</a> *buffer, int compression_id, int block_size)</td></tr>
-<tr class="separator:ae776895c58dae1438682082ab550916a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84febefcad4a7d6ecd7489102b2005eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer_8h.html#a84febefcad4a7d6ecd7489102b2005eb">hsqs_buffer_append_block</a> (struct <a class="el" href="structHsqsBuffer.html">HsqsBuffer</a> *buffer, const uint8_t *source, const size_t source_size, bool is_compressed)</td></tr>
-<tr class="separator:a84febefcad4a7d6ecd7489102b2005eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f818064d6e835f6464eafd993e53f03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer_8h.html#a4f818064d6e835f6464eafd993e53f03">hsqs_buffer_init</a> (struct <a class="el" href="structHsqsBuffer.html">HsqsBuffer</a> *buffer)</td></tr>
+<tr class="separator:a4f818064d6e835f6464eafd993e53f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144fbd17628f57cdf7439cb3b38cd06d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer_8h.html#a144fbd17628f57cdf7439cb3b38cd06d">hsqs_buffer_add_size</a> (struct <a class="el" href="structHsqsBuffer.html">HsqsBuffer</a> *buffer, size_t additional_size)</td></tr>
+<tr class="separator:a144fbd17628f57cdf7439cb3b38cd06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b23a1e9f96f715946ce52647c6d580c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer_8h.html#a9b23a1e9f96f715946ce52647c6d580c">hsqs_buffer_add_capacity</a> (struct <a class="el" href="structHsqsBuffer.html">HsqsBuffer</a> *buffer, uint8_t **additional_buffer, size_t additional_size)</td></tr>
+<tr class="separator:a9b23a1e9f96f715946ce52647c6d580c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44ee04e488fc1415041f5524f01ef5e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer_8h.html#a44ee04e488fc1415041f5524f01ef5e3">hsqs_buffer_append</a> (struct <a class="el" href="structHsqsBuffer.html">HsqsBuffer</a> *buffer, const uint8_t *source, const size_t source_size)</td></tr>
 <tr class="separator:a44ee04e488fc1415041f5524f01ef5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add3d3f1effab431e0902071da97cded4"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer_8h.html#add3d3f1effab431e0902071da97cded4">hsqs_buffer_data</a> (const struct <a class="el" href="structHsqsBuffer.html">HsqsBuffer</a> *buffer)</td></tr>
@@ -117,6 +119,68 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="buffer_8h_source.html">buffer.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a9b23a1e9f96f715946ce52647c6d580c" name="a9b23a1e9f96f715946ce52647c6d580c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b23a1e9f96f715946ce52647c6d580c">&#9670;&nbsp;</a></span>hsqs_buffer_add_capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int hsqs_buffer_add_capacity </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structHsqsBuffer.html">HsqsBuffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t **&#160;</td>
+          <td class="paramname"><em>additional_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>additional_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a144fbd17628f57cdf7439cb3b38cd06d" name="a144fbd17628f57cdf7439cb3b38cd06d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a144fbd17628f57cdf7439cb3b38cd06d">&#9670;&nbsp;</a></span>hsqs_buffer_add_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int hsqs_buffer_add_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structHsqsBuffer.html">HsqsBuffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>additional_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a44ee04e488fc1415041f5524f01ef5e3" name="a44ee04e488fc1415041f5524f01ef5e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44ee04e488fc1415041f5524f01ef5e3">&#9670;&nbsp;</a></span>hsqs_buffer_append()</h2>
 
@@ -140,46 +204,6 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const size_t&#160;</td>
           <td class="paramname"><em>source_size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a84febefcad4a7d6ecd7489102b2005eb" name="a84febefcad4a7d6ecd7489102b2005eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84febefcad4a7d6ecd7489102b2005eb">&#9670;&nbsp;</a></span>hsqs_buffer_append_block()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int hsqs_buffer_append_block </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structHsqsBuffer.html">HsqsBuffer</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>source_size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>is_compressed</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -227,8 +251,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae776895c58dae1438682082ab550916a" name="ae776895c58dae1438682082ab550916a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae776895c58dae1438682082ab550916a">&#9670;&nbsp;</a></span>hsqs_buffer_init()</h2>
+<a id="a4f818064d6e835f6464eafd993e53f03" name="a4f818064d6e835f6464eafd993e53f03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f818064d6e835f6464eafd993e53f03">&#9670;&nbsp;</a></span>hsqs_buffer_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,24 +261,8 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int hsqs_buffer_init </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structHsqsBuffer.html">HsqsBuffer</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>compression_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>block_size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libhsqs: HsqsCompressor Struct Reference</title>
+<title>libhsqs: HsqsCompression Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libhsqs<span id="projectnumber">&#160;29989f7</span>
+   <div id="projectname">libhsqs<span id="projectnumber">&#160;6edfbd3</span>
    </div>
   </td>
  </tr>
@@ -64,45 +64,63 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">HsqsCompressor Struct Reference</div></div>
+  <div class="headertitle"><div class="title">HsqsCompression Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="compressor_8h_source.html">compressor.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="compression_8h_source.html">compression.h</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for HsqsCompressor:</div>
+Collaboration diagram for HsqsCompression:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structHsqsCompressor__coll__graph.svg" width="323" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structHsqsCompression__coll__graph.svg" width="323" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aad66cbdb70bd3e01fa4b9f6127a07a67"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structHsqsCompressionImplementation.html">HsqsCompressionImplementation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHsqsCompressor.html#aad66cbdb70bd3e01fa4b9f6127a07a67">impl</a></td></tr>
-<tr class="separator:aad66cbdb70bd3e01fa4b9f6127a07a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082cf2f7738b83cf715e5bc2387d29ff"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structHsqsCompressionImplementation.html">HsqsCompressionImplementation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHsqsCompression.html#a082cf2f7738b83cf715e5bc2387d29ff">impl</a></td></tr>
+<tr class="separator:a082cf2f7738b83cf715e5bc2387d29ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f71747e68394c91c0f615b2140a2a8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHsqsCompression.html#a34f71747e68394c91c0f615b2140a2a8">block_size</a></td></tr>
+<tr class="separator:a34f71747e68394c91c0f615b2140a2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="compressor_8h_source.html#l00017">17</a> of file <a class="el" href="compressor_8h_source.html">compressor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="compression_8h_source.html#l00052">52</a> of file <a class="el" href="compression_8h_source.html">compression.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="aad66cbdb70bd3e01fa4b9f6127a07a67" name="aad66cbdb70bd3e01fa4b9f6127a07a67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad66cbdb70bd3e01fa4b9f6127a07a67">&#9670;&nbsp;</a></span>impl</h2>
+<a id="a34f71747e68394c91c0f615b2140a2a8" name="a34f71747e68394c91c0f615b2140a2a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34f71747e68394c91c0f615b2140a2a8">&#9670;&nbsp;</a></span>block_size</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const struct <a class="el" href="structHsqsCompressionImplementation.html">HsqsCompressionImplementation</a>* HsqsCompressor::impl</td>
+          <td class="memname">size_t HsqsCompression::block_size</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="compressor_8h_source.html#l00018">18</a> of file <a class="el" href="compressor_8h_source.html">compressor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="compression_8h_source.html#l00054">54</a> of file <a class="el" href="compression_8h_source.html">compression.h</a>.</p>
+
+</div>
+</div>
+<a id="a082cf2f7738b83cf715e5bc2387d29ff" name="a082cf2f7738b83cf715e5bc2387d29ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082cf2f7738b83cf715e5bc2387d29ff">&#9670;&nbsp;</a></span>impl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structHsqsCompressionImplementation.html">HsqsCompressionImplementation</a>* HsqsCompression::impl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="compression_8h_source.html#l00053">53</a> of file <a class="el" href="compression_8h_source.html">compression.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="compressor_8h_source.html">compressor.h</a></li>
+<li><a class="el" href="compression_8h_source.html">compression.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

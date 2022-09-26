@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libhsqs<span id="projectnumber">&#160;29989f7</span>
+   <div id="projectname">libhsqs<span id="projectnumber">&#160;6edfbd3</span>
    </div>
   </td>
  </tr>
@@ -74,6 +74,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="compression__options__context_8h_source.html">context/compression_options_context.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="superblock__context_8h_source.html">context/superblock_context.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="compression_8h_source.html">compression/compression.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="error_8h_source.html">error.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mapper_8h_source.html">mapper/mapper.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fragment__table_8h_source.html">table/fragment_table.h</a>&quot;</code><br />
@@ -112,6 +113,10 @@ Functions</h2></td></tr>
 <tr class="separator:aee9875ccfadca228b19648688094aba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2553ebdab70163e113a237a53b4e5fca"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structHsqsSuperblockContext.html">HsqsSuperblockContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hsqs_8h.html#a2553ebdab70163e113a237a53b4e5fca">hsqs_superblock</a> (struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs)</td></tr>
 <tr class="separator:a2553ebdab70163e113a237a53b4e5fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be7d15012e2c1bbf9b7cccd9484983f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structHsqsCompression.html">HsqsCompression</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hsqs_8h.html#a0be7d15012e2c1bbf9b7cccd9484983f">hsqs_data_compression</a> (struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs)</td></tr>
+<tr class="separator:a0be7d15012e2c1bbf9b7cccd9484983f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c21f9a6777633d5515190e128cf28a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structHsqsCompression.html">HsqsCompression</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hsqs_8h.html#a37c21f9a6777633d5515190e128cf28a">hsqs_metablock_compression</a> (struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs)</td></tr>
+<tr class="separator:a37c21f9a6777633d5515190e128cf28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f28fa7e7404528d2ff926e39d911a49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hsqs_8h.html#a1f28fa7e7404528d2ff926e39d911a49">hsqs_id_table</a> (struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs, struct <a class="el" href="structHsqsTable.html">HsqsTable</a> **id_table)</td></tr>
 <tr class="separator:a1f28fa7e7404528d2ff926e39d911a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2779ba924df44e1b9ba7976bc07ae4b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hsqs_8h.html#a2779ba924df44e1b9ba7976bc07ae4b3">hsqs_export_table</a> (struct <a class="el" href="structHsqs.html">Hsqs</a> *hsqs, struct <a class="el" href="structHsqsTable.html">HsqsTable</a> **export_table)</td></tr>
@@ -174,6 +179,24 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0be7d15012e2c1bbf9b7cccd9484983f" name="a0be7d15012e2c1bbf9b7cccd9484983f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0be7d15012e2c1bbf9b7cccd9484983f">&#9670;&nbsp;</a></span>hsqs_data_compression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structHsqsCompression.html">HsqsCompression</a> * hsqs_data_compression </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structHsqs.html">Hsqs</a> *&#160;</td>
+          <td class="paramname"><em>hsqs</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -306,6 +329,24 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">struct HsqsLruHashmap * hsqs_metablock_cache </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structHsqs.html">Hsqs</a> *&#160;</td>
+          <td class="paramname"><em>hsqs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37c21f9a6777633d5515190e128cf28a" name="a37c21f9a6777633d5515190e128cf28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c21f9a6777633d5515190e128cf28a">&#9670;&nbsp;</a></span>hsqs_metablock_compression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structHsqsCompression.html">HsqsCompression</a> * hsqs_metablock_compression </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structHsqs.html">Hsqs</a> *&#160;</td>
           <td class="paramname"><em>hsqs</em></td><td>)</td>

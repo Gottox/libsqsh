@@ -1,5 +1,4 @@
 <map id="HsqsCurlMap" name="HsqsCurlMap">
-<area shape="rect" id="node1" title=" " alt="" coords="95,184,227,211"/>
-<area shape="rect" id="node2" href="$structHsqsBuffer.html" title=" " alt="" coords="100,95,223,121"/>
-<area shape="rect" id="node3" href="$structHsqsCompressionImplementation.html" title=" " alt="" coords="5,5,317,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,137,121"/>
+<area shape="rect" id="node2" href="$structHsqsBuffer.html" title=" " alt="" coords="10,5,133,32"/>
 </map>
