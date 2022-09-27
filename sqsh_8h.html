@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;24247b3</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;7a410ae</span>
    </div>
   </td>
  </tr>
@@ -101,13 +101,16 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqsh.html">Sqsh</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The SqshContext struct contains all information about the current sqsh session.  <a href="structSqsh.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a13e8d941cc16e1d41ff9858d79106d6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#a13e8d941cc16e1d41ff9858d79106d6e">sqsh_init</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, const uint8_t *buffer, const size_t size)</td></tr>
+<tr class="memdesc:a13e8d941cc16e1d41ff9858d79106d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_init initializes the <a class="el" href="structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session.">Sqsh</a> structure.  <a href="sqsh_8h.html#a13e8d941cc16e1d41ff9858d79106d6e">More...</a><br /></td></tr>
 <tr class="separator:a13e8d941cc16e1d41ff9858d79106d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadfc0955817c920605252983f532d589"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#aadfc0955817c920605252983f532d589">sqsh_open</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, const char *path)</td></tr>
+<tr class="memdesc:aadfc0955817c920605252983f532d589"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_open opens the sqsh file at the given path.  <a href="sqsh_8h.html#aadfc0955817c920605252983f532d589">More...</a><br /></td></tr>
 <tr class="separator:aadfc0955817c920605252983f532d589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3122021ce843b47dfc53e18368794058"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#a3122021ce843b47dfc53e18368794058">sqsh_superblock</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
 <tr class="separator:a3122021ce843b47dfc53e18368794058"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,11 +130,8 @@ Functions</h2></td></tr>
 <tr class="separator:af04ad80ee7ca2be4b4852b91d76394e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6cec3bd3b1dd0b05222c477abda0f74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#ae6cec3bd3b1dd0b05222c477abda0f74">sqsh_compression_options</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> **compression_options)</td></tr>
 <tr class="separator:ae6cec3bd3b1dd0b05222c477abda0f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9152a68dc6970abeb462b92779a3392"><td class="memItemLeft" align="right" valign="top">struct SqshLruHashmap *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#aa9152a68dc6970abeb462b92779a3392">sqsh_metablock_cache</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
-<tr class="separator:aa9152a68dc6970abeb462b92779a3392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9dc03befade9a028fb2d9080d7b4e54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#ac9dc03befade9a028fb2d9080d7b4e54">sqsh_trailing_bytes</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, struct <a class="el" href="structSqshTrailingContext.html">SqshTrailingContext</a> *trailing_bytes)</td></tr>
-<tr class="separator:ac9dc03befade9a028fb2d9080d7b4e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2868febaa9ecedb3c7f528c2c4595cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#ae2868febaa9ecedb3c7f528c2c4595cd">sqsh_cleanup</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
+<tr class="memdesc:ae2868febaa9ecedb3c7f528c2c4595cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_cleanup frees all resources allocated by the <a class="el" href="structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session.">Sqsh</a> structure and cleans up the structure.  <a href="sqsh_8h.html#ae2868febaa9ecedb3c7f528c2c4595cd">More...</a><br /></td></tr>
 <tr class="separator:ae2868febaa9ecedb3c7f528c2c4595cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -154,6 +154,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>sqsh_cleanup frees all resources allocated by the <a class="el" href="structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session.">Sqsh</a> structure and cleans up the structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sqsh</td><td>the <a class="el" href="structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session.">Sqsh</a> structure to cleanup. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, less than 0 on error. </dd></dl>
 
 </div>
 </div>
@@ -319,6 +328,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>sqsh_init initializes the <a class="el" href="structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session.">Sqsh</a> structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sqsh</td><td>the <a class="el" href="structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session.">Sqsh</a> structure to initialize. </td></tr>
+    <tr><td class="paramname">buffer</td><td>the buffer to use for the <a class="el" href="structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session.">Sqsh</a> structure. </td></tr>
+    <tr><td class="paramname">buffer_size</td><td>the size of the buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, less than 0 on error. </dd></dl>
+
 </div>
 </div>
 <a id="a14cbf95f444334fd0dadb33bca17bb24" name="a14cbf95f444334fd0dadb33bca17bb24"></a>
@@ -329,24 +349,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">struct <a class="el" href="structSqshMapper.html">SqshMapper</a> * sqsh_mapper </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
-          <td class="paramname"><em>sqsh</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa9152a68dc6970abeb462b92779a3392" name="aa9152a68dc6970abeb462b92779a3392"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9152a68dc6970abeb462b92779a3392">&#9670;&nbsp;</a></span>sqsh_metablock_cache()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct SqshLruHashmap * sqsh_metablock_cache </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
           <td class="paramname"><em>sqsh</em></td><td>)</td>
@@ -401,6 +403,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>sqsh_open opens the sqsh file at the given path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sqsh</td><td>the <a class="el" href="structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session.">Sqsh</a> structure to initialize. </td></tr>
+    <tr><td class="paramname">path</td><td>the path to the sqsh file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, less than 0 on error. </dd></dl>
+
 </div>
 </div>
 <a id="a3122021ce843b47dfc53e18368794058" name="a3122021ce843b47dfc53e18368794058"></a>
@@ -415,34 +427,6 @@ Functions</h2></td></tr>
           <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
           <td class="paramname"><em>sqsh</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac9dc03befade9a028fb2d9080d7b4e54" name="ac9dc03befade9a028fb2d9080d7b4e54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9dc03befade9a028fb2d9080d7b4e54">&#9670;&nbsp;</a></span>sqsh_trailing_bytes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int sqsh_trailing_bytes </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
-          <td class="paramname"><em>sqsh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structSqshTrailingContext.html">SqshTrailingContext</a> *&#160;</td>
-          <td class="paramname"><em>trailing_bytes</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

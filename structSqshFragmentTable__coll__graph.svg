@@ -67,7 +67,7 @@ var sectionId = 'dynsection-0';
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
-<g id="a_node15"><a xlink:href="structSqsh.html" target="_top" xlink:title=" ">
+<g id="a_node15"><a xlink:href="structSqsh.html" target="_top" xlink:title="The SqshContext struct contains all information about the current sqsh session.">
 <polygon fill="white" stroke="black" points="1512,-182.5 1512,-201.5 1559,-201.5 1559,-182.5 1512,-182.5"/>
 <text text-anchor="middle" x="1535.5" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sqsh</text>
 </a>

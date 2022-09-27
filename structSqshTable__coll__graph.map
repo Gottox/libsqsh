@@ -1,6 +1,6 @@
 <map id="SqshTable" name="SqshTable">
 <area shape="rect" id="node1" title=" " alt="" coords="1168,307,1280,333"/>
-<area shape="rect" id="node2" href="$structSqsh.html" title=" " alt="" coords="2071,291,2133,317"/>
+<area shape="rect" id="node2" href="$structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session." alt="" coords="2071,291,2133,317"/>
 <area shape="rect" id="node17" href="$structSqshXattrTable.html" title=" " alt="" coords="2303,291,2465,317"/>
 <area shape="rect" id="node18" href="$structSqshFragmentTable.html" title=" " alt="" coords="1569,391,1761,417"/>
 <area shape="rect" id="node3" href="$structSqshMapper.html" title=" " alt="" coords="351,349,474,376"/>

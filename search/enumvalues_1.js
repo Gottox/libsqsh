@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['sqs_5flz4_5fflag_5fnone_0',['SQS_LZ4_FLAG_NONE',['../compression__options__context_8h.html#ace71a8023ba184910ef399659ae581aea97602b18e390fbc2b0c6b413868f1476',1,'compression_options_context.h']]],
+  ['sqsh_5fgzip_5fstrategy_5fdefault_1',['SQSH_GZIP_STRATEGY_DEFAULT',['../compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12aab207cece99f5b73d83eebcbb6b596c27',1,'compression_options_context.h']]],
+  ['sqsh_5fgzip_5fstrategy_5ffiltered_2',['SQSH_GZIP_STRATEGY_FILTERED',['../compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12aa667f6e8cb9568f7b3fd2c7aa4da9abbe',1,'compression_options_context.h']]],
+  ['sqsh_5fgzip_5fstrategy_5ffixed_3',['SQSH_GZIP_STRATEGY_FIXED',['../compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12aaca0e1de86c6bbc373a903de2ebfdb2cc',1,'compression_options_context.h']]],
+  ['sqsh_5fgzip_5fstrategy_5fhuffman_5fonly_4',['SQSH_GZIP_STRATEGY_HUFFMAN_ONLY',['../compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12aae14757b0e6484a17167cfb8fa68f1c73',1,'compression_options_context.h']]],
+  ['sqsh_5fgzip_5fstrategy_5fnone_5',['SQSH_GZIP_STRATEGY_NONE',['../compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12aa8269435c8d99614bb5ec5a4aee324e93',1,'compression_options_context.h']]],
+  ['sqsh_5fgzip_5fstrategy_5frle_6',['SQSH_GZIP_STRATEGY_RLE',['../compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12aa7af8bd32d559aac8e637bdb2ecd126d2',1,'compression_options_context.h']]],
+  ['sqsh_5flz4_5fhigh_5fcompression_7',['SQSH_LZ4_HIGH_COMPRESSION',['../compression__options__context_8h.html#ace71a8023ba184910ef399659ae581aea88ff386a66ba5b13cb2cb56bf086d65f',1,'compression_options_context.h']]],
+  ['sqsh_5flzo_5falgorithm_5flzo1x_5f1_8',['SQSH_LZO_ALGORITHM_LZO1X_1',['../compression__options__context_8h.html#a088ced7149f379b9520210b602867c03ac97f987dfc0236ca63969a8480ccd9e3',1,'compression_options_context.h']]],
+  ['sqsh_5flzo_5falgorithm_5flzo1x_5f1_5f11_9',['SQSH_LZO_ALGORITHM_LZO1X_1_11',['../compression__options__context_8h.html#a088ced7149f379b9520210b602867c03a0352035fc400728ec0cfae5c06511ddf',1,'compression_options_context.h']]],
+  ['sqsh_5flzo_5falgorithm_5flzo1x_5f1_5f12_10',['SQSH_LZO_ALGORITHM_LZO1X_1_12',['../compression__options__context_8h.html#a088ced7149f379b9520210b602867c03a22193ff29596f599b4248d11483b5dcb',1,'compression_options_context.h']]],
+  ['sqsh_5flzo_5falgorithm_5flzo1x_5f1_5f15_11',['SQSH_LZO_ALGORITHM_LZO1X_1_15',['../compression__options__context_8h.html#a088ced7149f379b9520210b602867c03a4865bc6984742ed4f35a391695b053f1',1,'compression_options_context.h']]],
+  ['sqsh_5flzo_5falgorithm_5flzo1x_5f999_12',['SQSH_LZO_ALGORITHM_LZO1X_999',['../compression__options__context_8h.html#a088ced7149f379b9520210b602867c03a86218dde1f91870e07954e39952d7ced',1,'compression_options_context.h']]],
+  ['sqsh_5fxz_5ffilter_5farm_13',['SQSH_XZ_FILTER_ARM',['../compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6a874e71a60beb2519911685361f7655a0',1,'compression_options_context.h']]],
+  ['sqsh_5fxz_5ffilter_5farmthumb_14',['SQSH_XZ_FILTER_ARMTHUMB',['../compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6a729ff6090a6d67d7088c4224ddefac37',1,'compression_options_context.h']]],
+  ['sqsh_5fxz_5ffilter_5fia64_15',['SQSH_XZ_FILTER_IA64',['../compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6a9d21b63d0c63d9e8178083c03838ed53',1,'compression_options_context.h']]],
+  ['sqsh_5fxz_5ffilter_5fnone_16',['SQSH_XZ_FILTER_NONE',['../compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6af2f8bece79d7b26e4d589a824f8a5f31',1,'compression_options_context.h']]],
+  ['sqsh_5fxz_5ffilter_5fpowerpc_17',['SQSH_XZ_FILTER_POWERPC',['../compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6ac709535cf1e45fbef9444bb5af6f484f',1,'compression_options_context.h']]],
+  ['sqsh_5fxz_5ffilter_5fsparc_18',['SQSH_XZ_FILTER_SPARC',['../compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6aca4e473c3b88666c481473b520cf5358',1,'compression_options_context.h']]],
+  ['sqsh_5fxz_5ffilter_5fx86_19',['SQSH_XZ_FILTER_X86',['../compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6a2998454e14100875b317ff24f6b2674d',1,'compression_options_context.h']]]
+];

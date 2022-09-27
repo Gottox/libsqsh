@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;24247b3</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;7a410ae</span>
    </div>
   </td>
  </tr>
@@ -68,6 +68,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">compression_options_context.h File Reference</div></div>
 </div><!--header-->
@@ -94,6 +95,46 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a485fd0fb6de33ee127ffda8f1468d12a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12a">SqshGzipStrategies</a> { <br />
+&#160;&#160;<a class="el" href="compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12aa8269435c8d99614bb5ec5a4aee324e93">SQSH_GZIP_STRATEGY_NONE</a> = 0x0
+, <a class="el" href="compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12aab207cece99f5b73d83eebcbb6b596c27">SQSH_GZIP_STRATEGY_DEFAULT</a> = 0x0001
+, <a class="el" href="compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12aa667f6e8cb9568f7b3fd2c7aa4da9abbe">SQSH_GZIP_STRATEGY_FILTERED</a> = 0x0002
+, <a class="el" href="compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12aae14757b0e6484a17167cfb8fa68f1c73">SQSH_GZIP_STRATEGY_HUFFMAN_ONLY</a> = 0x0004
+, <br />
+&#160;&#160;<a class="el" href="compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12aa7af8bd32d559aac8e637bdb2ecd126d2">SQSH_GZIP_STRATEGY_RLE</a> = 0x0008
+, <a class="el" href="compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12aaca0e1de86c6bbc373a903de2ebfdb2cc">SQSH_GZIP_STRATEGY_FIXED</a> = 0x0010
+<br />
+ }</td></tr>
+<tr class="separator:a485fd0fb6de33ee127ffda8f1468d12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a3ee9586d5ff541df2a603c68a24e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6">SqshXzFilters</a> { <br />
+&#160;&#160;<a class="el" href="compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6af2f8bece79d7b26e4d589a824f8a5f31">SQSH_XZ_FILTER_NONE</a> = 0x0
+, <a class="el" href="compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6a2998454e14100875b317ff24f6b2674d">SQSH_XZ_FILTER_X86</a> = 0x0001
+, <a class="el" href="compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6ac709535cf1e45fbef9444bb5af6f484f">SQSH_XZ_FILTER_POWERPC</a> = 0x0002
+, <a class="el" href="compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6a9d21b63d0c63d9e8178083c03838ed53">SQSH_XZ_FILTER_IA64</a> = 0x0004
+, <br />
+&#160;&#160;<a class="el" href="compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6a874e71a60beb2519911685361f7655a0">SQSH_XZ_FILTER_ARM</a> = 0x0008
+, <a class="el" href="compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6a729ff6090a6d67d7088c4224ddefac37">SQSH_XZ_FILTER_ARMTHUMB</a> = 0x0010
+, <a class="el" href="compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6aca4e473c3b88666c481473b520cf5358">SQSH_XZ_FILTER_SPARC</a> = 0x0020
+<br />
+ }</td></tr>
+<tr class="separator:aa2a3ee9586d5ff541df2a603c68a24e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace71a8023ba184910ef399659ae581ae"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#ace71a8023ba184910ef399659ae581ae">SqshLz4Flags</a> { <a class="el" href="compression__options__context_8h.html#ace71a8023ba184910ef399659ae581aea97602b18e390fbc2b0c6b413868f1476">SQS_LZ4_FLAG_NONE</a> = 0x0
+, <a class="el" href="compression__options__context_8h.html#ace71a8023ba184910ef399659ae581aea88ff386a66ba5b13cb2cb56bf086d65f">SQSH_LZ4_HIGH_COMPRESSION</a> = 0x0001
+ }</td></tr>
+<tr class="separator:ace71a8023ba184910ef399659ae581ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088ced7149f379b9520210b602867c03"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#a088ced7149f379b9520210b602867c03">SqshLzoAlgorithm</a> { <br />
+&#160;&#160;<a class="el" href="compression__options__context_8h.html#a088ced7149f379b9520210b602867c03ac97f987dfc0236ca63969a8480ccd9e3">SQSH_LZO_ALGORITHM_LZO1X_1</a> = 0x0000
+, <a class="el" href="compression__options__context_8h.html#a088ced7149f379b9520210b602867c03a0352035fc400728ec0cfae5c06511ddf">SQSH_LZO_ALGORITHM_LZO1X_1_11</a> = 0x0001
+, <a class="el" href="compression__options__context_8h.html#a088ced7149f379b9520210b602867c03a22193ff29596f599b4248d11483b5dcb">SQSH_LZO_ALGORITHM_LZO1X_1_12</a> = 0x0002
+, <a class="el" href="compression__options__context_8h.html#a088ced7149f379b9520210b602867c03a4865bc6984742ed4f35a391695b053f1">SQSH_LZO_ALGORITHM_LZO1X_1_15</a> = 0x0003
+, <br />
+&#160;&#160;<a class="el" href="compression__options__context_8h.html#a088ced7149f379b9520210b602867c03a86218dde1f91870e07954e39952d7ced">SQSH_LZO_ALGORITHM_LZO1X_999</a> = 0x0004
+<br />
+ }</td></tr>
+<tr class="separator:a088ced7149f379b9520210b602867c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae6ea9f3bcd144566a0cde8d3196da011"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#ae6ea9f3bcd144566a0cde8d3196da011">sqsh_compression_options_init</a> (struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
@@ -102,6 +143,26 @@ Functions</h2></td></tr>
 <tr class="separator:a3f7e4f1b590e7266e2ebcac5075098a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acab8485ffe17f9344a9c38b4eb9161c2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#acab8485ffe17f9344a9c38b4eb9161c2">sqsh_compression_options_size</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *context)</td></tr>
 <tr class="separator:acab8485ffe17f9344a9c38b4eb9161c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48df2c4fe9001fabf32c89d2cd1c3716"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#a48df2c4fe9001fabf32c89d2cd1c3716">sqsh_compression_options_gzip_compression_level</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *options)</td></tr>
+<tr class="separator:a48df2c4fe9001fabf32c89d2cd1c3716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0db11e894cbcba6ccb90ffe6309407"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#a1b0db11e894cbcba6ccb90ffe6309407">sqsh_compression_options_gzip_window_size</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *options)</td></tr>
+<tr class="separator:a1b0db11e894cbcba6ccb90ffe6309407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1344e4e461ca7d39a511b1681edf69"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12a">SqshGzipStrategies</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#acc1344e4e461ca7d39a511b1681edf69">sqsh_compression_options_gzip_strategies</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *options)</td></tr>
+<tr class="separator:acc1344e4e461ca7d39a511b1681edf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066f5a6c4176260d13c9a1480aba529b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#a066f5a6c4176260d13c9a1480aba529b">sqsh_compression_options_xz_dictionary_size</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *options)</td></tr>
+<tr class="separator:a066f5a6c4176260d13c9a1480aba529b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0ae3d1f497655e4128ef0faf123302"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6">SqshXzFilters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#a2c0ae3d1f497655e4128ef0faf123302">sqsh_compression_options_xz_filters</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *options)</td></tr>
+<tr class="separator:a2c0ae3d1f497655e4128ef0faf123302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58bd1265bacf06e6d0f514051eaa82a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#ab58bd1265bacf06e6d0f514051eaa82a">sqsh_compression_options_lz4_version</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *options)</td></tr>
+<tr class="separator:ab58bd1265bacf06e6d0f514051eaa82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad917b96684436dea48fe959f1b472627"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#ad917b96684436dea48fe959f1b472627">sqsh_compression_options_lz4_flags</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *options)</td></tr>
+<tr class="separator:ad917b96684436dea48fe959f1b472627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a920dd405efcd9a53ea03b5affa3535"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#a8a920dd405efcd9a53ea03b5affa3535">sqsh_compression_options_zstd_compression_level</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *options)</td></tr>
+<tr class="separator:a8a920dd405efcd9a53ea03b5affa3535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f581adfc2416e6fa6e88769729fb37"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="compression__options__context_8h.html#a088ced7149f379b9520210b602867c03">SqshLzoAlgorithm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#ae4f581adfc2416e6fa6e88769729fb37">sqsh_compression_options_lzo_algorithm</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *options)</td></tr>
+<tr class="separator:ae4f581adfc2416e6fa6e88769729fb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089881d204e7154c9896e142bc9bfb9d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#a089881d204e7154c9896e142bc9bfb9d">sqsh_compression_options_lzo_compression_level</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *options)</td></tr>
+<tr class="separator:a089881d204e7154c9896e142bc9bfb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a408a88cfa9253ea9445842b024f1d166"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compression__options__context_8h.html#a408a88cfa9253ea9445842b024f1d166">sqsh_compression_options_cleanup</a> (struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *context)</td></tr>
 <tr class="separator:a408a88cfa9253ea9445842b024f1d166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -109,7 +170,100 @@ Functions</h2></td></tr>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Enno Boland (<a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'ebo'+'la'+'nd.'+'de'; return false;">mail@<span class="obfuscator">.nosp@m.</span>ebol<span class="obfuscator">.nosp@m.</span>and.d<span class="obfuscator">.nosp@m.</span>e</a>) </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="compression__options__context_8h_source.html">compression_options_context.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a485fd0fb6de33ee127ffda8f1468d12a" name="a485fd0fb6de33ee127ffda8f1468d12a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a485fd0fb6de33ee127ffda8f1468d12a">&#9670;&nbsp;</a></span>SqshGzipStrategies</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12a">SqshGzipStrategies</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a485fd0fb6de33ee127ffda8f1468d12aa8269435c8d99614bb5ec5a4aee324e93" name="a485fd0fb6de33ee127ffda8f1468d12aa8269435c8d99614bb5ec5a4aee324e93"></a>SQSH_GZIP_STRATEGY_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a485fd0fb6de33ee127ffda8f1468d12aab207cece99f5b73d83eebcbb6b596c27" name="a485fd0fb6de33ee127ffda8f1468d12aab207cece99f5b73d83eebcbb6b596c27"></a>SQSH_GZIP_STRATEGY_DEFAULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a485fd0fb6de33ee127ffda8f1468d12aa667f6e8cb9568f7b3fd2c7aa4da9abbe" name="a485fd0fb6de33ee127ffda8f1468d12aa667f6e8cb9568f7b3fd2c7aa4da9abbe"></a>SQSH_GZIP_STRATEGY_FILTERED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a485fd0fb6de33ee127ffda8f1468d12aae14757b0e6484a17167cfb8fa68f1c73" name="a485fd0fb6de33ee127ffda8f1468d12aae14757b0e6484a17167cfb8fa68f1c73"></a>SQSH_GZIP_STRATEGY_HUFFMAN_ONLY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a485fd0fb6de33ee127ffda8f1468d12aa7af8bd32d559aac8e637bdb2ecd126d2" name="a485fd0fb6de33ee127ffda8f1468d12aa7af8bd32d559aac8e637bdb2ecd126d2"></a>SQSH_GZIP_STRATEGY_RLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a485fd0fb6de33ee127ffda8f1468d12aaca0e1de86c6bbc373a903de2ebfdb2cc" name="a485fd0fb6de33ee127ffda8f1468d12aaca0e1de86c6bbc373a903de2ebfdb2cc"></a>SQSH_GZIP_STRATEGY_FIXED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="compression__options__context_8h_source.html#l00048">48</a> of file <a class="el" href="compression__options__context_8h_source.html">compression_options_context.h</a>.</p>
+
+</div>
+</div>
+<a id="ace71a8023ba184910ef399659ae581ae" name="ace71a8023ba184910ef399659ae581ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace71a8023ba184910ef399659ae581ae">&#9670;&nbsp;</a></span>SqshLz4Flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="compression__options__context_8h.html#ace71a8023ba184910ef399659ae581ae">SqshLz4Flags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ace71a8023ba184910ef399659ae581aea97602b18e390fbc2b0c6b413868f1476" name="ace71a8023ba184910ef399659ae581aea97602b18e390fbc2b0c6b413868f1476"></a>SQS_LZ4_FLAG_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace71a8023ba184910ef399659ae581aea88ff386a66ba5b13cb2cb56bf086d65f" name="ace71a8023ba184910ef399659ae581aea88ff386a66ba5b13cb2cb56bf086d65f"></a>SQSH_LZ4_HIGH_COMPRESSION&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="compression__options__context_8h_source.html#l00065">65</a> of file <a class="el" href="compression__options__context_8h_source.html">compression_options_context.h</a>.</p>
+
+</div>
+</div>
+<a id="a088ced7149f379b9520210b602867c03" name="a088ced7149f379b9520210b602867c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a088ced7149f379b9520210b602867c03">&#9670;&nbsp;</a></span>SqshLzoAlgorithm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="compression__options__context_8h.html#a088ced7149f379b9520210b602867c03">SqshLzoAlgorithm</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a088ced7149f379b9520210b602867c03ac97f987dfc0236ca63969a8480ccd9e3" name="a088ced7149f379b9520210b602867c03ac97f987dfc0236ca63969a8480ccd9e3"></a>SQSH_LZO_ALGORITHM_LZO1X_1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a088ced7149f379b9520210b602867c03a0352035fc400728ec0cfae5c06511ddf" name="a088ced7149f379b9520210b602867c03a0352035fc400728ec0cfae5c06511ddf"></a>SQSH_LZO_ALGORITHM_LZO1X_1_11&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a088ced7149f379b9520210b602867c03a22193ff29596f599b4248d11483b5dcb" name="a088ced7149f379b9520210b602867c03a22193ff29596f599b4248d11483b5dcb"></a>SQSH_LZO_ALGORITHM_LZO1X_1_12&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a088ced7149f379b9520210b602867c03a4865bc6984742ed4f35a391695b053f1" name="a088ced7149f379b9520210b602867c03a4865bc6984742ed4f35a391695b053f1"></a>SQSH_LZO_ALGORITHM_LZO1X_1_15&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a088ced7149f379b9520210b602867c03a86218dde1f91870e07954e39952d7ced" name="a088ced7149f379b9520210b602867c03a86218dde1f91870e07954e39952d7ced"></a>SQSH_LZO_ALGORITHM_LZO1X_999&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="compression__options__context_8h_source.html#l00069">69</a> of file <a class="el" href="compression__options__context_8h_source.html">compression_options_context.h</a>.</p>
+
+</div>
+</div>
+<a id="aa2a3ee9586d5ff541df2a603c68a24e6" name="aa2a3ee9586d5ff541df2a603c68a24e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2a3ee9586d5ff541df2a603c68a24e6">&#9670;&nbsp;</a></span>SqshXzFilters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6">SqshXzFilters</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa2a3ee9586d5ff541df2a603c68a24e6af2f8bece79d7b26e4d589a824f8a5f31" name="aa2a3ee9586d5ff541df2a603c68a24e6af2f8bece79d7b26e4d589a824f8a5f31"></a>SQSH_XZ_FILTER_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa2a3ee9586d5ff541df2a603c68a24e6a2998454e14100875b317ff24f6b2674d" name="aa2a3ee9586d5ff541df2a603c68a24e6a2998454e14100875b317ff24f6b2674d"></a>SQSH_XZ_FILTER_X86&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa2a3ee9586d5ff541df2a603c68a24e6ac709535cf1e45fbef9444bb5af6f484f" name="aa2a3ee9586d5ff541df2a603c68a24e6ac709535cf1e45fbef9444bb5af6f484f"></a>SQSH_XZ_FILTER_POWERPC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa2a3ee9586d5ff541df2a603c68a24e6a9d21b63d0c63d9e8178083c03838ed53" name="aa2a3ee9586d5ff541df2a603c68a24e6a9d21b63d0c63d9e8178083c03838ed53"></a>SQSH_XZ_FILTER_IA64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa2a3ee9586d5ff541df2a603c68a24e6a874e71a60beb2519911685361f7655a0" name="aa2a3ee9586d5ff541df2a603c68a24e6a874e71a60beb2519911685361f7655a0"></a>SQSH_XZ_FILTER_ARM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa2a3ee9586d5ff541df2a603c68a24e6a729ff6090a6d67d7088c4224ddefac37" name="aa2a3ee9586d5ff541df2a603c68a24e6a729ff6090a6d67d7088c4224ddefac37"></a>SQSH_XZ_FILTER_ARMTHUMB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa2a3ee9586d5ff541df2a603c68a24e6aca4e473c3b88666c481473b520cf5358" name="aa2a3ee9586d5ff541df2a603c68a24e6aca4e473c3b88666c481473b520cf5358"></a>SQSH_XZ_FILTER_SPARC&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="compression__options__context_8h_source.html#l00056">56</a> of file <a class="el" href="compression__options__context_8h_source.html">compression_options_context.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a408a88cfa9253ea9445842b024f1d166" name="a408a88cfa9253ea9445842b024f1d166"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a408a88cfa9253ea9445842b024f1d166">&#9670;&nbsp;</a></span>sqsh_compression_options_cleanup()</h2>
 
@@ -146,6 +300,60 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a48df2c4fe9001fabf32c89d2cd1c3716" name="a48df2c4fe9001fabf32c89d2cd1c3716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48df2c4fe9001fabf32c89d2cd1c3716">&#9670;&nbsp;</a></span>sqsh_compression_options_gzip_compression_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sqsh_compression_options_gzip_compression_level </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc1344e4e461ca7d39a511b1681edf69" name="acc1344e4e461ca7d39a511b1681edf69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc1344e4e461ca7d39a511b1681edf69">&#9670;&nbsp;</a></span>sqsh_compression_options_gzip_strategies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="compression__options__context_8h.html#a485fd0fb6de33ee127ffda8f1468d12a">SqshGzipStrategies</a> sqsh_compression_options_gzip_strategies </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b0db11e894cbcba6ccb90ffe6309407" name="a1b0db11e894cbcba6ccb90ffe6309407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b0db11e894cbcba6ccb90ffe6309407">&#9670;&nbsp;</a></span>sqsh_compression_options_gzip_window_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t sqsh_compression_options_gzip_window_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae6ea9f3bcd144566a0cde8d3196da011" name="ae6ea9f3bcd144566a0cde8d3196da011"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6ea9f3bcd144566a0cde8d3196da011">&#9670;&nbsp;</a></span>sqsh_compression_options_init()</h2>
 
@@ -174,6 +382,78 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad917b96684436dea48fe959f1b472627" name="ad917b96684436dea48fe959f1b472627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad917b96684436dea48fe959f1b472627">&#9670;&nbsp;</a></span>sqsh_compression_options_lz4_flags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sqsh_compression_options_lz4_flags </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab58bd1265bacf06e6d0f514051eaa82a" name="ab58bd1265bacf06e6d0f514051eaa82a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58bd1265bacf06e6d0f514051eaa82a">&#9670;&nbsp;</a></span>sqsh_compression_options_lz4_version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sqsh_compression_options_lz4_version </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4f581adfc2416e6fa6e88769729fb37" name="ae4f581adfc2416e6fa6e88769729fb37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4f581adfc2416e6fa6e88769729fb37">&#9670;&nbsp;</a></span>sqsh_compression_options_lzo_algorithm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="compression__options__context_8h.html#a088ced7149f379b9520210b602867c03">SqshLzoAlgorithm</a> sqsh_compression_options_lzo_algorithm </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a089881d204e7154c9896e142bc9bfb9d" name="a089881d204e7154c9896e142bc9bfb9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a089881d204e7154c9896e142bc9bfb9d">&#9670;&nbsp;</a></span>sqsh_compression_options_lzo_compression_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sqsh_compression_options_lzo_compression_level </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acab8485ffe17f9344a9c38b4eb9161c2" name="acab8485ffe17f9344a9c38b4eb9161c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acab8485ffe17f9344a9c38b4eb9161c2">&#9670;&nbsp;</a></span>sqsh_compression_options_size()</h2>
 
@@ -185,6 +465,60 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a066f5a6c4176260d13c9a1480aba529b" name="a066f5a6c4176260d13c9a1480aba529b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a066f5a6c4176260d13c9a1480aba529b">&#9670;&nbsp;</a></span>sqsh_compression_options_xz_dictionary_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sqsh_compression_options_xz_dictionary_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c0ae3d1f497655e4128ef0faf123302" name="a2c0ae3d1f497655e4128ef0faf123302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0ae3d1f497655e4128ef0faf123302">&#9670;&nbsp;</a></span>sqsh_compression_options_xz_filters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="compression__options__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6">SqshXzFilters</a> sqsh_compression_options_xz_filters </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a920dd405efcd9a53ea03b5affa3535" name="a8a920dd405efcd9a53ea03b5affa3535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a920dd405efcd9a53ea03b5affa3535">&#9670;&nbsp;</a></span>sqsh_compression_options_zstd_compression_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sqsh_compression_options_zstd_compression_level </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

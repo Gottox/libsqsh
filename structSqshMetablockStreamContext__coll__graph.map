@@ -1,6 +1,6 @@
 <map id="SqshMetablockStreamContext" name="SqshMetablockStreamContext">
 <area shape="rect" id="node1" title=" " alt="" coords="1919,431,2201,457"/>
-<area shape="rect" id="node2" href="$structSqsh.html" title=" " alt="" coords="1673,305,1736,332"/>
+<area shape="rect" id="node2" href="$structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session." alt="" coords="1673,305,1736,332"/>
 <area shape="rect" id="node17" href="$structSqshTable.html" title=" " alt="" coords="2004,243,2116,269"/>
 <area shape="rect" id="node18" href="$structSqshXattrTable.html" title=" " alt="" coords="2325,148,2488,175"/>
 <area shape="rect" id="node3" href="$structSqshMapper.html" title=" " alt="" coords="351,275,474,301"/>
