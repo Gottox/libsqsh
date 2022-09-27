@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;6134df8</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;24247b3</span>
    </div>
   </td>
  </tr>
@@ -109,10 +109,10 @@ Functions</h2></td></tr>
 <tr class="separator:a13e8d941cc16e1d41ff9858d79106d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadfc0955817c920605252983f532d589"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#aadfc0955817c920605252983f532d589">sqsh_open</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, const char *path)</td></tr>
 <tr class="separator:aadfc0955817c920605252983f532d589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b5c3de926040e4b8b62663af1e07b20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#a6b5c3de926040e4b8b62663af1e07b20">sqsh_request_map</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *mapping, uint64_t offset, uint64_t size)</td></tr>
-<tr class="separator:a6b5c3de926040e4b8b62663af1e07b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3122021ce843b47dfc53e18368794058"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#a3122021ce843b47dfc53e18368794058">sqsh_superblock</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
 <tr class="separator:a3122021ce843b47dfc53e18368794058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14cbf95f444334fd0dadb33bca17bb24"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#a14cbf95f444334fd0dadb33bca17bb24">sqsh_mapper</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
+<tr class="separator:a14cbf95f444334fd0dadb33bca17bb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa5fd674f1dbd8bccffdde1d15b9cc87"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqshCompression.html">SqshCompression</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#aaa5fd674f1dbd8bccffdde1d15b9cc87">sqsh_data_compression</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
 <tr class="separator:aaa5fd674f1dbd8bccffdde1d15b9cc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10698bec565df6ab43490a7bf1cba4cd"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqshCompression.html">SqshCompression</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#a10698bec565df6ab43490a7bf1cba4cd">sqsh_metablock_compression</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
@@ -321,6 +321,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a14cbf95f444334fd0dadb33bca17bb24" name="a14cbf95f444334fd0dadb33bca17bb24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14cbf95f444334fd0dadb33bca17bb24">&#9670;&nbsp;</a></span>sqsh_mapper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structSqshMapper.html">SqshMapper</a> * sqsh_mapper </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa9152a68dc6970abeb462b92779a3392" name="aa9152a68dc6970abeb462b92779a3392"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9152a68dc6970abeb462b92779a3392">&#9670;&nbsp;</a></span>sqsh_metablock_cache()</h2>
 
@@ -374,46 +392,6 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>path</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6b5c3de926040e4b8b62663af1e07b20" name="a6b5c3de926040e4b8b62663af1e07b20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b5c3de926040e4b8b62663af1e07b20">&#9670;&nbsp;</a></span>sqsh_request_map()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sqsh_request_map </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
-          <td class="paramname"><em>sqsh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *&#160;</td>
-          <td class="paramname"><em>mapping</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>offset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
