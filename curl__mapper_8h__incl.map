@@ -1,10 +1,9 @@
 <map id="curl_mapper.h" name="curl_mapper.h">
-<area shape="rect" id="node1" title=" " alt="" coords="545,5,697,32"/>
-<area shape="rect" id="node2" href="$buffer_8h.html" title=" " alt="" coords="208,80,440,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="444,229,547,256"/>
-<area shape="rect" id="node8" title=" " alt="" coords="659,80,791,107"/>
-<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="164,155,286,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="174,229,276,256"/>
-<area shape="rect" id="node6" href="$superblock_8h.html" title=" " alt="" coords="311,155,534,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="28,155,140,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="329,5,481,32"/>
+<area shape="rect" id="node2" href="$buffer_8h.html" title=" " alt="" coords="102,80,334,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="167,229,269,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="443,80,575,107"/>
+<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="58,155,181,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,108,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="255,155,367,181"/>
 </map>

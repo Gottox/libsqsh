@@ -1,12 +1,11 @@
 <map id="directory_iterator.h" name="directory_iterator.h">
-<area shape="rect" id="node1" title=" " alt="" coords="498,5,721,32"/>
-<area shape="rect" id="node2" href="$inode__context_8h.html" title=" " alt="" coords="379,80,661,107"/>
-<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="5,304,128,331"/>
-<area shape="rect" id="node5" title=" " alt="" coords="571,379,674,405"/>
-<area shape="rect" id="node6" href="$metablock__stream__context_8h.html" title=" " alt="" coords="557,155,840,181"/>
-<area shape="rect" id="node10" title=" " alt="" coords="350,155,482,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="114,379,217,405"/>
-<area shape="rect" id="node7" href="$buffer_8h.html" title=" " alt="" coords="316,229,548,256"/>
-<area shape="rect" id="node8" href="$superblock_8h.html" title=" " alt="" coords="202,304,425,331"/>
-<area shape="rect" id="node9" title=" " alt="" coords="448,304,560,331"/>
+<area shape="rect" id="node1" title=" " alt="" coords="162,5,385,32"/>
+<area shape="rect" id="node2" href="$inode__context_8h.html" title=" " alt="" coords="221,80,504,107"/>
+<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="400,304,523,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="67,379,170,405"/>
+<area shape="rect" id="node6" href="$metablock__stream__context_8h.html" title=" " alt="" coords="43,155,325,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="401,155,533,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="335,379,438,405"/>
+<area shape="rect" id="node7" href="$buffer_8h.html" title=" " alt="" coords="93,229,325,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="156,304,268,331"/>
 </map>

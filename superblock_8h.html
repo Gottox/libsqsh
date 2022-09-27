@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;798127e</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;c22d09c</span>
    </div>
   </td>
  </tr>
@@ -68,7 +68,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">superblock.h File Reference</div></div>
 </div><!--header-->
@@ -81,12 +80,6 @@ Include dependency graph for superblock.h:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="superblock_8h__incl.svg" width="240" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="superblock_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
 </div>
 <p><a href="superblock_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -94,39 +87,6 @@ This graph shows which files directly or indirectly include this file:</div>
 Macros</h2></td></tr>
 <tr class="memitem:a60d248faf1e1b9563d8675af2fe4975b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#a60d248faf1e1b9563d8675af2fe4975b">HSQS_SIZEOF_SUPERBLOCK</a>&#160;&#160;&#160;96</td></tr>
 <tr class="separator:a60d248faf1e1b9563d8675af2fe4975b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ae0979c00d3e768637a9a10f31b95594a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594a">SqshSuperblockCompressionId</a> { <br />
-&#160;&#160;<a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aa587f274149ad1ee48251effe901d2281">HSQS_COMPRESSION_NONE</a> = 0
-, <a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aaa8b2657a98910cb41ae170197288c35c">HSQS_COMPRESSION_GZIP</a> = 1
-, <a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aa391e549be092ba89f192fa0e0d932275">HSQS_COMPRESSION_LZMA</a> = 2
-, <a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aa82e07d134f51f41c09d33a4e7a836ac5">HSQS_COMPRESSION_LZO</a> = 3
-, <br />
-&#160;&#160;<a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aafb6c6338b74b691b3fdd5edb4af2fe65">HSQS_COMPRESSION_XZ</a> = 4
-, <a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aaf32db83fcf9b8bc065552a09092970a3">HSQS_COMPRESSION_LZ4</a> = 5
-, <a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594aa067c26fa554195d7ef0cbdaabcb74a9f">HSQS_COMPRESSION_ZSTD</a> = 6
-<br />
- }</td></tr>
-<tr class="separator:ae0979c00d3e768637a9a10f31b95594a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af646f88052c2cec402c25f13e9497c91"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91">SqshSuperblockFlags</a> { <br />
-&#160;&#160;<a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91aaf6bf598ab2bc46749dfbf2a36490cc2">HSQS_SUPERBLOCK_UNCOMPRESSED_INODES</a> = 0x0001
-, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91aa0df24fb4f8a80b196d0eeb3f0947371">HSQS_SUPERBLOCK_UNCOMPRESSED_DATA</a> = 0x0002
-, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a1165fb45dedd171a6ad825d16aa437d0">HSQS_SUPERBLOCK_CHECK</a> = 0x0004
-, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a80fcb576478f6734e1923be8426d023e">HSQS_SUPERBLOCK_UNCOMPRESSED_FRAGMENTS</a> = 0x0008
-, <br />
-&#160;&#160;<a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91af0c4e3238e58dd22ec507e4649b24f13">HSQS_SUPERBLOCK_NO_FRAGMENTS</a> = 0x0010
-, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a273909a96818da97b1433c10d6b450d2">HSQS_SUPERBLOCK_ALWAYS_FRAGMENTS</a> = 0x0020
-, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91ad35edcce21f862d59079dbe3e5adb008">HSQS_SUPERBLOCK_DUPLICATES</a> = 0x0040
-, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a298ca1a71537137e5dfc6ff905b0e0b2">HSQS_SUPERBLOCK_EXPORTABLE</a> = 0x0080
-, <br />
-&#160;&#160;<a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a45994bcf4c84cfeea8a8b1b51ee31988">HSQS_SUPERBLOCK_UNCOMPRESSED_XATTRS</a> = 0x0100
-, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a4d97ff3bc59e9c2ccc61baacf3d89448">HSQS_SUPERBLOCK_NO_XATTRS</a> = 0x0200
-, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91aeccbac3c7e94e07e6a327127220aaf5d">HSQS_SUPERBLOCK_COMPRESSOR_OPTIONS</a> = 0x0400
-, <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91a71d5a72c511fb8dc2cb0acf72182b8bd">HSQS_SUPERBLOCK_UNCOMPRESSED_IDS</a> = 0x0800
-<br />
- }</td></tr>
-<tr class="separator:af646f88052c2cec402c25f13e9497c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -189,62 +149,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="superblock_8h_source.html#l00041">41</a> of file <a class="el" href="superblock_8h_source.html">superblock.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ae0979c00d3e768637a9a10f31b95594a" name="ae0979c00d3e768637a9a10f31b95594a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0979c00d3e768637a9a10f31b95594a">&#9670;&nbsp;</a></span>SqshSuperblockCompressionId</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="superblock_8h.html#ae0979c00d3e768637a9a10f31b95594a">SqshSuperblockCompressionId</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aa587f274149ad1ee48251effe901d2281" name="ae0979c00d3e768637a9a10f31b95594aa587f274149ad1ee48251effe901d2281"></a>HSQS_COMPRESSION_NONE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aaa8b2657a98910cb41ae170197288c35c" name="ae0979c00d3e768637a9a10f31b95594aaa8b2657a98910cb41ae170197288c35c"></a>HSQS_COMPRESSION_GZIP&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aa391e549be092ba89f192fa0e0d932275" name="ae0979c00d3e768637a9a10f31b95594aa391e549be092ba89f192fa0e0d932275"></a>HSQS_COMPRESSION_LZMA&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aa82e07d134f51f41c09d33a4e7a836ac5" name="ae0979c00d3e768637a9a10f31b95594aa82e07d134f51f41c09d33a4e7a836ac5"></a>HSQS_COMPRESSION_LZO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aafb6c6338b74b691b3fdd5edb4af2fe65" name="ae0979c00d3e768637a9a10f31b95594aafb6c6338b74b691b3fdd5edb4af2fe65"></a>HSQS_COMPRESSION_XZ&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aaf32db83fcf9b8bc065552a09092970a3" name="ae0979c00d3e768637a9a10f31b95594aaf32db83fcf9b8bc065552a09092970a3"></a>HSQS_COMPRESSION_LZ4&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae0979c00d3e768637a9a10f31b95594aa067c26fa554195d7ef0cbdaabcb74a9f" name="ae0979c00d3e768637a9a10f31b95594aa067c26fa554195d7ef0cbdaabcb74a9f"></a>HSQS_COMPRESSION_ZSTD&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="superblock_8h_source.html#l00043">43</a> of file <a class="el" href="superblock_8h_source.html">superblock.h</a>.</p>
-
-</div>
-</div>
-<a id="af646f88052c2cec402c25f13e9497c91" name="af646f88052c2cec402c25f13e9497c91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af646f88052c2cec402c25f13e9497c91">&#9670;&nbsp;</a></span>SqshSuperblockFlags</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="superblock_8h.html#af646f88052c2cec402c25f13e9497c91">SqshSuperblockFlags</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91aaf6bf598ab2bc46749dfbf2a36490cc2" name="af646f88052c2cec402c25f13e9497c91aaf6bf598ab2bc46749dfbf2a36490cc2"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_INODES&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91aa0df24fb4f8a80b196d0eeb3f0947371" name="af646f88052c2cec402c25f13e9497c91aa0df24fb4f8a80b196d0eeb3f0947371"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_DATA&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a1165fb45dedd171a6ad825d16aa437d0" name="af646f88052c2cec402c25f13e9497c91a1165fb45dedd171a6ad825d16aa437d0"></a>HSQS_SUPERBLOCK_CHECK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a80fcb576478f6734e1923be8426d023e" name="af646f88052c2cec402c25f13e9497c91a80fcb576478f6734e1923be8426d023e"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_FRAGMENTS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91af0c4e3238e58dd22ec507e4649b24f13" name="af646f88052c2cec402c25f13e9497c91af0c4e3238e58dd22ec507e4649b24f13"></a>HSQS_SUPERBLOCK_NO_FRAGMENTS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a273909a96818da97b1433c10d6b450d2" name="af646f88052c2cec402c25f13e9497c91a273909a96818da97b1433c10d6b450d2"></a>HSQS_SUPERBLOCK_ALWAYS_FRAGMENTS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91ad35edcce21f862d59079dbe3e5adb008" name="af646f88052c2cec402c25f13e9497c91ad35edcce21f862d59079dbe3e5adb008"></a>HSQS_SUPERBLOCK_DUPLICATES&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a298ca1a71537137e5dfc6ff905b0e0b2" name="af646f88052c2cec402c25f13e9497c91a298ca1a71537137e5dfc6ff905b0e0b2"></a>HSQS_SUPERBLOCK_EXPORTABLE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a45994bcf4c84cfeea8a8b1b51ee31988" name="af646f88052c2cec402c25f13e9497c91a45994bcf4c84cfeea8a8b1b51ee31988"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_XATTRS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a4d97ff3bc59e9c2ccc61baacf3d89448" name="af646f88052c2cec402c25f13e9497c91a4d97ff3bc59e9c2ccc61baacf3d89448"></a>HSQS_SUPERBLOCK_NO_XATTRS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91aeccbac3c7e94e07e6a327127220aaf5d" name="af646f88052c2cec402c25f13e9497c91aeccbac3c7e94e07e6a327127220aaf5d"></a>HSQS_SUPERBLOCK_COMPRESSOR_OPTIONS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af646f88052c2cec402c25f13e9497c91a71d5a72c511fb8dc2cb0acf72182b8bd" name="af646f88052c2cec402c25f13e9497c91a71d5a72c511fb8dc2cb0acf72182b8bd"></a>HSQS_SUPERBLOCK_UNCOMPRESSED_IDS&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="superblock_8h_source.html#l00053">53</a> of file <a class="el" href="superblock_8h_source.html">superblock.h</a>.</p>
 
 </div>
 </div>

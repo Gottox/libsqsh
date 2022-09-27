@@ -1,9 +1,8 @@
 <map id="content_context.h" name="content_context.h">
-<area shape="rect" id="node1" title=" " alt="" coords="326,5,518,32"/>
-<area shape="rect" id="node2" href="$buffer_8h.html" title=" " alt="" coords="208,80,440,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="444,229,547,256"/>
-<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="164,155,286,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="174,229,276,256"/>
-<area shape="rect" id="node6" href="$superblock_8h.html" title=" " alt="" coords="311,155,534,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="28,155,140,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="217,5,409,32"/>
+<area shape="rect" id="node2" href="$buffer_8h.html" title=" " alt="" coords="103,80,335,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="168,229,271,256"/>
+<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="59,155,182,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,108,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="257,155,369,181"/>
 </map>

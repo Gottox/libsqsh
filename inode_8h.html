@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;798127e</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;c22d09c</span>
    </div>
   </td>
  </tr>
@@ -68,7 +68,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">inode.h File Reference</div></div>
 </div><!--header-->
@@ -112,30 +111,6 @@ Macros</h2></td></tr>
 <tr class="separator:aa16c37baf26528f1186b6e575ea8a6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cf96a0da1b424c7833e05e89bf22e52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode_8h.html#a1cf96a0da1b424c7833e05e89bf22e52">HSQS_SIZEOF_INODE_HEADER</a>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:a1cf96a0da1b424c7833e05e89bf22e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a1ef4e3855eaa4bf23ed5f3a1b5b09c57"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57">SqshInodeType</a> { <br />
-&#160;&#160;<a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57a5530f3b0a413503ef6c80934a83de6e0">HSQS_INODE_TYPE_BASIC_DIRECTORY</a> = 1
-, <a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57a14da7a75ea4281e3ab24301e730e377b">HSQS_INODE_TYPE_BASIC_FILE</a> = 2
-, <a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57a7ea79c08cdbc4cf9ecc9d30c94ee3a02">HSQS_INODE_TYPE_BASIC_SYMLINK</a> = 3
-, <a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57a9842fe5d7725a33cf2ede6936ada5445">HSQS_INODE_TYPE_BASIC_BLOCK</a> = 4
-, <br />
-&#160;&#160;<a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57ad12721659f7953db5ddd839af316df86">HSQS_INODE_TYPE_BASIC_CHAR</a> = 5
-, <a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57a932f73be14e0cecedb79bb804e0acc90">HSQS_INODE_TYPE_BASIC_FIFO</a> = 6
-, <a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57ae9cf7583a6efb4e3ef66c9b59cfeb514">HSQS_INODE_TYPE_BASIC_SOCKET</a> = 7
-, <a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57a3a73e0238af79d13728c703b37495ad8">HSQS_INODE_TYPE_EXTENDED_DIRECTORY</a> = 8
-, <br />
-&#160;&#160;<a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57a2858b91aa18929c5e5c957499350dcc2">HSQS_INODE_TYPE_EXTENDED_FILE</a> = 9
-, <a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57a2853d4b9822daeae31ffdb882a68c1d0">HSQS_INODE_TYPE_EXTENDED_SYMLINK</a> = 10
-, <a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57a05251b097eb9bcd53f4062b01aaee396">HSQS_INODE_TYPE_EXTENDED_BLOCK</a> = 11
-, <a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57a72eb1fcd25458698bfecc62b29c671ba">HSQS_INODE_TYPE_EXTENDED_CHAR</a> = 12
-, <br />
-&#160;&#160;<a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57af29b91e14bacb7a6a9c45e1c81a1dd4e">HSQS_INODE_TYPE_EXTENDED_FIFO</a> = 13
-, <a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57acce41a2e1fcddf72c63a391d4e20848e">HSQS_INODE_TYPE_EXTENDED_SOCKET</a> = 14
-<br />
- }</td></tr>
-<tr class="separator:a1ef4e3855eaa4bf23ed5f3a1b5b09c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -472,39 +447,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="inode_8h_source.html#l00048">48</a> of file <a class="el" href="inode_8h_source.html">inode.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ef4e3855eaa4bf23ed5f3a1b5b09c57">&#9670;&nbsp;</a></span>SqshInodeType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57">SqshInodeType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a5530f3b0a413503ef6c80934a83de6e0" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a5530f3b0a413503ef6c80934a83de6e0"></a>HSQS_INODE_TYPE_BASIC_DIRECTORY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a14da7a75ea4281e3ab24301e730e377b" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a14da7a75ea4281e3ab24301e730e377b"></a>HSQS_INODE_TYPE_BASIC_FILE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a7ea79c08cdbc4cf9ecc9d30c94ee3a02" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a7ea79c08cdbc4cf9ecc9d30c94ee3a02"></a>HSQS_INODE_TYPE_BASIC_SYMLINK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a9842fe5d7725a33cf2ede6936ada5445" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a9842fe5d7725a33cf2ede6936ada5445"></a>HSQS_INODE_TYPE_BASIC_BLOCK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57ad12721659f7953db5ddd839af316df86" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57ad12721659f7953db5ddd839af316df86"></a>HSQS_INODE_TYPE_BASIC_CHAR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a932f73be14e0cecedb79bb804e0acc90" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a932f73be14e0cecedb79bb804e0acc90"></a>HSQS_INODE_TYPE_BASIC_FIFO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57ae9cf7583a6efb4e3ef66c9b59cfeb514" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57ae9cf7583a6efb4e3ef66c9b59cfeb514"></a>HSQS_INODE_TYPE_BASIC_SOCKET&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a3a73e0238af79d13728c703b37495ad8" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a3a73e0238af79d13728c703b37495ad8"></a>HSQS_INODE_TYPE_EXTENDED_DIRECTORY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a2858b91aa18929c5e5c957499350dcc2" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a2858b91aa18929c5e5c957499350dcc2"></a>HSQS_INODE_TYPE_EXTENDED_FILE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a2853d4b9822daeae31ffdb882a68c1d0" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a2853d4b9822daeae31ffdb882a68c1d0"></a>HSQS_INODE_TYPE_EXTENDED_SYMLINK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a05251b097eb9bcd53f4062b01aaee396" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a05251b097eb9bcd53f4062b01aaee396"></a>HSQS_INODE_TYPE_EXTENDED_BLOCK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a72eb1fcd25458698bfecc62b29c671ba" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57a72eb1fcd25458698bfecc62b29c671ba"></a>HSQS_INODE_TYPE_EXTENDED_CHAR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57af29b91e14bacb7a6a9c45e1c81a1dd4e" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57af29b91e14bacb7a6a9c45e1c81a1dd4e"></a>HSQS_INODE_TYPE_EXTENDED_FIFO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1ef4e3855eaa4bf23ed5f3a1b5b09c57acce41a2e1fcddf72c63a391d4e20848e" name="a1ef4e3855eaa4bf23ed5f3a1b5b09c57acce41a2e1fcddf72c63a391d4e20848e"></a>HSQS_INODE_TYPE_EXTENDED_SOCKET&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="inode_8h_source.html#l00055">55</a> of file <a class="el" href="inode_8h_source.html">inode.h</a>.</p>
 
 </div>
 </div>
