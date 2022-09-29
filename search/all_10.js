@@ -210,7 +210,7 @@ var searchData=
   ['sqsh_5finode_5fload_5fby_5finode_5fnumber_207',['sqsh_inode_load_by_inode_number',['../inode__context_8h.html#a9293009a4fa98df26f9c1bf7acf3f118',1,'inode_context.h']]],
   ['sqsh_5finode_5fload_5fby_5fpath_208',['sqsh_inode_load_by_path',['../inode__context_8h.html#a5f6949bc82cfd67cce327d803e9421c4',1,'inode_context.h']]],
   ['sqsh_5finode_5fload_5fby_5fref_209',['sqsh_inode_load_by_ref',['../inode__context_8h.html#a53d2ab637700788f0757c7c724e130a1',1,'inode_context.h']]],
-  ['sqsh_5finode_5fload_5froot_210',['sqsh_inode_load_root',['../inode__context_8h.html#af5f7a583ba392185460f0856a52abbe9',1,'inode_context.h']]],
+  ['sqsh_5finode_5fload_5froot_210',['sqsh_inode_load_root',['../inode__context_8h.html#ac0527ed6c506f9cc18cba6a2f0404229',1,'inode_context.h']]],
   ['sqsh_5finode_5fmodified_5ftime_211',['sqsh_inode_modified_time',['../inode__context_8h.html#accb1cdc2355a9025f565fe3a7eecf9cf',1,'inode_context.h']]],
   ['sqsh_5finode_5fnumber_212',['sqsh_inode_number',['../inode__context_8h.html#a274b746c4bf0eecd53a3763634caf913',1,'inode_context.h']]],
   ['sqsh_5finode_5fpermission_213',['sqsh_inode_permission',['../inode__context_8h.html#aa92c03cf2daeb9f2ff105c76111d6d7d',1,'inode_context.h']]],

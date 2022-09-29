@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;b7c1746</span>
    </div>
   </td>
  </tr>
@@ -145,66 +145,94 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a53d2ab637700788f0757c7c724e130a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a53d2ab637700788f0757c7c724e130a1">sqsh_inode_load_by_ref</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, uint64_t inode_ref)</td></tr>
+<tr class="memdesc:a53d2ab637700788f0757c7c724e130a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the inode context from a inode reference. inode references are descriptors of the physical location of an inode inside the inode table. They are diffrent from the inode number. In doubt use the inode number.  <a href="inode__context_8h.html#a53d2ab637700788f0757c7c724e130a1">More...</a><br /></td></tr>
 <tr class="separator:a53d2ab637700788f0757c7c724e130a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5f7a583ba392185460f0856a52abbe9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#af5f7a583ba392185460f0856a52abbe9">sqsh_inode_load_root</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
-<tr class="separator:af5f7a583ba392185460f0856a52abbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0527ed6c506f9cc18cba6a2f0404229"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#ac0527ed6c506f9cc18cba6a2f0404229">sqsh_inode_load_root</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
+<tr class="memdesc:ac0527ed6c506f9cc18cba6a2f0404229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the inode context of the root directory.  <a href="inode__context_8h.html#ac0527ed6c506f9cc18cba6a2f0404229">More...</a><br /></td></tr>
+<tr class="separator:ac0527ed6c506f9cc18cba6a2f0404229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9293009a4fa98df26f9c1bf7acf3f118"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a9293009a4fa98df26f9c1bf7acf3f118">sqsh_inode_load_by_inode_number</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, uint64_t inode_number)</td></tr>
+<tr class="memdesc:a9293009a4fa98df26f9c1bf7acf3f118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the inode context from an inode number.  <a href="inode__context_8h.html#a9293009a4fa98df26f9c1bf7acf3f118">More...</a><br /></td></tr>
 <tr class="separator:a9293009a4fa98df26f9c1bf7acf3f118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f6949bc82cfd67cce327d803e9421c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a5f6949bc82cfd67cce327d803e9421c4">sqsh_inode_load_by_path</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, const char *path)</td></tr>
+<tr class="memdesc:a5f6949bc82cfd67cce327d803e9421c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the inode context from a path.  <a href="inode__context_8h.html#a5f6949bc82cfd67cce327d803e9421c4">More...</a><br /></td></tr>
 <tr class="separator:a5f6949bc82cfd67cce327d803e9421c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a500d7c81ba63211aa7cfeedaf84cf9e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a500d7c81ba63211aa7cfeedaf84cf9e5">sqsh_inode_is_extended</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a500d7c81ba63211aa7cfeedaf84cf9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns whether the inode is an extended structure.  <a href="inode__context_8h.html#a500d7c81ba63211aa7cfeedaf84cf9e5">More...</a><br /></td></tr>
 <tr class="separator:a500d7c81ba63211aa7cfeedaf84cf9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d3ba76172886a29e05647a81738cf68"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a4d3ba76172886a29e05647a81738cf68">sqsh_inode_hard_link_count</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a4d3ba76172886a29e05647a81738cf68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the inode hard link count.  <a href="inode__context_8h.html#a4d3ba76172886a29e05647a81738cf68">More...</a><br /></td></tr>
 <tr class="separator:a4d3ba76172886a29e05647a81738cf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65a02fa321fe0ef692244fac11ce0619"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a65a02fa321fe0ef692244fac11ce0619">sqsh_inode_file_size</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a65a02fa321fe0ef692244fac11ce0619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the file size. 0 if the file has no size.  <a href="inode__context_8h.html#a65a02fa321fe0ef692244fac11ce0619">More...</a><br /></td></tr>
 <tr class="separator:a65a02fa321fe0ef692244fac11ce0619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa92c03cf2daeb9f2ff105c76111d6d7d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#aa92c03cf2daeb9f2ff105c76111d6d7d">sqsh_inode_permission</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:aa92c03cf2daeb9f2ff105c76111d6d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the permissions of the inode.  <a href="inode__context_8h.html#aa92c03cf2daeb9f2ff105c76111d6d7d">More...</a><br /></td></tr>
 <tr class="separator:aa92c03cf2daeb9f2ff105c76111d6d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a274b746c4bf0eecd53a3763634caf913"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a274b746c4bf0eecd53a3763634caf913">sqsh_inode_number</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a274b746c4bf0eecd53a3763634caf913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the inode number.  <a href="inode__context_8h.html#a274b746c4bf0eecd53a3763634caf913">More...</a><br /></td></tr>
 <tr class="separator:a274b746c4bf0eecd53a3763634caf913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accb1cdc2355a9025f565fe3a7eecf9cf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#accb1cdc2355a9025f565fe3a7eecf9cf">sqsh_inode_modified_time</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:accb1cdc2355a9025f565fe3a7eecf9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the inode modification time.  <a href="inode__context_8h.html#accb1cdc2355a9025f565fe3a7eecf9cf">More...</a><br /></td></tr>
 <tr class="separator:accb1cdc2355a9025f565fe3a7eecf9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d38b7e83e18df45ef3e82974c303bf8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a7d38b7e83e18df45ef3e82974c303bf8">sqsh_inode_file_blocks_start</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a7d38b7e83e18df45ef3e82974c303bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the start block of the file content. This is only internally used and will be used while retrieving the file content.  <a href="inode__context_8h.html#a7d38b7e83e18df45ef3e82974c303bf8">More...</a><br /></td></tr>
 <tr class="separator:a7d38b7e83e18df45ef3e82974c303bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ffe778ba463b3762e2a9b8ea0a79a76"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a4ffe778ba463b3762e2a9b8ea0a79a76">sqsh_inode_file_block_count</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a4ffe778ba463b3762e2a9b8ea0a79a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the amount of blocks of the file content. This is only internally used and will be used while retrieving the file content.  <a href="inode__context_8h.html#a4ffe778ba463b3762e2a9b8ea0a79a76">More...</a><br /></td></tr>
 <tr class="separator:a4ffe778ba463b3762e2a9b8ea0a79a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9057c87a2211679eaba98e3d5181553a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a9057c87a2211679eaba98e3d5181553a">sqsh_inode_file_block_size</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, uint32_t index)</td></tr>
+<tr class="memdesc:a9057c87a2211679eaba98e3d5181553a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter the size of a block of the file content. This is only internally used and will be used while retrieving the file content.  <a href="inode__context_8h.html#a9057c87a2211679eaba98e3d5181553a">More...</a><br /></td></tr>
 <tr class="separator:a9057c87a2211679eaba98e3d5181553a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22269b2253f21b9b1abe8ac0533afc35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a22269b2253f21b9b1abe8ac0533afc35">sqsh_inode_file_block_is_compressed</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, int index)</td></tr>
+<tr class="memdesc:a22269b2253f21b9b1abe8ac0533afc35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a certain block is compressed.  <a href="inode__context_8h.html#a22269b2253f21b9b1abe8ac0533afc35">More...</a><br /></td></tr>
 <tr class="separator:a22269b2253f21b9b1abe8ac0533afc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18a822992cd698fbfa15eb0f90d198d4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a18a822992cd698fbfa15eb0f90d198d4">sqsh_inode_file_fragment_block_index</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a18a822992cd698fbfa15eb0f90d198d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the fragment block index. This is only internally used and will be used while retrieving the file content.  <a href="inode__context_8h.html#a18a822992cd698fbfa15eb0f90d198d4">More...</a><br /></td></tr>
 <tr class="separator:a18a822992cd698fbfa15eb0f90d198d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59b31ee738cf0460a8e62b78e320205f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a59b31ee738cf0460a8e62b78e320205f">sqsh_inode_file_fragment_block_offset</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a59b31ee738cf0460a8e62b78e320205f"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the fragment block offset. This is only internally used and will be used while retrieving the file content.  <a href="inode__context_8h.html#a59b31ee738cf0460a8e62b78e320205f">More...</a><br /></td></tr>
 <tr class="separator:a59b31ee738cf0460a8e62b78e320205f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11cebd31657937a9ec33bb3c257876eb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a11cebd31657937a9ec33bb3c257876eb">sqsh_inode_directory_block_start</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a11cebd31657937a9ec33bb3c257876eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the directory block start. This is only internally used and will be used while iterating over the directory entries.  <a href="inode__context_8h.html#a11cebd31657937a9ec33bb3c257876eb">More...</a><br /></td></tr>
 <tr class="separator:a11cebd31657937a9ec33bb3c257876eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a998c42107b605d76a6de5a677fba22e9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a998c42107b605d76a6de5a677fba22e9">sqsh_inode_directory_block_offset</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a998c42107b605d76a6de5a677fba22e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the directory block offset. This is only internally used and will be used while iterating over the directory entries.  <a href="inode__context_8h.html#a998c42107b605d76a6de5a677fba22e9">More...</a><br /></td></tr>
 <tr class="separator:a998c42107b605d76a6de5a677fba22e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a87085481a46481fa7d0abac831050"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#af9a87085481a46481fa7d0abac831050">sqsh_inode_file_has_fragment</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:af9a87085481a46481fa7d0abac831050"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the inode has a fragment block.  <a href="inode__context_8h.html#af9a87085481a46481fa7d0abac831050">More...</a><br /></td></tr>
 <tr class="separator:af9a87085481a46481fa7d0abac831050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71eb3071def41c76320b575f8da5df1d"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8">SqshInodeContextType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a71eb3071def41c76320b575f8da5df1d">sqsh_inode_type</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a71eb3071def41c76320b575f8da5df1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the type of the inode.  <a href="inode__context_8h.html#a71eb3071def41c76320b575f8da5df1d">More...</a><br /></td></tr>
 <tr class="separator:a71eb3071def41c76320b575f8da5df1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a232a93cdc03ad5ed3c8c45627fb560a9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a232a93cdc03ad5ed3c8c45627fb560a9">sqsh_inode_symlink</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a232a93cdc03ad5ed3c8c45627fb560a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the target of a symbolic link. Be aware that the returned value is not zero terminated. If you need a zero terminated string use <a class="el" href="inode__context_8h.html#a6a15e527ea357f22d62f5104d05336cd" title="sets a heap allocated, zero terminated string of the target of a symbolic link.">sqsh_inode_symlink_dup()</a>.  <a href="inode__context_8h.html#a232a93cdc03ad5ed3c8c45627fb560a9">More...</a><br /></td></tr>
 <tr class="separator:a232a93cdc03ad5ed3c8c45627fb560a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a15e527ea357f22d62f5104d05336cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a6a15e527ea357f22d62f5104d05336cd">sqsh_inode_symlink_dup</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, char **namebuffer)</td></tr>
+<tr class="memdesc:a6a15e527ea357f22d62f5104d05336cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets a heap allocated, zero terminated string of the target of a symbolic link.  <a href="inode__context_8h.html#a6a15e527ea357f22d62f5104d05336cd">More...</a><br /></td></tr>
 <tr class="separator:a6a15e527ea357f22d62f5104d05336cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ca7bbebf5ab8692debe198968b052b0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a9ca7bbebf5ab8692debe198968b052b0">sqsh_inode_symlink_size</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a9ca7bbebf5ab8692debe198968b052b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the length of the target of a symbolic link in bytes.  <a href="inode__context_8h.html#a9ca7bbebf5ab8692debe198968b052b0">More...</a><br /></td></tr>
 <tr class="separator:a9ca7bbebf5ab8692debe198968b052b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1259f15abd5dbc075212abe28bd52c17"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a1259f15abd5dbc075212abe28bd52c17">sqsh_inode_device_id</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
 <tr class="separator:a1259f15abd5dbc075212abe28bd52c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f24b62db649b987d29fd75e5866ce48"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a7f24b62db649b987d29fd75e5866ce48">sqsh_inode_uid</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a7f24b62db649b987d29fd75e5866ce48"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the uid of the inode.  <a href="inode__context_8h.html#a7f24b62db649b987d29fd75e5866ce48">More...</a><br /></td></tr>
 <tr class="separator:a7f24b62db649b987d29fd75e5866ce48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a926abd3c598c371e281411ff0b020300"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a926abd3c598c371e281411ff0b020300">sqsh_inode_gid</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a926abd3c598c371e281411ff0b020300"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the gid of the inode.  <a href="inode__context_8h.html#a926abd3c598c371e281411ff0b020300">More...</a><br /></td></tr>
 <tr class="separator:a926abd3c598c371e281411ff0b020300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346c1e1a617dea3664d1f458bb8ed3cd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a346c1e1a617dea3664d1f458bb8ed3cd">sqsh_inode_xattr_index</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a346c1e1a617dea3664d1f458bb8ed3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns index of the extended attribute inside of the xattr table.  <a href="inode__context_8h.html#a346c1e1a617dea3664d1f458bb8ed3cd">More...</a><br /></td></tr>
 <tr class="separator:a346c1e1a617dea3664d1f458bb8ed3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb1eac4b118aae50790507db1a34a2f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#afb1eac4b118aae50790507db1a34a2f9">sqsh_inode_xattr_iterator</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator)</td></tr>
 <tr class="separator:afb1eac4b118aae50790507db1a34a2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d0e6ef1e8acb1f8b964440db0a4594"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a74d0e6ef1e8acb1f8b964440db0a4594">sqsh_inode_cleanup</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
 <tr class="separator:a74d0e6ef1e8acb1f8b964440db0a4594"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b5573fcd05d29f3012df42a9ae6db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a92b5573fcd05d29f3012df42a9ae6db1">sqsh_inode_ref_to_block</a> (uint64_t ref, uint32_t *block_index, uint16_t *offset)</td></tr>
+<tr class="memdesc:a92b5573fcd05d29f3012df42a9ae6db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">converts an inode reference into a block index and a block offset  <a href="inode__context_8h.html#a92b5573fcd05d29f3012df42a9ae6db1">More...</a><br /></td></tr>
 <tr class="separator:a92b5573fcd05d29f3012df42a9ae6db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57e1ace6f102fa8ccb8aeb1a6ace7b04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inode__context_8h.html#a57e1ace6f102fa8ccb8aeb1a6ace7b04">sqsh_inode_ref_from_block</a> (uint32_t block_index, uint16_t offset)</td></tr>
+<tr class="memdesc:a57e1ace6f102fa8ccb8aeb1a6ace7b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">converts a block index and a block offset into an inode reference.  <a href="inode__context_8h.html#a57e1ace6f102fa8ccb8aeb1a6ace7b04">More...</a><br /></td></tr>
 <tr class="separator:a57e1ace6f102fa8ccb8aeb1a6ace7b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -333,6 +361,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >@brie returns the device id of the device inode. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the name of the inode or 0 if the inode is not a device. </dd></dl>
 
 </div>
 </div>
@@ -352,6 +387,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>retrieve the directory block offset. This is only internally used and will be used while iterating over the directory entries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the directory block offset. </dd></dl>
+
 </div>
 </div>
 <a id="a11cebd31657937a9ec33bb3c257876eb" name="a11cebd31657937a9ec33bb3c257876eb"></a>
@@ -370,6 +414,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>retrieve the directory block start. This is only internally used and will be used while iterating over the directory entries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the directory block start. </dd></dl>
+
 </div>
 </div>
 <a id="a4ffe778ba463b3762e2a9b8ea0a79a76" name="a4ffe778ba463b3762e2a9b8ea0a79a76"></a>
@@ -387,6 +440,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter for the amount of blocks of the file content. This is only internally used and will be used while retrieving the file content. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the amount of blocks of the file content. If the inode is not a file 0, UINT32_MAX will be returned. </dd></dl>
 
 </div>
 </div>
@@ -416,6 +478,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Checks whether a certain block is compressed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+    <tr><td class="paramname">block</td><td>The index of the block. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the block is compressed, false otherwise. </dd></dl>
+
 </div>
 </div>
 <a id="a9057c87a2211679eaba98e3d5181553a" name="a9057c87a2211679eaba98e3d5181553a"></a>
@@ -444,6 +516,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Getter the size of a block of the file content. This is only internally used and will be used while retrieving the file content. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+    <tr><td class="paramname">block</td><td>The index of the block. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the size of the block with the index. </dd></dl>
+
 </div>
 </div>
 <a id="a7d38b7e83e18df45ef3e82974c303bf8" name="a7d38b7e83e18df45ef3e82974c303bf8"></a>
@@ -461,6 +543,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter for the start block of the file content. This is only internally used and will be used while retrieving the file content. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the start block of the file content or UINT64_MAX if the inode is not a file. </dd></dl>
 
 </div>
 </div>
@@ -480,6 +571,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>retrieve the fragment block index. This is only internally used and will be used while retrieving the file content. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the fragment block index. </dd></dl>
+
 </div>
 </div>
 <a id="a59b31ee738cf0460a8e62b78e320205f" name="a59b31ee738cf0460a8e62b78e320205f"></a>
@@ -497,6 +597,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>retrieve the fragment block offset. This is only internally used and will be used while retrieving the file content. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the offset inside of the fragment block. </dd></dl>
 
 </div>
 </div>
@@ -516,6 +625,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>returns true if the inode has a fragment block. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the inode has a fragment block, false otherwise. </dd></dl>
+
 </div>
 </div>
 <a id="a65a02fa321fe0ef692244fac11ce0619" name="a65a02fa321fe0ef692244fac11ce0619"></a>
@@ -533,6 +651,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter for the file size. 0 if the file has no size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the inode type. </dd></dl>
 
 </div>
 </div>
@@ -552,6 +679,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>returns the gid of the inode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the gid of the inode. </dd></dl>
+
 </div>
 </div>
 <a id="a4d3ba76172886a29e05647a81738cf68" name="a4d3ba76172886a29e05647a81738cf68"></a>
@@ -570,6 +706,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Getter for the inode hard link count. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the amount of hard links to the inode. </dd></dl>
+
 </div>
 </div>
 <a id="a500d7c81ba63211aa7cfeedaf84cf9e5" name="a500d7c81ba63211aa7cfeedaf84cf9e5"></a>
@@ -587,6 +732,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns whether the inode is an extended structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the inode is an extended structure. </dd></dl>
 
 </div>
 </div>
@@ -622,6 +776,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Initialize the inode context from an inode number. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context to initialize. </td></tr>
+    <tr><td class="paramname">sqsh</td><td>The sqsh context. </td></tr>
+    <tr><td class="paramname">inode_number</td><td>The inode number. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 on success, less than 0 on error. </dd></dl>
+
 </div>
 </div>
 <a id="a5f6949bc82cfd67cce327d803e9421c4" name="a5f6949bc82cfd67cce327d803e9421c4"></a>
@@ -655,6 +820,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize the inode context from a path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context to initialize. </td></tr>
+    <tr><td class="paramname">sqsh</td><td>The sqsh context. </td></tr>
+    <tr><td class="paramname">path</td><td>The path the file or directory. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 on success, less than 0 on error. </dd></dl>
 
 </div>
 </div>
@@ -690,16 +866,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Initialize the inode context from a inode reference. inode references are descriptors of the physical location of an inode inside the inode table. They are diffrent from the inode number. In doubt use the inode number. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context to initialize. </td></tr>
+    <tr><td class="paramname">sqsh</td><td>The sqsh context. </td></tr>
+    <tr><td class="paramname">inode_ref</td><td>The inode reference. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 on success, less than 0 on error. </dd></dl>
+
 </div>
 </div>
-<a id="af5f7a583ba392185460f0856a52abbe9" name="af5f7a583ba392185460f0856a52abbe9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5f7a583ba392185460f0856a52abbe9">&#9670;&nbsp;</a></span>sqsh_inode_load_root()</h2>
+<a id="ac0527ed6c506f9cc18cba6a2f0404229" name="ac0527ed6c506f9cc18cba6a2f0404229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0527ed6c506f9cc18cba6a2f0404229">&#9670;&nbsp;</a></span>sqsh_inode_load_root()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sqsh_inode_load_root </td>
+          <td class="memname"><a class="el" href="utils_8h.html#aee2d89e2865284870fc57699af806d2c">HSQS_NO_UNUSED</a> int sqsh_inode_load_root </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>, </td>
@@ -717,6 +904,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize the inode context of the root directory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context to initialize. </td></tr>
+    <tr><td class="paramname">sqsh</td><td>The sqsh context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 on success, less than 0 on error. </dd></dl>
 
 </div>
 </div>
@@ -736,6 +933,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Getter for the inode modification time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the inode modification time. </dd></dl>
+
 </div>
 </div>
 <a id="a274b746c4bf0eecd53a3763634caf913" name="a274b746c4bf0eecd53a3763634caf913"></a>
@@ -754,6 +960,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Getter for the inode number. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the inode number. </dd></dl>
+
 </div>
 </div>
 <a id="aa92c03cf2daeb9f2ff105c76111d6d7d" name="aa92c03cf2daeb9f2ff105c76111d6d7d"></a>
@@ -771,6 +986,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter for the permissions of the inode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the permissions of the inode. </dd></dl>
 
 </div>
 </div>
@@ -799,6 +1023,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>converts a block index and a block offset into an inode reference. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">block_index</td><td>The block index. </td></tr>
+    <tr><td class="paramname">block_offset</td><td>The block offset. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the inode reference. </dd></dl>
 
 </div>
 </div>
@@ -834,6 +1068,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>converts an inode reference into a block index and a block offset </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref</td><td>The inode reference. </td></tr>
+    <tr><td class="paramname">block_index</td><td>a pointer where the block index will be stored. </td></tr>
+    <tr><td class="paramname">block_offset</td><td>a pointer where the block offset will be stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a232a93cdc03ad5ed3c8c45627fb560a9" name="a232a93cdc03ad5ed3c8c45627fb560a9"></a>
@@ -851,6 +1095,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns the target of a symbolic link. Be aware that the returned value is not zero terminated. If you need a zero terminated string use <a class="el" href="inode__context_8h.html#a6a15e527ea357f22d62f5104d05336cd" title="sets a heap allocated, zero terminated string of the target of a symbolic link.">sqsh_inode_symlink_dup()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the name of the inode or NULL if the inode is not a symbolic link. </dd></dl>
 
 </div>
 </div>
@@ -880,6 +1133,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>sets a heap allocated, zero terminated string of the target of a symbolic link. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+    <tr><td class="paramname">symlink</td><td>The target of the symbolic link. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 on success, less than 0 on error. </dd></dl>
+
 </div>
 </div>
 <a id="a9ca7bbebf5ab8692debe198968b052b0" name="a9ca7bbebf5ab8692debe198968b052b0"></a>
@@ -897,6 +1160,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns the length of the target of a symbolic link in bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of the target of a symbolic link in bytes or 0 if the inode is not a symbolic link. </dd></dl>
 
 </div>
 </div>
@@ -916,6 +1188,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>returns the type of the inode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the type of the inode. </dd></dl>
+
 </div>
 </div>
 <a id="a7f24b62db649b987d29fd75e5866ce48" name="a7f24b62db649b987d29fd75e5866ce48"></a>
@@ -934,6 +1215,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>returns the uid of the inode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the uid of the inode. </dd></dl>
+
 </div>
 </div>
 <a id="a346c1e1a617dea3664d1f458bb8ed3cd" name="a346c1e1a617dea3664d1f458bb8ed3cd"></a>
@@ -951,6 +1241,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns index of the extended attribute inside of the xattr table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the index of the extended attribute inside of the xattr table. </dd></dl>
 
 </div>
 </div>
