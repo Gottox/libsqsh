@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;85a3e7b</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;275eca5</span>
    </div>
   </td>
  </tr>
@@ -92,14 +92,14 @@ How to...?</h1>
 <h2><a class="anchor" id="autotoc_md4"></a>
 ... open an archive?</h2>
 <div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqsh.html">Sqsh</a> archive = { 0 };</div>
-<div class="line"><span class="keywordtype">int</span> rv = <a class="code hl_function" href="sqsh_8h.html#aadfc0955817c920605252983f532d589">sqsh_open</a>(&amp;archive, <span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>);</div>
+<div class="line"><span class="keywordtype">int</span> rv = <a class="code hl_function" href="structSqsh.html#aadfc0955817c920605252983f532d589">sqsh_open</a>(&amp;archive, <span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (rv &lt; 0)</div>
 <div class="line">    abort();</div>
 <div class="line"><span class="comment">// Do something with the archive!</span></div>
-<div class="line"><a class="code hl_function" href="sqsh_8h.html#ae2868febaa9ecedb3c7f528c2c4595cd">sqsh_cleanup</a>(&amp;archive);</div>
-<div class="ttc" id="asqsh_8h_html_aadfc0955817c920605252983f532d589"><div class="ttname"><a href="sqsh_8h.html#aadfc0955817c920605252983f532d589">sqsh_open</a></div><div class="ttdeci">HSQS_NO_UNUSED int sqsh_open(struct Sqsh *sqsh, const char *path)</div><div class="ttdoc">sqsh_open opens the sqsh file at the given path.</div></div>
-<div class="ttc" id="asqsh_8h_html_ae2868febaa9ecedb3c7f528c2c4595cd"><div class="ttname"><a href="sqsh_8h.html#ae2868febaa9ecedb3c7f528c2c4595cd">sqsh_cleanup</a></div><div class="ttdeci">int sqsh_cleanup(struct Sqsh *sqsh)</div><div class="ttdoc">sqsh_cleanup frees all resources allocated by the Sqsh structure and cleans up the structure.</div></div>
+<div class="line"><a class="code hl_function" href="structSqsh.html#ae2868febaa9ecedb3c7f528c2c4595cd">sqsh_cleanup</a>(&amp;archive);</div>
 <div class="ttc" id="astructSqsh_html"><div class="ttname"><a href="structSqsh.html">Sqsh</a></div><div class="ttdoc">The SqshContext struct contains all information about the current sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh_8h_source.html#l00057">sqsh.h:57</a></div></div>
+<div class="ttc" id="astructSqsh_html_aadfc0955817c920605252983f532d589"><div class="ttname"><a href="structSqsh.html#aadfc0955817c920605252983f532d589">Sqsh::sqsh_open</a></div><div class="ttdeci">HSQS_NO_UNUSED int sqsh_open(struct Sqsh *sqsh, const char *path)</div><div class="ttdoc">sqsh_open opens the sqsh file at the given path.</div></div>
+<div class="ttc" id="astructSqsh_html_ae2868febaa9ecedb3c7f528c2c4595cd"><div class="ttname"><a href="structSqsh.html#ae2868febaa9ecedb3c7f528c2c4595cd">Sqsh::sqsh_cleanup</a></div><div class="ttdeci">int sqsh_cleanup(struct Sqsh *sqsh)</div><div class="ttdoc">sqsh_cleanup frees all resources allocated by the Sqsh structure and cleans up the structure.</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
 ... get metainformations about a file?</h2>
 <div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshInodeContext.html">SqshInodeContext</a> inode = { 0 };</div>
