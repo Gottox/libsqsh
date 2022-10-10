@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;cfbd2f7</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;db7e71e</span>
    </div>
   </td>
  </tr>
@@ -100,12 +100,12 @@ $(function() {
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#ifndef HSQS__DIRECTORY_H</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#ifndef SQSH__DIRECTORY_H</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define HSQS__DIRECTORY_H</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define SQSH__DIRECTORY_H</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="directory_8h.html#a752580a9da0f7ebc60add6cf68c9c8c7">   41</a></span><span class="preprocessor">#define HSQS_SIZEOF_DIRECTORY_FRAGMENT 12</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="directory_8h.html#af775f907cfd38eccf7581aab378c1a82">   42</a></span><span class="preprocessor">#define HSQS_SIZEOF_DIRECTORY_ENTRY 8</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="directory_8h.html#a36395313a2a53d32686c3c88bad580fa">   41</a></span><span class="preprocessor">#define SQSH_SIZEOF_DIRECTORY_FRAGMENT 12</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="directory_8h.html#ad636f2698e03122f7aec7e54ead78cdf">   42</a></span><span class="preprocessor">#define SQSH_SIZEOF_DIRECTORY_ENTRY 8</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">struct </span>SqshDirectoryEntry;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
@@ -130,7 +130,7 @@ $(function() {
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="directory_8h.html#aa3ec627b88ce4409cdcf47afb7e1bdaa">   64</a></span><span class="keyword">const</span> <span class="keyword">struct </span>SqshDirectoryEntry *<a class="code hl_function" href="directory_8h.html#aa3ec627b88ce4409cdcf47afb7e1bdaa">sqsh_data_directory_fragment_entries</a>(</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keyword">const</span> <span class="keyword">struct</span> SqshDirectoryFragment *fragment);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard HSQS__DIRECTORY_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard SQSH__DIRECTORY_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="adirectory_8h_html_a84f0c13711fe5dea356ed37a598ad44f"><div class="ttname"><a href="directory_8h.html#a84f0c13711fe5dea356ed37a598ad44f">sqsh_data_directory_entry_name_size</a></div><div class="ttdeci">uint16_t sqsh_data_directory_entry_name_size(const struct SqshDirectoryEntry *entry)</div></div>
 <div class="ttc" id="adirectory_8h_html_a8f9289aa9b18d61e504fced5b5887023"><div class="ttname"><a href="directory_8h.html#a8f9289aa9b18d61e504fced5b5887023">sqsh_data_directory_entry_inode_offset</a></div><div class="ttdeci">int16_t sqsh_data_directory_entry_inode_offset(const struct SqshDirectoryEntry *entry)</div></div>
 <div class="ttc" id="adirectory_8h_html_aa3ec627b88ce4409cdcf47afb7e1bdaa"><div class="ttname"><a href="directory_8h.html#aa3ec627b88ce4409cdcf47afb7e1bdaa">sqsh_data_directory_fragment_entries</a></div><div class="ttdeci">const struct SqshDirectoryEntry * sqsh_data_directory_fragment_entries(const struct SqshDirectoryFragment *fragment)</div></div>

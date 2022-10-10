@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;cfbd2f7</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;db7e71e</span>
    </div>
   </td>
  </tr>
@@ -92,18 +92,18 @@ How to...?</h1>
 <h2><a class="anchor" id="autotoc_md4"></a>
 ... open an archive?</h2>
 <div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqsh.html">Sqsh</a> archive = { 0 };</div>
-<div class="line"><span class="keywordtype">int</span> rv = <a class="code hl_function" href="structSqsh.html#aadfc0955817c920605252983f532d589">sqsh_open</a>(&amp;archive, <span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>);</div>
+<div class="line"><span class="keywordtype">int</span> rv = <a class="code hl_function" href="structSqsh.html#a3f895379d36b44ed2086c1b065c79ddf">sqsh_open</a>(&amp;archive, <span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (rv &lt; 0)</div>
 <div class="line">    abort();</div>
 <div class="line"><span class="comment">// Do something with the archive!</span></div>
 <div class="line"><a class="code hl_function" href="structSqsh.html#ae2868febaa9ecedb3c7f528c2c4595cd">sqsh_cleanup</a>(&amp;archive);</div>
 <div class="ttc" id="astructSqsh_html"><div class="ttname"><a href="structSqsh.html">Sqsh</a></div><div class="ttdoc">The SqshContext struct contains all information about the current sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh_8h_source.html#l00057">sqsh.h:57</a></div></div>
-<div class="ttc" id="astructSqsh_html_aadfc0955817c920605252983f532d589"><div class="ttname"><a href="structSqsh.html#aadfc0955817c920605252983f532d589">Sqsh::sqsh_open</a></div><div class="ttdeci">HSQS_NO_UNUSED int sqsh_open(struct Sqsh *sqsh, const char *path)</div><div class="ttdoc">sqsh_open opens the sqsh file at the given path.</div></div>
+<div class="ttc" id="astructSqsh_html_a3f895379d36b44ed2086c1b065c79ddf"><div class="ttname"><a href="structSqsh.html#a3f895379d36b44ed2086c1b065c79ddf">Sqsh::sqsh_open</a></div><div class="ttdeci">SQSH_NO_UNUSED int sqsh_open(struct Sqsh *sqsh, const char *path)</div><div class="ttdoc">sqsh_open opens the sqsh file at the given path.</div></div>
 <div class="ttc" id="astructSqsh_html_ae2868febaa9ecedb3c7f528c2c4595cd"><div class="ttname"><a href="structSqsh.html#ae2868febaa9ecedb3c7f528c2c4595cd">Sqsh::sqsh_cleanup</a></div><div class="ttdeci">int sqsh_cleanup(struct Sqsh *sqsh)</div><div class="ttdoc">sqsh_cleanup frees all resources allocated by the Sqsh structure and cleans up the structure.</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
 ... get metainformations about a file?</h2>
 <div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshInodeContext.html">SqshInodeContext</a> inode = { 0 };</div>
-<div class="line"><span class="keywordtype">int</span> rv = <a class="code hl_function" href="inode__context_8h.html#a5f6949bc82cfd67cce327d803e9421c4">sqsh_inode_load_by_path</a>(&amp;inode, &amp;archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>);</div>
+<div class="line"><span class="keywordtype">int</span> rv = <a class="code hl_function" href="inode__context_8h.html#ae7ad7bdbb6f9bedfdac3ff1316627bac">sqsh_inode_load_by_path</a>(&amp;inode, &amp;archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (rv &lt; 0)</div>
 <div class="line">    abort();</div>
 <div class="line"><span class="comment">// inode contains metainformations about &#39;/path/to/file&#39;.</span></div>
@@ -111,9 +111,9 @@ How to...?</h1>
 <div class="line"><span class="comment">// This for example gives you the file size of a file:</span></div>
 <div class="line"><span class="keywordtype">int</span> file_size = <a class="code hl_function" href="inode__context_8h.html#a65a02fa321fe0ef692244fac11ce0619">sqsh_inode_file_size</a>(&amp;inode);</div>
 <div class="line"><a class="code hl_function" href="inode__context_8h.html#a74d0e6ef1e8acb1f8b964440db0a4594">sqsh_inode_cleanup</a>(&amp;inode);</div>
-<div class="ttc" id="ainode__context_8h_html_a5f6949bc82cfd67cce327d803e9421c4"><div class="ttname"><a href="inode__context_8h.html#a5f6949bc82cfd67cce327d803e9421c4">sqsh_inode_load_by_path</a></div><div class="ttdeci">HSQS_NO_UNUSED int sqsh_inode_load_by_path(struct SqshInodeContext *context, struct Sqsh *sqsh, const char *path)</div><div class="ttdoc">Initialize the inode context from a path.</div></div>
 <div class="ttc" id="ainode__context_8h_html_a65a02fa321fe0ef692244fac11ce0619"><div class="ttname"><a href="inode__context_8h.html#a65a02fa321fe0ef692244fac11ce0619">sqsh_inode_file_size</a></div><div class="ttdeci">uint64_t sqsh_inode_file_size(const struct SqshInodeContext *context)</div><div class="ttdoc">Getter for the file size. 0 if the file has no size.</div></div>
 <div class="ttc" id="ainode__context_8h_html_a74d0e6ef1e8acb1f8b964440db0a4594"><div class="ttname"><a href="inode__context_8h.html#a74d0e6ef1e8acb1f8b964440db0a4594">sqsh_inode_cleanup</a></div><div class="ttdeci">int sqsh_inode_cleanup(struct SqshInodeContext *context)</div></div>
+<div class="ttc" id="ainode__context_8h_html_ae7ad7bdbb6f9bedfdac3ff1316627bac"><div class="ttname"><a href="inode__context_8h.html#ae7ad7bdbb6f9bedfdac3ff1316627bac">sqsh_inode_load_by_path</a></div><div class="ttdeci">SQSH_NO_UNUSED int sqsh_inode_load_by_path(struct SqshInodeContext *context, struct Sqsh *sqsh, const char *path)</div><div class="ttdoc">Initialize the inode context from a path.</div></div>
 <div class="ttc" id="astructSqshInodeContext_html"><div class="ttname"><a href="structSqshInodeContext.html">SqshInodeContext</a></div><div class="ttdef"><b>Definition:</b> <a href="inode__context_8h_source.html#l00083">inode_context.h:83</a></div></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
 Resource</h1>
