@@ -53,6 +53,7 @@ var menudata={children:[
 {text:"open",url:"functions.html#index_o"},
 {text:"p",url:"functions.html#index_p"},
 {text:"r",url:"functions.html#index_r"},
+{text:"ref_co",url:"functions.html#index_r"},
 {text:"s",url:"functions.html#index_s"},
 {text:"superb",url:"functions.html#index_s"},
 {text:"t",url:"functions.html#index_t"},

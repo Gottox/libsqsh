@@ -8,5 +8,6 @@ var searchData=
   ['directory_5',['directory',['../structSqshDirectoryIterator.html#a67d41d0f45a951939d2280058bc25ef5',1,'SqshDirectoryIterator']]],
   ['directory_2eh_6',['directory.h',['../directory_8h.html',1,'']]],
   ['directory_5findex_5fiterator_2eh_7',['directory_index_iterator.h',['../directory__index__iterator_8h.html',1,'']]],
-  ['directory_5fiterator_2eh_8',['directory_iterator.h',['../directory__iterator_8h.html',1,'']]]
+  ['directory_5fiterator_2eh_8',['directory_iterator.h',['../directory__iterator_8h.html',1,'']]],
+  ['dtor_9',['dtor',['../structSqshRefCount.html#a96ce91101c8e374a0270a9161b69f967',1,'SqshRefCount']]]
 ];

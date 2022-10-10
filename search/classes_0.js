@@ -23,11 +23,12 @@ var searchData=
   ['sqshmmapfullmapper_20',['SqshMmapFullMapper',['../structSqshMmapFullMapper.html',1,'']]],
   ['sqshmmapmap_21',['SqshMmapMap',['../structSqshMmapMap.html',1,'']]],
   ['sqshmmapmapper_22',['SqshMmapMapper',['../structSqshMmapMapper.html',1,'']]],
-  ['sqshstaticmap_23',['SqshStaticMap',['../structSqshStaticMap.html',1,'']]],
-  ['sqshstaticmapper_24',['SqshStaticMapper',['../structSqshStaticMapper.html',1,'']]],
-  ['sqshsuperblockcontext_25',['SqshSuperblockContext',['../structSqshSuperblockContext.html',1,'']]],
-  ['sqshtable_26',['SqshTable',['../structSqshTable.html',1,'']]],
-  ['sqshtrailingcontext_27',['SqshTrailingContext',['../structSqshTrailingContext.html',1,'']]],
-  ['sqshxattriterator_28',['SqshXattrIterator',['../structSqshXattrIterator.html',1,'']]],
-  ['sqshxattrtable_29',['SqshXattrTable',['../structSqshXattrTable.html',1,'']]]
+  ['sqshrefcount_23',['SqshRefCount',['../structSqshRefCount.html',1,'']]],
+  ['sqshstaticmap_24',['SqshStaticMap',['../structSqshStaticMap.html',1,'']]],
+  ['sqshstaticmapper_25',['SqshStaticMapper',['../structSqshStaticMapper.html',1,'']]],
+  ['sqshsuperblockcontext_26',['SqshSuperblockContext',['../structSqshSuperblockContext.html',1,'']]],
+  ['sqshtable_27',['SqshTable',['../structSqshTable.html',1,'']]],
+  ['sqshtrailingcontext_28',['SqshTrailingContext',['../structSqshTrailingContext.html',1,'']]],
+  ['sqshxattriterator_29',['SqshXattrIterator',['../structSqshXattrIterator.html',1,'']]],
+  ['sqshxattrtable_30',['SqshXattrTable',['../structSqshXattrTable.html',1,'']]]
 ];
