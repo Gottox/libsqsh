@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;db7e71e</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;83dedb4</span>
    </div>
   </td>
  </tr>
@@ -82,6 +82,9 @@ Collaboration diagram for Sqsh:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac90e422ba68a1ff9b3cc27fc9bcce4e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqsh.html#ac90e422ba68a1ff9b3cc27fc9bcce4e5">sqsh_open2</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, const char *source, const struct <a class="el" href="structSqshConfig.html">SqshConfig</a> *<a class="el" href="structSqsh.html#a5ea3dbc6c49579b7f4fd940007860862">config</a>)</td></tr>
+<tr class="memdesc:ac90e422ba68a1ff9b3cc27fc9bcce4e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_init initializes the <a class="el" href="structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session.">Sqsh</a> structure.  <a href="structSqsh.html#ac90e422ba68a1ff9b3cc27fc9bcce4e5">More...</a><br /></td></tr>
+<tr class="separator:ac90e422ba68a1ff9b3cc27fc9bcce4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5dce72605fb15675c806f3691c88f29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqsh.html#ab5dce72605fb15675c806f3691c88f29">sqsh_init</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, const uint8_t *buffer, const size_t size)</td></tr>
 <tr class="memdesc:ab5dce72605fb15675c806f3691c88f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_init initializes the <a class="el" href="structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session.">Sqsh</a> structure.  <a href="structSqsh.html#ab5dce72605fb15675c806f3691c88f29">More...</a><br /></td></tr>
 <tr class="separator:ab5dce72605fb15675c806f3691c88f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,11 +150,13 @@ Data Fields</h2></td></tr>
 <tr class="separator:a7e4efb47501b85bd2284df30bab498ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af59fbe1713512d659d11c35630c73dac"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqsh.html#af59fbe1713512d659d11c35630c73dac">initialized</a></td></tr>
 <tr class="separator:af59fbe1713512d659d11c35630c73dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea3dbc6c49579b7f4fd940007860862"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqshConfig.html">SqshConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqsh.html#a5ea3dbc6c49579b7f4fd940007860862">config</a></td></tr>
+<tr class="separator:a5ea3dbc6c49579b7f4fd940007860862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The SqshContext struct contains all information about the current sqsh session. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00057">57</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00074">74</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae2868febaa9ecedb3c7f528c2c4595cd" name="ae2868febaa9ecedb3c7f528c2c4595cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2868febaa9ecedb3c7f528c2c4595cd">&#9670;&nbsp;</a></span>sqsh_cleanup()</h2>
@@ -496,6 +501,51 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="ac90e422ba68a1ff9b3cc27fc9bcce4e5" name="ac90e422ba68a1ff9b3cc27fc9bcce4e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac90e422ba68a1ff9b3cc27fc9bcce4e5">&#9670;&nbsp;</a></span>sqsh_open2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_open2 </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structSqshConfig.html">SqshConfig</a> *&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sqsh_init initializes the <a class="el" href="structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session.">Sqsh</a> structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sqsh</td><td>the <a class="el" href="structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session.">Sqsh</a> structure to initialize. </td></tr>
+    <tr><td class="paramname">buffer</td><td>the buffer to use for the <a class="el" href="structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session.">Sqsh</a> structure. </td></tr>
+    <tr><td class="paramname">size</td><td>the size of the buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, less than 0 on error. </dd></dl>
+
+</div>
+</div>
 <a id="a3122021ce843b47dfc53e18368794058" name="a3122021ce843b47dfc53e18368794058"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3122021ce843b47dfc53e18368794058">&#9670;&nbsp;</a></span>sqsh_superblock()</h2>
 
@@ -574,7 +624,23 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00069">69</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00086">86</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+
+</div>
+</div>
+<a id="a5ea3dbc6c49579b7f4fd940007860862" name="a5ea3dbc6c49579b7f4fd940007860862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ea3dbc6c49579b7f4fd940007860862">&#9670;&nbsp;</a></span>config</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structSqshConfig.html">SqshConfig</a> Sqsh::config</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00088">88</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 
 </div>
 </div>
@@ -590,7 +656,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00060">60</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00077">77</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 
 </div>
 </div>
@@ -606,7 +672,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00058">58</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00075">75</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 
 </div>
 </div>
@@ -622,7 +688,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00066">66</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00083">83</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 
 </div>
 </div>
@@ -638,7 +704,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00068">68</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00085">85</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 
 </div>
 </div>
@@ -654,7 +720,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00065">65</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00082">82</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 
 </div>
 </div>
@@ -670,7 +736,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00070">70</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00087">87</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 
 </div>
 </div>
@@ -686,7 +752,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00059">59</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00076">76</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 
 </div>
 </div>
@@ -702,7 +768,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00061">61</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00078">78</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 
 </div>
 </div>
@@ -718,7 +784,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00064">64</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00081">81</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 
 </div>
 </div>
@@ -734,7 +800,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00063">63</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00080">80</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 
 </div>
 </div>
@@ -750,7 +816,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00062">62</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00079">79</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 
 </div>
 </div>
@@ -766,7 +832,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00067">67</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00084">84</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
 
 </div>
 </div>

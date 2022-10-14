@@ -9,10 +9,11 @@ var searchData=
   ['compression_5foptions_6',['compression_options',['../structSqsh.html#a7e4efb47501b85bd2284df30bab498ac',1,'Sqsh']]],
   ['compression_5foptions_2eh_7',['compression_options.h',['../compression__options_8h.html',1,'']]],
   ['compression_5foptions_5fcontext_2eh_8',['compression_options_context.h',['../compression__options__context_8h.html',1,'']]],
-  ['content_5fcontext_2eh_9',['content_context.h',['../content__context_8h.html',1,'']]],
-  ['context_10',['context',['../structSqshXattrIterator.html#a7a99b2e18427c156d8925829d22decdb',1,'SqshXattrIterator']]],
-  ['curl_5fmapper_2eh_11',['curl_mapper.h',['../curl__mapper_8h.html',1,'']]],
-  ['current_5faddress_12',['current_address',['../structSqshMetablockStreamContext.html#a45ff0feb05ef91210d17a615062ad4e6',1,'SqshMetablockStreamContext']]],
-  ['current_5ffragment_5foffset_13',['current_fragment_offset',['../structSqshDirectoryIterator.html#a6bd9d6eda79951c6f8221ce023106384',1,'SqshDirectoryIterator']]],
-  ['current_5foffset_14',['current_offset',['../structSqshInodeDirectoryIndexIterator.html#a9b72c38b4643f3c0e8d75aa01b34cacc',1,'SqshInodeDirectoryIndexIterator::current_offset()'],['../structSqshDirectoryIterator.html#af4883a5b89e8c0ee4de8294f0c6bee81',1,'SqshDirectoryIterator::current_offset()']]]
+  ['config_9',['config',['../structSqsh.html#a5ea3dbc6c49579b7f4fd940007860862',1,'Sqsh']]],
+  ['content_5fcontext_2eh_10',['content_context.h',['../content__context_8h.html',1,'']]],
+  ['context_11',['context',['../structSqshXattrIterator.html#a7a99b2e18427c156d8925829d22decdb',1,'SqshXattrIterator']]],
+  ['curl_5fmapper_2eh_12',['curl_mapper.h',['../curl__mapper_8h.html',1,'']]],
+  ['current_5faddress_13',['current_address',['../structSqshMetablockStreamContext.html#a45ff0feb05ef91210d17a615062ad4e6',1,'SqshMetablockStreamContext']]],
+  ['current_5ffragment_5foffset_14',['current_fragment_offset',['../structSqshDirectoryIterator.html#a6bd9d6eda79951c6f8221ce023106384',1,'SqshDirectoryIterator']]],
+  ['current_5foffset_15',['current_offset',['../structSqshInodeDirectoryIndexIterator.html#a9b72c38b4643f3c0e8d75aa01b34cacc',1,'SqshInodeDirectoryIndexIterator::current_offset()'],['../structSqshDirectoryIterator.html#af4883a5b89e8c0ee4de8294f0c6bee81',1,'SqshDirectoryIterator::current_offset()']]]
 ];

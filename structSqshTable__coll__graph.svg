@@ -59,8 +59,8 @@ var sectionId = 'dynsection-0';
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="872,-227.5 872,-246.5 956,-246.5 956,-227.5 872,-227.5"/>
-<text text-anchor="middle" x="914" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshTable</text>
+<polygon fill="#bfbfbf" stroke="black" points="872,-269.5 872,-288.5 956,-288.5 956,-269.5 872,-269.5"/>
+<text text-anchor="middle" x="914" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshTable</text>
 </a>
 </g>
 </g>
@@ -68,392 +68,408 @@ var sectionId = 'dynsection-0';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="structSqsh.html" target="_top" xlink:title="The SqshContext struct contains all information about the current sqsh session.">
-<polygon fill="white" stroke="black" points="1549,-239.5 1549,-258.5 1596,-258.5 1596,-239.5 1549,-239.5"/>
-<text text-anchor="middle" x="1572.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sqsh</text>
+<polygon fill="white" stroke="black" points="1549,-210.5 1549,-229.5 1596,-229.5 1596,-210.5 1549,-210.5"/>
+<text text-anchor="middle" x="1572.5" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sqsh</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge18" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M966.19,-234.44C1049.28,-230.71 1218.67,-224.85 1362,-231 1430.2,-233.92 1510.55,-242.18 1548.91,-246.42"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="965.84,-230.95 956.01,-234.91 966.16,-237.95 965.84,-230.95"/>
-<text text-anchor="middle" x="1245" y="-245" font-family="Helvetica,sans-Serif" font-size="10.00"> export_table</text>
-<text text-anchor="middle" x="1245" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">id_table</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M966.39,-281.96C983.16,-282.8 1001.86,-283.59 1019,-284 1059.43,-284.97 1069.56,-284.24 1110,-284 1297.41,-282.88 1362.36,-341.76 1531,-260 1545.23,-253.1 1557.49,-239.2 1564.69,-229.75"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="966.4,-278.46 956.23,-281.44 966.04,-285.45 966.4,-278.46"/>
+<text text-anchor="middle" x="1245" y="-317" font-family="Helvetica,sans-Serif" font-size="10.00"> export_table</text>
+<text text-anchor="middle" x="1245" y="-306" font-family="Helvetica,sans-Serif" font-size="10.00">id_table</text>
 </g>
 <!-- Node17 -->
 <g id="node17" class="node">
 <title>Node17</title>
 <g id="a_node17"><a xlink:href="structSqshXattrTable.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="1723,-239.5 1723,-258.5 1845,-258.5 1845,-239.5 1723,-239.5"/>
-<text text-anchor="middle" x="1784" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshXattrTable</text>
+<polygon fill="white" stroke="black" points="1723,-210.5 1723,-229.5 1845,-229.5 1845,-210.5 1723,-210.5"/>
+<text text-anchor="middle" x="1784" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshXattrTable</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node17 -->
 <g id="edge22" class="edge">
 <title>Node1&#45;&gt;Node17</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M948.99,-251.02C967.21,-260.28 988.45,-274.2 1001,-293 1025.34,-329.47 985.81,-361.35 1019,-390 1105.14,-464.34 1421.46,-415.79 1531,-385 1630.55,-357.02 1734.69,-284.72 1770.24,-258.6"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="950.32,-247.77 939.79,-246.6 947.29,-254.08 950.32,-247.77"/>
-<text text-anchor="middle" x="1455.5" y="-417" font-family="Helvetica,sans-Serif" font-size="10.00"> table</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M955.33,-291.41C997.8,-303.78 1066.87,-321.92 1128,-329 1306.55,-349.68 1356.57,-338.41 1531,-295 1612.73,-274.66 1707.54,-244.68 1754.13,-229.52"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="956.23,-288.02 945.65,-288.55 954.25,-294.74 956.23,-288.02"/>
+<text text-anchor="middle" x="1455.5" y="-332" font-family="Helvetica,sans-Serif" font-size="10.00"> table</text>
 </g>
 <!-- Node18 -->
 <g id="node18" class="node">
 <title>Node18</title>
 <g id="a_node18"><a xlink:href="structSqshFragmentTable.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="1173,-164.5 1173,-183.5 1317,-183.5 1317,-164.5 1173,-164.5"/>
-<text text-anchor="middle" x="1245" y="-171.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshFragmentTable</text>
+<polygon fill="white" stroke="black" points="1173,-210.5 1173,-229.5 1317,-229.5 1317,-210.5 1173,-210.5"/>
+<text text-anchor="middle" x="1245" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshFragmentTable</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node18 -->
 <g id="edge25" class="edge">
 <title>Node1&#45;&gt;Node18</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M966.38,-226.47C983.14,-223.08 1001.85,-219.33 1019,-216 1078.1,-204.52 1146.05,-191.92 1191.68,-183.54"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="965.32,-223.11 956.22,-228.53 966.72,-229.97 965.32,-223.11"/>
-<text text-anchor="middle" x="1064.5" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00"> table</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M966.53,-267.61C983.24,-264.05 1001.88,-260.22 1019,-257 1073.66,-246.73 1136.1,-236.59 1181.31,-229.53"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="965.45,-264.27 956.41,-269.79 966.92,-271.11 965.45,-264.27"/>
+<text text-anchor="middle" x="1064.5" y="-260" font-family="Helvetica,sans-Serif" font-size="10.00"> table</text>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1538.69,-250.94C1453.06,-255.61 1215.81,-266.12 1019,-252 998.26,-250.51 975.36,-247.37 956.35,-244.35"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="1539.04,-254.42 1548.83,-250.37 1538.65,-247.43 1539.04,-254.42"/>
-<text text-anchor="middle" x="1245" y="-262" font-family="Helvetica,sans-Serif" font-size="10.00"> sqsh</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1539.56,-232.75C1536.7,-233.61 1533.81,-234.38 1531,-235 1347.7,-275.31 1297.26,-255.38 1110,-268 1056.88,-271.58 995.58,-274.91 956.1,-276.94"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="1540.76,-236.04 1549.13,-229.54 1538.53,-229.4 1540.76,-236.04"/>
+<text text-anchor="middle" x="1245" y="-269" font-family="Helvetica,sans-Serif" font-size="10.00"> sqsh</text>
 </g>
 <!-- Node2&#45;&gt;Node17 -->
 <g id="edge20" class="edge">
 <title>Node2&#45;&gt;Node17</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1606.61,-249C1637.73,-249 1685.04,-249 1722.83,-249"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="1606.32,-245.5 1596.32,-249 1606.32,-252.5 1606.32,-245.5"/>
-<text text-anchor="middle" x="1659.5" y="-252" font-family="Helvetica,sans-Serif" font-size="10.00"> sqsh</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1606.61,-220C1637.73,-220 1685.04,-220 1722.83,-220"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="1606.32,-216.5 1596.32,-220 1606.32,-223.5 1606.32,-216.5"/>
+<text text-anchor="middle" x="1659.5" y="-223" font-family="Helvetica,sans-Serif" font-size="10.00"> sqsh</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="structSqshMapper.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="259.5,-195.5 259.5,-214.5 351.5,-214.5 351.5,-195.5 259.5,-195.5"/>
-<text text-anchor="middle" x="305.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMapper</text>
+<polygon fill="white" stroke="black" points="259.5,-242.5 259.5,-261.5 351.5,-261.5 351.5,-242.5 259.5,-242.5"/>
+<text text-anchor="middle" x="305.5" y="-249.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMapper</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node1 -->
-<g id="edge30" class="edge">
+<g id="edge31" class="edge">
 <title>Node3&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M361.68,-207.91C481.91,-214.26 765.26,-229.21 871.66,-234.82"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="361.76,-204.41 351.59,-207.38 361.39,-211.4 361.76,-204.41"/>
-<text text-anchor="middle" x="576" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00"> mapper</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M361.68,-254.46C481.91,-259.81 765.26,-272.42 871.66,-277.16"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="361.74,-250.96 351.59,-254.01 361.42,-257.95 361.74,-250.96"/>
+<text text-anchor="middle" x="576" y="-272" font-family="Helvetica,sans-Serif" font-size="10.00"> mapper</text>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M315.39,-223.71C344.13,-281.14 440.51,-451 575,-451 575,-451 575,-451 1246,-451 1373.04,-451 1434.93,-512.12 1531,-429 1557.28,-406.26 1568.11,-292.74 1570.8,-258.68"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="318.5,-222.09 310.95,-214.64 312.21,-225.16 318.5,-222.09"/>
-<text text-anchor="middle" x="914" y="-465" font-family="Helvetica,sans-Serif" font-size="10.00"> mapper</text>
-<text text-anchor="middle" x="914" y="-454" font-family="Helvetica,sans-Serif" font-size="10.00">table_mapper</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M322.88,-269.05C362.31,-308.16 467.27,-401 575,-401 575,-401 575,-401 1246,-401 1375.18,-401 1434.42,-429.78 1531,-344 1565.37,-313.47 1570.7,-253.39 1571.43,-229.82"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="325.21,-266.42 315.68,-261.78 320.23,-271.35 325.21,-266.42"/>
+<text text-anchor="middle" x="914" y="-415" font-family="Helvetica,sans-Serif" font-size="10.00"> mapper</text>
+<text text-anchor="middle" x="914" y="-404" font-family="Helvetica,sans-Serif" font-size="10.00">table_mapper</text>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
 <g id="a_node11"><a xlink:href="structSqshMapping.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="526.5,-76.5 526.5,-95.5 625.5,-95.5 625.5,-76.5 526.5,-76.5"/>
-<text text-anchor="middle" x="576" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMapping</text>
+<polygon fill="white" stroke="black" points="526.5,-90.5 526.5,-109.5 625.5,-109.5 625.5,-90.5 526.5,-90.5"/>
+<text text-anchor="middle" x="576" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMapping</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node11 -->
 <g id="edge11" class="edge">
 <title>Node3&#45;&gt;Node11</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M329.78,-189.86C345.77,-179.82 367.71,-166.74 388,-157 441.85,-131.15 507.75,-107.99 545.2,-95.57"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="327.67,-187.05 321.11,-195.37 331.42,-192.96 327.67,-187.05"/>
-<text text-anchor="middle" x="414.5" y="-160" font-family="Helvetica,sans-Serif" font-size="10.00"> mapper</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M328.33,-236.65C344.53,-225.49 367.29,-210.24 388,-198 447.47,-162.84 520.75,-126.32 555.26,-109.51"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="326.29,-233.81 320.07,-242.39 330.28,-239.56 326.29,-233.81"/>
+<text text-anchor="middle" x="414.5" y="-201" font-family="Helvetica,sans-Serif" font-size="10.00"> mapper</text>
 </g>
 <!-- Node3&#45;&gt;Node18 -->
 <g id="edge26" class="edge">
 <title>Node3&#45;&gt;Node18</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M361.89,-203.17C523.26,-197.83 992.89,-182.3 1172.76,-176.36"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="361.6,-199.68 351.72,-203.5 361.83,-206.67 361.6,-199.68"/>
-<text text-anchor="middle" x="760" y="-194" font-family="Helvetica,sans-Serif" font-size="10.00"> mapper</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M361.89,-250.11C523.26,-244.6 992.89,-228.57 1172.76,-222.43"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="361.59,-246.62 351.72,-250.46 361.83,-253.61 361.59,-246.62"/>
+<text text-anchor="middle" x="760" y="-240" font-family="Helvetica,sans-Serif" font-size="10.00"> mapper</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="structSqshMemoryMapperImpl.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="0,-271.5 0,-290.5 167,-290.5 167,-271.5 0,-271.5"/>
-<text text-anchor="middle" x="83.5" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMemoryMapperImpl</text>
+<polygon fill="white" stroke="black" points="0,-318.5 0,-337.5 167,-337.5 167,-318.5 0,-318.5"/>
+<text text-anchor="middle" x="83.5" y="-325.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMemoryMapperImpl</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge3" class="edge">
 <title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M141.5,-269.03C150.1,-266.89 158.83,-264.53 167,-262 209.95,-248.7 258.04,-227.15 284.44,-214.7"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="140.41,-265.7 131.51,-271.44 142.05,-272.5 140.41,-265.7"/>
-<text text-anchor="middle" x="204" y="-258" font-family="Helvetica,sans-Serif" font-size="10.00"> impl</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M141.5,-316.03C150.1,-313.89 158.83,-311.53 167,-309 209.95,-295.7 258.04,-274.15 284.44,-261.7"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="140.41,-312.7 131.51,-318.44 142.05,-319.5 140.41,-312.7"/>
+<text text-anchor="middle" x="204" y="-305" font-family="Helvetica,sans-Serif" font-size="10.00"> impl</text>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="structSqshMmapFullMapper.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="7.5,-233.5 7.5,-252.5 159.5,-252.5 159.5,-233.5 7.5,-233.5"/>
-<text text-anchor="middle" x="83.5" y="-240.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMmapFullMapper</text>
+<polygon fill="white" stroke="black" points="7.5,-280.5 7.5,-299.5 159.5,-299.5 159.5,-280.5 7.5,-280.5"/>
+<text text-anchor="middle" x="83.5" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMmapFullMapper</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node3 -->
 <g id="edge4" class="edge">
 <title>Node5&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M153.21,-231.83C175.49,-228.15 200.31,-223.97 223,-220 234.76,-217.94 247.46,-215.64 259.26,-213.47"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="152.47,-228.41 143.17,-233.49 153.6,-235.31 152.47,-228.41"/>
-<text text-anchor="middle" x="204" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00"> mc</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M153.21,-278.83C175.49,-275.15 200.31,-270.97 223,-267 234.76,-264.94 247.46,-262.64 259.26,-260.47"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="152.47,-275.41 143.17,-280.49 153.6,-282.31 152.47,-275.41"/>
+<text text-anchor="middle" x="204" y="-275" font-family="Helvetica,sans-Serif" font-size="10.00"> mc</text>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="structSqshMmapMapper.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="22.5,-195.5 22.5,-214.5 144.5,-214.5 144.5,-195.5 22.5,-195.5"/>
-<text text-anchor="middle" x="83.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMmapMapper</text>
+<polygon fill="white" stroke="black" points="22.5,-242.5 22.5,-261.5 144.5,-261.5 144.5,-242.5 22.5,-242.5"/>
+<text text-anchor="middle" x="83.5" y="-249.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMmapMapper</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node3 -->
 <g id="edge5" class="edge">
 <title>Node6&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M155.04,-205C189.29,-205 229.42,-205 259.47,-205"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="154.62,-201.5 144.62,-205 154.62,-208.5 154.62,-201.5"/>
-<text text-anchor="middle" x="204" y="-208" font-family="Helvetica,sans-Serif" font-size="10.00"> mm</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M155.04,-252C189.29,-252 229.42,-252 259.47,-252"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="154.62,-248.5 144.62,-252 154.62,-255.5 154.62,-248.5"/>
+<text text-anchor="middle" x="204" y="-255" font-family="Helvetica,sans-Serif" font-size="10.00"> mm</text>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="structSqshStaticMapper.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="15,-157.5 15,-176.5 152,-176.5 152,-157.5 15,-157.5"/>
-<text text-anchor="middle" x="83.5" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshStaticMapper</text>
+<polygon fill="white" stroke="black" points="15,-204.5 15,-223.5 152,-223.5 152,-204.5 15,-204.5"/>
+<text text-anchor="middle" x="83.5" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshStaticMapper</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node3 -->
 <g id="edge6" class="edge">
 <title>Node7&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M153.21,-178.17C175.49,-181.85 200.31,-186.03 223,-190 234.76,-192.06 247.46,-194.36 259.26,-196.53"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="153.6,-174.69 143.17,-176.51 152.47,-181.59 153.6,-174.69"/>
-<text text-anchor="middle" x="204" y="-193" font-family="Helvetica,sans-Serif" font-size="10.00"> sm</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M153.21,-225.17C175.49,-228.85 200.31,-233.03 223,-237 234.76,-239.06 247.46,-241.36 259.26,-243.53"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="153.6,-221.69 143.17,-223.51 152.47,-228.59 153.6,-221.69"/>
+<text text-anchor="middle" x="204" y="-240" font-family="Helvetica,sans-Serif" font-size="10.00"> sm</text>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="structSqshCanaryMapper.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="15,-119.5 15,-138.5 152,-138.5 152,-119.5 15,-119.5"/>
-<text text-anchor="middle" x="83.5" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshCanaryMapper</text>
+<polygon fill="white" stroke="black" points="15,-166.5 15,-185.5 152,-185.5 152,-166.5 15,-166.5"/>
+<text text-anchor="middle" x="83.5" y="-173.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshCanaryMapper</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node3 -->
 <g id="edge7" class="edge">
 <title>Node8&#45;&gt;Node3</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M140.87,-140.93C149.67,-143.1 158.62,-145.47 167,-148 210.3,-161.04 258.66,-182.89 284.92,-195.41"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="141.57,-137.5 131.04,-138.58 139.95,-144.31 141.57,-137.5"/>
-<text text-anchor="middle" x="204" y="-170" font-family="Helvetica,sans-Serif" font-size="10.00"> cn</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M140.87,-187.93C149.67,-190.1 158.62,-192.47 167,-195 210.3,-208.04 258.66,-229.89 284.92,-242.41"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="141.57,-184.5 131.04,-185.58 139.95,-191.31 141.57,-184.5"/>
+<text text-anchor="middle" x="204" y="-217" font-family="Helvetica,sans-Serif" font-size="10.00"> cn</text>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="structSqshCompression.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="849.5,-302.5 849.5,-321.5 978.5,-321.5 978.5,-302.5 849.5,-302.5"/>
-<text text-anchor="middle" x="914" y="-309.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshCompression</text>
+<polygon fill="white" stroke="black" points="849.5,-170.5 849.5,-189.5 978.5,-189.5 978.5,-170.5 849.5,-170.5"/>
+<text text-anchor="middle" x="914" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshCompression</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node2 -->
 <g id="edge8" class="edge">
 <title>Node9&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M989.03,-315.34C1106.14,-318.72 1340.4,-317.68 1531,-268 1539.12,-265.88 1547.59,-262.17 1554.68,-258.59"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="988.86,-311.83 978.75,-315.02 988.64,-318.83 988.86,-311.83"/>
-<text text-anchor="middle" x="1245" y="-329" font-family="Helvetica,sans-Serif" font-size="10.00"> data_compression</text>
-<text text-anchor="middle" x="1245" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00">metablock_compression</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M945.77,-166.56C966.12,-158.37 993.64,-148.62 1019,-144 1073.68,-134.03 1304.82,-134.33 1362,-141 1438.67,-149.95 1463.24,-144.03 1531,-181 1544.54,-188.39 1556.79,-201.51 1564.19,-210.48"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="944.3,-163.38 936.39,-170.43 946.97,-169.85 944.3,-163.38"/>
+<text text-anchor="middle" x="1245" y="-155" font-family="Helvetica,sans-Serif" font-size="10.00"> data_compression</text>
+<text text-anchor="middle" x="1245" y="-144" font-family="Helvetica,sans-Serif" font-size="10.00">metablock_compression</text>
 </g>
 <!-- Node9&#45;&gt;Node18 -->
 <g id="edge27" class="edge">
 <title>Node9&#45;&gt;Node18</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M970.19,-299.77C1012.53,-288.05 1070.26,-266.75 1110,-231 1122.42,-219.83 1114.58,-207.95 1128,-198 1140.97,-188.39 1156.89,-182.41 1172.74,-178.75"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="969.08,-296.44 960.33,-302.4 970.89,-303.2 969.08,-296.44"/>
-<text text-anchor="middle" x="1064.5" y="-285" font-family="Helvetica,sans-Serif" font-size="10.00"> compression</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M988.87,-185.54C1025.39,-188.6 1070.09,-192.84 1110,-198 1118.04,-199.04 1120,-199.68 1128,-201 1146.72,-204.09 1167.15,-207.45 1185.58,-210.46"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="989.06,-182.04 978.8,-184.71 988.48,-189.02 989.06,-182.04"/>
+<text text-anchor="middle" x="1064.5" y="-201" font-family="Helvetica,sans-Serif" font-size="10.00"> compression</text>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="structSqshCompressionImplementation.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="459,-302.5 459,-321.5 693,-321.5 693,-302.5 459,-302.5"/>
-<text text-anchor="middle" x="576" y="-309.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshCompressionImplementation</text>
+<polygon fill="white" stroke="black" points="459,-170.5 459,-189.5 693,-189.5 693,-170.5 459,-170.5"/>
+<text text-anchor="middle" x="576" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshCompressionImplementation</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node9 -->
 <g id="edge9" class="edge">
 <title>Node10&#45;&gt;Node9</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M703.31,-312C753.1,-312 808.1,-312 849.28,-312"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="703.1,-308.5 693.1,-312 703.1,-315.5 703.1,-308.5"/>
-<text text-anchor="middle" x="760" y="-315" font-family="Helvetica,sans-Serif" font-size="10.00"> impl</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M703.31,-180C753.1,-180 808.1,-180 849.28,-180"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="703.1,-176.5 693.1,-180 703.1,-183.5 703.1,-176.5"/>
+<text text-anchor="middle" x="760" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00"> impl</text>
 </g>
 <!-- Node11&#45;&gt;Node1 -->
-<g id="edge31" class="edge">
+<g id="edge32" class="edge">
 <title>Node11&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M616.89,-98.59C643.44,-106.8 679.17,-117.52 711,-126 754.23,-137.51 769.04,-128.88 809,-149 849.77,-169.53 888.18,-209.12 904.61,-227.36"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="617.78,-95.2 607.19,-95.57 615.7,-101.88 617.78,-95.2"/>
-<text text-anchor="middle" x="760" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00"> lookup_table</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M635.76,-103.65C686.52,-109.56 759.34,-124.96 809,-165 822.31,-175.73 816.6,-185.43 827,-199 849.09,-227.8 882.04,-255.23 900.07,-269.27"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="635.91,-100.15 625.59,-102.56 635.16,-107.11 635.91,-100.15"/>
+<text text-anchor="middle" x="760" y="-168" font-family="Helvetica,sans-Serif" font-size="10.00"> lookup_table</text>
 </g>
 <!-- Node11&#45;&gt;Node2 -->
 <g id="edge10" class="edge">
 <title>Node11&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M635.74,-83.83C832.59,-77.08 1460.6,-60.1 1531,-115 1570.48,-145.79 1572.65,-213.79 1571.99,-239.18"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="635.46,-80.34 625.59,-84.18 635.71,-87.33 635.46,-80.34"/>
-<text text-anchor="middle" x="1064.5" y="-80" font-family="Helvetica,sans-Serif" font-size="10.00"> table_map</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M634.84,-88.63C820.29,-53.61 1395.75,43.57 1531,-71 1552.78,-89.45 1566.36,-180.35 1570.3,-210.36"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="634.18,-85.19 625.01,-90.5 635.49,-92.07 634.18,-85.19"/>
+<text text-anchor="middle" x="1064.5" y="-34" font-family="Helvetica,sans-Serif" font-size="10.00"> table_map</text>
 </g>
 <!-- Node16 -->
 <g id="node16" class="node">
 <title>Node16</title>
 <g id="a_node16"><a xlink:href="structSqshSuperblockContext.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="827,-113.5 827,-132.5 1001,-132.5 1001,-113.5 827,-113.5"/>
-<text text-anchor="middle" x="914" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshSuperblockContext</text>
+<polygon fill="white" stroke="black" points="827,-90.5 827,-109.5 1001,-109.5 1001,-90.5 827,-90.5"/>
+<text text-anchor="middle" x="914" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshSuperblockContext</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node16 -->
 <g id="edge17" class="edge">
 <title>Node11&#45;&gt;Node16</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M636.08,-92.51C688.96,-98.33 767.15,-106.94 826.97,-113.53"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="636.18,-89 625.86,-91.38 635.41,-95.95 636.18,-89"/>
-<text text-anchor="middle" x="760" y="-115" font-family="Helvetica,sans-Serif" font-size="10.00"> mapping</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M636.08,-100C688.96,-100 767.15,-100 826.97,-100"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="635.86,-96.5 625.86,-100 635.86,-103.5 635.86,-96.5"/>
+<text text-anchor="middle" x="760" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00"> mapping</text>
 </g>
 <!-- Node11&#45;&gt;Node17 -->
 <g id="edge21" class="edge">
 <title>Node11&#45;&gt;Node17</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M631.52,-74.42C697.76,-61.38 813.04,-42 913,-42 913,-42 913,-42 1573.5,-42 1687.27,-42 1761.53,-198.37 1779.02,-239.29"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="630.45,-71.06 621.33,-76.45 631.82,-77.93 630.45,-71.06"/>
-<text text-anchor="middle" x="1245" y="-45" font-family="Helvetica,sans-Serif" font-size="10.00"> header</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M604.34,-85.96C660.56,-58.43 793.91,0 913,0 913,0 913,0 1573.5,0 1691.38,0 1763.11,-167.69 1779.43,-210.26"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="602.77,-82.83 595.37,-90.41 605.88,-89.1 602.77,-82.83"/>
+<text text-anchor="middle" x="1245" y="-3" font-family="Helvetica,sans-Serif" font-size="10.00"> header</text>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
 <g id="a_node12"><a xlink:href="structSqshMmapFullMap.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="241,-0.5 241,-19.5 370,-19.5 370,-0.5 241,-0.5"/>
-<text text-anchor="middle" x="305.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMmapFullMap</text>
+<polygon fill="white" stroke="black" points="241,-36.5 241,-55.5 370,-55.5 370,-36.5 241,-36.5"/>
+<text text-anchor="middle" x="305.5" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMmapFullMap</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node11 -->
 <g id="edge12" class="edge">
 <title>Node12&#45;&gt;Node11</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M353.33,-22.18C379.22,-29.01 411.95,-37.78 441,-46 476.39,-56.02 516.82,-68.19 543.94,-76.45"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="353.96,-18.73 343.4,-19.57 352.18,-25.5 353.96,-18.73"/>
-<text text-anchor="middle" x="414.5" y="-49" font-family="Helvetica,sans-Serif" font-size="10.00"> mc</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M366.73,-57.44C389.96,-61.91 416.73,-67.12 441,-72 470.82,-78 504.32,-85 530.37,-90.5"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="367.15,-53.96 356.67,-55.51 365.84,-60.84 367.15,-53.96"/>
+<text text-anchor="middle" x="414.5" y="-75" font-family="Helvetica,sans-Serif" font-size="10.00"> mc</text>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
 <g id="a_node13"><a xlink:href="structSqshMmapMap.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="256,-114.5 256,-133.5 355,-133.5 355,-114.5 256,-114.5"/>
-<text text-anchor="middle" x="305.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMmapMap</text>
+<polygon fill="white" stroke="black" points="256,-150.5 256,-169.5 355,-169.5 355,-150.5 256,-150.5"/>
+<text text-anchor="middle" x="305.5" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshMmapMap</text>
 </a>
 </g>
 </g>
 <!-- Node13&#45;&gt;Node11 -->
 <g id="edge13" class="edge">
 <title>Node13&#45;&gt;Node11</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M365.11,-115.7C413.36,-108.88 480.97,-99.31 526.29,-92.89"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="364.53,-112.25 355.12,-117.12 365.52,-119.18 364.53,-112.25"/>
-<text text-anchor="middle" x="414.5" y="-115" font-family="Helvetica,sans-Serif" font-size="10.00"> mm</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M358.81,-148.31C409.4,-137.01 485.12,-120.09 532.21,-109.56"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="358.04,-144.9 349.04,-150.49 359.57,-151.73 358.04,-144.9"/>
+<text text-anchor="middle" x="414.5" y="-143" font-family="Helvetica,sans-Serif" font-size="10.00"> mm</text>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
 <g id="a_node14"><a xlink:href="structSqshStaticMap.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="248.5,-76.5 248.5,-95.5 362.5,-95.5 362.5,-76.5 248.5,-76.5"/>
-<text text-anchor="middle" x="305.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshStaticMap</text>
+<polygon fill="white" stroke="black" points="248.5,-112.5 248.5,-131.5 362.5,-131.5 362.5,-112.5 248.5,-112.5"/>
+<text text-anchor="middle" x="305.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshStaticMap</text>
 </a>
 </g>
 </g>
 <!-- Node14&#45;&gt;Node11 -->
 <g id="edge14" class="edge">
 <title>Node14&#45;&gt;Node11</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M373,-86C420.57,-86 483.54,-86 526.44,-86"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="372.79,-82.5 362.79,-86 372.79,-89.5 372.79,-82.5"/>
-<text text-anchor="middle" x="414.5" y="-89" font-family="Helvetica,sans-Serif" font-size="10.00"> sm</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M373,-116.55C420.57,-112.65 483.54,-107.49 526.44,-103.98"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="372.47,-113.08 362.79,-117.39 373.04,-120.06 372.47,-113.08"/>
+<text text-anchor="middle" x="414.5" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00"> sm</text>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
 <g id="a_node15"><a xlink:href="structSqshCanaryMap.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="248.5,-38.5 248.5,-57.5 362.5,-57.5 362.5,-38.5 248.5,-38.5"/>
-<text text-anchor="middle" x="305.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshCanaryMap</text>
+<polygon fill="white" stroke="black" points="248.5,-74.5 248.5,-93.5 362.5,-93.5 362.5,-74.5 248.5,-74.5"/>
+<text text-anchor="middle" x="305.5" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshCanaryMap</text>
 </a>
 </g>
 </g>
 <!-- Node15&#45;&gt;Node11 -->
 <g id="edge15" class="edge">
 <title>Node15&#45;&gt;Node11</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M372.7,-57.37C420.31,-64.11 483.45,-73.04 526.44,-79.13"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="373.18,-53.9 362.79,-55.97 372.2,-60.83 373.18,-53.9"/>
-<text text-anchor="middle" x="414.5" y="-70" font-family="Helvetica,sans-Serif" font-size="10.00"> cn</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M372.91,-85.88C394.63,-86.65 418.85,-87.68 441,-89 469.31,-90.69 500.93,-93.25 526.34,-95.48"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="372.92,-82.38 362.81,-85.53 372.68,-89.37 372.92,-82.38"/>
+<text text-anchor="middle" x="414.5" y="-92" font-family="Helvetica,sans-Serif" font-size="10.00"> cn</text>
 </g>
 <!-- Node16&#45;&gt;Node2 -->
 <g id="edge16" class="edge">
 <title>Node16&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1011.32,-116.4C1163.36,-107.94 1450.05,-100.53 1531,-158 1558.5,-177.52 1567.6,-220.1 1570.38,-239.29"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="1010.84,-112.92 1001.06,-116.98 1011.24,-119.91 1010.84,-112.92"/>
-<text text-anchor="middle" x="1245" y="-120" font-family="Helvetica,sans-Serif" font-size="10.00"> superblock</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M961.22,-88.16C1071.24,-62.86 1352.78,-15.33 1531,-139 1555.67,-156.12 1566.07,-192.78 1569.76,-210.3"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="960.36,-84.77 951.43,-90.46 961.96,-91.58 960.36,-84.77"/>
+<text text-anchor="middle" x="1245" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00"> superblock</text>
 </g>
 <!-- Node16&#45;&gt;Node18 -->
 <g id="edge24" class="edge">
 <title>Node16&#45;&gt;Node18</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M986.41,-134.07C1044.93,-143.14 1126.89,-155.85 1182.53,-164.47"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="986.91,-130.61 976.5,-132.53 985.84,-137.52 986.91,-130.61"/>
-<text text-anchor="middle" x="1064.5" y="-157" font-family="Helvetica,sans-Serif" font-size="10.00"> superblock</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M975.42,-112.03C1016.74,-122.63 1070.88,-141.44 1110,-173 1121.51,-182.29 1115.63,-192.88 1128,-201 1141.22,-209.68 1157.07,-214.84 1172.74,-217.83"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="976.03,-108.57 965.48,-109.57 974.35,-115.37 976.03,-108.57"/>
+<text text-anchor="middle" x="1064.5" y="-176" font-family="Helvetica,sans-Serif" font-size="10.00"> superblock</text>
 </g>
 <!-- Node17&#45;&gt;Node2 -->
 <g id="edge19" class="edge">
 <title>Node17&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1735.33,-237.37C1701.29,-230.79 1654.54,-225.28 1614,-233 1607.02,-234.33 1599.7,-236.84 1593.24,-239.48"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="1734.96,-240.87 1745.46,-239.43 1736.36,-234.01 1734.96,-240.87"/>
-<text text-anchor="middle" x="1659.5" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00"> xattr_table</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1735.33,-208.37C1701.29,-201.79 1654.54,-196.28 1614,-204 1607.02,-205.33 1599.7,-207.84 1593.24,-210.48"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="1734.96,-211.87 1745.46,-210.43 1736.36,-205.01 1734.96,-211.87"/>
+<text text-anchor="middle" x="1659.5" y="-207" font-family="Helvetica,sans-Serif" font-size="10.00"> xattr_table</text>
 </g>
 <!-- Node18&#45;&gt;Node2 -->
 <g id="edge23" class="edge">
 <title>Node18&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1317.89,-163.51C1378.46,-158.21 1465.47,-159.16 1531,-195 1549.1,-204.9 1561.45,-226.71 1567.41,-239.37"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="1317.27,-160.05 1307.65,-164.49 1317.94,-167.02 1317.27,-160.05"/>
-<text text-anchor="middle" x="1455.5" y="-198" font-family="Helvetica,sans-Serif" font-size="10.00"> fragment_table</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1327.18,-220C1400.57,-220 1503.82,-220 1548.93,-220"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="1327.03,-216.5 1317.03,-220 1327.03,-223.5 1327.03,-216.5"/>
+<text text-anchor="middle" x="1455.5" y="-223" font-family="Helvetica,sans-Serif" font-size="10.00"> fragment_table</text>
 </g>
 <!-- Node19 -->
 <g id="node19" class="node">
 <title>Node19</title>
 <g id="a_node19"><a xlink:href="structSqshCompressionOptionsContext.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="1128,-365.5 1128,-384.5 1362,-384.5 1362,-365.5 1128,-365.5"/>
-<text text-anchor="middle" x="1245" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshCompressionOptionsContext</text>
+<polygon fill="white" stroke="black" points="1128,-435.5 1128,-454.5 1362,-454.5 1362,-435.5 1128,-435.5"/>
+<text text-anchor="middle" x="1245" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshCompressionOptionsContext</text>
 </a>
 </g>
 </g>
 <!-- Node19&#45;&gt;Node2 -->
 <g id="edge28" class="edge">
 <title>Node19&#45;&gt;Node2</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1372.28,-371.03C1436.29,-366.7 1505.74,-357.68 1531,-339 1557.86,-319.13 1567.3,-277.31 1570.27,-258.51"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="1371.82,-367.55 1362.06,-371.69 1372.27,-374.54 1371.82,-367.55"/>
-<text text-anchor="middle" x="1455.5" y="-373" font-family="Helvetica,sans-Serif" font-size="10.00"> compression_options</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1299.08,-456.24C1362.55,-466.32 1468.09,-471.92 1531,-415 1558.95,-389.71 1568.67,-266.09 1570.94,-229.94"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="1299.32,-452.73 1288.88,-454.52 1298.16,-459.64 1299.32,-452.73"/>
+<text text-anchor="middle" x="1455.5" y="-465" font-family="Helvetica,sans-Serif" font-size="10.00"> compression_options</text>
 </g>
 <!-- Node20 -->
 <g id="node20" class="node">
 <title>Node20</title>
 <g id="a_node20"><a xlink:href="structSqshBuffer.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="868,-365.5 868,-384.5 960,-384.5 960,-365.5 868,-365.5"/>
-<text text-anchor="middle" x="914" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshBuffer</text>
+<polygon fill="white" stroke="black" points="868,-441.5 868,-460.5 960,-460.5 960,-441.5 868,-441.5"/>
+<text text-anchor="middle" x="914" y="-448.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshBuffer</text>
 </a>
 </g>
 </g>
 <!-- Node20&#45;&gt;Node19 -->
 <g id="edge29" class="edge">
 <title>Node20&#45;&gt;Node19</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M970.29,-375C1013.19,-375 1074.18,-375 1127.7,-375"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="970.06,-371.5 960.06,-375 970.06,-378.5 970.06,-371.5"/>
-<text text-anchor="middle" x="1064.5" y="-378" font-family="Helvetica,sans-Serif" font-size="10.00"> buffer</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M970.29,-449.99C1013.19,-449.21 1074.18,-448.1 1127.7,-447.12"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="969.99,-446.5 960.06,-450.18 970.12,-453.5 969.99,-446.5"/>
+<text text-anchor="middle" x="1064.5" y="-452" font-family="Helvetica,sans-Serif" font-size="10.00"> buffer</text>
+</g>
+<!-- Node21 -->
+<g id="node21" class="node">
+<title>Node21</title>
+<g id="a_node21"><a xlink:href="structSqshConfig.html" target="_top" xlink:title="The SqshConfig struct contains all the configuration options for a sqsh session.">
+<polygon fill="white" stroke="black" points="1199,-172.5 1199,-191.5 1291,-191.5 1291,-172.5 1199,-172.5"/>
+<text text-anchor="middle" x="1245" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqshConfig</text>
+</a>
+</g>
+</g>
+<!-- Node21&#45;&gt;Node2 -->
+<g id="edge30" class="edge">
+<title>Node21&#45;&gt;Node2</title>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1301.53,-182.01C1359.45,-183.05 1452.58,-187.66 1531,-205 1537,-206.33 1543.32,-208.34 1549.12,-210.47"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="1301.54,-178.51 1291.49,-181.86 1301.43,-185.51 1301.54,-178.51"/>
+<text text-anchor="middle" x="1455.5" y="-208" font-family="Helvetica,sans-Serif" font-size="10.00"> config</text>
 </g>
 </g>
 </svg>
