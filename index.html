@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;c5d24b6</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;a0f5309</span>
    </div>
   </td>
  </tr>
@@ -103,18 +103,18 @@ How to...?</h1>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
 ... get metainformations about a file?</h2>
 <div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshInodeContext.html">SqshInodeContext</a> inode = { 0 };</div>
-<div class="line"><span class="keywordtype">int</span> rv = <a class="code hl_function" href="inode__context_8h.html#ae7ad7bdbb6f9bedfdac3ff1316627bac">sqsh_inode_load_by_path</a>(&amp;inode, &amp;archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>);</div>
+<div class="line"><span class="keywordtype">int</span> rv = <a class="code hl_function" href="structSqshInodeContext.html#ae7ad7bdbb6f9bedfdac3ff1316627bac">sqsh_inode_load_by_path</a>(&amp;inode, &amp;archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (rv &lt; 0)</div>
 <div class="line">    abort();</div>
 <div class="line"><span class="comment">// inode contains metainformations about &#39;/path/to/file&#39;.</span></div>
 <div class="line"><span class="comment">// They can be queried with the sqsh_inode_* functions.</span></div>
 <div class="line"><span class="comment">// This for example gives you the file size of a file:</span></div>
-<div class="line"><span class="keywordtype">int</span> file_size = <a class="code hl_function" href="inode__context_8h.html#a65a02fa321fe0ef692244fac11ce0619">sqsh_inode_file_size</a>(&amp;inode);</div>
+<div class="line"><span class="keywordtype">int</span> file_size = <a class="code hl_function" href="structSqshInodeContext.html#a65a02fa321fe0ef692244fac11ce0619">sqsh_inode_file_size</a>(&amp;inode);</div>
 <div class="line"><a class="code hl_function" href="inode__context_8h.html#a74d0e6ef1e8acb1f8b964440db0a4594">sqsh_inode_cleanup</a>(&amp;inode);</div>
-<div class="ttc" id="ainode__context_8h_html_a65a02fa321fe0ef692244fac11ce0619"><div class="ttname"><a href="inode__context_8h.html#a65a02fa321fe0ef692244fac11ce0619">sqsh_inode_file_size</a></div><div class="ttdeci">uint64_t sqsh_inode_file_size(const struct SqshInodeContext *context)</div><div class="ttdoc">Getter for the file size. 0 if the file has no size.</div></div>
 <div class="ttc" id="ainode__context_8h_html_a74d0e6ef1e8acb1f8b964440db0a4594"><div class="ttname"><a href="inode__context_8h.html#a74d0e6ef1e8acb1f8b964440db0a4594">sqsh_inode_cleanup</a></div><div class="ttdeci">int sqsh_inode_cleanup(struct SqshInodeContext *context)</div></div>
-<div class="ttc" id="ainode__context_8h_html_ae7ad7bdbb6f9bedfdac3ff1316627bac"><div class="ttname"><a href="inode__context_8h.html#ae7ad7bdbb6f9bedfdac3ff1316627bac">sqsh_inode_load_by_path</a></div><div class="ttdeci">SQSH_NO_UNUSED int sqsh_inode_load_by_path(struct SqshInodeContext *context, struct Sqsh *sqsh, const char *path)</div><div class="ttdoc">Initialize the inode context from a path.</div></div>
-<div class="ttc" id="astructSqshInodeContext_html"><div class="ttname"><a href="structSqshInodeContext.html">SqshInodeContext</a></div><div class="ttdef"><b>Definition:</b> <a href="inode__context_8h_source.html#l00083">inode_context.h:83</a></div></div>
+<div class="ttc" id="astructSqshInodeContext_html"><div class="ttname"><a href="structSqshInodeContext.html">SqshInodeContext</a></div><div class="ttdoc">Inode context.</div><div class="ttdef"><b>Definition:</b> <a href="inode__context_8h_source.html#l00086">inode_context.h:86</a></div></div>
+<div class="ttc" id="astructSqshInodeContext_html_a65a02fa321fe0ef692244fac11ce0619"><div class="ttname"><a href="structSqshInodeContext.html#a65a02fa321fe0ef692244fac11ce0619">SqshInodeContext::sqsh_inode_file_size</a></div><div class="ttdeci">uint64_t sqsh_inode_file_size(const struct SqshInodeContext *context)</div><div class="ttdoc">Getter for the file size. 0 if the file has no size.</div></div>
+<div class="ttc" id="astructSqshInodeContext_html_ae7ad7bdbb6f9bedfdac3ff1316627bac"><div class="ttname"><a href="structSqshInodeContext.html#ae7ad7bdbb6f9bedfdac3ff1316627bac">SqshInodeContext::sqsh_inode_load_by_path</a></div><div class="ttdeci">SQSH_NO_UNUSED int sqsh_inode_load_by_path(struct SqshInodeContext *context, struct Sqsh *sqsh, const char *path)</div><div class="ttdoc">Initialize the inode context from a path.</div></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
 Resource</h1>
 <ul>

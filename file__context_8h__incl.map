@@ -1,5 +1,5 @@
-<map id="content_context.h" name="content_context.h">
-<area shape="rect" id="node1" title=" " alt="" coords="128,5,320,32"/>
+<map id="file_context.h" name="file_context.h">
+<area shape="rect" id="node1" title=" " alt="" coords="143,5,305,32"/>
 <area shape="rect" id="node2" href="$buffer_8h.html" title=" " alt="" coords="32,80,264,107"/>
 <area shape="rect" id="node5" title=" " alt="" coords="195,229,298,256"/>
 <area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="5,155,128,181"/>

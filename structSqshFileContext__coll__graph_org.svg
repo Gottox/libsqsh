@@ -356,7 +356,7 @@
 <!-- Node23 -->
 <g id="node23" class="node">
 <title>Node23</title>
-<g id="a_node23"><a xlink:href="structSqshInodeContext.html" target="_top" xlink:title=" ">
+<g id="a_node23"><a xlink:href="structSqshInodeContext.html" target="_top" xlink:title="Inode context.">
 <polygon fill="white" stroke="black" points="2017,-114.78 2017,-133.78 2154,-133.78 2154,-114.78 2017,-114.78"/>
 <text text-anchor="middle" x="2085.5" y="-121.78" font-family="Helvetica,sans-Serif" font-size="10.00">SqshInodeContext</text>
 </a>
@@ -442,7 +442,7 @@
 <!-- Node20 -->
 <g id="node20" class="node">
 <title>Node20</title>
-<g id="a_node20"><a xlink:href="structSqshCompressionOptionsContext.html" target="_top" xlink:title=" ">
+<g id="a_node20"><a xlink:href="structSqshCompressionOptionsContext.html" target="_top" xlink:title="The compression options context is used to store the compression options for a specific compression a...">
 <polygon fill="white" stroke="black" points="1091,-104.78 1091,-123.78 1325,-123.78 1325,-104.78 1091,-104.78"/>
 <text text-anchor="middle" x="1208" y="-111.78" font-family="Helvetica,sans-Serif" font-size="10.00">SqshCompressionOptionsContext</text>
 </a>
@@ -458,7 +458,7 @@
 <!-- Node21 -->
 <g id="node21" class="node">
 <title>Node21</title>
-<g id="a_node21"><a xlink:href="structSqshBuffer.html" target="_top" xlink:title=" ">
+<g id="a_node21"><a xlink:href="structSqshBuffer.html" target="_top" xlink:title="The SqshBuffer struct is a buffer for arbitrary data.">
 <polygon fill="white" stroke="black" points="831,-28.78 831,-47.78 923,-47.78 923,-28.78 831,-28.78"/>
 <text text-anchor="middle" x="877" y="-35.78" font-family="Helvetica,sans-Serif" font-size="10.00">SqshBuffer</text>
 </a>

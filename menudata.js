@@ -30,6 +30,7 @@ var menudata={children:[
 {text:"Data Fields",url:"functions.html",children:[
 {text:"All",url:"functions.html",children:[
 {text:"b",url:"functions.html#index_b"},
+{text:"buffer",url:"functions.html#index_b"},
 {text:"c",url:"functions.html#index_c"},
 {text:"cleanu",url:"functions.html#index_c"},
 {text:"compre",url:"functions.html#index_c"},
@@ -43,6 +44,7 @@ var menudata={children:[
 {text:"i",url:"functions.html#index_i"},
 {text:"id_tab",url:"functions.html#index_i"},
 {text:"init",url:"functions.html#index_i"},
+{text:"inode_",url:"functions.html#index_i"},
 {text:"k",url:"functions.html#index_k"},
 {text:"l",url:"functions.html#index_l"},
 {text:"m",url:"functions.html#index_m"},
@@ -62,7 +64,23 @@ var menudata={children:[
 {text:"v",url:"functions.html#index_v"},
 {text:"x",url:"functions.html#index_x"},
 {text:"xattr_",url:"functions.html#index_x"}]},
-{text:"Functions",url:"functions_func.html"},
+{text:"Functions",url:"functions_func.html",children:[
+{text:"buffer",url:"functions_func.html#index_b"},
+{text:"cleanu",url:"functions_func.html#index_c"},
+{text:"compre",url:"functions_func.html#index_c"},
+{text:"data_c",url:"functions_func.html#index_d"},
+{text:"export",url:"functions_func.html#index_e"},
+{text:"fragme",url:"functions_func.html#index_f"},
+{text:"id_tab",url:"functions_func.html#index_i"},
+{text:"init",url:"functions_func.html#index_i"},
+{text:"inode_",url:"functions_func.html#index_i"},
+{text:"mapper",url:"functions_func.html#index_m"},
+{text:"metabl",url:"functions_func.html#index_m"},
+{text:"open",url:"functions_func.html#index_o"},
+{text:"open2",url:"functions_func.html#index_o"},
+{text:"ref_co",url:"functions_func.html#index_r"},
+{text:"superb",url:"functions_func.html#index_s"},
+{text:"xattr_",url:"functions_func.html#index_x"}]},
 {text:"Variables",url:"functions_vars.html",children:[
 {text:"b",url:"functions_vars.html#index_b"},
 {text:"c",url:"functions_vars.html#index_c"},
@@ -89,7 +107,6 @@ var menudata={children:[
 {text:"All",url:"globals.html",children:[
 {text:"_",url:"globals.html#index__5F"},
 {text:"a",url:"globals_a.html#index_a"},
-{text:"buffer",url:"globals_b.html#index_b"},
 {text:"compre",url:"globals_c.html#index_c"},
 {text:"d",url:"globals_d.html#index_d"},
 {text:"data_c",url:"globals_d.html#index_d"},
@@ -120,8 +137,7 @@ var menudata={children:[
 {text:"x",url:"globals_x.html#index_x"},
 {text:"xattr_",url:"globals_x.html#index_x"}]},
 {text:"Functions",url:"globals_func.html",children:[
-{text:"buffer",url:"globals_func.html#index_b"},
-{text:"compre",url:"globals_func_c.html#index_c"},
+{text:"compre",url:"globals_func.html#index_c"},
 {text:"data_c",url:"globals_func_d.html#index_d"},
 {text:"data_d",url:"globals_func_d.html#index_d"},
 {text:"data_f",url:"globals_func_d.html#index_d"},

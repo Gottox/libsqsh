@@ -19,7 +19,7 @@
 <area shape="rect" id="node14" href="$structSqshMmapMap.html" title=" " alt="" coords="347,416,479,443"/>
 <area shape="rect" id="node15" href="$structSqshStaticMap.html" title=" " alt="" coords="337,467,489,493"/>
 <area shape="rect" id="node16" href="$structSqshCanaryMap.html" title=" " alt="" coords="337,315,489,341"/>
-<area shape="rect" id="node21" href="$structSqshCompressionOptionsContext.html" title=" " alt="" coords="1099,455,1411,481"/>
-<area shape="rect" id="node22" href="$structSqshBuffer.html" title=" " alt="" coords="712,561,835,588"/>
+<area shape="rect" id="node21" href="$structSqshCompressionOptionsContext.html" title="The compression options context is used to store the compression options for a specific compression a..." alt="" coords="1099,455,1411,481"/>
+<area shape="rect" id="node22" href="$structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data." alt="" coords="712,561,835,588"/>
 <area shape="rect" id="node23" href="$structSqshConfig.html" title="The SqshConfig struct contains all the configuration options for a sqsh session." alt="" coords="1193,404,1316,431"/>
 </map>

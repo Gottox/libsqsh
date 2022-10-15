@@ -1,6 +1,6 @@
 <map id="SqshDirectoryIterator" name="SqshDirectoryIterator">
 <area shape="rect" id="node1" title=" " alt="" coords="2652,585,2884,612"/>
-<area shape="rect" id="node2" href="$structSqshInodeContext.html" title=" " alt="" coords="2355,555,2538,581"/>
+<area shape="rect" id="node2" href="$structSqshInodeContext.html" title="Inode context." alt="" coords="2355,555,2538,581"/>
 <area shape="rect" id="node3" href="$structSqshMetablockStreamContext.html" title=" " alt="" coords="1919,589,2201,616"/>
 <area shape="rect" id="node4" href="$structSqsh.html" title="The SqshContext struct contains all information about the current sqsh session." alt="" coords="1673,344,1736,371"/>
 <area shape="rect" id="node19" href="$structSqshTable.html" title=" " alt="" coords="2004,200,2116,227"/>
@@ -20,7 +20,7 @@
 <area shape="rect" id="node15" href="$structSqshMmapMap.html" title=" " alt="" coords="347,320,479,347"/>
 <area shape="rect" id="node16" href="$structSqshStaticMap.html" title=" " alt="" coords="337,371,489,397"/>
 <area shape="rect" id="node17" href="$structSqshCanaryMap.html" title=" " alt="" coords="337,421,489,448"/>
-<area shape="rect" id="node22" href="$structSqshCompressionOptionsContext.html" title=" " alt="" coords="1099,457,1411,484"/>
-<area shape="rect" id="node23" href="$structSqshBuffer.html" title=" " alt="" coords="712,567,835,593"/>
+<area shape="rect" id="node22" href="$structSqshCompressionOptionsContext.html" title="The compression options context is used to store the compression options for a specific compression a..." alt="" coords="1099,457,1411,484"/>
+<area shape="rect" id="node23" href="$structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data." alt="" coords="712,567,835,593"/>
 <area shape="rect" id="node24" href="$structSqshConfig.html" title="The SqshConfig struct contains all the configuration options for a sqsh session." alt="" coords="1193,344,1316,371"/>
 </map>

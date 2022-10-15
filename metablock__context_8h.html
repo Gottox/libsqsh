@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;c5d24b6</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;a0f5309</span>
    </div>
   </td>
  </tr>
@@ -95,6 +95,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMetablockContext.html">SqshMetablockContext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structSqshMetablockContext.html" title="The SqshMetablockContext struct.">SqshMetablockContext</a> struct.  <a href="structSqshMetablockContext.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -105,6 +106,7 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab57d5138d66a804dda34c93ef2d3cff2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="metablock__context_8h.html#ab57d5138d66a804dda34c93ef2d3cff2">sqsh_metablock_init</a> (struct <a class="el" href="structSqshMetablockContext.html">SqshMetablockContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, uint64_t address)</td></tr>
+<tr class="memdesc:ab57d5138d66a804dda34c93ef2d3cff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_metablock_context_init  <a href="metablock__context_8h.html#ab57d5138d66a804dda34c93ef2d3cff2">More...</a><br /></td></tr>
 <tr class="separator:ab57d5138d66a804dda34c93ef2d3cff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e9fc14385e39be6bf7504aaf356fb99"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="metablock__context_8h.html#a6e9fc14385e39be6bf7504aaf356fb99">sqsh_metablock_compressed_size</a> (const struct <a class="el" href="structSqshMetablockContext.html">SqshMetablockContext</a> *context)</td></tr>
 <tr class="separator:a6e9fc14385e39be6bf7504aaf356fb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,6 +204,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>sqsh_metablock_context_init </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The <a class="el" href="structSqshMetablockContext.html" title="The SqshMetablockContext struct.">SqshMetablockContext</a> to initialize. </td></tr>
+    <tr><td class="paramname">superblock_context</td><td>The <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> to use. </td></tr>
+    <tr><td class="paramname">offset</td><td>The offset of the metablock. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, less than 0 on error. </dd></dl>
 
 </div>
 </div>
