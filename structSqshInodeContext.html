@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;a0f5309</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;e6ad520</span>
    </div>
   </td>
  </tr>
@@ -290,7 +290,7 @@ Data Fields</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The inode context. </td></tr>
-    <tr><td class="paramname">block</td><td>The index of the block. </td></tr>
+    <tr><td class="paramname">index</td><td>The index of the block. </td></tr>
   </table>
   </dd>
 </dl>
@@ -328,7 +328,7 @@ Data Fields</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The inode context. </td></tr>
-    <tr><td class="paramname">block</td><td>The index of the block. </td></tr>
+    <tr><td class="paramname">index</td><td>The index of the block. </td></tr>
   </table>
   </dd>
 </dl>
@@ -836,7 +836,7 @@ Data Fields</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">block_index</td><td>The block index. </td></tr>
-    <tr><td class="paramname">block_offset</td><td>The block offset. </td></tr>
+    <tr><td class="paramname">offset</td><td>The block offset. </td></tr>
   </table>
   </dd>
 </dl>
@@ -881,7 +881,7 @@ Data Fields</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">ref</td><td>The inode reference. </td></tr>
     <tr><td class="paramname">block_index</td><td>a pointer where the block index will be stored. </td></tr>
-    <tr><td class="paramname">block_offset</td><td>a pointer where the block offset will be stored. </td></tr>
+    <tr><td class="paramname">offset</td><td>a pointer where the block offset will be stored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -945,7 +945,7 @@ Data Fields</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The inode context. </td></tr>
-    <tr><td class="paramname">symlink</td><td>The target of the symbolic link. </td></tr>
+    <tr><td class="paramname">namebuffer</td><td>a pointer that will be set to the allocated string. </td></tr>
   </table>
   </dd>
 </dl>

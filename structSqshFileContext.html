@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;a0f5309</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;e6ad520</span>
    </div>
   </td>
  </tr>
@@ -63,6 +63,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle"><div class="title">SqshFileContext Struct Reference</div></div>
 </div><!--header-->
@@ -79,6 +80,27 @@ Collaboration diagram for SqshFileContext:</div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:abd299f44ae2068e4c2092430bcebccdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileContext.html#abd299f44ae2068e4c2092430bcebccdc">sqsh_file_init</a> (struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *context, struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *<a class="el" href="structSqshFileContext.html#a31e65206b07522cfa72eb65821939952">inode</a>)</td></tr>
+<tr class="memdesc:abd299f44ae2068e4c2092430bcebccdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="structSqshFileContext.html" title="The SqshFileContext struct.">SqshFileContext</a> struct.  <a href="structSqshFileContext.html#abd299f44ae2068e4c2092430bcebccdc">More...</a><br /></td></tr>
+<tr class="separator:abd299f44ae2068e4c2092430bcebccdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e22e372b2d30b4fada304bac5db7916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileContext.html#a2e22e372b2d30b4fada304bac5db7916">sqsh_file_seek</a> (struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *context, uint64_t <a class="el" href="structSqshFileContext.html#a13b4bc647f8d492dea9261461444e875">seek_pos</a>)</td></tr>
+<tr class="memdesc:a2e22e372b2d30b4fada304bac5db7916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seek to a position in the file content.  <a href="structSqshFileContext.html#a2e22e372b2d30b4fada304bac5db7916">More...</a><br /></td></tr>
+<tr class="separator:a2e22e372b2d30b4fada304bac5db7916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f139a14a1eaeca8707adc55e7f8fd9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileContext.html#a2f139a14a1eaeca8707adc55e7f8fd9d">sqsh_file_read</a> (struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *context, uint64_t size)</td></tr>
+<tr class="memdesc:a2f139a14a1eaeca8707adc55e7f8fd9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from the current seek position and writes it to the content buffer.  <a href="structSqshFileContext.html#a2f139a14a1eaeca8707adc55e7f8fd9d">More...</a><br /></td></tr>
+<tr class="separator:a2f139a14a1eaeca8707adc55e7f8fd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab818d7d45bd7fbb94fd014cedad119bb"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileContext.html#ab818d7d45bd7fbb94fd014cedad119bb">sqsh_file_data</a> (struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *context)</td></tr>
+<tr class="memdesc:ab818d7d45bd7fbb94fd014cedad119bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a pointer to read file content.  <a href="structSqshFileContext.html#ab818d7d45bd7fbb94fd014cedad119bb">More...</a><br /></td></tr>
+<tr class="separator:ab818d7d45bd7fbb94fd014cedad119bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7938ae41751cb32a39bf3d67486811f1"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileContext.html#a7938ae41751cb32a39bf3d67486811f1">sqsh_file_size</a> (struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *context)</td></tr>
+<tr class="memdesc:a7938ae41751cb32a39bf3d67486811f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the file content buffer.  <a href="structSqshFileContext.html#a7938ae41751cb32a39bf3d67486811f1">More...</a><br /></td></tr>
+<tr class="separator:a7938ae41751cb32a39bf3d67486811f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a39cfa11533d8230752c631c260e1a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileContext.html#a3a39cfa11533d8230752c631c260e1a0">sqsh_file_cleanup</a> (struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *context)</td></tr>
+<tr class="memdesc:a3a39cfa11533d8230752c631c260e1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the resources used by the file context.  <a href="structSqshFileContext.html#a3a39cfa11533d8230752c631c260e1a0">More...</a><br /></td></tr>
+<tr class="separator:a3a39cfa11533d8230752c631c260e1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a03fc6ff7f2cb35955ed0d15d601d5883"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileContext.html#a03fc6ff7f2cb35955ed0d15d601d5883">mapper</a></td></tr>
@@ -101,7 +123,202 @@ Data Fields</h2></td></tr>
 <p >This struct is used to assemble file contents. </p>
 
 <p class="definition">Definition at line <a class="el" href="file__context_8h_source.html#l00049">49</a> of file <a class="el" href="file__context_8h_source.html">file_context.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3a39cfa11533d8230752c631c260e1a0" name="a3a39cfa11533d8230752c631c260e1a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a39cfa11533d8230752c631c260e1a0">&#9670;&nbsp;</a></span>sqsh_file_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_file_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frees the resources used by the file context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The file context to clean up. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab818d7d45bd7fbb94fd014cedad119bb" name="ab818d7d45bd7fbb94fd014cedad119bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab818d7d45bd7fbb94fd014cedad119bb">&#9670;&nbsp;</a></span>sqsh_file_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * sqsh_file_data </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a pointer to read file content. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The file context to get the data from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the data in the file content buffer. </dd></dl>
+
+</div>
+</div>
+<a id="abd299f44ae2068e4c2092430bcebccdc" name="abd299f44ae2068e4c2092430bcebccdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd299f44ae2068e4c2092430bcebccdc">&#9670;&nbsp;</a></span>sqsh_file_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_file_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
+          <td class="paramname"><em>inode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a <a class="el" href="structSqshFileContext.html" title="The SqshFileContext struct.">SqshFileContext</a> struct. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The file context to initialize. </td></tr>
+    <tr><td class="paramname">inode</td><td>The inode context to retrieve the file contents from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, less than 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="a2f139a14a1eaeca8707adc55e7f8fd9d" name="a2f139a14a1eaeca8707adc55e7f8fd9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f139a14a1eaeca8707adc55e7f8fd9d">&#9670;&nbsp;</a></span>sqsh_file_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_file_read </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads data from the current seek position and writes it to the content buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The file context to read from. </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes read on success, less than 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="a2e22e372b2d30b4fada304bac5db7916" name="a2e22e372b2d30b4fada304bac5db7916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e22e372b2d30b4fada304bac5db7916">&#9670;&nbsp;</a></span>sqsh_file_seek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_file_seek </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>seek_pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Seek to a position in the file content. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The file context to seek in. If the context buffer already contains data, it will be cleared. </td></tr>
+    <tr><td class="paramname">seek_pos</td><td>The offset to seek to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, less than 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="a7938ae41751cb32a39bf3d67486811f1" name="a7938ae41751cb32a39bf3d67486811f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7938ae41751cb32a39bf3d67486811f1">&#9670;&nbsp;</a></span>sqsh_file_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sqsh_file_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the size of the file content buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The file context to get the size from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of the file content buffer. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
 <a id="a4af1f9feaab74f151ae41a11f7edfead" name="a4af1f9feaab74f151ae41a11f7edfead"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4af1f9feaab74f151ae41a11f7edfead">&#9670;&nbsp;</a></span>block_size</h2>
 
