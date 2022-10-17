@@ -169,7 +169,9 @@ var menudata={children:[
 {text:"table_",url:"globals_func_t.html#index_t"},
 {text:"traili",url:"globals_func_t.html#index_t"},
 {text:"xattr_",url:"globals_func_x.html#index_x"}]},
-{text:"Variables",url:"globals_vars.html"},
+{text:"Variables",url:"globals_vars.html",children:[
+{text:"mapper",url:"globals_vars.html#index_m"},
+{text:"s",url:"globals_vars.html#index_s"}]},
 {text:"Typedefs",url:"globals_type.html"},
 {text:"Enumerations",url:"globals_enum.html"},
 {text:"Enumerator",url:"globals_eval.html",children:[

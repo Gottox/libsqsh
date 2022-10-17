@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;5df1c54</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;9dad9af</span>
    </div>
   </td>
  </tr>
@@ -131,10 +131,10 @@ $(function() {
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="superblock__context_8h.html#af646f88052c2cec402c25f13e9497c91adda92c91c12038c5eea3b990c7d1fd37">   65</a></span>    <a class="code hl_enumvalue" href="superblock__context_8h.html#af646f88052c2cec402c25f13e9497c91adda92c91c12038c5eea3b990c7d1fd37">SQSH_SUPERBLOCK_UNCOMPRESSED_IDS</a> = 0x0800,</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">struct </span>SqshSuperblock;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">struct </span><a class="code hl_variable" href="superblock__data_8h.html#a4514a171a371875722c0f0aee1f80f63">SqshSuperblock</a>;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="structSqshSuperblockContext.html">   70</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structSqshSuperblockContext.html#a456f4038c7100e4d8b9273e27b9f627a">   71</a></span>    <span class="keyword">const</span> <span class="keyword">struct </span>SqshSuperblock *<a class="code hl_variable" href="structSqshSuperblockContext.html#a456f4038c7100e4d8b9273e27b9f627a">superblock</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structSqshSuperblockContext.html#a456f4038c7100e4d8b9273e27b9f627a">   71</a></span>    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code hl_variable" href="superblock__data_8h.html#a4514a171a371875722c0f0aee1f80f63">SqshSuperblock</a> *<a class="code hl_variable" href="structSqshSuperblockContext.html#a456f4038c7100e4d8b9273e27b9f627a">superblock</a>;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="structSqshSuperblockContext.html#aedd82435976a8a4a6cf6cb60cae94e02">   72</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshMapping.html">SqshMapping</a> <a class="code hl_variable" href="structSqshSuperblockContext.html#aedd82435976a8a4a6cf6cb60cae94e02">mapping</a>;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>};</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
@@ -243,6 +243,7 @@ $(function() {
 <div class="ttc" id="asuperblock__context_8h_html_af646f88052c2cec402c25f13e9497c91ae428d58362321f1d60f8cc5cb7ab0f85"><div class="ttname"><a href="superblock__context_8h.html#af646f88052c2cec402c25f13e9497c91ae428d58362321f1d60f8cc5cb7ab0f85">SQSH_SUPERBLOCK_ALWAYS_FRAGMENTS</a></div><div class="ttdeci">@ SQSH_SUPERBLOCK_ALWAYS_FRAGMENTS</div><div class="ttdef"><b>Definition:</b> <a href="superblock__context_8h_source.html#l00059">superblock_context.h:59</a></div></div>
 <div class="ttc" id="asuperblock__context_8h_html_af6cb26e53a0d2786173f166e7861b152"><div class="ttname"><a href="superblock__context_8h.html#af6cb26e53a0d2786173f166e7861b152">sqsh_superblock_fragment_entry_count</a></div><div class="ttdeci">uint32_t sqsh_superblock_fragment_entry_count(const struct SqshSuperblockContext *context)</div></div>
 <div class="ttc" id="asuperblock__context_8h_html_afa6e174ab9f8e362bf171321125e8b7e"><div class="ttname"><a href="superblock__context_8h.html#afa6e174ab9f8e362bf171321125e8b7e">sqsh_superblock_inode_count</a></div><div class="ttdeci">uint32_t sqsh_superblock_inode_count(const struct SqshSuperblockContext *context)</div></div>
+<div class="ttc" id="asuperblock__data_8h_html_a4514a171a371875722c0f0aee1f80f63"><div class="ttname"><a href="superblock__data_8h.html#a4514a171a371875722c0f0aee1f80f63">SqshSuperblock</a></div><div class="ttdeci">struct SQSH_UNALIGNED SqshSuperblock</div><div class="ttdef"><b>Definition:</b> <a href="superblock__data_8h_source.html#l00044">superblock_data.h:44</a></div></div>
 <div class="ttc" id="autils_8h_html_a0f0a35d1ed84a34ad06a006e5e90da94"><div class="ttname"><a href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a></div><div class="ttdeci">#define SQSH_NO_UNUSED</div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.html#l00048">utils.h:48</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

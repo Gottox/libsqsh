@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;5df1c54</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;9dad9af</span>
    </div>
   </td>
  </tr>
@@ -112,7 +112,7 @@ $(function() {
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">struct </span><a class="code hl_struct" href="structSqsh.html">Sqsh</a>;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">struct </span><a class="code hl_struct" href="structSqshSuperblockContext.html">SqshSuperblockContext</a>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">struct </span>SqshInode;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">struct </span><a class="code hl_variable" href="inode__data_8h.html#a7b01598b7a6b564eea5405a284e92a65">SqshInode</a>;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">struct </span>SqshInodeTable;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">struct </span><a class="code hl_struct" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a>;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">struct </span><a class="code hl_struct" href="structSqshXattrIterator.html">SqshXattrIterator</a>;</div>
@@ -136,7 +136,7 @@ $(function() {
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8">   71</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8">SqshInodeContextType</a> {</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8ad96b260fc633f880c1713fa347b0edc1">   72</a></span>    <a class="code hl_enumvalue" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8ad96b260fc633f880c1713fa347b0edc1">SQSH_INODE_TYPE_UNKNOWN</a> = -1,</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// avoid overlapping with the types in ../data/inode.h</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// avoid overlapping with the types in ../data/inode_data.h</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8ae9e4e9ace3d3bf2fa073d6babb81320d">   74</a></span>    <a class="code hl_enumvalue" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8ae9e4e9ace3d3bf2fa073d6babb81320d">SQSH_INODE_TYPE_DIRECTORY</a> = 1 + (1 &lt;&lt; 8),</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8a64be4282dca3fdcf68967261a1ec8d17">   75</a></span>    <a class="code hl_enumvalue" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8a64be4282dca3fdcf68967261a1ec8d17">SQSH_INODE_TYPE_FILE</a>,</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8ad7a068652196847d8864c288a957a22b">   76</a></span>    <a class="code hl_enumvalue" href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8ad7a068652196847d8864c288a957a22b">SQSH_INODE_TYPE_SYMLINK</a>,</div>
@@ -234,6 +234,7 @@ $(function() {
 <div class="ttc" id="ainode__context_8h_html_af7711c22c1031b0b2f4ceaabb5b4e5e8ad7a068652196847d8864c288a957a22b"><div class="ttname"><a href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8ad7a068652196847d8864c288a957a22b">SQSH_INODE_TYPE_SYMLINK</a></div><div class="ttdeci">@ SQSH_INODE_TYPE_SYMLINK</div><div class="ttdef"><b>Definition:</b> <a href="inode__context_8h_source.html#l00076">inode_context.h:76</a></div></div>
 <div class="ttc" id="ainode__context_8h_html_af7711c22c1031b0b2f4ceaabb5b4e5e8ad96b260fc633f880c1713fa347b0edc1"><div class="ttname"><a href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8ad96b260fc633f880c1713fa347b0edc1">SQSH_INODE_TYPE_UNKNOWN</a></div><div class="ttdeci">@ SQSH_INODE_TYPE_UNKNOWN</div><div class="ttdef"><b>Definition:</b> <a href="inode__context_8h_source.html#l00072">inode_context.h:72</a></div></div>
 <div class="ttc" id="ainode__context_8h_html_af7711c22c1031b0b2f4ceaabb5b4e5e8ae9e4e9ace3d3bf2fa073d6babb81320d"><div class="ttname"><a href="inode__context_8h.html#af7711c22c1031b0b2f4ceaabb5b4e5e8ae9e4e9ace3d3bf2fa073d6babb81320d">SQSH_INODE_TYPE_DIRECTORY</a></div><div class="ttdeci">@ SQSH_INODE_TYPE_DIRECTORY</div><div class="ttdef"><b>Definition:</b> <a href="inode__context_8h_source.html#l00074">inode_context.h:74</a></div></div>
+<div class="ttc" id="ainode__data_8h_html_a7b01598b7a6b564eea5405a284e92a65"><div class="ttname"><a href="inode__data_8h.html#a7b01598b7a6b564eea5405a284e92a65">SqshInode</a></div><div class="ttdeci">struct SQSH_UNALIGNED SqshInode</div><div class="ttdef"><b>Definition:</b> <a href="inode__data_8h_source.html#l00066">inode_data.h:66</a></div></div>
 <div class="ttc" id="ametablock__stream__context_8h_html"><div class="ttname"><a href="metablock__stream__context_8h.html">metablock_stream_context.h</a></div></div>
 <div class="ttc" id="astructSqshDirectoryIterator_html"><div class="ttname"><a href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a></div><div class="ttdef"><b>Definition:</b> <a href="directory__iterator_8h_source.html#l00046">directory_iterator.h:46</a></div></div>
 <div class="ttc" id="astructSqshInodeContext_html"><div class="ttname"><a href="structSqshInodeContext.html">SqshInodeContext</a></div><div class="ttdoc">Inode context.</div><div class="ttdef"><b>Definition:</b> <a href="inode__context_8h_source.html#l00086">inode_context.h:86</a></div></div>
