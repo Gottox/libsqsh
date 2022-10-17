@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;e6ad520</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;5df1c54</span>
    </div>
   </td>
  </tr>
@@ -85,12 +85,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9cb1ee2418b7cfb7810f5505747af921"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshCompressionOptionsContext.html#a9cb1ee2418b7cfb7810f5505747af921">sqsh_compression_options_init</a> (struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
 <tr class="memdesc:a9cb1ee2418b7cfb7810f5505747af921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the compression options context.  <a href="structSqshCompressionOptionsContext.html#a9cb1ee2418b7cfb7810f5505747af921">More...</a><br /></td></tr>
 <tr class="separator:a9cb1ee2418b7cfb7810f5505747af921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f7e4f1b590e7266e2ebcac5075098a7"><td class="memItemLeft" align="right" valign="top">const union SqshCompressionOptions *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshCompressionOptionsContext.html#a3f7e4f1b590e7266e2ebcac5075098a7">sqsh_compression_options_data</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *context)</td></tr>
-<tr class="memdesc:a3f7e4f1b590e7266e2ebcac5075098a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a pointer to the compression options data  <a href="structSqshCompressionOptionsContext.html#a3f7e4f1b590e7266e2ebcac5075098a7">More...</a><br /></td></tr>
-<tr class="separator:a3f7e4f1b590e7266e2ebcac5075098a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acab8485ffe17f9344a9c38b4eb9161c2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshCompressionOptionsContext.html#acab8485ffe17f9344a9c38b4eb9161c2">sqsh_compression_options_size</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *context)</td></tr>
-<tr class="memdesc:acab8485ffe17f9344a9c38b4eb9161c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the size of the compression options data as returned by<a class="el" href="structSqshCompressionOptionsContext.html#a3f7e4f1b590e7266e2ebcac5075098a7" title="returns a pointer to the compression options data">sqsh_compression_options_data()</a>  <a href="structSqshCompressionOptionsContext.html#acab8485ffe17f9344a9c38b4eb9161c2">More...</a><br /></td></tr>
-<tr class="separator:acab8485ffe17f9344a9c38b4eb9161c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f0806d541fc79c02fde5baf15d2af56"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshCompressionOptionsContext.html#a4f0806d541fc79c02fde5baf15d2af56">sqsh_compression_options_gzip_compression_level</a> (const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *context)</td></tr>
 <tr class="memdesc:a4f0806d541fc79c02fde5baf15d2af56"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the compression level of gzip  <a href="structSqshCompressionOptionsContext.html#a4f0806d541fc79c02fde5baf15d2af56">More...</a><br /></td></tr>
 <tr class="separator:a4f0806d541fc79c02fde5baf15d2af56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,7 +126,7 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The compression options context is used to store the compression options for a specific compression algorithm. </p>
 
-<p class="definition">Definition at line <a class="el" href="compression__options__context_8h_source.html#l00048">48</a> of file <a class="el" href="compression__options__context_8h_source.html">compression_options_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="compression__options__context_8h_source.html#l00047">47</a> of file <a class="el" href="compression__options__context_8h_source.html">compression_options_context.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a408a88cfa9253ea9445842b024f1d166" name="a408a88cfa9253ea9445842b024f1d166"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a408a88cfa9253ea9445842b024f1d166">&#9670;&nbsp;</a></span>sqsh_compression_options_cleanup()</h2>
@@ -151,32 +145,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Frees the resources used by the compression options context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>the compression options context </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3f7e4f1b590e7266e2ebcac5075098a7" name="a3f7e4f1b590e7266e2ebcac5075098a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f7e4f1b590e7266e2ebcac5075098a7">&#9670;&nbsp;</a></span>sqsh_compression_options_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const union SqshCompressionOptions * sqsh_compression_options_data </td>
-          <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *&#160;</td>
-          <td class="paramname"><em>context</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>returns a pointer to the compression options data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>the compression options context </td></tr>
@@ -379,32 +347,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="acab8485ffe17f9344a9c38b4eb9161c2" name="acab8485ffe17f9344a9c38b4eb9161c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acab8485ffe17f9344a9c38b4eb9161c2">&#9670;&nbsp;</a></span>sqsh_compression_options_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t sqsh_compression_options_size </td>
-          <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> *&#160;</td>
-          <td class="paramname"><em>context</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>returns the size of the compression options data as returned by<a class="el" href="structSqshCompressionOptionsContext.html#a3f7e4f1b590e7266e2ebcac5075098a7" title="returns a pointer to the compression options data">sqsh_compression_options_data()</a> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>the compression options context </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a0388692ee9f62c0a0e9b034b61a1f1ce" name="a0388692ee9f62c0a0e9b034b61a1f1ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0388692ee9f62c0a0e9b034b61a1f1ce">&#9670;&nbsp;</a></span>sqsh_compression_options_xz_dictionary_size()</h2>
 
@@ -496,7 +438,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="compression__options__context_8h_source.html#l00050">50</a> of file <a class="el" href="compression__options__context_8h_source.html">compression_options_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="compression__options__context_8h_source.html#l00049">49</a> of file <a class="el" href="compression__options__context_8h_source.html">compression_options_context.h</a>.</p>
 
 </div>
 </div>
@@ -512,7 +454,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="compression__options__context_8h_source.html#l00049">49</a> of file <a class="el" href="compression__options__context_8h_source.html">compression_options_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="compression__options__context_8h_source.html#l00048">48</a> of file <a class="el" href="compression__options__context_8h_source.html">compression_options_context.h</a>.</p>
 
 </div>
 </div>

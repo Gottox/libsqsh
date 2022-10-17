@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;e6ad520</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;5df1c54</span>
    </div>
   </td>
  </tr>
@@ -82,14 +82,8 @@ Features</h1>
 <li>... much more</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md2"></a>
-Design principles</h1>
-<ul>
-<li>Stack oriented structures</li>
-<li>usable in multithreaded applications</li>
-</ul>
-<h1><a class="anchor" id="autotoc_md3"></a>
 How to...?</h1>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md3"></a>
 ... open an archive?</h2>
 <div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqsh.html">Sqsh</a> archive = { 0 };</div>
 <div class="line"><span class="keywordtype">int</span> rv = <a class="code hl_function" href="structSqsh.html#a3f895379d36b44ed2086c1b065c79ddf">sqsh_open</a>(&amp;archive, <span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>);</div>
@@ -100,7 +94,7 @@ How to...?</h1>
 <div class="ttc" id="astructSqsh_html"><div class="ttname"><a href="structSqsh.html">Sqsh</a></div><div class="ttdoc">The SqshContext struct contains all information about the current sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh_8h_source.html#l00074">sqsh.h:74</a></div></div>
 <div class="ttc" id="astructSqsh_html_a3f895379d36b44ed2086c1b065c79ddf"><div class="ttname"><a href="structSqsh.html#a3f895379d36b44ed2086c1b065c79ddf">Sqsh::sqsh_open</a></div><div class="ttdeci">SQSH_NO_UNUSED int sqsh_open(struct Sqsh *sqsh, const char *path)</div><div class="ttdoc">sqsh_open opens the sqsh file at the given path.</div></div>
 <div class="ttc" id="astructSqsh_html_ae2868febaa9ecedb3c7f528c2c4595cd"><div class="ttname"><a href="structSqsh.html#ae2868febaa9ecedb3c7f528c2c4595cd">Sqsh::sqsh_cleanup</a></div><div class="ttdeci">int sqsh_cleanup(struct Sqsh *sqsh)</div><div class="ttdoc">sqsh_cleanup frees all resources allocated by the Sqsh structure and cleans up the structure.</div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md4"></a>
 ... get metainformations about a file?</h2>
 <div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshInodeContext.html">SqshInodeContext</a> inode = { 0 };</div>
 <div class="line"><span class="keywordtype">int</span> rv = <a class="code hl_function" href="structSqshInodeContext.html#ae7ad7bdbb6f9bedfdac3ff1316627bac">sqsh_inode_load_by_path</a>(&amp;inode, &amp;archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>);</div>
@@ -115,13 +109,31 @@ How to...?</h1>
 <div class="ttc" id="astructSqshInodeContext_html"><div class="ttname"><a href="structSqshInodeContext.html">SqshInodeContext</a></div><div class="ttdoc">Inode context.</div><div class="ttdef"><b>Definition:</b> <a href="inode__context_8h_source.html#l00086">inode_context.h:86</a></div></div>
 <div class="ttc" id="astructSqshInodeContext_html_a65a02fa321fe0ef692244fac11ce0619"><div class="ttname"><a href="structSqshInodeContext.html#a65a02fa321fe0ef692244fac11ce0619">SqshInodeContext::sqsh_inode_file_size</a></div><div class="ttdeci">uint64_t sqsh_inode_file_size(const struct SqshInodeContext *context)</div><div class="ttdoc">Getter for the file size. 0 if the file has no size.</div></div>
 <div class="ttc" id="astructSqshInodeContext_html_ae7ad7bdbb6f9bedfdac3ff1316627bac"><div class="ttname"><a href="structSqshInodeContext.html#ae7ad7bdbb6f9bedfdac3ff1316627bac">SqshInodeContext::sqsh_inode_load_by_path</a></div><div class="ttdeci">SQSH_NO_UNUSED int sqsh_inode_load_by_path(struct SqshInodeContext *context, struct Sqsh *sqsh, const char *path)</div><div class="ttdoc">Initialize the inode context from a path.</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
 Resource</h1>
 <ul>
 <li><a href="https://dr-emann.github.io/squashfs/">https://dr-emann.github.io/squashfs/</a></li>
 <li><a href="https://dr-emann.github.io/squashfs/squashfs.html">https://dr-emann.github.io/squashfs/squashfs.html</a></li>
-<li><a href="https://www.kernel.org/doc/Documentation/filesystems/squashfs.txt">https://www.kernel.org/doc/Documentation/filesystems/squashfs.txt</a> (useless) </li>
+<li><a href="https://www.kernel.org/doc/Documentation/filesystems/squashfs.txt">https://www.kernel.org/doc/Documentation/filesystems/squashfs.txt</a> (useless)</li>
 </ul>
+<h1><a class="anchor" id="autotoc_md6"></a>
+Design principles</h1>
+<ul>
+<li>Stack located structures</li>
+<li>usable in multithreaded applications</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md7"></a>
+organisation of source</h1>
+<ul>
+<li><em>src/primitive</em>: basic building blocks like buffer management or reference counting</li>
+<li><em>src/mapper</em>: implementations that load segments of squashfs file into memory. Most notably the mmap management happens here.</li>
+<li><em>src/data</em>: The actual model of a squashfs archive.</li>
+<li><em>src/context</em>: Implements the high level logic on how to retrieve informations from the squashfs archive</li>
+<li><em>src/iterator</em>: Implementations of squashfs structures that are read linear.</li>
+<li><em>src/table</em>: Implementation of squashfs structures that can be accessed by an index.</li>
+<li><em>src/compression</em>: Gluecode for the different compression algorithms.</li>
+</ul>
+<p >The user is supposed to interact with structures of <em>src/context</em> and <em>src/iterator</em> modules. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
