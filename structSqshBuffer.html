@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;9dad9af</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;27cd302</span>
    </div>
   </td>
  </tr>
@@ -88,6 +88,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca35061c9d606761b1881efd8d38c135"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#aca35061c9d606761b1881efd8d38c135">sqsh_buffer_append</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer, const uint8_t *source, const size_t source_size)</td></tr>
 <tr class="memdesc:aca35061c9d606761b1881efd8d38c135"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_buffer_append  <a href="structSqshBuffer.html#aca35061c9d606761b1881efd8d38c135">More...</a><br /></td></tr>
 <tr class="separator:aca35061c9d606761b1881efd8d38c135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d442f02ca5245ed58600fd665ff6cc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#a6d442f02ca5245ed58600fd665ff6cc9">sqsh_buffer_drain</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer)</td></tr>
+<tr class="memdesc:a6d442f02ca5245ed58600fd665ff6cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_buffer_drain resets the buffer size to 0.  <a href="structSqshBuffer.html#a6d442f02ca5245ed58600fd665ff6cc9">More...</a><br /></td></tr>
+<tr class="separator:a6d442f02ca5245ed58600fd665ff6cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af126e910b5bf29b372a57909eb262ddf"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#af126e910b5bf29b372a57909eb262ddf">sqsh_buffer_data</a> (const struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer)</td></tr>
 <tr class="memdesc:af126e910b5bf29b372a57909eb262ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_buffer_data returns the data of the <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a>.  <a href="structSqshBuffer.html#af126e910b5bf29b372a57909eb262ddf">More...</a><br /></td></tr>
 <tr class="separator:af126e910b5bf29b372a57909eb262ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,6 +107,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a26e2982e48dc069e2d70ff9e32703823"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab784ec02da27cabc25da8cfa197c7452"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#ab784ec02da27cabc25da8cfa197c7452">size</a></td></tr>
 <tr class="separator:ab784ec02da27cabc25da8cfa197c7452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a61d32ca17d6cce91fff0e8015611d4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#a0a61d32ca17d6cce91fff0e8015611d4">capacity</a></td></tr>
+<tr class="separator:a0a61d32ca17d6cce91fff0e8015611d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> struct is a buffer for arbitrary data. </p>
@@ -290,6 +295,33 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a6d442f02ca5245ed58600fd665ff6cc9" name="a6d442f02ca5245ed58600fd665ff6cc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d442f02ca5245ed58600fd665ff6cc9">&#9670;&nbsp;</a></span>sqsh_buffer_drain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sqsh_buffer_drain </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sqsh_buffer_drain resets the buffer size to 0. </p>
+<p >This does not free the memory allocated by the buffer so that the buffer can be reused.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to drain. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8ece8454ad9f2f39be71d7a202ff78ef" name="a8ece8454ad9f2f39be71d7a202ff78ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ece8454ad9f2f39be71d7a202ff78ef">&#9670;&nbsp;</a></span>sqsh_buffer_init()</h2>
 
@@ -344,6 +376,22 @@ Data Fields</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="a0a61d32ca17d6cce91fff0e8015611d4" name="a0a61d32ca17d6cce91fff0e8015611d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a61d32ca17d6cce91fff0e8015611d4">&#9670;&nbsp;</a></span>capacity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t SqshBuffer::capacity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="buffer_8h_source.html#l00053">53</a> of file <a class="el" href="buffer_8h_source.html">buffer.h</a>.</p>
+
+</div>
+</div>
 <a id="a26e2982e48dc069e2d70ff9e32703823" name="a26e2982e48dc069e2d70ff9e32703823"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a26e2982e48dc069e2d70ff9e32703823">&#9670;&nbsp;</a></span>data</h2>
 
