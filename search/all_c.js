@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['next_5foffset_0',['next_offset',['../structSqshInodeDirectoryIndexIterator.html#a0bbf4f0d8e7082e2fa64f724892c06b5',1,'SqshInodeDirectoryIndexIterator::next_offset()'],['../structSqshDirectoryIterator.html#aad56a8b54b789f398e503c6188d96ac6',1,'SqshDirectoryIterator::next_offset()'],['../structSqshXattrIterator.html#a6eafe795b9c8ded7f6689d296af4c970',1,'SqshXattrIterator::next_offset()']]],
-  ['nson_5fp_1',['NSON_P',['../test_2common_8h.html#afa0c845a06df5dfe6629d54e763509bf',1,'common.h']]]
+  ['offset_0',['offset',['../structSqshCanaryMap.html#a247999508e6a3039171f71256ea8f887',1,'SqshCanaryMap::offset()'],['../structSqshCurlMap.html#ac989760a704e36c293cd94fefd5cbbc5',1,'SqshCurlMap::offset()'],['../structSqshMmapMap.html#ae8c6e78dd696421a8aa44c4f69a2723b',1,'SqshMmapMap::offset()']]],
+  ['out_5fof_5fline_5fvalue_1',['out_of_line_value',['../structSqshXattrIterator.html#ad655c9bf2144ba3fec2748061d6740d8',1,'SqshXattrIterator']]]
 ];

@@ -1,19 +1,10 @@
 var searchData=
 [
-  ['canary_5fmapper_2eh_0',['canary_mapper.h',['../canary__mapper_8h.html',1,'']]],
-  ['capacity_1',['capacity',['../structSqshBuffer.html#a0a61d32ca17d6cce91fff0e8015611d4',1,'SqshBuffer']]],
-  ['cleanup_2',['cleanup',['../structSqshMemoryMapperImpl.html#a7db5fec6d5dd1aeaa95ae8d34deb48e2',1,'SqshMemoryMapperImpl']]],
-  ['cn_3',['cn',['../structSqshMapping.html#aa63d815953312017962aa6a9286169b1',1,'SqshMapping::cn()'],['../structSqshMapper.html#a24f278d06bcff2a4e0b58d831e8ec87c',1,'SqshMapper::cn()']]],
-  ['compression_4',['compression',['../structSqshFileContext.html#a702bd796a89f02bd61c1c279d6ef6875',1,'SqshFileContext::compression()'],['../structSqshMetablockContext.html#a3e7c322919ceb8806c46ba8d22653465',1,'SqshMetablockContext::compression()'],['../structSqshFragmentTable.html#afd3ba350c0e868b72af69317595d62db',1,'SqshFragmentTable::compression()']]],
-  ['compression_2eh_5',['compression.h',['../compression_8h.html',1,'']]],
-  ['compression_5fid_6',['compression_id',['../structSqshCompressionOptionsContext.html#a8592ca11d9f3e642425b6583b1efbdd9',1,'SqshCompressionOptionsContext']]],
-  ['compression_5foptions_7',['compression_options',['../structSqsh.html#a7e4efb47501b85bd2284df30bab498ac',1,'Sqsh']]],
-  ['compression_5foptions_5fcontext_2eh_8',['compression_options_context.h',['../compression__options__context_8h.html',1,'']]],
-  ['compression_5foptions_5fdata_2eh_9',['compression_options_data.h',['../compression__options__data_8h.html',1,'']]],
-  ['config_10',['config',['../structSqsh.html#a5ea3dbc6c49579b7f4fd940007860862',1,'Sqsh']]],
-  ['context_11',['context',['../structSqshXattrIterator.html#a7a99b2e18427c156d8925829d22decdb',1,'SqshXattrIterator']]],
-  ['curl_5fmapper_2eh_12',['curl_mapper.h',['../curl__mapper_8h.html',1,'']]],
-  ['current_5faddress_13',['current_address',['../structSqshMetablockStreamContext.html#a45ff0feb05ef91210d17a615062ad4e6',1,'SqshMetablockStreamContext']]],
-  ['current_5ffragment_5foffset_14',['current_fragment_offset',['../structSqshDirectoryIterator.html#a6bd9d6eda79951c6f8221ce023106384',1,'SqshDirectoryIterator']]],
-  ['current_5foffset_15',['current_offset',['../structSqshInodeDirectoryIndexIterator.html#a9b72c38b4643f3c0e8d75aa01b34cacc',1,'SqshInodeDirectoryIndexIterator::current_offset()'],['../structSqshDirectoryIterator.html#af4883a5b89e8c0ee4de8294f0c6bee81',1,'SqshDirectoryIterator::current_offset()']]]
+  ['data_0',['data',['../structSqshCanaryMapper.html#a4b9151a1a180df23b9bccc9a3907bdae',1,'SqshCanaryMapper::data()'],['../structSqshCanaryMap.html#a8f7e2392ca981b7b8eb11ac66cefce18',1,'SqshCanaryMap::data()'],['../structSqshMapping.html#a6538b9a3c1bf868043a84b7a92e4a46c',1,'SqshMapping::data()'],['../structSqshMapper.html#ab711d786d84588354497cef589cd570a',1,'SqshMapper::data()'],['../structSqshMmapFullMapper.html#a92a2a4505eb1c57aeef7ca8dc785e77e',1,'SqshMmapFullMapper::data()'],['../structSqshMmapFullMap.html#a5c131623f89743874d322a8720b658b1',1,'SqshMmapFullMap::data()'],['../structSqshMmapMap.html#ab4cc0ded33c02f2ca032eaa1ba4acc8e',1,'SqshMmapMap::data()'],['../structSqshStaticMapper.html#a1f193891a1df25207d1fa0505214bfca',1,'SqshStaticMapper::data()'],['../structSqshStaticMap.html#a7eaec24f0ff56b4cef48fcffeb99e666',1,'SqshStaticMap::data()'],['../structSqshBuffer.html#a26e2982e48dc069e2d70ff9e32703823',1,'SqshBuffer::data()']]],
+  ['data_5fcompression_1',['data_compression',['../structSqsh.html#adac498959c2e8a683e0c69424466dfe6',1,'Sqsh']]],
+  ['datablock_5fdata_2eh_2',['datablock_data.h',['../datablock__data_8h.html',1,'']]],
+  ['directory_3',['directory',['../structSqshDirectoryIterator.html#a67d41d0f45a951939d2280058bc25ef5',1,'SqshDirectoryIterator']]],
+  ['directory_5fdata_2eh_4',['directory_data.h',['../directory__data_8h.html',1,'']]],
+  ['directory_5findex_5fiterator_2eh_5',['directory_index_iterator.h',['../directory__index__iterator_8h.html',1,'']]],
+  ['directory_5fiterator_2eh_6',['directory_iterator.h',['../directory__iterator_8h.html',1,'']]]
 ];

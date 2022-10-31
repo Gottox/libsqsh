@@ -1,23 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../test_8h.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'test.h']]],
-  ['map_5fdata_1',['map_data',['../structSqshMemoryMapperImpl.html#af8e43b0011639b7c30ee4a4615816d3f',1,'SqshMemoryMapperImpl']]],
-  ['map_5fresize_2',['map_resize',['../structSqshMemoryMapperImpl.html#a43567fec8ef4b7d5702d39d6a0ef4aaa',1,'SqshMemoryMapperImpl']]],
-  ['map_5fsize_3',['map_size',['../structSqshMemoryMapperImpl.html#a540dbe581b79b22f92e2dbdcd06af322',1,'SqshMemoryMapperImpl']]],
-  ['mapper_4',['mapper',['../structSqshFragmentTable.html#a9f5bc0b3dacfb48eb12c0fb4d27748a5',1,'SqshFragmentTable::mapper()'],['../structSqshTable.html#aa4b4aad7a80d9d7ba0145b76a0c832bc',1,'SqshTable::mapper()'],['../structSqsh.html#a5d992992922511b9b1693716c34b72f0',1,'Sqsh::mapper()'],['../structSqshMapping.html#ab37c2b01a05a226edc0a8f97d3d3698d',1,'SqshMapping::mapper()'],['../structSqshFileContext.html#a03fc6ff7f2cb35955ed0d15d601d5883',1,'SqshFileContext::mapper()']]],
-  ['mapper_2eh_5',['mapper.h',['../mapper_8h.html',1,'']]],
-  ['mapping_6',['mapping',['../structSqshMetablockContext.html#aab065393a0c3c6a9b3d7b8887d1ff419',1,'SqshMetablockContext::mapping()'],['../structSqshSuperblockContext.html#aedd82435976a8a4a6cf6cb60cae94e02',1,'SqshSuperblockContext::mapping()'],['../structSqshTrailingContext.html#a000a73c4774e0dfa9eb7a65083dbdb1b',1,'SqshTrailingContext::mapping()'],['../structSqshMemoryMapperImpl.html#a65501bcedcfcc128c989651fbd5512ea',1,'SqshMemoryMapperImpl::mapping()']]],
-  ['max_7',['MAX',['../utils_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f',1,'utils.h']]],
-  ['mc_8',['mc',['../structSqshMapping.html#a3863b970c20a40223ed314146095a74b',1,'SqshMapping::mc()'],['../structSqshMapper.html#a3bce0a2eaac89b60bb93d7f1ce9f29a4',1,'SqshMapper::mc()']]],
-  ['memory_5fmapper_5fh_9',['MEMORY_MAPPER_H',['../mapper_8h.html#ad2b4a825897fd4c8fc0c0bc188604c22',1,'mapper.h']]],
-  ['metablock_10',['metablock',['../structSqshInodeContext.html#a2caa876fa4cd0fc62c7cbc25eb2ec47e',1,'SqshInodeContext::metablock()'],['../structSqshDirectoryIterator.html#a4b3242b17c041cf8d9148ad2b161ce83',1,'SqshDirectoryIterator::metablock()'],['../structSqshXattrIterator.html#a5fc94839872b5348107432c07bfb4603',1,'SqshXattrIterator::metablock()']]],
-  ['metablock_5fcompression_11',['metablock_compression',['../structSqsh.html#aaff53319e64eb16a7b37b95ecb099d7c',1,'Sqsh']]],
-  ['metablock_5fcontext_2eh_12',['metablock_context.h',['../metablock__context_8h.html',1,'']]],
-  ['metablock_5fdata_2eh_13',['metablock_data.h',['../metablock__data_8h.html',1,'']]],
-  ['metablock_5fstream_5fcontext_2eh_14',['metablock_stream_context.h',['../metablock__stream__context_8h.html',1,'']]],
-  ['min_15',['MIN',['../utils_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f',1,'utils.h']]],
-  ['mm_16',['mm',['../structSqshMapper.html#a91d4926dbadb95703b7e297614611b1e',1,'SqshMapper::mm()'],['../structSqshMapping.html#a39ea3f818049f5ddc3174267565a5e05',1,'SqshMapping::mm()']]],
-  ['mmap_5ffull_5fmapper_2eh_17',['mmap_full_mapper.h',['../mmap__full__mapper_8h.html',1,'']]],
-  ['mmap_5fmapper_2eh_18',['mmap_mapper.h',['../mmap__mapper_8h.html',1,'']]],
-  ['mult_5foverflow_19',['MULT_OVERFLOW',['../utils_8h.html#a9555e06842350d0685e8c87822f442a2',1,'utils.h']]]
+  ['next_5foffset_0',['next_offset',['../structSqshInodeDirectoryIndexIterator.html#a0bbf4f0d8e7082e2fa64f724892c06b5',1,'SqshInodeDirectoryIndexIterator::next_offset()'],['../structSqshDirectoryIterator.html#aad56a8b54b789f398e503c6188d96ac6',1,'SqshDirectoryIterator::next_offset()'],['../structSqshXattrIterator.html#a6eafe795b9c8ded7f6689d296af4c970',1,'SqshXattrIterator::next_offset()']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['add_5foverflow_0',['ADD_OVERFLOW',['../utils_8h.html#a7ea40b49b1f9cf625d773d7203ad6386',1,'utils.h']]],
-  ['assert_5fabrt_1',['ASSERT_ABRT',['../test_8h.html#a99e7997132bf762c55a51b6e64e458e6',1,'test.h']]]
+  ['compression_5foptions_5fcontext_5fh_0',['COMPRESSION_OPTIONS_CONTEXT_H',['../compression__options__context_8h.html#a1e387ce52021b0da78d17af8a8d866c4',1,'compression_options_context.h']]]
 ];

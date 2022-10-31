@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['offset_0',['offset',['../structSqshCanaryMap.html#a247999508e6a3039171f71256ea8f887',1,'SqshCanaryMap::offset()'],['../structSqshCurlMap.html#ac989760a704e36c293cd94fefd5cbbc5',1,'SqshCurlMap::offset()'],['../structSqshMmapMap.html#ae8c6e78dd696421a8aa44c4f69a2723b',1,'SqshMmapMap::offset()']]],
-  ['out_5fof_5fline_5fvalue_1',['out_of_line_value',['../structSqshXattrIterator.html#ad655c9bf2144ba3fec2748061d6740d8',1,'SqshXattrIterator']]]
+  ['page_5foffset_0',['page_offset',['../structSqshMmapMap.html#aff0120b7792a4431f966d7b5d25548b9',1,'SqshMmapMap']]],
+  ['page_5fsize_1',['page_size',['../structSqshMmapMapper.html#a9c87b463b737e454fd40771573fb9f44',1,'SqshMmapMapper']]]
 ];

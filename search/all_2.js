@@ -1,11 +1,20 @@
 var searchData=
 [
-  ['base_5faddress_0',['base_address',['../structSqshMetablockStreamContext.html#a2a7742f3e525cc011836a6d09f35ffc3',1,'SqshMetablockStreamContext']]],
-  ['block_5foffset_1',['block_offset',['../structSqshDirectoryIterator.html#abb97c1e4217e07e5ca97b1fecdbd11cd',1,'SqshDirectoryIterator']]],
-  ['block_5fsize_2',['block_size',['../structSqshCompression.html#a69bd9f72db6167e91dcf51efea5a9f5d',1,'SqshCompression::block_size()'],['../structSqshFileContext.html#a4af1f9feaab74f151ae41a11f7edfead',1,'SqshFileContext::block_size()']]],
-  ['block_5fstart_3',['block_start',['../structSqshDirectoryIterator.html#a89609a1b93c8f775537de8b6da5b6d02',1,'SqshDirectoryIterator']]],
-  ['buffer_4',['buffer',['../structSqshCompressionOptionsContext.html#aa1693b3b4cfe1e5b530f7921c08cf6f2',1,'SqshCompressionOptionsContext::buffer()'],['../structSqshFileContext.html#a34a20702e4c5370d7163799009549cb3',1,'SqshFileContext::buffer()'],['../structSqshMetablockContext.html#a22b8ec7eb542cc05a776962ad85256e7',1,'SqshMetablockContext::buffer()'],['../structSqshMetablockStreamContext.html#a301a94e7f17615546eb6a2761f5a9e72',1,'SqshMetablockStreamContext::buffer()'],['../structSqshCurlMap.html#a3f25ecaa1cbb35d04973e40bfa83e98a',1,'SqshCurlMap::buffer()']]],
-  ['buffer_2eh_5',['buffer.h',['../buffer_8h.html',1,'']]],
-  ['buffer_5foffset_6',['buffer_offset',['../structSqshMetablockStreamContext.html#a0b622fce9f65d6bdaa50eb2ec3d9b0c9',1,'SqshMetablockStreamContext']]],
-  ['common_2eh_7',['common.h',['../bin_2common_8h.html',1,'']]]
+  ['canary_5fmapper_2eh_0',['canary_mapper.h',['../canary__mapper_8h.html',1,'']]],
+  ['capacity_1',['capacity',['../structSqshBuffer.html#a0a61d32ca17d6cce91fff0e8015611d4',1,'SqshBuffer']]],
+  ['cleanup_2',['cleanup',['../structSqshMemoryMapperImpl.html#a7db5fec6d5dd1aeaa95ae8d34deb48e2',1,'SqshMemoryMapperImpl']]],
+  ['cn_3',['cn',['../structSqshMapping.html#aa63d815953312017962aa6a9286169b1',1,'SqshMapping::cn()'],['../structSqshMapper.html#a24f278d06bcff2a4e0b58d831e8ec87c',1,'SqshMapper::cn()']]],
+  ['compression_4',['compression',['../structSqshFileContext.html#a702bd796a89f02bd61c1c279d6ef6875',1,'SqshFileContext::compression()'],['../structSqshMetablockContext.html#a3e7c322919ceb8806c46ba8d22653465',1,'SqshMetablockContext::compression()'],['../structSqshFragmentTable.html#afd3ba350c0e868b72af69317595d62db',1,'SqshFragmentTable::compression()']]],
+  ['compression_2eh_5',['compression.h',['../compression_8h.html',1,'']]],
+  ['compression_5fid_6',['compression_id',['../structSqshCompressionOptionsContext.html#a8592ca11d9f3e642425b6583b1efbdd9',1,'SqshCompressionOptionsContext']]],
+  ['compression_5foptions_7',['compression_options',['../structSqsh.html#a7e4efb47501b85bd2284df30bab498ac',1,'Sqsh']]],
+  ['compression_5foptions_5fcontext_2eh_8',['compression_options_context.h',['../compression__options__context_8h.html',1,'']]],
+  ['compression_5foptions_5fcontext_5fh_9',['COMPRESSION_OPTIONS_CONTEXT_H',['../compression__options__context_8h.html#a1e387ce52021b0da78d17af8a8d866c4',1,'compression_options_context.h']]],
+  ['compression_5foptions_5fdata_2eh_10',['compression_options_data.h',['../compression__options__data_8h.html',1,'']]],
+  ['config_11',['config',['../structSqsh.html#a5ea3dbc6c49579b7f4fd940007860862',1,'Sqsh']]],
+  ['context_12',['context',['../structSqshXattrIterator.html#a7a99b2e18427c156d8925829d22decdb',1,'SqshXattrIterator']]],
+  ['curl_5fmapper_2eh_13',['curl_mapper.h',['../curl__mapper_8h.html',1,'']]],
+  ['current_5faddress_14',['current_address',['../structSqshMetablockStreamContext.html#a45ff0feb05ef91210d17a615062ad4e6',1,'SqshMetablockStreamContext']]],
+  ['current_5ffragment_5foffset_15',['current_fragment_offset',['../structSqshDirectoryIterator.html#a6bd9d6eda79951c6f8221ce023106384',1,'SqshDirectoryIterator']]],
+  ['current_5foffset_16',['current_offset',['../structSqshInodeDirectoryIndexIterator.html#a9b72c38b4643f3c0e8d75aa01b34cacc',1,'SqshInodeDirectoryIndexIterator::current_offset()'],['../structSqshDirectoryIterator.html#af4883a5b89e8c0ee4de8294f0c6bee81',1,'SqshDirectoryIterator::current_offset()']]]
 ];
