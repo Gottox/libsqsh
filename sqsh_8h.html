@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;ebd1f35</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;a50683f</span>
    </div>
   </td>
  </tr>
@@ -69,7 +69,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">sqsh.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -114,6 +115,12 @@ Enumerations</h2></td></tr>
 , <a class="el" href="sqsh_8h.html#a6868944bf67de0c9638e180f3052b260a49fb10265351fbefa378a49a921898a1">SQSH_SOURCE_TYPE_MEMORY</a>
  }</td></tr>
 <tr class="separator:a6868944bf67de0c9638e180f3052b260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a983ce0fb8924ff3496deb773f7cdf377"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#a983ce0fb8924ff3496deb773f7cdf377">sqsh_new</a> (const void *source, const struct <a class="el" href="structSqshConfig.html">SqshConfig</a> *config, int *err)</td></tr>
+<tr class="memdesc:a983ce0fb8924ff3496deb773f7cdf377"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_new initializes a sqsh context in heap.  <a href="sqsh_8h.html#a983ce0fb8924ff3496deb773f7cdf377">More...</a><br /></td></tr>
+<tr class="separator:a983ce0fb8924ff3496deb773f7cdf377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Enno Boland (<a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'ebo'+'la'+'nd.'+'de'; return false;">mail@<span class="obfuscator">.nosp@m.</span>ebol<span class="obfuscator">.nosp@m.</span>and.d<span class="obfuscator">.nosp@m.</span>e</a>) </dd></dl>
@@ -155,6 +162,52 @@ Enumerations</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00053">53</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a983ce0fb8924ff3496deb773f7cdf377" name="a983ce0fb8924ff3496deb773f7cdf377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a983ce0fb8924ff3496deb773f7cdf377">&#9670;&nbsp;</a></span>sqsh_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqsh.html">Sqsh</a> * sqsh_new </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structSqshConfig.html">SqshConfig</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>err</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sqsh_new initializes a sqsh context in heap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the source to retrieve the archive from </td></tr>
+    <tr><td class="paramname">config</td><td>the configuration for the sqsh context. </td></tr>
+    <tr><td class="paramname">err</td><td>the error pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the sqsh context or NULL if an error occurred. </dd></dl>
 
 </div>
 </div>

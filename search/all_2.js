@@ -14,7 +14,7 @@ var searchData=
   ['config_11',['config',['../structSqsh.html#a5ea3dbc6c49579b7f4fd940007860862',1,'Sqsh']]],
   ['context_12',['context',['../structSqshXattrIterator.html#a7a99b2e18427c156d8925829d22decdb',1,'SqshXattrIterator']]],
   ['curl_5fmapper_2eh_13',['curl_mapper.h',['../curl__mapper_8h.html',1,'']]],
-  ['current_5faddress_14',['current_address',['../structSqshMetablockStreamContext.html#a45ff0feb05ef91210d17a615062ad4e6',1,'SqshMetablockStreamContext::current_address()'],['../structSqshMetablockIterator.html#a9c3ac4f6f3123e8e335799f1283ad9ef',1,'SqshMetablockIterator::current_address()']]],
+  ['current_5faddress_14',['current_address',['../structSqshMetablockStreamContext.html#a45ff0feb05ef91210d17a615062ad4e6',1,'SqshMetablockStreamContext']]],
   ['current_5ffragment_5foffset_15',['current_fragment_offset',['../structSqshDirectoryIterator.html#a6bd9d6eda79951c6f8221ce023106384',1,'SqshDirectoryIterator']]],
-  ['current_5foffset_16',['current_offset',['../structSqshInodeDirectoryIndexIterator.html#a9b72c38b4643f3c0e8d75aa01b34cacc',1,'SqshInodeDirectoryIndexIterator::current_offset()'],['../structSqshDirectoryIterator.html#af4883a5b89e8c0ee4de8294f0c6bee81',1,'SqshDirectoryIterator::current_offset()'],['../structSqshMetablockIterator.html#ad290f22a66c478c70f4fad7567276883',1,'SqshMetablockIterator::current_offset()']]]
+  ['current_5foffset_16',['current_offset',['../structSqshInodeDirectoryIndexIterator.html#a9b72c38b4643f3c0e8d75aa01b34cacc',1,'SqshInodeDirectoryIndexIterator::current_offset()'],['../structSqshDirectoryIterator.html#af4883a5b89e8c0ee4de8294f0c6bee81',1,'SqshDirectoryIterator::current_offset()']]]
 ];

@@ -1,10 +1,9 @@
 <map id="mapper.h" name="mapper.h">
-<area shape="rect" id="node1" title=" " alt="" coords="114,5,217,32"/>
-<area shape="rect" id="node2" href="$metablock__context_8h.html" title=" " alt="" coords="301,80,513,107"/>
-<area shape="rect" id="node4" href="$sqsh_8h.html" title=" " alt="" coords="334,229,416,256"/>
-<area shape="rect" id="node5" href="$metablock__iterator_8h.html" title=" " alt="" coords="54,80,277,107"/>
-<area shape="rect" id="node6" href="$superblock__context_8h.html" title=" " alt="" coords="36,155,258,181"/>
-<area shape="rect" id="node7" href="$table_8h.html" title=" " alt="" coords="537,80,629,107"/>
-<area shape="rect" id="node3" href="$xattr__table_8h.html" title=" " alt="" coords="299,155,451,181"/>
-<area shape="rect" id="node8" href="$fragment__table_8h.html" title=" " alt="" coords="476,155,658,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="174,5,277,32"/>
+<area shape="rect" id="node2" href="$metablock__context_8h.html" title=" " alt="" coords="226,80,438,107"/>
+<area shape="rect" id="node4" href="$sqsh_8h.html" title=" " alt="" coords="313,229,396,256"/>
+<area shape="rect" id="node5" href="$superblock__context_8h.html" title=" " alt="" coords="31,155,254,181"/>
+<area shape="rect" id="node6" href="$table_8h.html" title=" " alt="" coords="487,80,579,107"/>
+<area shape="rect" id="node3" href="$xattr__table_8h.html" title=" " alt="" coords="279,155,431,181"/>
+<area shape="rect" id="node7" href="$fragment__table_8h.html" title=" " alt="" coords="455,155,638,181"/>
 </map>
