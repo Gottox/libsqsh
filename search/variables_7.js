@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['key_5foffset_0',['key_offset',['../structSqshXattrIterator.html#aff3c7e155c36bc55cab3e2301c48e209',1,'SqshXattrIterator']]]
+  ['gid_5fidx_0',['gid_idx',['../structSqshInodeHeader.html#af420ea305724c297e6c87ab58543d65b',1,'SqshInodeHeader']]],
+  ['gzip_1',['gzip',['../unionSqshCompressionOptions.html#a2341f5d6faf1a2f9ece575f281c18db4',1,'SqshCompressionOptions']]]
 ];

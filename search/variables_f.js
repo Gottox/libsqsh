@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['table_0',['table',['../structSqshFragmentTable.html#a5cc9bb6bf94981ddffcd352138f0f467',1,'SqshFragmentTable::table()'],['../structSqshXattrTable.html#aa641e2b051360cc0c687d911dc4e51ff',1,'SqshXattrTable::table()']]],
-  ['table_5fmap_1',['table_map',['../structSqsh.html#aac841f65021da3646d46b9041a96fcaf',1,'Sqsh']]],
-  ['table_5fmapper_2',['table_mapper',['../structSqsh.html#aac70beb393635f17c87c5a4c012f6c01',1,'Sqsh']]],
-  ['total_5fsize_3',['total_size',['../structSqshCurlMap.html#a27847d4a6123e26887fb9be3635cee2f',1,'SqshCurlMap']]]
+  ['page_5foffset_0',['page_offset',['../structSqshMmapMap.html#aff0120b7792a4431f966d7b5d25548b9',1,'SqshMmapMap']]],
+  ['page_5fsize_1',['page_size',['../structSqshMmapMapper.html#a9c87b463b737e454fd40771573fb9f44',1,'SqshMmapMapper']]],
+  ['parent_5finode_5fnumber_2',['parent_inode_number',['../structSqshInodeDirectory.html#a4078be889b470bf77b270d5bb024e920',1,'SqshInodeDirectory::parent_inode_number()'],['../structSqshInodeDirectoryExt.html#ab466d9add01ab3ebaad5f13f864e2427',1,'SqshInodeDirectoryExt::parent_inode_number()']]],
+  ['permissions_3',['permissions',['../structSqshInodeHeader.html#ab0c5427706132d17cd2aac432db67e1d',1,'SqshInodeHeader']]]
 ];

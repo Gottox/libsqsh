@@ -1,12 +1,18 @@
 var searchData=
 [
-  ['map_5fdata_0',['map_data',['../structSqshMemoryMapperImpl.html#af8e43b0011639b7c30ee4a4615816d3f',1,'SqshMemoryMapperImpl']]],
-  ['map_5fresize_1',['map_resize',['../structSqshMemoryMapperImpl.html#a43567fec8ef4b7d5702d39d6a0ef4aaa',1,'SqshMemoryMapperImpl']]],
-  ['map_5fsize_2',['map_size',['../structSqshMemoryMapperImpl.html#a540dbe581b79b22f92e2dbdcd06af322',1,'SqshMemoryMapperImpl']]],
-  ['mapper_3',['mapper',['../structSqshFileContext.html#a03fc6ff7f2cb35955ed0d15d601d5883',1,'SqshFileContext::mapper()'],['../structSqshMapping.html#ab37c2b01a05a226edc0a8f97d3d3698d',1,'SqshMapping::mapper()'],['../structSqsh.html#a5d992992922511b9b1693716c34b72f0',1,'Sqsh::mapper()'],['../structSqshFragmentTable.html#a9f5bc0b3dacfb48eb12c0fb4d27748a5',1,'SqshFragmentTable::mapper()'],['../structSqshTable.html#aa4b4aad7a80d9d7ba0145b76a0c832bc',1,'SqshTable::mapper()']]],
-  ['mapping_4',['mapping',['../structSqshTrailingContext.html#a000a73c4774e0dfa9eb7a65083dbdb1b',1,'SqshTrailingContext::mapping()'],['../structSqshMemoryMapperImpl.html#a65501bcedcfcc128c989651fbd5512ea',1,'SqshMemoryMapperImpl::mapping()'],['../structSqshSuperblockContext.html#aedd82435976a8a4a6cf6cb60cae94e02',1,'SqshSuperblockContext::mapping()'],['../structSqshMetablockContext.html#aab065393a0c3c6a9b3d7b8887d1ff419',1,'SqshMetablockContext::mapping()']]],
-  ['mc_5',['mc',['../structSqshMapping.html#a3863b970c20a40223ed314146095a74b',1,'SqshMapping::mc()'],['../structSqshMapper.html#a3bce0a2eaac89b60bb93d7f1ce9f29a4',1,'SqshMapper::mc()']]],
-  ['metablock_6',['metablock',['../structSqshInodeContext.html#a2caa876fa4cd0fc62c7cbc25eb2ec47e',1,'SqshInodeContext::metablock()'],['../structSqshDirectoryIterator.html#a4b3242b17c041cf8d9148ad2b161ce83',1,'SqshDirectoryIterator::metablock()'],['../structSqshXattrIterator.html#a5fc94839872b5348107432c07bfb4603',1,'SqshXattrIterator::metablock()']]],
-  ['metablock_5fcompression_7',['metablock_compression',['../structSqsh.html#aaff53319e64eb16a7b37b95ecb099d7c',1,'Sqsh']]],
-  ['mm_8',['mm',['../structSqshMapping.html#a39ea3f818049f5ddc3174267565a5e05',1,'SqshMapping::mm()'],['../structSqshMapper.html#a91d4926dbadb95703b7e297614611b1e',1,'SqshMapper::mm()']]]
+  ['id_5fcount_0',['id_count',['../structSqshSuperblock.html#a0e78dd5aa69dc24458a5fe3345715378',1,'SqshSuperblock']]],
+  ['id_5ftable_1',['id_table',['../structSqsh.html#a81ce967514937685b2aec2dfd622651d',1,'Sqsh']]],
+  ['id_5ftable_5fstart_2',['id_table_start',['../structSqshSuperblock.html#a09a956897c622d10d56e6de0d573059c',1,'SqshSuperblock']]],
+  ['impl_3',['impl',['../structSqshCompression.html#af02d7a6d9ee6fa2edd6a8a2059e49a7a',1,'SqshCompression::impl()'],['../structSqshMapper.html#a9fcefb521d85cc596e240f99599392ca',1,'SqshMapper::impl()']]],
+  ['index_4',['index',['../structSqshInodeDirectoryIndex.html#a2a66e2e8b5072bd270c1dd5e09d21d93',1,'SqshInodeDirectoryIndex']]],
+  ['index_5fcount_5',['index_count',['../structSqshInodeDirectoryExt.html#aa3e197e06dfb79271003fc048113c2c8',1,'SqshInodeDirectoryExt']]],
+  ['init_6',['init',['../structSqshMemoryMapperImpl.html#a299a6cd6962e52bfc0972f3ffe3b00e6',1,'SqshMemoryMapperImpl']]],
+  ['initialized_7',['initialized',['../structSqsh.html#af59fbe1713512d659d11c35630c73dac',1,'Sqsh']]],
+  ['inode_8',['inode',['../structSqshFileContext.html#a31e65206b07522cfa72eb65821939952',1,'SqshFileContext::inode()'],['../structSqshDirectoryIterator.html#a261017bb959c247f6ce6fa8533c785e5',1,'SqshDirectoryIterator::inode()'],['../structSqshInodeDirectoryIndexIterator.html#abe220a211b2197e91bce51d6df32d945',1,'SqshInodeDirectoryIndexIterator::inode()']]],
+  ['inode_5fcount_9',['inode_count',['../structSqshSuperblock.html#af57eea4c8dd480efdc06b5523c7f7881',1,'SqshSuperblock']]],
+  ['inode_5fnumber_10',['inode_number',['../structSqshDirectoryFragment.html#a793fbace9f2e8d598ae046abe1629c10',1,'SqshDirectoryFragment::inode_number()'],['../structSqshInodeHeader.html#ad9c4a286454398e04ce37fc152713ba3',1,'SqshInodeHeader::inode_number()']]],
+  ['inode_5foffset_11',['inode_offset',['../structSqshDirectoryEntry.html#a4c3ad62fa53e1b8df9c33ea68c27de30',1,'SqshDirectoryEntry']]],
+  ['inode_5ftable_5fstart_12',['inode_table_start',['../structSqshSuperblock.html#a7393476827f199c151560bf876a9a18c',1,'SqshSuperblock']]],
+  ['ipc_13',['ipc',['../structSqshInode.html#a460f22cf3404d3fb85a1069af376b294',1,'SqshInode']]],
+  ['ipc_5fext_14',['ipc_ext',['../structSqshInode.html#a89183f8518d66451bb300afaf265f881',1,'SqshInode']]]
 ];

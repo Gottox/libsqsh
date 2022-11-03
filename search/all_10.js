@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['table_0',['table',['../structSqshFragmentTable.html#a5cc9bb6bf94981ddffcd352138f0f467',1,'SqshFragmentTable::table()'],['../structSqshXattrTable.html#aa641e2b051360cc0c687d911dc4e51ff',1,'SqshXattrTable::table()']]],
-  ['table_2eh_1',['table.h',['../table_8h.html',1,'']]],
-  ['table_5fmap_2',['table_map',['../structSqsh.html#aac841f65021da3646d46b9041a96fcaf',1,'Sqsh']]],
-  ['table_5fmapper_3',['table_mapper',['../structSqsh.html#aac70beb393635f17c87c5a4c012f6c01',1,'Sqsh']]],
-  ['total_5fsize_4',['total_size',['../structSqshCurlMap.html#a27847d4a6123e26887fb9be3635cee2f',1,'SqshCurlMap']]],
-  ['trailing_5fcontext_2eh_5',['trailing_context.h',['../trailing__context_8h.html',1,'']]]
+  ['references_0',['references',['../structSqshRefCount.html#a81e301c120984afa230b534b847d9f68',1,'SqshRefCount']]],
+  ['remaining_5fentries_1',['remaining_entries',['../structSqshInodeDirectoryIndexIterator.html#ae0406483c95a6c26978316f701f2f42e',1,'SqshInodeDirectoryIndexIterator::remaining_entries()'],['../structSqshDirectoryIterator.html#a5b88d9cac5d92784e0efae595a05486d',1,'SqshDirectoryIterator::remaining_entries()'],['../structSqshXattrIterator.html#a0ea2794935963717970b800bf00d00ab',1,'SqshXattrIterator::remaining_entries()']]],
+  ['root_5finode_5fref_2',['root_inode_ref',['../structSqshSuperblock.html#a18123aaa63a3602e9f92fac7115a57fe',1,'SqshSuperblock']]]
 ];

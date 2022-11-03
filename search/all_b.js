@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['next_5foffset_0',['next_offset',['../structSqshInodeDirectoryIndexIterator.html#a0bbf4f0d8e7082e2fa64f724892c06b5',1,'SqshInodeDirectoryIndexIterator::next_offset()'],['../structSqshDirectoryIterator.html#aad56a8b54b789f398e503c6188d96ac6',1,'SqshDirectoryIterator::next_offset()'],['../structSqshXattrIterator.html#a6eafe795b9c8ded7f6689d296af4c970',1,'SqshXattrIterator::next_offset()']]]
+  ['lookup_5ftable_0',['lookup_table',['../structSqshTable.html#ae175356de22f028e934149b778bcc071',1,'SqshTable']]],
+  ['lz4_1',['lz4',['../unionSqshCompressionOptions.html#a12d1b2eac3ac4fa20c4f739f501df60f',1,'SqshCompressionOptions']]],
+  ['lzo_2',['lzo',['../unionSqshCompressionOptions.html#a4a89e7a3f5d85c8b235e542e96f8b511',1,'SqshCompressionOptions']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['offset_0',['offset',['../structSqshCanaryMap.html#a247999508e6a3039171f71256ea8f887',1,'SqshCanaryMap::offset()'],['../structSqshCurlMap.html#ac989760a704e36c293cd94fefd5cbbc5',1,'SqshCurlMap::offset()'],['../structSqshMmapMap.html#ae8c6e78dd696421a8aa44c4f69a2723b',1,'SqshMmapMap::offset()']]],
-  ['out_5fof_5fline_5fvalue_1',['out_of_line_value',['../structSqshXattrIterator.html#ad655c9bf2144ba3fec2748061d6740d8',1,'SqshXattrIterator']]]
+  ['lookup_5ftable_0',['lookup_table',['../structSqshTable.html#ae175356de22f028e934149b778bcc071',1,'SqshTable']]],
+  ['lz4_1',['lz4',['../unionSqshCompressionOptions.html#a12d1b2eac3ac4fa20c4f739f501df60f',1,'SqshCompressionOptions']]],
+  ['lzo_2',['lzo',['../unionSqshCompressionOptions.html#a4a89e7a3f5d85c8b235e542e96f8b511',1,'SqshCompressionOptions']]]
 ];

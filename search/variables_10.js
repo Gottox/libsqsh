@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['unmap_0',['unmap',['../structSqshMemoryMapperImpl.html#ae424ccbf8960cc06244f85311a5c2136',1,'SqshMemoryMapperImpl']]],
-  ['url_1',['url',['../structSqshCurlMapper.html#a0497bbcf37cf6b204f3ef9a75b583a41',1,'SqshCurlMapper']]]
+  ['references_0',['references',['../structSqshRefCount.html#a81e301c120984afa230b534b847d9f68',1,'SqshRefCount']]],
+  ['remaining_5fentries_1',['remaining_entries',['../structSqshInodeDirectoryIndexIterator.html#ae0406483c95a6c26978316f701f2f42e',1,'SqshInodeDirectoryIndexIterator::remaining_entries()'],['../structSqshDirectoryIterator.html#a5b88d9cac5d92784e0efae595a05486d',1,'SqshDirectoryIterator::remaining_entries()'],['../structSqshXattrIterator.html#a0ea2794935963717970b800bf00d00ab',1,'SqshXattrIterator::remaining_entries()']]],
+  ['root_5finode_5fref_2',['root_inode_ref',['../structSqshSuperblock.html#a18123aaa63a3602e9f92fac7115a57fe',1,'SqshSuperblock']]]
 ];

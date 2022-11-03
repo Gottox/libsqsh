@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;a50683f</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;e6a438a</span>
    </div>
   </td>
  </tr>
@@ -72,20 +72,20 @@ $(function() {
 <p>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> struct is a buffer for arbitrary data.  
  <a href="structSqshBuffer.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="buffer_8h_source.html">buffer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8ece8454ad9f2f39be71d7a202ff78ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#a8ece8454ad9f2f39be71d7a202ff78ef">sqsh_buffer_init</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer)</td></tr>
+<tr class="memitem:a8ece8454ad9f2f39be71d7a202ff78ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#a8ece8454ad9f2f39be71d7a202ff78ef">sqsh_buffer_init</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer)</td></tr>
 <tr class="memdesc:a8ece8454ad9f2f39be71d7a202ff78ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_buffer_init initializes a <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a>.  <a href="structSqshBuffer.html#a8ece8454ad9f2f39be71d7a202ff78ef">More...</a><br /></td></tr>
 <tr class="separator:a8ece8454ad9f2f39be71d7a202ff78ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4103256f78f70b65855a6ad91488072"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#ae4103256f78f70b65855a6ad91488072">sqsh_buffer_add_size</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer, size_t additional_size)</td></tr>
+<tr class="memitem:ae4103256f78f70b65855a6ad91488072"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#ae4103256f78f70b65855a6ad91488072">sqsh_buffer_add_size</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer, size_t additional_size)</td></tr>
 <tr class="memdesc:ae4103256f78f70b65855a6ad91488072"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_buffer_add_size tells <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to increase the buffer by additional_size  <a href="structSqshBuffer.html#ae4103256f78f70b65855a6ad91488072">More...</a><br /></td></tr>
 <tr class="separator:ae4103256f78f70b65855a6ad91488072"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47a8e0cac338d42cd47d654b8c525c59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#a47a8e0cac338d42cd47d654b8c525c59">sqsh_buffer_add_capacity</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer, uint8_t **additional_buffer, size_t additional_size)</td></tr>
+<tr class="memitem:a47a8e0cac338d42cd47d654b8c525c59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#a47a8e0cac338d42cd47d654b8c525c59">sqsh_buffer_add_capacity</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer, uint8_t **additional_buffer, size_t additional_size)</td></tr>
 <tr class="memdesc:a47a8e0cac338d42cd47d654b8c525c59"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_buffer_add_size allocates additional memory for the <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> and sets additional_buffer to the beginning of the additional memory.  <a href="structSqshBuffer.html#a47a8e0cac338d42cd47d654b8c525c59">More...</a><br /></td></tr>
 <tr class="separator:a47a8e0cac338d42cd47d654b8c525c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca35061c9d606761b1881efd8d38c135"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#aca35061c9d606761b1881efd8d38c135">sqsh_buffer_append</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer, const uint8_t *source, const size_t source_size)</td></tr>
+<tr class="memitem:aca35061c9d606761b1881efd8d38c135"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#aca35061c9d606761b1881efd8d38c135">sqsh_buffer_append</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer, const uint8_t *source, const size_t source_size)</td></tr>
 <tr class="memdesc:aca35061c9d606761b1881efd8d38c135"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_buffer_append  <a href="structSqshBuffer.html#aca35061c9d606761b1881efd8d38c135">More...</a><br /></td></tr>
 <tr class="separator:aca35061c9d606761b1881efd8d38c135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d442f02ca5245ed58600fd665ff6cc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshBuffer.html#a6d442f02ca5245ed58600fd665ff6cc9">sqsh_buffer_drain</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer)</td></tr>
@@ -114,7 +114,7 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p >The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> struct is a buffer for arbitrary data. </p>
 <p >The buffer takes care about resizing and freeing the memory managed by The buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="buffer_8h_source.html#l00050">50</a> of file <a class="el" href="buffer_8h_source.html">buffer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00050">50</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a47a8e0cac338d42cd47d654b8c525c59" name="a47a8e0cac338d42cd47d654b8c525c59"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47a8e0cac338d42cd47d654b8c525c59">&#9670;&nbsp;</a></span>sqsh_buffer_add_capacity()</h2>
@@ -123,7 +123,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_buffer_add_capacity </td>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_buffer_add_capacity </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -167,7 +167,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_buffer_add_size </td>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_buffer_add_size </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -205,7 +205,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_buffer_append </td>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_buffer_append </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -329,7 +329,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_buffer_init </td>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_buffer_init </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
@@ -388,7 +388,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="buffer_8h_source.html#l00053">53</a> of file <a class="el" href="buffer_8h_source.html">buffer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00053">53</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
 
 </div>
 </div>
@@ -404,7 +404,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="buffer_8h_source.html#l00051">51</a> of file <a class="el" href="buffer_8h_source.html">buffer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00051">51</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
 
 </div>
 </div>
@@ -420,12 +420,12 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="buffer_8h_source.html#l00052">52</a> of file <a class="el" href="buffer_8h_source.html">buffer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00052">52</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="buffer_8h_source.html">buffer.h</a></li>
+<li><a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

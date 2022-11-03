@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ref_5fcount_2eh_0',['ref_count.h',['../ref__count_8h.html',1,'']]],
-  ['references_1',['references',['../structSqshRefCount.html#a81e301c120984afa230b534b847d9f68',1,'SqshRefCount']]],
-  ['remaining_5fentries_2',['remaining_entries',['../structSqshInodeDirectoryIndexIterator.html#ae0406483c95a6c26978316f701f2f42e',1,'SqshInodeDirectoryIndexIterator::remaining_entries()'],['../structSqshDirectoryIterator.html#a5b88d9cac5d92784e0efae595a05486d',1,'SqshDirectoryIterator::remaining_entries()'],['../structSqshXattrIterator.html#a0ea2794935963717970b800bf00d00ab',1,'SqshXattrIterator::remaining_entries()']]]
+  ['offset_0',['offset',['../structSqshDirectoryEntry.html#a13663bebfa183e385f039fc47ba80922',1,'SqshDirectoryEntry::offset()'],['../structSqshCanaryMap.html#a247999508e6a3039171f71256ea8f887',1,'SqshCanaryMap::offset()'],['../structSqshCurlMap.html#ac989760a704e36c293cd94fefd5cbbc5',1,'SqshCurlMap::offset()'],['../structSqshMmapMap.html#ae8c6e78dd696421a8aa44c4f69a2723b',1,'SqshMmapMap::offset()']]],
+  ['out_5fof_5fline_5fvalue_1',['out_of_line_value',['../structSqshXattrIterator.html#ad655c9bf2144ba3fec2748061d6740d8',1,'SqshXattrIterator']]]
 ];
