@@ -134,6 +134,7 @@ var menudata={children:[
 {text:"data_x",url:"globals_d.html#index_d"},
 {text:"direct",url:"globals_d.html#index_d"},
 {text:"error_",url:"globals_e.html#index_e"},
+{text:"extrac",url:"globals_e.html#index_e"},
 {text:"fragme",url:"globals_f.html#index_f"},
 {text:"index_",url:"globals_i.html#index_i"},
 {text:"inode_",url:"globals_i.html#index_i"},

@@ -6,6 +6,5 @@ var searchData=
   ['expected_5fsize_3',['expected_size',['../structSqshCurlMapper.html#aae9ef0f86ac174f0d50ab1f2b4e195c3',1,'SqshCurlMapper']]],
   ['expected_5ftime_4',['expected_time',['../structSqshCurlMapper.html#a5a4772d9f284fa9156221fafcdf321f9',1,'SqshCurlMapper']]],
   ['export_5ftable_5',['export_table',['../structSqsh.html#ac842982c816a46a3481475d103ec3ef7',1,'Sqsh']]],
-  ['export_5ftable_5fstart_6',['export_table_start',['../structSqshSuperblock.html#ad9eaba4cc11fe3d05a94e0d330c3e8b2',1,'SqshSuperblock']]],
-  ['extract_7',['extract',['../structSqshCompressionImplementation.html#a1b935ddeffda3d4fd9f8d798ba04e077',1,'SqshCompressionImplementation']]]
+  ['export_5ftable_5fstart_6',['export_table_start',['../structSqshSuperblock.html#ad9eaba4cc11fe3d05a94e0d330c3e8b2',1,'SqshSuperblock']]]
 ];

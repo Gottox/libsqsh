@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;e6a438a</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;63bd82a</span>
    </div>
   </td>
  </tr>
@@ -68,6 +68,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">sqsh_compression.h File Reference</div></div>
 </div><!--header-->
@@ -91,10 +92,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshCompressionImplementation.html">SqshCompressionImplementation</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshCompression.html">SqshCompression</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a78f33ef2dbd037a5a40256f615ebff6d"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__compression_8h.html#a78f33ef2dbd037a5a40256f615ebff6d">sqsh_extract_func_t</a>) (uint8_t *target, size_t *target_size, const uint8_t *compressed, const size_t compressed_size)</td></tr>
+<tr class="separator:a78f33ef2dbd037a5a40256f615ebff6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -109,7 +113,24 @@ Functions</h2></td></tr>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Enno Boland (<a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'ebo'+'la'+'nd.'+'de'; return false;">mail@<span class="obfuscator">.nosp@m.</span>ebol<span class="obfuscator">.nosp@m.</span>and.d<span class="obfuscator">.nosp@m.</span>e</a>) </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="sqsh__compression_8h_source.html">sqsh_compression.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a78f33ef2dbd037a5a40256f615ebff6d" name="a78f33ef2dbd037a5a40256f615ebff6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f33ef2dbd037a5a40256f615ebff6d">&#9670;&nbsp;</a></span>sqsh_extract_func_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* sqsh_extract_func_t) (uint8_t *target, size_t *target_size, const uint8_t *compressed, const size_t compressed_size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sqsh__compression_8h_source.html#l00045">45</a> of file <a class="el" href="sqsh__compression_8h_source.html">sqsh_compression.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="aa4a5eaa48cb65705c89a20b3c26f74c1" name="aa4a5eaa48cb65705c89a20b3c26f74c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4a5eaa48cb65705c89a20b3c26f74c1">&#9670;&nbsp;</a></span>sqsh_compression_cleanup()</h2>
 

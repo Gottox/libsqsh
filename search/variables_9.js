@@ -3,7 +3,7 @@ var searchData=
   ['id_5fcount_0',['id_count',['../structSqshSuperblock.html#a0e78dd5aa69dc24458a5fe3345715378',1,'SqshSuperblock']]],
   ['id_5ftable_1',['id_table',['../structSqsh.html#a81ce967514937685b2aec2dfd622651d',1,'Sqsh']]],
   ['id_5ftable_5fstart_2',['id_table_start',['../structSqshSuperblock.html#a09a956897c622d10d56e6de0d573059c',1,'SqshSuperblock']]],
-  ['impl_3',['impl',['../structSqshCompression.html#af02d7a6d9ee6fa2edd6a8a2059e49a7a',1,'SqshCompression::impl()'],['../structSqshMapper.html#a9fcefb521d85cc596e240f99599392ca',1,'SqshMapper::impl()']]],
+  ['impl_3',['impl',['../structSqshCompression.html#a7eea661fcc85b1e8c5117bc951bc69f4',1,'SqshCompression::impl()'],['../structSqshMapper.html#a9fcefb521d85cc596e240f99599392ca',1,'SqshMapper::impl()']]],
   ['index_4',['index',['../structSqshInodeDirectoryIndex.html#a2a66e2e8b5072bd270c1dd5e09d21d93',1,'SqshInodeDirectoryIndex']]],
   ['index_5fcount_5',['index_count',['../structSqshInodeDirectoryExt.html#aa3e197e06dfb79271003fc048113c2c8',1,'SqshInodeDirectoryExt']]],
   ['init_6',['init',['../structSqshMemoryMapperImpl.html#a299a6cd6962e52bfc0972f3ffe3b00e6',1,'SqshMemoryMapperImpl']]],
