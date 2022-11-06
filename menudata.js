@@ -123,8 +123,7 @@ var menudata={children:[
 {text:"File List",url:"files.html"},
 {text:"Globals",url:"globals.html",children:[
 {text:"All",url:"globals.html",children:[
-{text:"a",url:"globals.html#index_a"},
-{text:"compre",url:"globals_c.html#index_c"},
+{text:"compre",url:"globals.html#index_c"},
 {text:"data_c",url:"globals_d.html#index_d"},
 {text:"data_d",url:"globals_d.html#index_d"},
 {text:"data_f",url:"globals_d.html#index_d"},
@@ -138,7 +137,6 @@ var menudata={children:[
 {text:"fragme",url:"globals_f.html#index_f"},
 {text:"index_",url:"globals_i.html#index_i"},
 {text:"inode_",url:"globals_i.html#index_i"},
-{text:"m",url:"globals_m.html#index_m"},
 {text:"mapper",url:"globals_m.html#index_m"},
 {text:"mappin",url:"globals_m.html#index_m"},
 {text:"memdup",url:"globals_m.html#index_m"},
@@ -182,6 +180,4 @@ var menudata={children:[
 {text:"Enumerator",url:"globals_eval.html",children:[
 {text:"s",url:"globals_eval.html#index_s"}]},
 {text:"Macros",url:"globals_defs.html",children:[
-{text:"a",url:"globals_defs.html#index_a"},
-{text:"m",url:"globals_defs.html#index_m"},
 {text:"s",url:"globals_defs.html#index_s"}]}]}]}]}

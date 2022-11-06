@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;63bd82a</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;b106e08</span>
    </div>
   </td>
  </tr>
@@ -105,29 +105,30 @@ $(function() {
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">   42</a></span><span class="preprocessor">#define MIN(a, b) (a &lt; b ? a : b)</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">   43</a></span><span class="preprocessor">#define MAX(a, b) (a &gt; b ? a : b)</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a285b33e245794f642682c2f78c268f5a">   42</a></span><span class="preprocessor">#define SQSH_MIN(a, b) (a &lt; b ? a : b)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a02a161308a44bdc6b677cbcb0f3fa65f">   43</a></span><span class="preprocessor">#define SQSH_MAX(a, b) (a &gt; b ? a : b)</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a7ea40b49b1f9cf625d773d7203ad6386">   45</a></span><span class="preprocessor">#define ADD_OVERFLOW(a, b, res) __builtin_add_overflow(a, b, res)</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a8b2836c8ffe90db3f7fbf1ec5a0ff9d4">   46</a></span><span class="preprocessor">#define SUB_OVERFLOW(a, b, res) __builtin_sub_overflow(a, b, res)</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a9555e06842350d0685e8c87822f442a2">   47</a></span><span class="preprocessor">#define MULT_OVERFLOW(a, b, res) __builtin_mul_overflow(a, b, res)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a318f18b16f2e37150705b487ebc3f9c6">   45</a></span><span class="preprocessor">#define SQSH_ADD_OVERFLOW(a, b, res) __builtin_add_overflow(a, b, res)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#aa898d042943df7b65644eabbfb966aea">   46</a></span><span class="preprocessor">#define SQSH_SUB_OVERFLOW(a, b, res) __builtin_sub_overflow(a, b, res)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a8e7edb6d8506d4d7b93daa8af1158461">   47</a></span><span class="preprocessor">#define SQSH_MULT_OVERFLOW(a, b, res) __builtin_mul_overflow(a, b, res)</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">   49</a></span><span class="preprocessor">#define SQSH_NO_UNUSED __attribute__((warn_unused_result))</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a05922134c9a05aa1376933297fd19008">   50</a></span><span class="preprocessor">#define SQSH_UNALIGNED __attribute__((packed, aligned(1)))</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a546855aaf69218038a2f19c115eab7db">   52</a></span><span class="preprocessor">#define STATIC_ASSERT(cond) _Static_assert(cond, #cond)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a96bca9830dec61f8e46035703eca08da">   52</a></span><span class="preprocessor">#define SQSH_STATIC_ASSERT(cond) _Static_assert(cond, #cond)</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#ab002c1c69d78e40f0d4724a5da3de79c">   54</a></span><span class="preprocessor">#define SQSH_DEVIDE_CEIL(x, y) (((x - 1) / y) + 1)</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#ada935e5d61e1f5a4156b568caeb75e2e">   56</a></span><span class="preprocessor">#define SQSH_PADDING(x, p) SQSH_DEVIDE_CEIL(x, p) * p</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">   58</a></span><span class="keyword">typedef</span> <span class="keywordtype">size_t</span> <a class="code hl_typedef" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#afbed2811db46e4ab6ffa693900515b9e">   60</a></span><a class="code hl_define" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> <span class="keywordtype">void</span> *<a class="code hl_function" href="sqsh__common_8h.html#afbed2811db46e4ab6ffa693900515b9e">sqsh_memdup</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *source, <span class="keywordtype">size_t</span> size);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard SQSH_COMMON_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// Does not work for x == 0</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#ab002c1c69d78e40f0d4724a5da3de79c">   55</a></span><span class="preprocessor">#define SQSH_DEVIDE_CEIL(x, y) (((x - 1) / y) + 1)</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#ada935e5d61e1f5a4156b568caeb75e2e">   57</a></span><span class="preprocessor">#define SQSH_PADDING(x, p) SQSH_DEVIDE_CEIL(x, p) * p</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">   59</a></span><span class="keyword">typedef</span> <span class="keywordtype">size_t</span> <a class="code hl_typedef" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#afbed2811db46e4ab6ffa693900515b9e">   61</a></span><a class="code hl_define" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> <span class="keywordtype">void</span> *<a class="code hl_function" href="sqsh__common_8h.html#afbed2811db46e4ab6ffa693900515b9e">sqsh_memdup</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *source, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard SQSH_COMMON_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="asqsh__common_8h_html_a0f0a35d1ed84a34ad06a006e5e90da94"><div class="ttname"><a href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a></div><div class="ttdeci">#define SQSH_NO_UNUSED</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__common_8h_source.html#l00049">sqsh_common.h:49</a></div></div>
-<div class="ttc" id="asqsh__common_8h_html_a1d493fd70fce488d899c7681d5ff6264"><div class="ttname"><a href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a></div><div class="ttdeci">size_t sqsh_index_t</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__common_8h_source.html#l00058">sqsh_common.h:58</a></div></div>
+<div class="ttc" id="asqsh__common_8h_html_a1d493fd70fce488d899c7681d5ff6264"><div class="ttname"><a href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a></div><div class="ttdeci">size_t sqsh_index_t</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__common_8h_source.html#l00059">sqsh_common.h:59</a></div></div>
 <div class="ttc" id="asqsh__common_8h_html_afbed2811db46e4ab6ffa693900515b9e"><div class="ttname"><a href="sqsh__common_8h.html#afbed2811db46e4ab6ffa693900515b9e">sqsh_memdup</a></div><div class="ttdeci">SQSH_NO_UNUSED void * sqsh_memdup(const void *source, size_t size)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
