@@ -1,11 +1,11 @@
 <map id="sqsh_iterator.h" name="sqsh_iterator.h">
-<area shape="rect" id="node1" title=" " alt="" coords="179,5,351,32"/>
-<area shape="rect" id="node2" href="$sqsh__context_8h.html" title=" " alt="" coords="184,80,347,107"/>
-<area shape="rect" id="node3" href="$sqsh__mapper_8h.html" title=" " alt="" coords="255,155,407,181"/>
-<area shape="rect" id="node4" href="$sqsh__primitive_8h.html" title=" " alt="" coords="110,229,293,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="185,379,287,405"/>
-<area shape="rect" id="node7" title=" " alt="" coords="321,379,423,405"/>
-<area shape="rect" id="node9" title=" " alt="" coords="419,229,531,256"/>
-<area shape="rect" id="node5" href="$sqsh__common_8h.html" title=" " alt="" coords="141,304,293,331"/>
-<area shape="rect" id="node8" title=" " alt="" coords="5,304,117,331"/>
+<area shape="rect" id="node1" title=" " alt="" coords="211,5,383,32"/>
+<area shape="rect" id="node2" href="$sqsh__context_8h.html" title=" " alt="" coords="216,80,378,107"/>
+<area shape="rect" id="node3" href="$sqsh__mapper_8h.html" title=" " alt="" coords="278,155,430,181"/>
+<area shape="rect" id="node4" href="$sqsh__primitive_8h.html" title=" " alt="" coords="150,229,332,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="276,379,379,405"/>
+<area shape="rect" id="node7" title=" " alt="" coords="88,379,191,405"/>
+<area shape="rect" id="node8" title=" " alt="" coords="334,304,446,331"/>
+<area shape="rect" id="node5" href="$sqsh__common_8h.html" title=" " alt="" coords="158,304,310,331"/>
+<area shape="rect" id="node9" title=" " alt="" coords="22,304,134,331"/>
 </map>
