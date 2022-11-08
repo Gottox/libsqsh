@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;20b2780</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;b8a9af5</span>
    </div>
   </td>
  </tr>
@@ -109,15 +109,15 @@ $(function() {
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#ifndef SQSH_H</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="sqsh_8h.html#a1ce2a0393885b5c64ad75e87882b992f">   46</a></span><span class="preprocessor">#define SQSH_H</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="sqsh_8h.html#a1ce2a0393885b5c64ad75e87882b992f">   46</a></span><span class="preprocessor">#   define SQSH_H</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="sqsh_8h.html#a6868944bf67de0c9638e180f3052b260">   48</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="sqsh_8h.html#a6868944bf67de0c9638e180f3052b260">SqshSourceType</a> {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="sqsh_8h.html#a6868944bf67de0c9638e180f3052b260a09d69e7f097b38597f591e2fb26ff9e9">   49</a></span>    <a class="code hl_enumvalue" href="sqsh_8h.html#a6868944bf67de0c9638e180f3052b260a09d69e7f097b38597f591e2fb26ff9e9">SQSH_SOURCE_TYPE_PATH</a>,</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="sqsh_8h.html#a6868944bf67de0c9638e180f3052b260ab8338b8faae61a09425590cf06b60e4c">   50</a></span>    <a class="code hl_enumvalue" href="sqsh_8h.html#a6868944bf67de0c9638e180f3052b260ab8338b8faae61a09425590cf06b60e4c">SQSH_SOURCE_TYPE_FD</a>,</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="sqsh_8h.html#a6868944bf67de0c9638e180f3052b260a49fb10265351fbefa378a49a921898a1">   51</a></span>    <a class="code hl_enumvalue" href="sqsh_8h.html#a6868944bf67de0c9638e180f3052b260a49fb10265351fbefa378a49a921898a1">SQSH_SOURCE_TYPE_MEMORY</a>,</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#ifdef CONFIG_CURL</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#   ifdef CONFIG_CURL</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    SQSH_SOURCE_TYPE_CURL,</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#   endif</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structSqshConfig.html">   60</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSqshConfig.html">SqshConfig</a> {</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structSqshConfig.html#afe8c3cea7cc66be9f87d57fdc356ce05">   61</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="sqsh_8h.html#a6868944bf67de0c9638e180f3052b260">SqshSourceType</a> <a class="code hl_variable" href="structSqshConfig.html#afe8c3cea7cc66be9f87d57fdc356ce05">source_type</a>;</div>
