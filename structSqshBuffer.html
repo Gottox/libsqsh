@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;b8a9af5</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;4f5845d</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p >The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> struct is a buffer for arbitrary data. </p>
 <p >The buffer takes care about resizing and freeing the memory managed by The buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00051">51</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00112">112</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a47a8e0cac338d42cd47d654b8c525c59" name="a47a8e0cac338d42cd47d654b8c525c59"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47a8e0cac338d42cd47d654b8c525c59">&#9670;&nbsp;</a></span>sqsh_buffer_add_capacity()</h2>
@@ -149,11 +149,12 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>sqsh_buffer_add_size allocates additional memory for the <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> and sets additional_buffer to the beginning of the additional memory. </p>
+<p >After sqsh_buffer_add_capacity has been called, the buffer will behave undefined if you query data or size. In order to use the buffer again, you need to call sqsh_buffer_add_size again.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to free. </td></tr>
-    <tr><td class="paramname">additional_buffer</td><td>The pointer to the additional memory. </td></tr>
-    <tr><td class="paramname">additional_size</td><td>The size of the additional memory. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to free. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">additional_buffer</td><td>The pointer to the additional memory. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">additional_size</td><td>The size of the additional memory. </td></tr>
   </table>
   </dd>
 </dl>
@@ -190,8 +191,8 @@ Data Fields</h2></td></tr>
 <p >Please be aware, that the buffer needs to be allocated by sqsh_buffer_add_capacity before. Otherwise the function behavior is undefined.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to increase. </td></tr>
-    <tr><td class="paramname">additional_size</td><td>The additional size to increase the buffer. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to increase. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">additional_size</td><td>The additional size to increase the buffer. </td></tr>
   </table>
   </dd>
 </dl>
@@ -233,9 +234,9 @@ Data Fields</h2></td></tr>
 <p>sqsh_buffer_append </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to append to. </td></tr>
-    <tr><td class="paramname">source</td><td>The data to append. </td></tr>
-    <tr><td class="paramname">source_size</td><td>The size of the data to append. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to append to. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>The data to append. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">source_size</td><td>The size of the data to append. </td></tr>
   </table>
   </dd>
 </dl>
@@ -261,7 +262,7 @@ Data Fields</h2></td></tr>
 <p>sqsh_buffer_cleanup frees the memory managed by the <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to cleanup. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to cleanup. </td></tr>
   </table>
   </dd>
 </dl>
@@ -287,7 +288,7 @@ Data Fields</h2></td></tr>
 <p>sqsh_buffer_data returns the data of the <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to get the data from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to get the data from. </td></tr>
   </table>
   </dd>
 </dl>
@@ -315,7 +316,7 @@ Data Fields</h2></td></tr>
 <p >This does not free the memory allocated by the buffer so that the buffer can be reused.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to drain. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to drain. </td></tr>
   </table>
   </dd>
 </dl>
@@ -341,7 +342,7 @@ Data Fields</h2></td></tr>
 <p>sqsh_buffer_init initializes a <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to initialize. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to initialize. </td></tr>
   </table>
   </dd>
 </dl>
@@ -367,7 +368,7 @@ Data Fields</h2></td></tr>
 <p>sqsh_buffer_size returns the size of the <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to get the size from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>The <a class="el" href="structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data.">SqshBuffer</a> to get the size from. </td></tr>
   </table>
   </dd>
 </dl>
@@ -388,7 +389,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00054">54</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00115">115</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
 
 </div>
 </div>
@@ -404,7 +405,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00052">52</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00113">113</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
 
 </div>
 </div>
@@ -420,7 +421,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00053">53</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00114">114</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
 
 </div>
 </div>

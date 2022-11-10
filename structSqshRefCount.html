@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;b8a9af5</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;4f5845d</span>
    </div>
   </td>
  </tr>
@@ -82,9 +82,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3793b9b9cf575cc73cb8bbb90a7b4a16"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshRefCount.html#a3793b9b9cf575cc73cb8bbb90a7b4a16">sqsh_ref_count_retain</a> (struct <a class="el" href="structSqshRefCount.html">SqshRefCount</a> *ref_count)</td></tr>
 <tr class="memdesc:a3793b9b9cf575cc73cb8bbb90a7b4a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the reference count of a <a class="el" href="structSqshRefCount.html" title="A container struct for reference counting objects.">SqshRefCount</a> struct.  <a href="structSqshRefCount.html#a3793b9b9cf575cc73cb8bbb90a7b4a16">More...</a><br /></td></tr>
 <tr class="separator:a3793b9b9cf575cc73cb8bbb90a7b4a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a543da185b281bc718b4b1316a01a6625"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshRefCount.html#a543da185b281bc718b4b1316a01a6625">sqsh_ref_count_release</a> (struct <a class="el" href="structSqshRefCount.html">SqshRefCount</a> *ref_count, <a class="el" href="sqsh__primitive_8h.html#afe444e75cbd4acb888287c6a5ddc9800">sqshRefCountDtor</a> dtor)</td></tr>
-<tr class="memdesc:a543da185b281bc718b4b1316a01a6625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement the reference count of a <a class="el" href="structSqshRefCount.html" title="A container struct for reference counting objects.">SqshRefCount</a> struct. If the reference count reaches 0, the destructor function is called.  <a href="structSqshRefCount.html#a543da185b281bc718b4b1316a01a6625">More...</a><br /></td></tr>
-<tr class="separator:a543da185b281bc718b4b1316a01a6625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3780c9d658fa8610a12a2be3f9536d98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshRefCount.html#a3780c9d658fa8610a12a2be3f9536d98">sqsh_ref_count_release</a> (struct <a class="el" href="structSqshRefCount.html">SqshRefCount</a> *ref_count, <a class="el" href="sqsh__primitive_8h.html#ac58228b8cff338b88bcf43e29ac5a56a">sqsh_ref_count_dtor_t</a> dtor)</td></tr>
+<tr class="memdesc:a3780c9d658fa8610a12a2be3f9536d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement the reference count of a <a class="el" href="structSqshRefCount.html" title="A container struct for reference counting objects.">SqshRefCount</a> struct. If the reference count reaches 0, the destructor function is called.  <a href="structSqshRefCount.html#a3780c9d658fa8610a12a2be3f9536d98">More...</a><br /></td></tr>
+<tr class="separator:a3780c9d658fa8610a12a2be3f9536d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -94,7 +94,7 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A container struct for reference counting objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00146">146</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00211">211</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac3458fca9e2d9030bfb86871eda6d1fe" name="ac3458fca9e2d9030bfb86871eda6d1fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3458fca9e2d9030bfb86871eda6d1fe">&#9670;&nbsp;</a></span>sqsh_ref_count_new()</h2>
@@ -125,8 +125,8 @@ Data Fields</h2></td></tr>
 <p>Initialize a <a class="el" href="structSqshRefCount.html" title="A container struct for reference counting objects.">SqshRefCount</a> struct. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ref_count</td><td>A pointer to the <a class="el" href="structSqshRefCount.html" title="A container struct for reference counting objects.">SqshRefCount</a> struct. </td></tr>
-    <tr><td class="paramname">object_size</td><td>The size of the object to be reference counted. reaches 0. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ref_count</td><td>A pointer to the <a class="el" href="structSqshRefCount.html" title="A container struct for reference counting objects.">SqshRefCount</a> struct. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">object_size</td><td>The size of the object to be reference counted. reaches 0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -134,8 +134,8 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a543da185b281bc718b4b1316a01a6625" name="a543da185b281bc718b4b1316a01a6625"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a543da185b281bc718b4b1316a01a6625">&#9670;&nbsp;</a></span>sqsh_ref_count_release()</h2>
+<a id="a3780c9d658fa8610a12a2be3f9536d98" name="a3780c9d658fa8610a12a2be3f9536d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3780c9d658fa8610a12a2be3f9536d98">&#9670;&nbsp;</a></span>sqsh_ref_count_release()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,7 +149,7 @@ Data Fields</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="sqsh__primitive_8h.html#afe444e75cbd4acb888287c6a5ddc9800">sqshRefCountDtor</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="sqsh__primitive_8h.html#ac58228b8cff338b88bcf43e29ac5a56a">sqsh_ref_count_dtor_t</a>&#160;</td>
           <td class="paramname"><em>dtor</em>&#160;</td>
         </tr>
         <tr>
@@ -163,8 +163,8 @@ Data Fields</h2></td></tr>
 <p>Decrement the reference count of a <a class="el" href="structSqshRefCount.html" title="A container struct for reference counting objects.">SqshRefCount</a> struct. If the reference count reaches 0, the destructor function is called. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ref_count</td><td>A pointer to the <a class="el" href="structSqshRefCount.html" title="A container struct for reference counting objects.">SqshRefCount</a> struct. </td></tr>
-    <tr><td class="paramname">dtor</td><td>A pointer to a function that is called when the reference count </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ref_count</td><td>A pointer to the <a class="el" href="structSqshRefCount.html" title="A container struct for reference counting objects.">SqshRefCount</a> struct. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dtor</td><td>A pointer to a function that is called when the reference count </td></tr>
   </table>
   </dd>
 </dl>
@@ -191,7 +191,7 @@ Data Fields</h2></td></tr>
 <p>Increment the reference count of a <a class="el" href="structSqshRefCount.html" title="A container struct for reference counting objects.">SqshRefCount</a> struct. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ref_count</td><td>A pointer to the <a class="el" href="structSqshRefCount.html" title="A container struct for reference counting objects.">SqshRefCount</a> struct. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref_count</td><td>A pointer to the <a class="el" href="structSqshRefCount.html" title="A container struct for reference counting objects.">SqshRefCount</a> struct. </td></tr>
   </table>
   </dd>
 </dl>
@@ -212,7 +212,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00147">147</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00212">212</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
 
 </div>
 </div>
