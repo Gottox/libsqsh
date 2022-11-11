@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;688d5d2</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;0668996</span>
    </div>
   </td>
  </tr>
@@ -87,12 +87,13 @@ Features</h1>
 How to...?</h1>
 <h2><a class="anchor" id="autotoc_md3"></a>
 ... open an archive?</h2>
-<div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqsh.html">Sqsh</a> archive = { 0 };</div>
-<div class="line"><span class="keywordtype">int</span> rv = sqsh_open(&amp;archive, <span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>);</div>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> rv;</div>
+<div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqsh.html">Sqsh</a> archive = <a class="code hl_function" href="sqsh_8h.html#a983ce0fb8924ff3496deb773f7cdf377">sqsh_new</a>(<span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>, NULL, &amp;rv);</div>
 <div class="line"><span class="keywordflow">if</span> (rv &lt; 0)</div>
 <div class="line">    abort();</div>
 <div class="line"><span class="comment">// Do something with the archive!</span></div>
 <div class="line"><a class="code hl_function" href="structSqsh.html#ae2868febaa9ecedb3c7f528c2c4595cd">sqsh_cleanup</a>(&amp;archive);</div>
+<div class="ttc" id="asqsh_8h_html_a983ce0fb8924ff3496deb773f7cdf377"><div class="ttname"><a href="sqsh_8h.html#a983ce0fb8924ff3496deb773f7cdf377">sqsh_new</a></div><div class="ttdeci">SQSH_NO_UNUSED struct Sqsh * sqsh_new(const void *source, const struct SqshConfig *config, int *err)</div><div class="ttdoc">sqsh_new initializes a sqsh context in heap.</div></div>
 <div class="ttc" id="astructSqsh_html"><div class="ttname"><a href="structSqsh.html">Sqsh</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__private_8h_source.html#l00051">sqsh_private.h:51</a></div></div>
 <div class="ttc" id="astructSqsh_html_ae2868febaa9ecedb3c7f528c2c4595cd"><div class="ttname"><a href="structSqsh.html#ae2868febaa9ecedb3c7f528c2c4595cd">Sqsh::sqsh_cleanup</a></div><div class="ttdeci">int sqsh_cleanup(struct Sqsh *sqsh)</div><div class="ttdoc">sqsh_cleanup frees all resources allocated by the Sqsh structure and cleans up the structure.</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md4"></a>
