@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;0668996</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;914d731</span>
    </div>
   </td>
  </tr>
@@ -72,11 +72,12 @@ $(function() {
   <div class="headertitle"><div class="title">sqsh_iterator.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sqsh_iterator.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__iterator_8h__incl.svg" width="474" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__iterator_8h__incl.svg" width="506" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -95,6 +96,8 @@ Data Structures</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a185ae7f1fe77cf530cdfd4f17f7e2899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#a185ae7f1fe77cf530cdfd4f17f7e2899">sqsh_inode_directory_index_iterator_init</a> (struct <a class="el" href="structSqshInodeDirectoryIndexIterator.html">SqshInodeDirectoryIndexIterator</a> *iterator, struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *inode)</td></tr>
 <tr class="separator:a185ae7f1fe77cf530cdfd4f17f7e2899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adad5a42235be32236e0a49a866f621a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshInodeDirectoryIndexIterator.html">SqshInodeDirectoryIndexIterator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#adad5a42235be32236e0a49a866f621a8">sqsh_inode_directory_index_iterator_new</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *inode, int *err)</td></tr>
+<tr class="separator:adad5a42235be32236e0a49a866f621a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2f2c042c767a1d4555dfb7400349ab9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#ad2f2c042c767a1d4555dfb7400349ab9">sqsh_inode_directory_index_iterator_next</a> (struct <a class="el" href="structSqshInodeDirectoryIndexIterator.html">SqshInodeDirectoryIndexIterator</a> *iterator)</td></tr>
 <tr class="separator:ad2f2c042c767a1d4555dfb7400349ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae16497fdc7dd833364d24940b59dc5b1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#ae16497fdc7dd833364d24940b59dc5b1">sqsh_inode_directory_index_iterator_index</a> (struct <a class="el" href="structSqshInodeDirectoryIndexIterator.html">SqshInodeDirectoryIndexIterator</a> *iterator)</td></tr>
@@ -105,10 +108,14 @@ Functions</h2></td></tr>
 <tr class="separator:a624f248e274ec89f33f85800bc73ac8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadadcdfe74e1fb942e8b24aed7ab2fe4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#aadadcdfe74e1fb942e8b24aed7ab2fe4">sqsh_inode_directory_index_iterator_name</a> (struct <a class="el" href="structSqshInodeDirectoryIndexIterator.html">SqshInodeDirectoryIndexIterator</a> *iterator)</td></tr>
 <tr class="separator:aadadcdfe74e1fb942e8b24aed7ab2fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ce878f1c47349159075ef0bc7187cf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#a2ce878f1c47349159075ef0bc7187cf0">sqsh_inode_directory_index_iterator_clean</a> (struct <a class="el" href="structSqshInodeDirectoryIndexIterator.html">SqshInodeDirectoryIndexIterator</a> *iterator)</td></tr>
-<tr class="separator:a2ce878f1c47349159075ef0bc7187cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0af3fdc75759a1ed9c6248947f89658"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#ab0af3fdc75759a1ed9c6248947f89658">sqsh_inode_directory_index_iterator_cleanup</a> (struct <a class="el" href="structSqshInodeDirectoryIndexIterator.html">SqshInodeDirectoryIndexIterator</a> *iterator)</td></tr>
+<tr class="separator:ab0af3fdc75759a1ed9c6248947f89658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5746d2c8b82871e4eebeec65db100dcb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#a5746d2c8b82871e4eebeec65db100dcb">sqsh_inode_directory_index_iterator_free</a> (struct <a class="el" href="structSqshInodeDirectoryIndexIterator.html">SqshInodeDirectoryIndexIterator</a> *iterator)</td></tr>
+<tr class="separator:a5746d2c8b82871e4eebeec65db100dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f0b41e483575c72b4bc6e648d33a487"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#a3f0b41e483575c72b4bc6e648d33a487">sqsh_directory_iterator_init</a> (struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator, struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *inode)</td></tr>
 <tr class="separator:a3f0b41e483575c72b4bc6e648d33a487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a409c001b388c197b3d9ac1aa407e379d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#a409c001b388c197b3d9ac1aa407e379d">sqsh_directory_iterator_new</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *inode, int *err)</td></tr>
+<tr class="separator:a409c001b388c197b3d9ac1aa407e379d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3e08b486dc226148d931eb91cd8c028"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#ae3e08b486dc226148d931eb91cd8c028">sqsh_directory_iterator_next</a> (struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator)</td></tr>
 <tr class="separator:ae3e08b486dc226148d931eb91cd8c028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d5f6ad57ac44e9448b8026c6ca79a7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#a4d5f6ad57ac44e9448b8026c6ca79a7e">sqsh_directory_iterator_lookup</a> (struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator, const char *name, const size_t name_len)</td></tr>
@@ -127,8 +134,12 @@ Functions</h2></td></tr>
 <tr class="separator:a5652d833a353234fdeebd95fb1b458e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bffcc29948eb2d4f34ba9a71633bfae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#a6bffcc29948eb2d4f34ba9a71633bfae">sqsh_directory_iterator_cleanup</a> (struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator)</td></tr>
 <tr class="separator:a6bffcc29948eb2d4f34ba9a71633bfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7ad794677f035b1c57b7bbb007cf7b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#a5b7ad794677f035b1c57b7bbb007cf7b">sqsh_directory_iterator_free</a> (struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator)</td></tr>
+<tr class="separator:a5b7ad794677f035b1c57b7bbb007cf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7f321ac8e8ff78669660b3d458c51ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#ad7f321ac8e8ff78669660b3d458c51ec">sqsh_xattr_iterator_init</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator, struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *xattr_table, const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *inode)</td></tr>
 <tr class="separator:ad7f321ac8e8ff78669660b3d458c51ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1380c6252f2b55767d27d2030c27424"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#aa1380c6252f2b55767d27d2030c27424">sqsh_xattr_iterator_new</a> (struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *xattr_table, const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *inode, int *err)</td></tr>
+<tr class="separator:aa1380c6252f2b55767d27d2030c27424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bd1d8b079b74110aa3843ea927b3b3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#a1bd1d8b079b74110aa3843ea927b3b3f">sqsh_xattr_iterator_next</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator)</td></tr>
 <tr class="separator:a1bd1d8b079b74110aa3843ea927b3b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af32b0f5246bf7733ef16042de521bdba"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#af32b0f5246bf7733ef16042de521bdba">sqsh_xattr_iterator_type</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator)</td></tr>
@@ -155,6 +166,8 @@ Functions</h2></td></tr>
 <tr class="separator:a781af29e20f82220617eeb292630bca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07eef8df7585ae0d9aa0acc1456a7f05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#a07eef8df7585ae0d9aa0acc1456a7f05">sqsh_xattr_iterator_cleanup</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator)</td></tr>
 <tr class="separator:a07eef8df7585ae0d9aa0acc1456a7f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b4f9024801d5474273a16bf8295174"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__iterator_8h.html#a21b4f9024801d5474273a16bf8295174">sqsh_xattr_iterator_free</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator)</td></tr>
+<tr class="separator:a21b4f9024801d5474273a16bf8295174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Enno Boland (<a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'ebo'+'la'+'nd.'+'de'; return false;">mail@<span class="obfuscator">.nosp@m.</span>ebol<span class="obfuscator">.nosp@m.</span>and.d<span class="obfuscator">.nosp@m.</span>e</a>) </dd></dl>
@@ -169,6 +182,24 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int sqsh_directory_iterator_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b7ad794677f035b1c57b7bbb007cf7b" name="a5b7ad794677f035b1c57b7bbb007cf7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7ad794677f035b1c57b7bbb007cf7b">&#9670;&nbsp;</a></span>sqsh_directory_iterator_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_directory_iterator_free </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *&#160;</td>
           <td class="paramname"><em>iterator</em></td><td>)</td>
@@ -369,6 +400,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a409c001b388c197b3d9ac1aa407e379d" name="a409c001b388c197b3d9ac1aa407e379d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a409c001b388c197b3d9ac1aa407e379d">&#9670;&nbsp;</a></span>sqsh_directory_iterator_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> * sqsh_directory_iterator_new </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
+          <td class="paramname"><em>inode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>err</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae3e08b486dc226148d931eb91cd8c028" name="ae3e08b486dc226148d931eb91cd8c028"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3e08b486dc226148d931eb91cd8c028">&#9670;&nbsp;</a></span>sqsh_directory_iterator_next()</h2>
 
@@ -387,14 +446,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2ce878f1c47349159075ef0bc7187cf0" name="a2ce878f1c47349159075ef0bc7187cf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ce878f1c47349159075ef0bc7187cf0">&#9670;&nbsp;</a></span>sqsh_inode_directory_index_iterator_clean()</h2>
+<a id="ab0af3fdc75759a1ed9c6248947f89658" name="ab0af3fdc75759a1ed9c6248947f89658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0af3fdc75759a1ed9c6248947f89658">&#9670;&nbsp;</a></span>sqsh_inode_directory_index_iterator_cleanup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_inode_directory_index_iterator_clean </td>
+          <td class="memname">int sqsh_inode_directory_index_iterator_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeDirectoryIndexIterator.html">SqshInodeDirectoryIndexIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5746d2c8b82871e4eebeec65db100dcb" name="a5746d2c8b82871e4eebeec65db100dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5746d2c8b82871e4eebeec65db100dcb">&#9670;&nbsp;</a></span>sqsh_inode_directory_index_iterator_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_inode_directory_index_iterator_free </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshInodeDirectoryIndexIterator.html">SqshInodeDirectoryIndexIterator</a> *&#160;</td>
           <td class="paramname"><em>iterator</em></td><td>)</td>
@@ -487,6 +564,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="adad5a42235be32236e0a49a866f621a8" name="adad5a42235be32236e0a49a866f621a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adad5a42235be32236e0a49a866f621a8">&#9670;&nbsp;</a></span>sqsh_inode_directory_index_iterator_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshInodeDirectoryIndexIterator.html">SqshInodeDirectoryIndexIterator</a> * sqsh_inode_directory_index_iterator_new </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
+          <td class="paramname"><em>inode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>err</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad2f2c042c767a1d4555dfb7400349ab9" name="ad2f2c042c767a1d4555dfb7400349ab9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2f2c042c767a1d4555dfb7400349ab9">&#9670;&nbsp;</a></span>sqsh_inode_directory_index_iterator_next()</h2>
 
@@ -531,6 +636,24 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int sqsh_xattr_iterator_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21b4f9024801d5474273a16bf8295174" name="a21b4f9024801d5474273a16bf8295174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21b4f9024801d5474273a16bf8295174">&#9670;&nbsp;</a></span>sqsh_xattr_iterator_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_xattr_iterator_free </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *&#160;</td>
           <td class="paramname"><em>iterator</em></td><td>)</td>
@@ -679,6 +802,40 @@ Functions</h2></td></tr>
           <td class="paramtype">struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *&#160;</td>
           <td class="paramname"><em>iterator</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1380c6252f2b55767d27d2030c27424" name="aa1380c6252f2b55767d27d2030c27424"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1380c6252f2b55767d27d2030c27424">&#9670;&nbsp;</a></span>sqsh_xattr_iterator_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> * sqsh_xattr_iterator_new </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *&#160;</td>
+          <td class="paramname"><em>xattr_table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
+          <td class="paramname"><em>inode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>err</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
