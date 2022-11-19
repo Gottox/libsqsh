@@ -6,7 +6,7 @@ var searchData=
   ['source_5fsize_3',['source_size',['../structSqshConfig.html#ac09dead67e92f5e401577b968f522ff7',1,'SqshConfig']]],
   ['source_5ftype_4',['source_type',['../structSqshConfig.html#afe8c3cea7cc66be9f87d57fdc356ce05',1,'SqshConfig']]],
   ['sparse_5',['sparse',['../structSqshInodeFileExt.html#aaf0b97921177dce18e14548f5fbb1315',1,'SqshInodeFileExt']]],
-  ['sqsh_6',['sqsh',['../structSqshTable.html#ac15c8800ac621fdfb6400b572cf811ce',1,'SqshTable::sqsh()'],['../structSqshXattrTable.html#ae4bd8c1df4c9e1ba93c79aef0504b6df',1,'SqshXattrTable::sqsh()'],['../structSqshInodeContext.html#a5d09d2fadff948ab506bc5253950204a',1,'SqshInodeContext::sqsh()'],['../structSqshMetablockStreamContext.html#a1c4018c1181219232860198129354f1e',1,'SqshMetablockStreamContext::sqsh()']]],
+  ['sqsh_6',['sqsh',['../structSqshPathResolverContext.html#aec5f0f3d2d1b7138dbb4eafd20040cbf',1,'SqshPathResolverContext::sqsh()'],['../structSqshXattrTable.html#ae4bd8c1df4c9e1ba93c79aef0504b6df',1,'SqshXattrTable::sqsh()'],['../structSqshTable.html#ac15c8800ac621fdfb6400b572cf811ce',1,'SqshTable::sqsh()'],['../structSqshInodeContext.html#a5d09d2fadff948ab506bc5253950204a',1,'SqshInodeContext::sqsh()'],['../structSqshMetablockStreamContext.html#a1c4018c1181219232860198129354f1e',1,'SqshMetablockStreamContext::sqsh()']]],
   ['sqsh_5fmapper_5fimpl_5fcanary_7',['sqsh_mapper_impl_canary',['../sqsh__mapper_8h.html#a64face4d95806f6c2ca2033941a1676b',1,'sqsh_mapper.h']]],
   ['sqsh_5fmapper_5fimpl_5fmmap_8',['sqsh_mapper_impl_mmap',['../sqsh__mapper_8h.html#acfbee2fbf63d7fafa5cce6cb58b20257',1,'sqsh_mapper.h']]],
   ['sqsh_5fmapper_5fimpl_5fmmap_5ffull_9',['sqsh_mapper_impl_mmap_full',['../sqsh__mapper_8h.html#ac8d014f500b659824b94e054b6a67519',1,'sqsh_mapper.h']]],
