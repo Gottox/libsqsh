@@ -9,7 +9,7 @@ var searchData=
   ['flags_6',['flags',['../structSqshCompressionOptionsLz4.html#a3e364b3519b979792107a419e1ddef28',1,'SqshCompressionOptionsLz4::flags()'],['../structSqshSuperblock.html#a2c1a9b8e0d2c01ed901a9097c28de31d',1,'SqshSuperblock::flags()']]],
   ['fragment_5fblock_5findex_7',['fragment_block_index',['../structSqshInodeFile.html#a7016e267dec8c948330d5bfe5a7ee21b',1,'SqshInodeFile::fragment_block_index()'],['../structSqshInodeFileExt.html#a83b41023494c0b189785077bd8f58d38',1,'SqshInodeFileExt::fragment_block_index()']]],
   ['fragment_5fentry_5fcount_8',['fragment_entry_count',['../structSqshSuperblock.html#a6b9cde9b794bb7c633954df4bd2a309f',1,'SqshSuperblock']]],
-  ['fragment_5ftable_9',['fragment_table',['../structSqshFileContext.html#a8c96559fb3264326b28706349fea0707',1,'SqshFileContext::fragment_table()'],['../structSqsh.html#a5801b9a73a8fdaacb4312d9b4e6d50e1',1,'Sqsh::fragment_table()']]],
+  ['fragment_5ftable_9',['fragment_table',['../structSqshFileContext.html#a8c96559fb3264326b28706349fea0707',1,'SqshFileContext']]],
   ['fragment_5ftable_5fstart_10',['fragment_table_start',['../structSqshSuperblock.html#a6b5cf8e40a0586a1ca555938523afaad',1,'SqshSuperblock']]],
   ['fragments_11',['fragments',['../structSqshDirectoryIterator.html#a4848b3e67c639d117126f05a46bcc16b',1,'SqshDirectoryIterator']]]
 ];
