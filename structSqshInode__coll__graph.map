@@ -1,14 +1,14 @@
 <map id="SqshInode" name="SqshInode">
-<area shape="rect" id="node1" title=" " alt="" coords="427,272,539,299"/>
+<area shape="rect" id="node1" title=" " alt="" coords="427,266,539,291"/>
 <area shape="rect" id="node2" href="$structSqshInodeHeader.html" title=" " alt="" coords="35,19,207,45"/>
-<area shape="rect" id="node3" href="$structSqshInodeDirectory.html" title=" " alt="" coords="20,69,223,96"/>
-<area shape="rect" id="node4" href="$structSqshInodeDirectoryExt.html" title=" " alt="" coords="5,120,237,147"/>
-<area shape="rect" id="node5" href="$structSqshInodeFile.html" title=" " alt="" coords="45,171,197,197"/>
-<area shape="rect" id="node6" href="$structSqshInodeFileExt.html" title=" " alt="" coords="30,221,213,248"/>
-<area shape="rect" id="node7" href="$structSqshInodeSymlink.html" title=" " alt="" coords="30,272,213,299"/>
-<area shape="rect" id="node8" href="$structSqshInodeSymlinkExt.html" title=" " alt="" coords="15,323,227,349"/>
-<area shape="rect" id="node9" href="$structSqshInodeDevice.html" title=" " alt="" coords="35,373,207,400"/>
-<area shape="rect" id="node10" href="$structSqshInodeDeviceExt.html" title=" " alt="" coords="20,424,223,451"/>
-<area shape="rect" id="node11" href="$structSqshInodeIpc.html" title=" " alt="" coords="50,475,193,501"/>
-<area shape="rect" id="node12" href="$structSqshInodeIpcExt.html" title=" " alt="" coords="35,525,207,552"/>
+<area shape="rect" id="node3" href="$structSqshInodeDirectory.html" title=" " alt="" coords="20,69,223,94"/>
+<area shape="rect" id="node4" href="$structSqshInodeDirectoryExt.html" title=" " alt="" coords="5,118,237,143"/>
+<area shape="rect" id="node5" href="$structSqshInodeFile.html" title=" " alt="" coords="45,167,197,193"/>
+<area shape="rect" id="node6" href="$structSqshInodeFileExt.html" title=" " alt="" coords="30,217,213,242"/>
+<area shape="rect" id="node7" href="$structSqshInodeSymlink.html" title=" " alt="" coords="30,266,213,291"/>
+<area shape="rect" id="node8" href="$structSqshInodeSymlinkExt.html" title=" " alt="" coords="15,315,227,341"/>
+<area shape="rect" id="node9" href="$structSqshInodeDevice.html" title=" " alt="" coords="35,365,207,390"/>
+<area shape="rect" id="node10" href="$structSqshInodeDeviceExt.html" title=" " alt="" coords="20,414,223,439"/>
+<area shape="rect" id="node11" href="$structSqshInodeIpc.html" title=" " alt="" coords="50,463,193,489"/>
+<area shape="rect" id="node12" href="$structSqshInodeIpcExt.html" title=" " alt="" coords="35,513,207,538"/>
 </map>

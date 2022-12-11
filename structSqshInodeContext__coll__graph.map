@@ -1,6 +1,6 @@
 <map id="SqshInodeContext" name="SqshInodeContext">
-<area shape="rect" id="node1" title="Inode context." alt="" coords="5,184,188,211"/>
-<area shape="rect" id="node2" href="$structSqshMetablockStreamContext.html" title=" " alt="" coords="107,95,390,121"/>
-<area shape="rect" id="node3" href="$structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session." alt="" coords="51,5,113,32"/>
-<area shape="rect" id="node4" href="$structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data." alt="" coords="187,5,310,32"/>
+<area shape="rect" id="node1" title="Inode context." alt="" coords="5,181,188,207"/>
+<area shape="rect" id="node2" href="$structSqshMetablockStreamContext.html" title=" " alt="" coords="107,93,390,119"/>
+<area shape="rect" id="node3" href="$structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session." alt="" coords="51,5,113,31"/>
+<area shape="rect" id="node4" href="$structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data." alt="" coords="187,5,310,31"/>
 </map>

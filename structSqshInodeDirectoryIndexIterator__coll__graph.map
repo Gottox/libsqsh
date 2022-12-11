@@ -1,7 +1,7 @@
 <map id="SqshInodeDirectoryIndexIterator" name="SqshInodeDirectoryIndexIterator">
-<area shape="rect" id="node1" title=" " alt="" coords="5,273,337,300"/>
-<area shape="rect" id="node2" href="$structSqshInodeContext.html" title="Inode context." alt="" coords="80,184,263,211"/>
-<area shape="rect" id="node3" href="$structSqshMetablockStreamContext.html" title=" " alt="" coords="182,95,465,121"/>
-<area shape="rect" id="node4" href="$structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session." alt="" coords="125,5,188,32"/>
-<area shape="rect" id="node5" href="$structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data." alt="" coords="262,5,385,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,269,337,295"/>
+<area shape="rect" id="node2" href="$structSqshInodeContext.html" title="Inode context." alt="" coords="80,181,263,207"/>
+<area shape="rect" id="node3" href="$structSqshMetablockStreamContext.html" title=" " alt="" coords="182,93,465,119"/>
+<area shape="rect" id="node4" href="$structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session." alt="" coords="125,5,188,31"/>
+<area shape="rect" id="node5" href="$structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data." alt="" coords="262,5,385,31"/>
 </map>

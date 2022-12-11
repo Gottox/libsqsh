@@ -1,18 +1,18 @@
 <map id="SqshTable" name="SqshTable">
-<area shape="rect" id="node1" title=" " alt="" coords="948,157,1060,184"/>
-<area shape="rect" id="node2" href="$structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session." alt="" coords="672,107,735,133"/>
-<area shape="rect" id="node3" href="$structSqshMapper.html" title=" " alt="" coords="371,292,494,319"/>
-<area shape="rect" id="node10" href="$structSqshMapping.html" title=" " alt="" coords="637,157,769,184"/>
-<area shape="rect" id="node4" href="$structSqshMemoryMapperImpl.html" title=" " alt="" coords="5,191,228,217"/>
-<area shape="rect" id="node5" href="$structSqshMmapFullMapper.html" title=" " alt="" coords="15,241,218,268"/>
-<area shape="rect" id="node6" href="$structSqshMmapMapper.html" title=" " alt="" coords="35,292,198,319"/>
-<area shape="rect" id="node7" href="$structSqshStaticMapper.html" title=" " alt="" coords="25,343,208,369"/>
-<area shape="rect" id="node8" href="$structSqshCanaryMapper.html" title=" " alt="" coords="25,393,208,420"/>
-<area shape="rect" id="node9" href="$structSqshCurlMapper.html" title=" " alt="" coords="35,444,198,471"/>
-<area shape="rect" id="node11" href="$structSqshMmapFullMap.html" title=" " alt="" coords="347,5,519,32"/>
-<area shape="rect" id="node12" href="$structSqshMmapMap.html" title=" " alt="" coords="367,56,499,83"/>
-<area shape="rect" id="node13" href="$structSqshStaticMap.html" title=" " alt="" coords="357,107,509,133"/>
-<area shape="rect" id="node14" href="$structSqshCanaryMap.html" title=" " alt="" coords="357,157,509,184"/>
-<area shape="rect" id="node15" href="$structSqshCurlMap.html" title=" " alt="" coords="367,208,499,235"/>
-<area shape="rect" id="node16" href="$structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data." alt="" coords="55,140,178,167"/>
+<area shape="rect" id="node1" title=" " alt="" coords="948,153,1060,179"/>
+<area shape="rect" id="node2" href="$structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session." alt="" coords="672,104,735,129"/>
+<area shape="rect" id="node3" href="$structSqshMapper.html" title=" " alt="" coords="371,288,494,313"/>
+<area shape="rect" id="node10" href="$structSqshMapping.html" title=" " alt="" coords="637,153,769,179"/>
+<area shape="rect" id="node4" href="$structSqshMemoryMapperImpl.html" title=" " alt="" coords="5,189,228,215"/>
+<area shape="rect" id="node5" href="$structSqshMmapFullMapper.html" title=" " alt="" coords="15,239,218,264"/>
+<area shape="rect" id="node6" href="$structSqshMmapMapper.html" title=" " alt="" coords="35,288,198,313"/>
+<area shape="rect" id="node7" href="$structSqshStaticMapper.html" title=" " alt="" coords="25,337,208,363"/>
+<area shape="rect" id="node8" href="$structSqshCanaryMapper.html" title=" " alt="" coords="25,387,208,412"/>
+<area shape="rect" id="node9" href="$structSqshCurlMapper.html" title=" " alt="" coords="35,436,198,461"/>
+<area shape="rect" id="node11" href="$structSqshMmapFullMap.html" title=" " alt="" coords="347,5,519,31"/>
+<area shape="rect" id="node12" href="$structSqshMmapMap.html" title=" " alt="" coords="367,55,499,80"/>
+<area shape="rect" id="node13" href="$structSqshStaticMap.html" title=" " alt="" coords="357,104,509,129"/>
+<area shape="rect" id="node14" href="$structSqshCanaryMap.html" title=" " alt="" coords="357,153,509,179"/>
+<area shape="rect" id="node15" href="$structSqshCurlMap.html" title=" " alt="" coords="367,203,499,228"/>
+<area shape="rect" id="node16" href="$structSqshBuffer.html" title="The SqshBuffer struct is a buffer for arbitrary data." alt="" coords="55,140,178,165"/>
 </map>
