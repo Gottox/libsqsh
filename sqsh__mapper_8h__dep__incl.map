@@ -1,8 +1,9 @@
 <map id="sqsh_mapper.h" name="sqsh_mapper.h">
-<area shape="rect" id="node1" title=" " alt="" coords="242,5,394,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="297,5,449,31"/>
 <area shape="rect" id="node2" href="$sqsh_8h.html" title=" " alt="" coords="253,152,335,177"/>
 <area shape="rect" id="node3" href="$sqsh__private_8h.html" title=" " alt="" coords="251,225,414,251"/>
 <area shape="rect" id="node4" href="$sqsh__context_8h.html" title=" " alt="" coords="63,79,226,104"/>
-<area shape="rect" id="node6" href="$sqsh__table_8h.html" title=" " alt="" coords="301,79,444,104"/>
+<area shape="rect" id="node6" href="$sqsh__context__private_8h.html" title=" " alt="" coords="469,79,711,104"/>
+<area shape="rect" id="node7" href="$sqsh__table_8h.html" title=" " alt="" coords="301,79,444,104"/>
 <area shape="rect" id="node5" href="$sqsh__iterator_8h.html" title=" " alt="" coords="5,152,177,177"/>
 </map>
