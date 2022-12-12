@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;9024dbe</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;f92760f</span>
    </div>
   </td>
  </tr>
@@ -98,9 +98,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aded7f6b665af96dc8c01e0b627489fa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#aded7f6b665af96dc8c01e0b627489fa3">sqsh_inode_init_by_inode_number</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *<a class="el" href="structSqshInodeContext.html#a5d09d2fadff948ab506bc5253950204a">sqsh</a>, uint64_t inode_number)</td></tr>
 <tr class="memdesc:aded7f6b665af96dc8c01e0b627489fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the inode context from an inode number.  <a href="structSqshInodeContext.html#aded7f6b665af96dc8c01e0b627489fa3">More...</a><br /></td></tr>
 <tr class="separator:aded7f6b665af96dc8c01e0b627489fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a623933939f76974466bb2af407f0f340"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#a623933939f76974466bb2af407f0f340">sqsh_inode_init_by_path</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *<a class="el" href="structSqshInodeContext.html#a5d09d2fadff948ab506bc5253950204a">sqsh</a>, const char *path)</td></tr>
-<tr class="memdesc:a623933939f76974466bb2af407f0f340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the inode context from a path.  <a href="structSqshInodeContext.html#a623933939f76974466bb2af407f0f340">More...</a><br /></td></tr>
-<tr class="separator:a623933939f76974466bb2af407f0f340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a500d7c81ba63211aa7cfeedaf84cf9e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#a500d7c81ba63211aa7cfeedaf84cf9e5">sqsh_inode_is_extended</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
 <tr class="memdesc:a500d7c81ba63211aa7cfeedaf84cf9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns whether the inode is an extended structure.  <a href="structSqshInodeContext.html#a500d7c81ba63211aa7cfeedaf84cf9e5">More...</a><br /></td></tr>
 <tr class="separator:a500d7c81ba63211aa7cfeedaf84cf9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -570,51 +567,6 @@ Data Fields</h2></td></tr>
     <tr><td class="paramname">context</td><td>The inode context to initialize. </td></tr>
     <tr><td class="paramname">sqsh</td><td>The sqsh context. </td></tr>
     <tr><td class="paramname">inode_number</td><td>The inode number. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int 0 on success, less than 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="a623933939f76974466bb2af407f0f340" name="a623933939f76974466bb2af407f0f340"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a623933939f76974466bb2af407f0f340">&#9670;&#160;</a></span>sqsh_inode_init_by_path()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_inode_init_by_path </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
-          <td class="paramname"><em>sqsh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>path</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize the inode context from a path. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>The inode context to initialize. </td></tr>
-    <tr><td class="paramname">sqsh</td><td>The sqsh context. </td></tr>
-    <tr><td class="paramname">path</td><td>The path the file or directory. </td></tr>
   </table>
   </dd>
 </dl>
