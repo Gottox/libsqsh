@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-87-g9fdcee36</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-89-g81c52843</span>
    </div>
   </td>
  </tr>
@@ -75,8 +75,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">sqsh_common.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -99,204 +98,23 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a285b33e245794f642682c2f78c268f5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a285b33e245794f642682c2f78c268f5a">SQSH_MIN</a>(a,  b)&#160;&#160;&#160;(a &lt; b ? a : b)</td></tr>
-<tr class="separator:a285b33e245794f642682c2f78c268f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02a161308a44bdc6b677cbcb0f3fa65f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a02a161308a44bdc6b677cbcb0f3fa65f">SQSH_MAX</a>(a,  b)&#160;&#160;&#160;(a &gt; b ? a : b)</td></tr>
-<tr class="separator:a02a161308a44bdc6b677cbcb0f3fa65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a318f18b16f2e37150705b487ebc3f9c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a318f18b16f2e37150705b487ebc3f9c6">SQSH_ADD_OVERFLOW</a>(a,  b,  res)&#160;&#160;&#160;__builtin_add_overflow(a, b, res)</td></tr>
-<tr class="separator:a318f18b16f2e37150705b487ebc3f9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa898d042943df7b65644eabbfb966aea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#aa898d042943df7b65644eabbfb966aea">SQSH_SUB_OVERFLOW</a>(a,  b,  res)&#160;&#160;&#160;__builtin_sub_overflow(a, b, res)</td></tr>
-<tr class="separator:aa898d042943df7b65644eabbfb966aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e7edb6d8506d4d7b93daa8af1158461"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a8e7edb6d8506d4d7b93daa8af1158461">SQSH_MULT_OVERFLOW</a>(a,  b,  res)&#160;&#160;&#160;__builtin_mul_overflow(a, b, res)</td></tr>
-<tr class="separator:a8e7edb6d8506d4d7b93daa8af1158461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f0a35d1ed84a34ad06a006e5e90da94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a>&#160;&#160;&#160;__attribute__((warn_unused_result))</td></tr>
 <tr class="separator:a0f0a35d1ed84a34ad06a006e5e90da94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05922134c9a05aa1376933297fd19008"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a05922134c9a05aa1376933297fd19008">SQSH_UNALIGNED</a>&#160;&#160;&#160;__attribute__((packed, aligned(1)))</td></tr>
 <tr class="separator:a05922134c9a05aa1376933297fd19008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96bca9830dec61f8e46035703eca08da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a96bca9830dec61f8e46035703eca08da">SQSH_STATIC_ASSERT</a>(cond)&#160;&#160;&#160;_Static_assert(cond, #cond)</td></tr>
 <tr class="separator:a96bca9830dec61f8e46035703eca08da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab002c1c69d78e40f0d4724a5da3de79c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#ab002c1c69d78e40f0d4724a5da3de79c">SQSH_DEVIDE_CEIL</a>(x,  y)&#160;&#160;&#160;(((x - 1) / y) + 1)</td></tr>
-<tr class="separator:ab002c1c69d78e40f0d4724a5da3de79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada935e5d61e1f5a4156b568caeb75e2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#ada935e5d61e1f5a4156b568caeb75e2e">SQSH_PADDING</a>(x,  p)&#160;&#160;&#160;<a class="el" href="sqsh__common_8h.html#ab002c1c69d78e40f0d4724a5da3de79c">SQSH_DEVIDE_CEIL</a>(x, p) * p</td></tr>
-<tr class="separator:ada935e5d61e1f5a4156b568caeb75e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a1d493fd70fce488d899c7681d5ff6264"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a></td></tr>
 <tr class="separator:a1d493fd70fce488d899c7681d5ff6264"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:afbed2811db46e4ab6ffa693900515b9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#afbed2811db46e4ab6ffa693900515b9e">sqsh_memdup</a> (const void *source, size_t size)</td></tr>
-<tr class="separator:afbed2811db46e4ab6ffa693900515b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Enno Boland (<a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'ebo'+'la'+'nd.'+'de'; return false;">mail@<span class="obfuscator">.nosp@m.</span>ebol<span class="obfuscator">.nosp@m.</span>and.d<span class="obfuscator">.nosp@m.</span>e</a>) </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a318f18b16f2e37150705b487ebc3f9c6" name="a318f18b16f2e37150705b487ebc3f9c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a318f18b16f2e37150705b487ebc3f9c6">&#9670;&#160;</a></span>SQSH_ADD_OVERFLOW</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SQSH_ADD_OVERFLOW</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">res&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;__builtin_add_overflow(a, b, res)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00048">48</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
-
-</div>
-</div>
-<a id="ab002c1c69d78e40f0d4724a5da3de79c" name="ab002c1c69d78e40f0d4724a5da3de79c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab002c1c69d78e40f0d4724a5da3de79c">&#9670;&#160;</a></span>SQSH_DEVIDE_CEIL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SQSH_DEVIDE_CEIL</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">y&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((x - 1) / y) + 1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00058">58</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
-
-</div>
-</div>
-<a id="a02a161308a44bdc6b677cbcb0f3fa65f" name="a02a161308a44bdc6b677cbcb0f3fa65f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02a161308a44bdc6b677cbcb0f3fa65f">&#9670;&#160;</a></span>SQSH_MAX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SQSH_MAX</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(a &gt; b ? a : b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00046">46</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
-
-</div>
-</div>
-<a id="a285b33e245794f642682c2f78c268f5a" name="a285b33e245794f642682c2f78c268f5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a285b33e245794f642682c2f78c268f5a">&#9670;&#160;</a></span>SQSH_MIN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SQSH_MIN</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(a &lt; b ? a : b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00045">45</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
-
-</div>
-</div>
-<a id="a8e7edb6d8506d4d7b93daa8af1158461" name="a8e7edb6d8506d4d7b93daa8af1158461"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e7edb6d8506d4d7b93daa8af1158461">&#9670;&#160;</a></span>SQSH_MULT_OVERFLOW</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SQSH_MULT_OVERFLOW</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">res&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;__builtin_mul_overflow(a, b, res)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00050">50</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
-
-</div>
-</div>
 <a id="a0f0a35d1ed84a34ad06a006e5e90da94" name="a0f0a35d1ed84a34ad06a006e5e90da94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f0a35d1ed84a34ad06a006e5e90da94">&#9670;&#160;</a></span>SQSH_NO_UNUSED</h2>
 
@@ -309,37 +127,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00052">52</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
-
-</div>
-</div>
-<a id="ada935e5d61e1f5a4156b568caeb75e2e" name="ada935e5d61e1f5a4156b568caeb75e2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada935e5d61e1f5a4156b568caeb75e2e">&#9670;&#160;</a></span>SQSH_PADDING</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SQSH_PADDING</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">p&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="sqsh__common_8h.html#ab002c1c69d78e40f0d4724a5da3de79c">SQSH_DEVIDE_CEIL</a>(x, p) * p</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00060">60</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00045">45</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
 
 </div>
 </div>
@@ -359,43 +147,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00055">55</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
-
-</div>
-</div>
-<a id="aa898d042943df7b65644eabbfb966aea" name="aa898d042943df7b65644eabbfb966aea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa898d042943df7b65644eabbfb966aea">&#9670;&#160;</a></span>SQSH_SUB_OVERFLOW</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SQSH_SUB_OVERFLOW</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">res&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;__builtin_sub_overflow(a, b, res)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00049">49</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00048">48</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +163,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00053">53</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00046">46</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
 
 </div>
 </div>
@@ -428,36 +180,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00062">62</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="afbed2811db46e4ab6ffa693900515b9e" name="afbed2811db46e4ab6ffa693900515b9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbed2811db46e4ab6ffa693900515b9e">&#9670;&#160;</a></span>sqsh_memdup()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> void * sqsh_memdup </td>
-          <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00050">50</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
 
 </div>
 </div>
