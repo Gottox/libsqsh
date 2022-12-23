@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-92-g5e36133d</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-93-ga861b324</span>
    </div>
   </td>
  </tr>
@@ -109,9 +109,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af04ad80ee7ca2be4b4852b91d76394e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqsh.html#af04ad80ee7ca2be4b4852b91d76394e5">sqsh_xattr_table</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> **xattr_table)</td></tr>
 <tr class="memdesc:af04ad80ee7ca2be4b4852b91d76394e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_xattr_table returns the xattr table context. If the archive does not contain an xattr table, the function returns <code>-SQSH_ERROR_NO_XATTR_TABLE</code>.  <a href="structSqsh.html#af04ad80ee7ca2be4b4852b91d76394e5">More...</a><br /></td></tr>
 <tr class="separator:af04ad80ee7ca2be4b4852b91d76394e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6cec3bd3b1dd0b05222c477abda0f74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqsh.html#ae6cec3bd3b1dd0b05222c477abda0f74">sqsh_compression_options</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> **compression_options)</td></tr>
-<tr class="memdesc:ae6cec3bd3b1dd0b05222c477abda0f74"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_compression_options returns the compression options context.  <a href="structSqsh.html#ae6cec3bd3b1dd0b05222c477abda0f74">More...</a><br /></td></tr>
-<tr class="separator:ae6cec3bd3b1dd0b05222c477abda0f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb34415257ce8b3d8d407a0add722297"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqsh.html#acb34415257ce8b3d8d407a0add722297">sqsh_free</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
 <tr class="memdesc:acb34415257ce8b3d8d407a0add722297"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqsh_free frees up a heap allocated <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> structure.  <a href="structSqsh.html#acb34415257ce8b3d8d407a0add722297">More...</a><br /></td></tr>
 <tr class="separator:acb34415257ce8b3d8d407a0add722297"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,44 +118,6 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="sqsh__private_8h_source.html#l00056">56</a> of file <a class="el" href="sqsh__private_8h_source.html">sqsh_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae6cec3bd3b1dd0b05222c477abda0f74" name="ae6cec3bd3b1dd0b05222c477abda0f74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6cec3bd3b1dd0b05222c477abda0f74">&#9670;&#160;</a></span>sqsh_compression_options()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sqsh_compression_options </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
-          <td class="paramname"><em>sqsh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> **&#160;</td>
-          <td class="paramname"><em>compression_options</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>sqsh_compression_options returns the compression options context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sqsh</td><td>the <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> structure. </td></tr>
-    <tr><td class="paramname">compression_options</td><td>double pointer that will be set to the compression options context. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, less than 0 on error. </dd></dl>
-
-</div>
-</div>
 <a id="aaa5fd674f1dbd8bccffdde1d15b9cc87" name="aaa5fd674f1dbd8bccffdde1d15b9cc87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa5fd674f1dbd8bccffdde1d15b9cc87">&#9670;&#160;</a></span>sqsh_data_compression()</h2>
 

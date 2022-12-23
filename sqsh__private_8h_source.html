@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-92-g5e36133d</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-93-ga861b324</span>
    </div>
   </td>
  </tr>
@@ -133,20 +133,19 @@ $(function() {
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshTable.html">SqshTable</a> export_table;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshXattrTable.html">SqshXattrTable</a> xattr_table;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshFragmentTable.html">SqshFragmentTable</a> fragment_table;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a> compression_options;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    uint8_t initialized;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshConfig.html">SqshConfig</a> config;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>};</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="sqsh__private_8h.html#a04621eff77123407a258eeb7a9fd4711">   84</a></span><a class="code hl_define" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> <span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__private_8h.html#a04621eff77123407a258eeb7a9fd4711">sqsh__init</a>(</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keyword">struct</span> <a class="code hl_struct" href="structSqsh.html">Sqsh</a> *sqsh, <span class="keyword">const</span> <span class="keywordtype">void</span> *source, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshConfig.html">SqshConfig</a> *config);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="sqsh__private_8h.html#a4c91d588e0e6cde041293c2c5737af28">   95</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__private_8h.html#a4c91d588e0e6cde041293c2c5737af28">sqsh__cleanup</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structSqsh.html">Sqsh</a> *sqsh);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#   ifdef __cplusplus</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#   endif</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard SQSH_PRIVATE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    uint8_t initialized;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshConfig.html">SqshConfig</a> config;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="sqsh__private_8h.html#a04621eff77123407a258eeb7a9fd4711">   83</a></span><a class="code hl_define" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> <span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__private_8h.html#a04621eff77123407a258eeb7a9fd4711">sqsh__init</a>(</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keyword">struct</span> <a class="code hl_struct" href="structSqsh.html">Sqsh</a> *sqsh, <span class="keyword">const</span> <span class="keywordtype">void</span> *source, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshConfig.html">SqshConfig</a> *config);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="sqsh__private_8h.html#a4c91d588e0e6cde041293c2c5737af28">   94</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__private_8h.html#a4c91d588e0e6cde041293c2c5737af28">sqsh__cleanup</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structSqsh.html">Sqsh</a> *sqsh);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#   ifdef __cplusplus</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#   endif</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard SQSH_PRIVATE_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="asqsh_8h_html"><div class="ttname"><a href="sqsh_8h.html">sqsh.h</a></div></div>
 <div class="ttc" id="asqsh__common_8h_html"><div class="ttname"><a href="sqsh__common_8h.html">sqsh_common.h</a></div></div>
 <div class="ttc" id="asqsh__common_8h_html_a0f0a35d1ed84a34ad06a006e5e90da94"><div class="ttname"><a href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a></div><div class="ttdeci">#define SQSH_NO_UNUSED</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__common_8h_source.html#l00045">sqsh_common.h:45</a></div></div>
@@ -157,13 +156,12 @@ $(function() {
 <div class="ttc" id="asqsh__private_8h_html_a04621eff77123407a258eeb7a9fd4711"><div class="ttname"><a href="sqsh__private_8h.html#a04621eff77123407a258eeb7a9fd4711">sqsh__init</a></div><div class="ttdeci">SQSH_NO_UNUSED int sqsh__init(struct Sqsh *sqsh, const void *source, const struct SqshConfig *config)</div></div>
 <div class="ttc" id="asqsh__private_8h_html_a4c91d588e0e6cde041293c2c5737af28"><div class="ttname"><a href="sqsh__private_8h.html#a4c91d588e0e6cde041293c2c5737af28">sqsh__cleanup</a></div><div class="ttdeci">int sqsh__cleanup(struct Sqsh *sqsh)</div></div>
 <div class="ttc" id="asqsh__table_8h_html"><div class="ttname"><a href="sqsh__table_8h.html">sqsh_table.h</a></div></div>
-<div class="ttc" id="astructSqshCompressionOptionsContext_html"><div class="ttname"><a href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a></div><div class="ttdoc">The compression options context is used to store the compression options for a specific compression a...</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context_8h_source.html#l00060">sqsh_context.h:60</a></div></div>
 <div class="ttc" id="astructSqshCompression_html"><div class="ttname"><a href="structSqshCompression.html">SqshCompression</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__compression_8h_source.html#l00052">sqsh_compression.h:52</a></div></div>
 <div class="ttc" id="astructSqshConfig_html"><div class="ttname"><a href="structSqshConfig.html">SqshConfig</a></div><div class="ttdoc">The SqshConfig struct contains all the configuration options for a sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh_8h_source.html#l00061">sqsh.h:61</a></div></div>
 <div class="ttc" id="astructSqshFragmentTable_html"><div class="ttname"><a href="structSqshFragmentTable.html">SqshFragmentTable</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__table_8h_source.html#l00063">sqsh_table.h:63</a></div></div>
 <div class="ttc" id="astructSqshMapper_html"><div class="ttname"><a href="structSqshMapper.html">SqshMapper</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__mapper_8h_source.html#l00151">sqsh_mapper.h:151</a></div></div>
 <div class="ttc" id="astructSqshMapping_html"><div class="ttname"><a href="structSqshMapping.html">SqshMapping</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__mapper_8h_source.html#l00129">sqsh_mapper.h:129</a></div></div>
-<div class="ttc" id="astructSqshSuperblockContext_html"><div class="ttname"><a href="structSqshSuperblockContext.html">SqshSuperblockContext</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context_8h_source.html#l00685">sqsh_context.h:685</a></div></div>
+<div class="ttc" id="astructSqshSuperblockContext_html"><div class="ttname"><a href="structSqshSuperblockContext.html">SqshSuperblockContext</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context_8h_source.html#l00683">sqsh_context.h:683</a></div></div>
 <div class="ttc" id="astructSqshTable_html"><div class="ttname"><a href="structSqshTable.html">SqshTable</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__table_8h_source.html#l00047">sqsh_table.h:47</a></div></div>
 <div class="ttc" id="astructSqshXattrTable_html"><div class="ttname"><a href="structSqshXattrTable.html">SqshXattrTable</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__table_8h_source.html#l00089">sqsh_table.h:89</a></div></div>
 <div class="ttc" id="astructSqsh_html"><div class="ttname"><a href="structSqsh.html">Sqsh</a></div><div class="ttdoc">The Sqsh struct contains all information about the current sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__private_8h_source.html#l00056">sqsh_private.h:56</a></div></div>

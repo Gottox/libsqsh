@@ -30,6 +30,7 @@ var menudata={children:[
 {text:"Data Fields",url:"functions.html",children:[
 {text:"All",url:"functions.html",children:[
 {text:"_",url:"functions.html#index__5F"},
+{text:"_compr",url:"functions__.html#index__5F"},
 {text:"a",url:"functions_a.html#index_a"},
 {text:"b",url:"functions_b.html#index_b"},
 {text:"buffer",url:"functions_b.html#index_b"},
@@ -76,6 +77,7 @@ var menudata={children:[
 {text:"xattr_",url:"functions_x.html#index_x"},
 {text:"z",url:"functions_z.html#index_z"}]},
 {text:"Functions",url:"functions_func.html",children:[
+{text:"_compr",url:"functions_func.html#index__5F"},
 {text:"buffer",url:"functions_func.html#index_b"},
 {text:"compre",url:"functions_func.html#index_c"},
 {text:"data_c",url:"functions_func.html#index_d"},
