@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-95-g8e03eade</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-96-gf43602d2</span>
    </div>
   </td>
  </tr>
@@ -131,6 +131,8 @@ Functions</h2></td></tr>
 <tr class="separator:ae866abfd331c2a14f957a636562c1dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0558e639b299f45632370d7d8e00fd1a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__table_8h.html#a0558e639b299f45632370d7d8e00fd1a">sqsh_xattr_table_start</a> (struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *table)</td></tr>
 <tr class="separator:a0558e639b299f45632370d7d8e00fd1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f661946de174d354fcb44629fab7b39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__table_8h.html#a4f661946de174d354fcb44629fab7b39">sqsh_xattr_table_get</a> (const struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *table, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> index, struct <a class="el" href="structSqshXattrLookupTable.html">SqshXattrLookupTable</a> *target)</td></tr>
+<tr class="separator:a4f661946de174d354fcb44629fab7b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a009e2ac389cc3461b375c6f66ed3bca1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__table_8h.html#a009e2ac389cc3461b375c6f66ed3bca1">sqsh_xattr_table_cleanup</a> (struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *context)</td></tr>
 <tr class="separator:a009e2ac389cc3461b375c6f66ed3bca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -156,7 +158,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="af6aa1115a96a68fa5f4417984e12b923a8fc00cbcc22b58a03965d61125674351" name="af6aa1115a96a68fa5f4417984e12b923a8fc00cbcc22b58a03965d61125674351"></a>SQSH_XATTR_SECURITY&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__table_8h_source.html#l00083">83</a> of file <a class="el" href="sqsh__table_8h_source.html">sqsh_table.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__table_8h_source.html#l00085">85</a> of file <a class="el" href="sqsh__table_8h_source.html">sqsh_table.h</a>.</p>
 
 </div>
 </div>
@@ -351,6 +353,40 @@ Functions</h2></td></tr>
           <td class="paramtype">struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f661946de174d354fcb44629fab7b39" name="a4f661946de174d354fcb44629fab7b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f661946de174d354fcb44629fab7b39">&#9670;&#160;</a></span>sqsh_xattr_table_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_xattr_table_get </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqshXattrLookupTable.html">SqshXattrLookupTable</a> *&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
