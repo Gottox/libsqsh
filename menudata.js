@@ -130,9 +130,9 @@ var menudata={children:[
 {text:"Globals",url:"globals.html",children:[
 {text:"All",url:"globals.html",children:[
 {text:"_clean",url:"globals.html#index__5F"},
+{text:"_compr",url:"globals__.html#index__5F"},
 {text:"_file_",url:"globals__.html#index__5F"},
 {text:"_init",url:"globals__.html#index__5F"},
-{text:"compre",url:"globals_c.html#index_c"},
 {text:"data_c",url:"globals_d.html#index_d"},
 {text:"data_d",url:"globals_d.html#index_d"},
 {text:"data_f",url:"globals_d.html#index_d"},
@@ -158,9 +158,9 @@ var menudata={children:[
 {text:"xattr_",url:"globals_x.html#index_x"}]},
 {text:"Functions",url:"globals_func.html",children:[
 {text:"_clean",url:"globals_func.html#index__5F"},
+{text:"_compr",url:"globals_func__.html#index__5F"},
 {text:"_file_",url:"globals_func__.html#index__5F"},
 {text:"_init",url:"globals_func__.html#index__5F"},
-{text:"compre",url:"globals_func_c.html#index_c"},
 {text:"data_c",url:"globals_func_d.html#index_d"},
 {text:"data_d",url:"globals_func_d.html#index_d"},
 {text:"data_f",url:"globals_func_d.html#index_d"},

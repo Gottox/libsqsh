@@ -2,7 +2,7 @@ var searchData=
 [
   ['sqsh_2eh_0',['sqsh.h',['../sqsh_8h.html',1,'']]],
   ['sqsh_5fcommon_2eh_1',['sqsh_common.h',['../sqsh__common_8h.html',1,'']]],
-  ['sqsh_5fcompression_2eh_2',['sqsh_compression.h',['../sqsh__compression_8h.html',1,'']]],
+  ['sqsh_5fcompression_5fprivate_2eh_2',['sqsh_compression_private.h',['../sqsh__compression__private_8h.html',1,'']]],
   ['sqsh_5fcontext_2eh_3',['sqsh_context.h',['../sqsh__context_8h.html',1,'']]],
   ['sqsh_5fcontext_5fprivate_2eh_4',['sqsh_context_private.h',['../sqsh__context__private_8h.html',1,'']]],
   ['sqsh_5fdata_2eh_5',['sqsh_data.h',['../sqsh__data_8h.html',1,'']]],

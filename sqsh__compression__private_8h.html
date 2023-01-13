@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libsqsh: sqsh_compression.h File Reference</title>
+<title>libsqsh: sqsh_compression_private.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-97-g02ce5b1e</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-98-gb4607a9f</span>
    </div>
   </td>
  </tr>
@@ -77,25 +77,25 @@ $(function() {
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">sqsh_compression.h File Reference</div></div>
+  <div class="headertitle"><div class="title">sqsh_compression_private.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for sqsh_compression.h:</div>
+Include dependency graph for sqsh_compression_private.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__compression_8h__incl.svg" width="240" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__compression__private_8h__incl.svg" width="294" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__compression_8h__dep__incl.svg" width="214" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__compression__private_8h__dep__incl.svg" width="294" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
-<p><a href="sqsh__compression_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="sqsh__compression__private_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -104,22 +104,22 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a78f33ef2dbd037a5a40256f615ebff6d"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__compression_8h.html#a78f33ef2dbd037a5a40256f615ebff6d">sqsh_extract_func_t</a>) (uint8_t *target, size_t *target_size, const uint8_t *compressed, const size_t compressed_size)</td></tr>
+<tr class="memitem:a78f33ef2dbd037a5a40256f615ebff6d"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__compression__private_8h.html#a78f33ef2dbd037a5a40256f615ebff6d">sqsh_extract_func_t</a>) (uint8_t *target, size_t *target_size, const uint8_t *compressed, const size_t compressed_size)</td></tr>
 <tr class="separator:a78f33ef2dbd037a5a40256f615ebff6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8ffd1d09f636f0516a60ff0da8744ec2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__compression_8h.html#a8ffd1d09f636f0516a60ff0da8744ec2">sqsh_compression_init</a> (struct <a class="el" href="structSqshCompression.html">SqshCompression</a> *compression, int compression_id, size_t block_size)</td></tr>
-<tr class="separator:a8ffd1d09f636f0516a60ff0da8744ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b91c48f7db075f1da5a12bda0be94a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__compression_8h.html#a3b91c48f7db075f1da5a12bda0be94a5">sqsh_compression_decompress_to_buffer</a> (const struct <a class="el" href="structSqshCompression.html">SqshCompression</a> *compression, struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer, const uint8_t *compressed, const size_t compressed_size)</td></tr>
-<tr class="separator:a3b91c48f7db075f1da5a12bda0be94a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4a5eaa48cb65705c89a20b3c26f74c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__compression_8h.html#aa4a5eaa48cb65705c89a20b3c26f74c1">sqsh_compression_cleanup</a> (struct <a class="el" href="structSqshCompression.html">SqshCompression</a> *compression)</td></tr>
-<tr class="separator:aa4a5eaa48cb65705c89a20b3c26f74c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70c8d59f1d1ea7e9cc89931d8425d07d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__compression__private_8h.html#a70c8d59f1d1ea7e9cc89931d8425d07d">sqsh__compression_init</a> (struct <a class="el" href="structSqshCompression.html">SqshCompression</a> *compression, int compression_id, size_t block_size)</td></tr>
+<tr class="separator:a70c8d59f1d1ea7e9cc89931d8425d07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af400d72c1d67fa8e604360f6375c666b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__compression__private_8h.html#af400d72c1d67fa8e604360f6375c666b">sqsh__compression_decompress_to_buffer</a> (const struct <a class="el" href="structSqshCompression.html">SqshCompression</a> *compression, struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer, const uint8_t *compressed, const size_t compressed_size)</td></tr>
+<tr class="separator:af400d72c1d67fa8e604360f6375c666b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee243e1faebd17fd092ff1dab443842"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__compression__private_8h.html#a2ee243e1faebd17fd092ff1dab443842">sqsh__compression_cleanup</a> (struct <a class="el" href="structSqshCompression.html">SqshCompression</a> *compression)</td></tr>
+<tr class="separator:a2ee243e1faebd17fd092ff1dab443842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Enno Boland (<a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'ebo'+'la'+'nd.'+'de'; return false;">mail@<span class="obfuscator">.nosp@m.</span>ebol<span class="obfuscator">.nosp@m.</span>and.d<span class="obfuscator">.nosp@m.</span>e</a>) </dd></dl>
 
-<p class="definition">Definition in file <a class="el" href="sqsh__compression_8h_source.html">sqsh_compression.h</a>.</p>
+<p class="definition">Definition in file <a class="el" href="sqsh__compression__private_8h_source.html">sqsh_compression_private.h</a>.</p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a78f33ef2dbd037a5a40256f615ebff6d" name="a78f33ef2dbd037a5a40256f615ebff6d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78f33ef2dbd037a5a40256f615ebff6d">&#9670;&#160;</a></span>sqsh_extract_func_t</h2>
@@ -133,19 +133,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__compression_8h_source.html#l00048">48</a> of file <a class="el" href="sqsh__compression_8h_source.html">sqsh_compression.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__compression__private_8h_source.html#l00046">46</a> of file <a class="el" href="sqsh__compression__private_8h_source.html">sqsh_compression_private.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aa4a5eaa48cb65705c89a20b3c26f74c1" name="aa4a5eaa48cb65705c89a20b3c26f74c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4a5eaa48cb65705c89a20b3c26f74c1">&#9670;&#160;</a></span>sqsh_compression_cleanup()</h2>
+<a id="a2ee243e1faebd17fd092ff1dab443842" name="a2ee243e1faebd17fd092ff1dab443842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee243e1faebd17fd092ff1dab443842">&#9670;&#160;</a></span>sqsh__compression_cleanup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sqsh_compression_cleanup </td>
+          <td class="memname">int sqsh__compression_cleanup </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshCompression.html">SqshCompression</a> *&#160;</td>
           <td class="paramname"><em>compression</em></td><td>)</td>
@@ -156,14 +156,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3b91c48f7db075f1da5a12bda0be94a5" name="a3b91c48f7db075f1da5a12bda0be94a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b91c48f7db075f1da5a12bda0be94a5">&#9670;&#160;</a></span>sqsh_compression_decompress_to_buffer()</h2>
+<a id="af400d72c1d67fa8e604360f6375c666b" name="af400d72c1d67fa8e604360f6375c666b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af400d72c1d67fa8e604360f6375c666b">&#9670;&#160;</a></span>sqsh__compression_decompress_to_buffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sqsh_compression_decompress_to_buffer </td>
+          <td class="memname">int sqsh__compression_decompress_to_buffer </td>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structSqshCompression.html">SqshCompression</a> *&#160;</td>
           <td class="paramname"><em>compression</em>, </td>
@@ -196,14 +196,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8ffd1d09f636f0516a60ff0da8744ec2" name="a8ffd1d09f636f0516a60ff0da8744ec2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ffd1d09f636f0516a60ff0da8744ec2">&#9670;&#160;</a></span>sqsh_compression_init()</h2>
+<a id="a70c8d59f1d1ea7e9cc89931d8425d07d" name="a70c8d59f1d1ea7e9cc89931d8425d07d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70c8d59f1d1ea7e9cc89931d8425d07d">&#9670;&#160;</a></span>sqsh__compression_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sqsh_compression_init </td>
+          <td class="memname">int sqsh__compression_init </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshCompression.html">SqshCompression</a> *&#160;</td>
           <td class="paramname"><em>compression</em>, </td>
