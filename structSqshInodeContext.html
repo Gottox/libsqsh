@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-99-g5f3dda68</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-100-g00b7514b</span>
    </div>
   </td>
  </tr>
@@ -89,6 +89,9 @@ Collaboration diagram for SqshInodeContext:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa341638d3fc5e90095a11e3d2fd4f962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#aa341638d3fc5e90095a11e3d2fd4f962">sqsh_inode_new</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *<a class="el" href="structSqshInodeContext.html#a5d09d2fadff948ab506bc5253950204a">sqsh</a>, uint64_t inode_ref, int *err)</td></tr>
+<tr class="memdesc:aa341638d3fc5e90095a11e3d2fd4f962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an inode context in heap.  <a href="structSqshInodeContext.html#aa341638d3fc5e90095a11e3d2fd4f962">More...</a><br /></td></tr>
+<tr class="separator:aa341638d3fc5e90095a11e3d2fd4f962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec0e13e43bdac4ed92c3b7ca2ca67982"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#aec0e13e43bdac4ed92c3b7ca2ca67982">sqsh_inode_init_by_ref</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *<a class="el" href="structSqshInodeContext.html#a5d09d2fadff948ab506bc5253950204a">sqsh</a>, uint64_t inode_ref)</td></tr>
 <tr class="memdesc:aec0e13e43bdac4ed92c3b7ca2ca67982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the inode context from a inode reference. inode referencesare descriptors of the physical location of an inode inside the inode table. They are diffrent from the inode number. In doubt use the inode number.  <a href="structSqshInodeContext.html#aec0e13e43bdac4ed92c3b7ca2ca67982">More...</a><br /></td></tr>
 <tr class="separator:aec0e13e43bdac4ed92c3b7ca2ca67982"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,6 +170,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a74d0e6ef1e8acb1f8b964440db0a4594"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#a74d0e6ef1e8acb1f8b964440db0a4594">sqsh_inode_cleanup</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
 <tr class="memdesc:a74d0e6ef1e8acb1f8b964440db0a4594"><td class="mdescLeft">&#160;</td><td class="mdescRight">cleans up the inode context.  <a href="structSqshInodeContext.html#a74d0e6ef1e8acb1f8b964440db0a4594">More...</a><br /></td></tr>
 <tr class="separator:a74d0e6ef1e8acb1f8b964440db0a4594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d42fdc3e5ab90f0208ab349989abcb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#af1d42fdc3e5ab90f0208ab349989abcb">sqsh_inode_free</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:af1d42fdc3e5ab90f0208ab349989abcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">cleans up an inode context and frees the memory.  <a href="structSqshInodeContext.html#af1d42fdc3e5ab90f0208ab349989abcb">More...</a><br /></td></tr>
+<tr class="separator:af1d42fdc3e5ab90f0208ab349989abcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b5573fcd05d29f3012df42a9ae6db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#a92b5573fcd05d29f3012df42a9ae6db1">sqsh_inode_ref_to_block</a> (uint64_t ref, uint32_t *block_index, uint16_t *offset)</td></tr>
 <tr class="memdesc:a92b5573fcd05d29f3012df42a9ae6db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">converts an inode reference into a block index and a block offset  <a href="structSqshInodeContext.html#a92b5573fcd05d29f3012df42a9ae6db1">More...</a><br /></td></tr>
 <tr class="separator:a92b5573fcd05d29f3012df42a9ae6db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -505,6 +511,33 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="af1d42fdc3e5ab90f0208ab349989abcb" name="af1d42fdc3e5ab90f0208ab349989abcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d42fdc3e5ab90f0208ab349989abcb">&#9670;&#160;</a></span>sqsh_inode_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_inode_free </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cleans up an inode context and frees the memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 on success, less than 0 on error. </dd></dl>
+
+</div>
+</div>
 <a id="a926abd3c598c371e281411ff0b020300" name="a926abd3c598c371e281411ff0b020300"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a926abd3c598c371e281411ff0b020300">&#9670;&#160;</a></span>sqsh_inode_gid()</h2>
 
@@ -738,6 +771,51 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the inode modification time. </dd></dl>
+
+</div>
+</div>
+<a id="aa341638d3fc5e90095a11e3d2fd4f962" name="aa341638d3fc5e90095a11e3d2fd4f962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa341638d3fc5e90095a11e3d2fd4f962">&#9670;&#160;</a></span>sqsh_inode_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> * sqsh_inode_new </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>inode_ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>err</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes an inode context in heap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sqsh</td><td>The sqsh context to use. </td></tr>
+    <tr><td class="paramname">inode_ref</td><td>The inode reference to initialize the context with. </td></tr>
+    <tr><td class="paramname">err</td><td>err the error pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the sqsh context or NULL if an error occurred. </dd></dl>
 
 </div>
 </div>
