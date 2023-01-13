@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-100-g00b7514b</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-102-g72353d06</span>
    </div>
   </td>
  </tr>
@@ -105,6 +105,10 @@ Functions</h2></td></tr>
 <tr class="separator:a2d22e66be2f8c726b2d66d7bd6414661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95c51677eb127ab5658ed6c22d1644a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#a95c51677eb127ab5658ed6c22d1644a1">sqsh__file_cleanup</a> (struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *context)</td></tr>
 <tr class="separator:a95c51677eb127ab5658ed6c22d1644a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e46054c6959e6feca25148105da230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#ad1e46054c6959e6feca25148105da230">sqsh__inode_init</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, uint64_t inode_ref)</td></tr>
+<tr class="separator:ad1e46054c6959e6feca25148105da230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06ac9751dae95beec11780afe7b0dbba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#a06ac9751dae95beec11780afe7b0dbba">sqsh__inode_cleanup</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a06ac9751dae95beec11780afe7b0dbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a95c51677eb127ab5658ed6c22d1644a1" name="a95c51677eb127ab5658ed6c22d1644a1"></a>
@@ -142,6 +146,58 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
           <td class="paramname"><em>inode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06ac9751dae95beec11780afe7b0dbba" name="a06ac9751dae95beec11780afe7b0dbba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ac9751dae95beec11780afe7b0dbba">&#9670;&#160;</a></span>sqsh__inode_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh__inode_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1e46054c6959e6feca25148105da230" name="ad1e46054c6959e6feca25148105da230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e46054c6959e6feca25148105da230">&#9670;&#160;</a></span>sqsh__inode_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__inode_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>inode_ref</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
