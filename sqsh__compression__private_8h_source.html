@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-109-gc493ba77</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-110-g19b04f68</span>
    </div>
   </td>
  </tr>
@@ -121,20 +121,20 @@ $(function() {
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">size_t</span> block_size;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="sqsh__compression__private_8h.html#a70c8d59f1d1ea7e9cc89931d8425d07d">   58</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__compression__private_8h.html#a70c8d59f1d1ea7e9cc89931d8425d07d">sqsh__compression_init</a>(</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshCompression.html">SqshCompression</a> *compression, <span class="keywordtype">int</span> compression_id,</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordtype">size_t</span> block_size);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="sqsh__compression__private_8h.html#af400d72c1d67fa8e604360f6375c666b">   62</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__compression__private_8h.html#af400d72c1d67fa8e604360f6375c666b">sqsh__compression_decompress_to_buffer</a>(</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshCompression.html">SqshCompression</a> *compression, <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshBuffer.html">SqshBuffer</a> *buffer,</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keyword">const</span> uint8_t *compressed, <span class="keyword">const</span> <span class="keywordtype">size_t</span> compressed_size);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="sqsh__compression__private_8h.html#a2ee243e1faebd17fd092ff1dab443842">   66</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__compression__private_8h.html#a2ee243e1faebd17fd092ff1dab443842">sqsh__compression_cleanup</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structSqshCompression.html">SqshCompression</a> *compression);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard SQSH_COMPRESSION_PRIVATE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="sqsh__compression__private_8h.html#a70c8d59f1d1ea7e9cc89931d8425d07d">   69</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__compression__private_8h.html#a70c8d59f1d1ea7e9cc89931d8425d07d">sqsh__compression_init</a>(</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshCompression.html">SqshCompression</a> *compression, <span class="keywordtype">int</span> compression_id,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">size_t</span> block_size);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="sqsh__compression__private_8h.html#af400d72c1d67fa8e604360f6375c666b">   85</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__compression__private_8h.html#af400d72c1d67fa8e604360f6375c666b">sqsh__compression_decompress_to_buffer</a>(</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshCompression.html">SqshCompression</a> *compression, <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshBuffer.html">SqshBuffer</a> *buffer,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keyword">const</span> uint8_t *compressed, <span class="keyword">const</span> <span class="keywordtype">size_t</span> compressed_size);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="sqsh__compression__private_8h.html#a2ee243e1faebd17fd092ff1dab443842">   98</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__compression__private_8h.html#a2ee243e1faebd17fd092ff1dab443842">sqsh__compression_cleanup</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structSqshCompression.html">SqshCompression</a> *compression);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard SQSH_COMPRESSION_PRIVATE_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="asqsh__compression__private_8h_html_a2ee243e1faebd17fd092ff1dab443842"><div class="ttname"><a href="sqsh__compression__private_8h.html#a2ee243e1faebd17fd092ff1dab443842">sqsh__compression_cleanup</a></div><div class="ttdeci">int sqsh__compression_cleanup(struct SqshCompression *compression)</div></div>
 <div class="ttc" id="asqsh__compression__private_8h_html_a70c8d59f1d1ea7e9cc89931d8425d07d"><div class="ttname"><a href="sqsh__compression__private_8h.html#a70c8d59f1d1ea7e9cc89931d8425d07d">sqsh__compression_init</a></div><div class="ttdeci">int sqsh__compression_init(struct SqshCompression *compression, int compression_id, size_t block_size)</div></div>
 <div class="ttc" id="asqsh__compression__private_8h_html_a78f33ef2dbd037a5a40256f615ebff6d"><div class="ttname"><a href="sqsh__compression__private_8h.html#a78f33ef2dbd037a5a40256f615ebff6d">sqsh_extract_func_t</a></div><div class="ttdeci">int(* sqsh_extract_func_t)(uint8_t *target, size_t *target_size, const uint8_t *compressed, const size_t compressed_size)</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__compression__private_8h_source.html#l00046">sqsh_compression_private.h:46</a></div></div>

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-109-gc493ba77</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-110-g19b04f68</span>
    </div>
   </td>
  </tr>
@@ -69,16 +69,534 @@ $(function() {
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle"><div class="title">SqshSuperblockContext Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1020f26bc7736053f1e458cbcb4abcea"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="sqsh__context_8h.html#ae0979c00d3e768637a9a10f31b95594a">SqshSuperblockCompressionId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#a1020f26bc7736053f1e458cbcb4abcea">sqsh_superblock_compression_id</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:a1020f26bc7736053f1e458cbcb4abcea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the compression id of a superblock context.  <a href="structSqshSuperblockContext.html#a1020f26bc7736053f1e458cbcb4abcea">More...</a><br /></td></tr>
+<tr class="separator:a1020f26bc7736053f1e458cbcb4abcea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a0cb50249ded3bb7c062a07e57c8aa"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#a97a0cb50249ded3bb7c062a07e57c8aa">sqsh_superblock_directory_table_start</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:a97a0cb50249ded3bb7c062a07e57c8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the start offset of the directory table in a superblock context.  <a href="structSqshSuperblockContext.html#a97a0cb50249ded3bb7c062a07e57c8aa">More...</a><br /></td></tr>
+<tr class="separator:a97a0cb50249ded3bb7c062a07e57c8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d70f52f31c8de70c8793522f41ffbb9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#a1d70f52f31c8de70c8793522f41ffbb9">sqsh_superblock_fragment_table_start</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:a1d70f52f31c8de70c8793522f41ffbb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the start offset of the fragment table in a superblock context.  <a href="structSqshSuperblockContext.html#a1d70f52f31c8de70c8793522f41ffbb9">More...</a><br /></td></tr>
+<tr class="separator:a1d70f52f31c8de70c8793522f41ffbb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa6e174ab9f8e362bf171321125e8b7e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#afa6e174ab9f8e362bf171321125e8b7e">sqsh_superblock_inode_count</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:afa6e174ab9f8e362bf171321125e8b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the number of inodes in an archive.  <a href="structSqshSuperblockContext.html#afa6e174ab9f8e362bf171321125e8b7e">More...</a><br /></td></tr>
+<tr class="separator:afa6e174ab9f8e362bf171321125e8b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72447bc3f280e36eac674c0abe330e73"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#a72447bc3f280e36eac674c0abe330e73">sqsh_superblock_inode_table_start</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:a72447bc3f280e36eac674c0abe330e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the start offset of the inode table in an archive.  <a href="structSqshSuperblockContext.html#a72447bc3f280e36eac674c0abe330e73">More...</a><br /></td></tr>
+<tr class="separator:a72447bc3f280e36eac674c0abe330e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fab0a9a543cd136101271a9abba7a12"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#a3fab0a9a543cd136101271a9abba7a12">sqsh_superblock_id_table_start</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:a3fab0a9a543cd136101271a9abba7a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the start offset of the id table in an archive.  <a href="structSqshSuperblockContext.html#a3fab0a9a543cd136101271a9abba7a12">More...</a><br /></td></tr>
+<tr class="separator:a3fab0a9a543cd136101271a9abba7a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3287a40f3ee3b6482718b2c585f8501"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#ae3287a40f3ee3b6482718b2c585f8501">sqsh_superblock_id_count</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:ae3287a40f3ee3b6482718b2c585f8501"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the number of ids in an archive.  <a href="structSqshSuperblockContext.html#ae3287a40f3ee3b6482718b2c585f8501">More...</a><br /></td></tr>
+<tr class="separator:ae3287a40f3ee3b6482718b2c585f8501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a651956aac9c19cffa24f128878d166e1"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#a651956aac9c19cffa24f128878d166e1">sqsh_superblock_export_table_start</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:a651956aac9c19cffa24f128878d166e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the start offset of the export table in an archive.  <a href="structSqshSuperblockContext.html#a651956aac9c19cffa24f128878d166e1">More...</a><br /></td></tr>
+<tr class="separator:a651956aac9c19cffa24f128878d166e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6972c5fe568a950863f2b984df3663fb"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#a6972c5fe568a950863f2b984df3663fb">sqsh_superblock_xattr_id_table_start</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:a6972c5fe568a950863f2b984df3663fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the start offset of the xattr id table in an archive.  <a href="structSqshSuperblockContext.html#a6972c5fe568a950863f2b984df3663fb">More...</a><br /></td></tr>
+<tr class="separator:a6972c5fe568a950863f2b984df3663fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f000716396a3807cba99200a62c04fe"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#a0f000716396a3807cba99200a62c04fe">sqsh_superblock_inode_root_ref</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:a0f000716396a3807cba99200a62c04fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the reference of the root inode in a superblock context.  <a href="structSqshSuperblockContext.html#a0f000716396a3807cba99200a62c04fe">More...</a><br /></td></tr>
+<tr class="separator:a0f000716396a3807cba99200a62c04fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084f8b77b38c4c9305191d466e88a8df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#a084f8b77b38c4c9305191d466e88a8df">sqsh_superblock_has_fragments</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:a084f8b77b38c4c9305191d466e88a8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a superblock context has fragment table.  <a href="structSqshSuperblockContext.html#a084f8b77b38c4c9305191d466e88a8df">More...</a><br /></td></tr>
+<tr class="separator:a084f8b77b38c4c9305191d466e88a8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a4ce7f51e91c0cd053a0e9d4d0382f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#ac1a4ce7f51e91c0cd053a0e9d4d0382f">sqsh_superblock_has_export_table</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:ac1a4ce7f51e91c0cd053a0e9d4d0382f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a superblock context has an export table.  <a href="structSqshSuperblockContext.html#ac1a4ce7f51e91c0cd053a0e9d4d0382f">More...</a><br /></td></tr>
+<tr class="separator:ac1a4ce7f51e91c0cd053a0e9d4d0382f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf9f9d514e82eafeb355d26861c6e7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#acaf9f9d514e82eafeb355d26861c6e7c">sqsh_superblock_has_compression_options</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:acaf9f9d514e82eafeb355d26861c6e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a superblock context has compression options.  <a href="structSqshSuperblockContext.html#acaf9f9d514e82eafeb355d26861c6e7c">More...</a><br /></td></tr>
+<tr class="separator:acaf9f9d514e82eafeb355d26861c6e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c2d6017a8e0a3fd9f332da2ad2c2a5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#ad3c2d6017a8e0a3fd9f332da2ad2c2a5">sqsh_superblock_block_size</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:ad3c2d6017a8e0a3fd9f332da2ad2c2a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the block size of a superblock context.  <a href="structSqshSuperblockContext.html#ad3c2d6017a8e0a3fd9f332da2ad2c2a5">More...</a><br /></td></tr>
+<tr class="separator:ad3c2d6017a8e0a3fd9f332da2ad2c2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf38aafe39d9415a53de8317a88455d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#a5bf38aafe39d9415a53de8317a88455d">sqsh_superblock_modification_time</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:a5bf38aafe39d9415a53de8317a88455d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the modification time of a superblock context.  <a href="structSqshSuperblockContext.html#a5bf38aafe39d9415a53de8317a88455d">More...</a><br /></td></tr>
+<tr class="separator:a5bf38aafe39d9415a53de8317a88455d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6cb26e53a0d2786173f166e7861b152"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#af6cb26e53a0d2786173f166e7861b152">sqsh_superblock_fragment_entry_count</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:af6cb26e53a0d2786173f166e7861b152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the number of fragment entries in a superblock context.  <a href="structSqshSuperblockContext.html#af6cb26e53a0d2786173f166e7861b152">More...</a><br /></td></tr>
+<tr class="separator:af6cb26e53a0d2786173f166e7861b152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891f80ec1e4f5fd25fc73f47e948044c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSuperblockContext.html#a891f80ec1e4f5fd25fc73f47e948044c">sqsh_superblock_bytes_used</a> (const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *context)</td></tr>
+<tr class="memdesc:a891f80ec1e4f5fd25fc73f47e948044c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the number of bytes used in a superblock context.  <a href="structSqshSuperblockContext.html#a891f80ec1e4f5fd25fc73f47e948044c">More...</a><br /></td></tr>
+<tr class="separator:a891f80ec1e4f5fd25fc73f47e948044c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00050">50</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad3c2d6017a8e0a3fd9f332da2ad2c2a5" name="ad3c2d6017a8e0a3fd9f332da2ad2c2a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3c2d6017a8e0a3fd9f332da2ad2c2a5">&#9670;&#160;</a></span>sqsh_superblock_block_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sqsh_superblock_block_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the block size of a superblock context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the block size from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The block size of the superblock context. </dd></dl>
+
+</div>
+</div>
+<a id="a891f80ec1e4f5fd25fc73f47e948044c" name="a891f80ec1e4f5fd25fc73f47e948044c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a891f80ec1e4f5fd25fc73f47e948044c">&#9670;&#160;</a></span>sqsh_superblock_bytes_used()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sqsh_superblock_bytes_used </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the number of bytes used in a superblock context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the bytes used from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes used in the superblock context. </dd></dl>
+
+</div>
+</div>
+<a id="a1020f26bc7736053f1e458cbcb4abcea" name="a1020f26bc7736053f1e458cbcb4abcea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1020f26bc7736053f1e458cbcb4abcea">&#9670;&#160;</a></span>sqsh_superblock_compression_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="sqsh__context_8h.html#ae0979c00d3e768637a9a10f31b95594a">SqshSuperblockCompressionId</a> sqsh_superblock_compression_id </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the compression id of a superblock context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the compression id from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The compression id of the superblock context. </dd></dl>
+
+</div>
+</div>
+<a id="a97a0cb50249ded3bb7c062a07e57c8aa" name="a97a0cb50249ded3bb7c062a07e57c8aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97a0cb50249ded3bb7c062a07e57c8aa">&#9670;&#160;</a></span>sqsh_superblock_directory_table_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sqsh_superblock_directory_table_start </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the start offset of the directory table in a superblock context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the directory table start offset from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The start offset of the directory table in the superblock context. </dd></dl>
+
+</div>
+</div>
+<a id="a651956aac9c19cffa24f128878d166e1" name="a651956aac9c19cffa24f128878d166e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a651956aac9c19cffa24f128878d166e1">&#9670;&#160;</a></span>sqsh_superblock_export_table_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sqsh_superblock_export_table_start </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the start offset of the export table in an archive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the export table start offset from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The start offset of the export table in the superblock context. </dd></dl>
+
+</div>
+</div>
+<a id="af6cb26e53a0d2786173f166e7861b152" name="af6cb26e53a0d2786173f166e7861b152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6cb26e53a0d2786173f166e7861b152">&#9670;&#160;</a></span>sqsh_superblock_fragment_entry_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sqsh_superblock_fragment_entry_count </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the number of fragment entries in a superblock context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the fragment entry count from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of fragment entries in the superblock context. </dd></dl>
+
+</div>
+</div>
+<a id="a1d70f52f31c8de70c8793522f41ffbb9" name="a1d70f52f31c8de70c8793522f41ffbb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d70f52f31c8de70c8793522f41ffbb9">&#9670;&#160;</a></span>sqsh_superblock_fragment_table_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sqsh_superblock_fragment_table_start </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the start offset of the fragment table in a superblock context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the fragment table start offset from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The start offset of the fragment table in the superblock context. </dd></dl>
+
+</div>
+</div>
+<a id="acaf9f9d514e82eafeb355d26861c6e7c" name="acaf9f9d514e82eafeb355d26861c6e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaf9f9d514e82eafeb355d26861c6e7c">&#9670;&#160;</a></span>sqsh_superblock_has_compression_options()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sqsh_superblock_has_compression_options </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a superblock context has compression options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the superblock context has compression options, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ac1a4ce7f51e91c0cd053a0e9d4d0382f" name="ac1a4ce7f51e91c0cd053a0e9d4d0382f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1a4ce7f51e91c0cd053a0e9d4d0382f">&#9670;&#160;</a></span>sqsh_superblock_has_export_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sqsh_superblock_has_export_table </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a superblock context has an export table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the superblock context has an export table, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a084f8b77b38c4c9305191d466e88a8df" name="a084f8b77b38c4c9305191d466e88a8df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084f8b77b38c4c9305191d466e88a8df">&#9670;&#160;</a></span>sqsh_superblock_has_fragments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sqsh_superblock_has_fragments </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a superblock context has fragment table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the superblock context has a fragment table, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ae3287a40f3ee3b6482718b2c585f8501" name="ae3287a40f3ee3b6482718b2c585f8501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3287a40f3ee3b6482718b2c585f8501">&#9670;&#160;</a></span>sqsh_superblock_id_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t sqsh_superblock_id_count </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the number of ids in an archive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the ids count from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of inodes in the superblock context. </dd></dl>
+
+</div>
+</div>
+<a id="a3fab0a9a543cd136101271a9abba7a12" name="a3fab0a9a543cd136101271a9abba7a12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fab0a9a543cd136101271a9abba7a12">&#9670;&#160;</a></span>sqsh_superblock_id_table_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sqsh_superblock_id_table_start </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the start offset of the id table in an archive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the id table start offset from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The start offset of the id table in the superblock context. </dd></dl>
+
+</div>
+</div>
+<a id="afa6e174ab9f8e362bf171321125e8b7e" name="afa6e174ab9f8e362bf171321125e8b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa6e174ab9f8e362bf171321125e8b7e">&#9670;&#160;</a></span>sqsh_superblock_inode_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sqsh_superblock_inode_count </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the number of inodes in an archive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the inode count from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of inodes in the superblock context. </dd></dl>
+
+</div>
+</div>
+<a id="a0f000716396a3807cba99200a62c04fe" name="a0f000716396a3807cba99200a62c04fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f000716396a3807cba99200a62c04fe">&#9670;&#160;</a></span>sqsh_superblock_inode_root_ref()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sqsh_superblock_inode_root_ref </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the reference of the root inode in a superblock context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the root inode reference from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The reference of the root inode in the superblock context. </dd></dl>
+
+</div>
+</div>
+<a id="a72447bc3f280e36eac674c0abe330e73" name="a72447bc3f280e36eac674c0abe330e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72447bc3f280e36eac674c0abe330e73">&#9670;&#160;</a></span>sqsh_superblock_inode_table_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sqsh_superblock_inode_table_start </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the start offset of the inode table in an archive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the inode table start offset from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The start offset of the inode table in the superblock context. </dd></dl>
+
+</div>
+</div>
+<a id="a5bf38aafe39d9415a53de8317a88455d" name="a5bf38aafe39d9415a53de8317a88455d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf38aafe39d9415a53de8317a88455d">&#9670;&#160;</a></span>sqsh_superblock_modification_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sqsh_superblock_modification_time </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the modification time of a superblock context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the modification time from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The modification time of the superblock context. </dd></dl>
+
+</div>
+</div>
+<a id="a6972c5fe568a950863f2b984df3663fb" name="a6972c5fe568a950863f2b984df3663fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6972c5fe568a950863f2b984df3663fb">&#9670;&#160;</a></span>sqsh_superblock_xattr_id_table_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sqsh_superblock_xattr_id_table_start </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the start offset of the xattr id table in an archive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The superblock context to retrieve the xattr id table start offset from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The start offset of the xattr id table in the superblock context. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a></li>
+<li><a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

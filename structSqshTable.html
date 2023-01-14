@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-109-gc493ba77</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-110-g19b04f68</span>
    </div>
   </td>
  </tr>
@@ -69,15 +69,162 @@ $(function() {
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle"><div class="title">SqshTable Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="sqsh__table_8h_source.html">sqsh_table.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7f9a31c3983afdf00dd47c43a8f98dd0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTable.html#a7f9a31c3983afdf00dd47c43a8f98dd0">sqsh_table_init</a> (struct <a class="el" href="structSqshTable.html">SqshTable</a> *table, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> start_block, size_t element_size, size_t element_count)</td></tr>
+<tr class="memdesc:a7f9a31c3983afdf00dd47c43a8f98dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a table with a SQSH context.  <a href="structSqshTable.html#a7f9a31c3983afdf00dd47c43a8f98dd0">More...</a><br /></td></tr>
+<tr class="separator:a7f9a31c3983afdf00dd47c43a8f98dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43764b9ae829a5524dae8a88460de069"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTable.html#a43764b9ae829a5524dae8a88460de069">sqsh_table_get</a> (const struct <a class="el" href="structSqshTable.html">SqshTable</a> *table, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> index, void *target)</td></tr>
+<tr class="memdesc:a43764b9ae829a5524dae8a88460de069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an element from the table.  <a href="structSqshTable.html#a43764b9ae829a5524dae8a88460de069">More...</a><br /></td></tr>
+<tr class="separator:a43764b9ae829a5524dae8a88460de069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2014c5574a4e1e225229d6c968572d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTable.html#ad2014c5574a4e1e225229d6c968572d3">sqsh_table_cleanup</a> (struct <a class="el" href="structSqshTable.html">SqshTable</a> *table)</td></tr>
+<tr class="memdesc:ad2014c5574a4e1e225229d6c968572d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up a table.  <a href="structSqshTable.html#ad2014c5574a4e1e225229d6c968572d3">More...</a><br /></td></tr>
+<tr class="separator:ad2014c5574a4e1e225229d6c968572d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="sqsh__table_8h_source.html#l00048">48</a> of file <a class="el" href="sqsh__table_8h_source.html">sqsh_table.h</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad2014c5574a4e1e225229d6c968572d3" name="ad2014c5574a4e1e225229d6c968572d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2014c5574a4e1e225229d6c968572d3">&#9670;&#160;</a></span>sqsh_table_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_table_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshTable.html">SqshTable</a> *&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cleans up a table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">table</td><td>The table to clean up.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="a43764b9ae829a5524dae8a88460de069" name="a43764b9ae829a5524dae8a88460de069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43764b9ae829a5524dae8a88460de069">&#9670;&#160;</a></span>sqsh_table_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_table_get </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshTable.html">SqshTable</a> *&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves an element from the table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">table</td><td>The table to retrieve the element from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the element to retrieve. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">target</td><td>The buffer to store the element in.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="a7f9a31c3983afdf00dd47c43a8f98dd0" name="a7f9a31c3983afdf00dd47c43a8f98dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f9a31c3983afdf00dd47c43a8f98dd0">&#9670;&#160;</a></span>sqsh_table_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_table_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshTable.html">SqshTable</a> *&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a>&#160;</td>
+          <td class="paramname"><em>start_block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>element_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>element_count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a table with a SQSH context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">table</td><td>The table to initialize. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sqsh</td><td>The SQSH context to use for the table. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_block</td><td>The starting offset of the table in blocks. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element_size</td><td>The size of each element in the table. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element_count</td><td>The number of elements in the table.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="sqsh__table_8h_source.html">sqsh_table.h</a></li>
 </ul>
 </div><!-- contents -->

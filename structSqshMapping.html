@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-109-gc493ba77</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-110-g19b04f68</span>
    </div>
   </td>
  </tr>
@@ -69,6 +69,8 @@ $(function() {
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle"><div class="title">SqshMapping Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -80,10 +82,146 @@ Collaboration diagram for SqshMapping:</div>
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structSqshMapping__coll__graph.svg" width="100%" height="393"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a984a1b2cec672e8dd69f940606f36747"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMapping.html#a984a1b2cec672e8dd69f940606f36747">sqsh_mapping_size</a> (struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *mapping)</td></tr>
+<tr class="memdesc:a984a1b2cec672e8dd69f940606f36747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the size of a mapping.  <a href="structSqshMapping.html#a984a1b2cec672e8dd69f940606f36747">More...</a><br /></td></tr>
+<tr class="separator:a984a1b2cec672e8dd69f940606f36747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae96159db8c6385febde20564a3b6ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMapping.html#abae96159db8c6385febde20564a3b6ee">sqsh_mapping_resize</a> (struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *mapping, size_t new_size)</td></tr>
+<tr class="memdesc:abae96159db8c6385febde20564a3b6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes a mapping to a new size.  <a href="structSqshMapping.html#abae96159db8c6385febde20564a3b6ee">More...</a><br /></td></tr>
+<tr class="separator:abae96159db8c6385febde20564a3b6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1f5bc65a109dde2f6b3ae23a489d2d"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMapping.html#a4d1f5bc65a109dde2f6b3ae23a489d2d">sqsh_mapping_data</a> (const struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *mapping)</td></tr>
+<tr class="memdesc:a4d1f5bc65a109dde2f6b3ae23a489d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the data in a mapping.  <a href="structSqshMapping.html#a4d1f5bc65a109dde2f6b3ae23a489d2d">More...</a><br /></td></tr>
+<tr class="separator:a4d1f5bc65a109dde2f6b3ae23a489d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b27d668d5cdb7337eedc91c0151094"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMapping.html#a85b27d668d5cdb7337eedc91c0151094">sqsh_mapping_unmap</a> (struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *mapping)</td></tr>
+<tr class="memdesc:a85b27d668d5cdb7337eedc91c0151094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmaps a mapping.  <a href="structSqshMapping.html#a85b27d668d5cdb7337eedc91c0151094">More...</a><br /></td></tr>
+<tr class="separator:a85b27d668d5cdb7337eedc91c0151094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00162">162</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4d1f5bc65a109dde2f6b3ae23a489d2d" name="a4d1f5bc65a109dde2f6b3ae23a489d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d1f5bc65a109dde2f6b3ae23a489d2d">&#9670;&#160;</a></span>sqsh_mapping_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * sqsh_mapping_data </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *&#160;</td>
+          <td class="paramname"><em>mapping</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the data in a mapping. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mapping</td><td>The mapping to retrieve the data from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The data in the mapping. </dd></dl>
+
+</div>
+</div>
+<a id="abae96159db8c6385febde20564a3b6ee" name="abae96159db8c6385febde20564a3b6ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae96159db8c6385febde20564a3b6ee">&#9670;&#160;</a></span>sqsh_mapping_resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_mapping_resize </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *&#160;</td>
+          <td class="paramname"><em>mapping</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>new_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resizes a mapping to a new size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mapping</td><td>The mapping to resize. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_size</td><td>The new size of the mapping.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="a984a1b2cec672e8dd69f940606f36747" name="a984a1b2cec672e8dd69f940606f36747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a984a1b2cec672e8dd69f940606f36747">&#9670;&#160;</a></span>sqsh_mapping_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sqsh_mapping_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *&#160;</td>
+          <td class="paramname"><em>mapping</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the size of a mapping. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mapping</td><td>The mapping to retrieve the size from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of the mapping. </dd></dl>
+
+</div>
+</div>
+<a id="a85b27d668d5cdb7337eedc91c0151094" name="a85b27d668d5cdb7337eedc91c0151094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b27d668d5cdb7337eedc91c0151094">&#9670;&#160;</a></span>sqsh_mapping_unmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_mapping_unmap </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *&#160;</td>
+          <td class="paramname"><em>mapping</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unmaps a mapping. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mapping</td><td>The mapping to unmap.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
 <a id="a853a8ce7392f2d9504592d659bdd6282" name="a853a8ce7392f2d9504592d659bdd6282"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a853a8ce7392f2d9504592d659bdd6282">&#9670;&#160;</a></span>cl</h2>
 

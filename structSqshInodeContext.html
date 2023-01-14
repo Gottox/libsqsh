@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-109-gc493ba77</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-110-g19b04f68</span>
    </div>
   </td>
  </tr>
@@ -80,7 +80,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa341638d3fc5e90095a11e3d2fd4f962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#aa341638d3fc5e90095a11e3d2fd4f962">sqsh_inode_new</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, uint64_t inode_ref, int *err)</td></tr>
-<tr class="memdesc:aa341638d3fc5e90095a11e3d2fd4f962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inode context.  <a href="structSqshInodeContext.html#aa341638d3fc5e90095a11e3d2fd4f962">More...</a><br /></td></tr>
+<tr class="memdesc:aa341638d3fc5e90095a11e3d2fd4f962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an inode context in heap.  <a href="structSqshInodeContext.html#aa341638d3fc5e90095a11e3d2fd4f962">More...</a><br /></td></tr>
 <tr class="separator:aa341638d3fc5e90095a11e3d2fd4f962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a500d7c81ba63211aa7cfeedaf84cf9e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#a500d7c81ba63211aa7cfeedaf84cf9e5">sqsh_inode_is_extended</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
 <tr class="memdesc:a500d7c81ba63211aa7cfeedaf84cf9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns whether the inode is an extended structure.  <a href="structSqshInodeContext.html#a500d7c81ba63211aa7cfeedaf84cf9e5">More...</a><br /></td></tr>
@@ -139,6 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ca7bbebf5ab8692debe198968b052b0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#a9ca7bbebf5ab8692debe198968b052b0">sqsh_inode_symlink_size</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
 <tr class="memdesc:a9ca7bbebf5ab8692debe198968b052b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the length of the target of a symbolic link in bytes.  <a href="structSqshInodeContext.html#a9ca7bbebf5ab8692debe198968b052b0">More...</a><br /></td></tr>
 <tr class="separator:a9ca7bbebf5ab8692debe198968b052b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1259f15abd5dbc075212abe28bd52c17"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#a1259f15abd5dbc075212abe28bd52c17">sqsh_inode_device_id</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="memdesc:a1259f15abd5dbc075212abe28bd52c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the device id of the device inode.  <a href="structSqshInodeContext.html#a1259f15abd5dbc075212abe28bd52c17">More...</a><br /></td></tr>
+<tr class="separator:a1259f15abd5dbc075212abe28bd52c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f24b62db649b987d29fd75e5866ce48"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#a7f24b62db649b987d29fd75e5866ce48">sqsh_inode_uid</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
 <tr class="memdesc:a7f24b62db649b987d29fd75e5866ce48"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the uid of the inode.  <a href="structSqshInodeContext.html#a7f24b62db649b987d29fd75e5866ce48">More...</a><br /></td></tr>
 <tr class="separator:a7f24b62db649b987d29fd75e5866ce48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +165,33 @@ Public Member Functions</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00236">236</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1259f15abd5dbc075212abe28bd52c17" name="a1259f15abd5dbc075212abe28bd52c17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1259f15abd5dbc075212abe28bd52c17">&#9670;&#160;</a></span>sqsh_inode_device_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sqsh_inode_device_id </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the device id of the device inode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>The inode context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the name of the inode or 0 if the inode is not a device. </dd></dl>
+
+</div>
+</div>
 <a id="a998c42107b605d76a6de5a677fba22e9" name="a998c42107b605d76a6de5a677fba22e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a998c42107b605d76a6de5a677fba22e9">&#9670;&#160;</a></span>sqsh_inode_directory_block_offset()</h2>
 
@@ -473,7 +503,7 @@ Public Member Functions</h2></td></tr>
 <p>cleans up an inode context and frees the memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+    <tr><td class="paramname">context</td><td>The inode context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -500,7 +530,7 @@ Public Member Functions</h2></td></tr>
 <p>returns the gid of the inode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+    <tr><td class="paramname">context</td><td>The inode context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -621,8 +651,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Inode context. </p>
-<p >Initializes an inode context in heap</p>
+<p>Initializes an inode context in heap. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">sqsh</td><td>The sqsh context to use. </td></tr>
@@ -719,7 +748,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">block_index</td><td>The block index. </td></tr>
-    <tr><td class="paramname">offset</td><td>The block offset. </td></tr>
+    <tr><td class="paramname">offset</td><td>The block offset.</td></tr>
   </table>
   </dd>
 </dl>
@@ -909,7 +938,7 @@ Public Member Functions</h2></td></tr>
 <p>returns the uid of the inode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+    <tr><td class="paramname">context</td><td>The inode context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -936,7 +965,7 @@ Public Member Functions</h2></td></tr>
 <p>returns index of the extended attribute inside of the xattr table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>The inode context. </td></tr>
+    <tr><td class="paramname">context</td><td>The inode context.</td></tr>
   </table>
   </dd>
 </dl>

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-109-gc493ba77</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-110-g19b04f68</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html">SqshInodeContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -155,6 +157,10 @@ Functions</h2></td></tr>
 <tr class="separator:ad1e46054c6959e6feca25148105da230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ac9751dae95beec11780afe7b0dbba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#a06ac9751dae95beec11780afe7b0dbba">sqsh__inode_cleanup</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
 <tr class="separator:a06ac9751dae95beec11780afe7b0dbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f37da38e64140190a30952265ef483f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#a3f37da38e64140190a30952265ef483f">sqsh__path_resolver_init</a> (struct <a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
+<tr class="separator:a3f37da38e64140190a30952265ef483f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf935e1fcff4b7fda84fb447d4390f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#abcf935e1fcff4b7fda84fb447d4390f4">sqsh_path_resolver_cleanup</a> (struct <a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *context)</td></tr>
+<tr class="separator:abcf935e1fcff4b7fda84fb447d4390f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a956b5a53a580f82d6eba6ab03bfc8758" name="a956b5a53a580f82d6eba6ab03bfc8758"></a>
@@ -565,6 +571,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3f37da38e64140190a30952265ef483f" name="a3f37da38e64140190a30952265ef483f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f37da38e64140190a30952265ef483f">&#9670;&#160;</a></span>sqsh__path_resolver_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__path_resolver_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9fd1a4f28351031e7fe45ddf56ef6211" name="a9fd1a4f28351031e7fe45ddf56ef6211"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fd1a4f28351031e7fe45ddf56ef6211">&#9670;&#160;</a></span>sqsh__superblock_cleanup()</h2>
 
@@ -614,6 +648,24 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcf935e1fcff4b7fda84fb447d4390f4" name="abcf935e1fcff4b7fda84fb447d4390f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf935e1fcff4b7fda84fb447d4390f4">&#9670;&#160;</a></span>sqsh_path_resolver_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_path_resolver_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

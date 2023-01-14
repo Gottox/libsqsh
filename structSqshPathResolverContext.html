@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-109-gc493ba77</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-110-g19b04f68</span>
    </div>
   </td>
  </tr>
@@ -75,57 +75,24 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a33d5f6a01f548c30b39bd44bbbfcfe15"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshPathResolverContext.html#a33d5f6a01f548c30b39bd44bbbfcfe15">sqsh_path_resolver_new</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, int *err)</td></tr>
 <tr class="memdesc:a33d5f6a01f548c30b39bd44bbbfcfe15"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes a path resolver context in heap  <a href="structSqshPathResolverContext.html#a33d5f6a01f548c30b39bd44bbbfcfe15">More...</a><br /></td></tr>
 <tr class="separator:a33d5f6a01f548c30b39bd44bbbfcfe15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bc4e4598727dbcc489bd70a0bf2d206"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshPathResolverContext.html#a4bc4e4598727dbcc489bd70a0bf2d206">sqsh_path_resolver_init</a> (struct <a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
-<tr class="memdesc:a4bc4e4598727dbcc489bd70a0bf2d206"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes a path resolver context.  <a href="structSqshPathResolverContext.html#a4bc4e4598727dbcc489bd70a0bf2d206">More...</a><br /></td></tr>
-<tr class="separator:a4bc4e4598727dbcc489bd70a0bf2d206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa56bc5686c08e491926b9495e2cdf50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshPathResolverContext.html#aaa56bc5686c08e491926b9495e2cdf50">sqsh_path_resolver_resolve</a> (struct <a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *context, const char *path, int *err)</td></tr>
 <tr class="memdesc:aaa56bc5686c08e491926b9495e2cdf50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the inode context from a path.  <a href="structSqshPathResolverContext.html#aaa56bc5686c08e491926b9495e2cdf50">More...</a><br /></td></tr>
 <tr class="separator:aaa56bc5686c08e491926b9495e2cdf50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcf935e1fcff4b7fda84fb447d4390f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshPathResolverContext.html#abcf935e1fcff4b7fda84fb447d4390f4">sqsh_path_resolver_cleanup</a> (struct <a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *context)</td></tr>
-<tr class="memdesc:abcf935e1fcff4b7fda84fb447d4390f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">cleans up a path resolver context.  <a href="structSqshPathResolverContext.html#abcf935e1fcff4b7fda84fb447d4390f4">More...</a><br /></td></tr>
-<tr class="separator:abcf935e1fcff4b7fda84fb447d4390f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a391afc0ec988434739eb3b6393ebd7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshPathResolverContext.html#a7a391afc0ec988434739eb3b6393ebd7">sqsh_path_resolver_free</a> (struct <a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *context)</td></tr>
 <tr class="memdesc:a7a391afc0ec988434739eb3b6393ebd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">cleans up a path resolver context and frees the memory.  <a href="structSqshPathResolverContext.html#a7a391afc0ec988434739eb3b6393ebd7">More...</a><br /></td></tr>
 <tr class="separator:a7a391afc0ec988434739eb3b6393ebd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="sqsh__context_8h_source.html#l00517">517</a> of file <a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00271">271</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="abcf935e1fcff4b7fda84fb447d4390f4" name="abcf935e1fcff4b7fda84fb447d4390f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcf935e1fcff4b7fda84fb447d4390f4">&#9670;&#160;</a></span>sqsh_path_resolver_cleanup()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sqsh_path_resolver_cleanup </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *&#160;</td>
-          <td class="paramname"><em>context</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>cleans up a path resolver context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>The path resolver context. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int 0 on success, less than 0 on error. </dd></dl>
-
-</div>
-</div>
 <a id="a7a391afc0ec988434739eb3b6393ebd7" name="a7a391afc0ec988434739eb3b6393ebd7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a391afc0ec988434739eb3b6393ebd7">&#9670;&#160;</a></span>sqsh_path_resolver_free()</h2>
 
@@ -146,44 +113,6 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>The path resolver context. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int 0 on success, less than 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="a4bc4e4598727dbcc489bd70a0bf2d206" name="a4bc4e4598727dbcc489bd70a0bf2d206"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bc4e4598727dbcc489bd70a0bf2d206">&#9670;&#160;</a></span>sqsh_path_resolver_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_path_resolver_init </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
-          <td class="paramname"><em>sqsh</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>initializes a path resolver context. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context</td><td>The path resolver context. </td></tr>
-    <tr><td class="paramname">sqsh</td><td>The sqsh context. </td></tr>
   </table>
   </dd>
 </dl>
@@ -220,8 +149,8 @@ Public Member Functions</h2></td></tr>
 <p>initializes a path resolver context in heap </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">sqsh</td><td>The sqsh context. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">err</td><td>Pointer to an int where the error code will be stored. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sqsh</td><td>The sqsh context. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">err</td><td>Pointer to an int where the error code will be stored.</td></tr>
   </table>
   </dd>
 </dl>
@@ -264,8 +193,8 @@ Public Member Functions</h2></td></tr>
 <p>Initialize the inode context from a path. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">context</td><td>The path resolver context. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">path</td><td>The path the file or directory. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The path resolver context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>The path the file or directory. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">err</td><td>Pointer to an int where the error code will be stored. </td></tr>
   </table>
   </dd>
@@ -274,7 +203,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li><a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a></li>
 <li><a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a></li>
 </ul>
 </div><!-- contents -->

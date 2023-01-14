@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-109-gc493ba77</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-110-g19b04f68</span>
    </div>
   </td>
  </tr>
@@ -69,15 +69,153 @@ $(function() {
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle"><div class="title">SqshTrailingContext Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a916233c73cd5e221919cef637c95a14f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTrailingContext.html#a916233c73cd5e221919cef637c95a14f">sqsh_trailing_init</a> (struct <a class="el" href="structSqshTrailingContext.html">SqshTrailingContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
+<tr class="memdesc:a916233c73cd5e221919cef637c95a14f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a trailing context.  <a href="structSqshTrailingContext.html#a916233c73cd5e221919cef637c95a14f">More...</a><br /></td></tr>
+<tr class="separator:a916233c73cd5e221919cef637c95a14f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69eabd535b0f11a115ef55cc6024bb3a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTrailingContext.html#a69eabd535b0f11a115ef55cc6024bb3a">sqsh_trailing_size</a> (struct <a class="el" href="structSqshTrailingContext.html">SqshTrailingContext</a> *context)</td></tr>
+<tr class="memdesc:a69eabd535b0f11a115ef55cc6024bb3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the size of the trailing data in a context.  <a href="structSqshTrailingContext.html#a69eabd535b0f11a115ef55cc6024bb3a">More...</a><br /></td></tr>
+<tr class="separator:a69eabd535b0f11a115ef55cc6024bb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadbf820efcd680ca43b75fb07699d69a"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTrailingContext.html#aadbf820efcd680ca43b75fb07699d69a">sqsh_trailing_data</a> (struct <a class="el" href="structSqshTrailingContext.html">SqshTrailingContext</a> *context)</td></tr>
+<tr class="memdesc:aadbf820efcd680ca43b75fb07699d69a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the trailing data in a context.  <a href="structSqshTrailingContext.html#aadbf820efcd680ca43b75fb07699d69a">More...</a><br /></td></tr>
+<tr class="separator:aadbf820efcd680ca43b75fb07699d69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26160eadfcc41edeff0936f0ac01a179"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTrailingContext.html#a26160eadfcc41edeff0936f0ac01a179">sqsh_trailing_cleanup</a> (struct <a class="el" href="structSqshTrailingContext.html">SqshTrailingContext</a> *context)</td></tr>
+<tr class="memdesc:a26160eadfcc41edeff0936f0ac01a179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up a trailing context.  <a href="structSqshTrailingContext.html#a26160eadfcc41edeff0936f0ac01a179">More...</a><br /></td></tr>
+<tr class="separator:a26160eadfcc41edeff0936f0ac01a179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="sqsh__context_8h_source.html#l00655">655</a> of file <a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<p class="definition">Definition at line <a class="el" href="sqsh__context_8h_source.html#l00790">790</a> of file <a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a26160eadfcc41edeff0936f0ac01a179" name="a26160eadfcc41edeff0936f0ac01a179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26160eadfcc41edeff0936f0ac01a179">&#9670;&#160;</a></span>sqsh_trailing_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_trailing_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshTrailingContext.html">SqshTrailingContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cleans up a trailing context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The context to clean up.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="aadbf820efcd680ca43b75fb07699d69a" name="aadbf820efcd680ca43b75fb07699d69a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadbf820efcd680ca43b75fb07699d69a">&#9670;&#160;</a></span>sqsh_trailing_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * sqsh_trailing_data </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshTrailingContext.html">SqshTrailingContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the trailing data in a context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The context to retrieve the data from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The trailing data in the context. </dd></dl>
+
+</div>
+</div>
+<a id="a916233c73cd5e221919cef637c95a14f" name="a916233c73cd5e221919cef637c95a14f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a916233c73cd5e221919cef637c95a14f">&#9670;&#160;</a></span>sqsh_trailing_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_trailing_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshTrailingContext.html">SqshTrailingContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a trailing context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">context</td><td>The context to initialize. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sqsh</td><td>The <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance to use for the context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="a69eabd535b0f11a115ef55cc6024bb3a" name="a69eabd535b0f11a115ef55cc6024bb3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69eabd535b0f11a115ef55cc6024bb3a">&#9670;&#160;</a></span>sqsh_trailing_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sqsh_trailing_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshTrailingContext.html">SqshTrailingContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the size of the trailing data in a context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The context to retrieve the size from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of the trailing data in the context. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a></li>
 </ul>
 </div><!-- contents -->
