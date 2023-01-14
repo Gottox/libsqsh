@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-104-gdfeb215f</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-105-gaa16e2b7</span>
    </div>
   </td>
  </tr>
@@ -70,23 +70,16 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle"><div class="title">SqshInodeContext Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for SqshInodeContext:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structSqshInodeContext__coll__graph.svg" width="396" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa341638d3fc5e90095a11e3d2fd4f962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#aa341638d3fc5e90095a11e3d2fd4f962">sqsh_inode_new</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *<a class="el" href="structSqshInodeContext.html#a5d09d2fadff948ab506bc5253950204a">sqsh</a>, uint64_t inode_ref, int *err)</td></tr>
+<tr class="memitem:aa341638d3fc5e90095a11e3d2fd4f962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#aa341638d3fc5e90095a11e3d2fd4f962">sqsh_inode_new</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, uint64_t inode_ref, int *err)</td></tr>
 <tr class="memdesc:aa341638d3fc5e90095a11e3d2fd4f962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inode context.  <a href="structSqshInodeContext.html#aa341638d3fc5e90095a11e3d2fd4f962">More...</a><br /></td></tr>
 <tr class="separator:aa341638d3fc5e90095a11e3d2fd4f962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a500d7c81ba63211aa7cfeedaf84cf9e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#a500d7c81ba63211aa7cfeedaf84cf9e5">sqsh_inode_is_extended</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
@@ -164,17 +157,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a07d03327d934203ac5139e1d09f804e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#a07d03327d934203ac5139e1d09f804e2">sqsh_inode_ref_from_block</a> (uint32_t block_index, uint16_t offset)</td></tr>
 <tr class="memdesc:a07d03327d934203ac5139e1d09f804e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">converts a block index and a block offset into an inode reference.  <a href="structSqshInodeContext.html#a07d03327d934203ac5139e1d09f804e2">More...</a><br /></td></tr>
 <tr class="separator:a07d03327d934203ac5139e1d09f804e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a2caa876fa4cd0fc62c7cbc25eb2ec47e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqshMetablockStreamContext.html">SqshMetablockStreamContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#a2caa876fa4cd0fc62c7cbc25eb2ec47e">metablock</a></td></tr>
-<tr class="separator:a2caa876fa4cd0fc62c7cbc25eb2ec47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d09d2fadff948ab506bc5253950204a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#a5d09d2fadff948ab506bc5253950204a">sqsh</a></td></tr>
-<tr class="separator:a5d09d2fadff948ab506bc5253950204a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00224">224</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00236">236</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a998c42107b605d76a6de5a677fba22e9" name="a998c42107b605d76a6de5a677fba22e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a998c42107b605d76a6de5a677fba22e9">&#9670;&#160;</a></span>sqsh_inode_directory_block_offset()</h2>
@@ -955,39 +941,6 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the index of the extended attribute inside of the xattr table. </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a2caa876fa4cd0fc62c7cbc25eb2ec47e" name="a2caa876fa4cd0fc62c7cbc25eb2ec47e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2caa876fa4cd0fc62c7cbc25eb2ec47e">&#9670;&#160;</a></span>metablock</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structSqshMetablockStreamContext.html">SqshMetablockStreamContext</a> SqshInodeContext::metablock</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00225">225</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
-
-</div>
-</div>
-<a id="a5d09d2fadff948ab506bc5253950204a" name="a5d09d2fadff948ab506bc5253950204a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d09d2fadff948ab506bc5253950204a">&#9670;&#160;</a></span>sqsh</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structSqsh.html">Sqsh</a>* SqshInodeContext::sqsh</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00226">226</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
 
 </div>
 </div>

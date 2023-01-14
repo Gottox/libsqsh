@@ -7,7 +7,7 @@ var searchData=
   ['sqsh_5f_5fcompression_5foptions_5fcleanup_4',['sqsh__compression_options_cleanup',['../structSqshCompressionOptionsContext.html#a06db48968ea81de044073841ff56d02b',1,'SqshCompressionOptionsContext']]],
   ['sqsh_5f_5fcompression_5foptions_5finit_5',['sqsh__compression_options_init',['../structSqshCompressionOptionsContext.html#adf7bca9726cc449373c41fef1027cabb',1,'SqshCompressionOptionsContext']]],
   ['sqsh_5f_5fdirectory_5findex_5fiterator_5fcleanup_6',['sqsh__directory_index_iterator_cleanup',['../sqsh__iterator__private_8h.html#ab5415f6e659e4622291049105c6e70a0',1,'sqsh_iterator_private.h']]],
-  ['sqsh_5f_5fdirectory_5findex_5fiterator_5ffree_7',['sqsh__directory_index_iterator_free',['../structSqshDirectoryIndexIterator.html#a84b09d4dacb6212f365f1c32acb56708',1,'SqshDirectoryIndexIterator']]],
+  ['sqsh_5f_5fdirectory_5findex_5fiterator_5ffree_7',['sqsh__directory_index_iterator_free',['../sqsh__iterator__private_8h.html#a84b09d4dacb6212f365f1c32acb56708',1,'sqsh_iterator_private.h']]],
   ['sqsh_5f_5fdirectory_5findex_5fiterator_5findex_8',['sqsh__directory_index_iterator_index',['../sqsh__iterator__private_8h.html#a7987820b7a787aacbbaf96b260be21f4',1,'sqsh_iterator_private.h']]],
   ['sqsh_5f_5fdirectory_5findex_5fiterator_5finit_9',['sqsh__directory_index_iterator_init',['../sqsh__iterator__private_8h.html#a3874edf28e04eba2e91d00548917ac82',1,'sqsh_iterator_private.h']]],
   ['sqsh_5f_5fdirectory_5findex_5fiterator_5fname_10',['sqsh__directory_index_iterator_name',['../sqsh__iterator__private_8h.html#ac2bb839177901a46050d107009d9cb5f',1,'sqsh_iterator_private.h']]],

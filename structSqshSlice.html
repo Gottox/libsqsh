@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-104-gdfeb215f</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-105-gaa16e2b7</span>
    </div>
   </td>
  </tr>
@@ -70,8 +70,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle"><div class="title">SqshSlice Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -83,10 +82,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a177bf4df130d4d22cdd4adf1fdec0255"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSlice.html#a177bf4df130d4d22cdd4adf1fdec0255">sqsh_slice_init</a> (struct <a class="el" href="structSqshSlice.html">SqshSlice</a> *slice, const uint8_t *<a class="el" href="structSqshSlice.html#a20d7e8a27ae134b5ad80e25921d9fb64">data</a>, size_t <a class="el" href="structSqshSlice.html#acb5abc2e2ca303d7ead33a534890f892">size</a>)</td></tr>
+<tr class="memitem:a177bf4df130d4d22cdd4adf1fdec0255"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSlice.html#a177bf4df130d4d22cdd4adf1fdec0255">sqsh_slice_init</a> (struct <a class="el" href="structSqshSlice.html">SqshSlice</a> *slice, const uint8_t *data, size_t size)</td></tr>
 <tr class="memdesc:a177bf4df130d4d22cdd4adf1fdec0255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new slice from a given data pointer and size.  <a href="structSqshSlice.html#a177bf4df130d4d22cdd4adf1fdec0255">More...</a><br /></td></tr>
 <tr class="separator:a177bf4df130d4d22cdd4adf1fdec0255"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff93e5e7fdfb3fbc63590e0307b7988c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSlice.html#aff93e5e7fdfb3fbc63590e0307b7988c">sqsh_slice_init_subslice</a> (struct <a class="el" href="structSqshSlice.html">SqshSlice</a> *slice, const struct <a class="el" href="structSqshSlice.html">SqshSlice</a> *source, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> offset, size_t <a class="el" href="structSqshSlice.html#acb5abc2e2ca303d7ead33a534890f892">size</a>)</td></tr>
+<tr class="memitem:aff93e5e7fdfb3fbc63590e0307b7988c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSlice.html#aff93e5e7fdfb3fbc63590e0307b7988c">sqsh_slice_init_subslice</a> (struct <a class="el" href="structSqshSlice.html">SqshSlice</a> *slice, const struct <a class="el" href="structSqshSlice.html">SqshSlice</a> *source, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> offset, size_t size)</td></tr>
 <tr class="memdesc:aff93e5e7fdfb3fbc63590e0307b7988c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new slice from a given data pointer and size.  <a href="structSqshSlice.html#aff93e5e7fdfb3fbc63590e0307b7988c">More...</a><br /></td></tr>
 <tr class="separator:aff93e5e7fdfb3fbc63590e0307b7988c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3def3a446c5b429422a07fac1cc6dab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSlice.html#ad3def3a446c5b429422a07fac1cc6dab">sqsh_slice_data</a> (const struct <a class="el" href="structSqshSlice.html">SqshSlice</a> *slice)</td></tr>
@@ -98,13 +97,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad1cf9ad4d5e62c4f4782cbc081fc3699"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSlice.html#ad1cf9ad4d5e62c4f4782cbc081fc3699">sqsh_slice_cleanup</a> (struct <a class="el" href="structSqshSlice.html">SqshSlice</a> *slice)</td></tr>
 <tr class="memdesc:ad1cf9ad4d5e62c4f4782cbc081fc3699"><td class="mdescLeft">&#160;</td><td class="mdescRight">cleans up the slice  <a href="structSqshSlice.html#ad1cf9ad4d5e62c4f4782cbc081fc3699">More...</a><br /></td></tr>
 <tr class="separator:ad1cf9ad4d5e62c4f4782cbc081fc3699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a20d7e8a27ae134b5ad80e25921d9fb64"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSlice.html#a20d7e8a27ae134b5ad80e25921d9fb64">data</a></td></tr>
-<tr class="separator:a20d7e8a27ae134b5ad80e25921d9fb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb5abc2e2ca303d7ead33a534890f892"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshSlice.html#acb5abc2e2ca303d7ead33a534890f892">size</a></td></tr>
-<tr class="separator:acb5abc2e2ca303d7ead33a534890f892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Generic representation of a region of memory. </p>
@@ -286,39 +278,6 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The size </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a20d7e8a27ae134b5ad80e25921d9fb64" name="a20d7e8a27ae134b5ad80e25921d9fb64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20d7e8a27ae134b5ad80e25921d9fb64">&#9670;&#160;</a></span>data</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t* SqshSlice::data</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00053">53</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
-
-</div>
-</div>
-<a id="acb5abc2e2ca303d7ead33a534890f892" name="acb5abc2e2ca303d7ead33a534890f892"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb5abc2e2ca303d7ead33a534890f892">&#9670;&#160;</a></span>size</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t SqshSlice::size</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__primitive_8h_source.html#l00054">54</a> of file <a class="el" href="sqsh__primitive_8h_source.html">sqsh_primitive.h</a>.</p>
 
 </div>
 </div>

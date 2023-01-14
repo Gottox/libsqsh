@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-104-gdfeb215f</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-105-gaa16e2b7</span>
    </div>
   </td>
  </tr>
@@ -69,166 +69,15 @@ $(function() {
 
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle"><div class="title">SqshMemoryMapperImpl Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a299a6cd6962e52bfc0972f3ffe3b00e6"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMemoryMapperImpl.html#a299a6cd6962e52bfc0972f3ffe3b00e6">init</a> )(struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *mapper, const void *input, size_t <a class="el" href="structSqshMemoryMapperImpl.html#a70ef2e0037994ac37753d886f82d562d">size</a>)</td></tr>
-<tr class="separator:a299a6cd6962e52bfc0972f3ffe3b00e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2fb49e11156f7a1a4bb58c5824317e5"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMemoryMapperImpl.html#ae2fb49e11156f7a1a4bb58c5824317e5">mapping</a> )(struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *map, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> offset, size_t <a class="el" href="structSqshMemoryMapperImpl.html#a70ef2e0037994ac37753d886f82d562d">size</a>)</td></tr>
-<tr class="separator:ae2fb49e11156f7a1a4bb58c5824317e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70ef2e0037994ac37753d886f82d562d"><td class="memItemLeft" align="right" valign="top">size_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMemoryMapperImpl.html#a70ef2e0037994ac37753d886f82d562d">size</a> )(const struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *mapper)</td></tr>
-<tr class="separator:a70ef2e0037994ac37753d886f82d562d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7db5fec6d5dd1aeaa95ae8d34deb48e2"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMemoryMapperImpl.html#a7db5fec6d5dd1aeaa95ae8d34deb48e2">cleanup</a> )(struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *mapper)</td></tr>
-<tr class="separator:a7db5fec6d5dd1aeaa95ae8d34deb48e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8e43b0011639b7c30ee4a4615816d3f"><td class="memItemLeft" align="right" valign="top">const uint8_t *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMemoryMapperImpl.html#af8e43b0011639b7c30ee4a4615816d3f">map_data</a> )(const struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *<a class="el" href="structSqshMemoryMapperImpl.html#ae2fb49e11156f7a1a4bb58c5824317e5">mapping</a>)</td></tr>
-<tr class="separator:af8e43b0011639b7c30ee4a4615816d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43567fec8ef4b7d5702d39d6a0ef4aaa"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMemoryMapperImpl.html#a43567fec8ef4b7d5702d39d6a0ef4aaa">map_resize</a> )(struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *<a class="el" href="structSqshMemoryMapperImpl.html#ae2fb49e11156f7a1a4bb58c5824317e5">mapping</a>, size_t new_size)</td></tr>
-<tr class="separator:a43567fec8ef4b7d5702d39d6a0ef4aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a540dbe581b79b22f92e2dbdcd06af322"><td class="memItemLeft" align="right" valign="top">size_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMemoryMapperImpl.html#a540dbe581b79b22f92e2dbdcd06af322">map_size</a> )(const struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *<a class="el" href="structSqshMemoryMapperImpl.html#ae2fb49e11156f7a1a4bb58c5824317e5">mapping</a>)</td></tr>
-<tr class="separator:a540dbe581b79b22f92e2dbdcd06af322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae424ccbf8960cc06244f85311a5c2136"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMemoryMapperImpl.html#ae424ccbf8960cc06244f85311a5c2136">unmap</a> )(struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *<a class="el" href="structSqshMemoryMapperImpl.html#ae2fb49e11156f7a1a4bb58c5824317e5">mapping</a>)</td></tr>
-<tr class="separator:ae424ccbf8960cc06244f85311a5c2136"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00143">143</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a id="a7db5fec6d5dd1aeaa95ae8d34deb48e2" name="a7db5fec6d5dd1aeaa95ae8d34deb48e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7db5fec6d5dd1aeaa95ae8d34deb48e2">&#9670;&#160;</a></span>cleanup</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int(* SqshMemoryMapperImpl::cleanup) (struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *mapper)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00147">147</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
-
-</div>
-</div>
-<a id="a299a6cd6962e52bfc0972f3ffe3b00e6" name="a299a6cd6962e52bfc0972f3ffe3b00e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a299a6cd6962e52bfc0972f3ffe3b00e6">&#9670;&#160;</a></span>init</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int(* SqshMemoryMapperImpl::init) (struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *mapper, const void *input, size_t <a class="el" href="structSqshMemoryMapperImpl.html#a70ef2e0037994ac37753d886f82d562d">size</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00144">144</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
-
-</div>
-</div>
-<a id="af8e43b0011639b7c30ee4a4615816d3f" name="af8e43b0011639b7c30ee4a4615816d3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8e43b0011639b7c30ee4a4615816d3f">&#9670;&#160;</a></span>map_data</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t *(* SqshMemoryMapperImpl::map_data) (const struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *<a class="el" href="structSqshMemoryMapperImpl.html#ae2fb49e11156f7a1a4bb58c5824317e5">mapping</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00148">148</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
-
-</div>
-</div>
-<a id="a43567fec8ef4b7d5702d39d6a0ef4aaa" name="a43567fec8ef4b7d5702d39d6a0ef4aaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43567fec8ef4b7d5702d39d6a0ef4aaa">&#9670;&#160;</a></span>map_resize</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int(* SqshMemoryMapperImpl::map_resize) (struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *<a class="el" href="structSqshMemoryMapperImpl.html#ae2fb49e11156f7a1a4bb58c5824317e5">mapping</a>, size_t new_size)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00149">149</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
-
-</div>
-</div>
-<a id="a540dbe581b79b22f92e2dbdcd06af322" name="a540dbe581b79b22f92e2dbdcd06af322"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a540dbe581b79b22f92e2dbdcd06af322">&#9670;&#160;</a></span>map_size</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t(* SqshMemoryMapperImpl::map_size) (const struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *<a class="el" href="structSqshMemoryMapperImpl.html#ae2fb49e11156f7a1a4bb58c5824317e5">mapping</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00150">150</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
-
-</div>
-</div>
-<a id="ae2fb49e11156f7a1a4bb58c5824317e5" name="ae2fb49e11156f7a1a4bb58c5824317e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2fb49e11156f7a1a4bb58c5824317e5">&#9670;&#160;</a></span>mapping</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int(* SqshMemoryMapperImpl::mapping) (struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *map, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> offset, size_t <a class="el" href="structSqshMemoryMapperImpl.html#a70ef2e0037994ac37753d886f82d562d">size</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00145">145</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
-
-</div>
-</div>
-<a id="a70ef2e0037994ac37753d886f82d562d" name="a70ef2e0037994ac37753d886f82d562d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70ef2e0037994ac37753d886f82d562d">&#9670;&#160;</a></span>size</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t(* SqshMemoryMapperImpl::size) (const struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *mapper)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00146">146</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
-
-</div>
-</div>
-<a id="ae424ccbf8960cc06244f85311a5c2136" name="ae424ccbf8960cc06244f85311a5c2136"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae424ccbf8960cc06244f85311a5c2136">&#9670;&#160;</a></span>unmap</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int(* SqshMemoryMapperImpl::unmap) (struct <a class="el" href="structSqshMapping.html">SqshMapping</a> *<a class="el" href="structSqshMemoryMapperImpl.html#ae2fb49e11156f7a1a4bb58c5824317e5">mapping</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00151">151</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00176">176</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a></li>
 </ul>
 </div><!-- contents -->

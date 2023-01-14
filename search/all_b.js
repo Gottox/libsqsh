@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['libsqsh_0',['libsqsh',['../index.html',1,'']]],
-  ['lock_1',['lock',['../structSqshLruHashmap.html#a788a2139ec769770ecdaa3da42bbd034',1,'SqshLruHashmap']]],
-  ['lookup_5ftable_2',['lookup_table',['../structSqshTable.html#ae175356de22f028e934149b778bcc071',1,'SqshTable']]],
-  ['lz4_3',['lz4',['../unionSqshCompressionOptions.html#a12d1b2eac3ac4fa20c4f739f501df60f',1,'SqshCompressionOptions']]],
-  ['lzo_4',['lzo',['../unionSqshCompressionOptions.html#a4a89e7a3f5d85c8b235e542e96f8b511',1,'SqshCompressionOptions']]]
+  ['magic_0',['magic',['../structSqshSuperblock.html#ab2e6b35695bbf017b16ab6543151277e',1,'SqshSuperblock']]],
+  ['mc_1',['mc',['../structSqshMapping.html#a3863b970c20a40223ed314146095a74b',1,'SqshMapping::mc()'],['../structSqshMapper.html#a3bce0a2eaac89b60bb93d7f1ce9f29a4',1,'SqshMapper::mc()']]],
+  ['mm_2',['mm',['../structSqshMapping.html#a39ea3f818049f5ddc3174267565a5e05',1,'SqshMapping::mm()'],['../structSqshMapper.html#a91d4926dbadb95703b7e297614611b1e',1,'SqshMapper::mm()']]],
+  ['modification_5ftime_3',['modification_time',['../structSqshSuperblock.html#a17d1131dcb2898c4381d6d7cfbccc533',1,'SqshSuperblock']]],
+  ['modified_5ftime_4',['modified_time',['../structSqshInodeHeader.html#a37e74094295a4412d849abd70d93fc17',1,'SqshInodeHeader']]]
 ];
