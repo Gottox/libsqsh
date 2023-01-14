@@ -1,13 +1,13 @@
-<map id="sqsh_iterator_private.h" name="sqsh_iterator_private.h">
-<area shape="rect" id="node1" title=" " alt="" coords="117,5,369,31"/>
-<area shape="rect" id="node2" href="$sqsh__context__private_8h.html" title=" " alt="" coords="5,79,248,104"/>
-<area shape="rect" id="node11" href="$sqsh__iterator_8h.html" title=" " alt="" coords="273,79,445,104"/>
-<area shape="rect" id="node3" href="$sqsh__context_8h.html" title=" " alt="" coords="227,152,389,177"/>
-<area shape="rect" id="node4" href="$sqsh__primitive_8h.html" title=" " alt="" coords="85,225,267,251"/>
-<area shape="rect" id="node10" href="$sqsh__mapper_8h.html" title=" " alt="" coords="51,152,203,177"/>
-<area shape="rect" id="node5" href="$sqsh__common_8h.html" title=" " alt="" coords="303,299,455,324"/>
-<area shape="rect" id="node6" title=" " alt="" coords="132,372,244,397"/>
-<area shape="rect" id="node9" title=" " alt="" coords="167,299,279,324"/>
-<area shape="rect" id="node7" title=" " alt="" coords="298,372,401,397"/>
-<area shape="rect" id="node8" title=" " alt="" coords="425,372,527,397"/>
+<map id="/__w/libsqsh/libsqsh/include/sqsh_iterator_private.h" name="/__w/libsqsh/libsqsh/include/sqsh_iterator_private.h">
+<area shape="rect" id="node1" title=" " alt="" coords="121,5,364,60"/>
+<area shape="rect" id="node2" href="$sqsh__context__private_8h.html" title=" " alt="" coords="5,108,248,133"/>
+<area shape="rect" id="node11" href="$sqsh__iterator_8h.html" title=" " alt="" coords="273,108,445,133"/>
+<area shape="rect" id="node3" href="$sqsh__context_8h.html" title=" " alt="" coords="227,181,389,207"/>
+<area shape="rect" id="node4" href="$sqsh__primitive_8h.html" title=" " alt="" coords="85,255,267,280"/>
+<area shape="rect" id="node10" href="$sqsh__mapper_8h.html" title=" " alt="" coords="51,181,203,207"/>
+<area shape="rect" id="node5" href="$sqsh__common_8h.html" title=" " alt="" coords="303,328,455,353"/>
+<area shape="rect" id="node6" title=" " alt="" coords="132,401,244,427"/>
+<area shape="rect" id="node9" title=" " alt="" coords="167,328,279,353"/>
+<area shape="rect" id="node7" title=" " alt="" coords="298,401,401,427"/>
+<area shape="rect" id="node8" title=" " alt="" coords="425,401,527,427"/>
 </map>
