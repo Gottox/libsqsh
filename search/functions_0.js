@@ -222,7 +222,7 @@ var searchData=
   ['sqsh_5finode_5fnew_219',['sqsh_inode_new',['../structSqshInodeContext.html#aa341638d3fc5e90095a11e3d2fd4f962',1,'SqshInodeContext']]],
   ['sqsh_5finode_5fnumber_220',['sqsh_inode_number',['../structSqshInodeContext.html#a274b746c4bf0eecd53a3763634caf913',1,'SqshInodeContext']]],
   ['sqsh_5finode_5fpermission_221',['sqsh_inode_permission',['../structSqshInodeContext.html#aa92c03cf2daeb9f2ff105c76111d6d7d',1,'SqshInodeContext']]],
-  ['sqsh_5finode_5fref_5ffrom_5fblock_222',['sqsh_inode_ref_from_block',['../structSqshInodeContext.html#a07d03327d934203ac5139e1d09f804e2',1,'SqshInodeContext']]],
+  ['sqsh_5finode_5fref_5ffrom_5fblock_222',['sqsh_inode_ref_from_block',['../sqsh__context_8h.html#a07d03327d934203ac5139e1d09f804e2',1,'sqsh_context.h']]],
   ['sqsh_5finode_5fref_5fto_5fblock_223',['sqsh_inode_ref_to_block',['../structSqshInodeContext.html#a92b5573fcd05d29f3012df42a9ae6db1',1,'SqshInodeContext']]],
   ['sqsh_5finode_5fsymlink_224',['sqsh_inode_symlink',['../structSqshInodeContext.html#a232a93cdc03ad5ed3c8c45627fb560a9',1,'SqshInodeContext']]],
   ['sqsh_5finode_5fsymlink_5fdup_225',['sqsh_inode_symlink_dup',['../structSqshInodeContext.html#aca1c175da44b7be1d759e1e62a61ea26',1,'SqshInodeContext']]],
