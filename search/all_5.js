@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['entries_0',['entries',['../structSqshLruHashmap.html#abde6bc43c2ac2546e977f7478c06b27f',1,'SqshLruHashmap']]],
-  ['export_5ftable_5fstart_1',['export_table_start',['../structSqshSuperblock.html#ad9eaba4cc11fe3d05a94e0d330c3e8b2',1,'SqshSuperblock']]]
+  ['mc_0',['mc',['../structSqshMapping.html#a3863b970c20a40223ed314146095a74b',1,'SqshMapping::mc()'],['../structSqshMapper.html#a3bce0a2eaac89b60bb93d7f1ce9f29a4',1,'SqshMapper::mc()']]],
+  ['mm_1',['mm',['../structSqshMapping.html#a39ea3f818049f5ddc3174267565a5e05',1,'SqshMapping::mm()'],['../structSqshMapper.html#a91d4926dbadb95703b7e297614611b1e',1,'SqshMapper::mm()']]]
 ];

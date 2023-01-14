@@ -34,6 +34,5 @@ var searchData=
   ['sqsh_5fsizeof_5fxattr_5fkey_31',['SQSH_SIZEOF_XATTR_KEY',['../sqsh__data_8h.html#a6c7333cad20dd8db61ec3b3a09eee184',1,'sqsh_data.h']]],
   ['sqsh_5fsizeof_5fxattr_5flookup_5ftable_32',['SQSH_SIZEOF_XATTR_LOOKUP_TABLE',['../sqsh__data_8h.html#a3e94b6a413c3756e3963ee77e25de40f',1,'sqsh_data.h']]],
   ['sqsh_5fsizeof_5fxattr_5fvalue_33',['SQSH_SIZEOF_XATTR_VALUE',['../sqsh__data_8h.html#ae7cd488ac034292d4ccd65b3e862c85f',1,'sqsh_data.h']]],
-  ['sqsh_5fstatic_5fassert_34',['SQSH_STATIC_ASSERT',['../sqsh__data__private_8h.html#a96bca9830dec61f8e46035703eca08da',1,'sqsh_data_private.h']]],
-  ['sqsh_5funaligned_35',['SQSH_UNALIGNED',['../sqsh__data_8h.html#a05922134c9a05aa1376933297fd19008',1,'sqsh_data.h']]]
+  ['sqsh_5funaligned_34',['SQSH_UNALIGNED',['../sqsh__data_8h.html#a05922134c9a05aa1376933297fd19008',1,'sqsh_data.h']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gid_5fidx_0',['gid_idx',['../structSqshInodeHeader.html#af420ea305724c297e6c87ab58543d65b',1,'SqshInodeHeader']]],
-  ['gzip_1',['gzip',['../unionSqshCompressionOptions.html#a2341f5d6faf1a2f9ece575f281c18db4',1,'SqshCompressionOptions']]]
+  ['older_0',['older',['../structSqshLruEntry.html#acae82597356b1611f0749b31ac6760b5',1,'SqshLruEntry']]],
+  ['oldest_1',['oldest',['../structSqshLruHashmap.html#a9a78e86bfa3d15f7b0ab623f5df67526',1,'SqshLruHashmap']]]
 ];

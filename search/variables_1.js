@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['algorithm_0',['algorithm',['../structSqshCompressionOptionsLzo.html#a275e7c893c01e42128f748cdf819ccbe',1,'SqshCompressionOptionsLzo']]]
+  ['dtor_0',['dtor',['../structSqshLruHashmap.html#aec8e6773d62b88a5de02453ac59882b2',1,'SqshLruHashmap']]]
 ];

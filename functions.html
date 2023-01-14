@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-107-g038091db</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-108-g0950aca6</span>
    </div>
   </td>
  </tr>
@@ -71,8 +71,174 @@ $(function() {
 <div class="contents">
 <div class="textblock">Here is a list of all struct and union fields with links to the structures/unions they belong to:</div>
 
-<h3><a id="index__5F" name="index__5F"></a>- _ -</h3><ul>
-<li>_unused&#160;:&#160;<a class="el" href="structSqshXattrIdTable.html#a961473555d9a0cf72331a7feab2f948d">SqshXattrIdTable</a></li>
+<h3><a id="index__5F" name="index__5F"></a>- _compr -</h3><ul>
+<li>sqsh__compression_options_cleanup()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#a06db48968ea81de044073841ff56d02b">SqshCompressionOptionsContext</a></li>
+<li>sqsh__compression_options_init()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#adf7bca9726cc449373c41fef1027cabb">SqshCompressionOptionsContext</a></li>
+</ul>
+
+
+<h3><a id="index_b" name="index_b"></a>- buffer -</h3><ul>
+<li>sqsh_buffer_add_capacity()&#160;:&#160;<a class="el" href="structSqshBuffer.html#a47a8e0cac338d42cd47d654b8c525c59">SqshBuffer</a></li>
+<li>sqsh_buffer_add_size()&#160;:&#160;<a class="el" href="structSqshBuffer.html#ae4103256f78f70b65855a6ad91488072">SqshBuffer</a></li>
+<li>sqsh_buffer_append()&#160;:&#160;<a class="el" href="structSqshBuffer.html#aca35061c9d606761b1881efd8d38c135">SqshBuffer</a></li>
+<li>sqsh_buffer_cleanup()&#160;:&#160;<a class="el" href="structSqshBuffer.html#a4fb285404dd63fb7848309a8806db61a">SqshBuffer</a></li>
+<li>sqsh_buffer_data()&#160;:&#160;<a class="el" href="structSqshBuffer.html#af126e910b5bf29b372a57909eb262ddf">SqshBuffer</a></li>
+<li>sqsh_buffer_drain()&#160;:&#160;<a class="el" href="structSqshBuffer.html#a6d442f02ca5245ed58600fd665ff6cc9">SqshBuffer</a></li>
+<li>sqsh_buffer_init()&#160;:&#160;<a class="el" href="structSqshBuffer.html#a8ece8454ad9f2f39be71d7a202ff78ef">SqshBuffer</a></li>
+<li>sqsh_buffer_size()&#160;:&#160;<a class="el" href="structSqshBuffer.html#a7a2b431ccb8f221493321db3009ddd2a">SqshBuffer</a></li>
+</ul>
+
+
+<h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
+<li>cl&#160;:&#160;<a class="el" href="structSqshMapper.html#ad49c3acdd995cdb05dd354045ba85bb5">SqshMapper</a>, <a class="el" href="structSqshMapping.html#a853a8ce7392f2d9504592d659bdd6282">SqshMapping</a></li>
+<li>cn&#160;:&#160;<a class="el" href="structSqshMapper.html#a24f278d06bcff2a4e0b58d831e8ec87c">SqshMapper</a>, <a class="el" href="structSqshMapping.html#aa63d815953312017962aa6a9286169b1">SqshMapping</a></li>
+<li>sqsh_compression_options_free()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#a98bf62d785c9adb9cba10a89330e12cc">SqshCompressionOptionsContext</a></li>
+<li>sqsh_compression_options_gzip_compression_level()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#a4f0806d541fc79c02fde5baf15d2af56">SqshCompressionOptionsContext</a></li>
+<li>sqsh_compression_options_gzip_strategies()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#ae2ae40f40f9b2cc35ba928ca82bfb30d">SqshCompressionOptionsContext</a></li>
+<li>sqsh_compression_options_gzip_window_size()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#a699b2043e5388c3517764bcb35e7672e">SqshCompressionOptionsContext</a></li>
+<li>sqsh_compression_options_lz4_flags()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#a9a6c881bc8f1c5bbc427aa990cc43e3d">SqshCompressionOptionsContext</a></li>
+<li>sqsh_compression_options_lz4_version()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#a1943b305d21e83e434a8331350d741cf">SqshCompressionOptionsContext</a></li>
+<li>sqsh_compression_options_lzo_algorithm()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#af10d1b599dc4e04d3fe38f43f64b9134">SqshCompressionOptionsContext</a></li>
+<li>sqsh_compression_options_lzo_compression_level()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#add699bd44aa8552efa5f5709350a2f13">SqshCompressionOptionsContext</a></li>
+<li>sqsh_compression_options_new()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#aa7f38bea2038652fc4375435d9b41ce4">SqshCompressionOptionsContext</a></li>
+<li>sqsh_compression_options_xz_dictionary_size()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#a0388692ee9f62c0a0e9b034b61a1f1ce">SqshCompressionOptionsContext</a></li>
+<li>sqsh_compression_options_xz_filters()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#ac8ba1e90f950e2416293f8fd6a9d32a7">SqshCompressionOptionsContext</a></li>
+<li>sqsh_compression_options_zstd_compression_level()&#160;:&#160;<a class="el" href="structSqshCompressionOptionsContext.html#ace1048c1c2ff1939ff94f09c57430161">SqshCompressionOptionsContext</a></li>
+</ul>
+
+
+<h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
+<li>dtor&#160;:&#160;<a class="el" href="structSqshLruHashmap.html#aec8e6773d62b88a5de02453ac59882b2">SqshLruHashmap</a></li>
+<li>sqsh_data_compression()&#160;:&#160;<a class="el" href="structSqsh.html#aaa5fd674f1dbd8bccffdde1d15b9cc87">Sqsh</a></li>
+<li>sqsh_directory_iterator_free()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a5b7ad794677f035b1c57b7bbb007cf7b">SqshDirectoryIterator</a></li>
+<li>sqsh_directory_iterator_inode_load()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a1319615a7489e998a974120b1c010ccd">SqshDirectoryIterator</a></li>
+<li>sqsh_directory_iterator_inode_ref()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a488d1751089f1aba59d0fb1e2d6e37c0">SqshDirectoryIterator</a></li>
+<li>sqsh_directory_iterator_inode_type()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#aded76da2951ffc1534313dd0a8811cbe">SqshDirectoryIterator</a></li>
+<li>sqsh_directory_iterator_lookup()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a4d5f6ad57ac44e9448b8026c6ca79a7e">SqshDirectoryIterator</a></li>
+<li>sqsh_directory_iterator_name()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#af05891767c47e30008188aeabfffea51">SqshDirectoryIterator</a></li>
+<li>sqsh_directory_iterator_name_dup()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a5652d833a353234fdeebd95fb1b458e5">SqshDirectoryIterator</a></li>
+<li>sqsh_directory_iterator_name_size()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a5ae72aafe13fb51eb6fc732a24af61d6">SqshDirectoryIterator</a></li>
+<li>sqsh_directory_iterator_new()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a409c001b388c197b3d9ac1aa407e379d">SqshDirectoryIterator</a></li>
+<li>sqsh_directory_iterator_next()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#ae3e08b486dc226148d931eb91cd8c028">SqshDirectoryIterator</a></li>
+</ul>
+
+
+<h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
+<li>entries&#160;:&#160;<a class="el" href="structSqshLruHashmap.html#abde6bc43c2ac2546e977f7478c06b27f">SqshLruHashmap</a></li>
+</ul>
+
+
+<h3><a id="index_f" name="index_f"></a>- file_d -</h3><ul>
+<li>sqsh_file_data()&#160;:&#160;<a class="el" href="structSqshFileContext.html#ab818d7d45bd7fbb94fd014cedad119bb">SqshFileContext</a></li>
+<li>sqsh_file_free()&#160;:&#160;<a class="el" href="structSqshFileContext.html#a35bf887975e9b6bdb4170812bf54763b">SqshFileContext</a></li>
+<li>sqsh_file_new()&#160;:&#160;<a class="el" href="structSqshFileContext.html#a2853d0678f732e2282a3350bb8344f32">SqshFileContext</a></li>
+<li>sqsh_file_read()&#160;:&#160;<a class="el" href="structSqshFileContext.html#a2f139a14a1eaeca8707adc55e7f8fd9d">SqshFileContext</a></li>
+<li>sqsh_file_seek()&#160;:&#160;<a class="el" href="structSqshFileContext.html#a2e22e372b2d30b4fada304bac5db7916">SqshFileContext</a></li>
+<li>sqsh_file_size()&#160;:&#160;<a class="el" href="structSqshFileContext.html#a7938ae41751cb32a39bf3d67486811f1">SqshFileContext</a></li>
+</ul>
+
+
+<h3><a id="index_h" name="index_h"></a>- h -</h3><ul>
+<li>hash&#160;:&#160;<a class="el" href="structSqshLruEntry.html#ac95cefba71af90ede9243be84d3a5a4e">SqshLruEntry</a></li>
+</ul>
+
+
+<h3><a id="index_i" name="index_i"></a>- inode_ -</h3><ul>
+<li>sqsh_inode_directory_block_offset()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a998c42107b605d76a6de5a677fba22e9">SqshInodeContext</a></li>
+<li>sqsh_inode_directory_block_start()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a11cebd31657937a9ec33bb3c257876eb">SqshInodeContext</a></li>
+<li>sqsh_inode_file_block_count()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a4ffe778ba463b3762e2a9b8ea0a79a76">SqshInodeContext</a></li>
+<li>sqsh_inode_file_block_is_compressed()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a22269b2253f21b9b1abe8ac0533afc35">SqshInodeContext</a></li>
+<li>sqsh_inode_file_block_size()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a9057c87a2211679eaba98e3d5181553a">SqshInodeContext</a></li>
+<li>sqsh_inode_file_blocks_start()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a7d38b7e83e18df45ef3e82974c303bf8">SqshInodeContext</a></li>
+<li>sqsh_inode_file_fragment_block_index()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a18a822992cd698fbfa15eb0f90d198d4">SqshInodeContext</a></li>
+<li>sqsh_inode_file_fragment_block_offset()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a59b31ee738cf0460a8e62b78e320205f">SqshInodeContext</a></li>
+<li>sqsh_inode_file_has_fragment()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#af9a87085481a46481fa7d0abac831050">SqshInodeContext</a></li>
+<li>sqsh_inode_file_size()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a65a02fa321fe0ef692244fac11ce0619">SqshInodeContext</a></li>
+<li>sqsh_inode_free()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#af1d42fdc3e5ab90f0208ab349989abcb">SqshInodeContext</a></li>
+<li>sqsh_inode_gid()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a926abd3c598c371e281411ff0b020300">SqshInodeContext</a></li>
+<li>sqsh_inode_hard_link_count()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a4d3ba76172886a29e05647a81738cf68">SqshInodeContext</a></li>
+<li>sqsh_inode_is_extended()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a500d7c81ba63211aa7cfeedaf84cf9e5">SqshInodeContext</a></li>
+<li>sqsh_inode_modified_time()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#accb1cdc2355a9025f565fe3a7eecf9cf">SqshInodeContext</a></li>
+<li>sqsh_inode_new()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#aa341638d3fc5e90095a11e3d2fd4f962">SqshInodeContext</a></li>
+<li>sqsh_inode_number()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a274b746c4bf0eecd53a3763634caf913">SqshInodeContext</a></li>
+<li>sqsh_inode_permission()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#aa92c03cf2daeb9f2ff105c76111d6d7d">SqshInodeContext</a></li>
+<li>sqsh_inode_ref_from_block()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a07d03327d934203ac5139e1d09f804e2">SqshInodeContext</a></li>
+<li>sqsh_inode_ref_to_block()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a92b5573fcd05d29f3012df42a9ae6db1">SqshInodeContext</a></li>
+<li>sqsh_inode_symlink()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a232a93cdc03ad5ed3c8c45627fb560a9">SqshInodeContext</a></li>
+<li>sqsh_inode_symlink_dup()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#aca1c175da44b7be1d759e1e62a61ea26">SqshInodeContext</a></li>
+<li>sqsh_inode_symlink_size()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a9ca7bbebf5ab8692debe198968b052b0">SqshInodeContext</a></li>
+<li>sqsh_inode_type()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a71eb3071def41c76320b575f8da5df1d">SqshInodeContext</a></li>
+<li>sqsh_inode_uid()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a7f24b62db649b987d29fd75e5866ce48">SqshInodeContext</a></li>
+<li>sqsh_inode_xattr_index()&#160;:&#160;<a class="el" href="structSqshInodeContext.html#a346c1e1a617dea3664d1f458bb8ed3cd">SqshInodeContext</a></li>
+</ul>
+
+
+<h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
+<li>lock&#160;:&#160;<a class="el" href="structSqshLruHashmap.html#a788a2139ec769770ecdaa3da42bbd034">SqshLruHashmap</a></li>
+<li>sqsh_lru_hashmap_cleanup()&#160;:&#160;<a class="el" href="structSqshLruHashmap.html#a5a3447c5b47860a7cfada8afa7472794">SqshLruHashmap</a></li>
+<li>sqsh_lru_hashmap_get()&#160;:&#160;<a class="el" href="structSqshLruHashmap.html#a0689f796cbc7254af0fab67f547911b0">SqshLruHashmap</a></li>
+<li>sqsh_lru_hashmap_init()&#160;:&#160;<a class="el" href="structSqshLruHashmap.html#a0515ef1cf418e173229961c9318239f6">SqshLruHashmap</a></li>
+<li>sqsh_lru_hashmap_put()&#160;:&#160;<a class="el" href="structSqshLruHashmap.html#a9f8cd77f4af28601a78c3dda9f546063">SqshLruHashmap</a></li>
+<li>sqsh_lru_hashmap_remove()&#160;:&#160;<a class="el" href="structSqshLruHashmap.html#a2ae23a7c123e81eb5180c80061716517">SqshLruHashmap</a></li>
+</ul>
+
+
+<h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
+<li>mc&#160;:&#160;<a class="el" href="structSqshMapper.html#a3bce0a2eaac89b60bb93d7f1ce9f29a4">SqshMapper</a>, <a class="el" href="structSqshMapping.html#a3863b970c20a40223ed314146095a74b">SqshMapping</a></li>
+<li>mm&#160;:&#160;<a class="el" href="structSqshMapper.html#a91d4926dbadb95703b7e297614611b1e">SqshMapper</a>, <a class="el" href="structSqshMapping.html#a39ea3f818049f5ddc3174267565a5e05">SqshMapping</a></li>
+<li>sqsh_mapper()&#160;:&#160;<a class="el" href="structSqsh.html#a14cbf95f444334fd0dadb33bca17bb24">Sqsh</a></li>
+<li>sqsh_metablock_compression()&#160;:&#160;<a class="el" href="structSqsh.html#a10698bec565df6ab43490a7bf1cba4cd">Sqsh</a></li>
+</ul>
+
+
+<h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
+<li>newer&#160;:&#160;<a class="el" href="structSqshLruEntry.html#adbc1fd6d1bed71319f666c03e121e3d0">SqshLruEntry</a></li>
+<li>newest&#160;:&#160;<a class="el" href="structSqshLruHashmap.html#aa36c93e6bec9f168a5eb6f1d9a9cbb33">SqshLruHashmap</a></li>
+<li>sqsh_new()&#160;:&#160;<a class="el" href="structSqsh.html#a983ce0fb8924ff3496deb773f7cdf377">Sqsh</a></li>
+</ul>
+
+
+<h3><a id="index_o" name="index_o"></a>- o -</h3><ul>
+<li>older&#160;:&#160;<a class="el" href="structSqshLruEntry.html#acae82597356b1611f0749b31ac6760b5">SqshLruEntry</a></li>
+<li>oldest&#160;:&#160;<a class="el" href="structSqshLruHashmap.html#a9a78e86bfa3d15f7b0ab623f5df67526">SqshLruHashmap</a></li>
+</ul>
+
+
+<h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
+<li>pointer&#160;:&#160;<a class="el" href="structSqshLruEntry.html#a26235e6ba152fb28a09f22ab0942b692">SqshLruEntry</a></li>
+<li>sqsh_path_resolver_cleanup()&#160;:&#160;<a class="el" href="structSqshPathResolverContext.html#abcf935e1fcff4b7fda84fb447d4390f4">SqshPathResolverContext</a></li>
+<li>sqsh_path_resolver_free()&#160;:&#160;<a class="el" href="structSqshPathResolverContext.html#a7a391afc0ec988434739eb3b6393ebd7">SqshPathResolverContext</a></li>
+<li>sqsh_path_resolver_init()&#160;:&#160;<a class="el" href="structSqshPathResolverContext.html#a4bc4e4598727dbcc489bd70a0bf2d206">SqshPathResolverContext</a></li>
+<li>sqsh_path_resolver_new()&#160;:&#160;<a class="el" href="structSqshPathResolverContext.html#a33d5f6a01f548c30b39bd44bbbfcfe15">SqshPathResolverContext</a></li>
+<li>sqsh_path_resolver_resolve()&#160;:&#160;<a class="el" href="structSqshPathResolverContext.html#aaa56bc5686c08e491926b9495e2cdf50">SqshPathResolverContext</a></li>
+</ul>
+
+
+<h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
+<li>references&#160;:&#160;<a class="el" href="structSqshRefCount.html#a81e301c120984afa230b534b847d9f68">SqshRefCount</a></li>
+<li>sqsh_ref_count_new()&#160;:&#160;<a class="el" href="structSqshRefCount.html#ac3458fca9e2d9030bfb86871eda6d1fe">SqshRefCount</a></li>
+<li>sqsh_ref_count_release()&#160;:&#160;<a class="el" href="structSqshRefCount.html#a3780c9d658fa8610a12a2be3f9536d98">SqshRefCount</a></li>
+<li>sqsh_ref_count_retain()&#160;:&#160;<a class="el" href="structSqshRefCount.html#a3793b9b9cf575cc73cb8bbb90a7b4a16">SqshRefCount</a></li>
+</ul>
+
+
+<h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>size&#160;:&#160;<a class="el" href="structSqshLruHashmap.html#ac7799c713ea5f2a4bdf64e6d0c9a0fd4">SqshLruHashmap</a></li>
+<li>sm&#160;:&#160;<a class="el" href="structSqshMapper.html#aa6c745686f78e07da7b0a7f8e5f836d0">SqshMapper</a>, <a class="el" href="structSqshMapping.html#aa8716facb1209530bf441a4b497e091c">SqshMapping</a></li>
+<li>source_size&#160;:&#160;<a class="el" href="structSqshConfig.html#ac09dead67e92f5e401577b968f522ff7">SqshConfig</a></li>
+<li>source_type&#160;:&#160;<a class="el" href="structSqshConfig.html#afe8c3cea7cc66be9f87d57fdc356ce05">SqshConfig</a></li>
+<li>sqsh_slice_cleanup()&#160;:&#160;<a class="el" href="structSqshSlice.html#ad1cf9ad4d5e62c4f4782cbc081fc3699">SqshSlice</a></li>
+<li>sqsh_slice_data()&#160;:&#160;<a class="el" href="structSqshSlice.html#ad3def3a446c5b429422a07fac1cc6dab">SqshSlice</a></li>
+<li>sqsh_slice_init()&#160;:&#160;<a class="el" href="structSqshSlice.html#a177bf4df130d4d22cdd4adf1fdec0255">SqshSlice</a></li>
+<li>sqsh_slice_init_subslice()&#160;:&#160;<a class="el" href="structSqshSlice.html#aff93e5e7fdfb3fbc63590e0307b7988c">SqshSlice</a></li>
+<li>sqsh_slice_size()&#160;:&#160;<a class="el" href="structSqshSlice.html#aea554c5c6df547076708df0009717d57">SqshSlice</a></li>
+<li>sqsh_superblock()&#160;:&#160;<a class="el" href="structSqsh.html#a3122021ce843b47dfc53e18368794058">Sqsh</a></li>
+</ul>
+
+
+<h3><a id="index_x" name="index_x"></a>- xattr_ -</h3><ul>
+<li>sqsh_xattr_iterator_fullname_dup()&#160;:&#160;<a class="el" href="structSqshXattrIterator.html#a5b74e3aebe25291c11b3e4f38357921c">SqshXattrIterator</a></li>
+<li>sqsh_xattr_iterator_value_dup()&#160;:&#160;<a class="el" href="structSqshXattrIterator.html#a1982a4c6bf709e20679b381cf056b3b6">SqshXattrIterator</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
