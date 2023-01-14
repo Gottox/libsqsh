@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-102-g72353d06</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-104-gdfeb215f</span>
    </div>
   </td>
  </tr>
@@ -76,10 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Inode context.  
- <a href="structSqshInodeContext.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for SqshInodeContext:</div>
 <div class="dyncontent">
@@ -90,7 +87,7 @@ Collaboration diagram for SqshInodeContext:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa341638d3fc5e90095a11e3d2fd4f962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#aa341638d3fc5e90095a11e3d2fd4f962">sqsh_inode_new</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *<a class="el" href="structSqshInodeContext.html#a5d09d2fadff948ab506bc5253950204a">sqsh</a>, uint64_t inode_ref, int *err)</td></tr>
-<tr class="memdesc:aa341638d3fc5e90095a11e3d2fd4f962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an inode context in heap.  <a href="structSqshInodeContext.html#aa341638d3fc5e90095a11e3d2fd4f962">More...</a><br /></td></tr>
+<tr class="memdesc:aa341638d3fc5e90095a11e3d2fd4f962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inode context.  <a href="structSqshInodeContext.html#aa341638d3fc5e90095a11e3d2fd4f962">More...</a><br /></td></tr>
 <tr class="separator:aa341638d3fc5e90095a11e3d2fd4f962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a500d7c81ba63211aa7cfeedaf84cf9e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html#a500d7c81ba63211aa7cfeedaf84cf9e5">sqsh_inode_is_extended</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
 <tr class="memdesc:a500d7c81ba63211aa7cfeedaf84cf9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns whether the inode is an extended structure.  <a href="structSqshInodeContext.html#a500d7c81ba63211aa7cfeedaf84cf9e5">More...</a><br /></td></tr>
@@ -176,9 +173,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a5d09d2fadff948ab506bc5253950204a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Inode context. </p>
-
-<p class="definition">Definition at line <a class="el" href="sqsh__context_8h_source.html#l00317">317</a> of file <a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a>.</p>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00224">224</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a998c42107b605d76a6de5a677fba22e9" name="a998c42107b605d76a6de5a677fba22e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a998c42107b605d76a6de5a677fba22e9">&#9670;&#160;</a></span>sqsh_inode_directory_block_offset()</h2>
@@ -639,12 +635,13 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes an inode context in heap. </p>
+<p>Inode context. </p>
+<p >Initializes an inode context in heap</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sqsh</td><td>The sqsh context to use. </td></tr>
-    <tr><td class="paramname">inode_ref</td><td>The inode reference to initialize the context with. </td></tr>
-    <tr><td class="paramname">err</td><td>err the error pointer. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">sqsh</td><td>The sqsh context to use. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">inode_ref</td><td>The inode reference to initialize the context with. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">err</td><td>Pointer to an int where the error code will be stored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -974,7 +971,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__context_8h_source.html#l00318">318</a> of file <a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00225">225</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
 
 </div>
 </div>
@@ -990,11 +987,12 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__context_8h_source.html#l00319">319</a> of file <a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00226">226</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li><a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a></li>
 <li><a class="el" href="sqsh__context_8h_source.html">sqsh_context.h</a></li>
 </ul>
 </div><!-- contents -->

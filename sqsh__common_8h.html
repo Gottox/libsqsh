@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-102-g72353d06</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-104-gdfeb215f</span>
    </div>
   </td>
  </tr>
@@ -79,12 +79,13 @@ $(function() {
   <div class="headertitle"><div class="title">sqsh_common.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sqsh_common.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__common_8h__incl.svg" width="240" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__common_8h__incl.svg" width="378" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -100,10 +101,6 @@ This graph shows which files directly or indirectly include this file:</div>
 Macros</h2></td></tr>
 <tr class="memitem:a0f0a35d1ed84a34ad06a006e5e90da94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a>&#160;&#160;&#160;__attribute__((warn_unused_result))</td></tr>
 <tr class="separator:a0f0a35d1ed84a34ad06a006e5e90da94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05922134c9a05aa1376933297fd19008"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a05922134c9a05aa1376933297fd19008">SQSH_UNALIGNED</a>&#160;&#160;&#160;__attribute__((packed, aligned(1)))</td></tr>
-<tr class="separator:a05922134c9a05aa1376933297fd19008"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96bca9830dec61f8e46035703eca08da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a96bca9830dec61f8e46035703eca08da">SQSH_STATIC_ASSERT</a>(cond)&#160;&#160;&#160;_Static_assert(cond, #cond)</td></tr>
-<tr class="separator:a96bca9830dec61f8e46035703eca08da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -127,42 +124,6 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00045">45</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
-
-</div>
-</div>
-<a id="a96bca9830dec61f8e46035703eca08da" name="a96bca9830dec61f8e46035703eca08da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96bca9830dec61f8e46035703eca08da">&#9670;&#160;</a></span>SQSH_STATIC_ASSERT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SQSH_STATIC_ASSERT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">cond</td><td>)</td>
-          <td>&#160;&#160;&#160;_Static_assert(cond, #cond)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00048">48</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
-
-</div>
-</div>
-<a id="a05922134c9a05aa1376933297fd19008" name="a05922134c9a05aa1376933297fd19008"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05922134c9a05aa1376933297fd19008">&#9670;&#160;</a></span>SQSH_UNALIGNED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SQSH_UNALIGNED&#160;&#160;&#160;__attribute__((packed, aligned(1)))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
 <p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00046">46</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
 
 </div>
@@ -180,7 +141,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00050">50</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00048">48</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
 
 </div>
 </div>

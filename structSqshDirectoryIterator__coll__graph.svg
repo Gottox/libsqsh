@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="structSqshInodeContext.html" target="_top" xlink:title="Inode context.">
+<g id="a_node2"><a xlink:href="structSqshInodeContext.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="137,-85 0,-85 0,-66 137,-66 137,-85"/>
 <text text-anchor="middle" x="68.5" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">SqshInodeContext</text>
 </a>

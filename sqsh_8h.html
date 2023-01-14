@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-102-g72353d06</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-104-gdfeb215f</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">sqsh.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -89,7 +90,7 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sqsh.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh_8h__incl.svg" width="659" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh_8h__incl.svg" width="651" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -115,6 +116,24 @@ Enumerations</h2></td></tr>
 , <a class="el" href="sqsh_8h.html#a6868944bf67de0c9638e180f3052b260a251b6c4d95aedd16b97ea136b5e80049">SQSH_SOURCE_TYPE_CURL</a>
  }</td></tr>
 <tr class="separator:a6868944bf67de0c9638e180f3052b260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a664bc25f26de06830cf8ef429a911a6e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#a664bc25f26de06830cf8ef429a911a6e">sqsh_id_table</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, struct <a class="el" href="structSqshTable.html">SqshTable</a> **id_table)</td></tr>
+<tr class="memdesc:a664bc25f26de06830cf8ef429a911a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the id table of a <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance.  <a href="sqsh_8h.html#a664bc25f26de06830cf8ef429a911a6e">More...</a><br /></td></tr>
+<tr class="separator:a664bc25f26de06830cf8ef429a911a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d14959cb7ed7731f3f5f4bdab2756d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#a19d14959cb7ed7731f3f5f4bdab2756d">sqsh_export_table</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, struct <a class="el" href="structSqshTable.html">SqshTable</a> **export_table)</td></tr>
+<tr class="memdesc:a19d14959cb7ed7731f3f5f4bdab2756d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the export table of a <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance.  <a href="sqsh_8h.html#a19d14959cb7ed7731f3f5f4bdab2756d">More...</a><br /></td></tr>
+<tr class="separator:a19d14959cb7ed7731f3f5f4bdab2756d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a216c187e35e4be92391c580ea55ea4a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#a216c187e35e4be92391c580ea55ea4a6">sqsh_fragment_table</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, struct <a class="el" href="structSqshFragmentTable.html">SqshFragmentTable</a> **fragment_table)</td></tr>
+<tr class="memdesc:a216c187e35e4be92391c580ea55ea4a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the fragment table of a <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance.  <a href="sqsh_8h.html#a216c187e35e4be92391c580ea55ea4a6">More...</a><br /></td></tr>
+<tr class="separator:a216c187e35e4be92391c580ea55ea4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04ad80ee7ca2be4b4852b91d76394e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#af04ad80ee7ca2be4b4852b91d76394e5">sqsh_xattr_table</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> **xattr_table)</td></tr>
+<tr class="memdesc:af04ad80ee7ca2be4b4852b91d76394e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the xattr table of a <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance.  <a href="sqsh_8h.html#af04ad80ee7ca2be4b4852b91d76394e5">More...</a><br /></td></tr>
+<tr class="separator:af04ad80ee7ca2be4b4852b91d76394e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb34415257ce8b3d8d407a0add722297"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh_8h.html#acb34415257ce8b3d8d407a0add722297">sqsh_free</a> (struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
+<tr class="memdesc:acb34415257ce8b3d8d407a0add722297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the resources used by a <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance.  <a href="sqsh_8h.html#acb34415257ce8b3d8d407a0add722297">More...</a><br /></td></tr>
+<tr class="separator:acb34415257ce8b3d8d407a0add722297"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Enno Boland (<a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'ebo'+'la'+'nd.'+'de'; return false;">mail@<span class="obfuscator">.nosp@m.</span>ebol<span class="obfuscator">.nosp@m.</span>and.d<span class="obfuscator">.nosp@m.</span>e</a>) </dd></dl>
@@ -140,6 +159,186 @@ Enumerations</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00050">50</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a19d14959cb7ed7731f3f5f4bdab2756d" name="a19d14959cb7ed7731f3f5f4bdab2756d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d14959cb7ed7731f3f5f4bdab2756d">&#9670;&#160;</a></span>sqsh_export_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_export_table </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqshTable.html">SqshTable</a> **&#160;</td>
+          <td class="paramname"><em>export_table</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the export table of a <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sqsh</td><td>The <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance to retrieve the export table from. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">export_table</td><td>Pointer to a struct <a class="el" href="structSqshTable.html">SqshTable</a> where the export table will be stored.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="a216c187e35e4be92391c580ea55ea4a6" name="a216c187e35e4be92391c580ea55ea4a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a216c187e35e4be92391c580ea55ea4a6">&#9670;&#160;</a></span>sqsh_fragment_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_fragment_table </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqshFragmentTable.html">SqshFragmentTable</a> **&#160;</td>
+          <td class="paramname"><em>fragment_table</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the fragment table of a <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sqsh</td><td>The <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance to retrieve the fragment table from. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">fragment_table</td><td>Pointer to a struct <a class="el" href="structSqshTable.html">SqshTable</a> where the export table will be stored.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="acb34415257ce8b3d8d407a0add722297" name="acb34415257ce8b3d8d407a0add722297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb34415257ce8b3d8d407a0add722297">&#9670;&#160;</a></span>sqsh_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_free </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frees the resources used by a <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sqsh</td><td>The <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance to free.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="a664bc25f26de06830cf8ef429a911a6e" name="a664bc25f26de06830cf8ef429a911a6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a664bc25f26de06830cf8ef429a911a6e">&#9670;&#160;</a></span>sqsh_id_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_id_table </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqshTable.html">SqshTable</a> **&#160;</td>
+          <td class="paramname"><em>id_table</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the id table of a <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sqsh</td><td>The <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance to retrieve the id table from. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">id_table</td><td>Pointer to a struct <a class="el" href="structSqshTable.html">SqshTable</a> where the id table will be stored.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="af04ad80ee7ca2be4b4852b91d76394e5" name="af04ad80ee7ca2be4b4852b91d76394e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af04ad80ee7ca2be4b4852b91d76394e5">&#9670;&#160;</a></span>sqsh_xattr_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_xattr_table </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> **&#160;</td>
+          <td class="paramname"><em>xattr_table</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the xattr table of a <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sqsh</td><td>The <a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> instance to retrieve the xattr table from. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">xattr_table</td><td>Pointer to a struct <a class="el" href="structSqshTable.html">SqshTable</a> where the export table will be stored.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
 
 </div>
 </div>

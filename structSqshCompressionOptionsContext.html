@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-102-g72353d06</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-104-gdfeb215f</span>
    </div>
   </td>
  </tr>
@@ -142,7 +142,7 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The compression options context is used to store the compression options for a specific compression algorithm. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00052">52</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00084">84</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a06db48968ea81de044073841ff56d02b" name="a06db48968ea81de044073841ff56d02b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06db48968ea81de044073841ff56d02b">&#9670;&#160;</a></span>sqsh__compression_options_cleanup()</h2>
@@ -226,7 +226,7 @@ Data Fields</h2></td></tr>
 <p>Frees a <a class="el" href="structSqshCompressionOptionsContext.html" title="The compression options context is used to store the compression options for a specific compression a...">SqshCompressionOptionsContext</a> struct. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>The file context to free. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The file context to free. </td></tr>
   </table>
   </dd>
 </dl>
@@ -252,7 +252,7 @@ Data Fields</h2></td></tr>
 <p>returns the compression level of gzip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>the compression options context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>the compression options context </td></tr>
   </table>
   </dd>
 </dl>
@@ -278,7 +278,7 @@ Data Fields</h2></td></tr>
 <p>returns the compression strategy of gzip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>the compression options context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>the compression options context </td></tr>
   </table>
   </dd>
 </dl>
@@ -304,7 +304,7 @@ Data Fields</h2></td></tr>
 <p>returns the compression window size of gzip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>the compression options context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>the compression options context </td></tr>
   </table>
   </dd>
 </dl>
@@ -330,7 +330,7 @@ Data Fields</h2></td></tr>
 <p>returns the flags of lz4 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>the compression options context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>the compression options context </td></tr>
   </table>
   </dd>
 </dl>
@@ -356,7 +356,7 @@ Data Fields</h2></td></tr>
 <p>returns the version of lz4 used </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>the compression options context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>the compression options context </td></tr>
   </table>
   </dd>
 </dl>
@@ -382,7 +382,7 @@ Data Fields</h2></td></tr>
 <p>returns the algorithm of lzo </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>the compression options context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>the compression options context </td></tr>
   </table>
   </dd>
 </dl>
@@ -408,7 +408,7 @@ Data Fields</h2></td></tr>
 <p>returns the compression level of lzo </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>the compression options context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>the compression options context </td></tr>
   </table>
   </dd>
 </dl>
@@ -444,8 +444,8 @@ Data Fields</h2></td></tr>
 <p>Initializes a <a class="el" href="structSqshCompressionOptionsContext.html" title="The compression options context is used to store the compression options for a specific compression a...">SqshCompressionOptionsContext</a> struct. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sqsh</td><td><a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> context </td></tr>
-    <tr><td class="paramname">err</td><td>Pointer to set to an error code on error. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sqsh</td><td><a class="el" href="structSqsh.html" title="The Sqsh struct contains all information about the current sqsh session.">Sqsh</a> context </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">err</td><td>Pointer to an int where the error code will be stored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -472,7 +472,7 @@ Data Fields</h2></td></tr>
 <p>returns the dictionary size of xz </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>the compression options context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>the compression options context </td></tr>
   </table>
   </dd>
 </dl>
@@ -498,7 +498,7 @@ Data Fields</h2></td></tr>
 <p>returns the compression options of xz </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>the compression options context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>the compression options context </td></tr>
   </table>
   </dd>
 </dl>
@@ -524,7 +524,7 @@ Data Fields</h2></td></tr>
 <p>returns the compression level of zstd </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>the compression options context </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>the compression options context </td></tr>
   </table>
   </dd>
 </dl>
@@ -544,7 +544,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00054">54</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00086">86</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
 
 </div>
 </div>
@@ -560,7 +560,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00053">53</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00085">85</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
 
 </div>
 </div>

@@ -11,5 +11,5 @@ var searchData=
   ['count_8',['count',['../structSqshDirectoryFragment.html#a7dba0a44261e9b8963cdb58e49fc4ba1',1,'SqshDirectoryFragment::count()'],['../structSqshXattrLookupTable.html#a139790e9baccbec77347d6f7e23a4fe7',1,'SqshXattrLookupTable::count()']]],
   ['current_5faddress_9',['current_address',['../structSqshMetablockStreamContext.html#a45ff0feb05ef91210d17a615062ad4e6',1,'SqshMetablockStreamContext']]],
   ['current_5ffragment_5foffset_10',['current_fragment_offset',['../structSqshDirectoryIterator.html#a6bd9d6eda79951c6f8221ce023106384',1,'SqshDirectoryIterator']]],
-  ['current_5foffset_11',['current_offset',['../structSqshInodeDirectoryIndexIterator.html#a9b72c38b4643f3c0e8d75aa01b34cacc',1,'SqshInodeDirectoryIndexIterator::current_offset()'],['../structSqshDirectoryIterator.html#af4883a5b89e8c0ee4de8294f0c6bee81',1,'SqshDirectoryIterator::current_offset()']]]
+  ['current_5foffset_11',['current_offset',['../structSqshDirectoryIndexIterator.html#a5507e4074ce68353e93cd99ddad645c7',1,'SqshDirectoryIndexIterator::current_offset()'],['../structSqshDirectoryIterator.html#af4883a5b89e8c0ee4de8294f0c6bee81',1,'SqshDirectoryIterator::current_offset()']]]
 ];

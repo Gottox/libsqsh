@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-102-g72353d06</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-104-gdfeb215f</span>
    </div>
   </td>
  </tr>
@@ -70,12 +70,13 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle"><div class="title">SqshXattrIterator Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="sqsh__iterator_8h_source.html">sqsh_iterator.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="sqsh__iterator__private_8h_source.html">sqsh_iterator_private.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for SqshXattrIterator:</div>
 <div class="dyncontent">
@@ -83,6 +84,15 @@ Collaboration diagram for SqshXattrIterator:</div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a5b74e3aebe25291c11b3e4f38357921c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#a5b74e3aebe25291c11b3e4f38357921c">sqsh_xattr_iterator_fullname_dup</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator, char **fullname_buffer)</td></tr>
+<tr class="memdesc:a5b74e3aebe25291c11b3e4f38357921c"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a heap allocated copy of the full name of the current entry. The caller is responsible for freeing the memory.  <a href="structSqshXattrIterator.html#a5b74e3aebe25291c11b3e4f38357921c">More...</a><br /></td></tr>
+<tr class="separator:a5b74e3aebe25291c11b3e4f38357921c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1982a4c6bf709e20679b381cf056b3b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#a1982a4c6bf709e20679b381cf056b3b6">sqsh_xattr_iterator_value_dup</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator, char **value_buffer)</td></tr>
+<tr class="memdesc:a1982a4c6bf709e20679b381cf056b3b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a heap allocated copy of the value of the current entry. The caller is responsible for freeing the memory.  <a href="structSqshXattrIterator.html#a1982a4c6bf709e20679b381cf056b3b6">More...</a><br /></td></tr>
+<tr class="separator:a1982a4c6bf709e20679b381cf056b3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a5fc94839872b5348107432c07bfb4603"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqshMetablockStreamContext.html">SqshMetablockStreamContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#a5fc94839872b5348107432c07bfb4603">metablock</a></td></tr>
@@ -102,8 +112,85 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="sqsh__iterator_8h_source.html#l00122">122</a> of file <a class="el" href="sqsh__iterator_8h_source.html">sqsh_iterator.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="sqsh__iterator__private_8h_source.html#l00166">166</a> of file <a class="el" href="sqsh__iterator__private_8h_source.html">sqsh_iterator_private.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5b74e3aebe25291c11b3e4f38357921c" name="a5b74e3aebe25291c11b3e4f38357921c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b74e3aebe25291c11b3e4f38357921c">&#9670;&#160;</a></span>sqsh_xattr_iterator_fullname_dup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_xattr_iterator_fullname_dup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>fullname_buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>creates a heap allocated copy of the full name of the current entry. The caller is responsible for freeing the memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterator</td><td>The iterator to use. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">fullname_buffer</td><td>The buffer to hold the duplicated full name.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="a1982a4c6bf709e20679b381cf056b3b6" name="a1982a4c6bf709e20679b381cf056b3b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1982a4c6bf709e20679b381cf056b3b6">&#9670;&#160;</a></span>sqsh_xattr_iterator_value_dup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_xattr_iterator_value_dup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>value_buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>creates a heap allocated copy of the value of the current entry. The caller is responsible for freeing the memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterator</td><td>The iterator to use. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value_buffer</td><td>The buffer to hold the duplicated value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
 <a id="a7a99b2e18427c156d8925829d22decdb" name="a7a99b2e18427c156d8925829d22decdb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a99b2e18427c156d8925829d22decdb">&#9670;&#160;</a></span>context</h2>
 
@@ -116,7 +203,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__iterator_8h_source.html#l00125">125</a> of file <a class="el" href="sqsh__iterator_8h_source.html">sqsh_iterator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__iterator__private_8h_source.html#l00169">169</a> of file <a class="el" href="sqsh__iterator__private_8h_source.html">sqsh_iterator_private.h</a>.</p>
 
 </div>
 </div>
@@ -132,7 +219,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__iterator_8h_source.html#l00128">128</a> of file <a class="el" href="sqsh__iterator_8h_source.html">sqsh_iterator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__iterator__private_8h_source.html#l00172">172</a> of file <a class="el" href="sqsh__iterator__private_8h_source.html">sqsh_iterator_private.h</a>.</p>
 
 </div>
 </div>
@@ -148,7 +235,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__iterator_8h_source.html#l00123">123</a> of file <a class="el" href="sqsh__iterator_8h_source.html">sqsh_iterator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__iterator__private_8h_source.html#l00167">167</a> of file <a class="el" href="sqsh__iterator__private_8h_source.html">sqsh_iterator_private.h</a>.</p>
 
 </div>
 </div>
@@ -164,7 +251,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__iterator_8h_source.html#l00127">127</a> of file <a class="el" href="sqsh__iterator_8h_source.html">sqsh_iterator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__iterator__private_8h_source.html#l00171">171</a> of file <a class="el" href="sqsh__iterator__private_8h_source.html">sqsh_iterator_private.h</a>.</p>
 
 </div>
 </div>
@@ -180,7 +267,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__iterator_8h_source.html#l00124">124</a> of file <a class="el" href="sqsh__iterator_8h_source.html">sqsh_iterator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__iterator__private_8h_source.html#l00168">168</a> of file <a class="el" href="sqsh__iterator__private_8h_source.html">sqsh_iterator_private.h</a>.</p>
 
 </div>
 </div>
@@ -196,7 +283,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__iterator_8h_source.html#l00126">126</a> of file <a class="el" href="sqsh__iterator_8h_source.html">sqsh_iterator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__iterator__private_8h_source.html#l00170">170</a> of file <a class="el" href="sqsh__iterator__private_8h_source.html">sqsh_iterator_private.h</a>.</p>
 
 </div>
 </div>
@@ -212,11 +299,12 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__iterator_8h_source.html#l00129">129</a> of file <a class="el" href="sqsh__iterator_8h_source.html">sqsh_iterator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__iterator__private_8h_source.html#l00173">173</a> of file <a class="el" href="sqsh__iterator__private_8h_source.html">sqsh_iterator_private.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li><a class="el" href="sqsh__iterator__private_8h_source.html">sqsh_iterator_private.h</a></li>
 <li><a class="el" href="sqsh__iterator_8h_source.html">sqsh_iterator.h</a></li>
 </ul>
 </div><!-- contents -->

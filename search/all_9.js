@@ -6,7 +6,7 @@ var searchData=
   ['index_3',['index',['../structSqshInodeDirectoryIndex.html#a2a66e2e8b5072bd270c1dd5e09d21d93',1,'SqshInodeDirectoryIndex']]],
   ['index_5fcount_4',['index_count',['../structSqshInodeDirectoryExt.html#aa3e197e06dfb79271003fc048113c2c8',1,'SqshInodeDirectoryExt']]],
   ['init_5',['init',['../structSqshMemoryMapperImpl.html#a299a6cd6962e52bfc0972f3ffe3b00e6',1,'SqshMemoryMapperImpl']]],
-  ['inode_6',['inode',['../structSqshInodeDirectoryIndexIterator.html#abe220a211b2197e91bce51d6df32d945',1,'SqshInodeDirectoryIndexIterator::inode()'],['../structSqshDirectoryIterator.html#a261017bb959c247f6ce6fa8533c785e5',1,'SqshDirectoryIterator::inode()']]],
+  ['inode_6',['inode',['../structSqshDirectoryIndexIterator.html#a13169fe7149ddc4eae562445624ffb1b',1,'SqshDirectoryIndexIterator::inode()'],['../structSqshDirectoryIterator.html#a261017bb959c247f6ce6fa8533c785e5',1,'SqshDirectoryIterator::inode()']]],
   ['inode_5fcount_7',['inode_count',['../structSqshSuperblock.html#af57eea4c8dd480efdc06b5523c7f7881',1,'SqshSuperblock']]],
   ['inode_5fnumber_8',['inode_number',['../structSqshDirectoryFragment.html#a793fbace9f2e8d598ae046abe1629c10',1,'SqshDirectoryFragment::inode_number()'],['../structSqshInodeHeader.html#ad9c4a286454398e04ce37fc152713ba3',1,'SqshInodeHeader::inode_number()']]],
   ['inode_5foffset_9',['inode_offset',['../structSqshDirectoryEntry.html#a4c3ad62fa53e1b8df9c33ea68c27de30',1,'SqshDirectoryEntry']]],
