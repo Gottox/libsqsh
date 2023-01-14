@@ -1,9 +1,9 @@
-<map id="/__w/libsqsh/libsqsh/include/sqsh_context.h" name="/__w/libsqsh/libsqsh/include/sqsh_context.h">
-<area shape="rect" id="node1" title=" " alt="" coords="62,5,314,45"/>
-<area shape="rect" id="node2" href="$sqsh__primitive_8h.html" title=" " alt="" coords="97,93,279,119"/>
-<area shape="rect" id="node3" href="$sqsh__common_8h.html" title=" " alt="" coords="112,167,264,192"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,240,117,265"/>
-<area shape="rect" id="node7" title=" " alt="" coords="288,167,400,192"/>
-<area shape="rect" id="node5" title=" " alt="" coords="142,240,245,265"/>
-<area shape="rect" id="node6" title=" " alt="" coords="269,240,371,265"/>
+<map id="sqsh_context.h" name="sqsh_context.h">
+<area shape="rect" id="node1" title=" " alt="" coords="107,5,269,31"/>
+<area shape="rect" id="node2" href="$sqsh__primitive_8h.html" title=" " alt="" coords="97,79,279,104"/>
+<area shape="rect" id="node3" href="$sqsh__common_8h.html" title=" " alt="" coords="112,152,264,177"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,225,117,251"/>
+<area shape="rect" id="node7" title=" " alt="" coords="288,152,400,177"/>
+<area shape="rect" id="node5" title=" " alt="" coords="142,225,245,251"/>
+<area shape="rect" id="node6" title=" " alt="" coords="269,225,371,251"/>
 </map>
