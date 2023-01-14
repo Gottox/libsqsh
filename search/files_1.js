@@ -12,5 +12,6 @@ var searchData=
   ['sqsh_5fmapper_2eh_9',['sqsh_mapper.h',['../sqsh__mapper_8h.html',1,'']]],
   ['sqsh_5fprimitive_2eh_10',['sqsh_primitive.h',['../sqsh__primitive_8h.html',1,'']]],
   ['sqsh_5fprivate_2eh_11',['sqsh_private.h',['../sqsh__private_8h.html',1,'']]],
-  ['sqsh_5ftable_2eh_12',['sqsh_table.h',['../sqsh__table_8h.html',1,'']]]
+  ['sqsh_5ftable_2eh_12',['sqsh_table.h',['../sqsh__table_8h.html',1,'']]],
+  ['sqsh_5ftable_5fprivate_2eh_13',['sqsh_table_private.h',['../sqsh__table__private_8h.html',1,'']]]
 ];

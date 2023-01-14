@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-111-g452fb62a</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-112-g755926cd</span>
    </div>
   </td>
  </tr>
@@ -70,8 +70,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">sqsh_table.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -85,21 +85,12 @@ Include dependency graph for sqsh_table.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__table_8h__dep__incl.svg" width="174" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__table_8h__dep__incl.svg" width="342" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
 <p><a href="sqsh__table_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTable.html">SqshTable</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFragmentTable.html">SqshFragmentTable</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrTable.html">SqshXattrTable</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:af6aa1115a96a68fa5f4417984e12b923"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__table_8h.html#af6aa1115a96a68fa5f4417984e12b923">SqshXattrType</a> { <a class="el" href="sqsh__table_8h.html#af6aa1115a96a68fa5f4417984e12b923a9f50d7ccf98cd39606a6062f0e1073e3">SQSH_XATTR_USER</a> = 0
@@ -107,6 +98,11 @@ Enumerations</h2></td></tr>
 , <a class="el" href="sqsh__table_8h.html#af6aa1115a96a68fa5f4417984e12b923a8fc00cbcc22b58a03965d61125674351">SQSH_XATTR_SECURITY</a> = 2
  }</td></tr>
 <tr class="separator:af6aa1115a96a68fa5f4417984e12b923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac83b48b0f92ed513914dd35979478b0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__table_8h.html#ac83b48b0f92ed513914dd35979478b0d">sqsh__xattr_table_init</a> (struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
+<tr class="separator:ac83b48b0f92ed513914dd35979478b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Enno Boland (<a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'ebo'+'la'+'nd.'+'de'; return false;">mail@<span class="obfuscator">.nosp@m.</span>ebol<span class="obfuscator">.nosp@m.</span>and.d<span class="obfuscator">.nosp@m.</span>e</a>) </dd></dl>
@@ -130,7 +126,36 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="af6aa1115a96a68fa5f4417984e12b923a8fc00cbcc22b58a03965d61125674351" name="af6aa1115a96a68fa5f4417984e12b923a8fc00cbcc22b58a03965d61125674351"></a>SQSH_XATTR_SECURITY&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__table_8h_source.html#l00153">153</a> of file <a class="el" href="sqsh__table_8h_source.html">sqsh_table.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__table_8h_source.html#l00099">99</a> of file <a class="el" href="sqsh__table_8h_source.html">sqsh_table.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac83b48b0f92ed513914dd35979478b0d" name="ac83b48b0f92ed513914dd35979478b0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83b48b0f92ed513914dd35979478b0d">&#9670;&#160;</a></span>sqsh__xattr_table_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__xattr_table_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
