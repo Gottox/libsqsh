@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-112-g755926cd</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-113-g00dbca50</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(function() {
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// context/superblock_context.c</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structSqshSuperblockContext.html">   50</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code hl_variable" href="sqsh__data_8h.html#a4514a171a371875722c0f0aee1f80f63">SqshSuperblock</a> *superblock;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code hl_variable" href="sqsh__data_8h.html#a7465f5a981582ef9a0ad2c720a3dd047">SqshDataSuperblock</a> *superblock;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshMapping.html">SqshMapping</a> mapping;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
@@ -257,7 +257,7 @@ $(function() {
 <div class="ttc" id="asqsh__context__private_8h_html_aed0200d72a4d23de4ed499493fa0163c"><div class="ttname"><a href="sqsh__context__private_8h.html#aed0200d72a4d23de4ed499493fa0163c">sqsh__superblock_init</a></div><div class="ttdeci">SQSH_NO_UNUSED int sqsh__superblock_init(struct SqshSuperblockContext *context, struct SqshMapper *mapper)</div></div>
 <div class="ttc" id="asqsh__context__private_8h_html_af81d5a7cc0796a241e0302f3b10f4fb6"><div class="ttname"><a href="sqsh__context__private_8h.html#af81d5a7cc0796a241e0302f3b10f4fb6">sqsh__metablock_stream_data</a></div><div class="ttdeci">const uint8_t * sqsh__metablock_stream_data(const struct SqshMetablockStreamContext *context)</div></div>
 <div class="ttc" id="asqsh__context__private_8h_html_afa59bfd52b676bd4ee5f6079734ef409"><div class="ttname"><a href="sqsh__context__private_8h.html#afa59bfd52b676bd4ee5f6079734ef409">sqsh__file_init</a></div><div class="ttdeci">SQSH_NO_UNUSED int sqsh__file_init(struct SqshFileContext *context, const struct SqshInodeContext *inode)</div></div>
-<div class="ttc" id="asqsh__data_8h_html_a4514a171a371875722c0f0aee1f80f63"><div class="ttname"><a href="sqsh__data_8h.html#a4514a171a371875722c0f0aee1f80f63">SqshSuperblock</a></div><div class="ttdeci">struct SQSH_UNALIGNED SqshSuperblock</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__data_8h_source.html#l00310">sqsh_data.h:310</a></div></div>
+<div class="ttc" id="asqsh__data_8h_html_a7465f5a981582ef9a0ad2c720a3dd047"><div class="ttname"><a href="sqsh__data_8h.html#a7465f5a981582ef9a0ad2c720a3dd047">SqshDataSuperblock</a></div><div class="ttdeci">struct SQSH_UNALIGNED SqshDataSuperblock</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__data_8h_source.html#l00322">sqsh_data.h:322</a></div></div>
 <div class="ttc" id="asqsh__mapper_8h_html"><div class="ttname"><a href="sqsh__mapper_8h.html">sqsh_mapper.h</a></div></div>
 <div class="ttc" id="asqsh__primitive_8h_html"><div class="ttname"><a href="sqsh__primitive_8h.html">sqsh_primitive.h</a></div></div>
 <div class="ttc" id="astructSqshBuffer_html"><div class="ttname"><a href="structSqshBuffer.html">SqshBuffer</a></div><div class="ttdoc">The SqshBuffer struct is a buffer for arbitrary data.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__primitive_8h_source.html#l00120">sqsh_primitive.h:120</a></div></div>

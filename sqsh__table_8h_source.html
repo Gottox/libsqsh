@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-112-g755926cd</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-113-g00dbca50</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ $(function() {
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">// table/xattr_table.c</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">struct </span><a class="code hl_variable" href="sqsh__data_8h.html#a41d8e827c615b457368d3c937117ddc9">SqshXattrLookupTable</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">struct </span><a class="code hl_variable" href="sqsh__data_8h.html#a81f2056d713f193a8cb7f043d88c82bb">SqshDataXattrLookupTable</a>;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">struct </span><a class="code hl_struct" href="structSqsh.html">Sqsh</a>;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">struct </span><a class="code hl_struct" href="structSqshXattrTable.html">SqshXattrTable</a>;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
@@ -145,9 +145,9 @@ $(function() {
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="structSqshXattrTable.html#a0558e639b299f45632370d7d8e00fd1a">  116</a></span>uint64_t <a class="code hl_function" href="structSqshXattrTable.html#a0558e639b299f45632370d7d8e00fd1a">sqsh_xattr_table_start</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structSqshXattrTable.html">SqshXattrTable</a> *table);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="structSqshXattrTable.html#a4f661946de174d354fcb44629fab7b39">  130</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="structSqshXattrTable.html#a4f661946de174d354fcb44629fab7b39">sqsh_xattr_table_get</a>(</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="structSqshXattrTable.html#a08653fe391f8a2ddea2450d9cb273b09">  130</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="structSqshXattrTable.html#a08653fe391f8a2ddea2450d9cb273b09">sqsh_xattr_table_get</a>(</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshXattrTable.html">SqshXattrTable</a> *table, <a class="code hl_typedef" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> index,</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keyword">struct</span> <a class="code hl_variable" href="sqsh__data_8h.html#a41d8e827c615b457368d3c937117ddc9">SqshXattrLookupTable</a> *target);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keyword">struct</span> <a class="code hl_variable" href="sqsh__data_8h.html#a81f2056d713f193a8cb7f043d88c82bb">SqshDataXattrLookupTable</a> *target);</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
@@ -155,7 +155,7 @@ $(function() {
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard SQSH_TABLE_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="asqsh__common_8h_html_a0f0a35d1ed84a34ad06a006e5e90da94"><div class="ttname"><a href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a></div><div class="ttdeci">#define SQSH_NO_UNUSED</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__common_8h_source.html#l00046">sqsh_common.h:46</a></div></div>
 <div class="ttc" id="asqsh__common_8h_html_a1d493fd70fce488d899c7681d5ff6264"><div class="ttname"><a href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a></div><div class="ttdeci">size_t sqsh_index_t</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__common_8h_source.html#l00048">sqsh_common.h:48</a></div></div>
-<div class="ttc" id="asqsh__data_8h_html_a41d8e827c615b457368d3c937117ddc9"><div class="ttname"><a href="sqsh__data_8h.html#a41d8e827c615b457368d3c937117ddc9">SqshXattrLookupTable</a></div><div class="ttdeci">struct SQSH_UNALIGNED SqshXattrLookupTable</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__data_8h_source.html#l00363">sqsh_data.h:363</a></div></div>
+<div class="ttc" id="asqsh__data_8h_html_a81f2056d713f193a8cb7f043d88c82bb"><div class="ttname"><a href="sqsh__data_8h.html#a81f2056d713f193a8cb7f043d88c82bb">SqshDataXattrLookupTable</a></div><div class="ttdeci">struct SQSH_UNALIGNED SqshDataXattrLookupTable</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__data_8h_source.html#l00378">sqsh_data.h:378</a></div></div>
 <div class="ttc" id="asqsh__mapper_8h_html"><div class="ttname"><a href="sqsh__mapper_8h.html">sqsh_mapper.h</a></div></div>
 <div class="ttc" id="asqsh__table_8h_html_ac83b48b0f92ed513914dd35979478b0d"><div class="ttname"><a href="sqsh__table_8h.html#ac83b48b0f92ed513914dd35979478b0d">sqsh__xattr_table_init</a></div><div class="ttdeci">SQSH_NO_UNUSED int sqsh__xattr_table_init(struct SqshXattrTable *context, struct Sqsh *sqsh)</div></div>
 <div class="ttc" id="asqsh__table_8h_html_af6aa1115a96a68fa5f4417984e12b923"><div class="ttname"><a href="sqsh__table_8h.html#af6aa1115a96a68fa5f4417984e12b923">SqshXattrType</a></div><div class="ttdeci">SqshXattrType</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__table_8h_source.html#l00099">sqsh_table.h:99</a></div></div>
@@ -171,7 +171,7 @@ $(function() {
 <div class="ttc" id="astructSqshTable_html_ad2014c5574a4e1e225229d6c968572d3"><div class="ttname"><a href="structSqshTable.html#ad2014c5574a4e1e225229d6c968572d3">SqshTable::sqsh_table_cleanup</a></div><div class="ttdeci">int sqsh_table_cleanup(struct SqshTable *table)</div><div class="ttdoc">Cleans up a table.</div></div>
 <div class="ttc" id="astructSqshXattrTable_html"><div class="ttname"><a href="structSqshXattrTable.html">SqshXattrTable</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__table__private_8h_source.html#l00132">sqsh_table_private.h:132</a></div></div>
 <div class="ttc" id="astructSqshXattrTable_html_a0558e639b299f45632370d7d8e00fd1a"><div class="ttname"><a href="structSqshXattrTable.html#a0558e639b299f45632370d7d8e00fd1a">SqshXattrTable::sqsh_xattr_table_start</a></div><div class="ttdeci">uint64_t sqsh_xattr_table_start(struct SqshXattrTable *table)</div><div class="ttdoc">Retrieves the starting offset of the table.</div></div>
-<div class="ttc" id="astructSqshXattrTable_html_a4f661946de174d354fcb44629fab7b39"><div class="ttname"><a href="structSqshXattrTable.html#a4f661946de174d354fcb44629fab7b39">SqshXattrTable::sqsh_xattr_table_get</a></div><div class="ttdeci">int sqsh_xattr_table_get(const struct SqshXattrTable *table, sqsh_index_t index, struct SqshXattrLookupTable *target)</div><div class="ttdoc">Retrieves an extended attribute from the table.</div></div>
+<div class="ttc" id="astructSqshXattrTable_html_a08653fe391f8a2ddea2450d9cb273b09"><div class="ttname"><a href="structSqshXattrTable.html#a08653fe391f8a2ddea2450d9cb273b09">SqshXattrTable::sqsh_xattr_table_get</a></div><div class="ttdeci">int sqsh_xattr_table_get(const struct SqshXattrTable *table, sqsh_index_t index, struct SqshDataXattrLookupTable *target)</div><div class="ttdoc">Retrieves an extended attribute from the table.</div></div>
 <div class="ttc" id="astructSqsh_html"><div class="ttname"><a href="structSqsh.html">Sqsh</a></div><div class="ttdoc">The Sqsh struct contains all information about the current sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__private_8h_source.html#l00056">sqsh_private.h:56</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
