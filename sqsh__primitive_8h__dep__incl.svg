@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 602;
+var viewWidth = 711;
 var viewHeight = 247;
 var sectionId = 'dynsection-1';
 </script>
@@ -58,8 +58,8 @@ var sectionId = 'dynsection-1';
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="398,-239 261,-239 261,-220 398,-220 398,-239"/>
-<text text-anchor="middle" x="329.5" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_primitive.h</text>
+<polygon fill="#999999" stroke="#666666" points="349.79,-239 212.79,-239 212.79,-220 349.79,-220 349.79,-239"/>
+<text text-anchor="middle" x="281.29" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_primitive.h</text>
 </a>
 </g>
 </g>
@@ -67,190 +67,223 @@ var sectionId = 'dynsection-1';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="sqsh__context_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="390.5,-184 268.5,-184 268.5,-165 390.5,-165 390.5,-184"/>
-<text text-anchor="middle" x="329.5" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_context.h</text>
+<polygon fill="white" stroke="#666666" points="279.29,-184 157.29,-184 157.29,-165 279.29,-165 279.29,-184"/>
+<text text-anchor="middle" x="218.29" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_context.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#63b8ff" d="M329.5,-208.35C329.5,-200.1 329.5,-190.97 329.5,-184.44"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="326,-208.23 329.5,-218.23 333,-208.23 326,-208.23"/>
+<path fill="none" stroke="#63b8ff" d="M262.11,-212.37C251.17,-203.16 237.88,-191.98 228.82,-184.36"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="259.54,-214.78 269.45,-218.53 264.05,-209.42 259.54,-214.78"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="sqsh__context__private_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="331.5,-129 149.5,-129 149.5,-110 331.5,-110 331.5,-129"/>
-<text text-anchor="middle" x="240.5" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_context_private.h</text>
+<polygon fill="white" stroke="#666666" points="388.29,-74 206.29,-74 206.29,-55 388.29,-55 388.29,-74"/>
+<text text-anchor="middle" x="297.29" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_context_private.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
-<g id="edge9" class="edge">
+<g id="edge11" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#63b8ff" d="M297.62,-214.54C284.15,-207.2 269.33,-197 259.5,-184 246.87,-167.3 242.59,-142.25 241.18,-129.16"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="295.71,-217.49 306.21,-218.9 298.88,-211.25 295.71,-217.49"/>
+<path fill="none" stroke="#63b8ff" d="M201.22,-220.84C102.72,-208.35 -44.74,-177.84 13.29,-110 37.83,-81.32 132.51,-71 205.88,-67.35"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="200.52,-224.28 210.87,-222.02 201.37,-217.33 200.52,-224.28"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="sqsh__mapper_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="529.5,-184 415.5,-184 415.5,-165 529.5,-165 529.5,-184"/>
-<text text-anchor="middle" x="472.5" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_mapper.h</text>
+<g id="a_node8"><a xlink:href="sqsh__metablock__private_8h.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="443.79,-129 246.79,-129 246.79,-110 443.79,-110 443.79,-129"/>
+<text text-anchor="middle" x="345.29" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_metablock_private.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
-<g id="edge10" class="edge">
+<g id="edge22" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="#63b8ff" d="M364.35,-215.58C390.49,-205.9 425.58,-192.89 448.6,-184.36"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="363.34,-212.23 355.18,-218.98 365.77,-218.79 363.34,-212.23"/>
+<path fill="none" stroke="#63b8ff" d="M292.34,-209.86C306.24,-186.4 329.56,-147.04 339.98,-129.46"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="289.39,-207.97 287.3,-218.36 295.41,-211.54 289.39,-207.97"/>
+</g>
+<!-- Node9 -->
+<g id="node9" class="node">
+<title>Node9</title>
+<g id="a_node9"><a xlink:href="sqsh__mapper_8h.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="567.29,-184 453.29,-184 453.29,-165 567.29,-165 567.29,-184"/>
+<text text-anchor="middle" x="510.29" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_mapper.h</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node9 -->
+<g id="edge12" class="edge">
+<title>Node1&#45;&gt;Node9</title>
+<path fill="none" stroke="#63b8ff" d="M331.28,-216.93C373.47,-207.17 433.02,-193.38 471.64,-184.45"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="330.57,-213.5 321.61,-219.17 332.15,-220.32 330.57,-213.5"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="sqsh_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="390.5,-74 328.5,-74 328.5,-55 390.5,-55 390.5,-74"/>
-<text text-anchor="middle" x="359.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh.h</text>
+<polygon fill="white" stroke="#666666" points="498.29,-74 436.29,-74 436.29,-55 498.29,-55 498.29,-74"/>
+<text text-anchor="middle" x="467.29" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#63b8ff" d="M335.04,-153.57C341.59,-129.98 352.21,-91.73 357.01,-74.46"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="331.66,-152.63 332.36,-163.2 338.41,-154.51 331.66,-152.63"/>
+<path fill="none" stroke="#63b8ff" d="M219.02,-153.55C220.64,-139.38 225.15,-120.99 237.29,-110 251.92,-96.76 376.46,-78.03 435.93,-69.74"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="215.56,-152.89 218.34,-163.12 222.54,-153.39 215.56,-152.89"/>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="#63b8ff" d="M304.7,-158.73C288.84,-149.29 268.81,-137.36 255.37,-129.36"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="302.72,-161.63 313.1,-163.73 306.3,-155.61 302.72,-161.63"/>
+<path fill="none" stroke="#63b8ff" d="M207.17,-154.62C200.89,-141.27 195.83,-123.43 204.29,-110 215.74,-91.83 236.89,-80.91 256.13,-74.45"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="203.97,-156.05 211.75,-163.24 210.15,-152.77 203.97,-156.05"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="sqsh__iterator_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="131,-129 2,-129 2,-110 131,-110 131,-129"/>
-<text text-anchor="middle" x="66.5" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_iterator.h</text>
+<polygon fill="white" stroke="#666666" points="151.79,-129 22.79,-129 22.79,-110 151.79,-110 151.79,-129"/>
+<text text-anchor="middle" x="87.29" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_iterator.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node7 -->
 <g id="edge7" class="edge">
 <title>Node2&#45;&gt;Node7</title>
-<path fill="none" stroke="#63b8ff" d="M273.64,-162.24C225.1,-152.46 155.72,-138.48 110.89,-129.45"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="272.91,-165.67 283.4,-164.21 274.29,-158.8 272.91,-165.67"/>
+<path fill="none" stroke="#63b8ff" d="M185.4,-160.19C161.57,-150.55 130,-137.78 109.19,-129.36"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="184.08,-163.44 194.67,-163.94 186.71,-156.95 184.08,-163.44"/>
+</g>
+<!-- Node2&#45;&gt;Node8 -->
+<g id="edge9" class="edge">
+<title>Node2&#45;&gt;Node8</title>
+<path fill="none" stroke="#63b8ff" d="M250.18,-160.19C273.29,-150.55 303.89,-137.78 324.07,-129.36"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="249.11,-156.84 241.23,-163.93 251.81,-163.31 249.11,-156.84"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="sqsh__private_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="486.5,-19 364.5,-19 364.5,0 486.5,0 486.5,-19"/>
-<text text-anchor="middle" x="425.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_private.h</text>
+<polygon fill="white" stroke="#666666" points="551.29,-19 429.29,-19 429.29,0 551.29,0 551.29,-19"/>
+<text text-anchor="middle" x="490.29" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_private.h</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#63b8ff" d="M379.59,-47.37C391.05,-38.16 404.98,-26.98 414.47,-19.36"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="377.48,-44.57 371.88,-53.56 381.86,-50.03 377.48,-44.57"/>
+<path fill="none" stroke="#63b8ff" d="M475.66,-44.22C479.34,-35.74 483.48,-26.21 486.41,-19.44"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="472.46,-42.79 471.69,-53.36 478.88,-45.58 472.46,-42.79"/>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge6" class="edge">
 <title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="#63b8ff" d="M258.03,-102C273.38,-88.17 296.71,-68.57 319.5,-55 345.05,-39.78 376.77,-27.2 398.82,-19.35"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="255.7,-99.39 250.7,-108.73 260.44,-104.55 255.7,-99.39"/>
+<path fill="none" stroke="#63b8ff" d="M341.02,-51.49C376.47,-41.76 425.65,-28.25 457.71,-19.45"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="340.21,-48.09 331.49,-54.11 342.06,-54.84 340.21,-48.09"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="sqsh__iterator__private_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="189,-74 0,-74 0,-55 189,-55 189,-74"/>
-<text text-anchor="middle" x="94.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_iterator_private.h</text>
+<polygon fill="white" stroke="#666666" points="368.79,-19 179.79,-19 179.79,0 368.79,0 368.79,-19"/>
+<text text-anchor="middle" x="274.29" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_iterator_private.h</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="#63b8ff" d="M204.92,-105.58C178.24,-95.9 142.41,-82.89 118.9,-74.36"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="203.72,-108.87 214.31,-108.99 206.1,-102.29 203.72,-108.87"/>
+<path fill="none" stroke="#63b8ff" d="M288.92,-44.22C285.25,-35.74 281.11,-26.21 278.17,-19.44"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="285.7,-45.58 292.89,-53.36 292.12,-42.79 285.7,-45.58"/>
 </g>
 <!-- Node7&#45;&gt;Node6 -->
 <g id="edge8" class="edge">
 <title>Node7&#45;&gt;Node6</title>
-<path fill="none" stroke="#63b8ff" d="M76.38,-99.79C80.93,-91.18 86.12,-81.36 89.78,-74.44"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="73.41,-97.93 71.83,-108.41 79.6,-101.2 73.41,-97.93"/>
-</g>
-<!-- Node8&#45;&gt;Node3 -->
-<g id="edge11" class="edge">
-<title>Node8&#45;&gt;Node3</title>
-<path fill="none" stroke="#63b8ff" d="M451.76,-157.92C441.19,-149.68 428.32,-139.19 417.5,-129 397.94,-110.57 377.21,-86.67 366.63,-74.09"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="449.44,-160.55 459.5,-163.86 453.7,-154.99 449.44,-160.55"/>
-</g>
-<!-- Node8&#45;&gt;Node4 -->
-<g id="edge13" class="edge">
-<title>Node8&#45;&gt;Node4</title>
-<path fill="none" stroke="#63b8ff" d="M509.26,-160.24C525.56,-152.96 544.05,-142.6 557.5,-129 582.22,-103.99 606.77,-83 585.5,-55 573.16,-38.76 525.58,-26.88 485.48,-19.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="508.2,-156.89 500.34,-164 510.91,-163.34 508.2,-156.89"/>
+<path fill="none" stroke="#63b8ff" d="M112.44,-103.97C151.72,-81.29 226.47,-38.12 258.78,-19.46"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="110.82,-100.87 103.91,-108.9 114.32,-106.93 110.82,-100.87"/>
 </g>
 <!-- Node8&#45;&gt;Node5 -->
-<g id="edge12" class="edge">
+<g id="edge10" class="edge">
 <title>Node8&#45;&gt;Node5</title>
-<path fill="none" stroke="#63b8ff" d="M422.13,-161.99C379.37,-152.22 318.87,-138.4 279.66,-129.45"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="421.14,-165.36 431.67,-164.17 422.7,-158.53 421.14,-165.36"/>
+<path fill="none" stroke="#63b8ff" d="M329.64,-101.22C321.54,-92.28 312,-81.74 305.39,-74.44"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="327.04,-103.56 336.35,-108.63 332.23,-98.86 327.04,-103.56"/>
 </g>
-<!-- Node9 -->
-<g id="node9" class="node">
-<title>Node9</title>
-<g id="a_node9"><a xlink:href="sqsh__table_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="533,-129 426,-129 426,-110 533,-110 533,-129"/>
-<text text-anchor="middle" x="479.5" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_table.h</text>
-</a>
+<!-- Node9&#45;&gt;Node3 -->
+<g id="edge13" class="edge">
+<title>Node9&#45;&gt;Node3</title>
+<path fill="none" stroke="#63b8ff" d="M503.24,-154.21C498.57,-141.59 492.23,-124.75 486.29,-110 481.28,-97.53 475.11,-83.26 471.19,-74.32"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="499.89,-155.23 506.62,-163.41 506.46,-152.81 499.89,-155.23"/>
 </g>
+<!-- Node9&#45;&gt;Node4 -->
+<g id="edge16" class="edge">
+<title>Node9&#45;&gt;Node4</title>
+<path fill="none" stroke="#63b8ff" d="M579.05,-168.35C610.41,-162.8 646.08,-151.56 671.29,-129 696.86,-106.12 714.8,-81.73 693.29,-55 675.74,-33.18 604.82,-21.46 551.71,-15.61"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="578.54,-164.89 569.21,-169.91 579.63,-171.8 578.54,-164.89"/>
 </g>
-<!-- Node8&#45;&gt;Node9 -->
+<!-- Node9&#45;&gt;Node5 -->
 <g id="edge14" class="edge">
-<title>Node8&#45;&gt;Node9</title>
-<path fill="none" stroke="#63b8ff" d="M475.16,-153.35C476.25,-145.1 477.46,-135.97 478.32,-129.44"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="471.69,-152.88 473.85,-163.25 478.63,-153.79 471.69,-152.88"/>
+<title>Node9&#45;&gt;Node5</title>
+<path fill="none" stroke="#63b8ff" d="M498.36,-155.35C488.04,-141.04 471.89,-121.62 453.29,-110 424.27,-91.86 387.66,-80.92 357.2,-74.43"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="495.37,-157.19 503.93,-163.44 501.14,-153.22 495.37,-157.19"/>
+</g>
+<!-- Node9&#45;&gt;Node8 -->
+<g id="edge15" class="edge">
+<title>Node9&#45;&gt;Node8</title>
+<path fill="none" stroke="#63b8ff" d="M471.72,-161.11C441.51,-151.41 400.2,-138.14 373.14,-129.45"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="470.27,-164.32 480.86,-164.05 472.41,-157.66 470.27,-164.32"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="sqsh__table__private_8h.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="576,-74 409,-74 409,-55 576,-55 576,-74"/>
-<text text-anchor="middle" x="492.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_table_private.h</text>
+<g id="a_node10"><a xlink:href="sqsh__table_8h.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="645.79,-129 538.79,-129 538.79,-110 645.79,-110 645.79,-129"/>
+<text text-anchor="middle" x="592.29" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_table.h</text>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node10 -->
-<g id="edge18" class="edge">
-<title>Node8&#45;&gt;Node10</title>
-<path fill="none" stroke="#63b8ff" d="M507.99,-159.82C521.29,-152.75 534.99,-142.68 542.5,-129 554.19,-107.72 527.24,-86.2 508.54,-74.49"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="506.85,-156.48 499.37,-163.99 509.9,-162.79 506.85,-156.48"/>
-</g>
-<!-- Node9&#45;&gt;Node3 -->
-<g id="edge15" class="edge">
-<title>Node9&#45;&gt;Node3</title>
-<path fill="none" stroke="#63b8ff" d="M448.78,-104.93C427.01,-95.32 398.45,-82.7 379.56,-74.36"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="447.2,-108.06 457.76,-108.9 450.03,-101.66 447.2,-108.06"/>
-</g>
 <!-- Node9&#45;&gt;Node10 -->
-<g id="edge16" class="edge">
-<title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="#63b8ff" d="M484.37,-98.64C486.41,-90.31 488.69,-81.05 490.31,-74.44"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="480.99,-97.73 482.01,-108.28 487.79,-99.4 480.99,-97.73"/>
-</g>
-<!-- Node10&#45;&gt;Node4 -->
 <g id="edge17" class="edge">
-<title>Node10&#45;&gt;Node4</title>
-<path fill="none" stroke="#63b8ff" d="M472.45,-47.64C460.75,-38.39 446.43,-27.05 436.7,-19.36"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="469.93,-50.11 479.95,-53.57 474.28,-44.62 469.93,-50.11"/>
+<title>Node9&#45;&gt;Node10</title>
+<path fill="none" stroke="#63b8ff" d="M533.56,-158.46C548.1,-149.06 566.33,-137.28 578.59,-129.36"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="531.97,-155.32 525.47,-163.69 535.77,-161.2 531.97,-155.32"/>
+</g>
+<!-- Node11 -->
+<g id="node11" class="node">
+<title>Node11</title>
+<g id="a_node11"><a xlink:href="sqsh__table__private_8h.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="683.79,-74 516.79,-74 516.79,-55 683.79,-55 683.79,-74"/>
+<text text-anchor="middle" x="600.29" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">sqsh_table_private.h</text>
+</a>
+</g>
+</g>
+<!-- Node9&#45;&gt;Node11 -->
+<g id="edge21" class="edge">
+<title>Node9&#45;&gt;Node11</title>
+<path fill="none" stroke="#63b8ff" d="M578.92,-169.76C607.28,-164.4 637.61,-152.93 655.29,-129 670.46,-108.47 639.19,-86.34 617.88,-74.38"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="578.57,-166.27 569.26,-171.33 579.69,-173.18 578.57,-166.27"/>
+</g>
+<!-- Node10&#45;&gt;Node3 -->
+<g id="edge18" class="edge">
+<title>Node10&#45;&gt;Node3</title>
+<path fill="none" stroke="#63b8ff" d="M560.6,-105.06C537.89,-95.43 507.95,-82.74 488.18,-74.36"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="559.12,-108.24 569.69,-108.92 561.85,-101.79 559.12,-108.24"/>
+</g>
+<!-- Node10&#45;&gt;Node11 -->
+<g id="edge19" class="edge">
+<title>Node10&#45;&gt;Node11</title>
+<path fill="none" stroke="#63b8ff" d="M595.29,-98.64C596.55,-90.31 597.95,-81.05 598.94,-74.44"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="591.87,-97.84 593.84,-108.25 598.79,-98.89 591.87,-97.84"/>
+</g>
+<!-- Node11&#45;&gt;Node4 -->
+<g id="edge20" class="edge">
+<title>Node11&#45;&gt;Node4</title>
+<path fill="none" stroke="#63b8ff" d="M571.31,-49.53C551.46,-39.97 525.76,-27.59 508.68,-19.36"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="569.74,-52.66 580.27,-53.85 572.78,-46.36 569.74,-52.66"/>
 </g>
 </g>
 </svg>
