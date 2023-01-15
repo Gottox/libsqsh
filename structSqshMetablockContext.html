@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-114-g63faa1fd</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-114-g47242813</span>
    </div>
   </td>
  </tr>
@@ -69,6 +69,8 @@ $(function() {
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle"><div class="title">SqshMetablockContext Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -76,14 +78,67 @@ $(function() {
 <p>The <a class="el" href="structSqshMetablockContext.html" title="The SqshMetablockContext struct.">SqshMetablockContext</a> struct.  
  <a href="structSqshMetablockContext.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="sqsh__metablock__private_8h_source.html">sqsh_metablock_private.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a87d6b1b3695fea5e966daf2c1b00efd0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMetablockContext.html#a87d6b1b3695fea5e966daf2c1b00efd0">sqsh__metablock_init</a> (struct <a class="el" href="structSqshMetablockContext.html">SqshMetablockContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, uint64_t address)</td></tr>
+<tr class="memdesc:a87d6b1b3695fea5e966daf2c1b00efd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a metablock context with a SQSH context and an address.  <a href="structSqshMetablockContext.html#a87d6b1b3695fea5e966daf2c1b00efd0">More...</a><br /></td></tr>
+<tr class="separator:a87d6b1b3695fea5e966daf2c1b00efd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The <a class="el" href="structSqshMetablockContext.html" title="The SqshMetablockContext struct.">SqshMetablockContext</a> struct. </p>
 <p >The <a class="el" href="structSqshMetablockContext.html" title="The SqshMetablockContext struct.">SqshMetablockContext</a> struct contains all information about a metablock. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__metablock__private_8h_source.html#l00058">58</a> of file <a class="el" href="sqsh__metablock__private_8h_source.html">sqsh_metablock_private.h</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="sqsh__metablock__private_8h_source.html">sqsh_metablock_private.h</a></li>
+<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00167">167</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a87d6b1b3695fea5e966daf2c1b00efd0" name="a87d6b1b3695fea5e966daf2c1b00efd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d6b1b3695fea5e966daf2c1b00efd0">&#9670;&#160;</a></span>sqsh__metablock_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh__metablock_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshMetablockContext.html">SqshMetablockContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a metablock context with a SQSH context and an address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">context</td><td>The metablock context to initialize. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sqsh</td><td>The SQSH context to use for the metablock. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>The starting offset of the metablock in blocks.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
