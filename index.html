@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-116-g3222f031</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.1.0-119-gd4e2c09a</span>
    </div>
   </td>
  </tr>
@@ -91,8 +91,28 @@ Features</h1>
 <li>... much more</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md2"></a>
-How to...?</h1>
+building</h1>
 <h2><a class="anchor" id="autotoc_md3"></a>
+dependencies</h2>
+<ul>
+<li>libc</li>
+<li>libcurl <em>optional</em></li>
+<li>zlib <em>optional</em></li>
+<li>liblz4 <em>optional</em></li>
+<li>liblzma <em>optional</em></li>
+<li>lzo2 <em>optional</em></li>
+<li>libzstd <em>optional</em></li>
+<li>fuse3 <em>optional</em></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md4"></a>
+compile &amp; install</h2>
+<div class="fragment"><div class="line">meson setup build</div>
+<div class="line">cd build</div>
+<div class="line">meson compile</div>
+<div class="line">meson install</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+How to...?</h1>
+<h2><a class="anchor" id="autotoc_md6"></a>
 ... open an archive?</h2>
 <div class="fragment"><div class="line"><span class="keywordtype">int</span> rv;</div>
 <div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqsh.html">Sqsh</a> archive = <a class="code hl_function" href="structSqsh.html#a983ce0fb8924ff3496deb773f7cdf377">sqsh_new</a>(<span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>, NULL, &amp;rv);</div>
@@ -103,7 +123,7 @@ How to...?</h1>
 <div class="ttc" id="asqsh_8h_html_acb34415257ce8b3d8d407a0add722297"><div class="ttname"><a href="sqsh_8h.html#acb34415257ce8b3d8d407a0add722297">sqsh_free</a></div><div class="ttdeci">int sqsh_free(struct Sqsh *sqsh)</div><div class="ttdoc">Frees the resources used by a Sqsh instance.</div></div>
 <div class="ttc" id="astructSqsh_html"><div class="ttname"><a href="structSqsh.html">Sqsh</a></div><div class="ttdoc">The Sqsh struct contains all information about the current sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__private_8h_source.html#l00056">sqsh_private.h:56</a></div></div>
 <div class="ttc" id="astructSqsh_html_a983ce0fb8924ff3496deb773f7cdf377"><div class="ttname"><a href="structSqsh.html#a983ce0fb8924ff3496deb773f7cdf377">Sqsh::sqsh_new</a></div><div class="ttdeci">SQSH_NO_UNUSED struct Sqsh * sqsh_new(const void *source, const struct SqshConfig *config, int *err)</div><div class="ttdoc">sqsh_new initializes a sqsh context in heap.</div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md4"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
 ... get metainformations about a file?</h2>
 <div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshInodeContext.html">SqshInodeContext</a> inode = { 0 };</div>
 <div class="line"><span class="keywordtype">int</span> rv = sqsh_inode_load_by_path(&amp;inode, &amp;archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>);</div>
@@ -114,22 +134,22 @@ How to...?</h1>
 <div class="line"><span class="comment">// This for example gives you the file size of a file:</span></div>
 <div class="line"><span class="keywordtype">int</span> file_size = <a class="code hl_function" href="structSqshInodeContext.html#a65a02fa321fe0ef692244fac11ce0619">sqsh_inode_file_size</a>(&amp;inode);</div>
 <div class="line">sqsh_inode_cleanup(&amp;inode);</div>
-<div class="ttc" id="astructSqshInodeContext_html"><div class="ttname"><a href="structSqshInodeContext.html">SqshInodeContext</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context__private_8h_source.html#l00160">sqsh_context_private.h:160</a></div></div>
+<div class="ttc" id="astructSqshInodeContext_html"><div class="ttname"><a href="structSqshInodeContext.html">SqshInodeContext</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context__private_8h_source.html#l00332">sqsh_context_private.h:332</a></div></div>
 <div class="ttc" id="astructSqshInodeContext_html_a65a02fa321fe0ef692244fac11ce0619"><div class="ttname"><a href="structSqshInodeContext.html#a65a02fa321fe0ef692244fac11ce0619">SqshInodeContext::sqsh_inode_file_size</a></div><div class="ttdeci">uint64_t sqsh_inode_file_size(const struct SqshInodeContext *context)</div><div class="ttdoc">Getter for the file size. 0 if the file has no size.</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md8"></a>
 Resource</h1>
 <ul>
 <li><a href="https://dr-emann.github.io/squashfs/">https://dr-emann.github.io/squashfs/</a></li>
 <li><a href="https://dr-emann.github.io/squashfs/squashfs.html">https://dr-emann.github.io/squashfs/squashfs.html</a></li>
 <li><a href="https://www.kernel.org/doc/Documentation/filesystems/squashfs.txt">https://www.kernel.org/doc/Documentation/filesystems/squashfs.txt</a> (useless)</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md6"></a>
+<h1><a class="anchor" id="autotoc_md9"></a>
 Design principles</h1>
 <ul>
 <li>Stack located structures</li>
 <li>usable in multithreaded applications</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 organisation of source</h1>
 <ul>
 <li><em>src/primitive</em>: basic building blocks like buffer management or reference counting</li>
