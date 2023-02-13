@@ -368,7 +368,7 @@ var searchData=
   ['sqsh_5fprimitive_2eh_365',['sqsh_primitive.h',['../sqsh__primitive_8h.html',1,'']]],
   ['sqsh_5fprivate_2eh_366',['sqsh_private.h',['../sqsh__private_8h.html',1,'']]],
   ['sqsh_5fref_5fcount_5fdtor_5ft_367',['sqsh_ref_count_dtor_t',['../sqsh__primitive_8h.html#ac58228b8cff338b88bcf43e29ac5a56a',1,'sqsh_primitive.h']]],
-  ['sqsh_5fref_5fcount_5fnew_368',['sqsh_ref_count_new',['../structSqshRefCount.html#ac3458fca9e2d9030bfb86871eda6d1fe',1,'SqshRefCount']]],
+  ['sqsh_5fref_5fcount_5fnew_368',['sqsh_ref_count_new',['../structSqshRefCount.html#a2e97c482f7774fca620f0d892da4bf9b',1,'SqshRefCount']]],
   ['sqsh_5fref_5fcount_5frelease_369',['sqsh_ref_count_release',['../structSqshRefCount.html#a3780c9d658fa8610a12a2be3f9536d98',1,'SqshRefCount']]],
   ['sqsh_5fref_5fcount_5fretain_370',['sqsh_ref_count_retain',['../structSqshRefCount.html#a3793b9b9cf575cc73cb8bbb90a7b4a16',1,'SqshRefCount']]],
   ['sqsh_5fsizeof_5fcompression_5foptions_371',['SQSH_SIZEOF_COMPRESSION_OPTIONS',['../sqsh__data_8h.html#a2345e27d05c39aa82ef20c633a37c1cd',1,'sqsh_data.h']]],

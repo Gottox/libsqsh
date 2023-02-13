@@ -255,7 +255,7 @@ var searchData=
   ['sqsh_5fpath_5fresolver_5fnew_252',['sqsh_path_resolver_new',['../structSqshPathResolverContext.html#a33d5f6a01f548c30b39bd44bbbfcfe15',1,'SqshPathResolverContext']]],
   ['sqsh_5fpath_5fresolver_5fresolve_253',['sqsh_path_resolver_resolve',['../structSqshPathResolverContext.html#aaa56bc5686c08e491926b9495e2cdf50',1,'SqshPathResolverContext']]],
   ['sqsh_5fperror_254',['sqsh_perror',['../sqsh__error_8h.html#a4154510d5a364e668e4667aae0678e6a',1,'sqsh_error.h']]],
-  ['sqsh_5fref_5fcount_5fnew_255',['sqsh_ref_count_new',['../structSqshRefCount.html#ac3458fca9e2d9030bfb86871eda6d1fe',1,'SqshRefCount']]],
+  ['sqsh_5fref_5fcount_5fnew_255',['sqsh_ref_count_new',['../structSqshRefCount.html#a2e97c482f7774fca620f0d892da4bf9b',1,'SqshRefCount']]],
   ['sqsh_5fref_5fcount_5frelease_256',['sqsh_ref_count_release',['../structSqshRefCount.html#a3780c9d658fa8610a12a2be3f9536d98',1,'SqshRefCount']]],
   ['sqsh_5fref_5fcount_5fretain_257',['sqsh_ref_count_retain',['../structSqshRefCount.html#a3793b9b9cf575cc73cb8bbb90a7b4a16',1,'SqshRefCount']]],
   ['sqsh_5fslice_5fcleanup_258',['sqsh_slice_cleanup',['../structSqshSlice.html#ad1cf9ad4d5e62c4f4782cbc081fc3699',1,'SqshSlice']]],
