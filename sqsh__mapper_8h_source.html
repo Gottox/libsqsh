@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0-3-g808c8f36</span>
    </div>
   </td>
  </tr>
@@ -243,10 +243,31 @@ $(function() {
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="structSqshMapping.html#a85b27d668d5cdb7337eedc91c0151094">  291</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="structSqshMapping.html#a85b27d668d5cdb7337eedc91c0151094">sqsh_mapping_unmap</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structSqshMapping.html">SqshMapping</a> *mapping);</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>}</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard SQSH_MAPPER_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="comment">// mapper/cursor.c</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="structSqshMapCursor.html">  296</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSqshMapCursor.html">SqshMapCursor</a> {</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <a class="code hl_typedef" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> offset;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    uint64_t upper_limit;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <span class="keywordtype">size_t</span> size;</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshMapping.html">SqshMapping</a> mapping;</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshMapper.html">SqshMapper</a> *mapper;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>};</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno"><a class="line" href="structSqshMapCursor.html#a86d4411fef4ce5b9db5524c07c54d983">  317</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="structSqshMapCursor.html#a86d4411fef4ce5b9db5524c07c54d983">sqsh__map_cursor_init</a>(</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshMapCursor.html">SqshMapCursor</a> *cursor, <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshMapper.html">SqshMapper</a> *mapper,</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <span class="keyword">const</span> uint64_t start_address, uint64_t upper_limit);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno"><a class="line" href="structSqshMapCursor.html#a4855a81231f86a2f916c54ab997f9554">  330</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="structSqshMapCursor.html#a4855a81231f86a2f916c54ab997f9554">sqsh__map_cursor_advance</a>(</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshMapCursor.html">SqshMapCursor</a> *cursor, <a class="code hl_typedef" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> offset, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="structSqshMapCursor.html#a231509fc7085c4d88651a0ed07acbbb7">  340</a></span><span class="keyword">const</span> uint8_t *<a class="code hl_function" href="structSqshMapCursor.html#a231509fc7085c4d88651a0ed07acbbb7">sqsh__map_cursor_data</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structSqshMapCursor.html">SqshMapCursor</a> *cursor);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno"><a class="line" href="structSqshMapCursor.html#ab21e44ef07ce8ea72de43a4110708192">  349</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="structSqshMapCursor.html#ab21e44ef07ce8ea72de43a4110708192">sqsh__map_cursor_cleanup</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structSqshMapCursor.html">SqshMapCursor</a> *cursor);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>}</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard SQSH_MAPPER_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="asqsh__common_8h_html_a1d493fd70fce488d899c7681d5ff6264"><div class="ttname"><a href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a></div><div class="ttdeci">size_t sqsh_index_t</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__common_8h_source.html#l00048">sqsh_common.h:48</a></div></div>
 <div class="ttc" id="asqsh__mapper_8h_html_a56d8108fd888cec3f48d9b2cabb4c5e0"><div class="ttname"><a href="sqsh__mapper_8h.html#a56d8108fd888cec3f48d9b2cabb4c5e0">sqsh_mapper_impl_static</a></div><div class="ttdeci">struct SqshMemoryMapperImpl sqsh_mapper_impl_static</div></div>
 <div class="ttc" id="asqsh__mapper_8h_html_a64face4d95806f6c2ca2033941a1676b"><div class="ttname"><a href="sqsh__mapper_8h.html#a64face4d95806f6c2ca2033941a1676b">sqsh_mapper_impl_canary</a></div><div class="ttdeci">struct SqshMemoryMapperImpl sqsh_mapper_impl_canary</div></div>
@@ -259,6 +280,11 @@ $(function() {
 <div class="ttc" id="astructSqshCanaryMapper_html"><div class="ttname"><a href="structSqshCanaryMapper.html">SqshCanaryMapper</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__mapper_8h_source.html#l00046">sqsh_mapper.h:46</a></div></div>
 <div class="ttc" id="astructSqshCurlMap_html"><div class="ttname"><a href="structSqshCurlMap.html">SqshCurlMap</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__mapper_8h_source.html#l00079">sqsh_mapper.h:79</a></div></div>
 <div class="ttc" id="astructSqshCurlMapper_html"><div class="ttname"><a href="structSqshCurlMapper.html">SqshCurlMapper</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__mapper_8h_source.html#l00068">sqsh_mapper.h:68</a></div></div>
+<div class="ttc" id="astructSqshMapCursor_html"><div class="ttname"><a href="structSqshMapCursor.html">SqshMapCursor</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__mapper_8h_source.html#l00296">sqsh_mapper.h:296</a></div></div>
+<div class="ttc" id="astructSqshMapCursor_html_a231509fc7085c4d88651a0ed07acbbb7"><div class="ttname"><a href="structSqshMapCursor.html#a231509fc7085c4d88651a0ed07acbbb7">SqshMapCursor::sqsh__map_cursor_data</a></div><div class="ttdeci">const uint8_t * sqsh__map_cursor_data(struct SqshMapCursor *cursor)</div><div class="ttdoc">Returns the current data of the cursor.</div></div>
+<div class="ttc" id="astructSqshMapCursor_html_a4855a81231f86a2f916c54ab997f9554"><div class="ttname"><a href="structSqshMapCursor.html#a4855a81231f86a2f916c54ab997f9554">SqshMapCursor::sqsh__map_cursor_advance</a></div><div class="ttdeci">int sqsh__map_cursor_advance(struct SqshMapCursor *cursor, sqsh_index_t offset, size_t size)</div><div class="ttdoc">Advances the cursor.</div></div>
+<div class="ttc" id="astructSqshMapCursor_html_a86d4411fef4ce5b9db5524c07c54d983"><div class="ttname"><a href="structSqshMapCursor.html#a86d4411fef4ce5b9db5524c07c54d983">SqshMapCursor::sqsh__map_cursor_init</a></div><div class="ttdeci">int sqsh__map_cursor_init(struct SqshMapCursor *cursor, struct SqshMapper *mapper, const uint64_t start_address, uint64_t upper_limit)</div><div class="ttdoc">Initializes a mapping cursor.</div></div>
+<div class="ttc" id="astructSqshMapCursor_html_ab21e44ef07ce8ea72de43a4110708192"><div class="ttname"><a href="structSqshMapCursor.html#ab21e44ef07ce8ea72de43a4110708192">SqshMapCursor::sqsh__map_cursor_cleanup</a></div><div class="ttdeci">int sqsh__map_cursor_cleanup(struct SqshMapCursor *cursor)</div><div class="ttdoc">Cleans up the cursor.</div></div>
 <div class="ttc" id="astructSqshMapper_html"><div class="ttname"><a href="structSqshMapper.html">SqshMapper</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__mapper_8h_source.html#l00188">sqsh_mapper.h:188</a></div></div>
 <div class="ttc" id="astructSqshMapper_html_a038bf325412c01fac2febb7bbe14a80b"><div class="ttname"><a href="structSqshMapper.html#a038bf325412c01fac2febb7bbe14a80b">SqshMapper::sqsh_mapper_map</a></div><div class="ttdeci">int sqsh_mapper_map(struct SqshMapping *mapping, struct SqshMapper *mapper, sqsh_index_t offset, size_t size)</div><div class="ttdoc">Maps a portion of the input data to a mapping.</div></div>
 <div class="ttc" id="astructSqshMapper_html_a586979475c558a7807dababf58c9bb23"><div class="ttname"><a href="structSqshMapper.html#a586979475c558a7807dababf58c9bb23">SqshMapper::sqsh_mapper_size</a></div><div class="ttdeci">size_t sqsh_mapper_size(const struct SqshMapper *mapper)</div><div class="ttdoc">Retrieves the size of the input data in a mapper.</div></div>
