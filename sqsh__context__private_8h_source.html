@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0-3-g808c8f36</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0-15-ge97b5de6</span>
    </div>
   </td>
  </tr>
@@ -232,10 +232,20 @@ $(function() {
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno"><a class="line" href="sqsh__context__private_8h.html#abcf935e1fcff4b7fda84fb447d4390f4">  396</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__context__private_8h.html#abcf935e1fcff4b7fda84fb447d4390f4">sqsh_path_resolver_cleanup</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *context);</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>}</div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard SQSH_CONTEXT_PRIVATE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="comment">// context/trailing_context.c</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno"><a class="line" href="structSqshTrailingContext.html">  401</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSqshTrailingContext.html">SqshTrailingContext</a> {</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshMapCursor.html">SqshMapCursor</a> cursor;</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>};</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno"><a class="line" href="structSqshTrailingContext.html#a34b73541d72ff0d0b0ea0bdeac91414d">  417</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="structSqshTrailingContext.html#a34b73541d72ff0d0b0ea0bdeac91414d">sqsh__trailing_init</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structSqshTrailingContext.html">SqshTrailingContext</a> *context, <span class="keyword">struct</span> <a class="code hl_struct" href="structSqsh.html">Sqsh</a> *sqsh);</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span> </div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno"><a class="line" href="structSqshTrailingContext.html#a432c4c6f9095f8e92e1ffa996650ed6f">  427</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="structSqshTrailingContext.html#a432c4c6f9095f8e92e1ffa996650ed6f">sqsh__trailing_cleanup</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structSqshTrailingContext.html">SqshTrailingContext</a> *context);</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span> </div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>}</div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard SQSH_CONTEXT_PRIVATE_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="asqsh__common_8h_html_a0f0a35d1ed84a34ad06a006e5e90da94"><div class="ttname"><a href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a></div><div class="ttdeci">#define SQSH_NO_UNUSED</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__common_8h_source.html#l00046">sqsh_common.h:46</a></div></div>
 <div class="ttc" id="asqsh__context_8h_html"><div class="ttname"><a href="sqsh__context_8h.html">sqsh_context.h</a></div></div>
 <div class="ttc" id="asqsh__context__private_8h_html_a06ac9751dae95beec11780afe7b0dbba"><div class="ttname"><a href="sqsh__context__private_8h.html#a06ac9751dae95beec11780afe7b0dbba">sqsh__inode_cleanup</a></div><div class="ttdeci">int sqsh__inode_cleanup(struct SqshInodeContext *context)</div></div>
@@ -267,13 +277,17 @@ $(function() {
 <div class="ttc" id="astructSqshFileContext_html"><div class="ttname"><a href="structSqshFileContext.html">SqshFileContext</a></div><div class="ttdoc">The SqshFileContext struct.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context__private_8h_source.html#l00120">sqsh_context_private.h:120</a></div></div>
 <div class="ttc" id="astructSqshFragmentTable_html"><div class="ttname"><a href="structSqshFragmentTable.html">SqshFragmentTable</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__table__private_8h_source.html#l00095">sqsh_table_private.h:95</a></div></div>
 <div class="ttc" id="astructSqshInodeContext_html"><div class="ttname"><a href="structSqshInodeContext.html">SqshInodeContext</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context__private_8h_source.html#l00332">sqsh_context_private.h:332</a></div></div>
-<div class="ttc" id="astructSqshMapper_html"><div class="ttname"><a href="structSqshMapper.html">SqshMapper</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__mapper_8h_source.html#l00188">sqsh_mapper.h:188</a></div></div>
+<div class="ttc" id="astructSqshMapCursor_html"><div class="ttname"><a href="structSqshMapCursor.html">SqshMapCursor</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__mapper_8h_source.html#l00297">sqsh_mapper.h:297</a></div></div>
+<div class="ttc" id="astructSqshMapper_html"><div class="ttname"><a href="structSqshMapper.html">SqshMapper</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__mapper_8h_source.html#l00189">sqsh_mapper.h:189</a></div></div>
 <div class="ttc" id="astructSqshMapping_html"><div class="ttname"><a href="structSqshMapping.html">SqshMapping</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__mapper_8h_source.html#l00160">sqsh_mapper.h:160</a></div></div>
 <div class="ttc" id="astructSqshMetablockContext_html"><div class="ttname"><a href="structSqshMetablockContext.html">SqshMetablockContext</a></div><div class="ttdoc">The SqshMetablockContext struct.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context__private_8h_source.html#l00167">sqsh_context_private.h:167</a></div></div>
 <div class="ttc" id="astructSqshMetablockContext_html_a87d6b1b3695fea5e966daf2c1b00efd0"><div class="ttname"><a href="structSqshMetablockContext.html#a87d6b1b3695fea5e966daf2c1b00efd0">SqshMetablockContext::sqsh__metablock_init</a></div><div class="ttdeci">int sqsh__metablock_init(struct SqshMetablockContext *context, struct Sqsh *sqsh, uint64_t address)</div><div class="ttdoc">Initializes a metablock context with a SQSH context and an address.</div></div>
 <div class="ttc" id="astructSqshMetablockStreamContext_html"><div class="ttname"><a href="structSqshMetablockStreamContext.html">SqshMetablockStreamContext</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context__private_8h_source.html#l00229">sqsh_context_private.h:229</a></div></div>
 <div class="ttc" id="astructSqshPathResolverContext_html"><div class="ttname"><a href="structSqshPathResolverContext.html">SqshPathResolverContext</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context__private_8h_source.html#l00367">sqsh_context_private.h:367</a></div></div>
 <div class="ttc" id="astructSqshSuperblockContext_html"><div class="ttname"><a href="structSqshSuperblockContext.html">SqshSuperblockContext</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context__private_8h_source.html#l00050">sqsh_context_private.h:50</a></div></div>
+<div class="ttc" id="astructSqshTrailingContext_html"><div class="ttname"><a href="structSqshTrailingContext.html">SqshTrailingContext</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context__private_8h_source.html#l00401">sqsh_context_private.h:401</a></div></div>
+<div class="ttc" id="astructSqshTrailingContext_html_a34b73541d72ff0d0b0ea0bdeac91414d"><div class="ttname"><a href="structSqshTrailingContext.html#a34b73541d72ff0d0b0ea0bdeac91414d">SqshTrailingContext::sqsh__trailing_init</a></div><div class="ttdeci">int sqsh__trailing_init(struct SqshTrailingContext *context, struct Sqsh *sqsh)</div><div class="ttdoc">Initializes a trailing context.</div></div>
+<div class="ttc" id="astructSqshTrailingContext_html_a432c4c6f9095f8e92e1ffa996650ed6f"><div class="ttname"><a href="structSqshTrailingContext.html#a432c4c6f9095f8e92e1ffa996650ed6f">SqshTrailingContext::sqsh__trailing_cleanup</a></div><div class="ttdeci">int sqsh__trailing_cleanup(struct SqshTrailingContext *context)</div><div class="ttdoc">Cleans up a trailing context.</div></div>
 <div class="ttc" id="astructSqsh_html"><div class="ttname"><a href="structSqsh.html">Sqsh</a></div><div class="ttdoc">The Sqsh struct contains all information about the current sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__private_8h_source.html#l00056">sqsh_private.h:56</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

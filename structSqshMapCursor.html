@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0-3-g808c8f36</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0-15-ge97b5de6</span>
    </div>
   </td>
  </tr>
@@ -85,16 +85,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4855a81231f86a2f916c54ab997f9554"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMapCursor.html#a4855a81231f86a2f916c54ab997f9554">sqsh__map_cursor_advance</a> (struct <a class="el" href="structSqshMapCursor.html">SqshMapCursor</a> *cursor, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> offset, size_t size)</td></tr>
 <tr class="memdesc:a4855a81231f86a2f916c54ab997f9554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the cursor.  <a href="structSqshMapCursor.html#a4855a81231f86a2f916c54ab997f9554">More...</a><br /></td></tr>
 <tr class="separator:a4855a81231f86a2f916c54ab997f9554"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231509fc7085c4d88651a0ed07acbbb7"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMapCursor.html#a231509fc7085c4d88651a0ed07acbbb7">sqsh__map_cursor_data</a> (struct <a class="el" href="structSqshMapCursor.html">SqshMapCursor</a> *cursor)</td></tr>
-<tr class="memdesc:a231509fc7085c4d88651a0ed07acbbb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current data of the cursor.  <a href="structSqshMapCursor.html#a231509fc7085c4d88651a0ed07acbbb7">More...</a><br /></td></tr>
-<tr class="separator:a231509fc7085c4d88651a0ed07acbbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bfcad1c77f79e4a1533e2c2d6468cb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMapCursor.html#a2bfcad1c77f79e4a1533e2c2d6468cb3">sqsh__map_cursor_all</a> (struct <a class="el" href="structSqshMapCursor.html">SqshMapCursor</a> *cursor)</td></tr>
+<tr class="memdesc:a2bfcad1c77f79e4a1533e2c2d6468cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads all data into the cursor. This is useful for tables that must reside completely in memory.  <a href="structSqshMapCursor.html#a2bfcad1c77f79e4a1533e2c2d6468cb3">More...</a><br /></td></tr>
+<tr class="separator:a2bfcad1c77f79e4a1533e2c2d6468cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8836c88b7a23af8ae1dd7e677b4763df"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMapCursor.html#a8836c88b7a23af8ae1dd7e677b4763df">sqsh__map_cursor_data</a> (const struct <a class="el" href="structSqshMapCursor.html">SqshMapCursor</a> *cursor)</td></tr>
+<tr class="memdesc:a8836c88b7a23af8ae1dd7e677b4763df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current data of the cursor.  <a href="structSqshMapCursor.html#a8836c88b7a23af8ae1dd7e677b4763df">More...</a><br /></td></tr>
+<tr class="separator:a8836c88b7a23af8ae1dd7e677b4763df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae508e6a51abfb827523910c5e1434247"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMapCursor.html#ae508e6a51abfb827523910c5e1434247">sqsh__map_cursor_size</a> (const struct <a class="el" href="structSqshMapCursor.html">SqshMapCursor</a> *cursor)</td></tr>
+<tr class="memdesc:ae508e6a51abfb827523910c5e1434247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current size of the cursor.  <a href="structSqshMapCursor.html#ae508e6a51abfb827523910c5e1434247">More...</a><br /></td></tr>
+<tr class="separator:ae508e6a51abfb827523910c5e1434247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab21e44ef07ce8ea72de43a4110708192"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMapCursor.html#ab21e44ef07ce8ea72de43a4110708192">sqsh__map_cursor_cleanup</a> (struct <a class="el" href="structSqshMapCursor.html">SqshMapCursor</a> *cursor)</td></tr>
 <tr class="memdesc:ab21e44ef07ce8ea72de43a4110708192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up the cursor.  <a href="structSqshMapCursor.html#ab21e44ef07ce8ea72de43a4110708192">More...</a><br /></td></tr>
 <tr class="separator:ab21e44ef07ce8ea72de43a4110708192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00296">296</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00297">297</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4855a81231f86a2f916c54ab997f9554" name="a4855a81231f86a2f916c54ab997f9554"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4855a81231f86a2f916c54ab997f9554">&#9670;&#160;</a></span>sqsh__map_cursor_advance()</h2>
@@ -141,6 +147,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2bfcad1c77f79e4a1533e2c2d6468cb3" name="a2bfcad1c77f79e4a1533e2c2d6468cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bfcad1c77f79e4a1533e2c2d6468cb3">&#9670;&#160;</a></span>sqsh__map_cursor_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh__map_cursor_all </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshMapCursor.html">SqshMapCursor</a> *&#160;</td>
+          <td class="paramname"><em>cursor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads all data into the cursor. This is useful for tables that must reside completely in memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cursor</td><td>The cursor to advance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, negative on error </dd></dl>
+
+</div>
+</div>
 <a id="ab21e44ef07ce8ea72de43a4110708192" name="ab21e44ef07ce8ea72de43a4110708192"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab21e44ef07ce8ea72de43a4110708192">&#9670;&#160;</a></span>sqsh__map_cursor_cleanup()</h2>
 
@@ -168,8 +201,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a231509fc7085c4d88651a0ed07acbbb7" name="a231509fc7085c4d88651a0ed07acbbb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a231509fc7085c4d88651a0ed07acbbb7">&#9670;&#160;</a></span>sqsh__map_cursor_data()</h2>
+<a id="a8836c88b7a23af8ae1dd7e677b4763df" name="a8836c88b7a23af8ae1dd7e677b4763df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8836c88b7a23af8ae1dd7e677b4763df">&#9670;&#160;</a></span>sqsh__map_cursor_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,7 +210,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">const uint8_t * sqsh__map_cursor_data </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqshMapCursor.html">SqshMapCursor</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshMapCursor.html">SqshMapCursor</a> *&#160;</td>
           <td class="paramname"><em>cursor</em></td><td>)</td>
           <td></td>
         </tr>
@@ -244,6 +277,33 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, negative on error </dd></dl>
+
+</div>
+</div>
+<a id="ae508e6a51abfb827523910c5e1434247" name="ae508e6a51abfb827523910c5e1434247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae508e6a51abfb827523910c5e1434247">&#9670;&#160;</a></span>sqsh__map_cursor_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sqsh__map_cursor_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshMapCursor.html">SqshMapCursor</a> *&#160;</td>
+          <td class="paramname"><em>cursor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current size of the cursor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cursor</td><td>The cursor to get the size from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The current size of the cursor </dd></dl>
 
 </div>
 </div>
