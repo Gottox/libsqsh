@@ -58,7 +58,7 @@ var searchData=
   ['sqsh_5f_5fxattr_5fiterator_5fcleanup_55',['sqsh__xattr_iterator_cleanup',['../sqsh__iterator__private_8h.html#a8f2203283f8eed5e62dbcbcb5e099489',1,'sqsh_iterator_private.h']]],
   ['sqsh_5f_5fxattr_5fiterator_5finit_56',['sqsh__xattr_iterator_init',['../sqsh__iterator__private_8h.html#aed70070a9afbac419a40691365fdde66',1,'sqsh_iterator_private.h']]],
   ['sqsh_5f_5fxattr_5ftable_5fcleanup_57',['sqsh__xattr_table_cleanup',['../sqsh__table__private_8h.html#a37c642e1a69eeffbe79dadd770b09509',1,'sqsh_table_private.h']]],
-  ['sqsh_5f_5fxattr_5ftable_5finit_58',['sqsh__xattr_table_init',['../sqsh__table_8h.html#ac83b48b0f92ed513914dd35979478b0d',1,'sqsh__xattr_table_init(struct SqshXattrTable *context, struct Sqsh *sqsh):&#160;sqsh_table.h'],['../sqsh__table__private_8h.html#ac83b48b0f92ed513914dd35979478b0d',1,'sqsh__xattr_table_init(struct SqshXattrTable *context, struct Sqsh *sqsh):&#160;sqsh_table_private.h']]],
+  ['sqsh_5f_5fxattr_5ftable_5finit_58',['sqsh__xattr_table_init',['../sqsh__table__private_8h.html#ac83b48b0f92ed513914dd35979478b0d',1,'sqsh_table_private.h']]],
   ['sqsh_5fbuffer_5fadd_5fcapacity_59',['sqsh_buffer_add_capacity',['../structSqshBuffer.html#a47a8e0cac338d42cd47d654b8c525c59',1,'SqshBuffer']]],
   ['sqsh_5fbuffer_5fadd_5fsize_60',['sqsh_buffer_add_size',['../structSqshBuffer.html#ae4103256f78f70b65855a6ad91488072',1,'SqshBuffer']]],
   ['sqsh_5fbuffer_5fappend_61',['sqsh_buffer_append',['../structSqshBuffer.html#aca35061c9d606761b1881efd8d38c135',1,'SqshBuffer']]],
