@@ -9,6 +9,6 @@ var searchData=
   ['sqshsourcetype_6',['SqshSourceType',['../sqsh_8h.html#a6868944bf67de0c9638e180f3052b260',1,'sqsh.h']]],
   ['sqshsuperblockcompressionid_7',['SqshSuperblockCompressionId',['../sqsh__context_8h.html#ae0979c00d3e768637a9a10f31b95594a',1,'sqsh_context.h']]],
   ['sqshsuperblockflags_8',['SqshSuperblockFlags',['../sqsh__context_8h.html#af646f88052c2cec402c25f13e9497c91',1,'sqsh_context.h']]],
-  ['sqshxattrtype_9',['SqshXattrType',['../sqsh__table_8h.html#af6aa1115a96a68fa5f4417984e12b923',1,'sqsh_table.h']]],
+  ['sqshxattrtype_9',['SqshXattrType',['../sqsh__xattr_8h.html#af6aa1115a96a68fa5f4417984e12b923',1,'sqsh_xattr.h']]],
   ['sqshxzfilters_10',['SqshXzFilters',['../sqsh__context_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6',1,'sqsh_context.h']]]
 ];

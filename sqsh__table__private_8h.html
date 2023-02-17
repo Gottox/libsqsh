@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0-27-gf1e63901</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0-30-gdf78455c</span>
    </div>
   </td>
  </tr>
@@ -86,7 +86,7 @@ Include dependency graph for sqsh_table_private.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__table__private_8h__dep__incl.svg" width="234" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__table__private_8h__dep__incl.svg" width="308" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -97,8 +97,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTable.html">SqshTable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFragmentTable.html">SqshFragmentTable</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrTable.html">SqshXattrTable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -111,10 +109,6 @@ Functions</h2></td></tr>
 <tr class="separator:a7bef948d1be20e1628d90e05a73f1b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad58dcdab55b6179638fbe871fe587133"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__table__private_8h.html#ad58dcdab55b6179638fbe871fe587133">sqsh__fragment_table_cleanup</a> (struct <a class="el" href="structSqshFragmentTable.html">SqshFragmentTable</a> *context)</td></tr>
 <tr class="separator:ad58dcdab55b6179638fbe871fe587133"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac83b48b0f92ed513914dd35979478b0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__table__private_8h.html#ac83b48b0f92ed513914dd35979478b0d">sqsh__xattr_table_init</a> (struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
-<tr class="separator:ac83b48b0f92ed513914dd35979478b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37c642e1a69eeffbe79dadd770b09509"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__table__private_8h.html#a37c642e1a69eeffbe79dadd770b09509">sqsh__xattr_table_cleanup</a> (struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *context)</td></tr>
-<tr class="separator:a37c642e1a69eeffbe79dadd770b09509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ad58dcdab55b6179638fbe871fe587133" name="ad58dcdab55b6179638fbe871fe587133"></a>
@@ -216,52 +210,6 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>element_count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a37c642e1a69eeffbe79dadd770b09509" name="a37c642e1a69eeffbe79dadd770b09509"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37c642e1a69eeffbe79dadd770b09509">&#9670;&#160;</a></span>sqsh__xattr_table_cleanup()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sqsh__xattr_table_cleanup </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *&#160;</td>
-          <td class="paramname"><em>context</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac83b48b0f92ed513914dd35979478b0d" name="ac83b48b0f92ed513914dd35979478b0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac83b48b0f92ed513914dd35979478b0d">&#9670;&#160;</a></span>sqsh__xattr_table_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__xattr_table_init </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
-          <td class="paramname"><em>sqsh</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
