@@ -1,8 +1,8 @@
 var searchData=
 [
   ['sqsh_5ferror_5fsection_0',['SQSH_ERROR_SECTION',['../sqsh__error_8h.html#ab55cddfa76438c9d0f3f7100056b579d',1,'sqsh_error.h']]],
-  ['sqsh_5finode_5fno_5ffragment_1',['SQSH_INODE_NO_FRAGMENT',['../sqsh__context_8h.html#a360c9ca79bf9ee2638ef2ea2de0c1a08',1,'sqsh_context.h']]],
-  ['sqsh_5finode_5fno_5fxattr_2',['SQSH_INODE_NO_XATTR',['../sqsh__context_8h.html#ab4520239c005c4a538114a2f24d343ab',1,'sqsh_context.h']]],
+  ['sqsh_5finode_5fno_5ffragment_1',['SQSH_INODE_NO_FRAGMENT',['../sqsh__inode_8h.html#a360c9ca79bf9ee2638ef2ea2de0c1a08',1,'sqsh_inode.h']]],
+  ['sqsh_5finode_5fno_5fxattr_2',['SQSH_INODE_NO_XATTR',['../sqsh__inode_8h.html#ab4520239c005c4a538114a2f24d343ab',1,'sqsh_inode.h']]],
   ['sqsh_5fmetablock_5fblock_5fsize_3',['SQSH_METABLOCK_BLOCK_SIZE',['../sqsh__context__private_8h.html#a956b5a53a580f82d6eba6ab03bfc8758',1,'sqsh_context_private.h']]],
   ['sqsh_5fno_5funused_4',['SQSH_NO_UNUSED',['../sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94',1,'sqsh_common.h']]],
   ['sqsh_5fsizeof_5fcompression_5foptions_5',['SQSH_SIZEOF_COMPRESSION_OPTIONS',['../sqsh__data_8h.html#a2345e27d05c39aa82ef20c633a37c1cd',1,'sqsh_data.h']]],
