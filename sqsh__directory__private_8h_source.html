@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0-30-g54f7e7cd</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0-31-g896cc7f1</span>
    </div>
   </td>
  </tr>
@@ -119,23 +119,22 @@ $(function() {
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    uint32_t size;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code hl_variable" href="sqsh__data_8h.html#a7985f927b9b8614f896cd9dd9ad25919">SqshDataDirectoryFragment</a> *fragments;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">struct </span>SqshDirectoryContext *directory;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshMetablockStreamContext.html">SqshMetablockStreamContext</a> metablock;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">size_t</span> remaining_entries;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_typedef" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> current_fragment_offset;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_typedef" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> next_offset;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_typedef" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> current_offset;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="sqsh__directory__private_8h.html#ae2166e3d150ad0be4653939ffaae4b37">   75</a></span><a class="code hl_define" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> <span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__directory__private_8h.html#ae2166e3d150ad0be4653939ffaae4b37">sqsh__directory_iterator_init</a>(</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator, <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshInodeContext.html">SqshInodeContext</a> *inode);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="sqsh__directory__private_8h.html#a400a8facc040156f961d844a5e38f352">   87</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__directory__private_8h.html#a400a8facc040156f961d844a5e38f352">sqsh__directory_iterator_cleanup</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif </span><span class="comment">// SQSH_ITERATOR_PRIVATE_H</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshMetablockStreamContext.html">SqshMetablockStreamContext</a> metablock;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">size_t</span> remaining_entries;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_typedef" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> current_fragment_offset;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_typedef" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> next_offset;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_typedef" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> current_offset;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="sqsh__directory__private_8h.html#ae2166e3d150ad0be4653939ffaae4b37">   74</a></span><a class="code hl_define" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> <span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__directory__private_8h.html#ae2166e3d150ad0be4653939ffaae4b37">sqsh__directory_iterator_init</a>(</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator, <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshInodeContext.html">SqshInodeContext</a> *inode);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="sqsh__directory__private_8h.html#a400a8facc040156f961d844a5e38f352">   86</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="sqsh__directory__private_8h.html#a400a8facc040156f961d844a5e38f352">sqsh__directory_iterator_cleanup</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#endif </span><span class="comment">// SQSH_ITERATOR_PRIVATE_H</span></div>
 <div class="ttc" id="asqsh__common_8h_html_a0f0a35d1ed84a34ad06a006e5e90da94"><div class="ttname"><a href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a></div><div class="ttdeci">#define SQSH_NO_UNUSED</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__common_8h_source.html#l00046">sqsh_common.h:46</a></div></div>
 <div class="ttc" id="asqsh__common_8h_html_a1d493fd70fce488d899c7681d5ff6264"><div class="ttname"><a href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a></div><div class="ttdeci">size_t sqsh_index_t</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__common_8h_source.html#l00048">sqsh_common.h:48</a></div></div>
 <div class="ttc" id="asqsh__context__private_8h_html"><div class="ttname"><a href="sqsh__context__private_8h.html">sqsh_context_private.h</a></div></div>
