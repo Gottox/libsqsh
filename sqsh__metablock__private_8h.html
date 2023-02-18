@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0-31-g896cc7f1</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0-40-g0cb3482f</span>
    </div>
   </td>
  </tr>
@@ -89,6 +89,8 @@ Include dependency graph for sqsh_metablock_private.h:</div>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMetablockIterator.html">SqshMetablockIterator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMetablockCursor.html">SqshMetablockCursor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -108,12 +110,150 @@ Functions</h2></td></tr>
 <tr class="separator:a25b646ca27e8b8acda7a183d4c0ce3cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cdbd4e5cd136504cffa7bbee16c3271"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__metablock__private_8h.html#a4cdbd4e5cd136504cffa7bbee16c3271">sqsh__metablock_iterator_cleanup</a> (struct <a class="el" href="structSqshMetablockIterator.html">SqshMetablockIterator</a> *iterator)</td></tr>
 <tr class="separator:a4cdbd4e5cd136504cffa7bbee16c3271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043ece8d7a7d8051c9db52e40a1517de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__metablock__private_8h.html#a043ece8d7a7d8051c9db52e40a1517de">sqsh__metablock_cursor_init</a> (struct <a class="el" href="structSqshMetablockCursor.html">SqshMetablockCursor</a> *cursor, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, const uint64_t start_address, const uint64_t upper_limit)</td></tr>
+<tr class="separator:a043ece8d7a7d8051c9db52e40a1517de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6917f17888e2a24c78300cc8b34f03c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__metablock__private_8h.html#aa6917f17888e2a24c78300cc8b34f03c">sqsh__metablock_cursor_advance</a> (struct <a class="el" href="structSqshMetablockCursor.html">SqshMetablockCursor</a> *cursor, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> offset, size_t size)</td></tr>
+<tr class="separator:aa6917f17888e2a24c78300cc8b34f03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d647d1d230d088270117cac2d24be11"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__metablock__private_8h.html#a7d647d1d230d088270117cac2d24be11">sqsh__metablock_cursor_data</a> (const struct <a class="el" href="structSqshMetablockCursor.html">SqshMetablockCursor</a> *cursor)</td></tr>
+<tr class="separator:a7d647d1d230d088270117cac2d24be11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa8884f43e718015eb81ee93e5657ef"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__metablock__private_8h.html#a8fa8884f43e718015eb81ee93e5657ef">sqsh__metablock_cursor_size</a> (const struct <a class="el" href="structSqshMetablockCursor.html">SqshMetablockCursor</a> *cursor)</td></tr>
+<tr class="separator:a8fa8884f43e718015eb81ee93e5657ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6216d68c836105aa82a058bed4d39774"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__metablock__private_8h.html#a6216d68c836105aa82a058bed4d39774">sqsh__metablock_cursor_cleanup</a> (struct <a class="el" href="structSqshMetablockCursor.html">SqshMetablockCursor</a> *cursor)</td></tr>
+<tr class="separator:a6216d68c836105aa82a058bed4d39774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Enno Boland (<a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'ebo'+'la'+'nd.'+'de'; return false;">mail@<span class="obfuscator">.nosp@m.</span>ebol<span class="obfuscator">.nosp@m.</span>and.d<span class="obfuscator">.nosp@m.</span>e</a>) </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="sqsh__metablock__private_8h_source.html">sqsh_metablock_private.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="aa6917f17888e2a24c78300cc8b34f03c" name="aa6917f17888e2a24c78300cc8b34f03c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6917f17888e2a24c78300cc8b34f03c">&#9670;&#160;</a></span>sqsh__metablock_cursor_advance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh__metablock_cursor_advance </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshMetablockCursor.html">SqshMetablockCursor</a> *&#160;</td>
+          <td class="paramname"><em>cursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a>&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6216d68c836105aa82a058bed4d39774" name="a6216d68c836105aa82a058bed4d39774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6216d68c836105aa82a058bed4d39774">&#9670;&#160;</a></span>sqsh__metablock_cursor_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh__metablock_cursor_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshMetablockCursor.html">SqshMetablockCursor</a> *&#160;</td>
+          <td class="paramname"><em>cursor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d647d1d230d088270117cac2d24be11" name="a7d647d1d230d088270117cac2d24be11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d647d1d230d088270117cac2d24be11">&#9670;&#160;</a></span>sqsh__metablock_cursor_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * sqsh__metablock_cursor_data </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshMetablockCursor.html">SqshMetablockCursor</a> *&#160;</td>
+          <td class="paramname"><em>cursor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a043ece8d7a7d8051c9db52e40a1517de" name="a043ece8d7a7d8051c9db52e40a1517de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a043ece8d7a7d8051c9db52e40a1517de">&#9670;&#160;</a></span>sqsh__metablock_cursor_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh__metablock_cursor_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshMetablockCursor.html">SqshMetablockCursor</a> *&#160;</td>
+          <td class="paramname"><em>cursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint64_t&#160;</td>
+          <td class="paramname"><em>start_address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint64_t&#160;</td>
+          <td class="paramname"><em>upper_limit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fa8884f43e718015eb81ee93e5657ef" name="a8fa8884f43e718015eb81ee93e5657ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fa8884f43e718015eb81ee93e5657ef">&#9670;&#160;</a></span>sqsh__metablock_cursor_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sqsh__metablock_cursor_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshMetablockCursor.html">SqshMetablockCursor</a> *&#160;</td>
+          <td class="paramname"><em>cursor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a25b646ca27e8b8acda7a183d4c0ce3cc" name="a25b646ca27e8b8acda7a183d4c0ce3cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25b646ca27e8b8acda7a183d4c0ce3cc">&#9670;&#160;</a></span>sqsh__metablock_iterator_append_to_buffer()</h2>
 
