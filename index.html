@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0-47-g5426fbd1</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ How to...?</h1>
 <div class="line"><span class="comment">// Do something with the archive!</span></div>
 <div class="line"><a class="code hl_function" href="sqsh_8h.html#acb34415257ce8b3d8d407a0add722297">sqsh_free</a>(archive);</div>
 <div class="ttc" id="asqsh_8h_html_acb34415257ce8b3d8d407a0add722297"><div class="ttname"><a href="sqsh_8h.html#acb34415257ce8b3d8d407a0add722297">sqsh_free</a></div><div class="ttdeci">int sqsh_free(struct Sqsh *sqsh)</div><div class="ttdoc">Frees the resources used by a Sqsh instance.</div></div>
-<div class="ttc" id="astructSqsh_html"><div class="ttname"><a href="structSqsh.html">Sqsh</a></div><div class="ttdoc">The Sqsh struct contains all information about the current sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__private_8h_source.html#l00057">sqsh_private.h:57</a></div></div>
+<div class="ttc" id="astructSqsh_html"><div class="ttname"><a href="structSqsh.html">Sqsh</a></div><div class="ttdoc">The Sqsh struct contains all information about the current sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__private_8h_source.html#l00056">sqsh_private.h:56</a></div></div>
 <div class="ttc" id="astructSqsh_html_a983ce0fb8924ff3496deb773f7cdf377"><div class="ttname"><a href="structSqsh.html#a983ce0fb8924ff3496deb773f7cdf377">Sqsh::sqsh_new</a></div><div class="ttdeci">SQSH_NO_UNUSED struct Sqsh * sqsh_new(const void *source, const struct SqshConfig *config, int *err)</div><div class="ttdoc">sqsh_new initializes a sqsh context in heap.</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
 ... get metainformations about a file?</h2>
@@ -134,7 +134,7 @@ How to...?</h1>
 <div class="line"><span class="comment">// This for example gives you the file size of a file:</span></div>
 <div class="line"><span class="keywordtype">int</span> file_size = <a class="code hl_function" href="structSqshInodeContext.html#a65a02fa321fe0ef692244fac11ce0619">sqsh_inode_file_size</a>(&amp;inode);</div>
 <div class="line">sqsh_inode_cleanup(&amp;inode);</div>
-<div class="ttc" id="astructSqshInodeContext_html"><div class="ttname"><a href="structSqshInodeContext.html">SqshInodeContext</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__inode__private_8h_source.html#l00047">sqsh_inode_private.h:47</a></div></div>
+<div class="ttc" id="astructSqshInodeContext_html"><div class="ttname"><a href="structSqshInodeContext.html">SqshInodeContext</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context__private_8h_source.html#l00332">sqsh_context_private.h:332</a></div></div>
 <div class="ttc" id="astructSqshInodeContext_html_a65a02fa321fe0ef692244fac11ce0619"><div class="ttname"><a href="structSqshInodeContext.html#a65a02fa321fe0ef692244fac11ce0619">SqshInodeContext::sqsh_inode_file_size</a></div><div class="ttdeci">uint64_t sqsh_inode_file_size(const struct SqshInodeContext *context)</div><div class="ttdoc">Getter for the file size. 0 if the file has no size.</div></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md8"></a>
 Resource</h1>

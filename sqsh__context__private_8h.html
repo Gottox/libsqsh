@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0-47-g5426fbd1</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0</span>
    </div>
   </td>
  </tr>
@@ -71,6 +71,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">sqsh_context_private.h File Reference</div></div>
 </div><!--header-->
@@ -87,7 +88,7 @@ Include dependency graph for sqsh_context_private.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="sqsh__context__private_8h__dep__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__context__private_8h__dep__incl.svg" width="451" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -100,15 +101,23 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshCompressionOptionsContext.html">SqshCompressionOptionsContext</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The compression options context is used to store the compression options for a specific compression algorithm.  <a href="structSqshCompressionOptionsContext.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileContext.html">SqshFileContext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structSqshFileContext.html" title="The SqshFileContext struct.">SqshFileContext</a> struct.  <a href="structSqshFileContext.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMetablockContext.html">SqshMetablockContext</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structSqshMetablockContext.html" title="The SqshMetablockContext struct.">SqshMetablockContext</a> struct.  <a href="structSqshMetablockContext.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMetablockStreamContext.html">SqshMetablockStreamContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInodeContext.html">SqshInodeContext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTrailingContext.html">SqshTrailingContext</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a956b5a53a580f82d6eba6ab03bfc8758"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#a956b5a53a580f82d6eba6ab03bfc8758">SQSH_METABLOCK_BLOCK_SIZE</a>&#160;&#160;&#160;8192</td></tr>
+<tr class="separator:a956b5a53a580f82d6eba6ab03bfc8758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -117,6 +126,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a9fd1a4f28351031e7fe45ddf56ef6211"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#a9fd1a4f28351031e7fe45ddf56ef6211">sqsh__superblock_cleanup</a> (struct <a class="el" href="structSqshSuperblockContext.html">SqshSuperblockContext</a> *superblock)</td></tr>
 <tr class="memdesc:a9fd1a4f28351031e7fe45ddf56ef6211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up a superblock context.  <a href="sqsh__context__private_8h.html#a9fd1a4f28351031e7fe45ddf56ef6211">More...</a><br /></td></tr>
 <tr class="separator:a9fd1a4f28351031e7fe45ddf56ef6211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa59bfd52b676bd4ee5f6079734ef409"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#afa59bfd52b676bd4ee5f6079734ef409">sqsh__file_init</a> (struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *context, const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *inode)</td></tr>
+<tr class="separator:afa59bfd52b676bd4ee5f6079734ef409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c51677eb127ab5658ed6c22d1644a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#a95c51677eb127ab5658ed6c22d1644a1">sqsh__file_cleanup</a> (struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *context)</td></tr>
+<tr class="separator:a95c51677eb127ab5658ed6c22d1644a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab04ba448257ff453c9a2b62595a1dee8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#ab04ba448257ff453c9a2b62595a1dee8">sqsh__metablock_compressed_size</a> (const struct <a class="el" href="structSqshMetablockContext.html">SqshMetablockContext</a> *context)</td></tr>
 <tr class="separator:ab04ba448257ff453c9a2b62595a1dee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae23a772bab01bbae1682ed0efd1eb212"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#ae23a772bab01bbae1682ed0efd1eb212">sqsh__metablock_to_buffer</a> (struct <a class="el" href="structSqshMetablockContext.html">SqshMetablockContext</a> *context, struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer)</td></tr>
@@ -137,12 +150,131 @@ Functions</h2></td></tr>
 <tr class="separator:a12fe419741744b4b5143dda756ba6f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae96f58d04e4ee06e1177b91c0803d0de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#ae96f58d04e4ee06e1177b91c0803d0de">sqsh__metablock_stream_cleanup</a> (struct <a class="el" href="structSqshMetablockStreamContext.html">SqshMetablockStreamContext</a> *context)</td></tr>
 <tr class="separator:ae96f58d04e4ee06e1177b91c0803d0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e46054c6959e6feca25148105da230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#ad1e46054c6959e6feca25148105da230">sqsh__inode_init</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh, uint64_t inode_ref)</td></tr>
+<tr class="separator:ad1e46054c6959e6feca25148105da230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06ac9751dae95beec11780afe7b0dbba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#a06ac9751dae95beec11780afe7b0dbba">sqsh__inode_cleanup</a> (struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *context)</td></tr>
+<tr class="separator:a06ac9751dae95beec11780afe7b0dbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f37da38e64140190a30952265ef483f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#a3f37da38e64140190a30952265ef483f">sqsh__path_resolver_init</a> (struct <a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *context, struct <a class="el" href="structSqsh.html">Sqsh</a> *sqsh)</td></tr>
 <tr class="separator:a3f37da38e64140190a30952265ef483f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf935e1fcff4b7fda84fb447d4390f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__context__private_8h.html#abcf935e1fcff4b7fda84fb447d4390f4">sqsh_path_resolver_cleanup</a> (struct <a class="el" href="structSqshPathResolverContext.html">SqshPathResolverContext</a> *context)</td></tr>
 <tr class="separator:abcf935e1fcff4b7fda84fb447d4390f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a956b5a53a580f82d6eba6ab03bfc8758" name="a956b5a53a580f82d6eba6ab03bfc8758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956b5a53a580f82d6eba6ab03bfc8758">&#9670;&#160;</a></span>SQSH_METABLOCK_BLOCK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SQSH_METABLOCK_BLOCK_SIZE&#160;&#160;&#160;8192</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sqsh__context__private_8h_source.html#l00159">159</a> of file <a class="el" href="sqsh__context__private_8h_source.html">sqsh_context_private.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a95c51677eb127ab5658ed6c22d1644a1" name="a95c51677eb127ab5658ed6c22d1644a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95c51677eb127ab5658ed6c22d1644a1">&#9670;&#160;</a></span>sqsh__file_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh__file_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa59bfd52b676bd4ee5f6079734ef409" name="afa59bfd52b676bd4ee5f6079734ef409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa59bfd52b676bd4ee5f6079734ef409">&#9670;&#160;</a></span>sqsh__file_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__file_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshFileContext.html">SqshFileContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
+          <td class="paramname"><em>inode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06ac9751dae95beec11780afe7b0dbba" name="a06ac9751dae95beec11780afe7b0dbba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ac9751dae95beec11780afe7b0dbba">&#9670;&#160;</a></span>sqsh__inode_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh__inode_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1e46054c6959e6feca25148105da230" name="ad1e46054c6959e6feca25148105da230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e46054c6959e6feca25148105da230">&#9670;&#160;</a></span>sqsh__inode_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__inode_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqsh.html">Sqsh</a> *&#160;</td>
+          <td class="paramname"><em>sqsh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>inode_ref</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa239ff675417519180f931d81318a5fe" name="aa239ff675417519180f931d81318a5fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa239ff675417519180f931d81318a5fe">&#9670;&#160;</a></span>sqsh__metablock_cleanup()</h2>
 

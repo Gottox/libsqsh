@@ -30,9 +30,7 @@ var menudata={children:[
 {text:"Data Fields",url:"functions.html",children:[
 {text:"All",url:"functions.html",children:[
 {text:"_compr",url:"functions.html#index__5F"},
-{text:"_map_c",url:"functions.html#index__5F"},
 {text:"_metab",url:"functions.html#index__5F"},
-{text:"_trail",url:"functions.html#index__5F"},
 {text:"buffer",url:"functions.html#index_b"},
 {text:"c",url:"functions.html#index_c"},
 {text:"compre",url:"functions.html#index_c"},
@@ -69,9 +67,7 @@ var menudata={children:[
 {text:"xattr_",url:"functions.html#index_x"}]},
 {text:"Functions",url:"functions_func.html",children:[
 {text:"_compr",url:"functions_func.html#index__5F"},
-{text:"_map_c",url:"functions_func.html#index__5F"},
 {text:"_metab",url:"functions_func.html#index__5F"},
-{text:"_trail",url:"functions_func.html#index__5F"},
 {text:"buffer",url:"functions_func.html#index_b"},
 {text:"compre",url:"functions_func.html#index_c"},
 {text:"data_c",url:"functions_func.html#index_d"},
@@ -132,6 +128,7 @@ var menudata={children:[
 {text:"perror",url:"globals_p.html#index_p"},
 {text:"ref_co",url:"globals_r.html#index_r"},
 {text:"s",url:"globals_s.html#index_s"},
+{text:"table_",url:"globals_t.html#index_t"},
 {text:"xattr_",url:"globals_x.html#index_x"}]},
 {text:"Functions",url:"globals_func.html",children:[
 {text:"_clean",url:"globals_func.html#index__5F"},
@@ -161,6 +158,7 @@ var menudata={children:[
 {text:"inode_",url:"globals_func.html#index_i"},
 {text:"path_r",url:"globals_func.html#index_p"},
 {text:"perror",url:"globals_func.html#index_p"},
+{text:"table_",url:"globals_func.html#index_t"},
 {text:"xattr_",url:"globals_func.html#index_x"}]},
 {text:"Variables",url:"globals_vars.html",children:[
 {text:"mapper",url:"globals_vars.html#index_m"},
