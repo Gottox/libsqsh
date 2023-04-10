@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
    </div>
   </td>
  </tr>
@@ -78,54 +78,39 @@ $(function() {
 <p>The <a class="el" href="structSqshConfig.html" title="The SqshConfig struct contains all the configuration options for a sqsh session.">SqshConfig</a> struct contains all the configuration options for a sqsh session.  
  <a href="structSqshConfig.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="sqsh_8h_source.html">sqsh.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="sqsh__archive_8h_source.html">sqsh_archive.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:afe8c3cea7cc66be9f87d57fdc356ce05"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="sqsh_8h.html#a6868944bf67de0c9638e180f3052b260">SqshSourceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshConfig.html#afe8c3cea7cc66be9f87d57fdc356ce05">source_type</a></td></tr>
-<tr class="separator:afe8c3cea7cc66be9f87d57fdc356ce05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac09dead67e92f5e401577b968f522ff7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshConfig.html#ac09dead67e92f5e401577b968f522ff7">source_size</a></td></tr>
-<tr class="separator:ac09dead67e92f5e401577b968f522ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6348edadfd49de4ada19cc291359504a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__archive_8h.html#afaf59f932d3f7068e75958a1ff50a232">SQSH_CONFIG_FIELDS</a> uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshConfig.html#a6348edadfd49de4ada19cc291359504a">_padding</a> [128 - offsetof(struct { <a class="el" href="sqsh__archive_8h.html#afaf59f932d3f7068e75958a1ff50a232">SQSH_CONFIG_FIELDS</a> char z;}, z)]</td></tr>
+<tr class="memdesc:a6348edadfd49de4ada19cc291359504a"><td class="mdescLeft">&#160;</td><td class="mdescRight">padding to ensure that the size of the struct 128 bytes.  <a href="structSqshConfig.html#a6348edadfd49de4ada19cc291359504a">More...</a><br /></td></tr>
+<tr class="separator:a6348edadfd49de4ada19cc291359504a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The <a class="el" href="structSqshConfig.html" title="The SqshConfig struct contains all the configuration options for a sqsh session.">SqshConfig</a> struct contains all the configuration options for a sqsh session. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00060">60</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__archive_8h_source.html#l00489">489</a> of file <a class="el" href="sqsh__archive_8h_source.html">sqsh_archive.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="ac09dead67e92f5e401577b968f522ff7" name="ac09dead67e92f5e401577b968f522ff7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac09dead67e92f5e401577b968f522ff7">&#9670;&#160;</a></span>source_size</h2>
+<a id="a6348edadfd49de4ada19cc291359504a" name="a6348edadfd49de4ada19cc291359504a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6348edadfd49de4ada19cc291359504a">&#9670;&#160;</a></span>_padding</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t SqshConfig::source_size</td>
+          <td class="memname"><a class="el" href="sqsh__archive_8h.html#afaf59f932d3f7068e75958a1ff50a232">SQSH_CONFIG_FIELDS</a> uint8_t SqshConfig::_padding[128 - offsetof( struct { <a class="el" href="sqsh__archive_8h.html#afaf59f932d3f7068e75958a1ff50a232">SQSH_CONFIG_FIELDS</a> char z;}, z)]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00062">62</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p>padding to ensure that the size of the struct 128 bytes. </p>
 
-</div>
-</div>
-<a id="afe8c3cea7cc66be9f87d57fdc356ce05" name="afe8c3cea7cc66be9f87d57fdc356ce05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe8c3cea7cc66be9f87d57fdc356ce05">&#9670;&#160;</a></span>source_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="sqsh_8h.html#a6868944bf67de0c9638e180f3052b260">SqshSourceType</a> SqshConfig::source_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sqsh_8h_source.html#l00061">61</a> of file <a class="el" href="sqsh_8h_source.html">sqsh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__archive_8h_source.html#l00503">503</a> of file <a class="el" href="sqsh__archive_8h_source.html">sqsh_archive.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="sqsh_8h_source.html">sqsh.h</a></li>
+<li><a class="el" href="sqsh__archive_8h_source.html">sqsh_archive.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

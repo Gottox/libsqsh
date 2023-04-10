@@ -1,8 +1,0 @@
-<map id="SqshMapping" name="SqshMapping">
-<area shape="rect" id="node1" title=" " alt="" coords="368,93,500,119"/>
-<area shape="rect" id="node2" href="$structSqshMmapFullMap.html" title=" " alt="" coords="5,5,177,31"/>
-<area shape="rect" id="node3" href="$structSqshMmapMap.html" title=" " alt="" coords="201,5,333,31"/>
-<area shape="rect" id="node4" href="$structSqshStaticMap.html" title=" " alt="" coords="358,5,510,31"/>
-<area shape="rect" id="node5" href="$structSqshCanaryMap.html" title=" " alt="" coords="534,5,686,31"/>
-<area shape="rect" id="node6" href="$structSqshCurlMap.html" title=" " alt="" coords="711,5,843,31"/>
-</map>

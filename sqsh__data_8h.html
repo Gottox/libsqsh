@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
    </div>
   </td>
  </tr>
@@ -71,6 +71,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">sqsh_data.h File Reference</div></div>
@@ -138,8 +139,12 @@ Macros</h2></td></tr>
 <tr class="separator:a63be7b0a057a4acbcc24781b40de78a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad13d178b05263ff56bead790d15fb8cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#ad13d178b05263ff56bead790d15fb8cb">SQSH_SIZEOF_METABLOCK</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:ad13d178b05263ff56bead790d15fb8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a956b5a53a580f82d6eba6ab03bfc8758"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a956b5a53a580f82d6eba6ab03bfc8758">SQSH_METABLOCK_BLOCK_SIZE</a>&#160;&#160;&#160;8192</td></tr>
+<tr class="separator:a956b5a53a580f82d6eba6ab03bfc8758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2884e67015ab4a8875d9b3205cc5a0bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a2884e67015ab4a8875d9b3205cc5a0bc">SQSH_SIZEOF_SUPERBLOCK</a>&#160;&#160;&#160;96</td></tr>
 <tr class="separator:a2884e67015ab4a8875d9b3205cc5a0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58502a19378b95315f55435eb11ee87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#af58502a19378b95315f55435eb11ee87">SQSH_SUPERBLOCK_MAGIC</a>&#160;&#160;&#160;0x73717368</td></tr>
+<tr class="separator:af58502a19378b95315f55435eb11ee87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c7333cad20dd8db61ec3b3a09eee184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a6c7333cad20dd8db61ec3b3a09eee184">SQSH_SIZEOF_XATTR_KEY</a>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:a6c7333cad20dd8db61ec3b3a09eee184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7cd488ac034292d4ccd65b3e862c85f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#ae7cd488ac034292d4ccd65b3e862c85f">SQSH_SIZEOF_XATTR_VALUE</a>&#160;&#160;&#160;4</td></tr>
@@ -149,28 +154,52 @@ Macros</h2></td></tr>
 <tr class="memitem:a187b72203c5dd92520a953cdfe652560"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a187b72203c5dd92520a953cdfe652560">SQSH_SIZEOF_XATTR_ID_TABLE</a>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:a187b72203c5dd92520a953cdfe652560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a42e0085c546d98905863aef18e67cd58"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58">SqshDataInodeType</a> { <br />
+&#160;&#160;<a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58a09d07cacda4ecdde15df334787d64607">SQSH_INODE_TYPE_BASIC_DIRECTORY</a> = 1
+, <a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58ab2015475da9b8d674b795fde72a9311f">SQSH_INODE_TYPE_BASIC_FILE</a> = 2
+, <a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58a7210221abecd8f9e106a9cce118e6b07">SQSH_INODE_TYPE_BASIC_SYMLINK</a> = 3
+, <a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58a37c1f489900ec8969cbd194f58fbd9bb">SQSH_INODE_TYPE_BASIC_BLOCK</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58a5b5ba4d8815ee06123ec31700ad27f91">SQSH_INODE_TYPE_BASIC_CHAR</a> = 5
+, <a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58a35dc750a899e91fe5960d723da3ff189">SQSH_INODE_TYPE_BASIC_FIFO</a> = 6
+, <a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58a2f27f0ade8b87085e017fc4951803ef2">SQSH_INODE_TYPE_BASIC_SOCKET</a> = 7
+, <a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58a3c8effc71ed324d1a1915b13cfa577a4">SQSH_INODE_TYPE_EXTENDED_DIRECTORY</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58aac8ab59c8e7a8f658af20138347c2f51">SQSH_INODE_TYPE_EXTENDED_FILE</a> = 9
+, <a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58ada88f3d3392e1ec8ad9f25f0f523c5df">SQSH_INODE_TYPE_EXTENDED_SYMLINK</a> = 10
+, <a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58a3b97a0f73f9a1c281a0a5f76167eaa57">SQSH_INODE_TYPE_EXTENDED_BLOCK</a> = 11
+, <a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58add0c77db1fd77ec2e0a44b837264d3b0">SQSH_INODE_TYPE_EXTENDED_CHAR</a> = 12
+, <br />
+&#160;&#160;<a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58a63abcece072d69b3b91d58ca5111e462">SQSH_INODE_TYPE_EXTENDED_FIFO</a> = 13
+, <a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58ad67bb9069e9742ca85c1edd3dbe4c349">SQSH_INODE_TYPE_EXTENDED_SOCKET</a> = 14
+<br />
+ }</td></tr>
+<tr class="separator:a42e0085c546d98905863aef18e67cd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae40b900c2237bae266534ad3efb61553"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#ae40b900c2237bae266534ad3efb61553">sqsh_data_compression_options_gzip_compression_level</a> (const union SqshCompressionOptions *options)</td></tr>
-<tr class="separator:ae40b900c2237bae266534ad3efb61553"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55c34b981321f3be7e7bec3aaae914f4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a55c34b981321f3be7e7bec3aaae914f4">sqsh_data_compression_options_gzip_window_size</a> (const union SqshCompressionOptions *options)</td></tr>
-<tr class="separator:a55c34b981321f3be7e7bec3aaae914f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a288d2344c78aaf0e8e904c4c474a939c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a288d2344c78aaf0e8e904c4c474a939c">sqsh_data_compression_options_gzip_strategies</a> (const union SqshCompressionOptions *options)</td></tr>
-<tr class="separator:a288d2344c78aaf0e8e904c4c474a939c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affa6168f2228609a7732075cc80c4104"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#affa6168f2228609a7732075cc80c4104">sqsh_data_compression_options_xz_dictionary_size</a> (const union SqshCompressionOptions *options)</td></tr>
-<tr class="separator:affa6168f2228609a7732075cc80c4104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1303ee2fc43f066911fef33a8fe665a1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a1303ee2fc43f066911fef33a8fe665a1">sqsh_data_compression_options_xz_filters</a> (const union SqshCompressionOptions *options)</td></tr>
-<tr class="separator:a1303ee2fc43f066911fef33a8fe665a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a205a7023b0bb0d95b72de59dc4b6a41a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a205a7023b0bb0d95b72de59dc4b6a41a">sqsh_data_compression_options_lz4_version</a> (const union SqshCompressionOptions *options)</td></tr>
-<tr class="separator:a205a7023b0bb0d95b72de59dc4b6a41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee82dfd23b548eeb180029029b0767e7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#aee82dfd23b548eeb180029029b0767e7">sqsh_data_compression_options_lz4_flags</a> (const union SqshCompressionOptions *options)</td></tr>
-<tr class="separator:aee82dfd23b548eeb180029029b0767e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a796db05fedb8ab1b35b3ce1083bc3205"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a796db05fedb8ab1b35b3ce1083bc3205">sqsh_data_compression_options_zstd_compression_level</a> (const union SqshCompressionOptions *options)</td></tr>
-<tr class="separator:a796db05fedb8ab1b35b3ce1083bc3205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab70e94baef069c8c57ae955a53afd2e0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#ab70e94baef069c8c57ae955a53afd2e0">sqsh_data_compression_options_lzo_algorithm</a> (const union SqshCompressionOptions *options)</td></tr>
-<tr class="separator:ab70e94baef069c8c57ae955a53afd2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb7bb7373f66070aa00216a52195d323"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#adb7bb7373f66070aa00216a52195d323">sqsh_data_compression_options_lzo_compression_level</a> (const union SqshCompressionOptions *options)</td></tr>
-<tr class="separator:adb7bb7373f66070aa00216a52195d323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75af54fad6bcc29695186a82864ea40b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a75af54fad6bcc29695186a82864ea40b">sqsh_compression_data_options_gzip_compression_level</a> (const union SqshDataCompressionOptions *options)</td></tr>
+<tr class="separator:a75af54fad6bcc29695186a82864ea40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b99b8fde11578adfafe9411173604aa"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a6b99b8fde11578adfafe9411173604aa">sqsh_compression_data_options_gzip_window_size</a> (const union SqshDataCompressionOptions *options)</td></tr>
+<tr class="separator:a6b99b8fde11578adfafe9411173604aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c5cf371ec1de0ba4c4228df5eaaa9a6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a0c5cf371ec1de0ba4c4228df5eaaa9a6">sqsh_compression_data_options_gzip_strategies</a> (const union SqshDataCompressionOptions *options)</td></tr>
+<tr class="separator:a0c5cf371ec1de0ba4c4228df5eaaa9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a179a4f097fff01f7e47435b28d8257c0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a179a4f097fff01f7e47435b28d8257c0">sqsh_compression_data_options_xz_dictionary_size</a> (const union SqshDataCompressionOptions *options)</td></tr>
+<tr class="separator:a179a4f097fff01f7e47435b28d8257c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d4b273f5f6ef0c947eb1b2380e3718"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#ae2d4b273f5f6ef0c947eb1b2380e3718">sqsh_compression_data_options_xz_filters</a> (const union SqshDataCompressionOptions *options)</td></tr>
+<tr class="separator:ae2d4b273f5f6ef0c947eb1b2380e3718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185be81a35402276b16b3c7e2ae064da"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a185be81a35402276b16b3c7e2ae064da">sqsh_compression_data_options_lz4_version</a> (const union SqshDataCompressionOptions *options)</td></tr>
+<tr class="separator:a185be81a35402276b16b3c7e2ae064da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58fdc28482e2945bb9746a93f89ccea"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#ae58fdc28482e2945bb9746a93f89ccea">sqsh_compression_data_options_lz4_flags</a> (const union SqshDataCompressionOptions *options)</td></tr>
+<tr class="separator:ae58fdc28482e2945bb9746a93f89ccea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f6aea6d3d5f290bb49709fb2829a8b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a73f6aea6d3d5f290bb49709fb2829a8b">sqsh_compression_data_options_zstd_compression_level</a> (const union SqshDataCompressionOptions *options)</td></tr>
+<tr class="separator:a73f6aea6d3d5f290bb49709fb2829a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d1faed3588a52a710fc42bf4d1a603"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a59d1faed3588a52a710fc42bf4d1a603">sqsh_compression_data_options_lzo_algorithm</a> (const union SqshDataCompressionOptions *options)</td></tr>
+<tr class="separator:a59d1faed3588a52a710fc42bf4d1a603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a824f402a4df113aac46b74b098803ae7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a824f402a4df113aac46b74b098803ae7">sqsh_compression_data_options_lzo_compression_level</a> (const union SqshDataCompressionOptions *options)</td></tr>
+<tr class="separator:a824f402a4df113aac46b74b098803ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079cc48175b7b2098f09859af3201726"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a079cc48175b7b2098f09859af3201726">sqsh_data_datablock_size</a> (const struct <a class="el" href="sqsh__data_8h.html#acc84fdff6fb5d301c3d2f12d67e46cce">SqshDataDatablockSize</a> *datablock_size)</td></tr>
 <tr class="separator:a079cc48175b7b2098f09859af3201726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c535d524e38d838503d485e3767e9de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a0c535d524e38d838503d485e3767e9de">sqsh_data_datablock_is_compressed</a> (const struct <a class="el" href="sqsh__data_8h.html#acc84fdff6fb5d301c3d2f12d67e46cce">SqshDataDatablockSize</a> *datablock_size)</td></tr>
@@ -325,10 +354,8 @@ Functions</h2></td></tr>
 <tr class="separator:a2a568ad8b2843fc9c50121a353d6d4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43ae39e2f8d64d7efc93d167bc98ebea"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a43ae39e2f8d64d7efc93d167bc98ebea">sqsh_data_metablock_data</a> (const struct <a class="el" href="sqsh__data_8h.html#a0cac14ba6f0c6df39e74a558ef4bc3f2">SqshDataMetablock</a> *metablock)</td></tr>
 <tr class="separator:a43ae39e2f8d64d7efc93d167bc98ebea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a758d86342f9f01b3c79592b862e65ec4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a758d86342f9f01b3c79592b862e65ec4">sqsh_data_metablock_size</a> (const struct <a class="el" href="sqsh__data_8h.html#a0cac14ba6f0c6df39e74a558ef4bc3f2">SqshDataMetablock</a> *metablock)</td></tr>
-<tr class="separator:a758d86342f9f01b3c79592b862e65ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab09db719afcad411e437051bb9e8ba13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#ab09db719afcad411e437051bb9e8ba13">sqsh_data_superblock_init</a> (const struct <a class="el" href="sqsh__data_8h.html#a7465f5a981582ef9a0ad2c720a3dd047">SqshDataSuperblock</a> *superblock, size_t size)</td></tr>
-<tr class="separator:ab09db719afcad411e437051bb9e8ba13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664593988253ede3f74d096a1cce1837"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a664593988253ede3f74d096a1cce1837">sqsh_data_metablock_size</a> (const struct <a class="el" href="sqsh__data_8h.html#a0cac14ba6f0c6df39e74a558ef4bc3f2">SqshDataMetablock</a> *metablock)</td></tr>
+<tr class="separator:a664593988253ede3f74d096a1cce1837"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58989177a5af395d379d7d5fd9c8038d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a58989177a5af395d379d7d5fd9c8038d">sqsh_data_superblock_magic</a> (const struct <a class="el" href="sqsh__data_8h.html#a7465f5a981582ef9a0ad2c720a3dd047">SqshDataSuperblock</a> *superblock)</td></tr>
 <tr class="separator:a58989177a5af395d379d7d5fd9c8038d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a241e9a884fad5e7d8c5ab2e2ca597a31"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__data_8h.html#a241e9a884fad5e7d8c5ab2e2ca597a31">sqsh_data_superblock_inode_count</a> (const struct <a class="el" href="sqsh__data_8h.html#a7465f5a981582ef9a0ad2c720a3dd047">SqshDataSuperblock</a> *superblock)</td></tr>
@@ -452,6 +479,22 @@ Variables</h2></td></tr>
 <tr class="separator:a52fce1cc8233f140ae20d375a0f7030e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a956b5a53a580f82d6eba6ab03bfc8758" name="a956b5a53a580f82d6eba6ab03bfc8758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956b5a53a580f82d6eba6ab03bfc8758">&#9670;&#160;</a></span>SQSH_METABLOCK_BLOCK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SQSH_METABLOCK_BLOCK_SIZE&#160;&#160;&#160;8192</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00324">324</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+
+</div>
+</div>
 <a id="a2345e27d05c39aa82ef20c633a37c1cd" name="a2345e27d05c39aa82ef20c633a37c1cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2345e27d05c39aa82ef20c633a37c1cd">&#9670;&#160;</a></span>SQSH_SIZEOF_COMPRESSION_OPTIONS</h2>
 
@@ -832,7 +875,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00305">305</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00322">322</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -848,7 +891,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00320">320</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00339">339</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -864,7 +907,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00372">372</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00390">390</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -880,7 +923,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00369">369</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00387">387</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -896,7 +939,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00371">371</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00389">389</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -912,7 +955,23 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00370">370</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00388">388</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+
+</div>
+</div>
+<a id="af58502a19378b95315f55435eb11ee87" name="af58502a19378b95315f55435eb11ee87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af58502a19378b95315f55435eb11ee87">&#9670;&#160;</a></span>SQSH_SUPERBLOCK_MAGIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SQSH_SUPERBLOCK_MAGIC&#160;&#160;&#160;0x73717368</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00341">341</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -932,17 +991,50 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a42e0085c546d98905863aef18e67cd58" name="a42e0085c546d98905863aef18e67cd58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42e0085c546d98905863aef18e67cd58">&#9670;&#160;</a></span>SqshDataInodeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="sqsh__data_8h.html#a42e0085c546d98905863aef18e67cd58">SqshDataInodeType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58a09d07cacda4ecdde15df334787d64607" name="a42e0085c546d98905863aef18e67cd58a09d07cacda4ecdde15df334787d64607"></a>SQSH_INODE_TYPE_BASIC_DIRECTORY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58ab2015475da9b8d674b795fde72a9311f" name="a42e0085c546d98905863aef18e67cd58ab2015475da9b8d674b795fde72a9311f"></a>SQSH_INODE_TYPE_BASIC_FILE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58a7210221abecd8f9e106a9cce118e6b07" name="a42e0085c546d98905863aef18e67cd58a7210221abecd8f9e106a9cce118e6b07"></a>SQSH_INODE_TYPE_BASIC_SYMLINK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58a37c1f489900ec8969cbd194f58fbd9bb" name="a42e0085c546d98905863aef18e67cd58a37c1f489900ec8969cbd194f58fbd9bb"></a>SQSH_INODE_TYPE_BASIC_BLOCK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58a5b5ba4d8815ee06123ec31700ad27f91" name="a42e0085c546d98905863aef18e67cd58a5b5ba4d8815ee06123ec31700ad27f91"></a>SQSH_INODE_TYPE_BASIC_CHAR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58a35dc750a899e91fe5960d723da3ff189" name="a42e0085c546d98905863aef18e67cd58a35dc750a899e91fe5960d723da3ff189"></a>SQSH_INODE_TYPE_BASIC_FIFO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58a2f27f0ade8b87085e017fc4951803ef2" name="a42e0085c546d98905863aef18e67cd58a2f27f0ade8b87085e017fc4951803ef2"></a>SQSH_INODE_TYPE_BASIC_SOCKET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58a3c8effc71ed324d1a1915b13cfa577a4" name="a42e0085c546d98905863aef18e67cd58a3c8effc71ed324d1a1915b13cfa577a4"></a>SQSH_INODE_TYPE_EXTENDED_DIRECTORY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58aac8ab59c8e7a8f658af20138347c2f51" name="a42e0085c546d98905863aef18e67cd58aac8ab59c8e7a8f658af20138347c2f51"></a>SQSH_INODE_TYPE_EXTENDED_FILE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58ada88f3d3392e1ec8ad9f25f0f523c5df" name="a42e0085c546d98905863aef18e67cd58ada88f3d3392e1ec8ad9f25f0f523c5df"></a>SQSH_INODE_TYPE_EXTENDED_SYMLINK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58a3b97a0f73f9a1c281a0a5f76167eaa57" name="a42e0085c546d98905863aef18e67cd58a3b97a0f73f9a1c281a0a5f76167eaa57"></a>SQSH_INODE_TYPE_EXTENDED_BLOCK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58add0c77db1fd77ec2e0a44b837264d3b0" name="a42e0085c546d98905863aef18e67cd58add0c77db1fd77ec2e0a44b837264d3b0"></a>SQSH_INODE_TYPE_EXTENDED_CHAR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58a63abcece072d69b3b91d58ca5111e462" name="a42e0085c546d98905863aef18e67cd58a63abcece072d69b3b91d58ca5111e462"></a>SQSH_INODE_TYPE_EXTENDED_FIFO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a42e0085c546d98905863aef18e67cd58ad67bb9069e9742ca85c1edd3dbe4c349" name="a42e0085c546d98905863aef18e67cd58ad67bb9069e9742ca85c1edd3dbe4c349"></a>SQSH_INODE_TYPE_EXTENDED_SOCKET&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00159">159</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae40b900c2237bae266534ad3efb61553" name="ae40b900c2237bae266534ad3efb61553"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae40b900c2237bae266534ad3efb61553">&#9670;&#160;</a></span>sqsh_data_compression_options_gzip_compression_level()</h2>
+<a id="a75af54fad6bcc29695186a82864ea40b" name="a75af54fad6bcc29695186a82864ea40b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75af54fad6bcc29695186a82864ea40b">&#9670;&#160;</a></span>sqsh_compression_data_options_gzip_compression_level()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t sqsh_data_compression_options_gzip_compression_level </td>
+          <td class="memname">uint32_t sqsh_compression_data_options_gzip_compression_level </td>
           <td>(</td>
-          <td class="paramtype">const union SqshCompressionOptions *&#160;</td>
+          <td class="paramtype">const union SqshDataCompressionOptions *&#160;</td>
           <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
@@ -951,16 +1043,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a288d2344c78aaf0e8e904c4c474a939c" name="a288d2344c78aaf0e8e904c4c474a939c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a288d2344c78aaf0e8e904c4c474a939c">&#9670;&#160;</a></span>sqsh_data_compression_options_gzip_strategies()</h2>
+<a id="a0c5cf371ec1de0ba4c4228df5eaaa9a6" name="a0c5cf371ec1de0ba4c4228df5eaaa9a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c5cf371ec1de0ba4c4228df5eaaa9a6">&#9670;&#160;</a></span>sqsh_compression_data_options_gzip_strategies()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t sqsh_data_compression_options_gzip_strategies </td>
+          <td class="memname">uint16_t sqsh_compression_data_options_gzip_strategies </td>
           <td>(</td>
-          <td class="paramtype">const union SqshCompressionOptions *&#160;</td>
+          <td class="paramtype">const union SqshDataCompressionOptions *&#160;</td>
           <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
@@ -969,16 +1061,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a55c34b981321f3be7e7bec3aaae914f4" name="a55c34b981321f3be7e7bec3aaae914f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55c34b981321f3be7e7bec3aaae914f4">&#9670;&#160;</a></span>sqsh_data_compression_options_gzip_window_size()</h2>
+<a id="a6b99b8fde11578adfafe9411173604aa" name="a6b99b8fde11578adfafe9411173604aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b99b8fde11578adfafe9411173604aa">&#9670;&#160;</a></span>sqsh_compression_data_options_gzip_window_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t sqsh_data_compression_options_gzip_window_size </td>
+          <td class="memname">uint16_t sqsh_compression_data_options_gzip_window_size </td>
           <td>(</td>
-          <td class="paramtype">const union SqshCompressionOptions *&#160;</td>
+          <td class="paramtype">const union SqshDataCompressionOptions *&#160;</td>
           <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
@@ -987,16 +1079,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aee82dfd23b548eeb180029029b0767e7" name="aee82dfd23b548eeb180029029b0767e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee82dfd23b548eeb180029029b0767e7">&#9670;&#160;</a></span>sqsh_data_compression_options_lz4_flags()</h2>
+<a id="ae58fdc28482e2945bb9746a93f89ccea" name="ae58fdc28482e2945bb9746a93f89ccea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae58fdc28482e2945bb9746a93f89ccea">&#9670;&#160;</a></span>sqsh_compression_data_options_lz4_flags()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t sqsh_data_compression_options_lz4_flags </td>
+          <td class="memname">uint32_t sqsh_compression_data_options_lz4_flags </td>
           <td>(</td>
-          <td class="paramtype">const union SqshCompressionOptions *&#160;</td>
+          <td class="paramtype">const union SqshDataCompressionOptions *&#160;</td>
           <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1005,16 +1097,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a205a7023b0bb0d95b72de59dc4b6a41a" name="a205a7023b0bb0d95b72de59dc4b6a41a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a205a7023b0bb0d95b72de59dc4b6a41a">&#9670;&#160;</a></span>sqsh_data_compression_options_lz4_version()</h2>
+<a id="a185be81a35402276b16b3c7e2ae064da" name="a185be81a35402276b16b3c7e2ae064da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a185be81a35402276b16b3c7e2ae064da">&#9670;&#160;</a></span>sqsh_compression_data_options_lz4_version()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t sqsh_data_compression_options_lz4_version </td>
+          <td class="memname">uint32_t sqsh_compression_data_options_lz4_version </td>
           <td>(</td>
-          <td class="paramtype">const union SqshCompressionOptions *&#160;</td>
+          <td class="paramtype">const union SqshDataCompressionOptions *&#160;</td>
           <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1023,16 +1115,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab70e94baef069c8c57ae955a53afd2e0" name="ab70e94baef069c8c57ae955a53afd2e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab70e94baef069c8c57ae955a53afd2e0">&#9670;&#160;</a></span>sqsh_data_compression_options_lzo_algorithm()</h2>
+<a id="a59d1faed3588a52a710fc42bf4d1a603" name="a59d1faed3588a52a710fc42bf4d1a603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59d1faed3588a52a710fc42bf4d1a603">&#9670;&#160;</a></span>sqsh_compression_data_options_lzo_algorithm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t sqsh_data_compression_options_lzo_algorithm </td>
+          <td class="memname">uint32_t sqsh_compression_data_options_lzo_algorithm </td>
           <td>(</td>
-          <td class="paramtype">const union SqshCompressionOptions *&#160;</td>
+          <td class="paramtype">const union SqshDataCompressionOptions *&#160;</td>
           <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1041,16 +1133,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="adb7bb7373f66070aa00216a52195d323" name="adb7bb7373f66070aa00216a52195d323"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb7bb7373f66070aa00216a52195d323">&#9670;&#160;</a></span>sqsh_data_compression_options_lzo_compression_level()</h2>
+<a id="a824f402a4df113aac46b74b098803ae7" name="a824f402a4df113aac46b74b098803ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a824f402a4df113aac46b74b098803ae7">&#9670;&#160;</a></span>sqsh_compression_data_options_lzo_compression_level()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t sqsh_data_compression_options_lzo_compression_level </td>
+          <td class="memname">uint32_t sqsh_compression_data_options_lzo_compression_level </td>
           <td>(</td>
-          <td class="paramtype">const union SqshCompressionOptions *&#160;</td>
+          <td class="paramtype">const union SqshDataCompressionOptions *&#160;</td>
           <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1059,16 +1151,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="affa6168f2228609a7732075cc80c4104" name="affa6168f2228609a7732075cc80c4104"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affa6168f2228609a7732075cc80c4104">&#9670;&#160;</a></span>sqsh_data_compression_options_xz_dictionary_size()</h2>
+<a id="a179a4f097fff01f7e47435b28d8257c0" name="a179a4f097fff01f7e47435b28d8257c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a179a4f097fff01f7e47435b28d8257c0">&#9670;&#160;</a></span>sqsh_compression_data_options_xz_dictionary_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t sqsh_data_compression_options_xz_dictionary_size </td>
+          <td class="memname">uint32_t sqsh_compression_data_options_xz_dictionary_size </td>
           <td>(</td>
-          <td class="paramtype">const union SqshCompressionOptions *&#160;</td>
+          <td class="paramtype">const union SqshDataCompressionOptions *&#160;</td>
           <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1077,16 +1169,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1303ee2fc43f066911fef33a8fe665a1" name="a1303ee2fc43f066911fef33a8fe665a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1303ee2fc43f066911fef33a8fe665a1">&#9670;&#160;</a></span>sqsh_data_compression_options_xz_filters()</h2>
+<a id="ae2d4b273f5f6ef0c947eb1b2380e3718" name="ae2d4b273f5f6ef0c947eb1b2380e3718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d4b273f5f6ef0c947eb1b2380e3718">&#9670;&#160;</a></span>sqsh_compression_data_options_xz_filters()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t sqsh_data_compression_options_xz_filters </td>
+          <td class="memname">uint32_t sqsh_compression_data_options_xz_filters </td>
           <td>(</td>
-          <td class="paramtype">const union SqshCompressionOptions *&#160;</td>
+          <td class="paramtype">const union SqshDataCompressionOptions *&#160;</td>
           <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1095,16 +1187,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a796db05fedb8ab1b35b3ce1083bc3205" name="a796db05fedb8ab1b35b3ce1083bc3205"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a796db05fedb8ab1b35b3ce1083bc3205">&#9670;&#160;</a></span>sqsh_data_compression_options_zstd_compression_level()</h2>
+<a id="a73f6aea6d3d5f290bb49709fb2829a8b" name="a73f6aea6d3d5f290bb49709fb2829a8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73f6aea6d3d5f290bb49709fb2829a8b">&#9670;&#160;</a></span>sqsh_compression_data_options_zstd_compression_level()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t sqsh_data_compression_options_zstd_compression_level </td>
+          <td class="memname">uint32_t sqsh_compression_data_options_zstd_compression_level </td>
           <td>(</td>
-          <td class="paramtype">const union SqshCompressionOptions *&#160;</td>
+          <td class="paramtype">const union SqshDataCompressionOptions *&#160;</td>
           <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2499,14 +2591,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a758d86342f9f01b3c79592b862e65ec4" name="a758d86342f9f01b3c79592b862e65ec4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a758d86342f9f01b3c79592b862e65ec4">&#9670;&#160;</a></span>sqsh_data_metablock_size()</h2>
+<a id="a664593988253ede3f74d096a1cce1837" name="a664593988253ede3f74d096a1cce1837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a664593988253ede3f74d096a1cce1837">&#9670;&#160;</a></span>sqsh_data_metablock_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t sqsh_data_metablock_size </td>
+          <td class="memname">uint16_t sqsh_data_metablock_size </td>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="sqsh__data_8h.html#a0cac14ba6f0c6df39e74a558ef4bc3f2">SqshDataMetablock</a> *&#160;</td>
           <td class="paramname"><em>metablock</em></td><td>)</td>
@@ -2709,34 +2801,6 @@ Variables</h2></td></tr>
           <td class="paramtype">const struct <a class="el" href="sqsh__data_8h.html#a7465f5a981582ef9a0ad2c720a3dd047">SqshDataSuperblock</a> *&#160;</td>
           <td class="paramname"><em>superblock</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab09db719afcad411e437051bb9e8ba13" name="ab09db719afcad411e437051bb9e8ba13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab09db719afcad411e437051bb9e8ba13">&#9670;&#160;</a></span>sqsh_data_superblock_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sqsh_data_superblock_init </td>
-          <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="sqsh__data_8h.html#a7465f5a981582ef9a0ad2c720a3dd047">SqshDataSuperblock</a> *&#160;</td>
-          <td class="paramname"><em>superblock</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3260,7 +3324,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00170">170</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00187">187</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3276,7 +3340,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00166">166</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00183">183</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3292,7 +3356,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00167">167</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00184">184</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3308,7 +3372,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00159">159</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00176">176</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3324,7 +3388,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00160">160</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00177">177</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3340,7 +3404,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00172">172</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00189">189</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3356,7 +3420,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00161">161</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00178">178</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3372,7 +3436,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00162">162</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00179">179</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3388,7 +3452,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00168">168</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00185">185</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3404,7 +3468,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00169">169</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00186">186</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3420,7 +3484,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00163">163</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00180">180</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3436,7 +3500,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00164">164</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00181">181</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3452,7 +3516,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00165">165</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00182">182</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3468,7 +3532,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00307">307</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00326">326</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3484,7 +3548,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00322">322</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00343">343</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3500,7 +3564,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00380">380</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00398">398</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3516,7 +3580,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00374">374</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00392">392</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3532,7 +3596,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00378">378</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00396">396</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>
@@ -3548,7 +3612,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00376">376</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__data_8h_source.html#l00394">394</a> of file <a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>.</p>
 
 </div>
 </div>

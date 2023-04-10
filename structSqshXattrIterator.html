@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
    </div>
   </td>
  </tr>
@@ -75,16 +75,19 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="sqsh__iterator__private_8h_source.html">sqsh_iterator_private.h</a>&gt;</code></p>
+<p>An iterator over extended attributes.  
+ <a href="structSqshXattrIterator.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="sqsh__xattr__private_8h_source.html">sqsh_xattr_private.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aade472243ea09ebdc22f0977415773e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#aade472243ea09ebdc22f0977415773e2">sqsh_xattr_iterator_new</a> (const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *inode, int *err)</td></tr>
-<tr class="memdesc:aade472243ea09ebdc22f0977415773e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and initializes a new xattr iterator.  <a href="structSqshXattrIterator.html#aade472243ea09ebdc22f0977415773e2">More...</a><br /></td></tr>
-<tr class="separator:aade472243ea09ebdc22f0977415773e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bd1d8b079b74110aa3843ea927b3b3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#a1bd1d8b079b74110aa3843ea927b3b3f">sqsh_xattr_iterator_next</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator)</td></tr>
-<tr class="memdesc:a1bd1d8b079b74110aa3843ea927b3b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the iterator to the next xattr.  <a href="structSqshXattrIterator.html#a1bd1d8b079b74110aa3843ea927b3b3f">More...</a><br /></td></tr>
-<tr class="separator:a1bd1d8b079b74110aa3843ea927b3b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2dedbbaf5540b58ec807dbf7fe89dff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#ad2dedbbaf5540b58ec807dbf7fe89dff">sqsh_xattr_iterator_new</a> (const struct <a class="el" href="structSqshInode.html">SqshInode</a> *inode, int *err)</td></tr>
+<tr class="memdesc:ad2dedbbaf5540b58ec807dbf7fe89dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates and initializes a new xattr iterator.  <a href="structSqshXattrIterator.html#ad2dedbbaf5540b58ec807dbf7fe89dff">More...</a><br /></td></tr>
+<tr class="separator:ad2dedbbaf5540b58ec807dbf7fe89dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30925e62c9be52104880ce3054dfd916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#a30925e62c9be52104880ce3054dfd916">sqsh_xattr_iterator_next</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator)</td></tr>
+<tr class="memdesc:a30925e62c9be52104880ce3054dfd916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the iterator to the next xattr.  <a href="structSqshXattrIterator.html#a30925e62c9be52104880ce3054dfd916">More...</a><br /></td></tr>
+<tr class="separator:a30925e62c9be52104880ce3054dfd916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af32b0f5246bf7733ef16042de521bdba"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#af32b0f5246bf7733ef16042de521bdba">sqsh_xattr_iterator_type</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator)</td></tr>
 <tr class="memdesc:af32b0f5246bf7733ef16042de521bdba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the type of the current xattr.  <a href="structSqshXattrIterator.html#af32b0f5246bf7733ef16042de521bdba">More...</a><br /></td></tr>
 <tr class="separator:af32b0f5246bf7733ef16042de521bdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,15 +106,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e84d8747c5f302101aaec67d117907f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#a2e84d8747c5f302101aaec67d117907f">sqsh_xattr_iterator_name_size</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator)</td></tr>
 <tr class="memdesc:a2e84d8747c5f302101aaec67d117907f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the size of the name of the current xattr.  <a href="structSqshXattrIterator.html#a2e84d8747c5f302101aaec67d117907f">More...</a><br /></td></tr>
 <tr class="separator:a2e84d8747c5f302101aaec67d117907f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dfb273cdef84b6644203253db7cb7b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#a1dfb273cdef84b6644203253db7cb7b6">sqsh_xattr_iterator_fullname_cmp</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator, const char *name)</td></tr>
-<tr class="memdesc:a1dfb273cdef84b6644203253db7cb7b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the full name of the current xattr with a given name.  <a href="structSqshXattrIterator.html#a1dfb273cdef84b6644203253db7cb7b6">More...</a><br /></td></tr>
-<tr class="separator:a1dfb273cdef84b6644203253db7cb7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b74e3aebe25291c11b3e4f38357921c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#a5b74e3aebe25291c11b3e4f38357921c">sqsh_xattr_iterator_fullname_dup</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator, char **fullname_buffer)</td></tr>
-<tr class="memdesc:a5b74e3aebe25291c11b3e4f38357921c"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a heap allocated copy of the full name of the current entry. The caller is responsible for freeing the memory.  <a href="structSqshXattrIterator.html#a5b74e3aebe25291c11b3e4f38357921c">More...</a><br /></td></tr>
-<tr class="separator:a5b74e3aebe25291c11b3e4f38357921c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1982a4c6bf709e20679b381cf056b3b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#a1982a4c6bf709e20679b381cf056b3b6">sqsh_xattr_iterator_value_dup</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator, char **value_buffer)</td></tr>
-<tr class="memdesc:a1982a4c6bf709e20679b381cf056b3b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a heap allocated copy of the value of the current entry. The caller is responsible for freeing the memory.  <a href="structSqshXattrIterator.html#a1982a4c6bf709e20679b381cf056b3b6">More...</a><br /></td></tr>
-<tr class="separator:a1982a4c6bf709e20679b381cf056b3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a72228bc50f62832bb3617659f92e8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#a7a72228bc50f62832bb3617659f92e8e">sqsh_xattr_iterator_fullname_cmp</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator, const char *name)</td></tr>
+<tr class="memdesc:a7a72228bc50f62832bb3617659f92e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the full name of the current xattr with a given name.  <a href="structSqshXattrIterator.html#a7a72228bc50f62832bb3617659f92e8e">More...</a><br /></td></tr>
+<tr class="separator:a7a72228bc50f62832bb3617659f92e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b102e62caa3f3c9a5ee0569d79cba0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#ac6b102e62caa3f3c9a5ee0569d79cba0">sqsh_xattr_iterator_fullname_dup</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator)</td></tr>
+<tr class="memdesc:ac6b102e62caa3f3c9a5ee0569d79cba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a heap allocated copy of the full name of the current entry. The caller is responsible for freeing the memory.  <a href="structSqshXattrIterator.html#ac6b102e62caa3f3c9a5ee0569d79cba0">More...</a><br /></td></tr>
+<tr class="separator:ac6b102e62caa3f3c9a5ee0569d79cba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada293052ad6c77d7e46e2a18564d46a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#aada293052ad6c77d7e46e2a18564d46a">sqsh_xattr_iterator_value_dup</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator)</td></tr>
+<tr class="memdesc:aada293052ad6c77d7e46e2a18564d46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a heap allocated copy of the value of the current entry. The caller is responsible for freeing the memory.  <a href="structSqshXattrIterator.html#aada293052ad6c77d7e46e2a18564d46a">More...</a><br /></td></tr>
+<tr class="separator:aada293052ad6c77d7e46e2a18564d46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc2757364835f19947fe8b50a555011"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrIterator.html#a4fc2757364835f19947fe8b50a555011">sqsh_xattr_iterator_value</a> (struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *iterator)</td></tr>
 <tr class="memdesc:a4fc2757364835f19947fe8b50a555011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the value of the current xattr.  <a href="structSqshXattrIterator.html#a4fc2757364835f19947fe8b50a555011">More...</a><br /></td></tr>
 <tr class="separator:a4fc2757364835f19947fe8b50a555011"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,8 +126,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a21b4f9024801d5474273a16bf8295174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="sqsh__iterator__private_8h_source.html#l00217">217</a> of file <a class="el" href="sqsh__iterator__private_8h_source.html">sqsh_iterator_private.h</a>.</p>
+<div class="textblock"><p >An iterator over extended attributes. </p>
+
+<p class="definition">Definition at line <a class="el" href="sqsh__xattr__private_8h_source.html#l00051">51</a> of file <a class="el" href="sqsh__xattr__private_8h_source.html">sqsh_xattr_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a21b4f9024801d5474273a16bf8295174" name="a21b4f9024801d5474273a16bf8295174"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a21b4f9024801d5474273a16bf8295174">&#9670;&#160;</a></span>sqsh_xattr_iterator_free()</h2>
@@ -153,14 +157,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1dfb273cdef84b6644203253db7cb7b6" name="a1dfb273cdef84b6644203253db7cb7b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dfb273cdef84b6644203253db7cb7b6">&#9670;&#160;</a></span>sqsh_xattr_iterator_fullname_cmp()</h2>
+<a id="a7a72228bc50f62832bb3617659f92e8e" name="a7a72228bc50f62832bb3617659f92e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a72228bc50f62832bb3617659f92e8e">&#9670;&#160;</a></span>sqsh_xattr_iterator_fullname_cmp()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sqsh_xattr_iterator_fullname_cmp </td>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_xattr_iterator_fullname_cmp </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *&#160;</td>
           <td class="paramname"><em>iterator</em>, </td>
@@ -191,28 +195,18 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5b74e3aebe25291c11b3e4f38357921c" name="a5b74e3aebe25291c11b3e4f38357921c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b74e3aebe25291c11b3e4f38357921c">&#9670;&#160;</a></span>sqsh_xattr_iterator_fullname_dup()</h2>
+<a id="ac6b102e62caa3f3c9a5ee0569d79cba0" name="ac6b102e62caa3f3c9a5ee0569d79cba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b102e62caa3f3c9a5ee0569d79cba0">&#9670;&#160;</a></span>sqsh_xattr_iterator_fullname_dup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sqsh_xattr_iterator_fullname_dup </td>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> char * sqsh_xattr_iterator_fullname_dup </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *&#160;</td>
-          <td class="paramname"><em>iterator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>fullname_buffer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -220,12 +214,11 @@ Public Member Functions</h2></td></tr>
 <p>creates a heap allocated copy of the full name of the current entry. The caller is responsible for freeing the memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">iterator</td><td>The iterator to use. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">fullname_buffer</td><td>The buffer to hold the duplicated full name.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterator</td><td>The iterator to use.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The full name of the current xattr on success, NULL if the allocation fails </dd></dl>
 
 </div>
 </div>
@@ -310,8 +303,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aade472243ea09ebdc22f0977415773e2" name="aade472243ea09ebdc22f0977415773e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aade472243ea09ebdc22f0977415773e2">&#9670;&#160;</a></span>sqsh_xattr_iterator_new()</h2>
+<a id="ad2dedbbaf5540b58ec807dbf7fe89dff" name="ad2dedbbaf5540b58ec807dbf7fe89dff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2dedbbaf5540b58ec807dbf7fe89dff">&#9670;&#160;</a></span>sqsh_xattr_iterator_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,7 +312,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> * sqsh_xattr_iterator_new </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structSqshInodeContext.html">SqshInodeContext</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInode.html">SqshInode</a> *&#160;</td>
           <td class="paramname"><em>inode</em>, </td>
         </tr>
         <tr>
@@ -348,14 +341,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1bd1d8b079b74110aa3843ea927b3b3f" name="a1bd1d8b079b74110aa3843ea927b3b3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bd1d8b079b74110aa3843ea927b3b3f">&#9670;&#160;</a></span>sqsh_xattr_iterator_next()</h2>
+<a id="a30925e62c9be52104880ce3054dfd916" name="a30925e62c9be52104880ce3054dfd916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30925e62c9be52104880ce3054dfd916">&#9670;&#160;</a></span>sqsh_xattr_iterator_next()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sqsh_xattr_iterator_next </td>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_xattr_iterator_next </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *&#160;</td>
           <td class="paramname"><em>iterator</em></td><td>)</td>
@@ -483,28 +476,18 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1982a4c6bf709e20679b381cf056b3b6" name="a1982a4c6bf709e20679b381cf056b3b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1982a4c6bf709e20679b381cf056b3b6">&#9670;&#160;</a></span>sqsh_xattr_iterator_value_dup()</h2>
+<a id="aada293052ad6c77d7e46e2a18564d46a" name="aada293052ad6c77d7e46e2a18564d46a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aada293052ad6c77d7e46e2a18564d46a">&#9670;&#160;</a></span>sqsh_xattr_iterator_value_dup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sqsh_xattr_iterator_value_dup </td>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> char * sqsh_xattr_iterator_value_dup </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshXattrIterator.html">SqshXattrIterator</a> *&#160;</td>
-          <td class="paramname"><em>iterator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>value_buffer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -512,12 +495,11 @@ Public Member Functions</h2></td></tr>
 <p>creates a heap allocated copy of the value of the current entry. The caller is responsible for freeing the memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">iterator</td><td>The iterator to use. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">value_buffer</td><td>The buffer to hold the duplicated value.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterator</td><td>The iterator to use.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The value of the current xattr on success, NULL if the allocation fails </dd></dl>
 
 </div>
 </div>
@@ -549,8 +531,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li><a class="el" href="sqsh__iterator__private_8h_source.html">sqsh_iterator_private.h</a></li>
-<li><a class="el" href="sqsh__iterator_8h_source.html">sqsh_iterator.h</a></li>
+<li><a class="el" href="sqsh__xattr__private_8h_source.html">sqsh_xattr_private.h</a></li>
+<li><a class="el" href="sqsh__xattr_8h_source.html">sqsh_xattr.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

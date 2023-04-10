@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
    </div>
   </td>
  </tr>
@@ -112,15 +112,21 @@ $(function() {
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">   46</a></span><span class="preprocessor">#define SQSH_NO_UNUSED __attribute__((warn_unused_result))</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">   48</a></span><span class="keyword">typedef</span> <span class="keywordtype">size_t</span> <a class="code hl_typedef" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif </span><span class="comment">/* end of include guard SQSH_COMMON_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="asqsh__common_8h_html_a1d493fd70fce488d899c7681d5ff6264"><div class="ttname"><a href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a></div><div class="ttdeci">size_t sqsh_index_t</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__common_8h_source.html#l00048">sqsh_common.h:48</a></div></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#   define SQSH_STATIC_ASSERT(cond)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a96bca9830dec61f8e46035703eca08da">   54</a></span><span class="preprocessor">#   define SQSH_STATIC_ASSERT(cond) _Static_assert(cond, #cond)</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">   60</a></span><span class="preprocessor">#define SQSH_NO_UNUSED __attribute__((warn_unused_result))</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">   65</a></span><span class="keyword">typedef</span> <span class="keywordtype">size_t</span> <a class="code hl_typedef" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif </span><span class="comment">// SQSH_COMMON_H</span></div>
+<div class="ttc" id="asqsh__common_8h_html_a1d493fd70fce488d899c7681d5ff6264"><div class="ttname"><a href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a></div><div class="ttdeci">size_t sqsh_index_t</div><div class="ttdoc">typedef used for indexing</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__common_8h_source.html#l00065">sqsh_common.h:65</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

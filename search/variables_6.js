@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['newer_0',['newer',['../structSqshLruEntry.html#adbc1fd6d1bed71319f666c03e121e3d0',1,'SqshLruEntry']]],
-  ['newest_1',['newest',['../structSqshLruHashmap.html#aa36c93e6bec9f168a5eb6f1d9a9cbb33',1,'SqshLruHashmap']]]
+  ['release_0',['release',['../structSqshLruBackendImpl.html#a10533e90f4025f21d8e51a2c62908d0b',1,'SqshLruBackendImpl']]],
+  ['retain_1',['retain',['../structSqshLruBackendImpl.html#a103b884d7b3d49681093e7b94e83c3ee',1,'SqshLruBackendImpl']]]
 ];

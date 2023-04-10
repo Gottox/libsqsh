@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
    </div>
   </td>
  </tr>
@@ -75,6 +75,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>A generic table as used in an archive.  
+ <a href="structSqshTable.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="sqsh__table__private_8h_source.html">sqsh_table_private.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -82,34 +85,101 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43764b9ae829a5524dae8a88460de069"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTable.html#a43764b9ae829a5524dae8a88460de069">sqsh_table_get</a> (const struct <a class="el" href="structSqshTable.html">SqshTable</a> *table, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> index, void *target)</td></tr>
 <tr class="memdesc:a43764b9ae829a5524dae8a88460de069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an element from the table.  <a href="structSqshTable.html#a43764b9ae829a5524dae8a88460de069">More...</a><br /></td></tr>
 <tr class="separator:a43764b9ae829a5524dae8a88460de069"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2014c5574a4e1e225229d6c968572d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTable.html#ad2014c5574a4e1e225229d6c968572d3">sqsh_table_cleanup</a> (struct <a class="el" href="structSqshTable.html">SqshTable</a> *table)</td></tr>
-<tr class="memdesc:ad2014c5574a4e1e225229d6c968572d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up a table.  <a href="structSqshTable.html#ad2014c5574a4e1e225229d6c968572d3">More...</a><br /></td></tr>
-<tr class="separator:ad2014c5574a4e1e225229d6c968572d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c4fb369b3e3c01beda8406a22b0a1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTable.html#ab3c4fb369b3e3c01beda8406a22b0a1d">sqsh_id_table_get</a> (const struct <a class="el" href="structSqshIdTable.html">SqshIdTable</a> *table, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> index, uint32_t *id)</td></tr>
+<tr class="memdesc:ab3c4fb369b3e3c01beda8406a22b0a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an element from the table.  <a href="structSqshTable.html#ab3c4fb369b3e3c01beda8406a22b0a1d">More...</a><br /></td></tr>
+<tr class="separator:ab3c4fb369b3e3c01beda8406a22b0a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0695c4067105566f323f02974f231f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTable.html#ab0695c4067105566f323f02974f231f6">sqsh_export_table_resolve_inode</a> (const struct <a class="el" href="structSqshExportTable.html">SqshExportTable</a> *table, uint32_t inode, uint64_t *inode_ref)</td></tr>
+<tr class="memdesc:ab0695c4067105566f323f02974f231f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an element from the table.  <a href="structSqshTable.html#ab0695c4067105566f323f02974f231f6">More...</a><br /></td></tr>
+<tr class="separator:ab0695c4067105566f323f02974f231f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="sqsh__table__private_8h_source.html#l00049">49</a> of file <a class="el" href="sqsh__table__private_8h_source.html">sqsh_table_private.h</a>.</p>
+<div class="textblock"><p >A generic table as used in an archive. </p>
+
+<p class="definition">Definition at line <a class="el" href="sqsh__table__private_8h_source.html#l00055">55</a> of file <a class="el" href="sqsh__table__private_8h_source.html">sqsh_table_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad2014c5574a4e1e225229d6c968572d3" name="ad2014c5574a4e1e225229d6c968572d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2014c5574a4e1e225229d6c968572d3">&#9670;&#160;</a></span>sqsh_table_cleanup()</h2>
+<a id="ab0695c4067105566f323f02974f231f6" name="ab0695c4067105566f323f02974f231f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0695c4067105566f323f02974f231f6">&#9670;&#160;</a></span>sqsh_export_table_resolve_inode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sqsh_table_cleanup </td>
+          <td class="memname">int sqsh_export_table_resolve_inode </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqshTable.html">SqshTable</a> *&#160;</td>
-          <td class="paramname"><em>table</em></td><td>)</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshExportTable.html">SqshExportTable</a> *&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>inode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>inode_ref</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cleans up a table. </p>
+<p>Retrieves an element from the table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">table</td><td>The table to clean up.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">table</td><td>The table to retrieve the element from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inode</td><td>The index of the element to retrieve. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">inode_ref</td><td>A pointer to a uint64_t to store the inode reference</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="ab3c4fb369b3e3c01beda8406a22b0a1d" name="ab3c4fb369b3e3c01beda8406a22b0a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c4fb369b3e3c01beda8406a22b0a1d">&#9670;&#160;</a></span>sqsh_id_table_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_id_table_get </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshIdTable.html">SqshIdTable</a> *&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves an element from the table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">table</td><td>The table to retrieve the element from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the element to retrieve. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>The buffer to store the element in.</td></tr>
   </table>
   </dd>
 </dl>

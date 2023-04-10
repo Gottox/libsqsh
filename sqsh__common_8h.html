@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
    </div>
   </td>
  </tr>
@@ -95,12 +95,17 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a96bca9830dec61f8e46035703eca08da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a96bca9830dec61f8e46035703eca08da">SQSH_STATIC_ASSERT</a>(cond)&#160;&#160;&#160;_Static_assert(cond, #cond)</td></tr>
+<tr class="memdesc:a96bca9830dec61f8e46035703eca08da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static assert.  <a href="sqsh__common_8h.html#a96bca9830dec61f8e46035703eca08da">More...</a><br /></td></tr>
+<tr class="separator:a96bca9830dec61f8e46035703eca08da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f0a35d1ed84a34ad06a006e5e90da94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a>&#160;&#160;&#160;__attribute__((warn_unused_result))</td></tr>
+<tr class="memdesc:a0f0a35d1ed84a34ad06a006e5e90da94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Warn if return value is unused.  <a href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">More...</a><br /></td></tr>
 <tr class="separator:a0f0a35d1ed84a34ad06a006e5e90da94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a1d493fd70fce488d899c7681d5ff6264"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a></td></tr>
+<tr class="memdesc:a1d493fd70fce488d899c7681d5ff6264"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedef used for indexing  <a href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">More...</a><br /></td></tr>
 <tr class="separator:a1d493fd70fce488d899c7681d5ff6264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -120,7 +125,37 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00046">46</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
+<p>Warn if return value is unused. </p>
+
+<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00060">60</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
+
+</div>
+</div>
+<a id="a96bca9830dec61f8e46035703eca08da" name="a96bca9830dec61f8e46035703eca08da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96bca9830dec61f8e46035703eca08da">&#9670;&#160;</a></span>SQSH_STATIC_ASSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SQSH_STATIC_ASSERT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">cond</td><td>)</td>
+          <td>&#160;&#160;&#160;_Static_assert(cond, #cond)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Static assert. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cond</td><td>Condition to assert </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00054">54</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
 
 </div>
 </div>
@@ -137,7 +172,9 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00048">48</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
+<p>typedef used for indexing </p>
+
+<p class="definition">Definition at line <a class="el" href="sqsh__common_8h_source.html#l00065">65</a> of file <a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>.</p>
 
 </div>
 </div>

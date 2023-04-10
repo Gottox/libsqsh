@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
    </div>
   </td>
  </tr>
@@ -75,6 +75,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>The extended attribute lookup table.  
+ <a href="structSqshXattrTable.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="sqsh__table__private_8h_source.html">sqsh_table_private.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -82,22 +85,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0558e639b299f45632370d7d8e00fd1a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrTable.html#a0558e639b299f45632370d7d8e00fd1a">sqsh_xattr_table_start</a> (struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *table)</td></tr>
 <tr class="memdesc:a0558e639b299f45632370d7d8e00fd1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the starting offset of the table.  <a href="structSqshXattrTable.html#a0558e639b299f45632370d7d8e00fd1a">More...</a><br /></td></tr>
 <tr class="separator:a0558e639b299f45632370d7d8e00fd1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08653fe391f8a2ddea2450d9cb273b09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrTable.html#a08653fe391f8a2ddea2450d9cb273b09">sqsh_xattr_table_get</a> (const struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *table, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> index, struct <a class="el" href="sqsh__data_8h.html#a81f2056d713f193a8cb7f043d88c82bb">SqshDataXattrLookupTable</a> *target)</td></tr>
-<tr class="memdesc:a08653fe391f8a2ddea2450d9cb273b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an extended attribute from the table.  <a href="structSqshXattrTable.html#a08653fe391f8a2ddea2450d9cb273b09">More...</a><br /></td></tr>
-<tr class="separator:a08653fe391f8a2ddea2450d9cb273b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2911bb48c660dc219ff0cd7654b959cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshXattrTable.html#a2911bb48c660dc219ff0cd7654b959cf">sqsh_xattr_table_get</a> (const struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *table, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> index, struct <a class="el" href="sqsh__data_8h.html#a81f2056d713f193a8cb7f043d88c82bb">SqshDataXattrLookupTable</a> *target)</td></tr>
+<tr class="memdesc:a2911bb48c660dc219ff0cd7654b959cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an extended attribute from the table.  <a href="structSqshXattrTable.html#a2911bb48c660dc219ff0cd7654b959cf">More...</a><br /></td></tr>
+<tr class="separator:a2911bb48c660dc219ff0cd7654b959cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="sqsh__table__private_8h_source.html#l00132">132</a> of file <a class="el" href="sqsh__table__private_8h_source.html">sqsh_table_private.h</a>.</p>
+<div class="textblock"><p >The extended attribute lookup table. </p>
+
+<p class="definition">Definition at line <a class="el" href="sqsh__table__private_8h_source.html#l00228">228</a> of file <a class="el" href="sqsh__table__private_8h_source.html">sqsh_table_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a08653fe391f8a2ddea2450d9cb273b09" name="a08653fe391f8a2ddea2450d9cb273b09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08653fe391f8a2ddea2450d9cb273b09">&#9670;&#160;</a></span>sqsh_xattr_table_get()</h2>
+<a id="a2911bb48c660dc219ff0cd7654b959cf" name="a2911bb48c660dc219ff0cd7654b959cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2911bb48c660dc219ff0cd7654b959cf">&#9670;&#160;</a></span>sqsh_xattr_table_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sqsh_xattr_table_get </td>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_xattr_table_get </td>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structSqshXattrTable.html">SqshXattrTable</a> *&#160;</td>
           <td class="paramname"><em>table</em>, </td>
@@ -162,9 +166,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following files:<ul>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="sqsh__table__private_8h_source.html">sqsh_table_private.h</a></li>
-<li><a class="el" href="sqsh__table_8h_source.html">sqsh_table.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

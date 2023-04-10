@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.2.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
    </div>
   </td>
  </tr>
@@ -72,16 +72,18 @@ $(function() {
   <div class="headertitle"><div class="title">libsqsh </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md____w_libsqsh_libsqsh_README"></a> squashfs is an open and free compressed read-only filesystem. It is used in embedded devices, live-CDs, or in packaging. It was original introduced into the kernel, but there are multiple user space implementations.</p>
+<div class="textblock"><p ><a class="anchor" id="md____w_libsqsh_libsqsh_README"></a><a href="https://github.com/Gottox/libsqsh/actions/workflows/ci.yaml"><img src="https://github.com/Gottox/libsqsh/actions/workflows/ci.yaml/badge.svg" alt="CI" style="pointer-events: none;" class="inline"/></a></p>
+<p >squashfs is an open and free compressed read-only filesystem. It is used in embedded devices, live-CDs, or in packaging. It was original introduced into the kernel, but there are multiple user space implementations.</p>
 <p >libsqsh is a purely 2-Clause BSD Licensed implementation of the squashfs filesystem. It covers the complete squashfs feature set, while still being as minimal as possible.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Features</h1>
 <p ><em>libsqsh</em> supports all features of the squashfs format. Keep in mind that this library only supports reading archives. If you need to create archives take a look at <a href="https://github.com/AgentD/squashfs-tools-ng/">squashfs-tools-ng</a>.</p>
+<p >libsqsh is portable! It is tested and designed for posix compatible environments but should be easy to port to other systems too. With <a href="https://github.com/Gottox/sqsh.js">sqsh.js</a> there's a wasm implementation of libsqsh with a Javascript API designed to run in browsers.</p>
 <p >At this point development focuses on avoiding redundant decompressions and developing efficient cache tactics.</p>
 <ul>
 <li>traverse directories</li>
 <li>read file contents</li>
-<li>open files by path (<code>sqsh_inode_load_by_path</code>)</li>
+<li>open files by path</li>
 <li>fast filename lookup</li>
 <li>read metadata from inodes</li>
 <li>read xattr from inodes</li>
@@ -115,27 +117,27 @@ How to...?</h1>
 <h2><a class="anchor" id="autotoc_md6"></a>
 ... open an archive?</h2>
 <div class="fragment"><div class="line"><span class="keywordtype">int</span> rv;</div>
-<div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqsh.html">Sqsh</a> archive = <a class="code hl_function" href="structSqsh.html#a983ce0fb8924ff3496deb773f7cdf377">sqsh_new</a>(<span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>, NULL, &amp;rv);</div>
+<div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshArchive.html">SqshArchive</a> archive = <a class="code hl_function" href="structSqshArchive.html#a16cb5c7051a6f021457eaec086bc8d0d">sqsh_archive_new</a>(<span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>, NULL, &amp;rv);</div>
 <div class="line"><span class="keywordflow">if</span> (rv &lt; 0)</div>
 <div class="line">    abort();</div>
 <div class="line"><span class="comment">// Do something with the archive!</span></div>
-<div class="line"><a class="code hl_function" href="sqsh_8h.html#acb34415257ce8b3d8d407a0add722297">sqsh_free</a>(archive);</div>
-<div class="ttc" id="asqsh_8h_html_acb34415257ce8b3d8d407a0add722297"><div class="ttname"><a href="sqsh_8h.html#acb34415257ce8b3d8d407a0add722297">sqsh_free</a></div><div class="ttdeci">int sqsh_free(struct Sqsh *sqsh)</div><div class="ttdoc">Frees the resources used by a Sqsh instance.</div></div>
-<div class="ttc" id="astructSqsh_html"><div class="ttname"><a href="structSqsh.html">Sqsh</a></div><div class="ttdoc">The Sqsh struct contains all information about the current sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__private_8h_source.html#l00056">sqsh_private.h:56</a></div></div>
-<div class="ttc" id="astructSqsh_html_a983ce0fb8924ff3496deb773f7cdf377"><div class="ttname"><a href="structSqsh.html#a983ce0fb8924ff3496deb773f7cdf377">Sqsh::sqsh_new</a></div><div class="ttdeci">SQSH_NO_UNUSED struct Sqsh * sqsh_new(const void *source, const struct SqshConfig *config, int *err)</div><div class="ttdoc">sqsh_new initializes a sqsh context in heap.</div></div>
+<div class="line"><a class="code hl_function" href="structSqshArchive.html#a01f77ee9f2848573d9778cebf4185c16">sqsh_archive_free</a>(archive);</div>
+<div class="ttc" id="astructSqshArchive_html"><div class="ttname"><a href="structSqshArchive.html">SqshArchive</a></div><div class="ttdoc">The Sqsh struct contains all information about the current sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__archive__private_8h_source.html#l00170">sqsh_archive_private.h:170</a></div></div>
+<div class="ttc" id="astructSqshArchive_html_a01f77ee9f2848573d9778cebf4185c16"><div class="ttname"><a href="structSqshArchive.html#a01f77ee9f2848573d9778cebf4185c16">SqshArchive::sqsh_archive_free</a></div><div class="ttdeci">int sqsh_archive_free(struct SqshArchive *archive)</div><div class="ttdoc">Frees the resources used by a Sqsh instance.</div></div>
+<div class="ttc" id="astructSqshArchive_html_a16cb5c7051a6f021457eaec086bc8d0d"><div class="ttname"><a href="structSqshArchive.html#a16cb5c7051a6f021457eaec086bc8d0d">SqshArchive::sqsh_archive_new</a></div><div class="ttdeci">SQSH_NO_UNUSED struct SqshArchive * sqsh_archive_new(const void *source, const struct SqshConfig *config, int *err)</div><div class="ttdoc">initializes a archive context in heap.</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
 ... get metainformations about a file?</h2>
-<div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshInodeContext.html">SqshInodeContext</a> inode = { 0 };</div>
+<div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshInode.html">SqshInode</a> inode = { 0 };</div>
 <div class="line"><span class="keywordtype">int</span> rv = sqsh_inode_load_by_path(&amp;inode, &amp;archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (rv &lt; 0)</div>
 <div class="line">    abort();</div>
 <div class="line"><span class="comment">// inode contains metainformations about &#39;/path/to/file&#39;.</span></div>
 <div class="line"><span class="comment">// They can be queried with the sqsh_inode_* functions.</span></div>
 <div class="line"><span class="comment">// This for example gives you the file size of a file:</span></div>
-<div class="line"><span class="keywordtype">int</span> file_size = <a class="code hl_function" href="structSqshInodeContext.html#a65a02fa321fe0ef692244fac11ce0619">sqsh_inode_file_size</a>(&amp;inode);</div>
+<div class="line"><span class="keywordtype">int</span> file_size = <a class="code hl_function" href="structSqshInode.html#ada92123a2c0a07694106e1bb022d10a2">sqsh_inode_file_size</a>(&amp;inode);</div>
 <div class="line">sqsh_inode_cleanup(&amp;inode);</div>
-<div class="ttc" id="astructSqshInodeContext_html"><div class="ttname"><a href="structSqshInodeContext.html">SqshInodeContext</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__context__private_8h_source.html#l00332">sqsh_context_private.h:332</a></div></div>
-<div class="ttc" id="astructSqshInodeContext_html_a65a02fa321fe0ef692244fac11ce0619"><div class="ttname"><a href="structSqshInodeContext.html#a65a02fa321fe0ef692244fac11ce0619">SqshInodeContext::sqsh_inode_file_size</a></div><div class="ttdeci">uint64_t sqsh_inode_file_size(const struct SqshInodeContext *context)</div><div class="ttdoc">Getter for the file size. 0 if the file has no size.</div></div>
+<div class="ttc" id="astructSqshInode_html"><div class="ttname"><a href="structSqshInode.html">SqshInode</a></div><div class="ttdoc">The Inode context.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__inode__private_8h_source.html#l00050">sqsh_inode_private.h:50</a></div></div>
+<div class="ttc" id="astructSqshInode_html_ada92123a2c0a07694106e1bb022d10a2"><div class="ttname"><a href="structSqshInode.html#ada92123a2c0a07694106e1bb022d10a2">SqshInode::sqsh_inode_file_size</a></div><div class="ttdeci">uint64_t sqsh_inode_file_size(const struct SqshInode *context)</div><div class="ttdoc">Getter for the file size. 0 if the file has no size.</div></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md8"></a>
 Resource</h1>
 <ul>
@@ -150,17 +152,8 @@ Design principles</h1>
 <li>usable in multithreaded applications</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md10"></a>
-organisation of source</h1>
-<ul>
-<li><em>src/primitive</em>: basic building blocks like buffer management or reference counting</li>
-<li><em>src/mapper</em>: implementations that load segments of squashfs file into memory. Most notably the mmap management happens here.</li>
-<li><em>src/data</em>: The actual model of a squashfs archive.</li>
-<li><em>src/context</em>: Implements the high level logic on how to retrieve informations from the squashfs archive</li>
-<li><em>src/iterator</em>: Implementations of squashfs structures that are read linear.</li>
-<li><em>src/table</em>: Implementation of squashfs structures that can be accessed by an index.</li>
-<li><em>src/compression</em>: Gluecode for the different compression algorithms.</li>
-</ul>
-<p >The user is supposed to interact with structures of <em>src/context</em> and <em>src/iterator</em> modules. </p>
+License</h1>
+<p >The library is licensed under Simplified BSD License (BSD-2-Clause). The one exception is <code>bin/sqsh-lzo-helper.c</code>, which is licensed under GPL-2.0-only. This is done to comply with lzo's licence terms. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

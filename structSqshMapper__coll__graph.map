@@ -1,8 +1,6 @@
 <map id="SqshMapper" name="SqshMapper">
-<area shape="rect" id="node1" title=" " alt="" coords="449,93,572,119"/>
-<area shape="rect" id="node2" href="$structSqshMmapFullMapper.html" title=" " alt="" coords="5,5,208,31"/>
-<area shape="rect" id="node3" href="$structSqshMmapMapper.html" title=" " alt="" coords="232,5,395,31"/>
-<area shape="rect" id="node4" href="$structSqshStaticMapper.html" title=" " alt="" coords="419,5,602,31"/>
-<area shape="rect" id="node5" href="$structSqshCanaryMapper.html" title=" " alt="" coords="626,5,809,31"/>
-<area shape="rect" id="node6" href="$structSqshCurlMapper.html" title=" " alt="" coords="833,5,996,31"/>
+<area shape="rect" id="node1" title="The mapper that is used to map chunks of the archive into memory." alt="" coords="223,93,345,119"/>
+<area shape="rect" id="node2" href="$structSqshMmapMapper.html" title="The mmap mapper." alt="" coords="5,5,168,31"/>
+<area shape="rect" id="node3" href="$structSqshStaticMapper.html" title="The static mapper." alt="" coords="193,5,375,31"/>
+<area shape="rect" id="node4" href="$structSqshCurlMapper.html" title="The curl mapper." alt="" coords="400,5,563,31"/>
 </map>

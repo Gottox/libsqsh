@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['sqsh_5fextract_5ffunc_5ft_0',['sqsh_extract_func_t',['../sqsh__compression__private_8h.html#a78f33ef2dbd037a5a40256f615ebff6d',1,'sqsh_compression_private.h']]],
+  ['sqsh_5f_5fextractor_5fcontext_5ft_0',['sqsh__extractor_context_t',['../sqsh__extract__private_8h.html#a82f25d9200b4ea0092d47012dc17912f',1,'sqsh_extract_private.h']]],
   ['sqsh_5findex_5ft_1',['sqsh_index_t',['../sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264',1,'sqsh_common.h']]],
-  ['sqsh_5fref_5fcount_5fdtor_5ft_2',['sqsh_ref_count_dtor_t',['../sqsh__primitive_8h.html#ac58228b8cff338b88bcf43e29ac5a56a',1,'sqsh_primitive.h']]]
+  ['sqsh_5frc_5fmap_5fcleanup_5ft_2',['sqsh_rc_map_cleanup_t',['../sqsh__primitive__private_8h.html#ab8d1e5b28b75d8e4dd7edc1877f016a6',1,'sqsh_primitive_private.h']]],
+  ['sqsh_5frc_5fmap_5fkey_5ft_3',['sqsh_rc_map_key_t',['../sqsh__primitive__private_8h.html#a806afb5e95c891dbe2937df3bf89878d',1,'sqsh_primitive_private.h']]]
 ];
