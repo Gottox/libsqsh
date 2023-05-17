@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.4.0</span>
    </div>
   </td>
  </tr>
@@ -113,45 +113,48 @@ compile &amp; install</h2>
 <div class="line">meson compile</div>
 <div class="line">meson install</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
-How to...?</h1>
-<h2><a class="anchor" id="autotoc_md6"></a>
-... open an archive?</h2>
+Example</h1>
 <div class="fragment"><div class="line"><span class="keywordtype">int</span> rv;</div>
 <div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshArchive.html">SqshArchive</a> archive = <a class="code hl_function" href="structSqshArchive.html#a16cb5c7051a6f021457eaec086bc8d0d">sqsh_archive_new</a>(<span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>, NULL, &amp;rv);</div>
-<div class="line"><span class="keywordflow">if</span> (rv &lt; 0)</div>
-<div class="line">    abort();</div>
-<div class="line"><span class="comment">// Do something with the archive!</span></div>
-<div class="line"><a class="code hl_function" href="structSqshArchive.html#a01f77ee9f2848573d9778cebf4185c16">sqsh_archive_free</a>(archive);</div>
-<div class="ttc" id="astructSqshArchive_html"><div class="ttname"><a href="structSqshArchive.html">SqshArchive</a></div><div class="ttdoc">The Sqsh struct contains all information about the current sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__archive__private_8h_source.html#l00170">sqsh_archive_private.h:170</a></div></div>
-<div class="ttc" id="astructSqshArchive_html_a01f77ee9f2848573d9778cebf4185c16"><div class="ttname"><a href="structSqshArchive.html#a01f77ee9f2848573d9778cebf4185c16">SqshArchive::sqsh_archive_free</a></div><div class="ttdeci">int sqsh_archive_free(struct SqshArchive *archive)</div><div class="ttdoc">Frees the resources used by a Sqsh instance.</div></div>
+<div class="line">assert(rv == 0);</div>
+<div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshInode.html">SqshInode</a> *file = <a class="code hl_function" href="sqsh__chrome_8h.html#afd32e0f1f5fe8ad19cabe2d0b2acf89f">sqsh_open</a>(&amp;archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>, &amp;rv);</div>
+<div class="line">assert(rv == 0);</div>
+<div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator = <a class="code hl_function" href="structSqshFileIterator.html#af44e1ea976091ba5a14ef76fc413fea7">sqsh_file_iterator_new</a>(file, &amp;rv)</div>
+<div class="line">assert(rv == 0);</div>
+<div class="line"><span class="keywordflow">while</span>(<a class="code hl_function" href="structSqshFileIterator.html#a420a626ae32d8d82dc5c113c3c018a43">sqsh_file_iterator_next</a>(iterator, 1) &gt; 0) {</div>
+<div class="line">    <span class="keyword">const</span> uint8_t *data = <a class="code hl_function" href="structSqshFileIterator.html#a97bb645391542f4522f7a2db91abf0bf">sqsh_file_iterator_data</a>(iterator);</div>
+<div class="line">    <span class="keywordtype">size_t</span> size = <a class="code hl_function" href="structSqshFileIterator.html#a1caf211b699f571cda3dc3a9db81ba21">sqsh_file_iterator_size</a>(iterator);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Chunk Size: %lu\n&quot;</span>, size);</div>
+<div class="line">    puts(<span class="stringliteral">&quot;Data:&quot;</span>);</div>
+<div class="line">    fwrite(data, 1, size, stdout);</div>
+<div class="line">}</div>
+<div class="line">sqsh_file_iterator_close(iterator);</div>
+<div class="line"><a class="code hl_function" href="sqsh__chrome_8h.html#aaf15f0fdfb0e387d9a2e8fab5310d709">sqsh_close</a>(&amp;file);</div>
+<div class="line">sqsh_archive_free(archive);</div>
+<div class="ttc" id="asqsh__chrome_8h_html_aaf15f0fdfb0e387d9a2e8fab5310d709"><div class="ttname"><a href="sqsh__chrome_8h.html#aaf15f0fdfb0e387d9a2e8fab5310d709">sqsh_close</a></div><div class="ttdeci">int sqsh_close(struct SqshInode *inode)</div><div class="ttdoc">cleans up a the inode context.</div></div>
+<div class="ttc" id="asqsh__chrome_8h_html_afd32e0f1f5fe8ad19cabe2d0b2acf89f"><div class="ttname"><a href="sqsh__chrome_8h.html#afd32e0f1f5fe8ad19cabe2d0b2acf89f">sqsh_open</a></div><div class="ttdeci">struct SqshInode * sqsh_open(struct SqshArchive *archive, const char *path, int *err)</div><div class="ttdoc">Initialize the inode context from a path.</div></div>
+<div class="ttc" id="astructSqshArchive_html"><div class="ttname"><a href="structSqshArchive.html">SqshArchive</a></div><div class="ttdoc">The Sqsh struct contains all information about the current sqsh session.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__archive__private_8h_source.html#l00239">sqsh_archive_private.h:239</a></div></div>
 <div class="ttc" id="astructSqshArchive_html_a16cb5c7051a6f021457eaec086bc8d0d"><div class="ttname"><a href="structSqshArchive.html#a16cb5c7051a6f021457eaec086bc8d0d">SqshArchive::sqsh_archive_new</a></div><div class="ttdeci">SQSH_NO_UNUSED struct SqshArchive * sqsh_archive_new(const void *source, const struct SqshConfig *config, int *err)</div><div class="ttdoc">initializes a archive context in heap.</div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
-... get metainformations about a file?</h2>
-<div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshInode.html">SqshInode</a> inode = { 0 };</div>
-<div class="line"><span class="keywordtype">int</span> rv = sqsh_inode_load_by_path(&amp;inode, &amp;archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>);</div>
-<div class="line"><span class="keywordflow">if</span> (rv &lt; 0)</div>
-<div class="line">    abort();</div>
-<div class="line"><span class="comment">// inode contains metainformations about &#39;/path/to/file&#39;.</span></div>
-<div class="line"><span class="comment">// They can be queried with the sqsh_inode_* functions.</span></div>
-<div class="line"><span class="comment">// This for example gives you the file size of a file:</span></div>
-<div class="line"><span class="keywordtype">int</span> file_size = <a class="code hl_function" href="structSqshInode.html#ada92123a2c0a07694106e1bb022d10a2">sqsh_inode_file_size</a>(&amp;inode);</div>
-<div class="line">sqsh_inode_cleanup(&amp;inode);</div>
+<div class="ttc" id="astructSqshFileIterator_html"><div class="ttname"><a href="structSqshFileIterator.html">SqshFileIterator</a></div><div class="ttdoc">An iterator over the contents of a file.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__file__private_8h_source.html#l00077">sqsh_file_private.h:77</a></div></div>
+<div class="ttc" id="astructSqshFileIterator_html_a1caf211b699f571cda3dc3a9db81ba21"><div class="ttname"><a href="structSqshFileIterator.html#a1caf211b699f571cda3dc3a9db81ba21">SqshFileIterator::sqsh_file_iterator_size</a></div><div class="ttdeci">SQSH_NO_UNUSED size_t sqsh_file_iterator_size(const struct SqshFileIterator *iterator)</div><div class="ttdoc">Gets the size of the data currently in the file iterator.</div></div>
+<div class="ttc" id="astructSqshFileIterator_html_a420a626ae32d8d82dc5c113c3c018a43"><div class="ttname"><a href="structSqshFileIterator.html#a420a626ae32d8d82dc5c113c3c018a43">SqshFileIterator::sqsh_file_iterator_next</a></div><div class="ttdeci">SQSH_NO_UNUSED int sqsh_file_iterator_next(struct SqshFileIterator *iterator, size_t desired_size)</div><div class="ttdoc">Reads a certain amount of data from the file iterator.</div></div>
+<div class="ttc" id="astructSqshFileIterator_html_a97bb645391542f4522f7a2db91abf0bf"><div class="ttname"><a href="structSqshFileIterator.html#a97bb645391542f4522f7a2db91abf0bf">SqshFileIterator::sqsh_file_iterator_data</a></div><div class="ttdeci">SQSH_NO_UNUSED const uint8_t * sqsh_file_iterator_data(const struct SqshFileIterator *iterator)</div><div class="ttdoc">Gets a pointer to the current data in the file iterator.</div></div>
+<div class="ttc" id="astructSqshFileIterator_html_af44e1ea976091ba5a14ef76fc413fea7"><div class="ttname"><a href="structSqshFileIterator.html#af44e1ea976091ba5a14ef76fc413fea7">SqshFileIterator::sqsh_file_iterator_new</a></div><div class="ttdeci">SQSH_NO_UNUSED struct SqshFileIterator * sqsh_file_iterator_new(const struct SqshInode *inode, int *err)</div><div class="ttdoc">Creates a new SqshFileIterator struct and initializes it.</div></div>
 <div class="ttc" id="astructSqshInode_html"><div class="ttname"><a href="structSqshInode.html">SqshInode</a></div><div class="ttdoc">The Inode context.</div><div class="ttdef"><b>Definition:</b> <a href="sqsh__inode__private_8h_source.html#l00050">sqsh_inode_private.h:50</a></div></div>
-<div class="ttc" id="astructSqshInode_html_ada92123a2c0a07694106e1bb022d10a2"><div class="ttname"><a href="structSqshInode.html#ada92123a2c0a07694106e1bb022d10a2">SqshInode::sqsh_inode_file_size</a></div><div class="ttdeci">uint64_t sqsh_inode_file_size(const struct SqshInode *context)</div><div class="ttdoc">Getter for the file size. 0 if the file has no size.</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md8"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
 Resource</h1>
 <ul>
 <li><a href="https://dr-emann.github.io/squashfs/">https://dr-emann.github.io/squashfs/</a></li>
 <li><a href="https://dr-emann.github.io/squashfs/squashfs.html">https://dr-emann.github.io/squashfs/squashfs.html</a></li>
 <li><a href="https://www.kernel.org/doc/Documentation/filesystems/squashfs.txt">https://www.kernel.org/doc/Documentation/filesystems/squashfs.txt</a> (useless)</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md9"></a>
+<h1><a class="anchor" id="autotoc_md7"></a>
 Design principles</h1>
 <ul>
 <li>Stack located structures</li>
 <li>usable in multithreaded applications</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md10"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
 License</h1>
 <p >The library is licensed under Simplified BSD License (BSD-2-Clause). The one exception is <code>bin/sqsh-lzo-helper.c</code>, which is licensed under GPL-2.0-only. This is done to comply with lzo's licence terms. </p>
 </div></div><!-- PageDoc -->

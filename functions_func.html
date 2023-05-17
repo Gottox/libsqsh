@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.4.0</span>
    </div>
   </td>
  </tr>
@@ -71,6 +71,11 @@ $(function() {
 <div class="contents">
 &#160;
 
+<h3><a id="index__5F" name="index__5F"></a>- _file_ -</h3><ul>
+<li>sqsh__file_iterator_block_size()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a88389ac3e6bb22520f71a7c65c316d63">SqshFileIterator</a></li>
+</ul>
+
+
 <h3><a id="index_a" name="index_a"></a>- archiv -</h3><ul>
 <li>sqsh_archive_config()&#160;:&#160;<a class="el" href="structSqshArchive.html#a73a6ee4825c9a3984ce5b8dc52434a2d">SqshArchive</a></li>
 <li>sqsh_archive_data_extractor()&#160;:&#160;<a class="el" href="structSqshArchive.html#ac963a1959376c60ce8fc4f33d8225997">SqshArchive</a></li>
@@ -78,6 +83,7 @@ $(function() {
 <li>sqsh_archive_fragment_table()&#160;:&#160;<a class="el" href="structSqshArchive.html#a321c6eff40468cf7e3fcb5810a18f7ae">SqshArchive</a></li>
 <li>sqsh_archive_free()&#160;:&#160;<a class="el" href="structSqshArchive.html#a01f77ee9f2848573d9778cebf4185c16">SqshArchive</a></li>
 <li>sqsh_archive_id_table()&#160;:&#160;<a class="el" href="structSqshArchive.html#ae70ef5c8282c5af39bc7b61c421905b0">SqshArchive</a></li>
+<li>sqsh_archive_inode_cache()&#160;:&#160;<a class="el" href="structSqshArchive.html#a7872b4b240a6313a62bc3d4b32ae8868">SqshArchive</a></li>
 <li>sqsh_archive_map_manager()&#160;:&#160;<a class="el" href="structSqshArchive.html#a6d66332604da3b50d7aed794fdb5d95c">SqshArchive</a></li>
 <li>sqsh_archive_metablock_extractor()&#160;:&#160;<a class="el" href="structSqshArchive.html#adc4fe27aa5ec89b0d3e8c522477f07e0">SqshArchive</a></li>
 <li>sqsh_archive_new()&#160;:&#160;<a class="el" href="structSqshArchive.html#a16cb5c7051a6f021457eaec086bc8d0d">SqshArchive</a></li>
@@ -105,12 +111,13 @@ $(function() {
 <h3><a id="index_d" name="index_d"></a>- direct -</h3><ul>
 <li>sqsh_directory_iterator_free()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a5b7ad794677f035b1c57b7bbb007cf7b">SqshDirectoryIterator</a></li>
 <li>sqsh_directory_iterator_inode_load()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a50d3040f874456c6a3dd69f9421d01f6">SqshDirectoryIterator</a></li>
+<li>sqsh_directory_iterator_inode_number()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#ac839f9ac353724ead62793b5115b8293">SqshDirectoryIterator</a></li>
 <li>sqsh_directory_iterator_inode_ref()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a488d1751089f1aba59d0fb1e2d6e37c0">SqshDirectoryIterator</a></li>
 <li>sqsh_directory_iterator_inode_type()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a8fdf35fc803996c2f685219608e8e9b4">SqshDirectoryIterator</a></li>
 <li>sqsh_directory_iterator_lookup()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a4d5f6ad57ac44e9448b8026c6ca79a7e">SqshDirectoryIterator</a></li>
 <li>sqsh_directory_iterator_name()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#af05891767c47e30008188aeabfffea51">SqshDirectoryIterator</a></li>
 <li>sqsh_directory_iterator_name_dup()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a859b9ab0f31488fb40800c62ac78b568">SqshDirectoryIterator</a></li>
-<li>sqsh_directory_iterator_name_size()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a5ae72aafe13fb51eb6fc732a24af61d6">SqshDirectoryIterator</a></li>
+<li>sqsh_directory_iterator_name_size()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a5f758b1d81de0307935f2a5c962f925c">SqshDirectoryIterator</a></li>
 <li>sqsh_directory_iterator_new()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#a6048b36ff5a26f6d66164806e5c0e958">SqshDirectoryIterator</a></li>
 <li>sqsh_directory_iterator_next()&#160;:&#160;<a class="el" href="structSqshDirectoryIterator.html#ae3e08b486dc226148d931eb91cd8c028">SqshDirectoryIterator</a></li>
 </ul>
@@ -122,17 +129,17 @@ $(function() {
 
 
 <h3><a id="index_f" name="index_f"></a>- file_i -</h3><ul>
-<li>sqsh_file_iterator_data()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#aa7f1815b93aed1a06f976d0224b17a9c">SqshFileIterator</a></li>
+<li>sqsh_file_iterator_data()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a97bb645391542f4522f7a2db91abf0bf">SqshFileIterator</a></li>
 <li>sqsh_file_iterator_free()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a863c75467913a205112ecd3339b84e6a">SqshFileIterator</a></li>
 <li>sqsh_file_iterator_new()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#af44e1ea976091ba5a14ef76fc413fea7">SqshFileIterator</a></li>
 <li>sqsh_file_iterator_next()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a420a626ae32d8d82dc5c113c3c018a43">SqshFileIterator</a></li>
-<li>sqsh_file_iterator_size()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a6688b5a37daa8af93fbae463698899cd">SqshFileIterator</a></li>
-<li>sqsh_file_iterator_skip()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a66b9b025478f4e58bd1ecb390f6337b3">SqshFileIterator</a></li>
+<li>sqsh_file_iterator_size()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a1caf211b699f571cda3dc3a9db81ba21">SqshFileIterator</a></li>
+<li>sqsh_file_iterator_skip()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#ab3762b064a3bdfadb4ff935227263a46">SqshFileIterator</a></li>
 <li>sqsh_file_reader_advance()&#160;:&#160;<a class="el" href="structSqshFileReader.html#aedfe992063ddd2e6f807da715becfbca">SqshFileReader</a></li>
-<li>sqsh_file_reader_data()&#160;:&#160;<a class="el" href="structSqshFileReader.html#ab37f7b63779890e087c680bd1cc15b42">SqshFileReader</a></li>
+<li>sqsh_file_reader_data()&#160;:&#160;<a class="el" href="structSqshFileReader.html#a218525dec2fd6f6eedf9b55067d993c9">SqshFileReader</a></li>
 <li>sqsh_file_reader_free()&#160;:&#160;<a class="el" href="structSqshFileReader.html#a9d0e1dc2c431ca3525b9a3e70af8f2c1">SqshFileReader</a></li>
 <li>sqsh_file_reader_new()&#160;:&#160;<a class="el" href="structSqshFileReader.html#a663fa5eb5309abe69ec3ef960bc796e8">SqshFileReader</a></li>
-<li>sqsh_file_reader_size()&#160;:&#160;<a class="el" href="structSqshFileReader.html#a5cfa1ee2391b5ab1e6e0107d5062d524">SqshFileReader</a></li>
+<li>sqsh_file_reader_size()&#160;:&#160;<a class="el" href="structSqshFileReader.html#a938d5d35085406abfa7d79650548d392">SqshFileReader</a></li>
 </ul>
 
 
@@ -141,6 +148,7 @@ $(function() {
 <li>sqsh_inode_device_id()&#160;:&#160;<a class="el" href="structSqshInode.html#a6ef2098a3b8880d36703809e59399011">SqshInode</a></li>
 <li>sqsh_inode_directory_block_offset()&#160;:&#160;<a class="el" href="structSqshInode.html#abc94ca5b4af283f77450eb5a05d41c01">SqshInode</a></li>
 <li>sqsh_inode_directory_block_start()&#160;:&#160;<a class="el" href="structSqshInode.html#afdb8213bfd80bc1f6e4ef0f6e0c026ed">SqshInode</a></li>
+<li>sqsh_inode_directory_parent_inode()&#160;:&#160;<a class="el" href="structSqshInode.html#af5f20b5ed3d3e4fb201754f2d25ecf46">SqshInode</a></li>
 <li>sqsh_inode_file_block_count()&#160;:&#160;<a class="el" href="structSqshInode.html#acab97ad539141dfd9002d57c9d466eb7">SqshInode</a></li>
 <li>sqsh_inode_file_block_is_compressed()&#160;:&#160;<a class="el" href="structSqshInode.html#a9ec66b70feded338b58597f09149c966">SqshInode</a></li>
 <li>sqsh_inode_file_block_size()&#160;:&#160;<a class="el" href="structSqshInode.html#a39d761b70533dc9d9a87802b53355303">SqshInode</a></li>
@@ -164,13 +172,6 @@ $(function() {
 <li>sqsh_inode_type()&#160;:&#160;<a class="el" href="structSqshInode.html#af582e04e41e95f2ecf0bee914011cc9d">SqshInode</a></li>
 <li>sqsh_inode_uid()&#160;:&#160;<a class="el" href="structSqshInode.html#ae2db3dde3bf02c7a5971055a23a517a6">SqshInode</a></li>
 <li>sqsh_inode_xattr_index()&#160;:&#160;<a class="el" href="structSqshInode.html#abd9bd5723118c2172bf85a6f3257a333">SqshInode</a></li>
-</ul>
-
-
-<h3><a id="index_p" name="index_p"></a>- path_r -</h3><ul>
-<li>sqsh_path_resolver_free()&#160;:&#160;<a class="el" href="structSqshPathResolver.html#a118e34fa043324bb8038b9d625ab9018">SqshPathResolver</a></li>
-<li>sqsh_path_resolver_new()&#160;:&#160;<a class="el" href="structSqshPathResolver.html#a50c4bc9898a5afde9fb42c6f37dee26e">SqshPathResolver</a></li>
-<li>sqsh_path_resolver_resolve()&#160;:&#160;<a class="el" href="structSqshPathResolver.html#a4740e038bb0a4f23a7b29fb74313b937">SqshPathResolver</a></li>
 </ul>
 
 
@@ -200,6 +201,20 @@ $(function() {
 <li>sqsh_table_get()&#160;:&#160;<a class="el" href="structSqshTable.html#a43764b9ae829a5524dae8a88460de069">SqshTable</a></li>
 <li>sqsh_trailing_data()&#160;:&#160;<a class="el" href="structSqshTrailingContext.html#ab393c9853fcad6b6221af709b92654e2">SqshTrailingContext</a></li>
 <li>sqsh_trailing_size()&#160;:&#160;<a class="el" href="structSqshTrailingContext.html#a8cea8c3114d05524818e16cf93955c88">SqshTrailingContext</a></li>
+<li>sqsh_tree_walker_down()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#aa40001c91ed7583c8bfcfecae5abc6cf">SqshTreeWalker</a></li>
+<li>sqsh_tree_walker_free()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#ae6a5e73a213ea0ddd41f30b917f83d6e">SqshTreeWalker</a></li>
+<li>sqsh_tree_walker_inode_load()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#a36bbfbbbea32235dcfea6e70788064b1">SqshTreeWalker</a></li>
+<li>sqsh_tree_walker_lookup()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#a6739456aadb40bb515969556428720b9">SqshTreeWalker</a></li>
+<li>sqsh_tree_walker_name()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#a5d937f132ad5926fd0ce04bbc8bf4a59">SqshTreeWalker</a></li>
+<li>sqsh_tree_walker_name_dup()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#ad1cd7fc648d60f8ebe1bed9ef97ab609">SqshTreeWalker</a></li>
+<li>sqsh_tree_walker_name_size()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#a2ff8e3200ef18a2f6514f6447683e304">SqshTreeWalker</a></li>
+<li>sqsh_tree_walker_new()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#a4d4fd3af8bd2fa515c8071167ab93d06">SqshTreeWalker</a></li>
+<li>sqsh_tree_walker_next()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#a5a28cdf78af6de3a9e2de9308b2d62ec">SqshTreeWalker</a></li>
+<li>sqsh_tree_walker_resolve()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#a46299a97089c781a9168f81ca2c17708">SqshTreeWalker</a></li>
+<li>sqsh_tree_walker_revert()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#ad332446fdcfcd73348334e4df550fcaa">SqshTreeWalker</a></li>
+<li>sqsh_tree_walker_to_root()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#a4df3e9135e795616ef86541ad09db393">SqshTreeWalker</a></li>
+<li>sqsh_tree_walker_type()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#a8e15eb017324119a36e826c5e17ef894">SqshTreeWalker</a></li>
+<li>sqsh_tree_walker_up()&#160;:&#160;<a class="el" href="structSqshTreeWalker.html#a1da85513c73a57edf77855103892d45a">SqshTreeWalker</a></li>
 </ul>
 
 

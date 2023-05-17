@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.4.0</span>
    </div>
   </td>
  </tr>
@@ -91,9 +91,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d5f6ad57ac44e9448b8026c6ca79a7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshDirectoryIterator.html#a4d5f6ad57ac44e9448b8026c6ca79a7e">sqsh_directory_iterator_lookup</a> (struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator, const char *name, const size_t name_len)</td></tr>
 <tr class="memdesc:a4d5f6ad57ac44e9448b8026c6ca79a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks up an entry by name.  <a href="structSqshDirectoryIterator.html#a4d5f6ad57ac44e9448b8026c6ca79a7e">More...</a><br /></td></tr>
 <tr class="separator:a4d5f6ad57ac44e9448b8026c6ca79a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ae72aafe13fb51eb6fc732a24af61d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshDirectoryIterator.html#a5ae72aafe13fb51eb6fc732a24af61d6">sqsh_directory_iterator_name_size</a> (const struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator)</td></tr>
-<tr class="memdesc:a5ae72aafe13fb51eb6fc732a24af61d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the size of the name of the current entry.  <a href="structSqshDirectoryIterator.html#a5ae72aafe13fb51eb6fc732a24af61d6">More...</a><br /></td></tr>
-<tr class="separator:a5ae72aafe13fb51eb6fc732a24af61d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f758b1d81de0307935f2a5c962f925c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshDirectoryIterator.html#a5f758b1d81de0307935f2a5c962f925c">sqsh_directory_iterator_name_size</a> (const struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator)</td></tr>
+<tr class="memdesc:a5f758b1d81de0307935f2a5c962f925c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the size of the name of the current entry.  <a href="structSqshDirectoryIterator.html#a5f758b1d81de0307935f2a5c962f925c">More...</a><br /></td></tr>
+<tr class="separator:a5f758b1d81de0307935f2a5c962f925c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac839f9ac353724ead62793b5115b8293"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshDirectoryIterator.html#ac839f9ac353724ead62793b5115b8293">sqsh_directory_iterator_inode_number</a> (const struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator)</td></tr>
+<tr class="memdesc:ac839f9ac353724ead62793b5115b8293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the inode number of the current entry.  <a href="structSqshDirectoryIterator.html#ac839f9ac353724ead62793b5115b8293">More...</a><br /></td></tr>
+<tr class="separator:ac839f9ac353724ead62793b5115b8293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a488d1751089f1aba59d0fb1e2d6e37c0"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshDirectoryIterator.html#a488d1751089f1aba59d0fb1e2d6e37c0">sqsh_directory_iterator_inode_ref</a> (const struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator)</td></tr>
 <tr class="memdesc:a488d1751089f1aba59d0fb1e2d6e37c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the inode reference of the current entry.  <a href="structSqshDirectoryIterator.html#a488d1751089f1aba59d0fb1e2d6e37c0">More...</a><br /></td></tr>
 <tr class="separator:a488d1751089f1aba59d0fb1e2d6e37c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,6 +186,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac839f9ac353724ead62793b5115b8293" name="ac839f9ac353724ead62793b5115b8293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac839f9ac353724ead62793b5115b8293">&#9670;&#160;</a></span>sqsh_directory_iterator_inode_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sqsh_directory_iterator_inode_number </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the inode number of the current entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterator</td><td>The iterator to use.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The inode number. </dd></dl>
+
+</div>
+</div>
 <a id="a488d1751089f1aba59d0fb1e2d6e37c0" name="a488d1751089f1aba59d0fb1e2d6e37c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a488d1751089f1aba59d0fb1e2d6e37c0">&#9670;&#160;</a></span>sqsh_directory_iterator_inode_ref()</h2>
 
@@ -206,7 +236,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The inode reference on success, a negative value on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The inode reference. </dd></dl>
 
 </div>
 </div>
@@ -336,14 +366,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5ae72aafe13fb51eb6fc732a24af61d6" name="a5ae72aafe13fb51eb6fc732a24af61d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ae72aafe13fb51eb6fc732a24af61d6">&#9670;&#160;</a></span>sqsh_directory_iterator_name_size()</h2>
+<a id="a5f758b1d81de0307935f2a5c962f925c" name="a5f758b1d81de0307935f2a5c962f925c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f758b1d81de0307935f2a5c962f925c">&#9670;&#160;</a></span>sqsh_directory_iterator_name_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sqsh_directory_iterator_name_size </td>
+          <td class="memname">uint16_t sqsh_directory_iterator_name_size </td>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *&#160;</td>
           <td class="paramname"><em>iterator</em></td><td>)</td>
@@ -424,7 +454,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>amount of bytes available in the current block on success, 0 if the end of the directory has been reached, a negative value on error. </dd></dl>
 
 </div>
 </div>

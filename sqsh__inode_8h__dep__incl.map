@@ -1,6 +1,8 @@
 <map id="sqsh_inode.h" name="sqsh_inode.h">
-<area shape="rect" id="node1" title=" " alt="" coords="179,5,321,31"/>
-<area shape="rect" id="node2" href="$sqsh__directory_8h.html" title=" " alt="" coords="45,79,228,104"/>
-<area shape="rect" id="node4" href="$sqsh__inode__private_8h.html" title=" " alt="" coords="252,79,475,104"/>
+<area shape="rect" id="node1" title=" " alt="" coords="263,5,405,31"/>
+<area shape="rect" id="node2" href="$sqsh__directory_8h.html" title=" " alt="" coords="16,79,199,104"/>
+<area shape="rect" id="node5" href="$sqsh__inode__private_8h.html" title=" " alt="" coords="223,79,445,104"/>
+<area shape="rect" id="node6" href="$sqsh__tree_8h.html" title=" " alt="" coords="395,152,527,177"/>
 <area shape="rect" id="node3" href="$sqsh__directory__private_8h.html" title=" " alt="" coords="5,152,268,177"/>
+<area shape="rect" id="node4" href="$sqsh__tree__private_8h.html" title=" " alt="" coords="228,225,440,251"/>
 </map>

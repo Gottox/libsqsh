@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.4.0</span>
    </div>
   </td>
  </tr>
@@ -85,18 +85,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af44e1ea976091ba5a14ef76fc413fea7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileIterator.html#af44e1ea976091ba5a14ef76fc413fea7">sqsh_file_iterator_new</a> (const struct <a class="el" href="structSqshInode.html">SqshInode</a> *inode, int *err)</td></tr>
 <tr class="memdesc:af44e1ea976091ba5a14ef76fc413fea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structSqshFileIterator.html" title="An iterator over the contents of a file.">SqshFileIterator</a> struct and initializes it.  <a href="structSqshFileIterator.html#af44e1ea976091ba5a14ef76fc413fea7">More...</a><br /></td></tr>
 <tr class="separator:af44e1ea976091ba5a14ef76fc413fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66b9b025478f4e58bd1ecb390f6337b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileIterator.html#a66b9b025478f4e58bd1ecb390f6337b3">sqsh_file_iterator_skip</a> (struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator, size_t amount)</td></tr>
-<tr class="memdesc:a66b9b025478f4e58bd1ecb390f6337b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips a certain amount of data in the file iterator. Keep in mind that calling this function will invalidate the data pointer returned by <a class="el" href="structSqshFileIterator.html#aa7f1815b93aed1a06f976d0224b17a9c" title="Gets a pointer to the current data in the file iterator.">sqsh_file_iterator_data()</a>. You should call <a class="el" href="structSqshFileIterator.html#a420a626ae32d8d82dc5c113c3c018a43" title="Reads a certain amount of data from the file iterator.">sqsh_file_iterator_next()</a> after calling this function to get a new data pointer.  <a href="structSqshFileIterator.html#a66b9b025478f4e58bd1ecb390f6337b3">More...</a><br /></td></tr>
-<tr class="separator:a66b9b025478f4e58bd1ecb390f6337b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3762b064a3bdfadb4ff935227263a46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileIterator.html#ab3762b064a3bdfadb4ff935227263a46">sqsh_file_iterator_skip</a> (struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator, size_t amount, size_t desired_size)</td></tr>
+<tr class="memdesc:ab3762b064a3bdfadb4ff935227263a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips a certain amount of data in the file iterator. Keep in mind that calling this function will invalidate the data pointer returned by <a class="el" href="structSqshFileIterator.html#a97bb645391542f4522f7a2db91abf0bf" title="Gets a pointer to the current data in the file iterator.">sqsh_file_iterator_data()</a>. You should call <a class="el" href="structSqshFileIterator.html#a420a626ae32d8d82dc5c113c3c018a43" title="Reads a certain amount of data from the file iterator.">sqsh_file_iterator_next()</a> after calling this function to get a new data pointer.  <a href="structSqshFileIterator.html#ab3762b064a3bdfadb4ff935227263a46">More...</a><br /></td></tr>
+<tr class="separator:ab3762b064a3bdfadb4ff935227263a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a420a626ae32d8d82dc5c113c3c018a43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileIterator.html#a420a626ae32d8d82dc5c113c3c018a43">sqsh_file_iterator_next</a> (struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator, size_t desired_size)</td></tr>
 <tr class="memdesc:a420a626ae32d8d82dc5c113c3c018a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a certain amount of data from the file iterator.  <a href="structSqshFileIterator.html#a420a626ae32d8d82dc5c113c3c018a43">More...</a><br /></td></tr>
 <tr class="separator:a420a626ae32d8d82dc5c113c3c018a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7f1815b93aed1a06f976d0224b17a9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileIterator.html#aa7f1815b93aed1a06f976d0224b17a9c">sqsh_file_iterator_data</a> (struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator)</td></tr>
-<tr class="memdesc:aa7f1815b93aed1a06f976d0224b17a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a pointer to the current data in the file iterator.  <a href="structSqshFileIterator.html#aa7f1815b93aed1a06f976d0224b17a9c">More...</a><br /></td></tr>
-<tr class="separator:aa7f1815b93aed1a06f976d0224b17a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6688b5a37daa8af93fbae463698899cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileIterator.html#a6688b5a37daa8af93fbae463698899cd">sqsh_file_iterator_size</a> (struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator)</td></tr>
-<tr class="memdesc:a6688b5a37daa8af93fbae463698899cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the data currently in the file iterator.  <a href="structSqshFileIterator.html#a6688b5a37daa8af93fbae463698899cd">More...</a><br /></td></tr>
-<tr class="separator:a6688b5a37daa8af93fbae463698899cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97bb645391542f4522f7a2db91abf0bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileIterator.html#a97bb645391542f4522f7a2db91abf0bf">sqsh_file_iterator_data</a> (const struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator)</td></tr>
+<tr class="memdesc:a97bb645391542f4522f7a2db91abf0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a pointer to the current data in the file iterator.  <a href="structSqshFileIterator.html#a97bb645391542f4522f7a2db91abf0bf">More...</a><br /></td></tr>
+<tr class="separator:a97bb645391542f4522f7a2db91abf0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88389ac3e6bb22520f71a7c65c316d63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileIterator.html#a88389ac3e6bb22520f71a7c65c316d63">sqsh__file_iterator_block_size</a> (const struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator)</td></tr>
+<tr class="memdesc:a88389ac3e6bb22520f71a7c65c316d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the block size of the file iterator.  <a href="structSqshFileIterator.html#a88389ac3e6bb22520f71a7c65c316d63">More...</a><br /></td></tr>
+<tr class="separator:a88389ac3e6bb22520f71a7c65c316d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1caf211b699f571cda3dc3a9db81ba21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileIterator.html#a1caf211b699f571cda3dc3a9db81ba21">sqsh_file_iterator_size</a> (const struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator)</td></tr>
+<tr class="memdesc:a1caf211b699f571cda3dc3a9db81ba21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the data currently in the file iterator.  <a href="structSqshFileIterator.html#a1caf211b699f571cda3dc3a9db81ba21">More...</a><br /></td></tr>
+<tr class="separator:a1caf211b699f571cda3dc3a9db81ba21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a863c75467913a205112ecd3339b84e6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshFileIterator.html#a863c75467913a205112ecd3339b84e6a">sqsh_file_iterator_free</a> (struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator)</td></tr>
 <tr class="memdesc:a863c75467913a205112ecd3339b84e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the resources used by a <a class="el" href="structSqshFileIterator.html" title="An iterator over the contents of a file.">SqshFileIterator</a> struct.  <a href="structSqshFileIterator.html#a863c75467913a205112ecd3339b84e6a">More...</a><br /></td></tr>
 <tr class="separator:a863c75467913a205112ecd3339b84e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,8 +109,35 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="sqsh__file__private_8h_source.html#l00077">77</a> of file <a class="el" href="sqsh__file__private_8h_source.html">sqsh_file_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa7f1815b93aed1a06f976d0224b17a9c" name="aa7f1815b93aed1a06f976d0224b17a9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7f1815b93aed1a06f976d0224b17a9c">&#9670;&#160;</a></span>sqsh_file_iterator_data()</h2>
+<a id="a88389ac3e6bb22520f71a7c65c316d63" name="a88389ac3e6bb22520f71a7c65c316d63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88389ac3e6bb22520f71a7c65c316d63">&#9670;&#160;</a></span>sqsh__file_iterator_block_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> size_t sqsh__file_iterator_block_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the block size of the file iterator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterator</td><td>The file iterator to get the size from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of the data currently in the file iterator. </dd></dl>
+
+</div>
+</div>
+<a id="a97bb645391542f4522f7a2db91abf0bf" name="a97bb645391542f4522f7a2db91abf0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97bb645391542f4522f7a2db91abf0bf">&#9670;&#160;</a></span>sqsh_file_iterator_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -115,7 +145,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> const uint8_t * sqsh_file_iterator_data </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *&#160;</td>
           <td class="paramname"><em>iterator</em></td><td>)</td>
           <td></td>
         </tr>
@@ -228,7 +258,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">iterator</td><td>The file iterator to read data from. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">desired_size</td><td>The amount of data to read.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">desired_size</td><td>The desired size of the data to read. May be more or less than the actual size of the data read.</td></tr>
   </table>
   </dd>
 </dl>
@@ -236,8 +266,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6688b5a37daa8af93fbae463698899cd" name="a6688b5a37daa8af93fbae463698899cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6688b5a37daa8af93fbae463698899cd">&#9670;&#160;</a></span>sqsh_file_iterator_size()</h2>
+<a id="a1caf211b699f571cda3dc3a9db81ba21" name="a1caf211b699f571cda3dc3a9db81ba21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1caf211b699f571cda3dc3a9db81ba21">&#9670;&#160;</a></span>sqsh_file_iterator_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,7 +275,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> size_t sqsh_file_iterator_size </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *&#160;</td>
           <td class="paramname"><em>iterator</em></td><td>)</td>
           <td></td>
         </tr>
@@ -263,8 +293,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a66b9b025478f4e58bd1ecb390f6337b3" name="a66b9b025478f4e58bd1ecb390f6337b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66b9b025478f4e58bd1ecb390f6337b3">&#9670;&#160;</a></span>sqsh_file_iterator_skip()</h2>
+<a id="ab3762b064a3bdfadb4ff935227263a46" name="ab3762b064a3bdfadb4ff935227263a46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3762b064a3bdfadb4ff935227263a46">&#9670;&#160;</a></span>sqsh_file_iterator_skip()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +309,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>amount</em>&#160;</td>
+          <td class="paramname"><em>amount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>desired_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -289,11 +325,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Skips a certain amount of data in the file iterator. Keep in mind that calling this function will invalidate the data pointer returned by <a class="el" href="structSqshFileIterator.html#aa7f1815b93aed1a06f976d0224b17a9c" title="Gets a pointer to the current data in the file iterator.">sqsh_file_iterator_data()</a>. You should call <a class="el" href="structSqshFileIterator.html#a420a626ae32d8d82dc5c113c3c018a43" title="Reads a certain amount of data from the file iterator.">sqsh_file_iterator_next()</a> after calling this function to get a new data pointer. </p>
+<p>Skips a certain amount of data in the file iterator. Keep in mind that calling this function will invalidate the data pointer returned by <a class="el" href="structSqshFileIterator.html#a97bb645391542f4522f7a2db91abf0bf" title="Gets a pointer to the current data in the file iterator.">sqsh_file_iterator_data()</a>. You should call <a class="el" href="structSqshFileIterator.html#a420a626ae32d8d82dc5c113c3c018a43" title="Reads a certain amount of data from the file iterator.">sqsh_file_iterator_next()</a> after calling this function to get a new data pointer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">iterator</td><td>The file iterator to skip data in. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">amount</td><td>The amount of data to skip.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amount</td><td>The amount of data to skip. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">desired_size</td><td>The desired size of the data to read. May be more or less than the actual size of the data read.</td></tr>
   </table>
   </dd>
 </dl>

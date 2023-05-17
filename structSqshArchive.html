@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.4.0</span>
    </div>
   </td>
  </tr>
@@ -103,6 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae70ef5c8282c5af39bc7b61c421905b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshArchive.html#ae70ef5c8282c5af39bc7b61c421905b0">sqsh_archive_id_table</a> (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, struct <a class="el" href="structSqshIdTable.html">SqshIdTable</a> **id_table)</td></tr>
 <tr class="memdesc:ae70ef5c8282c5af39bc7b61c421905b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the id table of a Sqsh instance.  <a href="structSqshArchive.html#ae70ef5c8282c5af39bc7b61c421905b0">More...</a><br /></td></tr>
 <tr class="separator:ae70ef5c8282c5af39bc7b61c421905b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7872b4b240a6313a62bc3d4b32ae8868"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshArchive.html#a7872b4b240a6313a62bc3d4b32ae8868">sqsh_archive_inode_cache</a> (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, struct <a class="el" href="structSqshInodeCache.html">SqshInodeCache</a> **inode_cache)</td></tr>
+<tr class="memdesc:a7872b4b240a6313a62bc3d4b32ae8868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the export table of a Sqsh instance.  <a href="structSqshArchive.html#a7872b4b240a6313a62bc3d4b32ae8868">More...</a><br /></td></tr>
+<tr class="separator:a7872b4b240a6313a62bc3d4b32ae8868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a9831e4baba25797c80af61b60a98e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshArchive.html#a0a9831e4baba25797c80af61b60a98e3">sqsh_archive_export_table</a> (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, struct <a class="el" href="structSqshExportTable.html">SqshExportTable</a> **export_table)</td></tr>
 <tr class="memdesc:a0a9831e4baba25797c80af61b60a98e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the export table of a Sqsh instance.  <a href="structSqshArchive.html#a0a9831e4baba25797c80af61b60a98e3">More...</a><br /></td></tr>
 <tr class="separator:a0a9831e4baba25797c80af61b60a98e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,7 +122,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The Sqsh struct contains all information about the current sqsh session. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__archive__private_8h_source.html#l00170">170</a> of file <a class="el" href="sqsh__archive__private_8h_source.html">sqsh_archive_private.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__archive__private_8h_source.html#l00239">239</a> of file <a class="el" href="sqsh__archive__private_8h_source.html">sqsh_archive_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a73a6ee4825c9a3984ce5b8dc52434a2d" name="a73a6ee4825c9a3984ce5b8dc52434a2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73a6ee4825c9a3984ce5b8dc52434a2d">&#9670;&#160;</a></span>sqsh_archive_config()</h2>
@@ -309,6 +312,44 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">archive</td><td>The Sqsh instance to retrieve the id table from. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">id_table</td><td>Pointer to a struct <a class="el" href="structSqshTable.html" title="A generic table as used in an archive.">SqshTable</a> where the id table will be stored.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="a7872b4b240a6313a62bc3d4b32ae8868" name="a7872b4b240a6313a62bc3d4b32ae8868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7872b4b240a6313a62bc3d4b32ae8868">&#9670;&#160;</a></span>sqsh_archive_inode_cache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_archive_inode_cache </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *&#160;</td>
+          <td class="paramname"><em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqshInodeCache.html">SqshInodeCache</a> **&#160;</td>
+          <td class="paramname"><em>inode_cache</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the export table of a Sqsh instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">archive</td><td>The Sqsh instance to retrieve the inode cache from. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">inode_cache</td><td>Pointer to a struct <a class="el" href="structSqshInodeCache.html" title="The inode cache context is used to cache inodes numbers and their corresponding inode references.">SqshInodeCache</a> where the inode cache will be stored.</td></tr>
   </table>
   </dd>
 </dl>

@@ -1,17 +1,17 @@
 <map id="sqsh_xattr_private.h" name="sqsh_xattr_private.h">
-<area shape="rect" id="node1" title=" " alt="" coords="487,5,710,31"/>
-<area shape="rect" id="node2" href="$sqsh__metablock__private_8h.html" title=" " alt="" coords="201,79,463,104"/>
-<area shape="rect" id="node13" href="$sqsh__table__private_8h.html" title=" " alt="" coords="487,79,710,104"/>
-<area shape="rect" id="node15" href="$sqsh__xattr_8h.html" title=" " alt="" coords="762,79,905,104"/>
-<area shape="rect" id="node3" href="$sqsh__extract__private_8h.html" title=" " alt="" coords="415,152,657,177"/>
-<area shape="rect" id="node11" href="$sqsh__mapper__private_8h.html" title=" " alt="" coords="159,152,391,177"/>
-<area shape="rect" id="node4" href="$sqsh__primitive__private_8h.html" title=" " alt="" coords="182,225,445,251"/>
-<area shape="rect" id="node9" title=" " alt="" coords="469,225,581,251"/>
-<area shape="rect" id="node10" title=" " alt="" coords="605,225,728,251"/>
-<area shape="rect" id="node5" href="$sqsh__common_8h.html" title=" " alt="" coords="689,299,841,324"/>
-<area shape="rect" id="node6" title=" " alt="" coords="577,372,689,397"/>
-<area shape="rect" id="node7" title=" " alt="" coords="714,372,817,397"/>
-<area shape="rect" id="node8" title=" " alt="" coords="841,372,943,397"/>
-<area shape="rect" id="node12" href="$sqsh__mapper_8h.html" title=" " alt="" coords="5,225,157,251"/>
-<area shape="rect" id="node14" href="$sqsh__table_8h.html" title=" " alt="" coords="682,152,825,177"/>
+<area shape="rect" id="node1" title=" " alt="" coords="200,5,423,31"/>
+<area shape="rect" id="node2" href="$sqsh__metablock__private_8h.html" title=" " alt="" coords="447,79,709,104"/>
+<area shape="rect" id="node13" href="$sqsh__table__private_8h.html" title=" " alt="" coords="200,79,423,104"/>
+<area shape="rect" id="node15" href="$sqsh__xattr_8h.html" title=" " alt="" coords="5,79,148,104"/>
+<area shape="rect" id="node3" href="$sqsh__extract__private_8h.html" title=" " alt="" coords="225,152,467,177"/>
+<area shape="rect" id="node11" href="$sqsh__mapper__private_8h.html" title=" " alt="" coords="491,152,723,177"/>
+<area shape="rect" id="node4" href="$sqsh__primitive__private_8h.html" title=" " alt="" coords="167,225,429,251"/>
+<area shape="rect" id="node9" href="$sqsh__thread__private_8h.html" title=" " alt="" coords="454,225,686,251"/>
+<area shape="rect" id="node5" href="$sqsh__common_8h.html" title=" " alt="" coords="138,299,290,324"/>
+<area shape="rect" id="node6" title=" " alt="" coords="26,372,138,397"/>
+<area shape="rect" id="node7" title=" " alt="" coords="163,372,265,397"/>
+<area shape="rect" id="node8" title=" " alt="" coords="289,372,392,397"/>
+<area shape="rect" id="node10" title=" " alt="" coords="514,299,626,324"/>
+<area shape="rect" id="node12" href="$sqsh__mapper_8h.html" title=" " alt="" coords="710,225,862,251"/>
+<area shape="rect" id="node14" href="$sqsh__table_8h.html" title=" " alt="" coords="57,152,200,177"/>
 </map>

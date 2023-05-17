@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.4.0</span>
    </div>
   </td>
  </tr>
@@ -127,6 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc94ca5b4af283f77450eb5a05d41c01"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInode.html#abc94ca5b4af283f77450eb5a05d41c01">sqsh_inode_directory_block_offset</a> (const struct <a class="el" href="structSqshInode.html">SqshInode</a> *context)</td></tr>
 <tr class="memdesc:abc94ca5b4af283f77450eb5a05d41c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the directory block offset. This is only internally used and will be used while iterating over the directory entries.  <a href="structSqshInode.html#abc94ca5b4af283f77450eb5a05d41c01">More...</a><br /></td></tr>
 <tr class="separator:abc94ca5b4af283f77450eb5a05d41c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f20b5ed3d3e4fb201754f2d25ecf46"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInode.html#af5f20b5ed3d3e4fb201754f2d25ecf46">sqsh_inode_directory_parent_inode</a> (const struct <a class="el" href="structSqshInode.html">SqshInode</a> *context)</td></tr>
+<tr class="memdesc:af5f20b5ed3d3e4fb201754f2d25ecf46"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the parent inode of the directory.  <a href="structSqshInode.html#af5f20b5ed3d3e4fb201754f2d25ecf46">More...</a><br /></td></tr>
+<tr class="separator:af5f20b5ed3d3e4fb201754f2d25ecf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e0673fedac8517ed2667f125e1baead"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshInode.html#a4e0673fedac8517ed2667f125e1baead">sqsh_inode_file_has_fragment</a> (const struct <a class="el" href="structSqshInode.html">SqshInode</a> *context)</td></tr>
 <tr class="memdesc:a4e0673fedac8517ed2667f125e1baead"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the inode has a fragment block.  <a href="structSqshInode.html#a4e0673fedac8517ed2667f125e1baead">More...</a><br /></td></tr>
 <tr class="separator:a4e0673fedac8517ed2667f125e1baead"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,6 +247,33 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the directory block start. </dd></dl>
+
+</div>
+</div>
+<a id="af5f20b5ed3d3e4fb201754f2d25ecf46" name="af5f20b5ed3d3e4fb201754f2d25ecf46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f20b5ed3d3e4fb201754f2d25ecf46">&#9670;&#160;</a></span>sqsh_inode_directory_parent_inode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sqsh_inode_directory_parent_inode </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshInode.html">SqshInode</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieve the parent inode of the directory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The inode context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the directory block offset. </dd></dl>
 
 </div>
 </div>

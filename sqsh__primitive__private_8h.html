@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.4.0</span>
    </div>
   </td>
  </tr>
@@ -107,6 +107,10 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshLru.html">SqshLru</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshIteratorImpl.html">SqshIteratorImpl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshReader.html">SqshReader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -127,8 +131,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6c4382f44537785f324e2a18c6c17fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea8082431a52f4b63f81ea619ee48e2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__primitive__private_8h.html#aea8082431a52f4b63f81ea619ee48e2d">sqsh__buffer_append</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer, const uint8_t *source, const size_t source_size)</td></tr>
 <tr class="separator:aea8082431a52f4b63f81ea619ee48e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23404253e28bc9b0cfe4cd17eda30c3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__primitive__private_8h.html#a23404253e28bc9b0cfe4cd17eda30c3a">sqsh__buffer_drain</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer)</td></tr>
-<tr class="separator:a23404253e28bc9b0cfe4cd17eda30c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e1493cdb828a1d1849bd11bc623a1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__primitive__private_8h.html#a03e1493cdb828a1d1849bd11bc623a1a">sqsh__buffer_move</a> (struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer, struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *source)</td></tr>
+<tr class="separator:a03e1493cdb828a1d1849bd11bc623a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd55fa148409966f0a3ff2d369dafad0"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__primitive__private_8h.html#abd55fa148409966f0a3ff2d369dafad0">sqsh__buffer_data</a> (const struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer)</td></tr>
 <tr class="separator:abd55fa148409966f0a3ff2d369dafad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a740125e003c83d6aaad8a5fb082ec82a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__primitive__private_8h.html#a740125e003c83d6aaad8a5fb082ec82a">sqsh__buffer_size</a> (const struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *buffer)</td></tr>
@@ -173,6 +177,16 @@ Functions</h2></td></tr>
 <tr class="separator:a6b4cd96bb5f752cecf9e11ead629233d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7696aeebbcb440ba1b4a35415981f24f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__primitive__private_8h.html#a7696aeebbcb440ba1b4a35415981f24f">sqsh__lru_cleanup</a> (struct <a class="el" href="structSqshLru.html">SqshLru</a> *lru)</td></tr>
 <tr class="separator:a7696aeebbcb440ba1b4a35415981f24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12ea5423558019fb2757d7f7051c95fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__primitive__private_8h.html#a12ea5423558019fb2757d7f7051c95fb">sqsh__reader_init</a> (struct <a class="el" href="structSqshReader.html">SqshReader</a> *reader, const struct <a class="el" href="structSqshIteratorImpl.html">SqshIteratorImpl</a> *impl, void *iterator)</td></tr>
+<tr class="separator:a12ea5423558019fb2757d7f7051c95fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a6bf86f9353a0e42c08de52f12fed4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__primitive__private_8h.html#a54a6bf86f9353a0e42c08de52f12fed4">sqsh__reader_advance</a> (struct <a class="el" href="structSqshReader.html">SqshReader</a> *reader, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> offset, size_t size)</td></tr>
+<tr class="separator:a54a6bf86f9353a0e42c08de52f12fed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e73374707af25caf5e71ce7801f1a9"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__primitive__private_8h.html#a99e73374707af25caf5e71ce7801f1a9">sqsh__reader_data</a> (const struct <a class="el" href="structSqshReader.html">SqshReader</a> *reader)</td></tr>
+<tr class="separator:a99e73374707af25caf5e71ce7801f1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a0ec86258efdf37502df99d732ae72"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__primitive__private_8h.html#a10a0ec86258efdf37502df99d732ae72">sqsh__reader_size</a> (const struct <a class="el" href="structSqshReader.html">SqshReader</a> *reader)</td></tr>
+<tr class="separator:a10a0ec86258efdf37502df99d732ae72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44eb448beaaac0bbe0f00204da258260"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__primitive__private_8h.html#a44eb448beaaac0bbe0f00204da258260">sqsh__reader_cleanup</a> (struct <a class="el" href="structSqshReader.html">SqshReader</a> *reader)</td></tr>
+<tr class="separator:a44eb448beaaac0bbe0f00204da258260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -200,7 +214,7 @@ Variables</h2></td></tr>
 
 <p>The type of the cleanup callback function. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__primitive__private_8h_source.html#l00174">174</a> of file <a class="el" href="sqsh__primitive__private_8h_source.html">sqsh_primitive_private.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__primitive__private_8h_source.html#l00175">175</a> of file <a class="el" href="sqsh__primitive__private_8h_source.html">sqsh_primitive_private.h</a>.</p>
 
 </div>
 </div>
@@ -218,7 +232,7 @@ Variables</h2></td></tr>
 
 <p>The type of the key for the hash map. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__primitive__private_8h_source.html#l00310">310</a> of file <a class="el" href="sqsh__primitive__private_8h_source.html">sqsh_primitive_private.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__primitive__private_8h_source.html#l00311">311</a> of file <a class="el" href="sqsh__primitive__private_8h_source.html">sqsh_primitive_private.h</a>.</p>
 
 </div>
 </div>
@@ -355,24 +369,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a23404253e28bc9b0cfe4cd17eda30c3a" name="a23404253e28bc9b0cfe4cd17eda30c3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23404253e28bc9b0cfe4cd17eda30c3a">&#9670;&#160;</a></span>sqsh__buffer_drain()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sqsh__buffer_drain </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aaa2ffbe55f8b6f02a717ea09369374d0" name="aaa2ffbe55f8b6f02a717ea09369374d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa2ffbe55f8b6f02a717ea09369374d0">&#9670;&#160;</a></span>sqsh__buffer_init()</h2>
 
@@ -385,6 +381,34 @@ Variables</h2></td></tr>
           <td class="paramtype">struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03e1493cdb828a1d1849bd11bc623a1a" name="a03e1493cdb828a1d1849bd11bc623a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e1493cdb828a1d1849bd11bc623a1a">&#9670;&#160;</a></span>sqsh__buffer_move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__buffer_move </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqshBuffer.html">SqshBuffer</a> *&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -938,6 +962,128 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structSqshRcMap.html">SqshRcMap</a> *&#160;</td>
           <td class="paramname"><em>array</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54a6bf86f9353a0e42c08de52f12fed4" name="a54a6bf86f9353a0e42c08de52f12fed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a6bf86f9353a0e42c08de52f12fed4">&#9670;&#160;</a></span>sqsh__reader_advance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__reader_advance </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshReader.html">SqshReader</a> *&#160;</td>
+          <td class="paramname"><em>reader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a>&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44eb448beaaac0bbe0f00204da258260" name="a44eb448beaaac0bbe0f00204da258260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44eb448beaaac0bbe0f00204da258260">&#9670;&#160;</a></span>sqsh__reader_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh__reader_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshReader.html">SqshReader</a> *&#160;</td>
+          <td class="paramname"><em>reader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99e73374707af25caf5e71ce7801f1a9" name="a99e73374707af25caf5e71ce7801f1a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e73374707af25caf5e71ce7801f1a9">&#9670;&#160;</a></span>sqsh__reader_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * sqsh__reader_data </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshReader.html">SqshReader</a> *&#160;</td>
+          <td class="paramname"><em>reader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12ea5423558019fb2757d7f7051c95fb" name="a12ea5423558019fb2757d7f7051c95fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12ea5423558019fb2757d7f7051c95fb">&#9670;&#160;</a></span>sqsh__reader_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__reader_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshReader.html">SqshReader</a> *&#160;</td>
+          <td class="paramname"><em>reader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structSqshIteratorImpl.html">SqshIteratorImpl</a> *&#160;</td>
+          <td class="paramname"><em>impl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>iterator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10a0ec86258efdf37502df99d732ae72" name="a10a0ec86258efdf37502df99d732ae72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a0ec86258efdf37502df99d732ae72">&#9670;&#160;</a></span>sqsh__reader_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sqsh__reader_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshReader.html">SqshReader</a> *&#160;</td>
+          <td class="paramname"><em>reader</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

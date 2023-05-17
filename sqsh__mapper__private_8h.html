@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.3.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v0.4.0</span>
    </div>
   </td>
  </tr>
@@ -76,12 +76,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>&quot;</code><br />
-<code>#include &lt;pthread.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="sqsh__primitive__private_8h_source.html">sqsh_primitive_private.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sqsh__thread__private_8h_source.html">sqsh_thread_private.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sqsh_mapper_private.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__mapper__private_8h__incl.svg" width="634" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="sqsh__mapper__private_8h__incl.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -116,6 +116,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMapManager.html">SqshMapManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The map manager.  <a href="structSqshMapManager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMapIterator.html">SqshMapIterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshMapReader.html">SqshMapReader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reader over a mapping of data.  <a href="structSqshMapReader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,6 +134,8 @@ Functions</h2></td></tr>
 <tr class="separator:acd1355dc17e8ca4b6cb317b7551c2ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56794d7bad99fba6a06e11f3f9155d45"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#a56794d7bad99fba6a06e11f3f9155d45">sqsh__map_slice_data</a> (const struct <a class="el" href="structSqshMapSlice.html">SqshMapSlice</a> *mapping)</td></tr>
 <tr class="separator:a56794d7bad99fba6a06e11f3f9155d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b962a2b787add22750e2df86d5f1313"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#a0b962a2b787add22750e2df86d5f1313">sqsh__map_slice_size</a> (const struct <a class="el" href="structSqshMapSlice.html">SqshMapSlice</a> *mapping)</td></tr>
+<tr class="separator:a0b962a2b787add22750e2df86d5f1313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3913b561227f7177abba9449f00595a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#a3913b561227f7177abba9449f00595a5">sqsh__map_slice_cleanup</a> (struct <a class="el" href="structSqshMapSlice.html">SqshMapSlice</a> *mapping)</td></tr>
 <tr class="separator:a3913b561227f7177abba9449f00595a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b4537d06836d206517fb626388840b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#a4b4537d06836d206517fb626388840b1">sqsh__map_slice_init</a> (struct <a class="el" href="structSqshMapSlice.html">SqshMapSlice</a> *mapping, struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *mapper, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> offset, size_t size)</td></tr>
@@ -150,6 +154,22 @@ Functions</h2></td></tr>
 <tr class="separator:ad3a74a027740a6b996653bdc2da499e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8430a071bd27035b8bbe658f3882ee2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#a8430a071bd27035b8bbe658f3882ee2b">sqsh__map_manager_cleanup</a> (struct <a class="el" href="structSqshMapManager.html">SqshMapManager</a> *manager)</td></tr>
 <tr class="separator:a8430a071bd27035b8bbe658f3882ee2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab05183589c83991bf483ecf8a83357d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#ab05183589c83991bf483ecf8a83357d5">sqsh__map_iterator_init</a> (struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *iterator, struct <a class="el" href="structSqshMapManager.html">SqshMapManager</a> *manager, uint64_t address)</td></tr>
+<tr class="separator:ab05183589c83991bf483ecf8a83357d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6d66ab4b671816451c778961bda752"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#afd6d66ab4b671816451c778961bda752">sqsh__map_iterator_next</a> (struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *iterator)</td></tr>
+<tr class="separator:afd6d66ab4b671816451c778961bda752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212732f816a81f6a5d661d75b2ae3371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#a212732f816a81f6a5d661d75b2ae3371">sqsh__map_iterator_skip</a> (struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *iterator, size_t amount)</td></tr>
+<tr class="separator:a212732f816a81f6a5d661d75b2ae3371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190a5042b541429b521c102264428693"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#a190a5042b541429b521c102264428693">sqsh__map_iterator_data</a> (const struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *iterator)</td></tr>
+<tr class="separator:a190a5042b541429b521c102264428693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a657ac6b824d335caaccf4a6c376039ad"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#a657ac6b824d335caaccf4a6c376039ad">sqsh__map_iterator_block_size</a> (const struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *iterator)</td></tr>
+<tr class="separator:a657ac6b824d335caaccf4a6c376039ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c783400dd43b32bb6e9f7bafcff1ce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#a6c783400dd43b32bb6e9f7bafcff1ce4">sqsh__map_iterator_address</a> (const struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *iterator)</td></tr>
+<tr class="separator:a6c783400dd43b32bb6e9f7bafcff1ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04359d9d53b5d173b8b92f40f150670"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#af04359d9d53b5d173b8b92f40f150670">sqsh__map_iterator_size</a> (const struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *iterator)</td></tr>
+<tr class="separator:af04359d9d53b5d173b8b92f40f150670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb58e2a17f17cf1e60c92944c59f7b1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#acb58e2a17f17cf1e60c92944c59f7b1d">sqsh__map_iterator_cleanup</a> (struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *iterator)</td></tr>
+<tr class="separator:acb58e2a17f17cf1e60c92944c59f7b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1634864cbbf5041f53a9a807a330ee17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#a1634864cbbf5041f53a9a807a330ee17">sqsh__map_reader_init</a> (struct <a class="el" href="structSqshMapReader.html">SqshMapReader</a> *reader, struct <a class="el" href="structSqshMapManager.html">SqshMapManager</a> *mapper, const uint64_t start_address, uint64_t upper_limit)</td></tr>
 <tr class="separator:a1634864cbbf5041f53a9a807a330ee17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5416c6b305e98d86e43bbed00b354a88"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__mapper__private_8h.html#a5416c6b305e98d86e43bbed00b354a88">sqsh__map_reader_remaining_direct</a> (const struct <a class="el" href="structSqshMapReader.html">SqshMapReader</a> *reader)</td></tr>
@@ -172,6 +192,176 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="sqsh__mapper__private_8h_source.html">sqsh_mapper_private.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a6c783400dd43b32bb6e9f7bafcff1ce4" name="a6c783400dd43b32bb6e9f7bafcff1ce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c783400dd43b32bb6e9f7bafcff1ce4">&#9670;&#160;</a></span>sqsh__map_iterator_address()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> sqsh__map_iterator_address </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a657ac6b824d335caaccf4a6c376039ad" name="a657ac6b824d335caaccf4a6c376039ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a657ac6b824d335caaccf4a6c376039ad">&#9670;&#160;</a></span>sqsh__map_iterator_block_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sqsh__map_iterator_block_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb58e2a17f17cf1e60c92944c59f7b1d" name="acb58e2a17f17cf1e60c92944c59f7b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb58e2a17f17cf1e60c92944c59f7b1d">&#9670;&#160;</a></span>sqsh__map_iterator_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh__map_iterator_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a190a5042b541429b521c102264428693" name="a190a5042b541429b521c102264428693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190a5042b541429b521c102264428693">&#9670;&#160;</a></span>sqsh__map_iterator_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * sqsh__map_iterator_data </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab05183589c83991bf483ecf8a83357d5" name="ab05183589c83991bf483ecf8a83357d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab05183589c83991bf483ecf8a83357d5">&#9670;&#160;</a></span>sqsh__map_iterator_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__map_iterator_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqshMapManager.html">SqshMapManager</a> *&#160;</td>
+          <td class="paramname"><em>manager</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd6d66ab4b671816451c778961bda752" name="afd6d66ab4b671816451c778961bda752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd6d66ab4b671816451c778961bda752">&#9670;&#160;</a></span>sqsh__map_iterator_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__map_iterator_next </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af04359d9d53b5d173b8b92f40f150670" name="af04359d9d53b5d173b8b92f40f150670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af04359d9d53b5d173b8b92f40f150670">&#9670;&#160;</a></span>sqsh__map_iterator_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sqsh__map_iterator_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a212732f816a81f6a5d661d75b2ae3371" name="a212732f816a81f6a5d661d75b2ae3371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212732f816a81f6a5d661d75b2ae3371">&#9670;&#160;</a></span>sqsh__map_iterator_skip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__map_iterator_skip </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshMapIterator.html">SqshMapIterator</a> *&#160;</td>
+          <td class="paramname"><em>iterator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>amount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad3eaeb5c6be88be4a47859a09cbc61a7" name="ad3eaeb5c6be88be4a47859a09cbc61a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3eaeb5c6be88be4a47859a09cbc61a7">&#9670;&#160;</a></span>sqsh__map_manager_block_count()</h2>
 
@@ -598,6 +788,24 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b962a2b787add22750e2df86d5f1313" name="a0b962a2b787add22750e2df86d5f1313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b962a2b787add22750e2df86d5f1313">&#9670;&#160;</a></span>sqsh__map_slice_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sqsh__map_slice_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshMapSlice.html">SqshMapSlice</a> *&#160;</td>
+          <td class="paramname"><em>mapping</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
