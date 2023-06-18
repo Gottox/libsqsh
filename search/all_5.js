@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['libsqsh_0',['libsqsh',['../index.html',1,'']]]
+  ['init_0',['init',['../structSqshExtractorImpl.html#a1726cd9a4b638dafae83551f42adb50b',1,'SqshExtractorImpl']]]
 ];
