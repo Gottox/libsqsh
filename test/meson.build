@@ -8,6 +8,7 @@ sqsh_test = [
     'directory/directory_iterator.c',
     'extract/extract.c',
     'extract/extract_manager.c',
+    'extract/lzma.c',
     'file/file_iterator.c',
     'file/file_reader.c',
     'fuzzer_repro.c',
