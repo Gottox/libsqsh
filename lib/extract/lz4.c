@@ -38,49 +38,51 @@
 #ifdef CONFIG_LZ4
 
 #	include <lz4.h>
-
-struct SqshLz4Context {
-	LZ4_streamDecode_t *stream;
-	uint8_t *target;
-	size_t target_size;
-	sqsh_index_t offset;
-};
+#	include <cextras/collection.h>
 
 SQSH_STATIC_ASSERT(
 		sizeof(sqsh__extractor_context_t) >= sizeof(LZ4_streamDecode_t));
 
 static int
 sqsh_lz4_init(void *context, uint8_t *target, size_t target_size) {
-	struct SqshLz4Context *ctx = context;
-	ctx->stream = LZ4_createStreamDecode();
-	ctx->target = target;
-	ctx->target_size = target_size;
-	ctx->offset = 0;
-
-	return 0;
+	(void)target;
+	(void)target_size;
+	int rv = cx_buffer_init(context);
+	if (rv < 0) {
+		goto out;
+	}
+	rv = cx_buffer_add_capacity(context, NULL, target_size);
+	if (rv < 0) {
+		goto out;
+	}
+out:
+	return rv;
 }
 
 static int
 sqsh_lz4_decompress(
 		void *context, const uint8_t *compressed,
 		const size_t compressed_size) {
-	struct SqshLz4Context *ctx = context;
-
-	int size = LZ4_decompress_safe_continue(
-			ctx->stream, (const char *)compressed, (char *)ctx->target,
-			compressed_size, ctx->target_size - ctx->offset);
-	ctx->offset += size;
-	return 0;
+	return cx_buffer_append(context, compressed, compressed_size);
 }
 
 static int
 sqsh_lz4_finish(void *context, uint8_t *target, size_t *target_size) {
-	(void)target;
-	(void)target_size;
-	struct SqshLz4Context *ctx = context;
-	LZ4_freeStreamDecode(ctx->stream);
-	*target_size = ctx->offset;
-	return 0;
+	int rv = 0;
+	const uint8_t *data = cx_buffer_data(context);
+	size_t data_size = cx_buffer_size(context);
+
+	int lz4_ret = LZ4_decompress_safe(
+			(const char *)data, (char *)target, data_size, *target_size);
+	if (lz4_ret < 0) {
+		rv = -SQSH_ERROR_COMPRESSION_DECOMPRESS;
+		goto out;
+	}
+	*target_size = lz4_ret;
+
+out:
+	cx_buffer_cleanup(context);
+	return rv;
 }
 
 static const struct SqshExtractorImpl impl_lz4 = {
