@@ -68,7 +68,8 @@ decompress_test_split(
 		size_t input_size) {
 	int rv;
 	uint8_t output[16];
-	size_t output_size = sizeof(output);
+	const size_t output_size = sizeof(output);
+
 	sqsh__extractor_context_t context = {0};
 
 	if (impl == NULL) {
@@ -77,6 +78,7 @@ decompress_test_split(
 	}
 
 	for (sqsh_index_t offset = 1; offset < input_size - 1; offset++) {
+		size_t result_size = ~0;
 		memset(output, 0, sizeof(output));
 
 		rv = impl->init(context, output, output_size);
@@ -85,10 +87,10 @@ decompress_test_split(
 		assert(rv >= 0);
 		rv = impl->extract(context, &input[offset], input_size - offset);
 		assert(rv >= 0);
-		rv = impl->finish(context, output, &output_size);
+		rv = impl->finish(context, output, &result_size);
 		assert(rv >= 0);
 
-		assert(output_size == 4);
+		assert(result_size == 4);
 		assert(memcmp(output, "abcd", 4) == 0);
 	}
 }
@@ -187,7 +189,7 @@ decompress_zstd_split(void) {
 
 DECLARE_TESTS
 TEST(decompress_lzma)
-NO_TEST(decompress_lzma_split)
+TEST(decompress_lzma_split)
 TEST(decompress_xz)
 TEST(decompress_xz_split)
 TEST(decompress_lz4)
