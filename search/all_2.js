@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['extract_0',['extract',['../structSqshExtractorImpl.html#afecdc80bd7698c841ada3f7b9463d487',1,'SqshExtractorImpl']]]
+  ['data_0',['data',['../structSqshReaderIteratorImpl.html#aab09809213756676db9299c68d47f358',1,'SqshReaderIteratorImpl']]]
 ];

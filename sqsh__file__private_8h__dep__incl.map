@@ -1,4 +1,10 @@
-<map id="sqsh_file_private.h" name="sqsh_file_private.h">
-<area shape="rect" id="node1" title=" " alt="" coords="20,5,232,1312819"/>
-<area shape="rect" id="node2" href="$sqsh__archive__private_8h.html" title=" " alt="" coords="5,1312867,247,2855640"/>
+<map id="include/sqsh_file_private.h" name="include/sqsh_file_private.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="174,5,368,33"/>
+<area shape="rect" id="Node000002" href="$sqsh__archive__private_8h.html" title=" " alt="" coords="5,81,163,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,42,135,83,133,78,226,37"/>
+<area shape="rect" id="Node000003" href="$sqsh__directory__private_8h.html" title=" " alt="" coords="187,81,354,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="273,48,273,80,268,80,268,48"/>
+<area shape="rect" id="Node000004" href="$sqsh__tree__private_8h.html" title=" " alt="" coords="231,174,431,201"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="322,38,348,55,369,80,375,106,369,132,357,156,344,175,339,172,352,153,364,130,370,106,364,82,345,59,319,42"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="297,136,323,171,319,175,293,139"/>
 </map>

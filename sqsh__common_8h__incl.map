@@ -1,6 +1,9 @@
-<map id="sqsh_common.h" name="sqsh_common.h">
-<area shape="rect" id="node1" title=" " alt="" coords="134,5,285,30"/>
-<area shape="rect" id="node2" title=" " alt="" coords="23,197102,134,197126"/>
-<area shape="rect" id="node3" title=" " alt="" coords="159,197086,260,197142"/>
-<area shape="rect" id="node4" title=" " alt="" coords="284,78,385,394150"/>
+<map id="include/sqsh_common.h" name="include/sqsh_common.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="58,5,237,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,87,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,36,77,74,74,70,128,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="111,81,184,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,34,150,66,145,66,145,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="208,81,279,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="166,31,216,70,213,74,163,36"/>
 </map>

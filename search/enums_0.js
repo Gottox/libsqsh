@@ -1,8 +1,8 @@
 var searchData=
 [
   ['sqsherror_0',['SqshError',['../sqsh__error_8h.html#ac92b5f178c51aef07c08a63847b6d3cc',1,'sqsh_error.h']]],
-  ['sqshgzipstrategies_1',['SqshGzipStrategies',['../sqsh__archive_8h.html#a485fd0fb6de33ee127ffda8f1468d12a',1,'sqsh_archive.h']]],
-  ['sqshinodetype_2',['SqshInodeType',['../sqsh__inode_8h.html#a1ef4e3855eaa4bf23ed5f3a1b5b09c57',1,'sqsh_inode.h']]],
+  ['sqshfiletype_1',['SqshFileType',['../sqsh__file_8h.html#a2de8721a97ccc84c724620a8e1af56e8',1,'sqsh_file.h']]],
+  ['sqshgzipstrategies_2',['SqshGzipStrategies',['../sqsh__archive_8h.html#a485fd0fb6de33ee127ffda8f1468d12a',1,'sqsh_archive.h']]],
   ['sqshlz4flags_3',['SqshLz4Flags',['../sqsh__archive_8h.html#ace71a8023ba184910ef399659ae581ae',1,'sqsh_archive.h']]],
   ['sqshlzoalgorithm_4',['SqshLzoAlgorithm',['../sqsh__archive_8h.html#a088ced7149f379b9520210b602867c03',1,'sqsh_archive.h']]],
   ['sqshsuperblockcompressionid_5',['SqshSuperblockCompressionId',['../sqsh__archive_8h.html#ae0979c00d3e768637a9a10f31b95594a',1,'sqsh_archive.h']]],

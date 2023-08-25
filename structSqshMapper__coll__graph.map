@@ -1,6 +1,9 @@
 <map id="SqshMapper" name="SqshMapper">
-<area shape="rect" id="node1" title="The mapper that is used to map chunks of the archive into memory." alt="" coords="276,275581,397,275606"/>
-<area shape="rect" id="node2" href="$structSqshMmapMapper.html" title="The mmap mapper." alt="" coords="60,126,221,137653"/>
-<area shape="rect" id="node3" href="$structSqshStaticMapper.html" title="The static mapper." alt="" coords="246,5,427,137773"/>
-<area shape="rect" id="node4" href="$structSqshCurlMapper.html" title="The curl mapper." alt="" coords="452,19,613,137759"/>
+<area shape="rect" id="Node000001" title="The mapper that is used to map chunks of the archive into memory." alt="" coords="190,98,291,126"/>
+<area shape="rect" id="Node000002" href="$structSqshMmapMapper.html" title="The mmap mapper." alt="" coords="5,5,148,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,38,218,95,215,100,112,43"/>
+<area shape="rect" id="Node000003" href="$structSqshStaticMapper.html" title="The static mapper." alt="" coords="171,5,310,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="243,48,243,98,238,98,238,48"/>
+<area shape="rect" id="Node000004" href="$structSqshCurlMapper.html" title="The curl mapper." alt="" coords="334,5,462,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="364,43,265,100,262,95,361,38"/>
 </map>

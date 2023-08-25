@@ -1,0 +1,15 @@
+<map id="include/sqsh_reader_private.h" name="include/sqsh_reader_private.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="233,5,384,50"/>
+<area shape="rect" id="Node000002" href="$sqsh__common_8h.html" title=" " alt="" coords="84,98,211,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,53,187,93,185,89,265,48"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="235,98,383,126"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="311,50,311,83,306,83,306,50"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="406,98,494,126"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="348,48,416,88,414,93,345,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,174,87,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,128,77,167,74,163,128,124"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="111,174,184,201"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="150,126,150,159,145,159,145,126"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="208,174,279,201"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="166,124,216,162,213,167,163,128"/>
+</map>
