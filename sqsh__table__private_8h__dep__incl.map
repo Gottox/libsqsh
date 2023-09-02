@@ -1,7 +1,5 @@
 <map id="include/sqsh_table_private.h" name="include/sqsh_table_private.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="13,5,155,50"/>
-<area shape="rect" id="Node000002" href="$sqsh__xattr__private_8h.html" title=" " alt="" coords="14,98,154,143"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,65,87,98,81,98,81,65"/>
-<area shape="rect" id="Node000003" href="$sqsh__archive__private_8h.html" title=" " alt="" coords="5,191,163,235"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,157,87,190,81,190,81,157"/>
+<area shape="rect" id="node1" title=" " alt="" coords="15,5,217,44"/>
+<area shape="rect" id="node2" href="$sqsh__xattr__private_8h.html" title=" " alt="" coords="15,92,217,3246450"/>
+<area shape="rect" id="node3" href="$sqsh__archive__private_8h.html" title=" " alt="" coords="5,3246498,227,6492840"/>
 </map>

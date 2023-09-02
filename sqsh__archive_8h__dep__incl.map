@@ -1,17 +1,12 @@
 <map id="include/sqsh_archive.h" name="include/sqsh_archive.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="430,5,599,33"/>
-<area shape="rect" id="Node000002" href="$sqsh_8h.html" title=" " alt="" coords="377,90,492,117"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="493,46,449,91,445,87,489,42"/>
-<area shape="rect" id="Node000008" href="$sqsh__archive__private_8h.html" title=" " alt="" coords="516,81,673,126"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="539,42,575,78,571,82,535,46"/>
-<area shape="rect" id="Node000003" href="$list__dir_8c.html" title=" " alt="" coords="5,174,149,201"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="363,124,135,176,134,171,362,118"/>
-<area shape="rect" id="Node000004" href="$list__dir__ll_8c.html" title=" " alt="" coords="173,174,333,201"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="393,126,283,176,281,171,391,121"/>
-<area shape="rect" id="Node000005" href="$read__file_8c.html" title=" " alt="" coords="356,174,513,201"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="437,132,437,173,432,173,432,132"/>
-<area shape="rect" id="Node000006" href="$read__file__ll_8c.html" title=" " alt="" coords="537,174,708,201"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="479,121,593,171,591,176,477,126"/>
-<area shape="rect" id="Node000007" href="$readme__example_8c.html" title=" " alt="" coords="733,174,947,201"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="489,119,504,123,633,150,751,170,750,176,632,155,503,128,488,124"/>
+<area shape="rect" id="node1" title=" " alt="" coords="912,5,1153,30"/>
+<area shape="rect" id="node2" href="$sqsh_8h.html" title=" " alt="" coords="844,78,1005,472416"/>
+<area shape="rect" id="node10" href="$sqsh__archive__private_8h.html" title=" " alt="" coords="1030,236212,1251,236282"/>
+<area shape="rect" id="node3" href="$list__dir_8c.html" title=" " alt="" coords="23,708538,234,708563"/>
+<area shape="rect" id="node4" href="$list__dir__ll_8c.html" title=" " alt="" coords="258,472465,500,944636"/>
+<area shape="rect" id="node5" href="$list__xattrs_8c.html" title=" " alt="" coords="524,472464,765,944636"/>
+<area shape="rect" id="node6" href="$list__xattrs__ll_8c.html" title=" " alt="" coords="789,708533,1060,708568"/>
+<area shape="rect" id="node7" href="$read__file_8c.html" title=" " alt="" coords="1084,708538,1306,708563"/>
+<area shape="rect" id="node8" href="$read__file__ll_8c.html" title=" " alt="" coords="1329,708538,1581,708563"/>
+<area shape="rect" id="node9" href="$readme__example_8c.html" title=" " alt="" coords="1605,708538,1876,708563"/>
 </map>

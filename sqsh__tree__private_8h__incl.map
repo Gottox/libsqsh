@@ -1,53 +1,21 @@
 <map id="include/sqsh_tree_private.h" name="include/sqsh_tree_private.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="377,5,577,33"/>
-<area shape="rect" id="Node000002" href="$sqsh__directory__private_8h.html" title=" " alt="" coords="386,81,568,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="480,34,480,66,474,66,474,34"/>
-<area shape="rect" id="Node000009" href="$sqsh__file__private_8h.html" title=" " alt="" coords="277,157,421,184"/>
-<area shape="poly" id="edge29_Node000001_Node000009" title=" " alt="" coords="443,36,407,55,376,83,361,112,354,143,349,142,356,110,372,79,404,50,440,31"/>
-<area shape="rect" id="Node000019" href="$sqsh__tree_8h.html" title=" " alt="" coords="656,157,752,184"/>
-<area shape="poly" id="edge30_Node000001_Node000019" title=" " alt="" coords="502,31,581,79,676,145,673,150,578,83,499,36"/>
-<area shape="rect" id="Node000003" href="$sqsh__directory_8h.html" title=" " alt="" coords="505,157,631,184"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="495,107,542,145,539,149,492,111"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="455,112,385,152,383,147,453,107"/>
-<area shape="rect" id="Node000018" href="$sqsh__metablock__private_8h.html" title=" " alt="" coords="372,232,564,260"/>
-<area shape="poly" id="edge28_Node000002_Node000018" title=" " alt="" coords="479,109,472,217,467,217,474,109"/>
-<area shape="rect" id="Node000004" href="$sqsh__file_8h.html" title=" " alt="" coords="593,232,684,260"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="582,183,618,220,614,223,578,187"/>
-<area shape="rect" id="Node000005" href="$sqsh__common_8h.html" title=" " alt="" coords="611,459,738,487"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="643,260,673,444,667,445,638,261"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="532,535,614,563"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="658,490,604,528,601,524,655,485"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="638,535,711,563"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="677,488,677,520,672,520,672,488"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="735,535,806,563"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="693,485,743,524,740,528,690,490"/>
-<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="402,182,579,227,578,232,400,188"/>
-<area shape="rect" id="Node000010" href="$sqsh__extract__private_8h.html" title=" " alt="" coords="383,308,552,336"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="350,184,350,220,353,240,362,258,385,282,413,299,410,304,381,286,357,262,348,242,344,221,345,184"/>
-<area shape="rect" id="Node000014" href="$sqsh__mapper__private_8h.html" title=" " alt="" coords="185,308,358,336"/>
-<area shape="poly" id="edge15_Node000009_Node000014" title=" " alt="" coords="344,186,318,234,287,296,282,294,313,231,339,183"/>
-<area shape="rect" id="Node000016" href="$sqsh__reader__private_8h.html" title=" " alt="" coords="37,384,202,411"/>
-<area shape="poly" id="edge27_Node000009_Node000016" title=" " alt="" coords="329,187,256,237,214,271,175,310,152,341,134,372,130,369,148,338,171,306,211,267,253,232,326,183"/>
-<area shape="poly" id="edge24_Node000009_Node000018" title=" " alt="" coords="372,183,436,222,433,227,369,187"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="166,459,314,487"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="465,337,445,374,429,395,411,413,367,440,321,457,319,452,365,435,407,409,425,392,440,372,460,335"/>
-<area shape="rect" id="Node000012" href="$sqsh__thread__private_8h.html" title=" " alt="" coords="472,384,637,411"/>
-<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="485,334,530,372,526,376,481,338"/>
-<area shape="poly" id="edge14_Node000012_Node000005" title=" " alt="" coords="577,410,642,449,640,454,574,414"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="503,459,587,487"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="555,412,551,445,546,444,550,412"/>
-<area shape="poly" id="edge22_Node000014_Node000011" title=" " alt="" coords="272,336,248,445,243,444,266,335"/>
-<area shape="poly" id="edge21_Node000014_Node000012" title=" " alt="" coords="323,334,491,377,489,382,322,339"/>
-<area shape="rect" id="Node000015" href="$sqsh__mapper_8h.html" title=" " alt="" coords="277,384,397,411"/>
-<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="285,334,318,371,314,374,281,338"/>
-<area shape="poly" id="edge17_Node000014_Node000016" title=" " alt="" coords="246,339,161,379,159,374,243,334"/>
-<area shape="rect" id="Node000017" title=" " alt="" coords="5,459,93,487"/>
-<area shape="poly" id="edge23_Node000014_Node000017" title=" " alt="" coords="185,336,89,355,51,369,27,385,21,399,21,415,34,446,29,448,16,416,16,398,23,382,48,364,88,350,184,331"/>
-<area shape="poly" id="edge18_Node000016_Node000005" title=" " alt="" coords="203,406,596,456,596,462,202,411"/>
-<area shape="poly" id="edge19_Node000016_Node000011" title=" " alt="" coords="143,410,208,449,205,454,140,414"/>
-<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="109,414,73,450,70,447,105,410"/>
-<area shape="poly" id="edge25_Node000018_Node000010" title=" " alt="" coords="470,261,470,293,465,293,465,261"/>
-<area shape="poly" id="edge26_Node000018_Node000014" title=" " alt="" coords="434,263,321,305,319,300,432,258"/>
-<area shape="poly" id="edge32_Node000019_Node000004" title=" " alt="" coords="694,187,661,223,657,219,690,183"/>
-<area shape="poly" id="edge31_Node000019_Node000005" title=" " alt="" coords="705,185,685,412,681,445,676,444,680,411,700,185"/>
+<area shape="rect" id="node1" title=" " alt="" coords="444,5,736,30"/>
+<area shape="rect" id="node2" href="$sqsh__directory__private_8h.html" title=" " alt="" coords="459,78,721,103"/>
+<area shape="rect" id="node9" href="$sqsh__file__private_8h.html" title=" " alt="" coords="316,151,528,175"/>
+<area shape="rect" id="node19" href="$sqsh__tree_8h.html" title=" " alt="" coords="819,151,950,175"/>
+<area shape="rect" id="node3" href="$sqsh__directory_8h.html" title=" " alt="" coords="614,151,795,175"/>
+<area shape="rect" id="node18" href="$sqsh__metablock__private_8h.html" title=" " alt="" coords="446,239,707,264"/>
+<area shape="rect" id="node4" href="$sqsh__file_8h.html" title=" " alt="" coords="732,223,864,280"/>
+<area shape="rect" id="node5" href="$sqsh__common_8h.html" title=" " alt="" coords="774,488,926,513"/>
+<area shape="rect" id="node6" title=" " alt="" coords="664,582,775,607"/>
+<area shape="rect" id="node7" title=" " alt="" coords="799,566,901,623"/>
+<area shape="rect" id="node8" title=" " alt="" coords="925,582,1026,607"/>
+<area shape="rect" id="node10" href="$sqsh__extract__private_8h.html" title=" " alt="" coords="456,328,697,353"/>
+<area shape="rect" id="node14" href="$sqsh__mapper__private_8h.html" title=" " alt="" coords="201,328,432,353"/>
+<area shape="rect" id="node16" href="$sqsh__reader__private_8h.html" title=" " alt="" coords="48,401,279,435"/>
+<area shape="rect" id="node11" title=" " alt="" coords="206,488,427,513"/>
+<area shape="rect" id="node12" href="$sqsh__thread__private_8h.html" title=" " alt="" coords="581,406,812,430"/>
+<area shape="rect" id="node13" title=" " alt="" coords="638,488,750,513"/>
+<area shape="rect" id="node15" href="$sqsh__mapper_8h.html" title=" " alt="" coords="354,406,506,430"/>
+<area shape="rect" id="node17" title=" " alt="" coords="5,483,127,518"/>
 </map>
