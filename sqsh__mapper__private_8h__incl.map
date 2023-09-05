@@ -1,13 +1,13 @@
 <map id="include/sqsh_mapper_private.h" name="include/sqsh_mapper_private.h">
-<area shape="rect" id="node1" title=" " alt="" coords="345,5,556,44"/>
-<area shape="rect" id="node2" href="$sqsh__mapper_8h.html" title=" " alt="" coords="5,92,157,117"/>
-<area shape="rect" id="node3" href="$sqsh__reader__private_8h.html" title=" " alt="" coords="488,92,719,117"/>
-<area shape="rect" id="node8" title=" " alt="" coords="450,979234,672,979258"/>
-<area shape="rect" id="node9" title=" " alt="" coords="696,165,818,1958327"/>
-<area shape="rect" id="node10" href="$sqsh__thread__private_8h.html" title=" " alt="" coords="181,92,413,117"/>
-<area shape="rect" id="node4" href="$sqsh__common_8h.html" title=" " alt="" coords="275,979234,426,979258"/>
-<area shape="rect" id="node5" title=" " alt="" coords="164,2937518,275,2937543"/>
-<area shape="rect" id="node6" title=" " alt="" coords="300,1958375,401,3916685"/>
-<area shape="rect" id="node7" title=" " alt="" coords="425,2937513,526,2937548"/>
-<area shape="rect" id="node11" title=" " alt="" coords="139,979234,250,979258"/>
+<area shape="rect" id="node1" title=" " alt="" coords="345,5,556,761491"/>
+<area shape="rect" id="node2" href="$sqsh__mapper_8h.html" title=" " alt="" coords="5,761539,157,761564"/>
+<area shape="rect" id="node3" href="$sqsh__reader__private_8h.html" title=" " alt="" coords="488,761539,719,761564"/>
+<area shape="rect" id="node8" title=" " alt="" coords="450,761612,672,761637"/>
+<area shape="rect" id="node9" title=" " alt="" coords="696,761612,818,761637"/>
+<area shape="rect" id="node10" href="$sqsh__thread__private_8h.html" title=" " alt="" coords="181,761539,413,761564"/>
+<area shape="rect" id="node4" href="$sqsh__common_8h.html" title=" " alt="" coords="275,761612,426,761637"/>
+<area shape="rect" id="node5" title=" " alt="" coords="164,761685,275,761709"/>
+<area shape="rect" id="node6" title=" " alt="" coords="300,761685,401,761709"/>
+<area shape="rect" id="node7" title=" " alt="" coords="425,761685,526,761709"/>
+<area shape="rect" id="node11" title=" " alt="" coords="139,761612,250,761637"/>
 </map>
