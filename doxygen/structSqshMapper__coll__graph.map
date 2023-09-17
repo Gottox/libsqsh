@@ -1,6 +1,0 @@
-<map id="SqshMapper" name="SqshMapper">
-<area shape="rect" id="node1" title="The mapper that is used to map chunks of the archive into memory." alt="" coords="221,124,343,149"/>
-<area shape="rect" id="node2" href="$structSqshMmapMapper.html" title="The mmap mapper." alt="" coords="5,5,167,30"/>
-<area shape="rect" id="node3" href="$structSqshStaticMapper.html" title="The static mapper." alt="" coords="191,5,373,30"/>
-<area shape="rect" id="node4" href="$structSqshCurlMapper.html" title="The curl mapper." alt="" coords="397,5,559,30"/>
-</map>
