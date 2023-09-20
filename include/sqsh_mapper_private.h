@@ -63,6 +63,7 @@ struct SqshCurlMapper {
 	uint64_t expected_time;
 	void *handle;
 	uint8_t *header_cache;
+	sqsh_index_t archive_offset;
 	sqsh__mutex_t lock;
 };
 
@@ -126,7 +127,9 @@ struct SqshMemoryMapperImpl {
 	 * @privatesection
 	 */
 	size_t block_size_hint;
-	int (*init)(struct SqshMapper *mapper, const void *input, size_t *size);
+	int (*init)(
+			struct SqshMapper *mapper, const void *input, size_t *size,
+			const struct SqshConfig *config);
 	int (*map)(struct SqshMapSlice *map);
 	const uint8_t *(*map_data)(const struct SqshMapSlice *mapping);
 	int (*unmap)(struct SqshMapSlice *mapping);

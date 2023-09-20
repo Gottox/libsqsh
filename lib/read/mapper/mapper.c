@@ -55,7 +55,7 @@ sqsh__mapper_init(
 		mapper->block_size = mapper->impl->block_size_hint;
 	}
 
-	rv = mapper->impl->init(mapper, source, &size);
+	rv = mapper->impl->init(mapper, source, &size, config);
 	if (rv < 0) {
 		return rv;
 	}

@@ -35,8 +35,10 @@
 
 static int
 sqsh_mapper_static_mem_init(
-		struct SqshMapper *mapper, const void *input, size_t *size) {
+		struct SqshMapper *mapper, const void *input, size_t *size,
+		const struct SqshConfig *config) {
 	(void)size;
+	(void)config;
 	mapper->data.sm.data = input;
 	return 0;
 }

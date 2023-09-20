@@ -58,7 +58,9 @@ mmap_page_size(const struct SqshMapSlice *mapping) {
 
 static int
 sqsh_mapper_mmap_init(
-		struct SqshMapper *mapper, const void *input, size_t *size) {
+		struct SqshMapper *mapper, const void *input, size_t *size,
+		const struct SqshConfig *config) {
+	(void)config;
 	(void)size;
 	int rv = 0;
 	int fd = -1;

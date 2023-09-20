@@ -40,6 +40,7 @@
 
 #	include "../../include/sqsh_data_private.h"
 #	include "../../include/sqsh_error.h"
+#	include "../../include/sqsh_archive.h"
 #	include "../utils/utils.h"
 
 #	include <curl/curl.h>
@@ -202,9 +203,12 @@ out:
 
 static int
 sqsh_mapper_curl_init(
-		struct SqshMapper *mapper, const void *input, size_t *size) {
+		struct SqshMapper *mapper, const void *input, size_t *size,
+		const struct SqshConfig *config) {
 	(void)size;
 	int rv = 0;
+	sqsh_index_t offset = config->archive_offset;
+	mapper->data.cl.archive_offset = offset;
 	curl_global_init(CURL_GLOBAL_ALL);
 
 	mapper->data.cl.url = strdup(input);
@@ -220,7 +224,7 @@ sqsh_mapper_curl_init(
 
 	uint64_t size64 = *size;
 	rv = curl_download(
-			handle, 0, block_size, &mapper->data.cl.header_cache, &size64,
+			handle, offset, block_size, &mapper->data.cl.header_cache, &size64,
 			&mapper->data.cl.expected_time);
 	if (rv < 0) {
 		goto out;
@@ -242,13 +246,15 @@ sqsh_mapper_curl_map(struct SqshMapSlice *mapping) {
 	int rv = 0;
 	uint64_t file_size = 0;
 	uint64_t file_time = 0;
+	sqsh_index_t archive_offset = mapping->mapper->data.cl.archive_offset;
 
 	sqsh__mutex_t *lock = &mapping->mapper->data.cl.lock;
 	rv = sqsh__mutex_lock(lock);
 	if (rv < 0) {
 		goto out;
 	}
-	if (offset == 0 && mapping->mapper->data.cl.header_cache != NULL) {
+	if (offset == archive_offset &&
+		mapping->mapper->data.cl.header_cache != NULL) {
 		mapping->data = mapping->mapper->data.cl.header_cache;
 		mapping->mapper->data.cl.header_cache = NULL;
 	} else {
