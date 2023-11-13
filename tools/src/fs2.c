@@ -50,7 +50,6 @@
 
 struct Context {
 	struct SqshArchive *archive;
-	struct fuse *fuse;
 	struct fuse_chan *fuse_ch;
 };
 
@@ -391,7 +390,7 @@ parse_args(struct fuse_args *args) {
 }
 
 static int
-init_context(struct fuse_args *args) {
+init_context(struct fuse_args *args, struct fuse **fuse) {
 	int rv = 0;
 
 	////////////////////////////////////////
@@ -409,9 +408,8 @@ init_context(struct fuse_args *args) {
 		return -1;
 	}
 
-	context.fuse =
-			fuse_new(context.fuse_ch, args, &fs_oper, sizeof(fs_oper), NULL);
-	if (context.fuse == NULL) {
+	*fuse = fuse_new(context.fuse_ch, args, &fs_oper, sizeof(fs_oper), NULL);
+	if (*fuse == NULL) {
 		return -1;
 	}
 
@@ -420,7 +418,7 @@ init_context(struct fuse_args *args) {
 		return -1;
 	}
 
-	rv = fuse_set_signal_handlers(fuse_get_session(context.fuse));
+	rv = fuse_set_signal_handlers(fuse_get_session(*fuse));
 	if (rv < 0) {
 		return rv;
 	}
@@ -429,15 +427,15 @@ init_context(struct fuse_args *args) {
 }
 
 static void
-cleanup_fuse(void) {
-	if (context.fuse) {
-		fuse_remove_signal_handlers(fuse_get_session(context.fuse));
+cleanup_fuse(struct fuse *fuse) {
+	if (fuse) {
+		fuse_remove_signal_handlers(fuse_get_session(fuse));
 	}
 	if (context.fuse_ch) {
 		fuse_unmount(options.mountpoint, context.fuse_ch);
 	}
-	if (context.fuse) {
-		fuse_destroy(context.fuse);
+	if (fuse) {
+		fuse_destroy(fuse);
 	}
 }
 
@@ -445,26 +443,27 @@ int
 main(int argc, char *argv[]) {
 	int rv;
 	struct fuse_args args = FUSE_ARGS_INIT(argc, argv);
+	struct fuse *fuse = NULL;
 
 	rv = parse_args(&args);
 	if (rv < 0) {
 		goto out;
 	}
 
-	rv = init_context(&args);
+	rv = init_context(&args, &fuse);
 	if (rv < 0) {
 		goto out;
 	}
 
 	if (options.multithreaded == 0) {
-		rv = fuse_loop(context.fuse);
+		rv = fuse_loop(fuse);
 	} else {
-		rv = fuse_loop_mt(context.fuse);
+		rv = fuse_loop_mt(fuse);
 	}
 
 out:
 	sqsh_archive_close(context.archive);
-	cleanup_fuse();
+	cleanup_fuse(fuse);
 
 	fuse_opt_free_args(&args);
 	free(options.mountpoint);

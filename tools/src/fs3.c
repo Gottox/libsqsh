@@ -45,7 +45,6 @@
 
 struct Context {
 	struct SqshArchive *archive;
-	struct SqshInodeMap *inode_map;
 };
 
 struct FsDirHandle {
@@ -61,15 +60,23 @@ struct SqshfsOptions options = {0};
 
 static uint64_t
 fs_common_context_inode_ref(fuse_ino_t fuse_inode, int *err) {
+	int rv = 0;
 	uint64_t sqsh_inode = fs_common_inode_sqsh_from_ino(fuse_inode);
 	struct SqshArchive *archive = context.archive;
+	struct SqshInodeMap *inode_map;
 	const struct SqshSuperblock *superblock = sqsh_archive_superblock(archive);
 
 	if (fuse_inode == FUSE_ROOT_ID) {
 		return sqsh_superblock_inode_root_ref(superblock);
 	}
 
-	return sqsh_inode_map_get2(context.inode_map, sqsh_inode, err);
+	rv = sqsh_archive_inode_map(archive, &inode_map);
+	if (rv < 0) {
+		*err = rv;
+		return 0;
+	}
+
+	return sqsh_inode_map_get2(inode_map, sqsh_inode, err);
 }
 
 static struct FsDirHandle *
@@ -150,12 +157,6 @@ fs_lookup(fuse_req_t req, fuse_ino_t parent, const char *name) {
 	uint32_t inode_number = sqsh_file_inode(file);
 	if (inode_number > sqsh_superblock_inode_count(superblock)) {
 		fuse_reply_err(req, EIO);
-		goto out;
-	}
-
-	rv = sqsh_inode_map_set2(context.inode_map, inode_number, inode_ref);
-	if (rv < 0) {
-		fuse_reply_err(req, -fs_common_map_err(rv));
 		goto out;
 	}
 
@@ -537,13 +538,6 @@ main(int argc, char *argv[]) {
 
 	fuse_session = fuse_session_new(&args, &fs_oper, sizeof(fs_oper), NULL);
 	if (fuse_session == NULL) {
-		goto out;
-	}
-
-	rv = sqsh_archive_inode_map(context.archive, &context.inode_map);
-	if (rv < 0) {
-		sqsh_perror(rv, "sqsh_archive_inode_map");
-		rv = EXIT_FAILURE;
 		goto out;
 	}
 
