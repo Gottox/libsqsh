@@ -1,11 +1,11 @@
 <map id="include/sqsh_posix.h" name="include/sqsh_posix.h">
-<area shape="rect" id="node1" title=" " alt="" coords="796,5,1018,30"/>
-<area shape="rect" id="node2" href="$sqsh_8h.html" title=" " alt="" coords="826,78,988,103"/>
-<area shape="rect" id="node3" href="$list__dir_8c.html" title=" " alt="" coords="5,594832,217,594857"/>
-<area shape="rect" id="node4" href="$list__dir__ll_8c.html" title=" " alt="" coords="241,152,482,1189538"/>
-<area shape="rect" id="node5" href="$list__xattrs_8c.html" title=" " alt="" coords="506,151,748,1189539"/>
-<area shape="rect" id="node6" href="$list__xattrs__ll_8c.html" title=" " alt="" coords="771,594832,1043,594857"/>
-<area shape="rect" id="node7" href="$read__file_8c.html" title=" " alt="" coords="1067,594832,1288,594857"/>
-<area shape="rect" id="node8" href="$read__file__ll_8c.html" title=" " alt="" coords="1312,594817,1563,594873"/>
-<area shape="rect" id="node9" href="$readme__example_8c.html" title=" " alt="" coords="1587,594827,1859,594862"/>
+<area shape="rect" id="node1" title=" " alt="" coords="796,5,1018,1232037"/>
+<area shape="rect" id="node2" href="$sqsh_8h.html" title=" " alt="" coords="826,1232085,988,2464064"/>
+<area shape="rect" id="node3" href="$list__dir_8c.html" title=" " alt="" coords="5,2464117,217,2464142"/>
+<area shape="rect" id="node4" href="$list__dir__ll_8c.html" title=" " alt="" coords="241,2464112,482,2464147"/>
+<area shape="rect" id="node5" href="$list__xattrs_8c.html" title=" " alt="" coords="506,2464117,748,2464142"/>
+<area shape="rect" id="node6" href="$list__xattrs__ll_8c.html" title=" " alt="" coords="771,2464117,1043,2464142"/>
+<area shape="rect" id="node7" href="$read__file_8c.html" title=" " alt="" coords="1067,2464117,1288,2464142"/>
+<area shape="rect" id="node8" href="$read__file__ll_8c.html" title=" " alt="" coords="1312,2464117,1563,2464142"/>
+<area shape="rect" id="node9" href="$readme__example_8c.html" title=" " alt="" coords="1587,2464117,1859,2464142"/>
 </map>
