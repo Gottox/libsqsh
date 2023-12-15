@@ -1,12 +1,13 @@
 <map id="include/sqsh_archive.h" name="include/sqsh_archive.h">
-<area shape="rect" id="node1" title=" " alt="" coords="898,5,1139,30"/>
-<area shape="rect" id="node2" href="$sqsh_8h.html" title=" " alt="" coords="830,78,991,972047"/>
-<area shape="rect" id="node10" href="$sqsh__archive__private_8h.html" title=" " alt="" coords="1016,486027,1237,486098"/>
-<area shape="rect" id="node3" href="$list__dir_8c.html" title=" " alt="" coords="9,1458151,220,1458176"/>
-<area shape="rect" id="node4" href="$list__dir__ll_8c.html" title=" " alt="" coords="245,972095,486,1944232"/>
-<area shape="rect" id="node5" href="$list__xattrs_8c.html" title=" " alt="" coords="510,972096,751,1944231"/>
-<area shape="rect" id="node6" href="$list__xattrs__ll_8c.html" title=" " alt="" coords="775,1458146,1046,1458181"/>
-<area shape="rect" id="node7" href="$read__file_8c.html" title=" " alt="" coords="1071,1458151,1292,1458176"/>
-<area shape="rect" id="node8" href="$read__file__ll_8c.html" title=" " alt="" coords="1316,1458151,1567,1458176"/>
-<area shape="rect" id="node9" href="$readme__example_8c.html" title=" " alt="" coords="1591,1458151,1862,1458176"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1029,5,1270,30"/>
+<area shape="rect" id="node2" href="$sqsh_8h.html" title=" " alt="" coords="961,239,1122,1147915"/>
+<area shape="rect" id="node11" href="$sqsh__archive__private_8h.html" title=" " alt="" coords="1147,78,1368,1148077"/>
+<area shape="rect" id="node3" href="$list__dir_8c.html" title=" " alt="" coords="5,1148125,217,2295889"/>
+<area shape="rect" id="node4" href="$list__dir__ll_8c.html" title=" " alt="" coords="241,1721994,482,1722019"/>
+<area shape="rect" id="node5" href="$list__xattrs_8c.html" title=" " alt="" coords="506,1721994,748,1722019"/>
+<area shape="rect" id="node6" href="$list__xattrs__ll_8c.html" title=" " alt="" coords="771,1721989,1043,1722024"/>
+<area shape="rect" id="node7" href="$read__file_8c.html" title=" " alt="" coords="1067,1721994,1288,1722019"/>
+<area shape="rect" id="node8" href="$read__file__ll_8c.html" title=" " alt="" coords="1312,1721994,1563,1722019"/>
+<area shape="rect" id="node9" href="$readme__example_8c.html" title=" " alt="" coords="1587,1721994,1859,1722019"/>
+<area shape="rect" id="node10" href="$traverse__dir__ll_8c.html" title=" " alt="" coords="1882,1721978,2164,1722035"/>
 </map>

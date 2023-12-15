@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.2.1</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -76,6 +76,8 @@ $(function() {
 <li>sqsh__archive_data_extract_manager()&#160;:&#160;<a class="el" href="sqsh__archive__private_8h.html#aa59db9806e10a46eecc2e2dd7aafba92">sqsh_archive_private.h</a></li>
 <li>sqsh__archive_init()&#160;:&#160;<a class="el" href="sqsh__archive__private_8h.html#adeced8c15e2de00656b57bd891dbebe6">sqsh_archive_private.h</a></li>
 <li>sqsh__archive_metablock_extract_manager()&#160;:&#160;<a class="el" href="sqsh__archive__private_8h.html#aa9b134c5fc7c24d11fd7224c81d48c05">sqsh_archive_private.h</a></li>
+<li>sqsh__archive_zero_block()&#160;:&#160;<a class="el" href="sqsh__archive__private_8h.html#a508ead826b99c541c55bdf15aa8210e0">sqsh_archive_private.h</a></li>
+<li>sqsh__archive_zero_block_size()&#160;:&#160;<a class="el" href="sqsh__archive__private_8h.html#a702897076b21308cb0f0b2e145b9c16c">sqsh_archive_private.h</a></li>
 <li>sqsh__compression_options_cleanup()&#160;:&#160;<a class="el" href="sqsh__archive__private_8h.html#a4b54753edd224c23d29a23cc2e13331a">sqsh_archive_private.h</a></li>
 <li>sqsh__compression_options_init()&#160;:&#160;<a class="el" href="sqsh__archive__private_8h.html#a2930d0b218d7b7d3e4c42ac9bd72fbb4">sqsh_archive_private.h</a></li>
 <li>sqsh__directory_index_iterator_cleanup()&#160;:&#160;<a class="el" href="sqsh__directory__private_8h.html#a07bff58e87969a524ad3bae5955d3153">sqsh_directory_private.h</a></li>
@@ -99,11 +101,22 @@ $(function() {
 <li>sqsh__extract_view_size()&#160;:&#160;<a class="el" href="sqsh__extract__private_8h.html#a82c237d4e385061c098b822677d64d6e">sqsh_extract_private.h</a></li>
 <li>sqsh__extractor_cleanup()&#160;:&#160;<a class="el" href="sqsh__extract__private_8h.html#a123f77b6a28c928aebbd9a551c156438">sqsh_extract_private.h</a></li>
 <li>sqsh__extractor_finish()&#160;:&#160;<a class="el" href="sqsh__extract__private_8h.html#ad0f7a1cfdb26a1568f22c25ac82dfc83">sqsh_extract_private.h</a></li>
-<li>sqsh__extractor_impl_from_id()&#160;:&#160;<a class="el" href="sqsh__extract__private_8h.html#a7d6ea199bf717cdf6cc96eb44062f711">sqsh_extract_private.h</a></li>
-<li>sqsh__extractor_init()&#160;:&#160;<a class="el" href="sqsh__extract__private_8h.html#a6623548e1efaa4f2b20117a154a5d792">sqsh_extract_private.h</a></li>
+<li>sqsh__extractor_impl_from_id()&#160;:&#160;<a class="el" href="sqsh__extract__private_8h.html#afe4a911bdd0919671d843977d3acae49">sqsh_extract_private.h</a></li>
+<li>sqsh__extractor_init()&#160;:&#160;<a class="el" href="sqsh__extract__private_8h.html#ac68dcd77c6f9b03b0e4eb2dc4bb29c96">sqsh_extract_private.h</a></li>
 <li>sqsh__extractor_write()&#160;:&#160;<a class="el" href="sqsh__extract__private_8h.html#af33058f40ed77f90dfc15c63e04b155f">sqsh_extract_private.h</a></li>
 <li>sqsh__file_cleanup()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#a4f4725d3e3086dd912cdf3dad0c1b6d2">sqsh_file_private.h</a></li>
 <li>sqsh__file_init()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#afc726a5eb601f952828e9dfe74427f8b">sqsh_file_private.h</a></li>
+<li>sqsh__file_inode_null_block_size_info()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#ae615be0c6bf4562f02205cefd36edc79">sqsh_file_private.h</a></li>
+<li>sqsh__file_inode_null_blocks_start()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#aa2e7c7e71f4ac5fbe9875253ea17de75">sqsh_file_private.h</a></li>
+<li>sqsh__file_inode_null_device_id()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#a372ba885dbf26e0aae203e8e9eb6dd60">sqsh_file_private.h</a></li>
+<li>sqsh__file_inode_null_directory_block_offset()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#aae2810918860faf87882fb0225834a5f">sqsh_file_private.h</a></li>
+<li>sqsh__file_inode_null_directory_block_start()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#af5945b36a16de1eda3635347a418efb5">sqsh_file_private.h</a></li>
+<li>sqsh__file_inode_null_directory_parent_inode()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#ab515cff14886a1e5fbe1eb15284c375d">sqsh_file_private.h</a></li>
+<li>sqsh__file_inode_null_fragment_block_index()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#ab3c2223cee7df7666eec29a42082ffc0">sqsh_file_private.h</a></li>
+<li>sqsh__file_inode_null_fragment_block_offset()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#a71b2c8a3f60a23e857592b77cd1e7856">sqsh_file_private.h</a></li>
+<li>sqsh__file_inode_null_symlink_target_path()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#ae7d097357741d440b6f8e656d51af325">sqsh_file_private.h</a></li>
+<li>sqsh__file_inode_null_symlink_target_size()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#a98a026aa007db0c5e53b27fe37d6485e">sqsh_file_private.h</a></li>
+<li>sqsh__file_inode_null_xattr_index()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#aa506550e90623547c21ed009f89727f4">sqsh_file_private.h</a></li>
 <li>sqsh__file_iterator_cleanup()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#aff23f9c6b68b8e2964a692255c0c0604">sqsh_file_private.h</a></li>
 <li>sqsh__file_iterator_init()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#a674839ff4eab38d1af0da19fd9bbf31c">sqsh_file_private.h</a></li>
 <li>sqsh__file_reader_cleanup()&#160;:&#160;<a class="el" href="sqsh__file__private_8h.html#a6f4ae7c89bfead83fc55a399fc04c45c">sqsh_file_private.h</a></li>
@@ -167,6 +180,8 @@ $(function() {
 <li>sqsh__table_init()&#160;:&#160;<a class="el" href="sqsh__table__private_8h.html#a313a7bbc5b414582382c6460309390e1">sqsh_table_private.h</a></li>
 <li>sqsh__trailing_cleanup()&#160;:&#160;<a class="el" href="sqsh__archive__private_8h.html#ae4829c3d9d5193f2115ed5632865b979">sqsh_archive_private.h</a></li>
 <li>sqsh__trailing_init()&#160;:&#160;<a class="el" href="sqsh__archive__private_8h.html#acf07462cfe648274c1888c15a8f6b575">sqsh_archive_private.h</a></li>
+<li>sqsh__tree_traversal_cleanup()&#160;:&#160;<a class="el" href="sqsh__tree__private_8h.html#a5431ed7b9ccf2932a7b865cc52c95916">sqsh_tree_private.h</a></li>
+<li>sqsh__tree_traversal_init()&#160;:&#160;<a class="el" href="sqsh__tree__private_8h.html#a9f8ee0a5cc5d7add3cef27e5a046b402">sqsh_tree_private.h</a></li>
 <li>sqsh__xattr_iterator_cleanup()&#160;:&#160;<a class="el" href="sqsh__xattr__private_8h.html#a6f8639a5ccb2b8bffd677a103524c167">sqsh_xattr_private.h</a></li>
 <li>sqsh__xattr_iterator_init()&#160;:&#160;<a class="el" href="sqsh__xattr__private_8h.html#ab79bb66ed3117becd9ad02e7aa16b88d">sqsh_xattr_private.h</a></li>
 <li>sqsh__xattr_table_cleanup()&#160;:&#160;<a class="el" href="sqsh__xattr__private_8h.html#afab709cbab49370690dfd80d2adc2163">sqsh_xattr_private.h</a></li>
@@ -176,6 +191,7 @@ $(function() {
 
 <h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
 <li>sqsh_easy_directory_list()&#160;:&#160;<a class="el" href="sqsh__easy_8h.html#afcb36a839311c71629b3b197314e0de3">sqsh_easy.h</a></li>
+<li>sqsh_easy_directory_list_path()&#160;:&#160;<a class="el" href="sqsh__easy_8h.html#a4853eb5ed1c3c7f849f7a3f85da50978">sqsh_easy.h</a></li>
 <li>sqsh_easy_file_content()&#160;:&#160;<a class="el" href="sqsh__easy_8h.html#afccc90b3b193597d84a12893f10ca96a">sqsh_easy.h</a></li>
 <li>sqsh_easy_file_exists()&#160;:&#160;<a class="el" href="sqsh__easy_8h.html#aee7f0b2ea800c910f68d05c6ec693f5c">sqsh_easy.h</a></li>
 <li>sqsh_easy_file_mtime()&#160;:&#160;<a class="el" href="sqsh__easy_8h.html#af0fd82ec96aa1aa8deccb9928e4274c1">sqsh_easy.h</a></li>
@@ -188,12 +204,17 @@ $(function() {
 
 
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
-<li>main()&#160;:&#160;<a class="el" href="list__dir_8c.html#a0ddf1224851353fc92bfbff6f499fa97">list_dir.c</a>, <a class="el" href="list__dir__ll_8c.html#a0ddf1224851353fc92bfbff6f499fa97">list_dir_ll.c</a>, <a class="el" href="list__xattrs_8c.html#a0ddf1224851353fc92bfbff6f499fa97">list_xattrs.c</a>, <a class="el" href="list__xattrs__ll_8c.html#a0ddf1224851353fc92bfbff6f499fa97">list_xattrs_ll.c</a>, <a class="el" href="read__file_8c.html#a0ddf1224851353fc92bfbff6f499fa97">read_file.c</a>, <a class="el" href="read__file__ll_8c.html#a0ddf1224851353fc92bfbff6f499fa97">read_file_ll.c</a>, <a class="el" href="readme__example_8c.html#a0ddf1224851353fc92bfbff6f499fa97">readme_example.c</a></li>
+<li>main()&#160;:&#160;<a class="el" href="list__dir_8c.html#a0ddf1224851353fc92bfbff6f499fa97">list_dir.c</a>, <a class="el" href="list__dir__ll_8c.html#a0ddf1224851353fc92bfbff6f499fa97">list_dir_ll.c</a>, <a class="el" href="list__xattrs_8c.html#a0ddf1224851353fc92bfbff6f499fa97">list_xattrs.c</a>, <a class="el" href="list__xattrs__ll_8c.html#a0ddf1224851353fc92bfbff6f499fa97">list_xattrs_ll.c</a>, <a class="el" href="read__file_8c.html#a0ddf1224851353fc92bfbff6f499fa97">read_file.c</a>, <a class="el" href="read__file__ll_8c.html#a0ddf1224851353fc92bfbff6f499fa97">read_file_ll.c</a>, <a class="el" href="readme__example_8c.html#a0ddf1224851353fc92bfbff6f499fa97">readme_example.c</a>, <a class="el" href="traverse__dir__ll_8c.html#a0ddf1224851353fc92bfbff6f499fa97">traverse_dir_ll.c</a></li>
 </ul>
 
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
 <li>sqsh_perror()&#160;:&#160;<a class="el" href="sqsh__error_8h.html#a4154510d5a364e668e4667aae0678e6a">sqsh_error.h</a></li>
+</ul>
+
+
+<h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
+<li>sqsh_tree_traversal_iterator()&#160;:&#160;<a class="el" href="sqsh__tree_8h.html#a61c412b66c5ca19003644a576fcbfa92">sqsh_tree.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

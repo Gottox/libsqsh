@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libsqsh: libsqsh &lt;a href=&quot;https://github.com/Gottox/libsqsh/actions/workflows/ci.yaml&quot; &gt;&lt;img src=&quot;https://github.com/Gottox/libsqsh/actions/workflows/ci.yaml/badge.svg&quot; alt=&quot;CI&quot;/&gt;&lt;/a&gt; &lt;a href=&quot;https://codecov.io/github/Gottox/libsqsh&quot; &gt;&lt;img src=&quot;https://codecov.io/github/Gottox/libsqsh/graph/badge.svg?token=AM5COPDMH0&quot; alt=&quot;codecov&quot;/&gt;&lt;/a&gt; &lt;a href=&quot;https://sonarcloud.io/summary/new_code?id=Gottox_libsqsh&quot; &gt;&lt;img src=&quot;https://sonarcloud.io/api/project_badges/measure?project=Gottox_libsqsh&amp;metric=alert_status&quot; alt=&quot;Quality Gate Status&quot;/&gt;&lt;/a&gt; &lt;a href=&quot;https://opensource.org/licenses/BSD-2-Clause&quot; &gt;&lt;img src=&quot;https://img.shields.io/badge/License-BSD_2--Clause-orange.svg&quot; alt=&quot;License&quot;/&gt;&lt;/a&gt;</title>
+<title>libsqsh: sqsh-tools &lt;a href=&quot;https://github.com/Gottox/libsqsh/actions/workflows/ci.yaml&quot; &gt;&lt;img src=&quot;https://github.com/Gottox/libsqsh/actions/workflows/ci.yaml/badge.svg&quot; alt=&quot;CI&quot;/&gt;&lt;/a&gt; &lt;a href=&quot;https://codecov.io/github/Gottox/sqsh-tools&quot; &gt;&lt;img src=&quot;https://codecov.io/github/Gottox/sqsh-tools/graph/badge.svg?token=AM5COPDMH0&quot; alt=&quot;codecov&quot;/&gt;&lt;/a&gt; &lt;a href=&quot;https://sonarcloud.io/summary/new_code?id=Gottox_libsqsh&quot; &gt;&lt;img src=&quot;https://sonarcloud.io/api/project_badges/measure?project=Gottox_libsqsh&amp;metric=alert_status&quot; alt=&quot;Quality Gate Status&quot;/&gt;&lt;/a&gt; &lt;a href=&quot;https://opensource.org/licenses/BSD-2-Clause&quot; &gt;&lt;img src=&quot;https://img.shields.io/badge/License-BSD_2--Clause-orange.svg&quot; alt=&quot;License&quot;/&gt;&lt;/a&gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.2.1</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -69,15 +69,49 @@ $(function() {
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">libsqsh <a href="https://github.com/Gottox/libsqsh/actions/workflows/ci.yaml"><img src="https://github.com/Gottox/libsqsh/actions/workflows/ci.yaml/badge.svg" alt="CI" style="pointer-events: none;" class="inline"/></a> <a href="https://codecov.io/github/Gottox/libsqsh"><img src="https://codecov.io/github/Gottox/libsqsh/graph/badge.svg?token=AM5COPDMH0" alt="codecov" style="pointer-events: none;" class="inline"/></a> <a href="https://sonarcloud.io/summary/new_code?id=Gottox_libsqsh"><img src="https://sonarcloud.io/api/project_badges/measure?project=Gottox_libsqsh&amp;metric=alert_status" alt="Quality Gate Status" class="inline"/></a> <a href="https://opensource.org/licenses/BSD-2-Clause"><img src="https://img.shields.io/badge/License-BSD_2--Clause-orange.svg" alt="License" style="pointer-events: none;" class="inline"/></a> </div></div>
+  <div class="headertitle"><div class="title">sqsh-tools <a href="https://github.com/Gottox/libsqsh/actions/workflows/ci.yaml"><img src="https://github.com/Gottox/libsqsh/actions/workflows/ci.yaml/badge.svg" alt="CI" style="pointer-events: none;" class="inline"/></a> <a href="https://codecov.io/github/Gottox/sqsh-tools"><img src="https://codecov.io/github/Gottox/sqsh-tools/graph/badge.svg?token=AM5COPDMH0" alt="codecov" style="pointer-events: none;" class="inline"/></a> <a href="https://sonarcloud.io/summary/new_code?id=Gottox_libsqsh"><img src="https://sonarcloud.io/api/project_badges/measure?project=Gottox_libsqsh&amp;metric=alert_status" alt="Quality Gate Status" class="inline"/></a> <a href="https://opensource.org/licenses/BSD-2-Clause"><img src="https://img.shields.io/badge/License-BSD_2--Clause-orange.svg" alt="License" style="pointer-events: none;" class="inline"/></a> </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_README"></a> squashfs is an open and free compressed read-only filesystem. It is used in embedded devices, live-CDs, or in packaging. The original implementation resides in the linux kernel, but there are also userspace implementations.</p>
-<p><em>libsqsh</em> is a purely 2-Clause BSD Licensed implementation of the squashfs filesystem in C11. It covers the complete squashfs feature set, while still being as minimal as possible.</p>
-<p><em>libsqsh</em> consists of a C library and a command line tools to interact with squashfs archives.</p>
-<p>Note that <em>libsqsh</em> only supports reading squashfs archives. If you want to create squashfs archives, you can either use <a href="https://github.com/plougher/squashfs-tools/">squashfs-tools</a>, which provides a command line interface, or <a href="https://github.com/AgentD/squashfs-tools-ng/">squashfs-tools-ng</a>, which provides both a command-line interface and a C library interface.</p>
+<p>This project provides a userspace implementation of the squashfs filesystem containing a set of command line tools and a C library.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-Features</h1>
+Building</h1>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Dependencies</h2>
+<ul>
+<li><b>libc</b>: Any POSIX compliant libc should work. Open a bug if it doesn't.</li>
+<li><a href="https://zlib.net/"><b>zlib</b></a> <em>optional</em>: For gzip compression support.</li>
+<li><a href="https://lz4.org/"><b>liblz4</b></a> <em>optional</em>: For lz4 compression support.</li>
+<li><a href="https://tukaani.org/xz"><b>liblzma</b></a> <em>optional</em>: For lzma compression support.</li>
+<li><a href="https://facebook.github.io/zstd/"><b>libzstd</b></a> <em>optional</em>: For zstd compression support.</li>
+<li><a href="https://libfuse.github.io/"><b>fuse3</b></a> <em>optional</em>: For mounting squashfs archives.</li>
+<li><a href="https://libfuse.github.io/"><b>fuse2</b></a> <em>optional</em>: For mounting squashfs archives on systems that don't support fuse3. e.g. OpenBSD.</li>
+<li><a href="https://curl.se/"><b>libcurl</b></a> <em>optional</em>: For transparently reading squashfs archives from the internet without downloading them first.</li>
+</ul>
+<p>Note that to do anything useful with <em>libsqsh</em>, you need to have at least one of the compression libraries enabled.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Compile &amp; Install</h2>
+<div class="fragment"><div class="line">meson setup build</div>
+<div class="line">cd build</div>
+<div class="line">meson compile</div>
+<div class="line">meson install</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
+tools</h1>
+<p>This project provides a set of command line tools to interact with squashfs archives.</p>
+<ul>
+<li><a href="./tools/man/sqsh-cat.1.in"><code>sqsh-cat</code></a>: Prints the content of one or multiple files to stdout.</li>
+<li><a href="./tools/man/sqsh-ls.1.in"><code>sqsh-ls</code></a>: Lists the content of a directory.</li>
+<li><a href="./tools/man/sqsh-stat.1.in"><code>sqsh-stat</code></a>: Prints the metadata of a file, directory, or the whole archive.</li>
+<li><a href="./tools/man/sqsh-unpack.1.in"><code>sqsh-unpack</code></a>: Extracts a squashfs archive to a directory.</li>
+<li><a href="./tools/man/sqsh-xattr.1.in"><code>sqsh-xattr</code></a>: Prints the extended attributes of a file or directory.</li>
+<li><a href="./tools/man/sqshfs.1.in"><code>sqshfs</code></a>: Mounts a squashfs archive to a directory. There are two versions of this tool, one for fuse3 and one for fuse2.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md5"></a>
+libsqsh</h1>
+<p><em>libsqsh</em> is a purely 2-Clause BSD Licensed implementation of the squashfs filesystem in C11. It covers the complete squashfs feature set, while still having minimal memory footprint.</p>
+<p>Note that <em>libsqsh</em> only supports reading squashfs archives. If you want to create squashfs archives, you can either use <a href="https://github.com/plougher/squashfs-tools/">squashfs-tools</a>, which provides a command line interface, or <a href="https://github.com/AgentD/squashfs-tools-ng/">squashfs-tools-ng</a>, which provides both a command-line interface and a C library interface.</p>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Features</h2>
 <ul>
 <li><b>Complete feature set</b>: libsqsh supports all features of the squashfs file system.</li>
 <li><b>Modern C11 implementation</b>: Written in modern C11, libsqsh is designed for efficiency and compatibility with C++, C, and other languages.</li>
@@ -85,8 +119,8 @@ Features</h1>
 <li><b>Low-Level API</b>: The low-level API provides zero-copy interfaces to the squashfs archive. It is designed to be both memory and CPU efficient.</li>
 <li><b>Pure 2-Clause-BSD License</b>: libsqsh is licensed under the 2-Clause BSD license. This allows you to use libsqsh in any project, even commercial ones.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md2"></a>
-Example</h1>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Example</h2>
 <p>This is a simple example that a) prints the content of a file and b) lists the content of a directory.</p>
 <div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshArchive.html">SqshArchive</a> *archive =</div>
 <div class="line">        <a class="code hl_function" href="structSqshArchive.html#a3db88cfffd255b3781e329c0f660ba79">sqsh_archive_open</a>(<span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>, NULL, NULL);</div>
@@ -106,37 +140,16 @@ Example</h1>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="structSqshArchive.html#ad9c8077e5c6e3d98cff588e203be15e1">sqsh_archive_close</a>(archive);</div>
 <div class="ttc" id="asqsh__easy_8h_html_a3793b8e17ed31dc29e81751f175a5a55"><div class="ttname"><a href="sqsh__easy_8h.html#a3793b8e17ed31dc29e81751f175a5a55">sqsh_easy_file_size</a></div><div class="ttdeci">size_t sqsh_easy_file_size(struct SqshArchive *archive, const char *path, int *err)</div><div class="ttdoc">retrieves the size of a file.</div></div>
-<div class="ttc" id="asqsh__easy_8h_html_afcb36a839311c71629b3b197314e0de3"><div class="ttname"><a href="sqsh__easy_8h.html#afcb36a839311c71629b3b197314e0de3">sqsh_easy_directory_list</a></div><div class="ttdeci">char ** sqsh_easy_directory_list(struct SqshArchive *archive, const char *path, int *err)</div><div class="ttdoc">retrieves the contents of a directory.</div></div>
+<div class="ttc" id="asqsh__easy_8h_html_afcb36a839311c71629b3b197314e0de3"><div class="ttname"><a href="sqsh__easy_8h.html#afcb36a839311c71629b3b197314e0de3">sqsh_easy_directory_list</a></div><div class="ttdeci">char ** sqsh_easy_directory_list(struct SqshArchive *archive, const char *path, int *err)</div><div class="ttdoc">retrieves the contents of a directory as a list of file names</div></div>
 <div class="ttc" id="asqsh__easy_8h_html_afccc90b3b193597d84a12893f10ca96a"><div class="ttname"><a href="sqsh__easy_8h.html#afccc90b3b193597d84a12893f10ca96a">sqsh_easy_file_content</a></div><div class="ttdeci">uint8_t * sqsh_easy_file_content(struct SqshArchive *archive, const char *path, int *err)</div><div class="ttdoc">retrieves the content of a file.</div></div>
 <div class="ttc" id="astructSqshArchive_html"><div class="ttname"><a href="structSqshArchive.html">SqshArchive</a></div><div class="ttdef"><b>Definition:</b> <a href="sqsh__archive__private_8h_source.html#l00212">sqsh_archive_private.h:212</a></div></div>
 <div class="ttc" id="astructSqshArchive_html_a3db88cfffd255b3781e329c0f660ba79"><div class="ttname"><a href="structSqshArchive.html#a3db88cfffd255b3781e329c0f660ba79">SqshArchive::sqsh_archive_open</a></div><div class="ttdeci">SQSH_NO_UNUSED struct SqshArchive * sqsh_archive_open(const void *source, const struct SqshConfig *config, int *err)</div><div class="ttdoc">initializes a archive context in heap.</div></div>
 <div class="ttc" id="astructSqshArchive_html_ad9c8077e5c6e3d98cff588e203be15e1"><div class="ttname"><a href="structSqshArchive.html#ad9c8077e5c6e3d98cff588e203be15e1">SqshArchive::sqsh_archive_close</a></div><div class="ttdeci">int sqsh_archive_close(struct SqshArchive *archive)</div><div class="ttdoc">Frees the resources used by a Sqsh instance.</div></div>
 </div><!-- fragment --><p>Find further examples in the [examples](examples) directory.</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
-Building</h1>
-<h2><a class="anchor" id="autotoc_md4"></a>
-Dependencies</h2>
-<ul>
-<li><b>libc</b>: both <a href="https://www.musl-libc.org/">musl</a> and <a href="https://www.gnu.org/software/libc/">glibc</a> are supported.</li>
-<li><a href="https://zlib.net/"><b>zlib</b></a> <em>optional</em>: For gzip compression support.</li>
-<li><a href="https://lz4.org/"><b>liblz4</b></a> <em>optional</em>: For lz4 compression support.</li>
-<li><a href="https://tukaani.org/xz"><b>liblzma</b></a> <em>optional</em>: For lzma compression support.</li>
-<li><a href="https://facebook.github.io/zstd/"><b>libzstd</b></a> <em>optional</em>: For zstd compression support.</li>
-<li><a href="https://libfuse.github.io/"><b>fuse3</b></a> <em>optional</em>: For mounting squashfs archives.</li>
-<li><a href="https://libfuse.github.io/"><b>fuse2</b></a> <em>optional</em>: For mounting squashfs archives on systems that don't support fuse3. e.g. OpenBSD.</li>
-<li><a href="https://curl.se/"><b>libcurl</b></a> <em>optional</em>: For transparently reading squashfs archives from the internet without downloading them first.</li>
-</ul>
-<p>Note that to do anything useful with <em>libsqsh</em>, you need to have at least one of the compression libraries enabled.</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
-Compile &amp; Install</h2>
-<div class="fragment"><div class="line">meson setup build</div>
-<div class="line">cd build</div>
-<div class="line">meson compile</div>
-<div class="line">meson install</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md8"></a>
 LZO2</h2>
 <p>LZO2 is a fast compression algorithm. Unfortunately the current implementation is GPL licensed and therefore not included in this library. If you want to use LZO2 there's and independent glue library called <a href="https://github.com/Gottox/libsqsh-lzo">libsqsh-lzo</a>.</p>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md9"></a>
 Resource</h1>
 <ul>
 <li><a href="https://dr-emann.github.io/squashfs/squashfs.html">https://dr-emann.github.io/squashfs/squashfs.html</a> - A detailed description of the squashfs file format.</li>

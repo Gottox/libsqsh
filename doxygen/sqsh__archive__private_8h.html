@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.2.1</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -82,7 +82,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="sqsh__archive_8h_source.html">sqsh_archive.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sqsh__error_8h_source.html">sqsh_error.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sqsh__file__private_8h_source.html">sqsh_file_private.h</a>&quot;</code><br />
-<code>#include &quot;sqsh_thread_private.h&quot;</code><br />
+<code>#include &quot;sqsh_utils_private.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sqsh__xattr__private_8h_source.html">sqsh_xattr_private.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sqsh_archive_private.h:</div>
@@ -134,6 +134,10 @@ Functions</h2></td></tr>
 <tr class="separator:aa59db9806e10a46eecc2e2dd7aafba92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9b134c5fc7c24d11fd7224c81d48c05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> struct <a class="el" href="structSqshExtractManager.html">SqshExtractManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__archive__private_8h.html#aa9b134c5fc7c24d11fd7224c81d48c05">sqsh__archive_metablock_extract_manager</a> (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive)</td></tr>
 <tr class="separator:aa9b134c5fc7c24d11fd7224c81d48c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508ead826b99c541c55bdf15aa8210e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__archive__private_8h.html#a508ead826b99c541c55bdf15aa8210e0">sqsh__archive_zero_block</a> (const struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive)</td></tr>
+<tr class="separator:a508ead826b99c541c55bdf15aa8210e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702897076b21308cb0f0b2e145b9c16c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__archive__private_8h.html#a702897076b21308cb0f0b2e145b9c16c">sqsh__archive_zero_block_size</a> (const struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive)</td></tr>
+<tr class="separator:a702897076b21308cb0f0b2e145b9c16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9721e6be42468de15b1b6cf76be77479"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__archive__private_8h.html#a9721e6be42468de15b1b6cf76be77479">sqsh__archive_cleanup</a> (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *sqsh)</td></tr>
 <tr class="separator:a9721e6be42468de15b1b6cf76be77479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -232,6 +236,42 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> struct <a class="el" href="structSqshExtractManager.html">SqshExtractManager</a> * sqsh__archive_metablock_extract_manager </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *&#160;</td>
+          <td class="paramname"><em>archive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a508ead826b99c541c55bdf15aa8210e0" name="a508ead826b99c541c55bdf15aa8210e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a508ead826b99c541c55bdf15aa8210e0">&#9670;&#160;</a></span>sqsh__archive_zero_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> const uint8_t * sqsh__archive_zero_block </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *&#160;</td>
+          <td class="paramname"><em>archive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a702897076b21308cb0f0b2e145b9c16c" name="a702897076b21308cb0f0b2e145b9c16c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702897076b21308cb0f0b2e145b9c16c">&#9670;&#160;</a></span>sqsh__archive_zero_block_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> size_t sqsh__archive_zero_block_size </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *&#160;</td>
           <td class="paramname"><em>archive</em></td><td>)</td>
           <td></td>
         </tr>

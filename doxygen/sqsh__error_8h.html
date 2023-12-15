@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.2.1</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sqsh_error.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="sqsh__error_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__error_8h__incl.svg" width="374" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -151,6 +151,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="sqsh__error_8h.html#ac92b5f178c51aef07c08a63847b6d3cca728e73ee367c0f4bdb115438eb3fcf32">SQSH_ERROR_CORRUPTED_DIRECTORY_HEADER</a>
 , <a class="el" href="sqsh__error_8h.html#ac92b5f178c51aef07c08a63847b6d3cca6a29e6f9b008234f4ea392dbec2768c6">SQSH_ERROR_COMPRESSION_FINISHED</a>
 , <a class="el" href="sqsh__error_8h.html#ac92b5f178c51aef07c08a63847b6d3ccaec702879f3afbff62002b3fe218387d0">SQSH_ERROR_NO_SUCH_ELEMENT</a>
+, <a class="el" href="sqsh__error_8h.html#ac92b5f178c51aef07c08a63847b6d3cca217a093ef748d5b868b690ef194da4a8">SQSH_ERROR_DIRECTORY_RECURSION</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ac92b5f178c51aef07c08a63847b6d3cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error codes for sqsh.  <a href="sqsh__error_8h.html#ac92b5f178c51aef07c08a63847b6d3cc">More...</a><br /></td></tr>
@@ -194,7 +195,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ac92b5f178c51aef07c08a63847b6d3cca9582f646fab3bd9496193e0b025e285a" name="ac92b5f178c51aef07c08a63847b6d3cca9582f646fab3bd9496193e0b025e285a"></a>SQSH_ERROR_COMPRESSION_UNSUPPORTED&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac92b5f178c51aef07c08a63847b6d3cca54795e6375565c94d761862bb4811d3a" name="ac92b5f178c51aef07c08a63847b6d3cca54795e6375565c94d761862bb4811d3a"></a>SQSH_ERROR_COMPRESSION_DECOMPRESS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac92b5f178c51aef07c08a63847b6d3cca1b5f511474f5ba858f5ffc96e1e38974" name="ac92b5f178c51aef07c08a63847b6d3cca1b5f511474f5ba858f5ffc96e1e38974"></a>SQSH_ERROR_UNKNOWN_FILE_TYPE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac92b5f178c51aef07c08a63847b6d3ccab4f1353b6e3e2e3d5b3bfac9cbe1441c" name="ac92b5f178c51aef07c08a63847b6d3ccab4f1353b6e3e2e3d5b3bfac9cbe1441c"></a>SQSH_ERROR_UNKOWN_FILE_TYPE&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Since 1.1.0. Use SQSH_ERROR_UNKNOWN_FILE_TYPE instead. </dd></dl>
+<tr><td class="fieldname"><a id="ac92b5f178c51aef07c08a63847b6d3ccab4f1353b6e3e2e3d5b3bfac9cbe1441c" name="ac92b5f178c51aef07c08a63847b6d3ccab4f1353b6e3e2e3d5b3bfac9cbe1441c"></a>SQSH_ERROR_UNKOWN_FILE_TYPE&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>Since 1.1.0. Use SQSH_ERROR_UNKNOWN_FILE_TYPE instead. </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ac92b5f178c51aef07c08a63847b6d3cca982fe45ac6d6f0fe5db990e27a26d2e6" name="ac92b5f178c51aef07c08a63847b6d3cca982fe45ac6d6f0fe5db990e27a26d2e6"></a>SQSH_ERROR_NOT_A_DIRECTORY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac92b5f178c51aef07c08a63847b6d3cca3349ededc7331e3b93ce7adfee67fed1" name="ac92b5f178c51aef07c08a63847b6d3cca3349ededc7331e3b93ce7adfee67fed1"></a>SQSH_ERROR_NOT_A_FILE&#160;</td><td class="fielddoc"></td></tr>
@@ -228,6 +229,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ac92b5f178c51aef07c08a63847b6d3cca728e73ee367c0f4bdb115438eb3fcf32" name="ac92b5f178c51aef07c08a63847b6d3cca728e73ee367c0f4bdb115438eb3fcf32"></a>SQSH_ERROR_CORRUPTED_DIRECTORY_HEADER&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac92b5f178c51aef07c08a63847b6d3cca6a29e6f9b008234f4ea392dbec2768c6" name="ac92b5f178c51aef07c08a63847b6d3cca6a29e6f9b008234f4ea392dbec2768c6"></a>SQSH_ERROR_COMPRESSION_FINISHED&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac92b5f178c51aef07c08a63847b6d3ccaec702879f3afbff62002b3fe218387d0" name="ac92b5f178c51aef07c08a63847b6d3ccaec702879f3afbff62002b3fe218387d0"></a>SQSH_ERROR_NO_SUCH_ELEMENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac92b5f178c51aef07c08a63847b6d3cca217a093ef748d5b868b690ef194da4a8" name="ac92b5f178c51aef07c08a63847b6d3cca217a093ef748d5b868b690ef194da4a8"></a>SQSH_ERROR_DIRECTORY_RECURSION&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="sqsh__error_8h_source.html#l00050">50</a> of file <a class="el" href="sqsh__error_8h_source.html">sqsh_error.h</a>.</p>

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.2.1</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -82,11 +82,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cextras/collection.h&gt;</code><br />
-<code>#include &quot;sqsh_thread_private.h&quot;</code><br />
+<code>#include &lt;<a class="el" href="sqsh__data_8h_source.html">sqsh_data.h</a>&gt;</code><br />
+<code>#include &lt;sqsh_utils_private.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sqsh_extract_private.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sqsh__extract__private_8h__incl.svg" width="488" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="sqsh__extract__private_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -119,10 +120,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7d6ea199bf717cdf6cc96eb44062f711"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> const struct <a class="el" href="structSqshExtractorImpl.html">SqshExtractorImpl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__extract__private_8h.html#a7d6ea199bf717cdf6cc96eb44062f711">sqsh__extractor_impl_from_id</a> (int id)</td></tr>
-<tr class="separator:a7d6ea199bf717cdf6cc96eb44062f711"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6623548e1efaa4f2b20117a154a5d792"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> <a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__extract__private_8h.html#a6623548e1efaa4f2b20117a154a5d792">sqsh__extractor_init</a> (struct <a class="el" href="structSqshExtractor.html">SqshExtractor</a> *extractor, struct CxBuffer *buffer, int algorithm_id, size_t block_size)</td></tr>
-<tr class="separator:a6623548e1efaa4f2b20117a154a5d792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4a911bdd0919671d843977d3acae49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> const struct <a class="el" href="structSqshExtractorImpl.html">SqshExtractorImpl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__extract__private_8h.html#afe4a911bdd0919671d843977d3acae49">sqsh__extractor_impl_from_id</a> (enum <a class="el" href="sqsh__data_8h.html#ae0979c00d3e768637a9a10f31b95594a">SqshSuperblockCompressionId</a> id)</td></tr>
+<tr class="separator:afe4a911bdd0919671d843977d3acae49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68dcd77c6f9b03b0e4eb2dc4bb29c96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> <a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__extract__private_8h.html#ac68dcd77c6f9b03b0e4eb2dc4bb29c96">sqsh__extractor_init</a> (struct <a class="el" href="structSqshExtractor.html">SqshExtractor</a> *extractor, struct CxBuffer *buffer, const struct <a class="el" href="structSqshExtractorImpl.html">SqshExtractorImpl</a> *impl, size_t block_size)</td></tr>
+<tr class="separator:ac68dcd77c6f9b03b0e4eb2dc4bb29c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af33058f40ed77f90dfc15c63e04b155f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> <a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__extract__private_8h.html#af33058f40ed77f90dfc15c63e04b155f">sqsh__extractor_write</a> (struct <a class="el" href="structSqshExtractor.html">SqshExtractor</a> *extractor, const uint8_t *compressed, const size_t compressed_size)</td></tr>
 <tr class="separator:af33058f40ed77f90dfc15c63e04b155f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0f7a1cfdb26a1568f22c25ac82dfc83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__extract__private_8h.html#ad0f7a1cfdb26a1568f22c25ac82dfc83">sqsh__extractor_finish</a> (struct <a class="el" href="structSqshExtractor.html">SqshExtractor</a> *extractor)</td></tr>
@@ -148,9 +149,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a80efb7ad67012c505341b8b173d29277"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structSqshExtractorImpl.html">SqshExtractorImpl</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__extract__private_8h.html#a80efb7ad67012c505341b8b173d29277">sqsh__impl_lzo</a></td></tr>
-<tr class="memdesc:a80efb7ad67012c505341b8b173d29277"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation of the lzo extractor. This is NULL by default. If you want to use this, you need to link against <a href="https://github.com/Gottox/libsqsh-lzo">libsqsh-lzo</a>.  <br /></td></tr>
-<tr class="separator:a80efb7ad67012c505341b8b173d29277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c3d675f45c6c6fd3fadca8b25b9f0e"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structSqshExtractorImpl.html">SqshExtractorImpl</a> *const volatile&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__extract__private_8h.html#ae6c3d675f45c6c6fd3fadca8b25b9f0e">sqsh__impl_lzo</a></td></tr>
+<tr class="memdesc:ae6c3d675f45c6c6fd3fadca8b25b9f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation of the lzo extractor. This is NULL by default. If you want to use this, you need to link against <a href="https://github.com/Gottox/libsqsh-lzo">libsqsh-lzo</a>.  <br /></td></tr>
+<tr class="separator:ae6c3d675f45c6c6fd3fadca8b25b9f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60a9d9f17fc6054556d0875f6e4bf875"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> const struct <a class="el" href="structSqshExtractorImpl.html">SqshExtractorImpl</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__extract__private_8h.html#a60a9d9f17fc6054556d0875f6e4bf875">sqsh__impl_lz4</a></td></tr>
 <tr class="memdesc:a60a9d9f17fc6054556d0875f6e4bf875"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation of the lz4 extractor.  <br /></td></tr>
 <tr class="separator:a60a9d9f17fc6054556d0875f6e4bf875"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,7 +185,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sqsh__extract__private_8h_source.html#l00056">56</a> of file <a class="el" href="sqsh__extract__private_8h_source.html">sqsh_extract_private.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__extract__private_8h_source.html#l00057">57</a> of file <a class="el" href="sqsh__extract__private_8h_source.html">sqsh_extract_private.h</a>.</p>
 
 </div>
 </div>
@@ -433,8 +434,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7d6ea199bf717cdf6cc96eb44062f711" name="a7d6ea199bf717cdf6cc96eb44062f711"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d6ea199bf717cdf6cc96eb44062f711">&#9670;&#160;</a></span>sqsh__extractor_impl_from_id()</h2>
+<a id="afe4a911bdd0919671d843977d3acae49" name="afe4a911bdd0919671d843977d3acae49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe4a911bdd0919671d843977d3acae49">&#9670;&#160;</a></span>sqsh__extractor_impl_from_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -442,7 +443,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> const struct <a class="el" href="structSqshExtractorImpl.html">SqshExtractorImpl</a> * sqsh__extractor_impl_from_id </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">enum <a class="el" href="sqsh__data_8h.html#ae0979c00d3e768637a9a10f31b95594a">SqshSuperblockCompressionId</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -451,8 +452,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6623548e1efaa4f2b20117a154a5d792" name="a6623548e1efaa4f2b20117a154a5d792"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6623548e1efaa4f2b20117a154a5d792">&#9670;&#160;</a></span>sqsh__extractor_init()</h2>
+<a id="ac68dcd77c6f9b03b0e4eb2dc4bb29c96" name="ac68dcd77c6f9b03b0e4eb2dc4bb29c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac68dcd77c6f9b03b0e4eb2dc4bb29c96">&#9670;&#160;</a></span>sqsh__extractor_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -472,8 +473,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>algorithm_id</em>, </td>
+          <td class="paramtype">const struct <a class="el" href="structSqshExtractorImpl.html">SqshExtractorImpl</a> *&#160;</td>
+          <td class="paramname"><em>impl</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -574,8 +575,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a80efb7ad67012c505341b8b173d29277" name="a80efb7ad67012c505341b8b173d29277"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80efb7ad67012c505341b8b173d29277">&#9670;&#160;</a></span>sqsh__impl_lzo</h2>
+<a id="ae6c3d675f45c6c6fd3fadca8b25b9f0e" name="ae6c3d675f45c6c6fd3fadca8b25b9f0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c3d675f45c6c6fd3fadca8b25b9f0e">&#9670;&#160;</a></span>sqsh__impl_lzo</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -584,7 +585,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const struct <a class="el" href="structSqshExtractorImpl.html">SqshExtractorImpl</a>* const sqsh__impl_lzo</td>
+          <td class="memname">const struct <a class="el" href="structSqshExtractorImpl.html">SqshExtractorImpl</a>* const volatile sqsh__impl_lzo</td>
         </tr>
       </table>
   </td>

@@ -7,6 +7,7 @@ var searchData=
   ['sqshlzoalgorithm_4',['SqshLzoAlgorithm',['../sqsh__data_8h.html#a088ced7149f379b9520210b602867c03',1,'sqsh_data.h']]],
   ['sqshsuperblockcompressionid_5',['SqshSuperblockCompressionId',['../sqsh__data_8h.html#ae0979c00d3e768637a9a10f31b95594a',1,'sqsh_data.h']]],
   ['sqshsuperblockflags_6',['SqshSuperblockFlags',['../sqsh__data_8h.html#af646f88052c2cec402c25f13e9497c91',1,'sqsh_data.h']]],
-  ['sqshxattrtype_7',['SqshXattrType',['../sqsh__data_8h.html#af6aa1115a96a68fa5f4417984e12b923',1,'sqsh_data.h']]],
-  ['sqshxzfilters_8',['SqshXzFilters',['../sqsh__data_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6',1,'sqsh_data.h']]]
+  ['sqshtreetraversalstate_7',['SqshTreeTraversalState',['../sqsh__tree_8h.html#a895b04396c61db059f7de88f878c29c3',1,'sqsh_tree.h']]],
+  ['sqshxattrtype_8',['SqshXattrType',['../sqsh__data_8h.html#af6aa1115a96a68fa5f4417984e12b923',1,'sqsh_data.h']]],
+  ['sqshxzfilters_9',['SqshXzFilters',['../sqsh__data_8h.html#aa2a3ee9586d5ff541df2a603c68a24e6',1,'sqsh_data.h']]]
 ];

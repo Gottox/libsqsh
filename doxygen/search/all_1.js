@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['cl_0',['cl',['../structSqshMapper.html#ad49c3acdd995cdb05dd354045ba85bb5',1,'SqshMapper']]],
-  ['compression_5flru_5fsize_1',['compression_lru_size',['../structSqshConfig.html#a4e6faafbf1534126b820fda132586d96',1,'SqshConfig']]]
+  ['block_5fsize_5finfo_0',['block_size_info',['../structSqshInodeImpl.html#ac263244f7419e1ee758c707d50bdf449',1,'SqshInodeImpl']]],
+  ['blocks_5fstart_1',['blocks_start',['../structSqshInodeImpl.html#ac6443f1cc756c9318c54ea640cced617',1,'SqshInodeImpl']]]
 ];

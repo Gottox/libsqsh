@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.2.1</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,13 @@ Include dependency graph for sqsh_tree_private.h:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshPathResolver.html">SqshPathResolver</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A walker over the contents of a file.  <a href="structSqshPathResolver.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves paths.  <a href="structSqshPathResolver.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTreeTraversalStackElement.html">SqshTreeTraversalStackElement</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A walker over the contents of a file.  <a href="structSqshTreeTraversalStackElement.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTreeTraversal.html">SqshTreeTraversal</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A walker over the contents of a file.  <a href="structSqshTreeTraversal.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshTreeWalker.html">SqshTreeWalker</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A walker over the contents of a file.  <a href="structSqshTreeWalker.html#details">More...</a><br /></td></tr>
@@ -106,6 +112,10 @@ Functions</h2></td></tr>
 <tr class="separator:a5a127c02c13df4844d4a021bcb21dcfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c82c1949873ab413d580f133b1ad85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__tree__private_8h.html#ac2c82c1949873ab413d580f133b1ad85">sqsh__path_resolver_cleanup</a> (struct <a class="el" href="structSqshPathResolver.html">SqshPathResolver</a> *walker)</td></tr>
 <tr class="separator:ac2c82c1949873ab413d580f133b1ad85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8ee0a5cc5d7add3cef27e5a046b402"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> <a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__tree__private_8h.html#a9f8ee0a5cc5d7add3cef27e5a046b402">sqsh__tree_traversal_init</a> (struct <a class="el" href="structSqshTreeTraversal.html">SqshTreeTraversal</a> *traversal, const struct <a class="el" href="structSqshFile.html">SqshFile</a> *file)</td></tr>
+<tr class="separator:a9f8ee0a5cc5d7add3cef27e5a046b402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5431ed7b9ccf2932a7b865cc52c95916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqsh__tree__private_8h.html#a5431ed7b9ccf2932a7b865cc52c95916">sqsh__tree_traversal_cleanup</a> (struct <a class="el" href="structSqshTreeTraversal.html">SqshTreeTraversal</a> *traversal)</td></tr>
+<tr class="separator:a5431ed7b9ccf2932a7b865cc52c95916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ac2c82c1949873ab413d580f133b1ad85" name="ac2c82c1949873ab413d580f133b1ad85"></a>
@@ -143,6 +153,52 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *&#160;</td>
           <td class="paramname"><em>archive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5431ed7b9ccf2932a7b865cc52c95916" name="a5431ed7b9ccf2932a7b865cc52c95916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5431ed7b9ccf2932a7b865cc52c95916">&#9670;&#160;</a></span>sqsh__tree_traversal_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> int sqsh__tree_traversal_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshTreeTraversal.html">SqshTreeTraversal</a> *&#160;</td>
+          <td class="paramname"><em>traversal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f8ee0a5cc5d7add3cef27e5a046b402" name="a9f8ee0a5cc5d7add3cef27e5a046b402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8ee0a5cc5d7add3cef27e5a046b402">&#9670;&#160;</a></span>sqsh__tree_traversal_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> <a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__tree_traversal_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshTreeTraversal.html">SqshTreeTraversal</a> *&#160;</td>
+          <td class="paramname"><em>traversal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structSqshFile.html">SqshFile</a> *&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -1,11 +1,12 @@
 <map id="include/sqsh_easy.h" name="include/sqsh_easy.h">
-<area shape="rect" id="node1" title=" " alt="" coords="801,5,1013,30"/>
-<area shape="rect" id="node2" href="$sqsh_8h.html" title=" " alt="" coords="826,78,988,103"/>
-<area shape="rect" id="node3" href="$list__dir_8c.html" title=" " alt="" coords="5,151,217,175"/>
-<area shape="rect" id="node4" href="$list__dir__ll_8c.html" title=" " alt="" coords="241,151,482,175"/>
-<area shape="rect" id="node5" href="$list__xattrs_8c.html" title=" " alt="" coords="506,151,748,175"/>
-<area shape="rect" id="node6" href="$list__xattrs__ll_8c.html" title=" " alt="" coords="771,151,1043,175"/>
-<area shape="rect" id="node7" href="$read__file_8c.html" title=" " alt="" coords="1067,151,1288,175"/>
-<area shape="rect" id="node8" href="$read__file__ll_8c.html" title=" " alt="" coords="1312,151,1563,175"/>
-<area shape="rect" id="node9" href="$readme__example_8c.html" title=" " alt="" coords="1587,151,1859,175"/>
+<area shape="rect" id="node1" title=" " alt="" coords="936,5,1147,30"/>
+<area shape="rect" id="node2" href="$sqsh_8h.html" title=" " alt="" coords="961,78,1122,665435"/>
+<area shape="rect" id="node3" href="$list__dir_8c.html" title=" " alt="" coords="5,665560,217,1330919"/>
+<area shape="rect" id="node4" href="$list__dir__ll_8c.html" title=" " alt="" coords="241,665483,482,1330996"/>
+<area shape="rect" id="node5" href="$list__xattrs_8c.html" title=" " alt="" coords="506,998227,748,998252"/>
+<area shape="rect" id="node6" href="$list__xattrs__ll_8c.html" title=" " alt="" coords="771,998227,1043,998252"/>
+<area shape="rect" id="node7" href="$read__file_8c.html" title=" " alt="" coords="1067,998227,1288,998252"/>
+<area shape="rect" id="node8" href="$read__file__ll_8c.html" title=" " alt="" coords="1312,998227,1563,998252"/>
+<area shape="rect" id="node9" href="$readme__example_8c.html" title=" " alt="" coords="1587,998212,1859,998268"/>
+<area shape="rect" id="node10" href="$traverse__dir__ll_8c.html" title=" " alt="" coords="1882,998222,2164,998257"/>
 </map>

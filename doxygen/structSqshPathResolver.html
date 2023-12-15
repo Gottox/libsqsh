@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.2.1</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.3.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A walker over the contents of a file.  
+<p>Resolves paths.  
  <a href="structSqshPathResolver.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="sqsh__tree__private_8h_source.html">sqsh_tree_private.h</a>&gt;</code></p>
@@ -83,7 +83,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a456bbc9a739274f32050b3a1b3a0b84d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqshPathResolver.html">SqshPathResolver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshPathResolver.html#a456bbc9a739274f32050b3a1b3a0b84d">sqsh_path_resolver_new</a> (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, int *err)</td></tr>
-<tr class="memdesc:a456bbc9a739274f32050b3a1b3a0b84d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structSqshPathResolver.html" title="A walker over the contents of a file.">SqshPathResolver</a> object at the root inode.  <br /></td></tr>
+<tr class="memdesc:a456bbc9a739274f32050b3a1b3a0b84d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structSqshPathResolver.html" title="Resolves paths.">SqshPathResolver</a> object at the root inode.  <br /></td></tr>
 <tr class="separator:a456bbc9a739274f32050b3a1b3a0b84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa30354bb70708e2b2281efabf4b235d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshPathResolver.html#aa30354bb70708e2b2281efabf4b235d8">sqsh_path_resolver_up</a> (struct <a class="el" href="structSqshPathResolver.html">SqshPathResolver</a> *walker)</td></tr>
 <tr class="memdesc:aa30354bb70708e2b2281efabf4b235d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the walker one level up.  <br /></td></tr>
@@ -122,11 +122,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7b960c1da1aa3855cb352277e7037212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve a path with the tree walker.  <br /></td></tr>
 <tr class="separator:a7b960c1da1aa3855cb352277e7037212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb765e7da6893dab79b2f59795313533"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSqshPathResolver.html#aeb765e7da6893dab79b2f59795313533">sqsh_path_resolver_free</a> (struct <a class="el" href="structSqshPathResolver.html">SqshPathResolver</a> *reader)</td></tr>
-<tr class="memdesc:aeb765e7da6893dab79b2f59795313533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up resources used by a <a class="el" href="structSqshPathResolver.html" title="A walker over the contents of a file.">SqshPathResolver</a> struct.  <br /></td></tr>
+<tr class="memdesc:aeb765e7da6893dab79b2f59795313533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up resources used by a <a class="el" href="structSqshPathResolver.html" title="Resolves paths.">SqshPathResolver</a> struct.  <br /></td></tr>
 <tr class="separator:aeb765e7da6893dab79b2f59795313533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A walker over the contents of a file. </p>
+<div class="textblock"><p>Resolves paths. </p>
 
 <p class="definition">Definition at line <a class="el" href="sqsh__tree__private_8h_source.html#l00054">54</a> of file <a class="el" href="sqsh__tree__private_8h_source.html">sqsh_tree_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -173,7 +173,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cleans up resources used by a <a class="el" href="structSqshPathResolver.html" title="A walker over the contents of a file.">SqshPathResolver</a> struct. </p>
+<p>Cleans up resources used by a <a class="el" href="structSqshPathResolver.html" title="Resolves paths.">SqshPathResolver</a> struct. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">reader</td><td>The file reader struct to clean up.</td></tr>
@@ -338,7 +338,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new <a class="el" href="structSqshPathResolver.html" title="A walker over the contents of a file.">SqshPathResolver</a> object at the root inode. </p>
+<p>Creates a new <a class="el" href="structSqshPathResolver.html" title="Resolves paths.">SqshPathResolver</a> object at the root inode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">archive</td><td>The archive to use </td></tr>
