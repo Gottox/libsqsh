@@ -627,6 +627,36 @@ test_tree_traversal(void) {
 	rv = sqsh__archive_cleanup(&sqsh);
 	assert(rv == 0);
 }
+static void
+test_read_end_of_file(void) {
+	int rv;
+	struct SqshArchive sqsh = {0};
+	struct SqshFile *file = NULL;
+	struct SqshFileReader *reader = NULL;
+
+	struct SqshConfig config = DEFAULT_CONFIG(TEST_SQUASHFS_IMAGE_LEN);
+	config.archive_offset = 1010;
+	rv = sqsh__archive_init(&sqsh, (char *)TEST_SQUASHFS_IMAGE, &config);
+	assert(rv == 0);
+
+	file = sqsh_open(&sqsh, "/b", &rv);
+	assert(rv == 0);
+
+	reader = sqsh_file_reader_new(file, &rv);
+
+	uint64_t size = sqsh_file_size(file);
+
+	rv = sqsh_file_reader_advance(reader, size, 0);
+	assert(rv == 0);
+	assert(sqsh_file_reader_size(reader) == 0);
+	assert(sqsh_file_reader_data(reader) != NULL);
+
+	rv = sqsh_file_reader_advance(reader, 0, 1);
+	assert(rv == -SQSH_ERROR_OUT_OF_BOUNDS);
+
+	rv = sqsh_close(file);
+	assert(rv == 0);
+}
 
 DECLARE_TESTS
 TEST(sqsh_empty)
@@ -643,4 +673,5 @@ TEST(sqsh_test_extended_dir)
 TEST(multithreaded)
 TEST(test_follow_symlink)
 TEST(test_tree_traversal)
+TEST(test_read_end_of_file)
 END_TESTS
