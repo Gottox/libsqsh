@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['file_0',['file',['../structSqshTreeTraversalStackElement.html#a41f852de6e5f61eb87af3b69e3cee835',1,'SqshTreeTraversalStackElement']]],
-  ['finish_1',['finish',['../structSqshExtractorImpl.html#a8f5d87b6516cba7790d9d87142661256',1,'SqshExtractorImpl']]],
-  ['fragment_5fblock_5findex_2',['fragment_block_index',['../structSqshInodeImpl.html#ad5ccc3a4e7820cbd1af0a06ecc8c7408',1,'SqshInodeImpl']]],
-  ['fragment_5fblock_5foffset_3',['fragment_block_offset',['../structSqshInodeImpl.html#a798833f8a351fabce321c6078b469904',1,'SqshInodeImpl']]]
+  ['dependencies_0',['Dependencies',['../index.html#autotoc_md2',1,'']]],
+  ['deprecated_20list_1',['Deprecated List',['../deprecated.html',1,'']]],
+  ['device_5fid_2',['device_id',['../structSqshInodeImpl.html#ae5fa8a3ccf05a8627afa0324df5244cf',1,'SqshInodeImpl']]],
+  ['directory_5fblock_5foffset_3',['directory_block_offset',['../structSqshInodeImpl.html#a39007296e60f2f35436d7abeec613a41',1,'SqshInodeImpl']]],
+  ['directory_5fblock_5fstart_4',['directory_block_start',['../structSqshInodeImpl.html#a1219fc7d35c613ae2149b8450b8ad848',1,'SqshInodeImpl']]],
+  ['directory_5fparent_5finode_5',['directory_parent_inode',['../structSqshInodeImpl.html#a8609bc9fd12e1a17bad6d32f5e668f75',1,'SqshInodeImpl']]]
 ];

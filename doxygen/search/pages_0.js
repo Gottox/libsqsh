@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['deprecated_20list_0',['Deprecated List',['../deprecated.html',1,'']]]
+  ['2_20clause_20img_20src_20https_3a_20img_20shields_20io_20badge_20license_20bsd_5f2_20clause_20orange_20svg_20alt_20license_20a_0',['sqsh-tools &lt;a href=&quot;https://github.com/Gottox/libsqsh/actions/workflows/ci.yaml&quot; &gt;&lt;img src=&quot;https://github.com/Gottox/libsqsh/actions/workflows/ci.yaml/badge.svg&quot; alt=&quot;CI&quot;/&gt;&lt;/a&gt; &lt;a href=&quot;https://codecov.io/github/Gottox/sqsh-tools&quot; &gt;&lt;img src=&quot;https://codecov.io/github/Gottox/sqsh-tools/graph/badge.svg?token=AM5COPDMH0&quot; alt=&quot;codecov&quot;/&gt;&lt;/a&gt; &lt;a href=&quot;https://sonarcloud.io/summary/new_code?id=Gottox_libsqsh&quot; &gt;&lt;img src=&quot;https://sonarcloud.io/api/project_badges/measure?project=Gottox_libsqsh&amp;metric=alert_status&quot; alt=&quot;Quality Gate Status&quot;/&gt;&lt;/a&gt; &lt;a href=&quot;https://opensource.org/licenses/BSD-2-Clause&quot; &gt;&lt;img src=&quot;https://img.shields.io/badge/License-BSD_2--Clause-orange.svg&quot; alt=&quot;License&quot;/&gt;&lt;/a&gt;',['../index.html',1,'']]]
 ];

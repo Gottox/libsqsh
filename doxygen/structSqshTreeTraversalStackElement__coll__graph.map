@@ -1,5 +1,7 @@
 <map id="SqshTreeTraversalStackElement" name="SqshTreeTraversalStackElement">
-<area shape="rect" id="node1" title="A walker over the contents of a file." alt="" coords="66,1543546,378,1543570"/>
-<area shape="rect" id="node2" href="$structSqshDirectoryIterator.html" title="A directory iterator." alt="" coords="12,771727,243,771752"/>
-<area shape="rect" id="node3" href="$structSqshFile.html" title="The Inode context." alt="" coords="267,5,369,1543474"/>
+<area shape="rect" id="Node000001" title="A walker over the contents of a file." alt="" coords="60,124,371,150636"/>
+<area shape="rect" id="Node000002" href="$structSqshDirectoryIterator.html" title="A directory iterator." alt="" coords="5,5,237,30"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,45,124,124,118,124,118,45"/>
+<area shape="rect" id="Node000003" href="$structSqshFile.html" title="The Inode context." alt="" coords="261,5,362,30"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="314,45,314,124,309,124,309,45"/>
 </map>

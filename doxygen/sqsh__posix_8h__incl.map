@@ -1,8 +1,13 @@
 <map id="include/sqsh_posix.h" name="include/sqsh_posix.h">
-<area shape="rect" id="node1" title=" " alt="" coords="153,5,374,30"/>
-<area shape="rect" id="node2" href="$sqsh__common_8h.html" title=" " alt="" coords="116,487580,267,487605"/>
-<area shape="rect" id="node6" title=" " alt="" coords="291,78,383,975108"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,975313,117,1950061"/>
-<area shape="rect" id="node4" title=" " alt="" coords="141,975311,242,1950063"/>
-<area shape="rect" id="node5" title=" " alt="" coords="266,975156,368,1950219"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="153,5,374,550388"/>
+<area shape="rect" id="Node000002" href="$sqsh__common_8h.html" title=" " alt="" coords="116,550436,267,550461"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,550388,194,550421,189,550421,189,550388"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="291,550436,383,550461"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="340,550388,340,550421,334,550421,334,550388"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,825534,117,825559"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="175,550463,151,550483,132,550510,127,550568,123,550726,115,551327,100,553635,86,557334,75,562324,55,575786,41,593230,32,613866,27,636903,27,687023,35,737266,47,781311,64,825519,58,825519,42,781311,30,737266,21,687023,22,636903,27,613866,36,593230,50,575786,69,562324,81,557334,95,553635,110,551327,118,550725,122,550568,126,550508,147,550479,171,550459"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="141,825534,242,825559"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="194,550461,194,825519,189,825519,189,550461"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="266,550509,368,1100585"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="212,550459,237,550479,257,550508,263,550605,268,550867,263,550867,257,550605,252,550509,233,550483,209,550463"/>
 </map>

@@ -1,8 +1,13 @@
 <map id="libsqsh/include/sqsh_mapper_private.h" name="libsqsh/include/sqsh_mapper_private.h">
-<area shape="rect" id="node1" title=" " alt="" coords="437,5,658,740458"/>
-<area shape="rect" id="node2" href="$sqsh__mapper_8h.html" title=" " alt="" coords="5,740663,157,1481103"/>
-<area shape="rect" id="node3" title=" " alt="" coords="181,740647,413,1481120"/>
-<area shape="rect" id="node4" title=" " alt="" coords="437,740506,658,1481261"/>
-<area shape="rect" id="node5" title=" " alt="" coords="682,740510,904,1481256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="928,1110871,1050,1110896"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="437,5,658,2021056"/>
+<area shape="rect" id="Node000002" href="$sqsh__mapper_8h.html" title=" " alt="" coords="5,2021104,157,3031636"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="439,1269535,372,1437161,300,1626052,231,1824577,172,2021104,160,2065876,155,2065876,166,2021104,226,1824577,295,1626052,366,1437161,434,1269535"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="181,2526357,413,2526382"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="439,1683789,300,2526342,294,2526342,434,1683789"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="437,2526357,658,2526382"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="550,2021056,550,2526342,545,2526342,545,2021056"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="682,2526352,904,2526387"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="662,1698425,796,2526337,790,2526337,656,1698425"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="928,2526352,1050,2526387"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="662,1273031,728,1440243,797,1628281,863,1825713,918,2021104,938,2106755,954,2193729,976,2356147,992,2526337,986,2526337,971,2356147,948,2193729,932,2106755,913,2021104,857,1825713,791,1628281,722,1440243,656,1273031"/>
 </map>

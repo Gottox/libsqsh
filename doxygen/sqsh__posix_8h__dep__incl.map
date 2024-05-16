@@ -1,12 +1,21 @@
 <map id="include/sqsh_posix.h" name="include/sqsh_posix.h">
-<area shape="rect" id="node1" title=" " alt="" coords="931,5,1152,967849"/>
-<area shape="rect" id="node2" href="$sqsh_8h.html" title=" " alt="" coords="961,967897,1122,967922"/>
-<area shape="rect" id="node3" href="$list__dir_8c.html" title=" " alt="" coords="5,968079,217,1935768"/>
-<area shape="rect" id="node4" href="$list__dir__ll_8c.html" title=" " alt="" coords="241,1451906,482,1451941"/>
-<area shape="rect" id="node5" href="$list__xattrs_8c.html" title=" " alt="" coords="506,1451911,748,1451936"/>
-<area shape="rect" id="node6" href="$list__xattrs__ll_8c.html" title=" " alt="" coords="771,1451911,1043,1451936"/>
-<area shape="rect" id="node7" href="$read__file_8c.html" title=" " alt="" coords="1067,967970,1288,1935877"/>
-<area shape="rect" id="node8" href="$read__file__ll_8c.html" title=" " alt="" coords="1312,967970,1563,1935876"/>
-<area shape="rect" id="node9" href="$readme__example_8c.html" title=" " alt="" coords="1587,967970,1859,1935876"/>
-<area shape="rect" id="node10" href="$traverse__dir__ll_8c.html" title=" " alt="" coords="1882,1451911,2164,1451936"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="931,5,1152,30"/>
+<area shape="rect" id="Node000002" href="$sqsh_8h.html" title=" " alt="" coords="961,78,1122,256944"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1044,46,1044,78,1039,78,1039,46"/>
+<area shape="rect" id="Node000003" href="$list__dir_8c.html" title=" " alt="" coords="5,257119,217,513665"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="963,138478,798,159893,698,173816,592,189264,487,205770,389,222870,301,240100,264,248617,231,256992,220,260124,215,260124,226,256992,258,248617,296,240100,383,222870,482,205770,587,189264,692,173816,793,159893,958,138478"/>
+<area shape="rect" id="Node000004" href="$list__dir__ll_8c.html" title=" " alt="" coords="241,385380,482,385404"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="963,143841,853,165935,724,194122,659,209580,597,225456,542,241383,496,256992,470,267758,448,278731,412,300806,389,322237,374,342041,366,359239,364,372849,364,385379,359,385379,358,372849,361,359239,369,342041,383,322237,407,300806,442,278731,465,267758,491,256992,537,241383,592,225456,653,209579,718,194122,847,165935,958,143841"/>
+<area shape="rect" id="Node000005" href="$list__xattrs_8c.html" title=" " alt="" coords="506,256992,748,513792"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="963,160744,859,206320,807,231779,762,256992,751,263814,746,263814,756,256992,801,231779,853,206320,958,160744"/>
+<area shape="rect" id="Node000006" href="$list__xattrs__ll_8c.html" title=" " alt="" coords="771,256993,1043,513792"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="977,256960,977,256992,972,256992,972,256960"/>
+<area shape="rect" id="Node000007" href="$read__file_8c.html" title=" " alt="" coords="1067,385380,1288,385404"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="1112,256960,1180,385379,1175,385379,1107,256960"/>
+<area shape="rect" id="Node000008" href="$read__file__ll_8c.html" title=" " alt="" coords="1312,385380,1563,385404"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="1126,164426,1217,208648,1263,232964,1303,256992,1334,278731,1361,300806,1404,342042,1440,385379,1435,385379,1399,342042,1356,300806,1329,278731,1298,256992,1258,232964,1212,208648,1120,164426"/>
+<area shape="rect" id="Node000009" href="$readme__example_8c.html" title=" " alt="" coords="1587,385380,1859,385404"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="1126,144430,1232,166558,1357,194611,1419,209961,1479,225714,1532,241511,1578,256992,1627,278731,1664,300806,1691,322237,1708,342041,1718,359239,1724,372849,1726,385379,1720,385379,1718,372849,1713,359239,1703,342041,1685,322237,1659,300806,1622,278731,1572,256992,1527,241511,1473,225714,1414,209961,1351,194611,1227,166558,1120,144430"/>
+<area shape="rect" id="Node000010" href="$traverse__dir__ll_8c.html" title=" " alt="" coords="1882,385380,2164,385404"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="1126,138385,1292,159781,1394,173710,1502,189171,1609,205697,1710,222821,1800,240075,1839,248605,1874,256992,1911,267758,1942,278731,1968,289788,1989,300806,2017,322236,2031,342041,2035,359239,2033,372849,2026,385379,2020,385379,2027,372849,2030,359239,2026,342041,2012,322236,1983,300806,1963,289788,1937,278731,1906,267758,1868,256992,1834,248605,1795,240075,1705,222821,1603,205697,1496,189171,1389,173710,1287,159781,1120,138385"/>
 </map>
