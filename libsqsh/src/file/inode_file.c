@@ -82,6 +82,12 @@ inode_file_ext_payload_size(
 	return block_count * sizeof(uint32_t);
 }
 
+uint16_t
+inode_file_type(const struct SqshDataInode *inode) {
+	(void)inode;
+	return SQSH_FILE_TYPE_FILE;
+}
+
 static uint32_t
 inode_regular_hard_link_count(const struct SqshDataInode *inode) {
 	(void)inode;
@@ -162,6 +168,7 @@ const struct SqshInodeImpl sqsh__inode_file_impl = {
 		.header_size = sizeof(struct SqshDataInodeFile),
 		.payload_size = inode_file_payload_size,
 
+		.type = inode_file_type,
 		.hard_link_count = inode_regular_hard_link_count,
 		.size = inode_file_size,
 
@@ -186,6 +193,7 @@ const struct SqshInodeImpl sqsh__inode_file_ext_impl = {
 		.header_size = sizeof(struct SqshDataInodeFileExt),
 		.payload_size = inode_file_ext_payload_size,
 
+		.type = inode_file_type,
 		.hard_link_count = inode_regular_ext_hard_link_count,
 		.size = inode_file_ext_size,
 

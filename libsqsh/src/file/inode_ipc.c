@@ -50,6 +50,17 @@ inode_ipc_payload_size(
 	return 0;
 }
 
+uint16_t
+inode_ipc_type(const struct SqshDataInode *inode) {
+	switch (sqsh__data_inode_type(inode)) {
+	case SQSH_INODE_TYPE_EXTENDED_FIFO:
+	case SQSH_INODE_TYPE_BASIC_FIFO:
+		return SQSH_FILE_TYPE_FIFO;
+	default:
+		return SQSH_FILE_TYPE_SOCKET;
+	}
+}
+
 static uint32_t
 inode_ipc_hard_link_count(const struct SqshDataInode *inode) {
 	return sqsh__data_inode_ipc_hard_link_count(sqsh__data_inode_ipc(inode));
@@ -76,6 +87,7 @@ const struct SqshInodeImpl sqsh__inode_ipc_impl = {
 		.header_size = sizeof(struct SqshDataInodeIpc),
 		.payload_size = inode_ipc_payload_size,
 
+		.type = inode_ipc_type,
 		.hard_link_count = inode_ipc_hard_link_count,
 		.size = inode_ipc_size,
 
@@ -100,6 +112,7 @@ const struct SqshInodeImpl sqsh__inode_ipc_ext_impl = {
 		.header_size = sizeof(struct SqshDataInodeIpcExt),
 		.payload_size = inode_ipc_payload_size,
 
+		.type = inode_ipc_type,
 		.hard_link_count = inode_ipc_ext_hard_link_count,
 		.size = inode_ipc_size,
 

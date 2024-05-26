@@ -47,6 +47,12 @@ static uint32_t inode_symlink_target_size(const struct SqshDataInode *inode);
 static uint32_t
 inode_symlink_ext_target_size(const struct SqshDataInode *inode);
 
+uint16_t
+inode_symlink_type(const struct SqshDataInode *inode) {
+	(void)inode;
+	return SQSH_FILE_TYPE_SYMLINK;
+}
+
 /* payload_size */
 static size_t
 inode_symlink_payload_size(
@@ -120,6 +126,7 @@ const struct SqshInodeImpl sqsh__inode_symlink_impl = {
 		.header_size = sizeof(struct SqshDataInodeSymlink),
 		.payload_size = inode_symlink_payload_size,
 
+		.type = inode_symlink_type,
 		.hard_link_count = inode_symlink_hard_link_count,
 		.size = inode_symlink_size,
 
@@ -144,6 +151,7 @@ const struct SqshInodeImpl sqsh__inode_symlink_ext_impl = {
 		.header_size = sizeof(struct SqshDataInodeSymlinkExt),
 		.payload_size = inode_symlink_ext_payload_size,
 
+		.type = inode_symlink_type,
 		.hard_link_count = inode_symlink_ext_hard_link_count,
 		.size = inode_symlink_ext_size,
 

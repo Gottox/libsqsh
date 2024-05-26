@@ -58,6 +58,12 @@ inode_directory_ext_payload_size(
 			sqsh__data_inode_directory_ext(inode));
 }
 
+uint16_t
+inode_directory_type(const struct SqshDataInode *inode) {
+	(void)inode;
+	return SQSH_FILE_TYPE_DIRECTORY;
+}
+
 static uint32_t
 inode_directory_hard_link_count(const struct SqshDataInode *inode) {
 	return sqsh__data_inode_directory_hard_link_count(
@@ -128,6 +134,7 @@ const struct SqshInodeImpl sqsh__inode_directory_impl = {
 		.header_size = sizeof(struct SqshDataInodeDirectory),
 		.payload_size = inode_directory_payload_size,
 
+		.type = inode_directory_type,
 		.hard_link_count = inode_directory_hard_link_count,
 		.size = inode_directory_size,
 
@@ -152,6 +159,7 @@ const struct SqshInodeImpl sqsh__inode_directory_ext_impl = {
 		.header_size = sizeof(struct SqshDataInodeDirectoryExt),
 		.payload_size = inode_directory_ext_payload_size,
 
+		.type = inode_directory_type,
 		.hard_link_count = inode_directory_ext_hard_link_count,
 		.size = inode_directory_ext_size,
 

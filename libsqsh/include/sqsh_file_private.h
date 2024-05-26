@@ -216,6 +216,7 @@ struct SqshInodeImpl {
 			const struct SqshDataInode *inode,
 			const struct SqshArchive *archive);
 
+	uint16_t (*type)(const struct SqshDataInode *inode);
 	uint32_t (*hard_link_count)(const struct SqshDataInode *inode);
 	uint64_t (*size)(const struct SqshDataInode *inode);
 
@@ -248,7 +249,6 @@ struct SqshFile {
 	struct SqshMetablockReader metablock;
 	struct SqshArchive *archive;
 	const struct SqshInodeImpl *impl;
-	enum SqshFileType type;
 };
 
 /**

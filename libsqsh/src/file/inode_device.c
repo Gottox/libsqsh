@@ -51,6 +51,17 @@ inode_device_payload_size(
 	return 0;
 }
 
+uint16_t
+inode_device_type(const struct SqshDataInode *inode) {
+	switch (sqsh__data_inode_type(inode)) {
+	case SQSH_INODE_TYPE_EXTENDED_BLOCK:
+	case SQSH_INODE_TYPE_BASIC_BLOCK:
+		return SQSH_FILE_TYPE_BLOCK;
+	default:
+		return SQSH_FILE_TYPE_CHAR;
+	}
+}
+
 static uint32_t
 inode_device_hard_link_count(const struct SqshDataInode *inode) {
 	return sqsh__data_inode_device_hard_link_count(
@@ -90,6 +101,7 @@ const struct SqshInodeImpl sqsh__inode_device_impl = {
 		.header_size = sizeof(struct SqshDataInodeDevice),
 		.payload_size = inode_device_payload_size,
 
+		.type = inode_device_type,
 		.hard_link_count = inode_device_hard_link_count,
 		.size = inode_device_file_size,
 
@@ -114,6 +126,7 @@ const struct SqshInodeImpl sqsh__inode_device_ext_impl = {
 		.header_size = sizeof(struct SqshDataInodeDeviceExt),
 		.payload_size = inode_device_payload_size,
 
+		.type = inode_device_type,
 		.hard_link_count = inode_device_ext_hard_link_count,
 		.size = inode_device_file_size,
 

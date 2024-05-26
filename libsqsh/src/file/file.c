@@ -59,59 +59,37 @@ inode_load(struct SqshFile *context) {
 	switch (type) {
 	case SQSH_INODE_TYPE_BASIC_DIRECTORY:
 		context->impl = &sqsh__inode_directory_impl;
-		context->type = SQSH_FILE_TYPE_DIRECTORY;
 		break;
 	case SQSH_INODE_TYPE_BASIC_FILE:
 		context->impl = &sqsh__inode_file_impl;
-		context->type = SQSH_FILE_TYPE_FILE;
 		break;
 	case SQSH_INODE_TYPE_BASIC_SYMLINK:
 		context->impl = &sqsh__inode_symlink_impl;
-		context->type = SQSH_FILE_TYPE_SYMLINK;
 		break;
 	case SQSH_INODE_TYPE_BASIC_BLOCK:
-		context->impl = &sqsh__inode_device_impl;
-		context->type = SQSH_FILE_TYPE_BLOCK;
-		break;
 	case SQSH_INODE_TYPE_BASIC_CHAR:
 		context->impl = &sqsh__inode_device_impl;
-		context->type = SQSH_FILE_TYPE_CHAR;
 		break;
 	case SQSH_INODE_TYPE_BASIC_FIFO:
-		context->impl = &sqsh__inode_ipc_impl;
-		context->type = SQSH_FILE_TYPE_FIFO;
-		break;
 	case SQSH_INODE_TYPE_BASIC_SOCKET:
 		context->impl = &sqsh__inode_ipc_impl;
-		context->type = SQSH_FILE_TYPE_SOCKET;
 		break;
 	case SQSH_INODE_TYPE_EXTENDED_DIRECTORY:
 		context->impl = &sqsh__inode_directory_ext_impl;
-		context->type = SQSH_FILE_TYPE_DIRECTORY;
 		break;
 	case SQSH_INODE_TYPE_EXTENDED_FILE:
 		context->impl = &sqsh__inode_file_ext_impl;
-		context->type = SQSH_FILE_TYPE_FILE;
 		break;
 	case SQSH_INODE_TYPE_EXTENDED_SYMLINK:
 		context->impl = &sqsh__inode_symlink_ext_impl;
-		context->type = SQSH_FILE_TYPE_SYMLINK;
 		break;
 	case SQSH_INODE_TYPE_EXTENDED_BLOCK:
-		context->impl = &sqsh__inode_device_ext_impl;
-		context->type = SQSH_FILE_TYPE_BLOCK;
-		break;
 	case SQSH_INODE_TYPE_EXTENDED_CHAR:
 		context->impl = &sqsh__inode_device_ext_impl;
-		context->type = SQSH_FILE_TYPE_CHAR;
-		break;
-	case SQSH_INODE_TYPE_EXTENDED_FIFO:
-		context->impl = &sqsh__inode_ipc_ext_impl;
-		context->type = SQSH_FILE_TYPE_FIFO;
 		break;
 	case SQSH_INODE_TYPE_EXTENDED_SOCKET:
+	case SQSH_INODE_TYPE_EXTENDED_FIFO:
 		context->impl = &sqsh__inode_ipc_ext_impl;
-		context->type = SQSH_FILE_TYPE_SOCKET;
 		break;
 	default:
 		return -SQSH_ERROR_UNKNOWN_FILE_TYPE;
@@ -317,7 +295,7 @@ sqsh_file_has_fragment(const struct SqshFile *inode) {
 
 enum SqshFileType
 sqsh_file_type(const struct SqshFile *context) {
-	return context->type;
+	return context->impl->type(get_inode(context));
 }
 
 const char *
