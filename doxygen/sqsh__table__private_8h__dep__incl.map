@@ -1,7 +1,7 @@
 <map id="libsqsh/include/sqsh_table_private.h" name="libsqsh/include/sqsh_table_private.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,227,26782"/>
-<area shape="rect" id="Node000002" href="$sqsh__xattr__private_8h.html" title=" " alt="" coords="5,26830,227,80347"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,26797,119,26829,113,26829,113,26797"/>
-<area shape="rect" id="Node000003" href="$sqsh__archive__private_8h.html" title=" " alt="" coords="5,80395,227,107489"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,80363,119,80395,113,80395,113,80363"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,227,44"/>
+<area shape="rect" id="Node000002" href="$sqsh__xattr__private_8h.html" title=" " alt="" coords="5,92,227,2098059"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,59,119,92,113,92,113,59"/>
+<area shape="rect" id="Node000003" href="$sqsh__archive__private_8h.html" title=" " alt="" coords="5,2098107,227,2098160"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,2098074,119,2098106,113,2098106,113,2098074"/>
 </map>

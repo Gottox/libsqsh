@@ -1,7 +1,8 @@
 <map id="SqshTreeTraversalStackElement" name="SqshTreeTraversalStackElement">
-<area shape="rect" id="Node000001" title="A walker over the contents of a file." alt="" coords="60,124,371,150636"/>
-<area shape="rect" id="Node000002" href="$structSqshDirectoryIterator.html" title="A directory iterator." alt="" coords="5,5,237,30"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,45,124,124,118,124,118,45"/>
-<area shape="rect" id="Node000003" href="$structSqshFile.html" title="The Inode context." alt="" coords="261,5,362,30"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="314,45,314,124,309,124,309,45"/>
+<area shape="rect" id="Node000001" title="A walker over the contents of a file." alt="" coords="60,3183119,371,3183144"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="213,3183104,238,3117837,266,3071218,281,3054902,296,3043248,311,3036257,318,3034509,328,3033924,338,3034511,344,3036260,357,3043255,368,3054912,378,3071232,393,3117857,398,3183132,393,3248407,378,3295033,368,3311353,357,3323010,344,3330004,338,3331753,328,3332339,318,3331754,311,3330006,296,3323013,281,3311357,266,3295040,238,3248417,213,3183144,218,3183144,243,3248417,272,3295040,287,3311357,302,3323013,316,3330006,324,3331754,328,3332333,332,3331753,339,3330004,352,3323010,363,3311353,373,3295033,387,3248407,393,3183132,387,3117857,373,3071232,363,3054912,352,3043255,339,3036260,332,3034511,328,3033930,324,3034509,316,3036257,302,3043248,287,3054902,272,3071218,243,3117837,218,3183104"/>
+<area shape="rect" id="Node000002" href="$structSqshDirectoryIterator.html" title="A directory iterator." alt="" coords="5,5,237,1591630"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,1591645,195,3183095,208,3183117,203,3183120,190,3183096,142,1591645"/>
+<area shape="rect" id="Node000003" href="$structSqshFile.html" title="The Inode context." alt="" coords="261,795805,362,795830"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="314,795845,285,3183096,272,3183111,255,3183121,253,3183116,268,3183107,280,3183094,309,795845"/>
 </map>

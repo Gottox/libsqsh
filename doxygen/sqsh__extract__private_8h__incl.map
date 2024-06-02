@@ -1,17 +1,17 @@
 <map id="libsqsh/include/sqsh_extract_private.h" name="libsqsh/include/sqsh_extract_private.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="234,5,456,44"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="34,92,256,1392601"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="314,46,289,67,270,93,264,148,257,286,244,805,232,1644,220,2796,197,6017,175,10421,155,15961,137,22588,104,38920,77,59037,55,82562,38,109116,25,138320,16,169797,11,203167,10,274076,19,348020,36,421973,31,421973,14,348020,4,274076,5,203167,11,169797,19,138320,32,109116,50,82562,72,59037,99,38920,132,22588,150,15961,170,10421,191,6017,214,2796,226,1644,239,805,252,286,258,148,265,91,285,63,311,42"/>
-<area shape="rect" id="Node000003" href="$sqsh__data_8h.html" title=" " alt="" coords="279,696334,411,696359"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="348,45,348,696319,342,696319,342,45"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="434,696318,656,696375"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="380,42,405,63,425,91,431,136,437,243,448,642,470,2168,490,4638,510,8023,528,12289,545,17406,575,30066,602,45753,624,64215,642,85201,657,108461,678,160798,686,219218,685,281713,677,346275,662,410898,643,473573,601,585050,564,664647,548,696303,542,696303,559,664647,596,585050,638,473573,657,410898,671,346275,680,281713,681,219218,672,160798,652,108461,637,85201,619,64215,596,45753,570,30066,539,17406,522,12289,504,8023,485,4638,465,2168,443,642,431,243,426,136,420,93,401,67,376,46"/>
-<area shape="rect" id="Node000004" href="$sqsh__common_8h.html" title=" " alt="" coords="269,1392649,421,1392673"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="348,696359,348,1392633,342,1392633,342,696359"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="159,1392732,270,1392767"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="329,1392676,254,1392726,251,1392721,326,1392672"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="294,1392721,396,1392778"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="348,1392674,348,1392706,342,1392706,342,1392674"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="420,1392737,521,1392762"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="364,1392672,443,1392726,440,1392730,361,1392676"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="205,5,427,1616878"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,1616926,227,1616951"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,1258505,119,1616911,113,1616911,202,1258505"/>
+<area shape="rect" id="Node000003" href="$sqsh__data_8h.html" title=" " alt="" coords="250,1616926,382,1616951"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="319,1616879,319,1616911,313,1616911,313,1616879"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="405,1616926,627,1616951"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="430,1258505,519,1616911,513,1616911,425,1258505"/>
+<area shape="rect" id="Node000004" href="$sqsh__common_8h.html" title=" " alt="" coords="240,1616999,392,1617024"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="319,1616952,319,1616984,313,1616984,313,1616952"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="130,1617072,241,1617096"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="296,1617027,221,1617067,219,1617062,293,1617022"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="265,1617072,367,1617096"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="319,1617024,319,1617056,313,1617056,313,1617024"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="391,1617072,492,1617096"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="338,1617022,409,1617062,406,1617066,335,1617027"/>
 </map>

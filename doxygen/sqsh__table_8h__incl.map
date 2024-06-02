@@ -1,11 +1,11 @@
 <map id="include/sqsh_table.h" name="include/sqsh_table.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="81,5,302,1195926"/>
-<area shape="rect" id="Node000002" href="$sqsh__common_8h.html" title=" " alt="" coords="116,1195974,267,1195999"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,1195926,194,1195959,189,1195959,189,1195926"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,1196048,117,2391967"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="175,1196001,151,1196021,132,1196048,126,1196227,120,1196733,115,1196733,120,1196226,126,1196046,147,1196017,171,1195997"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="141,1196149,242,2391865"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="194,1195999,194,1196134,189,1196134,189,1195999"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="266,1196047,368,2391968"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="212,1195997,237,1196017,257,1196046,263,1196216,268,1196695,263,1196695,257,1196217,252,1196048,233,1196021,209,1196001"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="81,5,302,30"/>
+<area shape="rect" id="Node000002" href="$sqsh__common_8h.html" title=" " alt="" coords="116,78,267,103"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,31,194,62,189,62,189,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,151,117,1062477"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="175,105,151,125,132,152,126,353,120,926,115,926,120,353,126,150,147,121,171,101"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="141,531302,242,531326"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="194,103,194,531286,189,531286,189,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="266,531302,368,531326"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="212,101,237,121,257,150,261,256,265,552,273,1699,288,6138,301,13275,312,22917,330,48955,344,82714,352,122659,357,167256,357,264263,348,361452,336,446541,320,531286,314,531286,331,446541,343,361452,352,264263,352,167256,347,122659,338,82714,325,48955,307,22917,295,13275,282,6138,268,1699,260,552,256,256,252,152,233,125,209,105"/>
 </map>

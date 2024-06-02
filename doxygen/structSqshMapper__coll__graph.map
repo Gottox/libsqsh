@@ -1,9 +1,0 @@
-<map id="SqshMapper" name="SqshMapper">
-<area shape="rect" id="Node000001" title="The mapper that is used to map chunks of the archive into memory." alt="" coords="221,134,343,159"/>
-<area shape="rect" id="Node000002" href="$structSqshMmapMapper.html" title="The mmap mapper." alt="" coords="5,10,167,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,41,265,131,262,136,116,46"/>
-<area shape="rect" id="Node000003" href="$structSqshStaticMapper.html" title="The static mapper." alt="" coords="191,10,373,35"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="285,51,285,134,279,134,279,51"/>
-<area shape="rect" id="Node000004" href="$structSqshCurlMapper.html" title="The curl mapper." alt="" coords="397,5,559,40"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="440,51,302,136,299,131,437,46"/>
-</map>

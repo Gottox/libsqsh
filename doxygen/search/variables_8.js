@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['payload_5fsize_0',['payload_size',['../structSqshInodeImpl.html#afd9c010f22196acb53ecf00990ee9aa6',1,'SqshInodeImpl']]]
+  ['next_0',['next',['../structSqshTreeTraversalStackElement.html#a8e90c73a506c9b1ec993fef99fc534a4',1,'SqshTreeTraversalStackElement']]]
 ];
