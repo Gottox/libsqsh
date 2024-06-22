@@ -41,42 +41,10 @@
 #include <sqsh_mapper.h>
 #include <sqsh_mapper_private.h>
 
-/**
- * Calculates pow(x,y) % mod
- */
-static uint64_t
-mod_power(uint64_t x, uint64_t y, uint64_t mod) {
-	uint64_t res = 1;
-
-	for (; y; y = y >> 1) {
-		if (y & 1) {
-			res = (res * x) % mod;
-		}
-
-		x = (x * x) % mod;
-	}
-
-	return res;
-}
-
-static bool
-maybe_prime(uint64_t n) {
-	static const uint64_t a = 2;
-
-	return mod_power(a, n - 1, n) == 1;
-}
-
-static uint64_t
-find_next_maybe_prime(size_t n) {
-	for (; maybe_prime(n) == false; n++) {
-	}
-
-	return n;
-}
-
 static void
 buffer_cleanup(void *buffer) {
-	cx_buffer_cleanup(buffer);
+	struct SqshExtractBuffer *extract_buffer = buffer;
+	cx_buffer_cleanup(&extract_buffer->buffer);
 }
 
 SQSH_NO_UNUSED int
@@ -101,19 +69,20 @@ sqsh__extract_manager_init(
 	}
 
 	/* Give a bit of room to avoid too many key hash collisions */
-	size = find_next_maybe_prime(2 * size);
 
 	rv = sqsh__mutex_init(&manager->lock);
 	if (rv < 0) {
 		goto out;
 	}
-	rv = cx_rc_hash_map_init(
-			&manager->hash_map, size, sizeof(struct CxBuffer), buffer_cleanup);
+	rv = cx_rc_radix_tree_init(
+			&manager->radix_tree, sizeof(struct SqshExtractBuffer),
+			buffer_cleanup);
 	if (rv < 0) {
 		goto out;
 	}
 	rv = cx_lru_init(
-			&manager->lru, lru_size, &cx_lru_rc_hash_map, &manager->hash_map);
+			&manager->lru, lru_size, &cx_lru_rc_radix_tree,
+			&manager->radix_tree);
 	if (rv < 0) {
 		goto out;
 	}
@@ -131,7 +100,7 @@ out:
 int
 sqsh__extract_manager_uncompress(
 		struct SqshExtractManager *manager, const struct SqshMapReader *reader,
-		const struct CxBuffer **target) {
+		const struct SqshExtractBuffer **target) {
 	int rv = 0;
 	struct SqshExtractor extractor = {0};
 	const struct SqshExtractorImpl *extractor_impl = manager->extractor_impl;
@@ -145,35 +114,35 @@ sqsh__extract_manager_uncompress(
 	const uint64_t address = sqsh__map_reader_address(reader);
 	const size_t size = sqsh__map_reader_size(reader);
 
-	*target = cx_rc_hash_map_retain(&manager->hash_map, address);
+	*target = cx_rc_radix_tree_retain(&manager->radix_tree, address);
 
 	if (*target == NULL) {
-		struct CxBuffer buffer = {0};
-		rv = cx_buffer_init(&buffer);
+		struct SqshExtractBuffer buffer = {.key = address};
+		rv = cx_buffer_init(&buffer.buffer);
 		if (rv < 0) {
 			goto out;
 		}
 		const uint8_t *data = sqsh__map_reader_data(reader);
 
 		rv = sqsh__extractor_init(
-				&extractor, &buffer, extractor_impl, block_size);
+				&extractor, &buffer.buffer, extractor_impl, block_size);
 		if (rv < 0) {
 			goto out;
 		}
 
 		rv = sqsh__extractor_write(&extractor, data, size);
 		if (rv < 0) {
-			cx_buffer_cleanup(&buffer);
+			cx_buffer_cleanup(&buffer.buffer);
 			goto out;
 		}
 
 		rv = sqsh__extractor_finish(&extractor);
 		if (rv < 0) {
-			cx_buffer_cleanup(&buffer);
+			cx_buffer_cleanup(&buffer.buffer);
 			goto out;
 		}
 
-		*target = cx_rc_hash_map_put(&manager->hash_map, address, &buffer);
+		*target = cx_rc_radix_tree_put(&manager->radix_tree, address, &buffer);
 	}
 	rv = cx_lru_touch(&manager->lru, address);
 
@@ -185,13 +154,14 @@ out:
 
 int
 sqsh__extract_manager_release(
-		struct SqshExtractManager *manager, const struct CxBuffer *buffer) {
+		struct SqshExtractManager *manager,
+		const struct SqshExtractBuffer *buffer) {
 	int rv = sqsh__mutex_lock(&manager->lock);
 	if (rv < 0) {
 		goto out;
 	}
 
-	rv = cx_rc_hash_map_release(&manager->hash_map, buffer);
+	rv = cx_rc_radix_tree_release(&manager->radix_tree, buffer->key);
 
 	sqsh__mutex_unlock(&manager->lock);
 out:
@@ -201,7 +171,7 @@ out:
 int
 sqsh__extract_manager_cleanup(struct SqshExtractManager *manager) {
 	cx_lru_cleanup(&manager->lru);
-	cx_rc_hash_map_cleanup(&manager->hash_map);
+	cx_rc_radix_tree_cleanup(&manager->radix_tree);
 	sqsh__mutex_destroy(&manager->lock);
 
 	return 0;

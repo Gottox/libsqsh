@@ -44,7 +44,7 @@ UTEST(directory_iterator, decompress) {
 	int rv;
 	struct SqshArchive archive = {0};
 	struct SqshExtractManager manager = {0};
-	const struct CxBuffer *buffer = NULL;
+	const struct SqshExtractBuffer *buffer = NULL;
 	uint8_t payload[8192] = {SQSH_HEADER, ZLIB_ABCD};
 
 	mk_stub(&archive, payload, sizeof(payload));
@@ -65,8 +65,8 @@ UTEST(directory_iterator, decompress) {
 	rv = sqsh__extract_manager_uncompress(&manager, &reader, &buffer);
 	ASSERT_EQ(0, rv);
 	ASSERT_NE(NULL, buffer);
-	ASSERT_EQ((size_t)4, cx_buffer_size(buffer));
-	ASSERT_EQ(0, memcmp(cx_buffer_data(buffer), "abcd", 4));
+	ASSERT_EQ((size_t)4, cx_buffer_size(&buffer->buffer));
+	ASSERT_EQ(0, memcmp(cx_buffer_data(&buffer->buffer), "abcd", 4));
 
 	sqsh__map_reader_cleanup(&reader);
 	sqsh__extract_manager_release(&manager, buffer);
@@ -78,8 +78,8 @@ UTEST(directory_iterator, decompress_and_cached) {
 	int rv;
 	struct SqshArchive archive = {0};
 	struct SqshExtractManager manager = {0};
-	const struct CxBuffer *buffer = NULL;
-	const struct CxBuffer *cached_buffer = NULL;
+	const struct SqshExtractBuffer *buffer = NULL;
+	const struct SqshExtractBuffer *cached_buffer = NULL;
 	uint8_t payload[8192] = {SQSH_HEADER, ZLIB_ABCD};
 
 	mk_stub(&archive, payload, sizeof(payload));
@@ -100,8 +100,8 @@ UTEST(directory_iterator, decompress_and_cached) {
 	rv = sqsh__extract_manager_uncompress(&manager, &reader, &buffer);
 	ASSERT_EQ(0, rv);
 	ASSERT_NE(NULL, buffer);
-	ASSERT_EQ((size_t)4, cx_buffer_size(buffer));
-	ASSERT_EQ(0, memcmp(cx_buffer_data(buffer), "abcd", 4));
+	ASSERT_EQ((size_t)4, cx_buffer_size(&buffer->buffer));
+	ASSERT_EQ(0, memcmp(cx_buffer_data(&buffer->buffer), "abcd", 4));
 
 	rv = sqsh__extract_manager_uncompress(&manager, &reader, &cached_buffer);
 	ASSERT_EQ(0, rv);

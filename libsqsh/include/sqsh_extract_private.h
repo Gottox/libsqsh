@@ -176,12 +176,21 @@ struct SqshExtractManager {
 	/**
 	 * @privatesection
 	 */
-	struct CxRcHashMap hash_map;
+	struct CxRcRadixTree radix_tree;
 	const struct SqshExtractorImpl *extractor_impl;
 	uint32_t block_size;
 	struct SqshMapManager *map_manager;
 	struct CxLru lru;
 	sqsh__mutex_t lock;
+};
+
+/**
+ * @internal
+ * @brief A buffer that is used by a SqshExtractManager.
+ */
+struct SqshExtractBuffer {
+	uint64_t key;
+	struct CxBuffer buffer;
 };
 
 /**
@@ -213,7 +222,7 @@ SQSH_NO_EXPORT SQSH_NO_UNUSED int sqsh__extract_manager_init(
  */
 SQSH_NO_EXPORT int sqsh__extract_manager_uncompress(
 		struct SqshExtractManager *manager, const struct SqshMapReader *reader,
-		const struct CxBuffer **target);
+		const struct SqshExtractBuffer **target);
 
 /**
  * @internal
@@ -226,7 +235,8 @@ SQSH_NO_EXPORT int sqsh__extract_manager_uncompress(
  * @return 0 on success, a negative value on error.
  */
 SQSH_NO_EXPORT int sqsh__extract_manager_release(
-		struct SqshExtractManager *manager, const struct CxBuffer *buffer);
+		struct SqshExtractManager *manager,
+		const struct SqshExtractBuffer *buffer);
 
 /**
  * @internal
@@ -252,7 +262,7 @@ struct SqshExtractView {
 	 * @privatesection
 	 */
 	struct SqshExtractManager *manager;
-	const struct CxBuffer *buffer;
+	const struct SqshExtractBuffer *buffer;
 	size_t offset;
 	size_t size;
 };
