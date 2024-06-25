@@ -100,7 +100,7 @@ foreach p : sqsh_test
             libmksqsh_include,
         ],
         link_with: [libsqsh.get_static_lib(), libmksqsh.get_static_lib()],
-        dependencies: [threads_dep, utest_dep, cextras_dep],
+        dependencies: [threads_dep, utest_dep, cextras_dep, testlib_dep],
     )
     test(p, t, env: {'VERSION': meson.project_version()})
 endforeach
