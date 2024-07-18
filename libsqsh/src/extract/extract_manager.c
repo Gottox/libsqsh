@@ -129,6 +129,93 @@ out:
 }
 
 int
+do_uncompress(
+		struct SqshExtractManager *manager, struct SqshMapReader *reader,
+		size_t size, const struct CxBuffer **target) {
+	const uint32_t block_size = manager->block_size;
+	const uint64_t address = sqsh__map_reader_address(reader);
+
+	struct SqshExtractor extractor = {0};
+	const struct SqshExtractorImpl *extractor_impl = manager->extractor_impl;
+	int rv = 0;
+	struct CxBuffer buffer = {0};
+	rv = cx_buffer_init(&buffer);
+	if (rv < 0) {
+		goto out;
+	}
+
+	rv = sqsh__extractor_init(&extractor, &buffer, extractor_impl, block_size);
+	if (rv < 0) {
+		goto out;
+	}
+
+	size_t remaining_size = size;
+	while (remaining_size > 0) {
+		const size_t current_size = SQSH_MIN(
+				sqsh__map_reader_remaining_direct(reader), remaining_size);
+
+		rv = sqsh__map_reader_advance(reader, 0, current_size);
+		if (rv < 0) {
+			goto out;
+		}
+
+		const uint8_t *data = sqsh__map_reader_data(reader);
+		rv = sqsh__extractor_write(&extractor, data, current_size);
+		if (rv < 0) {
+			goto out;
+		}
+
+		rv = sqsh__map_reader_advance(reader, current_size, 0);
+		if (rv < 0) {
+			goto out;
+		}
+
+		remaining_size -= current_size;
+	}
+	rv = sqsh__extractor_finish(&extractor);
+	if (rv < 0) {
+		goto out;
+	}
+
+	*target = cx_rc_hash_map_put(&manager->hash_map, address, &buffer);
+out:
+	if (rv < 0) {
+		cx_buffer_cleanup(&buffer);
+	}
+	sqsh__extractor_cleanup(&extractor);
+	return rv;
+}
+
+int
+sqsh__extract_manager_uncompress2(
+		struct SqshExtractManager *manager, struct SqshMapReader *reader,
+		size_t size, const struct CxBuffer **target) {
+	int rv = 0;
+
+	rv = sqsh__mutex_lock(&manager->lock);
+	if (rv < 0) {
+		goto out;
+	}
+
+	const uint64_t address = sqsh__map_reader_address(reader);
+
+	rv = sqsh__map_reader_advance(reader, 0, size);
+
+	*target = cx_rc_hash_map_retain(&manager->hash_map, address);
+
+	if (*target == NULL) {
+		rv = do_uncompress(manager, reader, size, target);
+		if (rv < 0) {
+			goto out;
+		}
+	}
+	rv = cx_lru_touch(&manager->lru, address);
+
+out:
+	sqsh__mutex_unlock(&manager->lock);
+	return rv;
+}
+int
 sqsh__extract_manager_uncompress(
 		struct SqshExtractManager *manager, const struct SqshMapReader *reader,
 		const struct CxBuffer **target) {

@@ -218,6 +218,21 @@ SQSH_NO_EXPORT int sqsh__extract_manager_uncompress(
 /**
  * @internal
  * @memberof SqshExtractManager
+ * @brief Decompresses data to a buffer.
+ *
+ * @param[in]     manager     The manager to use.
+ * @param[in]     reader      The reader to use.
+ * @param[in]     size        The size of the data to decompress.
+ * @param[out]    target      The buffer to store the decompressed data.
+ *
+ * @return 0 on success, a negative value on error.
+ */
+SQSH_NO_EXPORT int sqsh__extract_manager_uncompress2(
+		struct SqshExtractManager *manager, struct SqshMapReader *reader,
+		size_t size, const struct CxBuffer **target);
+/**
+ * @internal
+ * @memberof SqshExtractManager
  * @brief releases a buffer retrieved by sqsh__extract_manager_uncompress.
  *
  * @param[in] manager The manager to use.
