@@ -33,6 +33,9 @@
  */
 
 #include <sqshtools_common.h>
+#ifdef CONFIG_LANDLOCK
+#	include <linux/landlock.h>
+#endif
 
 struct SqshArchive *
 open_archive(const char *image_path, uint64_t offset, int *err) {

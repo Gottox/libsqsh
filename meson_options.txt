@@ -59,3 +59,9 @@ option(
     value: 'enabled',
     description: 'Build with thread support.',
 )
+option(
+	'landlock',
+    type: 'feature',
+    value: 'auto',
+    description: 'Build with landlock support.',
+)

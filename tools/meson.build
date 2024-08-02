@@ -11,6 +11,12 @@ tool_sources = [
 ]
 
 c_args = ['-DVERSION="@0@"'.format(meson.project_version())]
+if meson.get_compiler('c').has_header(
+    'linux/landlock.h',
+    required: get_option('landlock'),
+)
+    c_args += ['-DCONFIG_LANDLOCK']
+endif
 
 tools = {}
 foreach src : tool_sources

@@ -38,7 +38,13 @@ mode:
       - -Dfuzzer_timeout=300
   extended:
     configure:
+      - -Db_lundef=false
       - -Dtest=extended
+      - -Ddoc=internal
+      - -Dexamples=true
+      - -Db_sanitize=address,undefined
+    default:
+      - test
   clang:
     env:
       CC: clang

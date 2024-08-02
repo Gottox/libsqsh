@@ -40,6 +40,44 @@
 #include <string.h>
 #include <unistd.h>
 
+#if defined(__OPENBSD__)
+static void
+lockdown(void) {
+	pledge("stdio inet dns", NULL);
+}
+#elif defined(CONFIG_LANDLOCK)
+static void
+lockdown(void) {
+	int fd;
+	static const struct landlock_ruleset_attr rules = {
+			.handled_access_fs = LANDLOCK_ACCESS_FS_READ_FILE,
+	};
+
+	fd = syscall(SYS_landlock_create_ruleset, &rules, sizeof(rules), 0);
+	if (fd < 0) {
+		perror("Failed to create a ruleset");
+		goto err;
+	}
+	if (prctl(PR_SET_NO_NEW_PRIVS, 1, 0, 0, 0)) {
+		perror("Failed to restrict privileges");
+		goto err;
+	}
+	if (syscall(SYS_landlock_restrict_self, fd, 0)) {
+		perror("Failed to enforce ruleset");
+		goto err;
+	}
+	return;
+
+err:
+	if (fd >= 0) {
+		close(fd);
+	}
+	exit(EXIT_FAILURE);
+}
+#else
+#	define lockdown()
+#endif
+
 static int
 usage(char *arg0) {
 	printf("usage: %s [-o OFFSET] FILESYSTEM PATH [PATH ...]\n", arg0);
@@ -86,6 +124,8 @@ main(int argc, char *argv[]) {
 	const char *image_path;
 	struct SqshArchive *sqsh = NULL;
 	uint64_t offset = 0;
+
+	lockdown();
 
 	while ((opt = getopt_long(argc, argv, opts, long_opts, NULL)) != -1) {
 		switch (opt) {

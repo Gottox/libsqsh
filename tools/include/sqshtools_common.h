@@ -42,6 +42,14 @@
 #include <sqsh.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
+
+#if defined(CONFIG_LANDLOCK)
+#	include <linux/prctl.h>
+#	include <sys/prctl.h>
+#	include <linux/landlock.h>
+#	include <sys/syscall.h>
+#endif
 
 #ifndef VERSION
 #	define VERSION "0.0.0-unknown"
