@@ -93,8 +93,6 @@ write_data(void *ptr, size_t size, size_t nmemb, void *userdata) {
 
 static int
 get_total_size(CURL *handle, uint64_t *total) {
-	static const char *format = CONTENT_RANGE_FORMAT;
-
 	CURLHcode hcode;
 	uint64_t dummy;
 	struct curl_header *header = NULL;
@@ -106,7 +104,8 @@ get_total_size(CURL *handle, uint64_t *total) {
 		return -SQSH_ERROR_CURL_INVALID_RANGE_HEADER;
 	}
 
-	scanned_fields = sscanf(header->value, format, &dummy, &dummy, total);
+	scanned_fields =
+			sscanf(header->value, CONTENT_RANGE_FORMAT, &dummy, &dummy, total);
 
 	if (scanned_fields != 3) {
 		return -SQSH_ERROR_CURL_INVALID_RANGE_HEADER;
