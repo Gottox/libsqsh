@@ -75,6 +75,7 @@ uint8_t *
 sqsh_easy_file_content(
 		struct SqshArchive *archive, const char *path, int *err) {
 	int rv = 0;
+	struct CxBuffer buffer = {0};
 	struct SqshFileIterator iterator = {0};
 	struct SqshFile *file = NULL;
 	uint8_t *content = NULL;
@@ -89,28 +90,36 @@ sqsh_easy_file_content(
 		goto out;
 	}
 
-	size_t file_size = sqsh_file_size(file);
-	content = calloc(file_size + 1, sizeof(*content));
-	if (content == NULL) {
-		rv = -SQSH_ERROR_MALLOC_FAILED;
+	const size_t file_size = sqsh_file_size(file);
+	rv = cx_buffer_init(&buffer);
+	if (rv < 0) {
 		goto out;
 	}
 
-	for (sqsh_index_t pos = 0;
-		 sqsh_file_iterator_next(&iterator, SIZE_MAX, &rv);) {
-		const uint8_t *data = sqsh_file_iterator_data(&iterator);
-		const size_t size = sqsh_file_iterator_size(&iterator);
-		memcpy(&content[pos], data, size);
-		pos += size;
+	rv = cx_buffer_add_capacity_exact(&buffer, NULL, file_size + 1);
+	if (rv < 0) {
+		goto out;
 	}
 
+	while (rv >= 0 && sqsh_file_iterator_next(&iterator, SIZE_MAX, &rv)) {
+		const uint8_t *data = sqsh_file_iterator_data(&iterator);
+		const size_t size = sqsh_file_iterator_size(&iterator);
+		rv = cx_buffer_append(&buffer, data, size);
+	}
+
+	if (rv < 0) {
+		goto out;
+	}
+	rv = cx_buffer_append(&buffer, (const uint8_t *)"", 1);
+	if (rv < 0) {
+		goto out;
+	}
+
+	content = cx_buffer_unwrap(&buffer);
 out:
 	sqsh__file_iterator_cleanup(&iterator);
 	sqsh_close(file);
-	if (rv < 0) {
-		free(content);
-		content = NULL;
-	}
+	cx_buffer_cleanup(&buffer);
 	if (err != NULL) {
 		*err = rv;
 	}
