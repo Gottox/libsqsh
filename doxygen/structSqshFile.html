@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -97,9 +97,12 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afe81f3b039226407fd388f1ce3abebcf" id="r_afe81f3b039226407fd388f1ce3abebcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> <a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe81f3b039226407fd388f1ce3abebcf">sqsh__file_set_dir_inode</a> (struct <a class="el" href="structSqshFile.html">SqshFile</a> *context, uint32_t dir_inode)</td></tr>
-<tr class="memdesc:afe81f3b039226407fd388f1ce3abebcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns whether the file is an extended structure.  <br /></td></tr>
-<tr class="separator:afe81f3b039226407fd388f1ce3abebcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1bfcd898b7bb947f4a859dd8e163c9" id="r_ada1bfcd898b7bb947f4a859dd8e163c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada1bfcd898b7bb947f4a859dd8e163c9">sqsh__file_set_parent_inode_ref</a> (struct <a class="el" href="structSqshFile.html">SqshFile</a> *context, uint64_t parent_inode_ref)</td></tr>
+<tr class="memdesc:ada1bfcd898b7bb947f4a859dd8e163c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the parent inode reference.  <br /></td></tr>
+<tr class="separator:ada1bfcd898b7bb947f4a859dd8e163c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f92fb86e6ddd834490572edd94dc64" id="r_a43f92fb86e6ddd834490572edd94dc64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43f92fb86e6ddd834490572edd94dc64">sqsh__file_parent_inode_ref</a> (struct <a class="el" href="structSqshFile.html">SqshFile</a> *context, int *err)</td></tr>
+<tr class="memdesc:a43f92fb86e6ddd834490572edd94dc64"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the parent inode reference if possible.  <br /></td></tr>
+<tr class="separator:a43f92fb86e6ddd834490572edd94dc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b98811573fccde32c1db90c60f9e51f" id="r_a3b98811573fccde32c1db90c60f9e51f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshFile.html">SqshFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b98811573fccde32c1db90c60f9e51f">sqsh_open</a> (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, const char *path, int *err)</td></tr>
 <tr class="memdesc:a3b98811573fccde32c1db90c60f9e51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the file context from a path.  <br /></td></tr>
 <tr class="separator:a3b98811573fccde32c1db90c60f9e51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,6 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8597eb0c0e289a6dc3864c9f97e9e36" id="r_aa8597eb0c0e289a6dc3864c9f97e9e36"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8597eb0c0e289a6dc3864c9f97e9e36">sqsh_file_block_count</a> (const struct <a class="el" href="structSqshFile.html">SqshFile</a> *context)</td></tr>
 <tr class="memdesc:aa8597eb0c0e289a6dc3864c9f97e9e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the amount of blocks of the file content. This is only internally used and will be used while retrieving the file content.  <br /></td></tr>
 <tr class="separator:aa8597eb0c0e289a6dc3864c9f97e9e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297e51bed0372460dae716deb80fce0f" id="r_a297e51bed0372460dae716deb80fce0f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a297e51bed0372460dae716deb80fce0f">sqsh_file_block_count2</a> (const struct <a class="el" href="structSqshFile.html">SqshFile</a> *context)</td></tr>
+<tr class="memdesc:a297e51bed0372460dae716deb80fce0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the amount of blocks of the file content. This is only internally used and will be used while retrieving the file content.  <br /></td></tr>
+<tr class="separator:a297e51bed0372460dae716deb80fce0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaccbd6d1cf5d152a2dd03ba216f88824" id="r_aaccbd6d1cf5d152a2dd03ba216f88824"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaccbd6d1cf5d152a2dd03ba216f88824">sqsh_file_block_size</a> (const struct <a class="el" href="structSqshFile.html">SqshFile</a> *context, uint32_t index)</td></tr>
 <tr class="memdesc:aaccbd6d1cf5d152a2dd03ba216f88824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter the size of a block of the file content. This is only internally used and will be used while retrieving the file content.  <br /></td></tr>
 <tr class="separator:aaccbd6d1cf5d152a2dd03ba216f88824"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,40 +205,73 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0bacebc806e4094d88988184ce4576fb" id="r_a0bacebc806e4094d88988184ce4576fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bacebc806e4094d88988184ce4576fb">sqsh_file_to_stream</a> (const struct <a class="el" href="structSqshFile.html">SqshFile</a> *file, FILE *stream)</td></tr>
 <tr class="memdesc:a0bacebc806e4094d88988184ce4576fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">writes data to a file descriptor.  <br /></td></tr>
 <tr class="separator:a0bacebc806e4094d88988184ce4576fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f76589569fab967d7b41b112e082b9" id="r_ad4f76589569fab967d7b41b112e082b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4f76589569fab967d7b41b112e082b9">sqsh_file_to_stream_mt</a> (const struct <a class="el" href="structSqshFile.html">SqshFile</a> *file, struct <a class="el" href="structSqshThreadpool.html">SqshThreadpool</a> *threadpool, FILE *stream, <a class="el" href="sqsh__posix_8h.html#a6675c3b0363d72c21ee36c04aaf76750">sqsh_file_to_stream_mt_cb</a> cb, void *data)</td></tr>
+<tr class="memdesc:ad4f76589569fab967d7b41b112e082b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">writes data to a file descriptor.  <br /></td></tr>
+<tr class="separator:ad4f76589569fab967d7b41b112e082b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Inode context. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__file__private_8h_source.html#l00243">243</a> of file <a class="el" href="sqsh__file__private_8h_source.html">sqsh_file_private.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__file__private_8h_source.html#l00245">245</a> of file <a class="el" href="sqsh__file__private_8h_source.html">sqsh_file_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="afe81f3b039226407fd388f1ce3abebcf" name="afe81f3b039226407fd388f1ce3abebcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe81f3b039226407fd388f1ce3abebcf">&#9670;&#160;</a></span>sqsh__file_set_dir_inode()</h2>
+<a id="a43f92fb86e6ddd834490572edd94dc64" name="a43f92fb86e6ddd834490572edd94dc64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43f92fb86e6ddd834490572edd94dc64">&#9670;&#160;</a></span>sqsh__file_parent_inode_ref()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> <a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh__file_set_dir_inode </td>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> uint64_t sqsh__file_parent_inode_ref </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshFile.html">SqshFile</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>dir_inode</em></span>&#160;)</td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>err</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>returns whether the file is an extended structure. </p>
+<p>returns the parent inode reference if possible. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The file context. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dir_inode</td><td>The inode of the parent directory.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">err</td><td>Pointer to an int where the error code will be stored.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int 0 on success, less than 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ada1bfcd898b7bb947f4a859dd8e163c9" name="ada1bfcd898b7bb947f4a859dd8e163c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada1bfcd898b7bb947f4a859dd8e163c9">&#9670;&#160;</a></span>sqsh__file_set_parent_inode_ref()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0a7c8cfe95696db408794f7327d78776">SQSH_NO_EXPORT</a> void sqsh__file_set_parent_inode_ref </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshFile.html">SqshFile</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>parent_inode_ref</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets the parent inode reference. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The file context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent_inode_ref</td><td>The inode reference of the parent directory. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -270,6 +309,33 @@ Public Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint32_t sqsh_file_block_count </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshFile.html">SqshFile</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter for the amount of blocks of the file content. This is only internally used and will be used while retrieving the file content. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated</a></b></dt><dd>Since 1.5.0. Use sqsh_file_blockcount2() instead.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The file context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the amount of blocks of the file content. If the file is not of of type SQSH_FILE_TYPE_FILE, UINT32_MAX will be returned. </dd></dl>
+
+</div>
+</div>
+<a id="a297e51bed0372460dae716deb80fce0f" name="a297e51bed0372460dae716deb80fce0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a297e51bed0372460dae716deb80fce0f">&#9670;&#160;</a></span>sqsh_file_block_count2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sqsh_file_block_count2 </td>
           <td>(</td>
           <td class="paramtype">const struct <a class="el" href="structSqshFile.html">SqshFile</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
           <td></td>
@@ -418,7 +484,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>retrieve the directory block offset. This is only internally used and will be used while iterating over the directory entries. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated</a></b></dt><dd>Since 1.3.0. Use <a class="el" href="#aa5d942642bb7ed3ffec71f2995a3ded5" title="retrieve the directory block offset. This is only internally used and will be used while iterating ov...">sqsh_file_directory_block_offset2()</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated</a></b></dt><dd>Since 1.3.0. Use <a class="el" href="#aa5d942642bb7ed3ffec71f2995a3ded5" title="retrieve the directory block offset. This is only internally used and will be used while iterating ov...">sqsh_file_directory_block_offset2()</a> instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The file context.</td></tr>
@@ -962,6 +1028,54 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of bytes read on success, less than 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ad4f76589569fab967d7b41b112e082b9" name="ad4f76589569fab967d7b41b112e082b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f76589569fab967d7b41b112e082b9">&#9670;&#160;</a></span>sqsh_file_to_stream_mt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_file_to_stream_mt </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshFile.html">SqshFile</a> *</td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqshThreadpool.html">SqshThreadpool</a> *</td>          <td class="paramname"><span class="paramname"><em>threadpool</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sqsh__posix_8h.html#a6675c3b0363d72c21ee36c04aaf76750">sqsh_file_to_stream_mt_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>writes data to a file descriptor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>The file context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">threadpool</td><td>The threadpool to use. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>The descriptor to write the file contents to. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>The callback to call when the operation is done. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The data to pass to the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

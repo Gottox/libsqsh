@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -105,27 +105,28 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshArchive.html">SqshArchive</a> *archive =</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_function" href="structSqshArchive.html#a3db88cfffd255b3781e329c0f660ba79">sqsh_archive_open</a>(<span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>, NULL, NULL);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    uint8_t *contents = <a class="code hl_function" href="sqsh__easy_8h.html#afccc90b3b193597d84a12893f10ca96a">sqsh_easy_file_content</a>(archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>, NULL);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    assert(contents != NULL);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> size = <a class="code hl_function" href="sqsh__easy_8h.html#a3793b8e17ed31dc29e81751f175a5a55">sqsh_easy_file_size</a>(archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>, NULL);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    fwrite(contents, 1, size, stdout);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    free(contents);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">char</span> **files = <a class="code hl_function" href="sqsh__easy_8h.html#afcb36a839311c71629b3b197314e0de3">sqsh_easy_directory_list</a>(archive, <span class="stringliteral">&quot;/path/to/dir&quot;</span>, NULL);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    assert(files != NULL);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; files[i] != NULL; i++) {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        puts(files[i]);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    free(files);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="structSqshArchive.html#ad9c8077e5c6e3d98cff588e203be15e1">sqsh_archive_close</a>(archive);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    assert(archive != NULL);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    uint8_t *contents = <a class="code hl_function" href="sqsh__easy_8h.html#afccc90b3b193597d84a12893f10ca96a">sqsh_easy_file_content</a>(archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>, NULL);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    assert(contents != NULL);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> size = <a class="code hl_function" href="sqsh__easy_8h.html#aab996ee2782ce25c70152629a627df62">sqsh_easy_file_size2</a>(archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>, NULL);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    fwrite(contents, 1, size, stdout);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    free(contents);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">char</span> **files = <a class="code hl_function" href="sqsh__easy_8h.html#afcb36a839311c71629b3b197314e0de3">sqsh_easy_directory_list</a>(archive, <span class="stringliteral">&quot;/path/to/dir&quot;</span>, NULL);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    assert(files != NULL);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; files[i] != NULL; i++) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        puts(files[i]);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    free(files);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="structSqshArchive.html#ad9c8077e5c6e3d98cff588e203be15e1">sqsh_archive_close</a>(archive);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
 </div>
 <div class="ttc" id="areadme__example_8c_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="readme__example_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition</b> <a href="#l00012">readme_example.c:12</a></div></div>
 <div class="ttc" id="asqsh_8h_html"><div class="ttname"><a href="sqsh_8h.html">sqsh.h</a></div></div>
-<div class="ttc" id="asqsh__easy_8h_html_a3793b8e17ed31dc29e81751f175a5a55"><div class="ttname"><a href="sqsh__easy_8h.html#a3793b8e17ed31dc29e81751f175a5a55">sqsh_easy_file_size</a></div><div class="ttdeci">size_t sqsh_easy_file_size(struct SqshArchive *archive, const char *path, int *err)</div><div class="ttdoc">retrieves the size of a file.</div></div>
+<div class="ttc" id="asqsh__easy_8h_html_aab996ee2782ce25c70152629a627df62"><div class="ttname"><a href="sqsh__easy_8h.html#aab996ee2782ce25c70152629a627df62">sqsh_easy_file_size2</a></div><div class="ttdeci">uint64_t sqsh_easy_file_size2(struct SqshArchive *archive, const char *path, int *err)</div><div class="ttdoc">retrieves the size of a file.</div></div>
 <div class="ttc" id="asqsh__easy_8h_html_afcb36a839311c71629b3b197314e0de3"><div class="ttname"><a href="sqsh__easy_8h.html#afcb36a839311c71629b3b197314e0de3">sqsh_easy_directory_list</a></div><div class="ttdeci">char ** sqsh_easy_directory_list(struct SqshArchive *archive, const char *path, int *err)</div><div class="ttdoc">retrieves the contents of a directory as a list of file names</div></div>
 <div class="ttc" id="asqsh__easy_8h_html_afccc90b3b193597d84a12893f10ca96a"><div class="ttname"><a href="sqsh__easy_8h.html#afccc90b3b193597d84a12893f10ca96a">sqsh_easy_file_content</a></div><div class="ttdeci">uint8_t * sqsh_easy_file_content(struct SqshArchive *archive, const char *path, int *err)</div><div class="ttdoc">retrieves the content of a file.</div></div>
 <div class="ttc" id="astructSqshArchive_html"><div class="ttname"><a href="structSqshArchive.html">SqshArchive</a></div><div class="ttdef"><b>Definition</b> <a href="sqsh__archive__private_8h_source.html#l00226">sqsh_archive_private.h:226</a></div></div>

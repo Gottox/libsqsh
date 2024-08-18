@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -110,48 +110,49 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            .source_size = 0,</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            .mapper_block_size = 0,</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            .mapper_lru_size = 0,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            .compression_lru_size = 0,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            .archive_offset = 0,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            .max_symlink_depth = 0,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    };</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshArchive.html">SqshArchive</a> *archive =</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_function" href="structSqshArchive.html#a3db88cfffd255b3781e329c0f660ba79">sqsh_archive_open</a>(argv[1], &amp;config, &amp;error_code);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">if</span> (error_code != 0) {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_function" href="sqsh__error_8h.html#a4154510d5a364e668e4667aae0678e6a">sqsh_perror</a>(error_code, <span class="stringliteral">&quot;sqsh_archive_new&quot;</span>);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code hl_struct" href="structSqshSuperblock.html">SqshSuperblock</a> *superblock = sqsh_archive_superblock(archive);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    uint64_t inode_root_ref = <a class="code hl_function" href="structSqshSuperblock.html#a92e8b2bf2e811ac720b100c3c3f77008">sqsh_superblock_inode_root_ref</a>(superblock);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshFile.html">SqshFile</a> *file =</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_function" href="structSqshFile.html#a096e2e4ba3cf7c98ba2af55a11b3803c">sqsh_open_by_ref</a>(archive, inode_root_ref, &amp;error_code);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">if</span> (error_code != 0) {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_function" href="sqsh__error_8h.html#a4154510d5a364e668e4667aae0678e6a">sqsh_perror</a>(error_code, <span class="stringliteral">&quot;sqsh_file_new&quot;</span>);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator =</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <a class="code hl_function" href="structSqshDirectoryIterator.html#a2d1fc24a027040af4eba9b9c2c4d0c6a">sqsh_directory_iterator_new</a>(file, &amp;error_code);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">if</span> (error_code != 0) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_function" href="sqsh__error_8h.html#a4154510d5a364e668e4667aae0678e6a">sqsh_perror</a>(error_code, <span class="stringliteral">&quot;sqsh_directory_iterator_new&quot;</span>);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">while</span> (<a class="code hl_function" href="structSqshDirectoryIterator.html#afb45876bafc903506ca1bbcb9eaf89f4">sqsh_directory_iterator_next</a>(iterator, &amp;error_code)) {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordtype">size_t</span> size;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *name = <a class="code hl_function" href="structSqshDirectoryIterator.html#afbac70c5fb480a227ba882f3adc65a4b">sqsh_directory_iterator_name2</a>(iterator, &amp;size);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        fwrite(name, size, 1, stdout);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        fputc(<span class="charliteral">&#39;\n&#39;</span>, stdout);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">if</span> (error_code &lt; 0) {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_function" href="sqsh__error_8h.html#a4154510d5a364e668e4667aae0678e6a">sqsh_perror</a>(error_code, <span class="stringliteral">&quot;sqsh_directory_iterator_next&quot;</span>);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_function" href="structSqshDirectoryIterator.html#a5b7ad794677f035b1c57b7bbb007cf7b">sqsh_directory_iterator_free</a>(iterator);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    sqsh_close(file);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    sqsh_archive_close(archive);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            .metablock_lru_size = 0,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            .data_lru_size = 0,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            .archive_offset = 0,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            .max_symlink_depth = 0,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    };</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshArchive.html">SqshArchive</a> *archive =</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_function" href="structSqshArchive.html#a3db88cfffd255b3781e329c0f660ba79">sqsh_archive_open</a>(argv[1], &amp;config, &amp;error_code);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">if</span> (error_code != 0) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_function" href="sqsh__error_8h.html#a4154510d5a364e668e4667aae0678e6a">sqsh_perror</a>(error_code, <span class="stringliteral">&quot;sqsh_archive_new&quot;</span>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code hl_struct" href="structSqshSuperblock.html">SqshSuperblock</a> *superblock = sqsh_archive_superblock(archive);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    uint64_t inode_root_ref = <a class="code hl_function" href="structSqshSuperblock.html#a92e8b2bf2e811ac720b100c3c3f77008">sqsh_superblock_inode_root_ref</a>(superblock);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshFile.html">SqshFile</a> *file =</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <a class="code hl_function" href="structSqshFile.html#a096e2e4ba3cf7c98ba2af55a11b3803c">sqsh_open_by_ref</a>(archive, inode_root_ref, &amp;error_code);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">if</span> (error_code != 0) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_function" href="sqsh__error_8h.html#a4154510d5a364e668e4667aae0678e6a">sqsh_perror</a>(error_code, <span class="stringliteral">&quot;sqsh_file_new&quot;</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structSqshDirectoryIterator.html">SqshDirectoryIterator</a> *iterator =</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_function" href="structSqshDirectoryIterator.html#a2d1fc24a027040af4eba9b9c2c4d0c6a">sqsh_directory_iterator_new</a>(file, &amp;error_code);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">if</span> (error_code != 0) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_function" href="sqsh__error_8h.html#a4154510d5a364e668e4667aae0678e6a">sqsh_perror</a>(error_code, <span class="stringliteral">&quot;sqsh_directory_iterator_new&quot;</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">while</span> (<a class="code hl_function" href="structSqshDirectoryIterator.html#afb45876bafc903506ca1bbcb9eaf89f4">sqsh_directory_iterator_next</a>(iterator, &amp;error_code)) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordtype">size_t</span> size;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *name = <a class="code hl_function" href="structSqshDirectoryIterator.html#afbac70c5fb480a227ba882f3adc65a4b">sqsh_directory_iterator_name2</a>(iterator, &amp;size);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        fwrite(name, size, 1, stdout);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        fputc(<span class="charliteral">&#39;\n&#39;</span>, stdout);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">if</span> (error_code &lt; 0) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <a class="code hl_function" href="sqsh__error_8h.html#a4154510d5a364e668e4667aae0678e6a">sqsh_perror</a>(error_code, <span class="stringliteral">&quot;sqsh_directory_iterator_next&quot;</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_function" href="structSqshDirectoryIterator.html#a5b7ad794677f035b1c57b7bbb007cf7b">sqsh_directory_iterator_free</a>(iterator);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    sqsh_close(file);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    sqsh_archive_close(archive);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 </div>
 <div class="ttc" id="alist__dir__ll_8c_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="list__dir__ll_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition</b> <a href="#l00013">list_dir_ll.c:13</a></div></div>
 <div class="ttc" id="asqsh_8h_html"><div class="ttname"><a href="sqsh_8h.html">sqsh.h</a></div></div>
@@ -166,7 +167,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="astructSqshDirectoryIterator_html_a5b7ad794677f035b1c57b7bbb007cf7b"><div class="ttname"><a href="structSqshDirectoryIterator.html#a5b7ad794677f035b1c57b7bbb007cf7b">SqshDirectoryIterator::sqsh_directory_iterator_free</a></div><div class="ttdeci">int sqsh_directory_iterator_free(struct SqshDirectoryIterator *iterator)</div><div class="ttdoc">Frees the resources used by a directory iterator.</div></div>
 <div class="ttc" id="astructSqshDirectoryIterator_html_afb45876bafc903506ca1bbcb9eaf89f4"><div class="ttname"><a href="structSqshDirectoryIterator.html#afb45876bafc903506ca1bbcb9eaf89f4">SqshDirectoryIterator::sqsh_directory_iterator_next</a></div><div class="ttdeci">SQSH_NO_UNUSED bool sqsh_directory_iterator_next(struct SqshDirectoryIterator *iterator, int *err)</div><div class="ttdoc">Advances the iterator to the next entry.</div></div>
 <div class="ttc" id="astructSqshDirectoryIterator_html_afbac70c5fb480a227ba882f3adc65a4b"><div class="ttname"><a href="structSqshDirectoryIterator.html#afbac70c5fb480a227ba882f3adc65a4b">SqshDirectoryIterator::sqsh_directory_iterator_name2</a></div><div class="ttdeci">const char * sqsh_directory_iterator_name2(const struct SqshDirectoryIterator *iterator, size_t *len)</div><div class="ttdoc">Retrieves the name of the current entry.</div></div>
-<div class="ttc" id="astructSqshFile_html"><div class="ttname"><a href="structSqshFile.html">SqshFile</a></div><div class="ttdoc">The Inode context.</div><div class="ttdef"><b>Definition</b> <a href="sqsh__file__private_8h_source.html#l00243">sqsh_file_private.h:243</a></div></div>
+<div class="ttc" id="astructSqshFile_html"><div class="ttname"><a href="structSqshFile.html">SqshFile</a></div><div class="ttdoc">The Inode context.</div><div class="ttdef"><b>Definition</b> <a href="sqsh__file__private_8h_source.html#l00245">sqsh_file_private.h:245</a></div></div>
 <div class="ttc" id="astructSqshFile_html_a096e2e4ba3cf7c98ba2af55a11b3803c"><div class="ttname"><a href="structSqshFile.html#a096e2e4ba3cf7c98ba2af55a11b3803c">SqshFile::sqsh_open_by_ref</a></div><div class="ttdeci">SQSH_NO_UNUSED struct SqshFile * sqsh_open_by_ref(struct SqshArchive *archive, uint64_t inode_ref, int *err)</div><div class="ttdoc">Initializes a file context in heap.</div></div>
 <div class="ttc" id="astructSqshSuperblock_html"><div class="ttname"><a href="structSqshSuperblock.html">SqshSuperblock</a></div><div class="ttdoc">The superblock context is used to access the superblock of the archive.</div><div class="ttdef"><b>Definition</b> <a href="sqsh__archive__private_8h_source.html#l00150">sqsh_archive_private.h:150</a></div></div>
 <div class="ttc" id="astructSqshSuperblock_html_a92e8b2bf2e811ac720b100c3c3f77008"><div class="ttname"><a href="structSqshSuperblock.html#a92e8b2bf2e811ac720b100c3c3f77008">SqshSuperblock::sqsh_superblock_inode_root_ref</a></div><div class="ttdeci">uint64_t sqsh_superblock_inode_root_ref(const struct SqshSuperblock *context)</div><div class="ttdoc">Retrieves the reference of the root inode in a superblock context.</div></div>

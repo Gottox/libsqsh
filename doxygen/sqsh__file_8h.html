@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -120,13 +120,12 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a2de8721a97ccc84c724620a8e1af56e8" id="r_a2de8721a97ccc84c724620a8e1af56e8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2de8721a97ccc84c724620a8e1af56e8">SqshFileType</a> { <br />
-&#160;&#160;<a class="el" href="#a2de8721a97ccc84c724620a8e1af56e8a1d0058765b1d4ee227e5e150c1811981">SQSH_FILE_TYPE_UNKNOWN</a> = -1
-, <a class="el" href="#a2de8721a97ccc84c724620a8e1af56e8a166c8bc0b6673583d8b9f842da1781c9">SQSH_FILE_TYPE_DIRECTORY</a> = 1 + (1 &lt;&lt; 8)
+&#160;&#160;<a class="el" href="#a2de8721a97ccc84c724620a8e1af56e8a166c8bc0b6673583d8b9f842da1781c9">SQSH_FILE_TYPE_DIRECTORY</a> = 1 + (1 &lt;&lt; 8)
 , <a class="el" href="#a2de8721a97ccc84c724620a8e1af56e8a241554db1b3b61c6f94e652ca47b62d7">SQSH_FILE_TYPE_FILE</a>
 , <a class="el" href="#a2de8721a97ccc84c724620a8e1af56e8ad827ef0643f2e4d3856312358721bb4f">SQSH_FILE_TYPE_SYMLINK</a>
+, <a class="el" href="#a2de8721a97ccc84c724620a8e1af56e8a2ba5ab65f1dacc7c0ac6645d91511e0a">SQSH_FILE_TYPE_BLOCK</a>
 , <br />
-&#160;&#160;<a class="el" href="#a2de8721a97ccc84c724620a8e1af56e8a2ba5ab65f1dacc7c0ac6645d91511e0a">SQSH_FILE_TYPE_BLOCK</a>
-, <a class="el" href="#a2de8721a97ccc84c724620a8e1af56e8a272fa14b3788f1d189955d9d17bacf9a">SQSH_FILE_TYPE_CHAR</a>
+&#160;&#160;<a class="el" href="#a2de8721a97ccc84c724620a8e1af56e8a272fa14b3788f1d189955d9d17bacf9a">SQSH_FILE_TYPE_CHAR</a>
 , <a class="el" href="#a2de8721a97ccc84c724620a8e1af56e8a4f25af396117bcfb36012d07157eb3c9">SQSH_FILE_TYPE_FIFO</a>
 , <a class="el" href="#a2de8721a97ccc84c724620a8e1af56e8a4b91c948227c97f5374f93e3fae04a8b">SQSH_FILE_TYPE_SOCKET</a>
 <br />
@@ -153,7 +152,7 @@ Enumerations</h2></td></tr>
 
 <p>Value that indicates the absence of a fragment. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__file_8h_source.html#l00234">234</a> of file <a class="el" href="sqsh__file_8h_source.html">sqsh_file.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__file_8h_source.html#l00303">303</a> of file <a class="el" href="sqsh__file_8h_source.html">sqsh_file.h</a>.</p>
 
 </div>
 </div>
@@ -171,7 +170,7 @@ Enumerations</h2></td></tr>
 
 <p>Value that indicates the absence of an xattr table. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__file_8h_source.html#l00238">238</a> of file <a class="el" href="sqsh__file_8h_source.html">sqsh_file.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__file_8h_source.html#l00307">307</a> of file <a class="el" href="sqsh__file_8h_source.html">sqsh_file.h</a>.</p>
 
 </div>
 </div>
@@ -190,8 +189,7 @@ Enumerations</h2></td></tr>
 
 <p>enum that represents the file type. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2de8721a97ccc84c724620a8e1af56e8a1d0058765b1d4ee227e5e150c1811981" name="a2de8721a97ccc84c724620a8e1af56e8a1d0058765b1d4ee227e5e150c1811981"></a>SQSH_FILE_TYPE_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a2de8721a97ccc84c724620a8e1af56e8a166c8bc0b6673583d8b9f842da1781c9" name="a2de8721a97ccc84c724620a8e1af56e8a166c8bc0b6673583d8b9f842da1781c9"></a>SQSH_FILE_TYPE_DIRECTORY&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2de8721a97ccc84c724620a8e1af56e8a166c8bc0b6673583d8b9f842da1781c9" name="a2de8721a97ccc84c724620a8e1af56e8a166c8bc0b6673583d8b9f842da1781c9"></a>SQSH_FILE_TYPE_DIRECTORY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2de8721a97ccc84c724620a8e1af56e8a241554db1b3b61c6f94e652ca47b62d7" name="a2de8721a97ccc84c724620a8e1af56e8a241554db1b3b61c6f94e652ca47b62d7"></a>SQSH_FILE_TYPE_FILE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2de8721a97ccc84c724620a8e1af56e8ad827ef0643f2e4d3856312358721bb4f" name="a2de8721a97ccc84c724620a8e1af56e8ad827ef0643f2e4d3856312358721bb4f"></a>SQSH_FILE_TYPE_SYMLINK&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2de8721a97ccc84c724620a8e1af56e8a2ba5ab65f1dacc7c0ac6645d91511e0a" name="a2de8721a97ccc84c724620a8e1af56e8a2ba5ab65f1dacc7c0ac6645d91511e0a"></a>SQSH_FILE_TYPE_BLOCK&#160;</td><td class="fielddoc"></td></tr>
@@ -200,7 +198,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a2de8721a97ccc84c724620a8e1af56e8a4b91c948227c97f5374f93e3fae04a8b" name="a2de8721a97ccc84c724620a8e1af56e8a4b91c948227c97f5374f93e3fae04a8b"></a>SQSH_FILE_TYPE_SOCKET&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__file_8h_source.html#l00243">243</a> of file <a class="el" href="sqsh__file_8h_source.html">sqsh_file.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__file_8h_source.html#l00315">315</a> of file <a class="el" href="sqsh__file_8h_source.html">sqsh_file.h</a>.</p>
 
 </div>
 </div>

@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -103,6 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab3c4fb369b3e3c01beda8406a22b0a1d" id="r_ab3c4fb369b3e3c01beda8406a22b0a1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3c4fb369b3e3c01beda8406a22b0a1d">sqsh_id_table_get</a> (const struct <a class="el" href="structSqshIdTable.html">SqshIdTable</a> *table, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> index, uint32_t *id)</td></tr>
 <tr class="memdesc:ab3c4fb369b3e3c01beda8406a22b0a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an element from the table.  <br /></td></tr>
 <tr class="separator:ab3c4fb369b3e3c01beda8406a22b0a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9518b8ff5950aaa2936289fcd06f9881" id="r_a9518b8ff5950aaa2936289fcd06f9881"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9518b8ff5950aaa2936289fcd06f9881">sqsh_export_table_resolve_inode2</a> (const struct <a class="el" href="structSqshExportTable.html">SqshExportTable</a> *table, uint32_t inode, uint64_t *inode_ref)</td></tr>
+<tr class="memdesc:a9518b8ff5950aaa2936289fcd06f9881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an element from the table.  <br /></td></tr>
+<tr class="separator:a9518b8ff5950aaa2936289fcd06f9881"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac685755db413f7b31a4760bf96c8102a" id="r_ac685755db413f7b31a4760bf96c8102a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac685755db413f7b31a4760bf96c8102a">sqsh_export_table_resolve_inode</a> (const struct <a class="el" href="structSqshExportTable.html">SqshExportTable</a> *table, uint64_t inode, uint64_t *inode_ref)</td></tr>
 <tr class="memdesc:ac685755db413f7b31a4760bf96c8102a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an element from the table.  <br /></td></tr>
 <tr class="separator:ac685755db413f7b31a4760bf96c8102a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,6 +130,44 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>inode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *</td>          <td class="paramname"><span class="paramname"><em>inode_ref</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves an element from the table. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated</a></b></dt><dd>Since 1.5.0. Use sqsh_export_table_resolve_inode2 instead.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">table</td><td>The table to retrieve the element from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inode</td><td>The index of the element to retrieve. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">inode_ref</td><td>A pointer to a uint64_t to store the inode reference</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, a negative value on error. </dd></dl>
+
+</div>
+</div>
+<a id="a9518b8ff5950aaa2936289fcd06f9881" name="a9518b8ff5950aaa2936289fcd06f9881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9518b8ff5950aaa2936289fcd06f9881">&#9670;&#160;</a></span>sqsh_export_table_resolve_inode2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_export_table_resolve_inode2 </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshExportTable.html">SqshExportTable</a> *</td>          <td class="paramname"><span class="paramname"><em>table</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>inode</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

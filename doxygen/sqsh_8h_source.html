@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -119,17 +119,23 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *                                                                            *</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__archive_8h.html">sqsh_archive.h</a>&quot;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__common_8h.html">sqsh_common.h</a>&quot;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__directory_8h.html">sqsh_directory.h</a>&quot;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__easy_8h.html">sqsh_easy.h</a>&quot;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__error_8h.html">sqsh_error.h</a>&quot;</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__file_8h.html">sqsh_file.h</a>&quot;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__mapper_8h.html">sqsh_mapper.h</a>&quot;</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__posix_8h.html">sqsh_posix.h</a>&quot;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__table_8h.html">sqsh_table.h</a>&quot;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__tree_8h.html">sqsh_tree.h</a>&quot;</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__xattr_8h.html">sqsh_xattr.h</a>&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#ifndef SQSH_H</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#define SQSH_H</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__archive_8h.html">sqsh_archive.h</a>&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__common_8h.html">sqsh_common.h</a>&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__directory_8h.html">sqsh_directory.h</a>&quot;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__easy_8h.html">sqsh_easy.h</a>&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__error_8h.html">sqsh_error.h</a>&quot;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__file_8h.html">sqsh_file.h</a>&quot;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__mapper_8h.html">sqsh_mapper.h</a>&quot;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__posix_8h.html">sqsh_posix.h</a>&quot;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__table_8h.html">sqsh_table.h</a>&quot;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__tree_8h.html">sqsh_tree.h</a>&quot;</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__utils_8h.html">sqsh_utils.h</a>&quot;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#include &quot;<a class="code" href="sqsh__xattr_8h.html">sqsh_xattr.h</a>&quot;</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif </span><span class="comment">/* SQSH_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="asqsh__archive_8h_html"><div class="ttname"><a href="sqsh__archive_8h.html">sqsh_archive.h</a></div></div>
 <div class="ttc" id="asqsh__common_8h_html"><div class="ttname"><a href="sqsh__common_8h.html">sqsh_common.h</a></div></div>
 <div class="ttc" id="asqsh__directory_8h_html"><div class="ttname"><a href="sqsh__directory_8h.html">sqsh_directory.h</a></div></div>
@@ -140,6 +146,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="asqsh__posix_8h_html"><div class="ttname"><a href="sqsh__posix_8h.html">sqsh_posix.h</a></div></div>
 <div class="ttc" id="asqsh__table_8h_html"><div class="ttname"><a href="sqsh__table_8h.html">sqsh_table.h</a></div></div>
 <div class="ttc" id="asqsh__tree_8h_html"><div class="ttname"><a href="sqsh__tree_8h.html">sqsh_tree.h</a></div></div>
+<div class="ttc" id="asqsh__utils_8h_html"><div class="ttname"><a href="sqsh__utils_8h.html">sqsh_utils.h</a></div></div>
 <div class="ttc" id="asqsh__xattr_8h_html"><div class="ttname"><a href="sqsh__xattr_8h.html">sqsh_xattr.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

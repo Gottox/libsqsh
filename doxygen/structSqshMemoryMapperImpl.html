@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -112,6 +112,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a7db5fec6d5dd1aeaa95ae8d34deb48e2" id="r_a7db5fec6d5dd1aeaa95ae8d34deb48e2"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7db5fec6d5dd1aeaa95ae8d34deb48e2">cleanup</a> )(struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *mapper)</td></tr>
 <tr class="memdesc:a7db5fec6d5dd1aeaa95ae8d34deb48e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cleanup function for the mapper.  <br /></td></tr>
 <tr class="separator:a7db5fec6d5dd1aeaa95ae8d34deb48e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22dc2e7c1164ac73b78f795d52275976" id="r_a22dc2e7c1164ac73b78f795d52275976"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22dc2e7c1164ac73b78f795d52275976">init2</a> )(struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *mapper, const void *input, uint64_t *size)</td></tr>
+<tr class="memdesc:a22dc2e7c1164ac73b78f795d52275976"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initialization function for the mapper. Use sqsh_mapper_set_user_data() to set custom user data.  <br /></td></tr>
+<tr class="separator:a22dc2e7c1164ac73b78f795d52275976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555f189b305b032357a7a5bb8113f28d" id="r_a555f189b305b032357a7a5bb8113f28d"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a555f189b305b032357a7a5bb8113f28d">map2</a> )(const struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *mapper, uint64_t offset, size_t size, uint8_t **data)</td></tr>
+<tr class="memdesc:a555f189b305b032357a7a5bb8113f28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function that maps a block of data into memory.  <br /></td></tr>
+<tr class="separator:a555f189b305b032357a7a5bb8113f28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The implementation of a memory mapper. </p>
@@ -150,7 +156,7 @@ Data Fields</h2></td></tr>
 
 <p>The cleanup function for the mapper. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00077">77</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00085">85</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
 
 </div>
 </div>
@@ -167,8 +173,27 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The initialization function for the mapper. Use sqsh_mapper_set_user_data() to set custom user data. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated</a></b></dt><dd>Since 1.5.0. Use <a class="el" href="#a22dc2e7c1164ac73b78f795d52275976" title="The initialization function for the mapper. Use sqsh_mapper_set_user_data() to set custom user data.">SqshMemoryMapperImpl::init2()</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00063">63</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00067">67</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
+
+</div>
+</div>
+<a id="a22dc2e7c1164ac73b78f795d52275976" name="a22dc2e7c1164ac73b78f795d52275976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22dc2e7c1164ac73b78f795d52275976">&#9670;&#160;</a></span>init2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SqshMemoryMapperImpl::init2) (struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *mapper, const void *input, uint64_t *size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The initialization function for the mapper. Use sqsh_mapper_set_user_data() to set custom user data. </p>
+
+<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00091">91</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
 
 </div>
 </div>
@@ -185,8 +210,27 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The function that maps a block of data into memory. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated</a></b></dt><dd>Since 1.5.0. Use <a class="el" href="#a555f189b305b032357a7a5bb8113f28d" title="The function that maps a block of data into memory.">SqshMemoryMapperImpl::map2()</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00067">67</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00075">75</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
+
+</div>
+</div>
+<a id="a555f189b305b032357a7a5bb8113f28d" name="a555f189b305b032357a7a5bb8113f28d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555f189b305b032357a7a5bb8113f28d">&#9670;&#160;</a></span>map2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* SqshMemoryMapperImpl::map2) (const struct <a class="el" href="structSqshMapper.html">SqshMapper</a> *mapper, uint64_t offset, size_t size, uint8_t **data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The function that maps a block of data into memory. </p>
+
+<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00095">95</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
 
 </div>
 </div>
@@ -204,7 +248,7 @@ Data Fields</h2></td></tr>
 
 <p>The function that unmaps a block of data from memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00073">73</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__mapper_8h_source.html#l00081">81</a> of file <a class="el" href="sqsh__mapper_8h_source.html">sqsh_mapper.h</a>.</p>
 
 </div>
 </div>

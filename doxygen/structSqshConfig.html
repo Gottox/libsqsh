@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -123,6 +123,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a2adb5a92bbc69dfc4d41410c6a00fab9" id="r_a2adb5a92bbc69dfc4d41410c6a00fab9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2adb5a92bbc69dfc4d41410c6a00fab9">max_symlink_depth</a></td></tr>
 <tr class="memdesc:a2adb5a92bbc69dfc4d41410c6a00fab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">the maximum depth of symlinks that will be followed. If unset or 0, the max symlink depth will be 100.  <br /></td></tr>
 <tr class="separator:a2adb5a92bbc69dfc4d41410c6a00fab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc37d5eab6986e366b689f91a47f79d" id="r_a9dc37d5eab6986e366b689f91a47f79d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dc37d5eab6986e366b689f91a47f79d">data_lru_size</a></td></tr>
+<tr class="memdesc:a9dc37d5eab6986e366b689f91a47f79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">the size of the LRU cache used to cache chunks of data from the data blocks. If unset or 0, the LRU defaults to 128. if set to -1, the LRU will be disabled.  <br /></td></tr>
+<tr class="separator:a9dc37d5eab6986e366b689f91a47f79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86be5ba55711e367895a0bce325b3c6d" id="r_a86be5ba55711e367895a0bce325b3c6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86be5ba55711e367895a0bce325b3c6d">metablock_lru_size</a></td></tr>
+<tr class="memdesc:a86be5ba55711e367895a0bce325b3c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">the size of the LRU cache used to cache chunks of data from the metablocks. If unset or 0, the LRU defaults to 128. if set to -1, the LRU will be disabled.  <br /></td></tr>
+<tr class="separator:a86be5ba55711e367895a0bce325b3c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="structSqshConfig.html" title="The SqshConfig struct contains all the configuration options for a sqsh session.">SqshConfig</a> struct contains all the configuration options for a sqsh session. </p>
@@ -160,8 +166,27 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>the size of the LRU cache used to cache chunks of data from the compression algorithm. If unset or 0, the LRU defaults to 128. if set to -1, the LRU will be disabled. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated</a></b></dt><dd>Since 1.5.0. data_lru_size or metablock_lru_size instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__archive_8h_source.html#l00427">427</a> of file <a class="el" href="sqsh__archive_8h_source.html">sqsh_archive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__archive_8h_source.html#l00433">433</a> of file <a class="el" href="sqsh__archive_8h_source.html">sqsh_archive.h</a>.</p>
+
+</div>
+</div>
+<a id="a9dc37d5eab6986e366b689f91a47f79d" name="a9dc37d5eab6986e366b689f91a47f79d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc37d5eab6986e366b689f91a47f79d">&#9670;&#160;</a></span>data_lru_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SqshConfig::data_lru_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the size of the LRU cache used to cache chunks of data from the data blocks. If unset or 0, the LRU defaults to 128. if set to -1, the LRU will be disabled. </p>
+
+<p class="definition">Definition at line <a class="el" href="sqsh__archive_8h_source.html#l00446">446</a> of file <a class="el" href="sqsh__archive_8h_source.html">sqsh_archive.h</a>.</p>
 
 </div>
 </div>
@@ -215,7 +240,25 @@ Data Fields</h2></td></tr>
 
 <p>the maximum depth of symlinks that will be followed. If unset or 0, the max symlink depth will be 100. </p>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__archive_8h_source.html#l00433">433</a> of file <a class="el" href="sqsh__archive_8h_source.html">sqsh_archive.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__archive_8h_source.html#l00439">439</a> of file <a class="el" href="sqsh__archive_8h_source.html">sqsh_archive.h</a>.</p>
+
+</div>
+</div>
+<a id="a86be5ba55711e367895a0bce325b3c6d" name="a86be5ba55711e367895a0bce325b3c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86be5ba55711e367895a0bce325b3c6d">&#9670;&#160;</a></span>metablock_lru_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SqshConfig::metablock_lru_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the size of the LRU cache used to cache chunks of data from the metablocks. If unset or 0, the LRU defaults to 128. if set to -1, the LRU will be disabled. </p>
+
+<p class="definition">Definition at line <a class="el" href="sqsh__archive_8h_source.html#l00453">453</a> of file <a class="el" href="sqsh__archive_8h_source.html">sqsh_archive.h</a>.</p>
 
 </div>
 </div>

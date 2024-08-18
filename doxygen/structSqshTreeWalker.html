@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A walker over the contents of a file. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated</a></b></dt><dd>Since 1.2.0. Use struct <a class="el" href="structSqshPathResolver.html" title="Resolves paths.">SqshPathResolver</a> instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sqsh__tree__private_8h_source.html#l00163">163</a> of file <a class="el" href="sqsh__tree__private_8h_source.html">sqsh_tree_private.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sqsh__tree__private_8h_source.html#l00162">162</a> of file <a class="el" href="sqsh__tree__private_8h_source.html">sqsh_tree_private.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa40001c91ed7583c8bfcfecae5abc6cf" name="aa40001c91ed7583c8bfcfecae5abc6cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa40001c91ed7583c8bfcfecae5abc6cf">&#9670;&#160;</a></span>sqsh_tree_walker_down()</h2>
@@ -162,7 +162,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Lets the walker enter the current entry. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_down() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_down() instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">walker</td><td>The walker to use</td></tr>
@@ -189,7 +189,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cleans up resources used by a <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> struct. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_free() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_free() instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">reader</td><td>The file reader struct to clean up.</td></tr>
@@ -225,7 +225,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Looks up an entry in the current directory. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_lookup() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_lookup() instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">walker</td><td>The walker to use </td></tr>
@@ -254,7 +254,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the name of the current entry. This entry is not zero terminated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_name() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_name() instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">walker</td><td>The walker to use</td></tr>
@@ -281,7 +281,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>creates a heap allocated copy of the name of the current entry. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_name_dup() instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_name_dup() instead.</dd></dl>
 <p>The caller is responsible for calling free() on the returned pointer.</p>
 <p>The returned string is 0 terminated.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -310,7 +310,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the size of the name of the current entry. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_name_size() instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_name_size() instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">walker</td><td>The walker to use</td></tr>
@@ -341,7 +341,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a new <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> object at the root inode. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_new() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_new() instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">archive</td><td>The archive to use </td></tr>
@@ -369,7 +369,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Moves the walker to the next entry int the current directory. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_next() instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_next() instead.</dd></dl>
 <p>This function was deprecated to align the API with other iterator APIs. The <code>sqsh_tree_walker_next2()</code> uses the same signature as the other iterator.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -401,7 +401,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the inode of the current entry. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_open_file() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_open_file() instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">walker</td><td>The walker to use </td></tr>
@@ -438,7 +438,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resolve a path with the tree walker. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_open_file() instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_open_file() instead.</dd></dl>
 <p>This function will resolve the given path with the tree walker. The base is the current directory.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -468,7 +468,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>reverts the walker to the begining of the current directory. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_revert() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_revert() instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">walker</td><td>The walker to use</td></tr>
@@ -495,7 +495,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Moves the walker to the root directory. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_to_root() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_to_root() instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">walker</td><td>The walker to use</td></tr>
@@ -522,7 +522,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the inode type of the current entry. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_type() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_type() instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">walker</td><td>The walker to use</td></tr>
@@ -549,7 +549,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Moves the walker one level up. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_up() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated</a></b></dt><dd>Since 1.2.0. Use sqsh_path_resolver_up() instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">walker</td><td>The walker to use</td></tr>

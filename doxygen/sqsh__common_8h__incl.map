@@ -1,9 +1,9 @@
 <map id="include/sqsh_common.h" name="include/sqsh_common.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="76,5,307,30"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,78,117,103"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,33,97,73,94,68,169,28"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="141,78,242,103"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,31,194,62,189,62,189,31"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="266,78,368,103"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="214,28,284,68,282,72,211,33"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="90,5,321,30"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="19,190172,130,190196"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,32,164,52,145,79,139,126,133,241,122,669,102,2284,83,4854,68,8313,54,12591,42,17622,25,29670,14,43912,9,59806,9,76808,13,94377,29,129042,50,159455,77,190156,72,190156,45,159455,24,129042,7,94377,3,76808,3,59806,8,43912,19,29670,37,17622,49,12591,62,8313,78,4854,96,2284,117,669,128,241,134,126,140,77,160,49,185,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="155,190164,256,190204"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,31,208,190148,203,190148,203,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="280,78,381,380290"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="226,28,250,49,270,77,276,216,282,599,276,599,271,216,265,79,246,52,222,32"/>
 </map>

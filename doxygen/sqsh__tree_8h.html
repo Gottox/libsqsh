@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -146,11 +146,11 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a895b04396c61db059f7de88f878c29c3a5b20c7b2a630a3e149796c4d880ec5da" name="a895b04396c61db059f7de88f878c29c3a5b20c7b2a630a3e149796c4d880ec5da"></a>SQSH_TREE_TRAVERSAL_STATE_INIT&#160;</td><td class="fielddoc"><p>The traversal is in the initial state, right after initialization. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a895b04396c61db059f7de88f878c29c3a6f54a7cd8d8ca83b1c467e5c2fda891a" name="a895b04396c61db059f7de88f878c29c3a6f54a7cd8d8ca83b1c467e5c2fda891a"></a>SQSH_TREE_TRAVERSAL_STATE_FILE&#160;</td><td class="fielddoc"><p>The traversal iterator is currently pointing at a file object. This includes special files like named pipes, symlinks, or devices but not directories. </p>
+<tr><td class="fieldname"><a id="a895b04396c61db059f7de88f878c29c3a6f54a7cd8d8ca83b1c467e5c2fda891a" name="a895b04396c61db059f7de88f878c29c3a6f54a7cd8d8ca83b1c467e5c2fda891a"></a>SQSH_TREE_TRAVERSAL_STATE_FILE&#160;</td><td class="fielddoc"><p>The traversal iterator is currently pointing at an object it will visit only once. This includes regular files, special files like named pipes, symlinks, or devices, and directories that will not be descended into because of a configured max depth. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a895b04396c61db059f7de88f878c29c3a9af426b93f443ccb692561c973bcda09" name="a895b04396c61db059f7de88f878c29c3a9af426b93f443ccb692561c973bcda09"></a>SQSH_TREE_TRAVERSAL_STATE_DIRECTORY_BEGIN&#160;</td><td class="fielddoc"><p>The traversal iterator is currently pointing at a directory object, right before <a class="el" href="structSqshTreeTraversal.html" title="A walker over the contents of a file.">SqshTreeTraversal</a> is about to descend into it. </p>
+<tr><td class="fieldname"><a id="a895b04396c61db059f7de88f878c29c3a9af426b93f443ccb692561c973bcda09" name="a895b04396c61db059f7de88f878c29c3a9af426b93f443ccb692561c973bcda09"></a>SQSH_TREE_TRAVERSAL_STATE_DIRECTORY_BEGIN&#160;</td><td class="fielddoc"><p>The traversal iterator is currently pointing at a directory object, right before <a class="el" href="structSqshTreeTraversal.html" title="A walker over the contents of a file.">SqshTreeTraversal</a> is about to descend into it. The traversal iterator will eventually visit the same object with state SQSH_TREE_TRAVERSAL_STATE_DIRECTORY_END </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a895b04396c61db059f7de88f878c29c3abc165fba1633bb978df494d1e783bac6" name="a895b04396c61db059f7de88f878c29c3abc165fba1633bb978df494d1e783bac6"></a>SQSH_TREE_TRAVERSAL_STATE_DIRECTORY_END&#160;</td><td class="fielddoc"><p>The traversal iterator is currently pointing at a directory object, after <a class="el" href="structSqshTreeTraversal.html" title="A walker over the contents of a file.">SqshTreeTraversal</a> has finised iterating over it. </p>
+<tr><td class="fieldname"><a id="a895b04396c61db059f7de88f878c29c3abc165fba1633bb978df494d1e783bac6" name="a895b04396c61db059f7de88f878c29c3abc165fba1633bb978df494d1e783bac6"></a>SQSH_TREE_TRAVERSAL_STATE_DIRECTORY_END&#160;</td><td class="fielddoc"><p>The traversal iterator is currently pointing at a directory object, after <a class="el" href="structSqshTreeTraversal.html" title="A walker over the contents of a file.">SqshTreeTraversal</a> has finished iterating over it. </p>
 </td></tr>
 </table>
 
@@ -181,7 +181,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the inode of the current entry. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The directory iterator pointing to the current entry, iterating the parent directory, or NULL if the traversal is at its root entry </dd></dl>
 
 </div>
 </div>

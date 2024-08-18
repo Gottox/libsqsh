@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -90,8 +90,15 @@ $(function(){ initResizable(false); });
 <div class="textblock"><p><a class="anchor" id="md_README"></a> squashfs is an open and free compressed read-only filesystem. It is used in embedded devices, live-CDs, or in packaging. The original implementation resides in the linux kernel, but there are also userspace implementations.</p>
 <p>This project provides a userspace implementation of the squashfs filesystem containing a set of command line tools and a C library.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
+users of sqsh-tools</h1>
+<ul>
+<li><a href="https://www.radare.org/">radare2</a> - A reverse engineering framework. Integrates <a class="el" href="md_libsqsh_2README.html">libsqsh</a> into their virtual filesystem framework to explore inline squashfs archives.</li>
+<li><a href="https://github.com/probonopd/Filer">Filer</a> - A file manager for Unix systems. Uses <a class="el" href="md_libsqsh_2README.html">libsqsh</a> to show previews of AppImages without mounting them first.</li>
+<li><a href="https://github.com/Dr-Emann/sqsh-rs">sqsh-rs</a> - Rust bindings for <a class="el" href="md_libsqsh_2README.html">libsqsh</a>.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
 Building</h1>
-<h2><a class="anchor" id="autotoc_md2"></a>
+<h2><a class="anchor" id="autotoc_md3"></a>
 Dependencies</h2>
 <ul>
 <li><b>libc</b>: Any POSIX compliant libc should work. Open a bug if it doesn't.</li>
@@ -104,13 +111,13 @@ Dependencies</h2>
 <li><a href="https://curl.se/"><b>libcurl</b></a> <em>optional</em>: For transparently reading squashfs archives from the internet without downloading them first.</li>
 </ul>
 <p>Note that to do anything useful with <em>libsqsh</em>, you need to have at least one of the compression libraries enabled.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md4"></a>
 Compile &amp; Install</h2>
 <div class="fragment"><div class="line">meson setup build</div>
 <div class="line">cd build</div>
 <div class="line">meson compile</div>
 <div class="line">meson install</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
 tools</h1>
 <p>This project provides a set of command line tools to interact with squashfs archives.</p>
 <ul>
@@ -121,62 +128,17 @@ tools</h1>
 <li><a href="./tools/man/sqsh-xattr.1.in"><code>sqsh-xattr</code></a>: Prints the extended attributes of a file or directory.</li>
 <li><a href="./tools/man/sqshfs.1.in"><code>sqshfs</code></a>: Mounts a squashfs archive to a directory. There are two versions of this tool, one for fuse3 and one for fuse2.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 libsqsh</h1>
-<p><em>libsqsh</em> is a purely 2-Clause BSD Licensed implementation of the squashfs filesystem in C11. It covers the complete squashfs feature set, while still having minimal memory footprint.</p>
-<p>Note that <em>libsqsh</em> only supports reading squashfs archives. If you want to create squashfs archives, you can either use <a href="https://github.com/plougher/squashfs-tools/">squashfs-tools</a>, which provides a command line interface, or <a href="https://github.com/AgentD/squashfs-tools-ng/">squashfs-tools-ng</a>, which provides both a command-line interface and a C library interface.</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
-Features</h2>
+<p>sqsh-tools also provides a C library to interact with squashfs archives. There are two APIs available:</p>
 <ul>
-<li><b>Complete feature set</b>: libsqsh supports all features of the squashfs file system.</li>
-<li><b>Modern C11 implementation</b>: Written in modern C11, libsqsh is designed for efficiency and compatibility with C++, C, and other languages.</li>
-<li><b>High-Level API</b>: The high-level API provides easy-to-use functions to access the contents of a to the contents of a squashfs archive. It is designed to be easy to use and fast to develop with.</li>
-<li><b>Low-Level API</b>: The low-level API provides zero-copy interfaces to the squashfs archive. It is designed to be both memory and CPU efficient.</li>
-<li><b>Pure 2-Clause-BSD License</b>: libsqsh is licensed under the 2-Clause BSD license. This allows you to use libsqsh in any project, even commercial ones.</li>
+<li><b>Easy API</b>: This API is designed to be easy to use and provides a simple interface to read the content of a squashfs archive. It is the recommended API to use.</li>
+<li><b>Low-level API</b>: This API provides a more fine-grained control over the squashfs archive. It allows zero copy reading of the archive.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md7"></a>
-Example</h2>
-<p>This is a simple example that a) prints the content of a file and b) lists the content of a directory.</p>
-<div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structSqshArchive.html">SqshArchive</a> *archive =</div>
-<div class="line">        <a class="code hl_function" href="structSqshArchive.html#a3db88cfffd255b3781e329c0f660ba79">sqsh_archive_open</a>(<span class="stringliteral">&quot;/path/to/archive.squashfs&quot;</span>, NULL, NULL);</div>
-<div class="line"> </div>
-<div class="line">uint8_t *contents = <a class="code hl_function" href="sqsh__easy_8h.html#afccc90b3b193597d84a12893f10ca96a">sqsh_easy_file_content</a>(archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>, NULL);</div>
-<div class="line">assert(contents != NULL);</div>
-<div class="line"><span class="keyword">const</span> <span class="keywordtype">size_t</span> size = <a class="code hl_function" href="sqsh__easy_8h.html#a3793b8e17ed31dc29e81751f175a5a55">sqsh_easy_file_size</a>(archive, <span class="stringliteral">&quot;/path/to/file&quot;</span>, NULL);</div>
-<div class="line">fwrite(contents, 1, size, stdout);</div>
-<div class="line">free(contents);</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">char</span> **files = <a class="code hl_function" href="sqsh__easy_8h.html#afcb36a839311c71629b3b197314e0de3">sqsh_easy_directory_list</a>(archive, <span class="stringliteral">&quot;/path/to/dir&quot;</span>, NULL);</div>
-<div class="line">assert(files != NULL);</div>
-<div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; files[i] != NULL; i++) {</div>
-<div class="line">    puts(files[i]);</div>
-<div class="line">}</div>
-<div class="line">free(files);</div>
-<div class="line"> </div>
-<div class="line"><a class="code hl_function" href="structSqshArchive.html#ad9c8077e5c6e3d98cff588e203be15e1">sqsh_archive_close</a>(archive);</div>
-<div class="ttc" id="asqsh__easy_8h_html_a3793b8e17ed31dc29e81751f175a5a55"><div class="ttname"><a href="sqsh__easy_8h.html#a3793b8e17ed31dc29e81751f175a5a55">sqsh_easy_file_size</a></div><div class="ttdeci">size_t sqsh_easy_file_size(struct SqshArchive *archive, const char *path, int *err)</div><div class="ttdoc">retrieves the size of a file.</div></div>
-<div class="ttc" id="asqsh__easy_8h_html_afcb36a839311c71629b3b197314e0de3"><div class="ttname"><a href="sqsh__easy_8h.html#afcb36a839311c71629b3b197314e0de3">sqsh_easy_directory_list</a></div><div class="ttdeci">char ** sqsh_easy_directory_list(struct SqshArchive *archive, const char *path, int *err)</div><div class="ttdoc">retrieves the contents of a directory as a list of file names</div></div>
-<div class="ttc" id="asqsh__easy_8h_html_afccc90b3b193597d84a12893f10ca96a"><div class="ttname"><a href="sqsh__easy_8h.html#afccc90b3b193597d84a12893f10ca96a">sqsh_easy_file_content</a></div><div class="ttdeci">uint8_t * sqsh_easy_file_content(struct SqshArchive *archive, const char *path, int *err)</div><div class="ttdoc">retrieves the content of a file.</div></div>
-<div class="ttc" id="astructSqshArchive_html"><div class="ttname"><a href="structSqshArchive.html">SqshArchive</a></div><div class="ttdef"><b>Definition</b> <a href="sqsh__archive__private_8h_source.html#l00226">sqsh_archive_private.h:226</a></div></div>
-<div class="ttc" id="astructSqshArchive_html_a3db88cfffd255b3781e329c0f660ba79"><div class="ttname"><a href="structSqshArchive.html#a3db88cfffd255b3781e329c0f660ba79">SqshArchive::sqsh_archive_open</a></div><div class="ttdeci">SQSH_NO_UNUSED struct SqshArchive * sqsh_archive_open(const void *source, const struct SqshConfig *config, int *err)</div><div class="ttdoc">initializes a archive context in heap.</div></div>
-<div class="ttc" id="astructSqshArchive_html_ad9c8077e5c6e3d98cff588e203be15e1"><div class="ttname"><a href="structSqshArchive.html#ad9c8077e5c6e3d98cff588e203be15e1">SqshArchive::sqsh_archive_close</a></div><div class="ttdeci">int sqsh_archive_close(struct SqshArchive *archive)</div><div class="ttdoc">Frees the resources used by a Sqsh instance.</div></div>
-</div><!-- fragment --><p>Find further examples in the [examples](examples) directory.</p>
-<h2><a class="anchor" id="autotoc_md8"></a>
-Note on Deprecation</h2>
-<p>The sqsh-tools team works hard to keep the API stable. As a result, some functions are marked as deprecated but remain available for the current major version. The replacements for these deprecated functions typically have the same name with a <code>...2</code> suffix.</p>
-<p>In the next major (at the time of writing v2.0.0) version, the <code>...2</code> functions will be renamed to their original names, and the deprecated functions will be removed.</p>
-<h2><a class="anchor" id="autotoc_md9"></a>
-LZO2</h2>
-<p>LZO2 is a fast compression algorithm. Unfortunately the current implementation is GPL licensed and therefore not included in this library. If you want to use LZO2 there's and independent glue library called <a href="https://github.com/Gottox/libsqsh-lzo">libsqsh-lzo</a>.</p>
-<h1><a class="anchor" id="autotoc_md10"></a>
-Resource</h1>
-<ul>
-<li><a href="https://dr-emann.github.io/squashfs/squashfs.html">https://dr-emann.github.io/squashfs/squashfs.html</a> - A detailed description of the squashfs file format.</li>
-<li><a href="https://github.com/plougher/squashfs-tools/">https://github.com/plougher/squashfs-tools/</a> - The original squashfs-tools implementation.</li>
-<li><a href="https://github.com/AgentD/squashfs-tools-ng/">https://github.com/AgentD/squashfs-tools-ng/</a> - A rewrite of the squashfs-tools implementation with library support. In contrast to libsqsh, this library is able to write squashfs archives.</li>
-<li><a href="https://github.com/vasi/squashfuse">https://github.com/vasi/squashfuse</a> - A C implementation of the squashfs filesystem.</li>
-<li><a href="https://github.com/wcampbell0x2a/backhand">https://github.com/wcampbell0x2a/backhand</a> - A Rust implementation of the squashfs filesystem. </li>
-</ul>
+<p>For more information, see the <a class="el" href="md_libsqsh_2README.html">libsqsh README</a>.</p>
+<h1><a class="anchor" id="autotoc_md7"></a>
+LZO2</h1>
+<p>LZO2 is a fast compression algorithm. Unfortunately the current implementation is GPL licensed and therefore not included in this library. If you want to use LZO2 there's and independent glue library called <a href="https://github.com/Gottox/libsqsh-lzo">libsqsh-lzo</a>. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"/>
 </div><!-- contents -->

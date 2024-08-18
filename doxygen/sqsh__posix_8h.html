@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -88,10 +88,14 @@ $(function(){ initResizable(false); });
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">sqsh_posix.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="sqsh__common_8h_source.html">sqsh_common.h</a>&quot;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sqsh_posix.h:</div>
@@ -105,11 +109,98 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 </div>
 <p><a href="sqsh__posix_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a62f16203b456dc1bc6419d1c21593c47" id="r_a62f16203b456dc1bc6419d1c21593c47"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62f16203b456dc1bc6419d1c21593c47">sqsh_file_iterator_mt_cb</a>) (const struct <a class="el" href="structSqshFile.html">SqshFile</a> *file, const struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator, uint64_t offset, void *data, int err)</td></tr>
+<tr class="separator:a62f16203b456dc1bc6419d1c21593c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6675c3b0363d72c21ee36c04aaf76750" id="r_a6675c3b0363d72c21ee36c04aaf76750"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6675c3b0363d72c21ee36c04aaf76750">sqsh_file_to_stream_mt_cb</a>) (const struct <a class="el" href="structSqshFile.html">SqshFile</a> *file, FILE *stream, void *data, int err)</td></tr>
+<tr class="separator:a6675c3b0363d72c21ee36c04aaf76750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:acde7b37002b538f5e0ff4169b8800b10" id="r_acde7b37002b538f5e0ff4169b8800b10"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqshThreadpool.html">SqshThreadpool</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acde7b37002b538f5e0ff4169b8800b10">sqsh_threadpool_new</a> (size_t threads, int *err)</td></tr>
+<tr class="separator:acde7b37002b538f5e0ff4169b8800b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6007f415af54e54661f70d9aa98a1a82" id="r_a6007f415af54e54661f70d9aa98a1a82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6007f415af54e54661f70d9aa98a1a82">sqsh_threadpool_wait</a> (struct <a class="el" href="structSqshThreadpool.html">SqshThreadpool</a> *pool)</td></tr>
+<tr class="separator:a6007f415af54e54661f70d9aa98a1a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Enno Boland (<a href="#" onclick="location.href='mai'+'lto:'+'mai'+'l@'+'ebo'+'la'+'nd.'+'de'; return false;">mail@<span class="obfuscator">.nosp@m.</span>ebol<span class="obfuscator">.nosp@m.</span>and.d<span class="obfuscator">.nosp@m.</span>e</a>) </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="sqsh__posix_8h_source.html">sqsh_posix.h</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a62f16203b456dc1bc6419d1c21593c47" name="a62f16203b456dc1bc6419d1c21593c47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62f16203b456dc1bc6419d1c21593c47">&#9670;&#160;</a></span>sqsh_file_iterator_mt_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* sqsh_file_iterator_mt_cb) (const struct <a class="el" href="structSqshFile.html">SqshFile</a> *file, const struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator, uint64_t offset, void *data, int err)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sqsh__posix_8h_source.html#l00050">50</a> of file <a class="el" href="sqsh__posix_8h_source.html">sqsh_posix.h</a>.</p>
+
+</div>
+</div>
+<a id="a6675c3b0363d72c21ee36c04aaf76750" name="a6675c3b0363d72c21ee36c04aaf76750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6675c3b0363d72c21ee36c04aaf76750">&#9670;&#160;</a></span>sqsh_file_to_stream_mt_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* sqsh_file_to_stream_mt_cb) (const struct <a class="el" href="structSqshFile.html">SqshFile</a> *file, FILE *stream, void *data, int err)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sqsh__posix_8h_source.html#l00053">53</a> of file <a class="el" href="sqsh__posix_8h_source.html">sqsh_posix.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="acde7b37002b538f5e0ff4169b8800b10" name="acde7b37002b538f5e0ff4169b8800b10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde7b37002b538f5e0ff4169b8800b10">&#9670;&#160;</a></span>sqsh_threadpool_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structSqshThreadpool.html">SqshThreadpool</a> * sqsh_threadpool_new </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>threads</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>err</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6007f415af54e54661f70d9aa98a1a82" name="a6007f415af54e54661f70d9aa98a1a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6007f415af54e54661f70d9aa98a1a82">&#9670;&#160;</a></span>sqsh_threadpool_wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_threadpool_wait </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshThreadpool.html">SqshThreadpool</a> *</td>          <td class="paramname"><span class="paramname"><em>pool</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0

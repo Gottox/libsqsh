@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -88,24 +88,42 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
+<dt>Global <a class="el" href="sqsh__easy_8h.html#af0fd82ec96aa1aa8deccb9928e4274c1">sqsh_easy_file_mtime</a>  (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, const char *path, int *err)</dt>
+<dd><a class="anchor" id="_deprecated000009"></a>Since 1.5.0. Use <a class="el" href="sqsh__easy_8h.html#aa4d13b3e506695f4f90dc2bb1e06d05f" title="retrieves the modification time of a file.">sqsh_easy_file_mtime2()</a> instead.  </dd>
+<dt>Global <a class="el" href="sqsh__easy_8h.html#a3793b8e17ed31dc29e81751f175a5a55">sqsh_easy_file_size</a>  (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, const char *path, int *err)</dt>
+<dd><a class="anchor" id="_deprecated000008"></a>Since 1.5.0. Use <a class="el" href="sqsh__easy_8h.html#aab996ee2782ce25c70152629a627df62" title="retrieves the size of a file.">sqsh_easy_file_size2()</a> instead.  </dd>
 <dt>Global <a class="el" href="sqsh__error_8h.html#ac92b5f178c51aef07c08a63847b6d3ccab4f1353b6e3e2e3d5b3bfac9cbe1441c">SQSH_ERROR_UNKOWN_FILE_TYPE</a>  </dt>
-<dd><a class="anchor" id="_deprecated000007"></a>Since 1.1.0. Use SQSH_ERROR_UNKNOWN_FILE_TYPE instead.  </dd>
+<dd><a class="anchor" id="_deprecated000010"></a>Since 1.1.0. Use SQSH_ERROR_UNKNOWN_FILE_TYPE instead.  </dd>
+<dt>Global <a class="el" href="sqsh__mapper_8h.html#a586979475c558a7807dababf58c9bb23">sqsh_mapper_size</a>  (const struct <a class="el" href="structSqshMapper.html" title="The mapper that is used to map chunks of the archive into memory.">SqshMapper</a> *mapper)</dt>
+<dd><a class="anchor" id="_deprecated000015"></a>Since 1.5.0. Use <a class="el" href="sqsh__mapper_8h.html#ab6a28aada5d226c41d61ece197498418">sqsh_mapper_size2()</a> instead.  </dd>
+<dt>Global <a class="el" href="structSqshConfig.html#a4e6faafbf1534126b820fda132586d96">SqshConfig::compression_lru_size</a>  </dt>
+<dd><a class="anchor" id="_deprecated000004"></a>Since 1.5.0. data_lru_size or metablock_lru_size instead.  </dd>
 <dt>Global <a class="el" href="structSqshDirectoryIterator.html#ac839f9ac353724ead62793b5115b8293">SqshDirectoryIterator::sqsh_directory_iterator_inode_number</a>  (const struct <a class="el" href="structSqshDirectoryIterator.html" title="A directory iterator.">SqshDirectoryIterator</a> *iterator)</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000005"></a>Since 1.2.0. Use <a class="el" href="structSqshDirectoryIterator.html#a0f988ae12b5083130911e6c13c108bad" title="Retrieves the inode number of the current entry.">sqsh_directory_iterator_inode()</a> instead.</p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000006"></a>Since 1.2.0. Use <a class="el" href="structSqshDirectoryIterator.html#a0f988ae12b5083130911e6c13c108bad" title="Retrieves the inode number of the current entry.">sqsh_directory_iterator_inode()</a> instead.</p>
 <p class="enddd"></p>
 </dd>
 <dt>Global <a class="el" href="structSqshDirectoryIterator.html#af05891767c47e30008188aeabfffea51">SqshDirectoryIterator::sqsh_directory_iterator_name</a>  (const struct <a class="el" href="structSqshDirectoryIterator.html" title="A directory iterator.">SqshDirectoryIterator</a> *iterator)</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000006"></a>Since 1.3.0. Use <a class="el" href="structSqshDirectoryIterator.html#afbac70c5fb480a227ba882f3adc65a4b" title="Retrieves the name of the current entry.">sqsh_directory_iterator_name2()</a> instead.</p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000007"></a>Since 1.3.0. Use <a class="el" href="structSqshDirectoryIterator.html#afbac70c5fb480a227ba882f3adc65a4b" title="Retrieves the name of the current entry.">sqsh_directory_iterator_name2()</a> instead.</p>
 <p class="enddd"></p>
 </dd>
 <dt>Global <a class="el" href="structSqshDirectoryIterator.html#a5f758b1d81de0307935f2a5c962f925c">SqshDirectoryIterator::sqsh_directory_iterator_name_size</a>  (const struct <a class="el" href="structSqshDirectoryIterator.html" title="A directory iterator.">SqshDirectoryIterator</a> *iterator)</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000004"></a>Since 1.3.0. Use <a class="el" href="structSqshDirectoryIterator.html#afbac70c5fb480a227ba882f3adc65a4b" title="Retrieves the name of the current entry.">sqsh_directory_iterator_name2()</a> instead.</p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000005"></a>Since 1.3.0. Use <a class="el" href="structSqshDirectoryIterator.html#afbac70c5fb480a227ba882f3adc65a4b" title="Retrieves the name of the current entry.">sqsh_directory_iterator_name2()</a> instead.</p>
+<p class="enddd"></p>
+</dd>
+<dt>Global <a class="el" href="structSqshFile.html#aa8597eb0c0e289a6dc3864c9f97e9e36">SqshFile::sqsh_file_block_count</a>  (const struct <a class="el" href="structSqshFile.html" title="The Inode context.">SqshFile</a> *context)</dt>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000013"></a>Since 1.5.0. Use sqsh_file_blockcount2() instead.</p>
 <p class="enddd"></p>
 </dd>
 <dt>Global <a class="el" href="structSqshFile.html#a50236ac0a03e7a7429c34d49b5a0b8c3">SqshFile::sqsh_file_directory_block_offset</a>  (const struct <a class="el" href="structSqshFile.html" title="The Inode context.">SqshFile</a> *context)</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000008"></a>Since 1.3.0. Use <a class="el" href="structSqshFile.html#aa5d942642bb7ed3ffec71f2995a3ded5" title="retrieve the directory block offset. This is only internally used and will be used while iterating ov...">sqsh_file_directory_block_offset2()</a> instead.</p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000014"></a>Since 1.3.0. Use <a class="el" href="structSqshFile.html#aa5d942642bb7ed3ffec71f2995a3ded5" title="retrieve the directory block offset. This is only internally used and will be used while iterating ov...">sqsh_file_directory_block_offset2()</a> instead.</p>
 <p class="enddd"></p>
 </dd>
+<dt>Global <a class="el" href="structSqshFileIterator.html#afdc8978d9c20a5195260cdb483d9c769">SqshFileIterator::sqsh_file_iterator_skip</a>  (struct <a class="el" href="structSqshFileIterator.html" title="An iterator over the contents of a file.">SqshFileIterator</a> *iterator, sqsh_index_t *offset, size_t desired_size)</dt>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000012"></a>Since 1.5.0. Use <a class="el" href="structSqshFileIterator.html#a3cb35c61233ae056381b05c71a98e54d" title="Skips blocks until the block containing the offset is reached. Note that calling this function will i...">sqsh_file_iterator_skip2()</a> instead.</p>
+<p class="enddd"></p>
+</dd>
+<dt>Global <a class="el" href="structSqshFileReader.html#aedfe992063ddd2e6f807da715becfbca">SqshFileReader::sqsh_file_reader_advance</a>  (struct <a class="el" href="structSqshFileReader.html" title="A reader over the contents of a file.">SqshFileReader</a> *reader, sqsh_index_t offset, size_t size)</dt>
+<dd><a class="anchor" id="_deprecated000011"></a>Since 1.5.0. Use <a class="el" href="structSqshFileReader.html#a2f0ed67f216985c3888733a6be03dbd9" title="Advances the file reader by a certain amount of data and presents size bytes of data to the user.">sqsh_file_reader_advance2()</a> instead.  </dd>
 <dt>Global <a class="el" href="structSqshInodeMap.html#aae47ad2918370ae511b87ae6294e57c4">SqshInodeMap::sqsh_inode_map_get</a>  (const struct <a class="el" href="structSqshInodeMap.html" title="The inode map context is used to cache inodes numbers and their corresponding inode references.">SqshInodeMap</a> *map, uint64_t inode_number)</dt>
 <dd><p class="startdd"><a class="anchor" id="_deprecated000002"></a>Since 1.2.0. Use <a class="el" href="structSqshInodeMap.html#af9854f1082cdbb61ff73376d4ef8a6c9" title="Gets the inode reference for a given inode number.">sqsh_inode_map_get2()</a> instead.</p>
 <p class="enddd"></p>
@@ -114,46 +132,54 @@ $(function(){ initResizable(false); });
 <dd><p class="startdd"><a class="anchor" id="_deprecated000003"></a>Since 1.2.0. Use <a class="el" href="structSqshInodeMap.html#a2c5a98c47474419ee16a6052751cb181" title="Sets the inode reference for a given inode number.">sqsh_inode_map_set2()</a> instead.</p>
 <p class="enddd"></p>
 </dd>
+<dt>Global <a class="el" href="structSqshMemoryMapperImpl.html#a75e0296ef505f676e1e98680107863bf">SqshMemoryMapperImpl::init</a>  )(struct <a class="el" href="structSqshMapper.html" title="The mapper that is used to map chunks of the archive into memory.">SqshMapper</a> *mapper, const void *input, size_t *size)</dt>
+<dd><a class="anchor" id="_deprecated000016"></a>Since 1.5.0. Use <a class="el" href="structSqshMemoryMapperImpl.html#a22dc2e7c1164ac73b78f795d52275976" title="The initialization function for the mapper. Use sqsh_mapper_set_user_data() to set custom user data.">SqshMemoryMapperImpl::init2()</a> instead.  </dd>
+<dt>Global <a class="el" href="structSqshMemoryMapperImpl.html#a59eb1d264b84663af8b4836ba4d13b79">SqshMemoryMapperImpl::map</a>  )(const struct <a class="el" href="structSqshMapper.html" title="The mapper that is used to map chunks of the archive into memory.">SqshMapper</a> *mapper, sqsh_index_t offset, size_t size, uint8_t **data)</dt>
+<dd><a class="anchor" id="_deprecated000017"></a>Since 1.5.0. Use <a class="el" href="structSqshMemoryMapperImpl.html#a555f189b305b032357a7a5bb8113f28d" title="The function that maps a block of data into memory.">SqshMemoryMapperImpl::map2()</a> instead.  </dd>
+<dt>Global <a class="el" href="structSqshTable.html#ac685755db413f7b31a4760bf96c8102a">SqshTable::sqsh_export_table_resolve_inode</a>  (const struct <a class="el" href="structSqshExportTable.html" title="The export table.">SqshExportTable</a> *table, uint64_t inode, uint64_t *inode_ref)</dt>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000018"></a>Since 1.5.0. Use sqsh_export_table_resolve_inode2 instead.</p>
+<p class="enddd"></p>
+</dd>
 <dt>Struct <a class="el" href="structSqshTreeWalker.html">SqshTreeWalker</a>  </dt>
 <dd><a class="anchor" id="_deprecated000001"></a>Since 1.2.0. Use struct <a class="el" href="structSqshPathResolver.html" title="Resolves paths.">SqshPathResolver</a> instead.  </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#aa40001c91ed7583c8bfcfecae5abc6cf">SqshTreeWalker::sqsh_tree_walker_down</a>  (struct <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> *walker)</dt>
-<dd><a class="anchor" id="_deprecated000018"></a>Since 1.2.0. Use sqsh_path_resolver_down() instead.  </dd>
+<dd><a class="anchor" id="_deprecated000028"></a>Since 1.2.0. Use sqsh_path_resolver_down() instead.  </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#ae6a5e73a213ea0ddd41f30b917f83d6e">SqshTreeWalker::sqsh_tree_walker_free</a>  (struct <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> *reader)</dt>
-<dd><a class="anchor" id="_deprecated000022"></a>Since 1.2.0. Use sqsh_path_resolver_free() instead.  </dd>
+<dd><a class="anchor" id="_deprecated000032"></a>Since 1.2.0. Use sqsh_path_resolver_free() instead.  </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#a6739456aadb40bb515969556428720b9">SqshTreeWalker::sqsh_tree_walker_lookup</a>  (struct <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> *walker, const char *name, const size_t name_size)</dt>
-<dd><a class="anchor" id="_deprecated000017"></a>Since 1.2.0. Use sqsh_path_resolver_lookup() instead.  </dd>
+<dd><a class="anchor" id="_deprecated000027"></a>Since 1.2.0. Use sqsh_path_resolver_lookup() instead.  </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#a5d937f132ad5926fd0ce04bbc8bf4a59">SqshTreeWalker::sqsh_tree_walker_name</a>  (const struct <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> *walker)</dt>
-<dd><a class="anchor" id="_deprecated000013"></a>Since 1.2.0. Use sqsh_path_resolver_name() instead.  </dd>
+<dd><a class="anchor" id="_deprecated000023"></a>Since 1.2.0. Use sqsh_path_resolver_name() instead.  </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#ad1cd7fc648d60f8ebe1bed9ef97ab609">SqshTreeWalker::sqsh_tree_walker_name_dup</a>  (const struct <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> *walker)</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000015"></a>Since 1.2.0. Use sqsh_path_resolver_name_dup() instead.</p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000025"></a>Since 1.2.0. Use sqsh_path_resolver_name_dup() instead.</p>
 <p class="enddd"></p>
 </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#a2ff8e3200ef18a2f6514f6447683e304">SqshTreeWalker::sqsh_tree_walker_name_size</a>  (const struct <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> *walker)</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000014"></a>Since 1.2.0. Use sqsh_path_resolver_name_size() instead.</p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000024"></a>Since 1.2.0. Use sqsh_path_resolver_name_size() instead.</p>
 <p class="enddd"></p>
 </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#a4d4fd3af8bd2fa515c8071167ab93d06">SqshTreeWalker::sqsh_tree_walker_new</a>  (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, int *err)</dt>
-<dd><a class="anchor" id="_deprecated000009"></a>Since 1.2.0. Use sqsh_path_resolver_new() instead.  </dd>
+<dd><a class="anchor" id="_deprecated000019"></a>Since 1.2.0. Use sqsh_path_resolver_new() instead.  </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#a5a28cdf78af6de3a9e2de9308b2d62ec">SqshTreeWalker::sqsh_tree_walker_next</a>  (struct <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> *walker)</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000011"></a>Since 1.2.0. Use sqsh_path_resolver_next() instead.</p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000021"></a>Since 1.2.0. Use sqsh_path_resolver_next() instead.</p>
 <p class="enddd"></p>
 </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#a186cef8372509211c796d05e186214e2">SqshTreeWalker::sqsh_tree_walker_open_file</a>  (const struct <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> *walker, int *err)</dt>
-<dd><a class="anchor" id="_deprecated000020"></a>Since 1.2.0. Use sqsh_path_resolver_open_file() instead.  </dd>
+<dd><a class="anchor" id="_deprecated000030"></a>Since 1.2.0. Use sqsh_path_resolver_open_file() instead.  </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#a46299a97089c781a9168f81ca2c17708">SqshTreeWalker::sqsh_tree_walker_resolve</a>  (struct <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> *walker, const char *path, bool follow_symlinks)</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000021"></a>Since 1.2.0. Use sqsh_path_resolver_open_file() instead.</p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000031"></a>Since 1.2.0. Use sqsh_path_resolver_open_file() instead.</p>
 <p class="enddd"></p>
 </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#ad332446fdcfcd73348334e4df550fcaa">SqshTreeWalker::sqsh_tree_walker_revert</a>  (struct <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> *walker)</dt>
-<dd><a class="anchor" id="_deprecated000016"></a>Since 1.2.0. Use sqsh_path_resolver_revert() instead.  </dd>
+<dd><a class="anchor" id="_deprecated000026"></a>Since 1.2.0. Use sqsh_path_resolver_revert() instead.  </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#a4df3e9135e795616ef86541ad09db393">SqshTreeWalker::sqsh_tree_walker_to_root</a>  (struct <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> *walker)</dt>
-<dd><a class="anchor" id="_deprecated000019"></a>Since 1.2.0. Use sqsh_path_resolver_to_root() instead.  </dd>
+<dd><a class="anchor" id="_deprecated000029"></a>Since 1.2.0. Use sqsh_path_resolver_to_root() instead.  </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#a39c1171fb6f3d26f52de349762a81c6e">SqshTreeWalker::sqsh_tree_walker_type</a>  (const struct <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> *walker)</dt>
-<dd><a class="anchor" id="_deprecated000012"></a>Since 1.2.0. Use sqsh_path_resolver_type() instead.  </dd>
+<dd><a class="anchor" id="_deprecated000022"></a>Since 1.2.0. Use sqsh_path_resolver_type() instead.  </dd>
 <dt>Global <a class="el" href="structSqshTreeWalker.html#a1da85513c73a57edf77855103892d45a">SqshTreeWalker::sqsh_tree_walker_up</a>  (struct <a class="el" href="structSqshTreeWalker.html" title="A walker over the contents of a file.">SqshTreeWalker</a> *walker)</dt>
-<dd><a class="anchor" id="_deprecated000010"></a>Since 1.2.0. Use sqsh_path_resolver_up() instead.  </dd>
+<dd><a class="anchor" id="_deprecated000020"></a>Since 1.2.0. Use sqsh_path_resolver_up() instead.  </dd>
 <dt>Global <a class="el" href="structSqshXattrIterator.html#a724e7db55bc0fe28f1cdcce7f25ac933">SqshXattrIterator::sqsh_xattr_iterator_value_size</a>  (const struct <a class="el" href="structSqshXattrIterator.html" title="An iterator over extended attributes.">SqshXattrIterator</a> *iterator)</dt>
-<dd><a class="anchor" id="_deprecated000023"></a>Since 1.3.0. Use <a class="el" href="structSqshXattrIterator.html#a23ee2beb54e4fc9ef60c37a8d91375ae" title="Retrieves the size of the value of the current xattr.">sqsh_xattr_iterator_value_size2()</a> instead.</dd>
+<dd><a class="anchor" id="_deprecated000033"></a>Since 1.3.0. Use <a class="el" href="structSqshXattrIterator.html#a23ee2beb54e4fc9ef60c37a8d91375ae" title="Retrieves the size of the value of the current xattr.">sqsh_xattr_iterator_value_size2()</a> instead.</dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

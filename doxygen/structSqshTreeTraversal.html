@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(function(){ initResizable(false); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adac9af0823ea7f4aa6dc4cc6e9ce36bc" id="r_adac9af0823ea7f4aa6dc4cc6e9ce36bc"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structSqshTreeTraversal.html">SqshTreeTraversal</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adac9af0823ea7f4aa6dc4cc6e9ce36bc">sqsh_tree_traversal_new</a> (const struct <a class="el" href="structSqshFile.html">SqshFile</a> *file, int *err)</td></tr>
-<tr class="memdesc:adac9af0823ea7f4aa6dc4cc6e9ce36bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structSqshTreeTraversal.html" title="A walker over the contents of a file.">SqshTreeTraversal</a> object at the root inode.  <br /></td></tr>
+<tr class="memdesc:adac9af0823ea7f4aa6dc4cc6e9ce36bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structSqshTreeTraversal.html" title="A walker over the contents of a file.">SqshTreeTraversal</a> object rooted at the specified inode.  <br /></td></tr>
 <tr class="separator:adac9af0823ea7f4aa6dc4cc6e9ce36bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa72fadbdf5fadd3d5f612f0648408a86" id="r_aa72fadbdf5fadd3d5f612f0648408a86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa72fadbdf5fadd3d5f612f0648408a86">sqsh_tree_traversal_set_max_depth</a> (struct <a class="el" href="structSqshTreeTraversal.html">SqshTreeTraversal</a> *traversal, size_t max_depth)</td></tr>
 <tr class="memdesc:aa72fadbdf5fadd3d5f612f0648408a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum depth of the traversal.  <br /></td></tr>
@@ -113,10 +113,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0c361b73612cdd3c977c514c0a0c9bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the state of the traversal.  <br /></td></tr>
 <tr class="separator:a0c361b73612cdd3c977c514c0a0c9bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad00edec9a404a5cff728c413428cb8db" id="r_ad00edec9a404a5cff728c413428cb8db"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad00edec9a404a5cff728c413428cb8db">sqsh_tree_traversal_name</a> (const struct <a class="el" href="structSqshTreeTraversal.html">SqshTreeTraversal</a> *traversal, size_t *len)</td></tr>
-<tr class="memdesc:ad00edec9a404a5cff728c413428cb8db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the current entry. This entry is not zero terminated. The function will return an emptry string for the uppermost object.  <br /></td></tr>
+<tr class="memdesc:ad00edec9a404a5cff728c413428cb8db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the current entry.  <br /></td></tr>
 <tr class="separator:ad00edec9a404a5cff728c413428cb8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43767e70d7b04f082ec8b7690f5326d8" id="r_a43767e70d7b04f082ec8b7690f5326d8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43767e70d7b04f082ec8b7690f5326d8">sqsh_tree_traversal_path_dup</a> (const struct <a class="el" href="structSqshTreeTraversal.html">SqshTreeTraversal</a> *traversal)</td></tr>
-<tr class="memdesc:a43767e70d7b04f082ec8b7690f5326d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the current entry. This entry is not zero terminated.  <br /></td></tr>
+<tr class="memdesc:a43767e70d7b04f082ec8b7690f5326d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a heap allocated copy of the path to the current entry.  <br /></td></tr>
 <tr class="separator:a43767e70d7b04f082ec8b7690f5326d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a5f87fd1371a5ae5935da902e49de91" id="r_a0a5f87fd1371a5ae5935da902e49de91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a5f87fd1371a5ae5935da902e49de91">sqsh_tree_traversal_name_dup</a> (const struct <a class="el" href="structSqshTreeTraversal.html">SqshTreeTraversal</a> *traversal)</td></tr>
 <tr class="memdesc:a0a5f87fd1371a5ae5935da902e49de91"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a heap allocated copy of the name of the current entry.  <br /></td></tr>
@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af6c20e1f6c33fb273f246a98b27bb1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path segment at a given index.  <br /></td></tr>
 <tr class="separator:af6c20e1f6c33fb273f246a98b27bb1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef68877a7a10ce27462eedce7aff941e" id="r_aef68877a7a10ce27462eedce7aff941e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef68877a7a10ce27462eedce7aff941e">sqsh_tree_traversal_path_segment</a> (const struct <a class="el" href="structSqshTreeTraversal.html">SqshTreeTraversal</a> *traversal, size_t *len, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> index)</td></tr>
-<tr class="memdesc:aef68877a7a10ce27462eedce7aff941e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the path segment at a given index.  <br /></td></tr>
+<tr class="memdesc:aef68877a7a10ce27462eedce7aff941e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a segment of the path of the current entry.  <br /></td></tr>
 <tr class="separator:aef68877a7a10ce27462eedce7aff941e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd1cee161643e1e59af372fd90fe9456" id="r_afd1cee161643e1e59af372fd90fe9456"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> struct <a class="el" href="structSqshFile.html">SqshFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd1cee161643e1e59af372fd90fe9456">sqsh_tree_traversal_open_file</a> (const struct <a class="el" href="structSqshTreeTraversal.html">SqshTreeTraversal</a> *traversal, int *err)</td></tr>
 <tr class="memdesc:afd1cee161643e1e59af372fd90fe9456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the inode of the current entry.  <br /></td></tr>
@@ -207,7 +207,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the name of the current entry. This entry is not zero terminated. The function will return an emptry string for the uppermost object. </p>
+<p>Returns the name of the current entry. </p>
+<p>This entry is not zero terminated. The function will return an empty string for the uppermost object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">traversal</td><td>The traversal to use </td></tr>
@@ -266,7 +267,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new <a class="el" href="structSqshTreeTraversal.html" title="A walker over the contents of a file.">SqshTreeTraversal</a> object at the root inode. </p>
+<p>Creates a new <a class="el" href="structSqshTreeTraversal.html" title="A walker over the contents of a file.">SqshTreeTraversal</a> object rooted at the specified inode. </p>
+<p>The returned traversal iterator object borrows the passed file object. The returned traversal iterator object will visit all entries recursively located below the passed inode (which can be limited with <code>sqsh_tree_traversal_set_max_depth</code>). If the passed inode is not a directory, only the passed inode itself will be visited.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>the base inode to start from. </td></tr>
@@ -274,7 +276,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a new file reader. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a new tree traversal object. </dd></dl>
 
 </div>
 </div>
@@ -305,7 +307,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, less than 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the traversal was moved to the next entry, false if the traversal has no more entries to move to or an error occurred. </dd></dl>
 
 </div>
 </div>
@@ -336,7 +338,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the inode of the current entry. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a newly allocated <a class="el" href="structSqshFile.html" title="The Inode context.">SqshFile</a> for the current entry. </dd></dl>
 
 </div>
 </div>
@@ -355,14 +357,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the name of the current entry. This entry is not zero terminated. </p>
+<p>Creates a heap allocated copy of the path to the current entry. </p>
+<p>The caller is responsible for calling free() on the returned pointer.</p>
+<p>The returned string is 0 terminated.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">traversal</td><td>The traversal to use</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the name of the current entry. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a newly heap allocated string containing the path to the current entry </dd></dl>
 
 </div>
 </div>
@@ -390,7 +394,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the length of the path segment at a given index. </p>
+<p>Get a segment of the path of the current entry. </p>
+<p>A path segment is a part of the path that is separated by a path separator (<code>/</code>). The segments are indexed starting at 0, and there are <code>depth</code> segments in total (0 &lt;= index &lt; depth). The last segment is the name of the current entry.</p>
+<p>The root of the traversal is considered at depth 0, and so has no path segments (or name).</p>
+<p>If the traversal is rooted at <code>/a/b</code>, and the traversal iterator is pointing at <code>/a/b/c/d.txt</code>, the path segments will be [<code>c</code>, <code>d.txt</code>].</p>
+<p>The returned pointer is not zero terminated.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">traversal</td><td>The traversal to use </td></tr>
@@ -451,11 +459,11 @@ Public Member Functions</h2></td></tr>
 <p>returns the state of the traversal. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">traversal</td><td>The traversal to use</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">traversal</td><td>The traversal to use</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, less than 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The current state of the traversal. </dd></dl>
 
 </div>
 </div>

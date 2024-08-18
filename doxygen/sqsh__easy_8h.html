@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -118,12 +118,18 @@ Functions</h2></td></tr>
 <tr class="memitem:afccc90b3b193597d84a12893f10ca96a" id="r_afccc90b3b193597d84a12893f10ca96a"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afccc90b3b193597d84a12893f10ca96a">sqsh_easy_file_content</a> (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, const char *path, int *err)</td></tr>
 <tr class="memdesc:afccc90b3b193597d84a12893f10ca96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the content of a file.  <br /></td></tr>
 <tr class="separator:afccc90b3b193597d84a12893f10ca96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab996ee2782ce25c70152629a627df62" id="r_aab996ee2782ce25c70152629a627df62"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab996ee2782ce25c70152629a627df62">sqsh_easy_file_size2</a> (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, const char *path, int *err)</td></tr>
+<tr class="memdesc:aab996ee2782ce25c70152629a627df62"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the size of a file.  <br /></td></tr>
+<tr class="separator:aab996ee2782ce25c70152629a627df62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3793b8e17ed31dc29e81751f175a5a55" id="r_a3793b8e17ed31dc29e81751f175a5a55"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3793b8e17ed31dc29e81751f175a5a55">sqsh_easy_file_size</a> (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, const char *path, int *err)</td></tr>
 <tr class="memdesc:a3793b8e17ed31dc29e81751f175a5a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the size of a file.  <br /></td></tr>
 <tr class="separator:a3793b8e17ed31dc29e81751f175a5a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a7a3ecd1df488a7ecf5eaa3e5b21c2e" id="r_a4a7a3ecd1df488a7ecf5eaa3e5b21c2e"><td class="memItemLeft" align="right" valign="top">mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a7a3ecd1df488a7ecf5eaa3e5b21c2e">sqsh_easy_file_permission</a> (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, const char *path, int *err)</td></tr>
 <tr class="memdesc:a4a7a3ecd1df488a7ecf5eaa3e5b21c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves unix permissions of a file.  <br /></td></tr>
 <tr class="separator:a4a7a3ecd1df488a7ecf5eaa3e5b21c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d13b3e506695f4f90dc2bb1e06d05f" id="r_aa4d13b3e506695f4f90dc2bb1e06d05f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4d13b3e506695f4f90dc2bb1e06d05f">sqsh_easy_file_mtime2</a> (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, const char *path, int *err)</td></tr>
+<tr class="memdesc:aa4d13b3e506695f4f90dc2bb1e06d05f"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the modification time of a file.  <br /></td></tr>
+<tr class="separator:aa4d13b3e506695f4f90dc2bb1e06d05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0fd82ec96aa1aa8deccb9928e4274c1" id="r_af0fd82ec96aa1aa8deccb9928e4274c1"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0fd82ec96aa1aa8deccb9928e4274c1">sqsh_easy_file_mtime</a> (struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *archive, const char *path, int *err)</td></tr>
 <tr class="memdesc:af0fd82ec96aa1aa8deccb9928e4274c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the modification time of a file.  <br /></td></tr>
 <tr class="separator:af0fd82ec96aa1aa8deccb9928e4274c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -323,6 +329,44 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>retrieves the modification time of a file. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated</a></b></dt><dd>Since 1.5.0. Use <a class="el" href="#aa4d13b3e506695f4f90dc2bb1e06d05f" title="retrieves the modification time of a file.">sqsh_easy_file_mtime2()</a> instead. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">archive</td><td>The sqsh archive context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>The path the file or directory. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">err</td><td>Pointer to an int where the error code will be stored.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The modification time of the file on success, 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="aa4d13b3e506695f4f90dc2bb1e06d05f" name="aa4d13b3e506695f4f90dc2bb1e06d05f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d13b3e506695f4f90dc2bb1e06d05f">&#9670;&#160;</a></span>sqsh_easy_file_mtime2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sqsh_easy_file_mtime2 </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *</td>          <td class="paramname"><span class="paramname"><em>archive</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>err</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieves the modification time of a file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">archive</td><td>The sqsh archive context. </td></tr>
@@ -380,6 +424,44 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">size_t sqsh_easy_file_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *</td>          <td class="paramname"><span class="paramname"><em>archive</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>err</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieves the size of a file. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated</a></b></dt><dd>Since 1.5.0. Use <a class="el" href="#aab996ee2782ce25c70152629a627df62" title="retrieves the size of a file.">sqsh_easy_file_size2()</a> instead. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">archive</td><td>The sqsh archive context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>The path the file or directory. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">err</td><td>Pointer to an int where the error code will be stored.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of the file on success, 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="aab996ee2782ce25c70152629a627df62" name="aab996ee2782ce25c70152629a627df62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab996ee2782ce25c70152629a627df62">&#9670;&#160;</a></span>sqsh_easy_file_size2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sqsh_easy_file_size2 </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structSqshArchive.html">SqshArchive</a> *</td>          <td class="paramname"><span class="paramname"><em>archive</em></span>, </td>
         </tr>

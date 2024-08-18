@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -103,9 +103,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7309272bb1e8a88e33a11655672e5fd3" id="r_a7309272bb1e8a88e33a11655672e5fd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7309272bb1e8a88e33a11655672e5fd3">sqsh_file_iterator_next</a> (struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator, size_t desired_size, int *err)</td></tr>
 <tr class="memdesc:a7309272bb1e8a88e33a11655672e5fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a certain amount of data from the file iterator.  <br /></td></tr>
 <tr class="separator:a7309272bb1e8a88e33a11655672e5fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef351c5048d965fa85f3b4d38ec48bf" id="r_a0ef351c5048d965fa85f3b4d38ec48bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ef351c5048d965fa85f3b4d38ec48bf">sqsh_file_iterator_is_zero_block</a> (const struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator)</td></tr>
+<tr class="memdesc:a0ef351c5048d965fa85f3b4d38ec48bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the current block is a zero block.  <br /></td></tr>
+<tr class="separator:a0ef351c5048d965fa85f3b4d38ec48bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdc8978d9c20a5195260cdb483d9c769" id="r_afdc8978d9c20a5195260cdb483d9c769"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdc8978d9c20a5195260cdb483d9c769">sqsh_file_iterator_skip</a> (struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> *offset, size_t desired_size)</td></tr>
 <tr class="memdesc:afdc8978d9c20a5195260cdb483d9c769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips blocks until the block containing the offset is reached. Note that calling this function will invalidate the data pointer returned by <a class="el" href="#a97bb645391542f4522f7a2db91abf0bf" title="Gets a pointer to the current data in the file iterator.">sqsh_file_iterator_data()</a>.  <br /></td></tr>
 <tr class="separator:afdc8978d9c20a5195260cdb483d9c769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb35c61233ae056381b05c71a98e54d" id="r_a3cb35c61233ae056381b05c71a98e54d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cb35c61233ae056381b05c71a98e54d">sqsh_file_iterator_skip2</a> (struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator, uint64_t *offset, size_t desired_size)</td></tr>
+<tr class="memdesc:a3cb35c61233ae056381b05c71a98e54d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips blocks until the block containing the offset is reached. Note that calling this function will invalidate the data pointer returned by <a class="el" href="#a97bb645391542f4522f7a2db91abf0bf" title="Gets a pointer to the current data in the file iterator.">sqsh_file_iterator_data()</a>.  <br /></td></tr>
+<tr class="separator:a3cb35c61233ae056381b05c71a98e54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97bb645391542f4522f7a2db91abf0bf" id="r_a97bb645391542f4522f7a2db91abf0bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97bb645391542f4522f7a2db91abf0bf">sqsh_file_iterator_data</a> (const struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *iterator)</td></tr>
 <tr class="memdesc:a97bb645391542f4522f7a2db91abf0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a pointer to the current data in the file iterator.  <br /></td></tr>
 <tr class="separator:a97bb645391542f4522f7a2db91abf0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,6 +205,32 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, less than 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="a0ef351c5048d965fa85f3b4d38ec48bf" name="a0ef351c5048d965fa85f3b4d38ec48bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef351c5048d965fa85f3b4d38ec48bf">&#9670;&#160;</a></span>sqsh_file_iterator_is_zero_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> bool sqsh_file_iterator_is_zero_block </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>iterator</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if the current block is a zero block. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterator</td><td>The file iterator to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the current block is a zero block, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -327,6 +359,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Skips blocks until the block containing the offset is reached. Note that calling this function will invalidate the data pointer returned by <a class="el" href="#a97bb645391542f4522f7a2db91abf0bf" title="Gets a pointer to the current data in the file iterator.">sqsh_file_iterator_data()</a>. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated</a></b></dt><dd>Since 1.5.0. Use <a class="el" href="#a3cb35c61233ae056381b05c71a98e54d" title="Skips blocks until the block containing the offset is reached. Note that calling this function will i...">sqsh_file_iterator_skip2()</a> instead.</dd></dl>
 <p>The offset is relative to the beginning of the current block or, if the iterator hasn't been forwarded with previous calls to <a class="el" href="#afdc8978d9c20a5195260cdb483d9c769" title="Skips blocks until the block containing the offset is reached. Note that calling this function will i...">sqsh_file_iterator_skip()</a> or <a class="el" href="#a7309272bb1e8a88e33a11655672e5fd3" title="Reads a certain amount of data from the file iterator.">sqsh_file_iterator_next()</a> the beginning of the first block.</p>
 <p>After calling this function <code>offset</code> is updated to the same position relative to the new block. See this visualisation:</p>
 <div class="fragment"><div class="line">current_block: |&lt;--- block 8000 ---&gt;|</div>
@@ -335,6 +368,51 @@ Public Member Functions</h2></td></tr>
 <div class="line">current_block:                      |&lt;--- block 8000 ---&gt;|</div>
 <div class="line">                           offset = 2000 --^</div>
 <div class="ttc" id="astructSqshFileIterator_html_afdc8978d9c20a5195260cdb483d9c769"><div class="ttname"><a href="#afdc8978d9c20a5195260cdb483d9c769">SqshFileIterator::sqsh_file_iterator_skip</a></div><div class="ttdeci">SQSH_NO_UNUSED int sqsh_file_iterator_skip(struct SqshFileIterator *iterator, sqsh_index_t *offset, size_t desired_size)</div><div class="ttdoc">Skips blocks until the block containing the offset is reached. Note that calling this function will i...</div></div>
+</div><!-- fragment --><p>If libsqsh can map more than one block at once, it will do so until <code>desired_size</code> is reached. Note that <code>desired_size</code> is only a hint and libsqsh may return more or less data than requested.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">iterator</td><td>The file iterator to skip data in. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">offset</td><td>The offset that is contained in the block to skip to. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">desired_size</td><td>The desired size of the data to read.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, less than 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="a3cb35c61233ae056381b05c71a98e54d" name="a3cb35c61233ae056381b05c71a98e54d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cb35c61233ae056381b05c71a98e54d">&#9670;&#160;</a></span>sqsh_file_iterator_skip2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int sqsh_file_iterator_skip2 </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshFileIterator.html">SqshFileIterator</a> *</td>          <td class="paramname"><span class="paramname"><em>iterator</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *</td>          <td class="paramname"><span class="paramname"><em>offset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>desired_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Skips blocks until the block containing the offset is reached. Note that calling this function will invalidate the data pointer returned by <a class="el" href="#a97bb645391542f4522f7a2db91abf0bf" title="Gets a pointer to the current data in the file iterator.">sqsh_file_iterator_data()</a>. </p>
+<p>The offset is relative to the beginning of the current block or, if the iterator hasn't been forwarded with previous calls to <a class="el" href="#afdc8978d9c20a5195260cdb483d9c769" title="Skips blocks until the block containing the offset is reached. Note that calling this function will i...">sqsh_file_iterator_skip()</a> or <a class="el" href="#a7309272bb1e8a88e33a11655672e5fd3" title="Reads a certain amount of data from the file iterator.">sqsh_file_iterator_next()</a> the beginning of the first block.</p>
+<p>After calling this function <code>offset</code> is updated to the same position relative to the new block. See this visualisation:</p>
+<div class="fragment"><div class="line">current_block: |&lt;--- block 8000 ---&gt;|</div>
+<div class="line">                          offset = 10000 --^</div>
+<div class="line">--&gt;  <a class="code hl_function" href="#afdc8978d9c20a5195260cdb483d9c769">sqsh_file_iterator_skip</a>(i, &amp;offset, 1)</div>
+<div class="line">current_block:                      |&lt;--- block 8000 ---&gt;|</div>
+<div class="line">                           offset = 2000 --^</div>
 </div><!-- fragment --><p>If libsqsh can map more than one block at once, it will do so until <code>desired_size</code> is reached. Note that <code>desired_size</code> is only a hint and libsqsh may return more or less data than requested.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -87,9 +87,11 @@ $(function(){ initResizable(false); });
 <div class="textblock">Here is a list of all functions with links to the structures/unions they belong to:</div>
 
 <h3><a id="index__5F" name="index__5F"></a>- _ -</h3><ul>
-<li>sqsh__file_set_dir_inode()&#160;:&#160;<a class="el" href="structSqshFile.html#afe81f3b039226407fd388f1ce3abebcf">SqshFile</a></li>
-<li>sqsh__map_iterator_skip()&#160;:&#160;<a class="el" href="structSqshMapIterator.html#a3d4c2751754363b3f0928f165b5de27f">SqshMapIterator</a></li>
-<li>sqsh__metablock_iterator_skip()&#160;:&#160;<a class="el" href="structSqshMetablockIterator.html#a505ccf7af1d2fdc2cd53622497290cc3">SqshMetablockIterator</a></li>
+<li>sqsh__file_parent_inode_ref()&#160;:&#160;<a class="el" href="structSqshFile.html#a43f92fb86e6ddd834490572edd94dc64">SqshFile</a></li>
+<li>sqsh__file_set_parent_inode_ref()&#160;:&#160;<a class="el" href="structSqshFile.html#ada1bfcd898b7bb947f4a859dd8e163c9">SqshFile</a></li>
+<li>sqsh__map_iterator_skip()&#160;:&#160;<a class="el" href="structSqshMapIterator.html#a8a95fcc0b4e221679d36b64f25013da7">SqshMapIterator</a></li>
+<li>sqsh__metablock_iterator_skip()&#160;:&#160;<a class="el" href="structSqshMetablockIterator.html#ab40d53fab25017a4a7f0457eac353931">SqshMetablockIterator</a></li>
+<li>sqsh__threadpool_cleanup()&#160;:&#160;<a class="el" href="structSqshThreadpool.html#a798d4d102de5035ed58d03d505ca8fb0">SqshThreadpool</a></li>
 <li>sqsh__xattr_table_get()&#160;:&#160;<a class="el" href="structSqshXattrTable.html#a28311061674d7842d423ca86ad4d6b39">SqshXattrTable</a></li>
 <li>sqsh__xattr_table_start()&#160;:&#160;<a class="el" href="structSqshXattrTable.html#a4a5848f03820c17930fb562b9f816066">SqshXattrTable</a></li>
 </ul>
@@ -146,11 +148,13 @@ $(function(){ initResizable(false); });
 
 <h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
 <li>sqsh_export_table_resolve_inode()&#160;:&#160;<a class="el" href="structSqshTable.html#ac685755db413f7b31a4760bf96c8102a">SqshTable</a></li>
+<li>sqsh_export_table_resolve_inode2()&#160;:&#160;<a class="el" href="structSqshTable.html#a9518b8ff5950aaa2936289fcd06f9881">SqshTable</a></li>
 </ul>
 
 
 <h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
 <li>sqsh_file_block_count()&#160;:&#160;<a class="el" href="structSqshFile.html#aa8597eb0c0e289a6dc3864c9f97e9e36">SqshFile</a></li>
+<li>sqsh_file_block_count2()&#160;:&#160;<a class="el" href="structSqshFile.html#a297e51bed0372460dae716deb80fce0f">SqshFile</a></li>
 <li>sqsh_file_block_is_compressed()&#160;:&#160;<a class="el" href="structSqshFile.html#a73716c6a7fa831ff97fe5f1683646065">SqshFile</a></li>
 <li>sqsh_file_block_size()&#160;:&#160;<a class="el" href="structSqshFile.html#aaccbd6d1cf5d152a2dd03ba216f88824">SqshFile</a></li>
 <li>sqsh_file_blocks_start()&#160;:&#160;<a class="el" href="structSqshFile.html#a2f7a18504769231217136c0a0f548e9f">SqshFile</a></li>
@@ -170,13 +174,16 @@ $(function(){ initResizable(false); });
 <li>sqsh_file_iterator_block_size()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#aac330535b89fe8f3ea32afe038b06c9f">SqshFileIterator</a></li>
 <li>sqsh_file_iterator_data()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a97bb645391542f4522f7a2db91abf0bf">SqshFileIterator</a></li>
 <li>sqsh_file_iterator_free()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a863c75467913a205112ecd3339b84e6a">SqshFileIterator</a></li>
+<li>sqsh_file_iterator_is_zero_block()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a0ef351c5048d965fa85f3b4d38ec48bf">SqshFileIterator</a></li>
 <li>sqsh_file_iterator_new()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a6d67e70bb91e118127820f941d703620">SqshFileIterator</a></li>
 <li>sqsh_file_iterator_next()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a7309272bb1e8a88e33a11655672e5fd3">SqshFileIterator</a></li>
 <li>sqsh_file_iterator_size()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a1caf211b699f571cda3dc3a9db81ba21">SqshFileIterator</a></li>
 <li>sqsh_file_iterator_skip()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#afdc8978d9c20a5195260cdb483d9c769">SqshFileIterator</a></li>
+<li>sqsh_file_iterator_skip2()&#160;:&#160;<a class="el" href="structSqshFileIterator.html#a3cb35c61233ae056381b05c71a98e54d">SqshFileIterator</a></li>
 <li>sqsh_file_modified_time()&#160;:&#160;<a class="el" href="structSqshFile.html#a0ee93826bd0c9ebee73d4af5aaa91238">SqshFile</a></li>
 <li>sqsh_file_permission()&#160;:&#160;<a class="el" href="structSqshFile.html#abbf9f19f5401b252f0675ae424634330">SqshFile</a></li>
 <li>sqsh_file_reader_advance()&#160;:&#160;<a class="el" href="structSqshFileReader.html#aedfe992063ddd2e6f807da715becfbca">SqshFileReader</a></li>
+<li>sqsh_file_reader_advance2()&#160;:&#160;<a class="el" href="structSqshFileReader.html#a2f0ed67f216985c3888733a6be03dbd9">SqshFileReader</a></li>
 <li>sqsh_file_reader_data()&#160;:&#160;<a class="el" href="structSqshFileReader.html#a218525dec2fd6f6eedf9b55067d993c9">SqshFileReader</a></li>
 <li>sqsh_file_reader_free()&#160;:&#160;<a class="el" href="structSqshFileReader.html#a9d0e1dc2c431ca3525b9a3e70af8f2c1">SqshFileReader</a></li>
 <li>sqsh_file_reader_new()&#160;:&#160;<a class="el" href="structSqshFileReader.html#ae375a343ef87568f5c1fdafc8c43da65">SqshFileReader</a></li>
@@ -188,6 +195,7 @@ $(function(){ initResizable(false); });
 <li>sqsh_file_symlink_resolve_all()&#160;:&#160;<a class="el" href="structSqshFile.html#af78b3ba2c49501dd3c227e14d65d20db">SqshFile</a></li>
 <li>sqsh_file_symlink_size()&#160;:&#160;<a class="el" href="structSqshFile.html#ae361dab5ef6ad7a6560b0aa591df7fd6">SqshFile</a></li>
 <li>sqsh_file_to_stream()&#160;:&#160;<a class="el" href="structSqshFile.html#a0bacebc806e4094d88988184ce4576fb">SqshFile</a></li>
+<li>sqsh_file_to_stream_mt()&#160;:&#160;<a class="el" href="structSqshFile.html#ad4f76589569fab967d7b41b112e082b9">SqshFile</a></li>
 <li>sqsh_file_type()&#160;:&#160;<a class="el" href="structSqshFile.html#a42271e6dc3b573b586aa0763445aca83">SqshFile</a></li>
 <li>sqsh_file_uid()&#160;:&#160;<a class="el" href="structSqshFile.html#a3573075252cc6d5094cd97fff18393e3">SqshFile</a></li>
 <li>sqsh_file_xattr_index()&#160;:&#160;<a class="el" href="structSqshFile.html#af45cf5abb3fec01c222d6ed500629542">SqshFile</a></li>
@@ -266,6 +274,7 @@ $(function(){ initResizable(false); });
 
 <h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
 <li>sqsh_table_get()&#160;:&#160;<a class="el" href="structSqshTable.html#a43764b9ae829a5524dae8a88460de069">SqshTable</a></li>
+<li>sqsh_threadpool_free()&#160;:&#160;<a class="el" href="structSqshThreadpool.html#accad11692b521161da331f1d7933e074">SqshThreadpool</a></li>
 <li>sqsh_trailing_data()&#160;:&#160;<a class="el" href="structSqshTrailingContext.html#ab393c9853fcad6b6221af709b92654e2">SqshTrailingContext</a></li>
 <li>sqsh_trailing_size()&#160;:&#160;<a class="el" href="structSqshTrailingContext.html#a8cea8c3114d05524818e16cf93955c88">SqshTrailingContext</a></li>
 <li>sqsh_tree_traversal_depth()&#160;:&#160;<a class="el" href="structSqshTreeTraversal.html#af6c20e1f6c33fb273f246a98b27bb1ab">SqshTreeTraversal</a></li>

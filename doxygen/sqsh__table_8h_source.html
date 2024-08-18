@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -152,22 +152,28 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">struct </span><a class="code hl_struct" href="structSqshExportTable.html">SqshExportTable</a>;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="structSqshTable.html#ac685755db413f7b31a4760bf96c8102a">   97</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="structSqshTable.html#ac685755db413f7b31a4760bf96c8102a">sqsh_export_table_resolve_inode</a>(</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshExportTable.html">SqshExportTable</a> *table, uint64_t inode,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="structSqshTable.html#a9518b8ff5950aaa2936289fcd06f9881">   97</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="structSqshTable.html#a9518b8ff5950aaa2936289fcd06f9881">sqsh_export_table_resolve_inode2</a>(</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code hl_struct" href="structSqshExportTable.html">SqshExportTable</a> *table, uint32_t inode,</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        uint64_t *inode_ref);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#endif </span><span class="comment">/* SQSH_TABLE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>__attribute__((deprecated(</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="stringliteral">&quot;Since 1.5.0. Use sqsh_export_table_resolve_inode2 instead.&quot;</span>))) int</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="structSqshTable.html#ac685755db413f7b31a4760bf96c8102a">  114</a></span>sqsh_export_table_resolve_inode(</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        const struct <a class="code hl_struct" href="structSqshExportTable.html">SqshExportTable</a> *table, uint64_t inode,</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        uint64_t *inode_ref);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">#endif </span><span class="comment">/* SQSH_TABLE_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="asqsh__common_8h_html"><div class="ttname"><a href="sqsh__common_8h.html">sqsh_common.h</a></div></div>
 <div class="ttc" id="asqsh__common_8h_html_a1d493fd70fce488d899c7681d5ff6264"><div class="ttname"><a href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a></div><div class="ttdeci">size_t sqsh_index_t</div><div class="ttdoc">typedef used for indexing</div><div class="ttdef"><b>Definition</b> <a href="sqsh__common_8h_source.html#l00069">sqsh_common.h:69</a></div></div>
 <div class="ttc" id="astructSqshExportTable_html"><div class="ttname"><a href="structSqshExportTable.html">SqshExportTable</a></div><div class="ttdoc">The export table.</div><div class="ttdef"><b>Definition</b> <a href="sqsh__table__private_8h_source.html#l00141">sqsh_table_private.h:141</a></div></div>
 <div class="ttc" id="astructSqshIdTable_html"><div class="ttname"><a href="structSqshIdTable.html">SqshIdTable</a></div><div class="ttdoc">The id table of an archive.</div><div class="ttdef"><b>Definition</b> <a href="sqsh__table__private_8h_source.html#l00103">sqsh_table_private.h:103</a></div></div>
 <div class="ttc" id="astructSqshTable_html"><div class="ttname"><a href="structSqshTable.html">SqshTable</a></div><div class="ttdoc">A generic table as used in an archive.</div><div class="ttdef"><b>Definition</b> <a href="sqsh__table__private_8h_source.html#l00056">sqsh_table_private.h:56</a></div></div>
 <div class="ttc" id="astructSqshTable_html_a43764b9ae829a5524dae8a88460de069"><div class="ttname"><a href="structSqshTable.html#a43764b9ae829a5524dae8a88460de069">SqshTable::sqsh_table_get</a></div><div class="ttdeci">int sqsh_table_get(const struct SqshTable *table, sqsh_index_t index, void *target)</div><div class="ttdoc">Retrieves an element from the table.</div></div>
+<div class="ttc" id="astructSqshTable_html_a9518b8ff5950aaa2936289fcd06f9881"><div class="ttname"><a href="structSqshTable.html#a9518b8ff5950aaa2936289fcd06f9881">SqshTable::sqsh_export_table_resolve_inode2</a></div><div class="ttdeci">int sqsh_export_table_resolve_inode2(const struct SqshExportTable *table, uint32_t inode, uint64_t *inode_ref)</div><div class="ttdoc">Retrieves an element from the table.</div></div>
 <div class="ttc" id="astructSqshTable_html_ab3c4fb369b3e3c01beda8406a22b0a1d"><div class="ttname"><a href="structSqshTable.html#ab3c4fb369b3e3c01beda8406a22b0a1d">SqshTable::sqsh_id_table_get</a></div><div class="ttdeci">int sqsh_id_table_get(const struct SqshIdTable *table, sqsh_index_t index, uint32_t *id)</div><div class="ttdoc">Retrieves an element from the table.</div></div>
-<div class="ttc" id="astructSqshTable_html_ac685755db413f7b31a4760bf96c8102a"><div class="ttname"><a href="structSqshTable.html#ac685755db413f7b31a4760bf96c8102a">SqshTable::sqsh_export_table_resolve_inode</a></div><div class="ttdeci">int sqsh_export_table_resolve_inode(const struct SqshExportTable *table, uint64_t inode, uint64_t *inode_ref)</div><div class="ttdoc">Retrieves an element from the table.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

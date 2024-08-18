@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.4.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
    </div>
   </td>
  </tr>
@@ -103,6 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aedfe992063ddd2e6f807da715becfbca" id="r_aedfe992063ddd2e6f807da715becfbca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedfe992063ddd2e6f807da715becfbca">sqsh_file_reader_advance</a> (struct <a class="el" href="structSqshFileReader.html">SqshFileReader</a> *reader, <a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a> offset, size_t size)</td></tr>
 <tr class="memdesc:aedfe992063ddd2e6f807da715becfbca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the file reader by a certain amount of data and presents <code>size</code> bytes of data to the user.  <br /></td></tr>
 <tr class="separator:aedfe992063ddd2e6f807da715becfbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0ed67f216985c3888733a6be03dbd9" id="r_a2f0ed67f216985c3888733a6be03dbd9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f0ed67f216985c3888733a6be03dbd9">sqsh_file_reader_advance2</a> (struct <a class="el" href="structSqshFileReader.html">SqshFileReader</a> *reader, uint64_t offset, size_t size)</td></tr>
+<tr class="memdesc:a2f0ed67f216985c3888733a6be03dbd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the file reader by a certain amount of data and presents <code>size</code> bytes of data to the user.  <br /></td></tr>
+<tr class="separator:a2f0ed67f216985c3888733a6be03dbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a218525dec2fd6f6eedf9b55067d993c9" id="r_a218525dec2fd6f6eedf9b55067d993c9"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a218525dec2fd6f6eedf9b55067d993c9">sqsh_file_reader_data</a> (const struct <a class="el" href="structSqshFileReader.html">SqshFileReader</a> *reader)</td></tr>
 <tr class="memdesc:a218525dec2fd6f6eedf9b55067d993c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a pointer to the current data in the file reader.  <br /></td></tr>
 <tr class="separator:a218525dec2fd6f6eedf9b55067d993c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,6 +136,44 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="sqsh__common_8h.html#a1d493fd70fce488d899c7681d5ff6264">sqsh_index_t</a></td>          <td class="paramname"><span class="paramname"><em>offset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Advances the file reader by a certain amount of data and presents <code>size</code> bytes of data to the user. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated</a></b></dt><dd>Since 1.5.0. Use <a class="el" href="#a2f0ed67f216985c3888733a6be03dbd9" title="Advances the file reader by a certain amount of data and presents size bytes of data to the user.">sqsh_file_reader_advance2()</a> instead. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">reader</td><td>The file reader to skip data in. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The offset to skip. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The size of the data to skip.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, less than 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="a2f0ed67f216985c3888733a6be03dbd9" name="a2f0ed67f216985c3888733a6be03dbd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f0ed67f216985c3888733a6be03dbd9">&#9670;&#160;</a></span>sqsh_file_reader_advance2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sqsh_file_reader_advance2 </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structSqshFileReader.html">SqshFileReader</a> *</td>          <td class="paramname"><span class="paramname"><em>reader</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>offset</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
