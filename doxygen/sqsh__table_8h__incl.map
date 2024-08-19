@@ -1,11 +1,11 @@
 <map id="include/sqsh_table.h" name="include/sqsh_table.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="81,5,302,1208103"/>
-<area shape="rect" id="Node000002" href="$sqsh__common_8h.html" title=" " alt="" coords="116,1208151,267,2416480"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,1208103,194,1208135,189,1208135,189,1208103"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,2416533,117,2416558"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,2165296,64,2416518,58,2416518,113,2165296"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="141,2416533,242,2416558"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="194,2416480,194,2416518,189,2416518,189,2416480"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="266,2416528,368,2416563"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="271,2180317,320,2416513,314,2416513,265,2180317"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="81,5,302,30"/>
+<area shape="rect" id="Node000002" href="$sqsh__common_8h.html" title=" " alt="" coords="116,78,267,103"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,31,194,62,189,62,189,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,151,117,1287661"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="175,105,151,125,132,152,126,318,120,788,115,788,120,318,126,150,147,121,171,101"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="141,643894,242,643918"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="194,103,194,643878,189,643878,189,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="266,643894,368,643918"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="212,101,237,121,257,150,262,279,267,637,277,2029,294,7412,310,16068,323,27763,345,59340,360,100281,370,148722,374,202802,372,320425,359,438246,341,541364,320,643878,314,643878,336,541364,353,438246,366,320425,369,202802,364,148722,355,100281,340,59340,318,27763,304,16068,289,7412,271,2029,262,637,257,279,252,152,233,125,209,105"/>
 </map>

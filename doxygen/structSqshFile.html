@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.0</span>
+   <div id="projectname">libsqsh<span id="projectnumber">&#160;v1.5.1</span>
    </div>
   </td>
  </tr>
@@ -208,6 +208,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad4f76589569fab967d7b41b112e082b9" id="r_ad4f76589569fab967d7b41b112e082b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqsh__common_8h.html#a0f0a35d1ed84a34ad06a006e5e90da94">SQSH_NO_UNUSED</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4f76589569fab967d7b41b112e082b9">sqsh_file_to_stream_mt</a> (const struct <a class="el" href="structSqshFile.html">SqshFile</a> *file, struct <a class="el" href="structSqshThreadpool.html">SqshThreadpool</a> *threadpool, FILE *stream, <a class="el" href="sqsh__posix_8h.html#a6675c3b0363d72c21ee36c04aaf76750">sqsh_file_to_stream_mt_cb</a> cb, void *data)</td></tr>
 <tr class="memdesc:ad4f76589569fab967d7b41b112e082b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">writes data to a file descriptor.  <br /></td></tr>
 <tr class="separator:ad4f76589569fab967d7b41b112e082b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833d3dd4a2b2a26a726f86534c81204f" id="r_a833d3dd4a2b2a26a726f86534c81204f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a833d3dd4a2b2a26a726f86534c81204f">sqsh_file_iterator_mt</a> (const struct <a class="el" href="structSqshFile.html">SqshFile</a> *file, struct <a class="el" href="structSqshThreadpool.html">SqshThreadpool</a> *threadpool, <a class="el" href="sqsh__posix_8h.html#a62f16203b456dc1bc6419d1c21593c47">sqsh_file_iterator_mt_cb</a> cb, void *data)</td></tr>
+<tr class="memdesc:a833d3dd4a2b2a26a726f86534c81204f"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a file descriptor from a file and calls a callback for each block.  <br /></td></tr>
+<tr class="separator:a833d3dd4a2b2a26a726f86534c81204f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Inode context. </p>
@@ -785,6 +788,48 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the file is an extended structure. </dd></dl>
+
+</div>
+</div>
+<a id="a833d3dd4a2b2a26a726f86534c81204f" name="a833d3dd4a2b2a26a726f86534c81204f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a833d3dd4a2b2a26a726f86534c81204f">&#9670;&#160;</a></span>sqsh_file_iterator_mt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sqsh_file_iterator_mt </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structSqshFile.html">SqshFile</a> *</td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structSqshThreadpool.html">SqshThreadpool</a> *</td>          <td class="paramname"><span class="paramname"><em>threadpool</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="sqsh__posix_8h.html#a62f16203b456dc1bc6419d1c21593c47">sqsh_file_iterator_mt_cb</a></td>          <td class="paramname"><span class="paramname"><em>cb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>creates a file descriptor from a file and calls a callback for each block. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>The file context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">threadpool</td><td>The threadpool to use. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>The callback to call for each block. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The data to pass to the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -1,13 +1,13 @@
 <map id="include/sqsh_directory.h" name="include/sqsh_directory.h">
 <area shape="rect" id="Node000001" title=" " alt="" coords="61,5,322,30"/>
-<area shape="rect" id="Node000002" href="$sqsh__file_8h.html" title=" " alt="" coords="126,78,257,1877363"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,30,194,62,189,62,189,30"/>
-<area shape="rect" id="Node000003" href="$sqsh__common_8h.html" title=" " alt="" coords="116,1877411,267,3754945"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,1877363,194,1877395,189,1877395,189,1877363"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,3754993,117,3755018"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="118,3364625,64,3754978,58,3754978,113,3364625"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="141,3754993,242,3755018"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="194,3754946,194,3754977,189,3754977,189,3754946"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="266,3754993,368,3755018"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="271,3387964,320,3754977,314,3754977,265,3387964"/>
+<area shape="rect" id="Node000002" href="$sqsh__file_8h.html" title=" " alt="" coords="126,78,257,769803"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,31,194,62,189,62,189,31"/>
+<area shape="rect" id="Node000003" href="$sqsh__common_8h.html" title=" " alt="" coords="116,769851,267,1539825"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,769803,194,769835,189,769835,189,769803"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,1539873,117,1539898"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="118,1379776,64,1539858,58,1539858,113,1379776"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="141,1539873,242,1539898"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="194,1539826,194,1539857,189,1539857,189,1539826"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="266,1539873,368,1539898"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="271,1389348,320,1539857,314,1539857,265,1389348"/>
 </map>
