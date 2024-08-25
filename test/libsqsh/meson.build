@@ -25,6 +25,7 @@ sqsh_test = [
     'tree/traversal.c',
     'tree/walker.c',
     'xattr/xattr_iterator.c',
+    'posix/file_iterator_mt.c',
     'include_tests/sqsh_archive.c',
     'include_tests/sqsh_easy.c',
     'include_tests/sqsh_common.c',

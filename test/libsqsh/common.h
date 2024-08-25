@@ -160,7 +160,8 @@
 #define DEFAULT_CONFIG(s) \
 	(struct SqshConfig) { \
 		.source_size = (s), .source_mapper = DEFAULT_MAPPER, \
-		.mapper_block_size = DEFAULT_BLOCK_SIZE, \
+		.mapper_block_size = DEFAULT_BLOCK_SIZE, .mapper_lru_size = -1, \
+		.data_lru_size = -1, .metablock_lru_size = -1, \
 	}
 
 #define LENGTH(x) (sizeof(x) / sizeof(x[0]))

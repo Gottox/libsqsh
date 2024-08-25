@@ -74,6 +74,7 @@ out:
 struct FileIteratorMtChunk {
 	struct FileIteratorMt *mt;
 	uint64_t offset;
+	struct SqshFileIterator iterator;
 };
 
 struct FileIteratorMt {
@@ -89,6 +90,7 @@ struct FileIteratorMt {
 
 struct FileToStreamMt {
 	struct FileIteratorMt mt;
+	char _buffer[4096];
 	sqsh_file_to_stream_mt_cb cb;
 	void *data;
 	FILE *stream;
@@ -105,30 +107,16 @@ file_iterator_mt_cleanup(struct FileIteratorMt *mt, int rv) {
 
 static void
 iterator_worker(void *data) {
-	int rv = 0, rv2 = 0;
-	struct SqshFileIterator iterator = {0};
+	int rv = 0;
 
 	struct FileIteratorMtChunk *chunk = data;
 	struct FileIteratorMt *mt = chunk->mt;
+	struct SqshFileIterator *iterator = &chunk->iterator;
 
-	rv = sqsh__file_iterator_init(&iterator, &mt->file);
-	if (rv < 0) {
-		goto out;
-	}
+	mt->cb(&mt->file, iterator, chunk->offset, mt->data, rv);
 
-	uint64_t offset = chunk->offset;
-	rv = sqsh_file_iterator_skip2(&iterator, &offset, 1);
-	if (rv < 0) {
-		goto out;
-	}
-	assert(offset == 0);
-
-	mt->cb(&mt->file, &iterator, chunk->offset, mt->data, rv);
-
-out:
-	sqsh__file_iterator_cleanup(&iterator);
-
-	assert(rv2 == 0);
+	// out:
+	sqsh__file_iterator_cleanup(iterator);
 
 	if (rv < 0) {
 		atomic_store(&mt->rv, rv);
@@ -154,6 +142,7 @@ file_iterator_mt(
 			sqsh_archive_superblock(file->archive);
 	const uint32_t block_size = sqsh_superblock_block_size(superblock);
 	const uint32_t chunk_size = block_size;
+	struct SqshFileIterator iterator = {0};
 
 	const uint64_t chunk_count =
 			SQSH_DIVIDE_CEIL(sqsh_file_size(file), chunk_size);
@@ -182,17 +171,43 @@ file_iterator_mt(
 		goto out;
 	}
 
+	rv = sqsh__file_iterator_init(&iterator, &mt->file);
+	if (rv < 0) {
+		goto out;
+	}
+
+	bool has_next = sqsh_file_iterator_next(&iterator, chunk_size, &rv);
+	assert(has_next);
+	if (rv < 0) {
+		goto out;
+	}
+
 	size_t offset = 0;
 	for (sqsh_index_t i = 0; i < chunk_count; i++) {
 		struct FileIteratorMtChunk *chunk = &mt->chunks[i];
 		chunk->mt = mt;
 		chunk->offset = offset;
-		rv = cx_threadpool_schedule(&threadpool->pool, iterator_worker, chunk);
+
+		rv = sqsh__file_iterator_copy(&mt->chunks[i].iterator, &iterator);
 		if (rv < 0) {
 			goto out;
 		}
+
+		rv = cx_threadpool_schedule(
+				&threadpool->pool, iterator_worker, &mt->chunks[i]);
+		if (rv < 0) {
+			goto out;
+		}
+		uint64_t skip_offset = chunk_size;
+		rv = sqsh_file_iterator_skip2(&iterator, &skip_offset, 1);
+		if (rv < 0) {
+			goto out;
+		}
+		assert(skip_offset == 0);
+
 		offset += chunk_size;
 	}
+	sqsh__file_iterator_cleanup(&iterator);
 
 out:
 	if (rv < 0 || chunk_count == 0) {

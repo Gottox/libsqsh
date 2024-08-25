@@ -87,9 +87,7 @@ sqsh__reader_copy(
 		goto out;
 	}
 	if (buffer_size > 0) {
-		rv = cx_buffer_append(
-				&target->buffer, cx_buffer_data(&source->buffer),
-				cx_buffer_size(&source->buffer));
+		rv = cx_buffer_append(&target->buffer, buffer_data, buffer_size);
 		if (rv < 0) {
 			goto out;
 		}
