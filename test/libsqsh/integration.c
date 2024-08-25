@@ -37,6 +37,7 @@
 #include <sqsh_directory_private.h>
 #include <sqsh_easy.h>
 #include <sqsh_file_private.h>
+#include <sqsh_posix.h>
 #include <sqsh_tree.h>
 #include <sqsh_tree_private.h>
 #include <utest.h>
@@ -858,6 +859,20 @@ UTEST(integration, copy_iterator_iterated) {
 	rv = sqsh__file_iterator_copy(&copy_iter, &iter);
 	ASSERT_EQ(0, rv);
 
+	const uint8_t *data = sqsh_file_iterator_data(&iter);
+	size_t size = sqsh_file_iterator_size(&iter);
+	const uint8_t *copy_data = sqsh_file_iterator_data(&copy_iter);
+	size_t copy_size = sqsh_file_iterator_size(&copy_iter);
+
+	has_next = sqsh_file_iterator_next(&iter, 1, &rv);
+
+	ASSERT_EQ(sqsh_file_iterator_data(&copy_iter), copy_data);
+
+	sqsh__file_iterator_cleanup(&iter);
+
+	ASSERT_EQ(size, copy_size);
+	ASSERT_EQ(0, memcmp(data, copy_data, size));
+
 	rv = sqsh__file_iterator_cleanup(&iter);
 	ASSERT_EQ(0, rv);
 
@@ -866,6 +881,66 @@ UTEST(integration, copy_iterator_iterated) {
 
 	rv = sqsh_close(file);
 	ASSERT_EQ(0, rv);
+
+	rv = sqsh__archive_cleanup(&sqsh);
+	ASSERT_EQ(0, rv);
+}
+
+static void
+iterator_mt_worker(
+		const struct SqshFile *file, const struct SqshFileIterator *iterator,
+		uint64_t offset, void *user_data, int err) {
+	(void)err;
+	(void)file;
+	if (iterator == NULL) {
+		return;
+	}
+
+	char *buffer = user_data;
+	const uint8_t *data = sqsh_file_iterator_data(iterator);
+	const size_t size = sqsh_file_iterator_size(iterator);
+
+	memcpy(&buffer[offset], data, size);
+}
+
+UTEST(integration, iterator_mt) {
+	int rv;
+	struct SqshArchive sqsh = {0};
+	struct SqshFile *file = NULL;
+	struct SqshThreadpool *pool = NULL;
+
+	struct SqshConfig config = DEFAULT_CONFIG(TEST_SQUASHFS_IMAGE_LEN);
+	config.archive_offset = 1010;
+	rv = sqsh__archive_init(&sqsh, (char *)TEST_SQUASHFS_IMAGE, &config);
+	ASSERT_EQ(0, rv);
+
+	pool = sqsh_threadpool_new(1, &rv);
+	ASSERT_TRUE(NULL != pool);
+	ASSERT_EQ(0, rv);
+
+	file = sqsh_open(&sqsh, "/b", &rv);
+	ASSERT_EQ(0, rv);
+
+	size_t size = sqsh_file_size(file);
+	uint8_t *buffer = calloc(size, sizeof(uint8_t));
+
+	uint8_t *easy_buffer = sqsh_easy_file_content(&sqsh, "/b", &rv);
+
+	sqsh_file_iterator_mt(file, pool, iterator_mt_worker, buffer);
+
+	rv = sqsh_close(file);
+	ASSERT_EQ(0, rv);
+
+	rv = sqsh_threadpool_wait(pool);
+	ASSERT_EQ(0, rv);
+
+	rv = sqsh_threadpool_free(pool);
+	ASSERT_EQ(0, rv);
+
+	ASSERT_EQ(0, memcmp(buffer, easy_buffer, size));
+
+	free(buffer);
+	free(easy_buffer);
 
 	rv = sqsh__archive_cleanup(&sqsh);
 	ASSERT_EQ(0, rv);
