@@ -908,25 +908,26 @@ UTEST(integration, iterator_mt) {
 	struct SqshArchive sqsh = {0};
 	struct SqshFile *file = NULL;
 	struct SqshThreadpool *pool = NULL;
+	static const char *file_name = "/a";
 
 	struct SqshConfig config = DEFAULT_CONFIG(TEST_SQUASHFS_IMAGE_LEN);
 	config.archive_offset = 1010;
 	rv = sqsh__archive_init(&sqsh, (char *)TEST_SQUASHFS_IMAGE, &config);
 	ASSERT_EQ(0, rv);
 
-	pool = sqsh_threadpool_new(1, &rv);
+	pool = sqsh_threadpool_new(0, &rv);
 	ASSERT_TRUE(NULL != pool);
 	ASSERT_EQ(0, rv);
 
-	file = sqsh_open(&sqsh, "/b", &rv);
+	file = sqsh_open(&sqsh, file_name, &rv);
 	ASSERT_EQ(0, rv);
 
 	size_t size = sqsh_file_size(file);
-	uint8_t *buffer = calloc(size, sizeof(uint8_t));
+	uint8_t *file_content = calloc(size, sizeof(uint8_t));
 
-	uint8_t *easy_buffer = sqsh_easy_file_content(&sqsh, "/b", &rv);
+	uint8_t *easy_file_content = sqsh_easy_file_content(&sqsh, file_name, &rv);
 
-	sqsh_file_iterator_mt(file, pool, iterator_mt_worker, buffer);
+	sqsh_file_iterator_mt(file, pool, iterator_mt_worker, file_content);
 
 	rv = sqsh_close(file);
 	ASSERT_EQ(0, rv);
@@ -937,10 +938,10 @@ UTEST(integration, iterator_mt) {
 	rv = sqsh_threadpool_free(pool);
 	ASSERT_EQ(0, rv);
 
-	ASSERT_EQ(0, memcmp(buffer, easy_buffer, size));
+	ASSERT_EQ(0, memcmp(file_content, easy_file_content, size));
 
-	free(buffer);
-	free(easy_buffer);
+	free(file_content);
+	free(easy_file_content);
 
 	rv = sqsh__archive_cleanup(&sqsh);
 	ASSERT_EQ(0, rv);

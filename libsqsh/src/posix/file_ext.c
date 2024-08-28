@@ -193,22 +193,31 @@ file_iterator_mt(
 			goto out;
 		}
 
+#if 0
 		rv = cx_threadpool_schedule(
 				&threadpool->pool, iterator_worker, &mt->chunks[i]);
 		if (rv < 0) {
 			goto out;
 		}
-		uint64_t skip_offset = chunk_size;
-		rv = sqsh_file_iterator_skip2(&iterator, &skip_offset, 1);
-		if (rv < 0) {
-			goto out;
-		}
-		assert(skip_offset == 0);
+#endif
 
-		offset += chunk_size;
+		if (i < chunk_count - 1) {
+			uint64_t skip_offset = chunk_size;
+			rv = sqsh_file_iterator_skip2(&iterator, &skip_offset, 1);
+			if (rv < 0) {
+				goto out;
+			}
+			assert(skip_offset == 0);
+
+			offset += chunk_size;
+		}
 	}
 	sqsh__file_iterator_cleanup(&iterator);
 
+	for (sqsh_index_t i = 0; i < chunk_count; i++) {
+		(void)threadpool;
+		iterator_worker(&mt->chunks[i]);
+	}
 out:
 	if (rv < 0 || chunk_count == 0) {
 		file_iterator_mt_cleanup(mt, rv);
