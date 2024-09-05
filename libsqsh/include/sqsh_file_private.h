@@ -130,6 +130,150 @@ sqsh__fragment_view_size(const struct SqshFragmentView *view);
 SQSH_NO_EXPORT int sqsh__fragment_view_cleanup(struct SqshFragmentView *view);
 
 /***************************************
+ * file/block_iterator.c
+ */
+
+struct SqshBlockIterator {
+	const struct SqshFile *file;
+	uint32_t block_size;
+	struct SqshExtractManager *compression_manager;
+	uint64_t block_index;
+	uint64_t block_count;
+	struct SqshMapReader map_reader;
+	struct SqshExtractView extract_view;
+
+	const uint8_t *sparse_block;
+	size_t sparse_size;
+	const uint8_t *data;
+	size_t size;
+};
+
+/**
+ * @internal
+ * @memberof SqshBlockIterator
+ * @brief Initializes a file iterator to iterate over the contents of a file.
+ *
+ * @param[in,out] iterator The file iterator to initialize.
+ * @param[in] file The file to iterate over.
+ *
+ * @return 0 on success, less than 0 on error.
+ */
+SQSH_NO_EXPORT SQSH_NO_UNUSED int sqsh__block_iterator_init(
+		struct SqshBlockIterator *iterator, const struct SqshFile *file);
+
+/**
+ * @internal
+ * @memberof SqshBlockIterator
+ * @brief Creates a copy of a file iterator.
+ *
+ * @param[out] target The iterator to copy to.
+ * @param[in] source The iterator to copy from.
+ *
+ * @return 0 on success, less than 0 on error.
+ */
+SQSH_NO_EXPORT SQSH_NO_UNUSED int sqsh__block_iterator_copy(
+		struct SqshBlockIterator *target,
+		const struct SqshBlockIterator *source);
+
+/**
+ * @brief Reads a certain amount of data from the file iterator.
+ * @memberof SqshBlockIterator
+ *
+ * @param[in,out] iterator The file iterator to read data from.
+ * @param[in] desired_size The desired size of the data to read. May be more or
+ * less than the actual size of the data read.
+ * @param[out] err Pointer to an int where the error code will be stored.
+ *
+ * @retval true  When the iterator was advanced
+ * @retval false When the iterator is at the end and no more entries are
+ * available or if an error occured.
+ */
+SQSH_NO_UNUSED bool sqsh__block_iterator_next(
+		struct SqshBlockIterator *iterator, size_t desired_size, int *err);
+
+/**
+ * @brief Checks if the current block is a zero block.
+ * @memberof SqshBlockIterator
+ *
+ * @param[in] iterator The file iterator to check.
+ *
+ * @return true if the current block is a zero block, false otherwise.
+ */
+SQSH_NO_UNUSED bool
+sqsh__block_iterator_is_zero_block(const struct SqshBlockIterator *iterator);
+
+/**
+ * @memberof SqshBlockIterator
+ * @brief Skips blocks until the block containing the offset is reached.
+ * Note that calling this function will invalidate the data pointer returned by
+ * sqsh__block_iterator_data().
+ *
+ * The offset is relative to the beginning of the current block or, if the
+ * iterator hasn't been forwarded with previous calls to
+ * sqsh__block_iterator_skip() or sqsh__block_iterator_next() the beginning of
+ * the first block.
+ *
+ * After calling this function `offset` is updated to the same position relative
+ * to the new block. See this visualisation:
+ *
+ * ```
+ * current_block: |<--- block 8000 --->|
+ *                           offset = 10000 --^
+ * -->  sqsh__block_iterator_skip(i, &offset, 1)
+ * current_block:                      |<--- block 8000 --->|
+ *                            offset = 2000 --^
+ * ```
+ *
+ * If libsqsh can map more than one block at once, it will do so until
+ * `desired_size` is reached. Note that `desired_size` is only a hint and
+ * libsqsh may return more or less data than requested.
+ *
+ * @param[in,out] iterator      The file iterator to skip data in.
+ * @param[in,out] offset        The offset that is contained in the block to
+ * skip to.
+ * @param[in] desired_size      The desired size of the data to read.
+ *
+ * @return 0 on success, less than 0 on error.
+ */
+SQSH_NO_UNUSED int sqsh__block_iterator_skip_nomap(
+		struct SqshBlockIterator *iterator, uint64_t *offset,
+		size_t desired_size);
+
+/**
+ * @brief Gets a pointer to the current data in the file iterator.
+ * @memberof SqshBlockIterator
+ *
+ * @param[in] iterator The file iterator to get data from.
+ *
+ * @return A pointer to the current data in the file iterator.
+ */
+SQSH_NO_UNUSED const uint8_t *
+sqsh__block_iterator_data(const struct SqshBlockIterator *iterator);
+
+/**
+ * @brief Gets the size of the data currently in the file iterator.
+ * @memberof SqshBlockIterator
+ *
+ * @param[in] iterator The file iterator to get the size from.
+ *
+ * @return The size of the data currently in the file iterator.
+ */
+SQSH_NO_UNUSED size_t
+sqsh__block_iterator_size(const struct SqshBlockIterator *iterator);
+
+/**
+ * @internal
+ * @memberof SqshBlockIterator
+ * @brief Cleans up resources used by a file iterator.
+ *
+ * @param[in] iterator The file iterator to clean up.
+ *
+ * @return 0 on success, less than 0 on error.
+ */
+SQSH_NO_EXPORT int
+sqsh__block_iterator_cleanup(struct SqshBlockIterator *iterator);
+
+/***************************************
  * file/file_iterator.c
  */
 

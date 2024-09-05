@@ -17,6 +17,7 @@ libsqsh_sources = files(
     'extract/lzma.c',
     'extract/zlib.c',
     'extract/zstd.c',
+    'file/block_iterator.c',
     'file/file.c',
     'file/file_iterator.c',
     'file/file_reader.c',

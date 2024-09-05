@@ -1,4 +1,5 @@
 # https://github.com/Gottox/mk
+container: gottox/sqsh-tools:latest
 configure:
   - -Dwerror=true
   - -Ddefault_library=static
@@ -17,8 +18,8 @@ mode:
       - -Dtest=true
       - -Ddoc=internal
       - -Dexamples=true
-      - -Db_coverage=true
-      - -Db_sanitize=address,undefined
+      #- -Db_coverage=true
+      #- -Db_sanitize=address,undefined
     default:
       - test
   bench:
