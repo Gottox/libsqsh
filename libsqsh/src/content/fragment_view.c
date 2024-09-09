@@ -31,7 +31,7 @@
  * @file         fragment_view.c
  */
 
-#include <sqsh_file_private.h>
+#include <sqsh_content_private.h>
 
 #include <sqsh_data_private.h>
 

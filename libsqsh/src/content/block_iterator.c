@@ -31,14 +31,13 @@
  * @file         file_iterator.c
  */
 
-#include "sqsh_file.h"
-#include <sqsh_file_private.h>
-
-#include <cextras/collection.h>
 #include <sqsh_archive_private.h>
 #include <sqsh_common_private.h>
+#include <sqsh_content_private.h>
+#include <sqsh_extract_private.h>
+#include <sqsh_file_private.h>
+
 #include <sqsh_error.h>
-#include <stdbool.h>
 
 int
 sqsh__block_iterator_init(

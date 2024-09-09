@@ -31,7 +31,7 @@
  * @file         file_reader.c
  */
 
-#include <sqsh_file_private.h>
+#include <sqsh_content_private.h>
 
 #include <sqsh_archive_private.h>
 #include <sqsh_error.h>

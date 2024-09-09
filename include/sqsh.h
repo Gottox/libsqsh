@@ -36,6 +36,7 @@
 
 #include "sqsh_archive.h"
 #include "sqsh_common.h"
+#include "sqsh_content.h"
 #include "sqsh_directory.h"
 #include "sqsh_easy.h"
 #include "sqsh_error.h"

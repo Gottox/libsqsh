@@ -1,5 +1,6 @@
 libsqsh_private_headers = files(
     'sqsh_archive_private.h',
+    'sqsh_content_private.h',
     'sqsh_directory_private.h',
     'sqsh_extract_private.h',
     'sqsh_mapper_private.h',
