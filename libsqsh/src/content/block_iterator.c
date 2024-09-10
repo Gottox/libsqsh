@@ -291,10 +291,26 @@ int
 sqsh__block_iterator_skip_nomap(
 		struct SqshBlockIterator *iterator, uint64_t *offset,
 		size_t desired_size) {
-	(void)iterator;
-	(void)offset;
-	(void)desired_size;
-	return -1;
+	const size_t block_size = iterator->block_size;
+	const size_t current_block_size = sqsh__block_iterator_size(iterator);
+
+	if (*offset < current_block_size) {
+		goto out;
+	}
+
+	*offset -= current_block_size;
+
+	uint64_t skip_index = *offset / block_size;
+	if (current_block_size != 0) {
+		skip_index += 1;
+	}
+
+	*offset = *offset % block_size;
+
+	iterator->block_index += skip_index - 1;
+
+out:
+	return 0;
 }
 
 const uint8_t *
