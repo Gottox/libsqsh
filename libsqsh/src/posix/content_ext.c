@@ -168,12 +168,12 @@ file_iterator_mt(
 	atomic_init(&mt->remaining_blocks, (size_t)block_count);
 	atomic_init(&mt->rv, 0);
 
-	rv = sqsh__file_init(&mt->file, file->archive, inode_ref);
-	if (rv < 0) {
+	if (block_count == 0) {
 		goto out;
 	}
 
-	if (block_count == 0) {
+	rv = sqsh__file_init(&mt->file, file->archive, inode_ref);
+	if (rv < 0) {
 		goto out;
 	}
 

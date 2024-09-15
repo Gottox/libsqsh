@@ -37,8 +37,9 @@
 
 #include <sqsh_archive_private.h>
 #include <sqsh_common_private.h>
+#include <sqsh_content_private.h>
 #include <sqsh_data_private.h>
-#include <sqsh_file.h>
+#include <sqsh_file_private.h>
 
 UTEST(file_reader, load_file_from_compressed_data_block) {
 	int rv;
