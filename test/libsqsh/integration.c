@@ -34,6 +34,7 @@
 #include "common.h"
 #include <pthread.h>
 #include <sqsh_archive_private.h>
+#include <sqsh_content_private.h>
 #include <sqsh_directory_private.h>
 #include <sqsh_easy.h>
 #include <sqsh_file_private.h>

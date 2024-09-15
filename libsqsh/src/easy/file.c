@@ -39,6 +39,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include <sqsh_content_private.h>
 #include <sqsh_error.h>
 #include <sqsh_file_private.h>
 #include <sqsh_tree_private.h>
