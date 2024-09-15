@@ -4,6 +4,7 @@ libsqsh_sources = files(
     'archive/inode_map.c',
     'archive/superblock.c',
     'archive/trailing_context.c',
+    'content/block_iterator.c',
     'content/file_iterator.c',
     'content/file_reader.c',
     'content/fragment_view.c',
