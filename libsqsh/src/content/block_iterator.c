@@ -60,12 +60,6 @@ int
 sqsh__block_iterator_init(
 		struct SqshBlockIterator *iterator, const struct SqshFile *file) {
 	int rv = 0;
-	enum SqshFileType file_type = sqsh_file_type(file);
-	if (file_type != SQSH_FILE_TYPE_FILE) {
-		rv = -SQSH_ERROR_NOT_A_FILE;
-		goto out;
-	}
-
 	struct SqshArchive *archive = file->archive;
 	const struct SqshSuperblock *superblock = sqsh_archive_superblock(archive);
 	struct SqshMapManager *map_manager = sqsh_archive_map_manager(archive);
@@ -103,11 +97,6 @@ sqsh__block_iterator_copy(
 		goto out;
 	}
 	rv = sqsh__extract_view_copy(&target->extract_view, &source->extract_view);
-	if (rv < 0) {
-		goto out;
-	}
-	rv = sqsh__fragment_view_copy(
-			&target->fragment_view, &source->fragment_view);
 	if (rv < 0) {
 		goto out;
 	}
@@ -261,33 +250,6 @@ map_block(struct SqshBlockIterator *iterator, size_t desired_size) {
 	return rv;
 }
 
-static int
-map_fragment(struct SqshBlockIterator *iterator) {
-	int rv = 0;
-	const struct SqshFile *file = iterator->file;
-	struct SqshArchive *archive = file->archive;
-	struct SqshFragmentTable *fragment_table = NULL;
-	struct SqshFragmentView *fragment_view = &iterator->fragment_view;
-	rv = sqsh_archive_fragment_table(archive, &fragment_table);
-	if (rv < 0) {
-		goto out;
-	}
-
-	rv = sqsh__fragment_view_init(fragment_view, file);
-	if (rv < 0) {
-		goto out;
-	}
-	iterator->data = sqsh__fragment_view_data(fragment_view);
-	iterator->size = sqsh__fragment_view_size(fragment_view);
-	iterator->block_index = BLOCK_INDEX_FINISHED;
-out:
-	if (rv < 0) {
-		return rv;
-	} else {
-		return 1;
-	}
-}
-
 bool
 sqsh__block_iterator_is_zero_block(const struct SqshBlockIterator *iterator) {
 	return iterator->sparse_size > 0;
@@ -299,7 +261,6 @@ sqsh__block_iterator_next(
 	int rv = 0;
 	const struct SqshFile *file = iterator->file;
 	const uint64_t block_count = sqsh_file_block_count2(file);
-	const bool has_fragment = sqsh_file_has_fragment(file);
 	bool has_next = true;
 
 	sqsh__extract_view_cleanup(&iterator->extract_view);
@@ -316,8 +277,6 @@ sqsh__block_iterator_next(
 		rv = map_zero_block(iterator);
 	} else if (iterator->block_index < block_count) {
 		rv = map_block(iterator, desired_size);
-	} else if (has_fragment && iterator->block_index == block_count) {
-		rv = map_fragment(iterator);
 	} else {
 		iterator->data = NULL;
 		iterator->size = 0;
@@ -418,6 +377,5 @@ int
 sqsh__block_iterator_cleanup(struct SqshBlockIterator *iterator) {
 	sqsh__map_reader_cleanup(&iterator->map_reader);
 	sqsh__extract_view_cleanup(&iterator->extract_view);
-	sqsh__fragment_view_cleanup(&iterator->fragment_view);
 	return 0;
 }

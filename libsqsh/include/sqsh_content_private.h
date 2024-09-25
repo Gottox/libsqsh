@@ -141,7 +141,6 @@ struct SqshBlockIterator {
 	struct SqshExtractManager *compression_manager;
 	struct SqshMapReader map_reader;
 	struct SqshExtractView extract_view;
-	struct SqshFragmentView fragment_view;
 	size_t sparse_size;
 	size_t block_size;
 	uint64_t block_index;
@@ -297,6 +296,14 @@ sqsh__block_iterator_cleanup(struct SqshBlockIterator *iterator);
  * @brief An iterator over the contents of a file.
  */
 struct SqshFileIterator {
+	const struct SqshFile *file;
+	uint64_t file_size;
+	uint64_t offset;
+	uint64_t fragment_offset;
+	size_t block_size;
+	size_t size;
+	const uint8_t *data;
+	struct SqshFragmentView fragment_view;
 	struct SqshBlockIterator block_iterator;
 };
 
