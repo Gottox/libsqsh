@@ -28,75 +28,30 @@
 
 /**
  * @author       Enno Boland (mail@eboland.de)
- * @file         sqsh_common_private.h
+ * @file         sqsh_collection_private.h
  */
 
-#ifndef SQSH_COMMON_PRIVATE_H
-#define SQSH_COMMON_PRIVATE_H
+#ifndef SQSH_COLLECTION_PRIVATE_H
+#define SQSH_COLLECTION_PRIVATE_H
 
-#include <sqsh_common.h>
-
+#include <cextras/collection.h>
 #include <cextras/memory.h>
-#include <stdint.h>
-#include <stdlib.h>
-#include <string.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-#define SQSH_MIN(a, b) ((a) < (b) ? (a) : (b))
-#define SQSH_MAX(a, b) ((a) > (b) ? (a) : (b))
+struct SqshRadixList {
+	struct CxRcRadixTree tree;
+	struct CxPreallocPool element_pool;
+};
 
-#define SQSH_UNLIKELY(x) __builtin_expect(!!(x), 0)
-
-#define SQSH__ADD_OVERFLOW(a, b, res) __builtin_add_overflow(a, b, res)
-#define SQSH__SUB_OVERFLOW(a, b, res) __builtin_sub_overflow(a, b, res)
-#define SQSH__MULT_OVERFLOW(a, b, res) __builtin_mul_overflow(a, b, res)
-
-#define SQSH_ADD_OVERFLOW(a, b, res) \
-	SQSH_UNLIKELY(SQSH__ADD_OVERFLOW(a, b, res))
-#define SQSH_SUB_OVERFLOW(a, b, res) \
-	SQSH_UNLIKELY(SQSH__SUB_OVERFLOW(a, b, res))
-#define SQSH_MULT_OVERFLOW(a, b, res) \
-	SQSH_UNLIKELY(SQSH__MULT_OVERFLOW(a, b, res))
-
-#define SQSH_DIVIDE_CEIL(x, y) ((x) / (y) + !!((x) % (y)))
-#define SQSH_PADDING(x, p) (SQSH_DIVIDE_CEIL(x, p) * p)
-
-#define SQSH_CONFIG_DEFAULT(x, d) (size_t)(x == 0 ? (d) : SQSH_MAX(x, 0))
-
-#define SQSH_NEW_IMPL(init, type, ...) \
-	CX_NEW_IMPL(init, type, -SQSH_ERROR_MALLOC_FAILED, __VA_ARGS__)
-
-#define SQSH_FREE_IMPL(cleanup, obj) CX_FREE_IMPL(cleanup, obj)
-
-SQSH_NO_UNUSED static inline uint64_t
-sqsh_address_ref_outer_offset(uint64_t ref) {
-	return ref >> 16;
-}
-
-SQSH_NO_UNUSED static inline uint16_t
-sqsh_address_ref_inner_offset(uint64_t ref) {
-	return ref & 0xFFFF;
-}
-
-SQSH_NO_UNUSED static inline uint64_t
-sqsh_address_ref_create(uint32_t outer_offset, uint16_t inner_offset) {
-	return ((uint64_t)outer_offset << 16) | inner_offset;
-}
-
-SQSH_NO_UNUSED static inline uint32_t
-sqsh_datablock_size(uint32_t size_info) {
-	return size_info & (uint32_t) ~(1 << 24);
-}
-
-SQSH_NO_UNUSED static inline bool
-sqsh_datablock_is_compressed(uint32_t size_info) {
-	return !(size_info & (1 << 24));
-}
+struct SqshRadixListElement {
+	struct SqshRadixListElement *next;
+	uint16_t key;
+};
 
 #ifdef __cplusplus
 }
 #endif
-#endif /* end of include guard SQSH_COMMON_PRIVATE_H */
+#endif /* end of include guard SQSH_COLLECTION_PRIVATE_H */

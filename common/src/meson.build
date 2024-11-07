@@ -1,4 +1,5 @@
 libsqsh_common_sources = files(
+    'collection/radix_list.c',
     'data/compression_options_data.c',
     'data/directory_data.c',
     'data/fragment_data.c',
