@@ -1,5 +1,5 @@
 <map id="SqshConfig" name="SqshConfig">
-<area shape="rect" id="Node000001" title="The SqshConfig struct contains all the configuration options for a sqsh session." alt="" coords="55,1720160,177,1720185"/>
+<area shape="rect" id="Node000001" title="The SqshConfig struct contains all the configuration options for a sqsh session." alt="" coords="55,482034,177,482059"/>
 <area shape="rect" id="Node000002" href="$structSqshMemoryMapperImpl.html" title="The implementation of a memory mapper." alt="" coords="5,5,227,30"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,46,119,1720159,113,1720159,113,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,46,119,482034,113,482034,113,46"/>
 </map>
