@@ -44,7 +44,7 @@
 UTEST(directory_iterator, iter_invalid_file_name_with_0) {
 	int rv;
 	struct SqshArchive archive = {0};
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			/* inode */
@@ -80,7 +80,7 @@ UTEST(directory_iterator, iter_invalid_file_name_with_0) {
 UTEST(directory_iterator, iter_invalid_file_name_with_slash) {
 	int rv;
 	struct SqshArchive archive = {0};
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			/* inode */
@@ -116,7 +116,7 @@ UTEST(directory_iterator, iter_invalid_file_name_with_slash) {
 UTEST(directory_iterator, iter_two_files) {
 	int rv;
 	struct SqshArchive archive = {0};
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			/* inode */
@@ -179,7 +179,7 @@ UTEST(directory_iterator, iter_two_files) {
 UTEST(directory_iterator, iter_invalid_file_type) {
 	int rv;
 	struct SqshArchive archive = {0};
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			/* inode */
@@ -210,7 +210,7 @@ UTEST(directory_iterator, iter_invalid_file_type) {
 UTEST(directory_iterator, iter_inconsistent_file_type) {
 	int rv;
 	struct SqshArchive archive = {0};
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			/* inode */
@@ -254,7 +254,7 @@ UTEST(directory_iterator, iter_inconsistent_file_type) {
 UTEST(directory_iterator, iter_over_corrupt_header_too_small) {
 	int rv;
 	struct SqshArchive archive = {0};
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			/* inode */
@@ -292,7 +292,7 @@ UTEST(directory_iterator, iter_over_corrupt_header_too_small) {
 UTEST(directory_iterator, iter_inode_overflow) {
 	int rv;
 	struct SqshArchive archive = {0};
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			/* inode */
@@ -328,7 +328,7 @@ UTEST(directory_iterator, iter_inode_overflow) {
 UTEST(directory_iterator, iter_inode_underflow) {
 	int rv;
 	struct SqshArchive archive = {0};
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			/* inode */
@@ -364,7 +364,7 @@ UTEST(directory_iterator, iter_inode_underflow) {
 UTEST(directory_iterator, iter_inode_to_zero) {
 	int rv;
 	struct SqshArchive archive = {0};
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			/* inode */

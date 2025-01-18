@@ -87,6 +87,15 @@ void sqsh__data_metablock_is_compressed_set(
 void sqsh__data_metablock_size_set(
 		struct SqshDataMetablock *metablock, const uint16_t value);
 
+/***************************************
+ * data/fragment_data.c
+ */
+
+void sqsh__data_fragment_start_set(
+		struct SqshDataFragment *metablock, const uint64_t value);
+void sqsh__data_fragment_size_info_set(
+		struct SqshDataFragment *metablock, const uint32_t value);
+
 #ifdef __cplusplus
 }
 #endif

@@ -155,7 +155,7 @@
 /* We're using a ridiculously small block size to
  * test the mappers ability to handle small blocks.
  */
-#define DEFAULT_BLOCK_SIZE 1
+#define DEFAULT_BLOCK_SIZE ~0
 
 #define DEFAULT_CONFIG(s) \
 	(struct SqshConfig) { \

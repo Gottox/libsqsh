@@ -33,90 +33,113 @@
 
 #define _DEFAULT_SOURCE
 
-#include <mksqsh_metablock.h>
+#include <assert.h>
+#include <cextras/endian.h>
+#include <mksqsh_table.h>
 #include <sqsh_common_private.h>
 #include <sqsh_data_set.h>
-#include <sqsh_error.h>
-#include <string.h>
 
-int
-mksqsh__metablock_init(struct MksqshMetablock *metablock, FILE *out) {
-	memset(metablock, 0, sizeof(*metablock));
-	metablock->out = out;
-	return 0;
+static int
+table_add_lookup(struct MksqshTable *table) {
+	int rv = 0;
+	const uint64_t ref = mksqsh__metablock_ref(&table->metablock_writer);
+	const uint64_t outer_ref = sqsh_address_ref_outer_offset(ref);
+	const uint64_t outer_ref_le = CX_CPU_2_LE64(outer_ref);
+	const unsigned long write =
+			fwrite(&outer_ref_le, sizeof(outer_ref_le), 1, table->output);
+	if (write != 1) {
+		rv = -1; // TODO: proper error code
+		goto out;
+	}
+out:
+	return rv;
 }
 
 int
-mksqsh__metablock_write(
-		struct MksqshMetablock *metablock, const uint8_t *data, size_t size) {
-	metablock->flushed = false;
+mksqsh__table_init(
+		struct MksqshTable *table, size_t entry_size, FILE *metablock_output,
+		FILE *output) {
 	int rv = 0;
-	while (size > 0) {
-		uint8_t *remaining_buffer = &metablock->buffer[metablock->buffer_size];
-		const size_t remaining_size =
-				sizeof(metablock->buffer) - metablock->buffer_size;
-		const size_t copy_size = SQSH_MIN(remaining_size, size);
+	assert(0 == SQSH_METABLOCK_BLOCK_SIZE % entry_size);
 
-		memcpy(remaining_buffer, data, copy_size);
-		metablock->buffer_size += copy_size;
-		data += copy_size;
-		size -= copy_size;
-		if (metablock->buffer_size == sizeof(metablock->buffer)) {
-			rv = mksqsh__metablock_flush(metablock);
-			if (rv < 0) {
+	table->entry_size = entry_size;
+	table->output = output;
+	table->metablock_output = metablock_output;
+
+	rv = mksqsh__metablock_init(&table->metablock_writer, metablock_output);
+	if (rv < 0) {
+		goto out;
+	}
+
+	rv = table_add_lookup(table);
+	if (rv < 0) {
+		goto out;
+	}
+
+out:
+	return rv;
+}
+
+int
+mksqsh__table_add(
+		struct MksqshTable *table, const void *entry, size_t entry_size) {
+	int rv = 0;
+	assert(entry_size == table->entry_size);
+
+	rv = mksqsh__metablock_write(&table->metablock_writer, entry, entry_size);
+	if (rv < 0) {
+		goto out;
+	}
+
+	if (mksqsh__metablock_was_flushed(&table->metablock_writer)) {
+		rv = table_add_lookup(table);
+		if (rv < 0) {
+			goto out;
+		}
+	}
+
+out:
+	return rv;
+}
+
+int
+mksqsh__table_flush(struct MksqshTable *table) {
+	int rv = 0;
+	FILE *metablock_output = table->metablock_output;
+	FILE *output = table->output;
+
+	rv = mksqsh__metablock_flush(&table->metablock_writer);
+	if (rv < 0) {
+		goto out;
+	}
+
+	rv = fseek(metablock_output, 0, SEEK_SET);
+	if (rv < 0) {
+		goto out;
+	}
+
+	for (;;) {
+		char buffer[BUFSIZ];
+		const unsigned long read =
+				fread(buffer, 1, sizeof(buffer), metablock_output);
+		if (read == 0) {
+			if (!feof(table->metablock_output)) {
+				rv = -1; // TODO: proper error code
 				goto out;
 			}
+			break;
+		}
+		const unsigned long write = fwrite(buffer, 1, read, output);
+		if (write != read) {
+			rv = -1; // TODO: proper error code
+			goto out;
 		}
 	}
 out:
 	return rv;
 }
 
-uint64_t
-mksqsh__metablock_ref(const struct MksqshMetablock *metablock) {
-	return sqsh_address_ref_create(
-			metablock->outer_ref, metablock->buffer_size);
-}
-
 int
-mksqsh__metablock_flush(struct MksqshMetablock *metablock) {
-	int rv = 0;
-	struct SqshDataMetablock header = {0};
-	if (metablock->buffer_size == 0) {
-		goto out;
-	}
-
-	sqsh__data_metablock_is_compressed_set(&header, false);
-	sqsh__data_metablock_size_set(&header, metablock->buffer_size);
-
-	rv = fwrite(&header, sizeof(header), 1, metablock->out);
-	if (rv != 1) {
-		rv = -SQSH_ERROR_INTERNAL;
-		goto out;
-	}
-
-	rv = fwrite(&metablock->buffer, metablock->buffer_size, 1, metablock->out);
-	if (rv != 1) {
-		rv = -SQSH_ERROR_INTERNAL;
-		goto out;
-	}
-
-	metablock->outer_ref = sizeof(header) + metablock->buffer_size;
-	metablock->buffer_size = 0;
-	metablock->flushed = true;
-
-	rv = 0;
-out:
-	return rv;
-}
-
-bool
-mksqsh__metablock_was_flushed(const struct MksqshMetablock *metablock) {
-	return metablock->flushed;
-}
-
-int
-mksqsh__metablock_cleanup(struct MksqshMetablock *metablock) {
-	(void)metablock;
-	return 0;
+mksqsh__table_cleanup(struct MksqshTable *table) {
+	return mksqsh__metablock_cleanup(&table->metablock_writer);
 }

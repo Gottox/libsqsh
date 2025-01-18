@@ -42,7 +42,7 @@
 
 UTEST(ease_file, test_file_get_content_through_symlink) {
 	struct SqshArchive archive = {0};
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			[1024] = '1', '2', '3', '4', '5', '6', '7', '8',
@@ -80,7 +80,7 @@ UTEST(ease_file, test_file_get_content_through_symlink) {
 UTEST(ease_file, test_file_exists_through_dead_symlink) {
 	int rv = 0;
 	struct SqshArchive archive = {0};
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			[1024] = '1', '2', '3', '4', '5', '6', '7', '8',
@@ -111,7 +111,7 @@ UTEST(ease_file, test_file_exists_through_dead_symlink) {
 UTEST(ease_file, test_file_exists_through_symlink) {
 	struct SqshArchive archive = {0};
 	int rv = 0;
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			[1024] = '1', '2', '3', '4', '5', '6', '7', '8',
@@ -152,7 +152,7 @@ UTEST(ease_file, test_file_exists_through_symlink) {
 UTEST(ease_file, test_file_size) {
 	struct SqshArchive archive = {0};
 	int rv = 0;
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			/* inode */
@@ -186,7 +186,7 @@ UTEST(ease_file, test_file_size) {
 UTEST(ease_file, test_file_permission) {
 	struct SqshArchive archive = {0};
 	int rv = 0;
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			/* inode */
@@ -220,7 +220,7 @@ UTEST(ease_file, test_file_permission) {
 UTEST(ease_file, test_file_mtime) {
 	struct SqshArchive archive = {0};
 	int rv = 0;
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			/* inode */

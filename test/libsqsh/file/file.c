@@ -33,6 +33,7 @@
  */
 
 #include "../common.h"
+#include <stdint.h>
 #include <utest.h>
 
 #include <sqsh_archive_private.h>
@@ -158,7 +159,34 @@ UTEST(file, resolve_unkown_dir_inode) {
 	ASSERT_EQ(-SQSH_ERROR_INODE_PARENT_UNSET, rv);
 
 	sqsh_close(symlink);
+	sqsh__archive_cleanup(&archive);
+}
 
+UTEST(file, get_ids) {
+	int rv;
+	struct SqshArchive archive = {0};
+	struct SqshFile file = {0};
+	uint8_t payload[8192] = {
+			SQSH_HEADER,
+			/* inode */
+			[INODE_TABLE_OFFSET + 15] = METABLOCK_HEADER(0, 128),
+			INODE_HEADER(2, 0666, 0, 0, 4242, 1),
+			INODE_BASIC_FILE(1024, 0xFFFFFFFF, 0, 1),
+			UINT32_BYTES(42),
+			[ID_TABLE_OFFSET] = UINT64_BYTES(0),
+			METABLOCK_HEADER(0, 128),
+			UINT32_BYTES(0),
+			UINT32_BYTES(0),
+	};
+	mk_stub(&archive, payload, sizeof(payload));
+
+	uint64_t inode_ref = sqsh_address_ref_create(15, 0);
+	rv = sqsh__file_init(&file, &archive, inode_ref);
+	ASSERT_EQ(0, rv);
+
+	ASSERT_EQ((uint32_t)123, sqsh_file_gid(&file));
+
+	sqsh__file_cleanup(&file);
 	sqsh__archive_cleanup(&archive);
 }
 

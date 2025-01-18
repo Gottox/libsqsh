@@ -38,6 +38,7 @@
 #include "common.h"
 
 #include <mksqsh_archive.h>
+#include <mksqsh_table.h>
 #include <sqsh_archive_private.h>
 #include <sqsh_data_private.h>
 #include <sqsh_mapper.h>
@@ -48,6 +49,7 @@ test_sqsh_prepare_archive(uint8_t *payload, size_t payload_size) {
 	const int compression_id =
 			payload[20] ? payload[20] : SQSH_COMPRESSION_GZIP;
 	struct MksqshSuperblock builder = {0};
+	struct MksqshIdTable id_builder = {0};
 	FILE *fsuperblock = fmemopen(payload, payload_size, "r+");
 	assert(fsuperblock);
 	rv = mksqsh__superblock_init(&builder);
@@ -68,7 +70,7 @@ test_sqsh_prepare_archive(uint8_t *payload, size_t payload_size) {
 	assert(rv == 0);
 	rv = mksqsh__superblock_compression_options(&builder, true);
 	assert(rv == 0);
-	rv = mksqsh__superblock_id_count(&builder, 0);
+	rv = mksqsh__superblock_id_count(&builder, 2);
 	assert(rv == 0);
 	rv = mksqsh__superblock_inode_count(&builder, 100);
 	assert(rv == 0);
@@ -100,6 +102,29 @@ test_sqsh_prepare_archive(uint8_t *payload, size_t payload_size) {
 	assert(rv == sizeof(struct SqshDataSuperblock));
 	rv = mksqsh__superblock_cleanup(&builder);
 	assert(rv == 0);
+
+	FILE *fid_block = fmemopen(
+			&payload[ID_TABLE_OFFSET], payload_size - ID_TABLE_OFFSET, "r+");
+	char *id_block_tmp;
+	size_t id_block_tmp_size;
+	FILE *fid_block_tmp = open_memstream(&id_block_tmp, &id_block_tmp_size);
+	assert(fid_block);
+	assert(fid_block_tmp);
+
+	rv = mksqsh__id_table_init(&id_builder, fid_block, fid_block_tmp);
+	assert(rv == 0);
+	rv = mksqsh__id_table_add(&id_builder, 123);
+	assert(rv == 0);
+	rv = mksqsh__id_table_add(&id_builder, 456);
+	assert(rv == 0);
+	rv = mksqsh__id_table_flush(&id_builder);
+	assert(rv == 0);
+	rv = mksqsh__id_table_cleanup(&id_builder);
+	assert(rv == 0);
+
+	fclose(fid_block);
+	fclose(fid_block_tmp);
+	free(id_block_tmp);
 
 	return fsuperblock;
 }

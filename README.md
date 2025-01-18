@@ -32,7 +32,7 @@ containing a set of command line tools and a C library.
 * [**fuse2**](https://libfuse.github.io/) *optional*: For mounting squashfs 
   archives on systems that don't support fuse3. e.g. OpenBSD.
 * [**libcurl**](https://curl.se/) *optional*: For transparently reading squashfs
-  archives from the internet without downloading them first.
+  archives from an URL.
 
 Note that to do anything useful with *libsqsh*, you need to have at least one of the
 compression libraries enabled.

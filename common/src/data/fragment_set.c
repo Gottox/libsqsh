@@ -1,6 +1,6 @@
 /******************************************************************************
  *                                                                            *
- * Copyright (c) 2023, Enno Boland <g@s01.de>                                 *
+ * Copyright (c) 2023-2024, Enno Boland <g@s01.de>                            *
  *                                                                            *
  * Redistribution and use in source and binary forms, with or without         *
  * modification, are permitted provided that the following conditions are     *
@@ -28,95 +28,20 @@
 
 /**
  * @author       Enno Boland (mail@eboland.de)
- * @file         inode_builder.c
+ * @file         fragment_data.c
  */
 
-#define _DEFAULT_SOURCE
-
-#include <mksqsh_metablock.h>
-#include <sqsh_common_private.h>
+#include <cextras/endian.h>
 #include <sqsh_data_set.h>
-#include <sqsh_error.h>
-#include <string.h>
 
-int
-mksqsh__metablock_init(struct MksqshMetablock *metablock, FILE *out) {
-	memset(metablock, 0, sizeof(*metablock));
-	metablock->out = out;
-	return 0;
+void
+sqsh__data_fragment_start_set(
+		struct SqshDataFragment *fragment, const uint64_t start) {
+	fragment->start = CX_CPU_2_LE64(start);
 }
 
-int
-mksqsh__metablock_write(
-		struct MksqshMetablock *metablock, const uint8_t *data, size_t size) {
-	metablock->flushed = false;
-	int rv = 0;
-	while (size > 0) {
-		uint8_t *remaining_buffer = &metablock->buffer[metablock->buffer_size];
-		const size_t remaining_size =
-				sizeof(metablock->buffer) - metablock->buffer_size;
-		const size_t copy_size = SQSH_MIN(remaining_size, size);
-
-		memcpy(remaining_buffer, data, copy_size);
-		metablock->buffer_size += copy_size;
-		data += copy_size;
-		size -= copy_size;
-		if (metablock->buffer_size == sizeof(metablock->buffer)) {
-			rv = mksqsh__metablock_flush(metablock);
-			if (rv < 0) {
-				goto out;
-			}
-		}
-	}
-out:
-	return rv;
-}
-
-uint64_t
-mksqsh__metablock_ref(const struct MksqshMetablock *metablock) {
-	return sqsh_address_ref_create(
-			metablock->outer_ref, metablock->buffer_size);
-}
-
-int
-mksqsh__metablock_flush(struct MksqshMetablock *metablock) {
-	int rv = 0;
-	struct SqshDataMetablock header = {0};
-	if (metablock->buffer_size == 0) {
-		goto out;
-	}
-
-	sqsh__data_metablock_is_compressed_set(&header, false);
-	sqsh__data_metablock_size_set(&header, metablock->buffer_size);
-
-	rv = fwrite(&header, sizeof(header), 1, metablock->out);
-	if (rv != 1) {
-		rv = -SQSH_ERROR_INTERNAL;
-		goto out;
-	}
-
-	rv = fwrite(&metablock->buffer, metablock->buffer_size, 1, metablock->out);
-	if (rv != 1) {
-		rv = -SQSH_ERROR_INTERNAL;
-		goto out;
-	}
-
-	metablock->outer_ref = sizeof(header) + metablock->buffer_size;
-	metablock->buffer_size = 0;
-	metablock->flushed = true;
-
-	rv = 0;
-out:
-	return rv;
-}
-
-bool
-mksqsh__metablock_was_flushed(const struct MksqshMetablock *metablock) {
-	return metablock->flushed;
-}
-
-int
-mksqsh__metablock_cleanup(struct MksqshMetablock *metablock) {
-	(void)metablock;
-	return 0;
+void
+sqsh__data_fragment_size_info_set(
+		struct SqshDataFragment *fragment, const uint32_t size_info) {
+	fragment->size_info = CX_CPU_2_LE32(size_info);
 }

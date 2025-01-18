@@ -44,7 +44,7 @@
 UTEST(traversal, test_recursive_directory) {
 	int rv;
 	struct SqshArchive archive = {0};
-	uint8_t payload[] = {
+	uint8_t payload[8192] = {
 			/* clang-format off */
 			SQSH_HEADER,
 			/* inode */
